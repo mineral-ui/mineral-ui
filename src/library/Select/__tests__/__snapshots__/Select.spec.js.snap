@@ -2853,15 +2853,29 @@ exports[`Select demo examples Snapshots: data 1`] = `
           "divider": true,
         },
         Object {
-          "text": "Danger variant",
-          "value": "variant",
-          "variant": "danger",
-        },
-        Object {
           "disabled": true,
           "onClick": [Function],
           "text": "Disabled menu item",
           "value": "disabled",
+        },
+        Object {
+          "group": true,
+          "title": "Group Title",
+        },
+        Object {
+          "text": "Success variant",
+          "value": "success",
+          "variant": "success",
+        },
+        Object {
+          "text": "Warning variant",
+          "value": "warning",
+          "variant": "warning",
+        },
+        Object {
+          "text": "Danger variant",
+          "value": "danger",
+          "variant": "danger",
         },
       ]
     }
@@ -2892,15 +2906,29 @@ exports[`Select demo examples Snapshots: data 1`] = `
             "divider": true,
           },
           Object {
-            "text": "Danger variant",
-            "value": "variant",
-            "variant": "danger",
-          },
-          Object {
             "disabled": true,
             "onClick": [Function],
             "text": "Disabled menu item",
             "value": "disabled",
+          },
+          Object {
+            "group": true,
+            "title": "Group Title",
+          },
+          Object {
+            "text": "Success variant",
+            "value": "success",
+            "variant": "success",
+          },
+          Object {
+            "text": "Warning variant",
+            "value": "warning",
+            "variant": "warning",
+          },
+          Object {
+            "text": "Danger variant",
+            "value": "danger",
+            "variant": "danger",
           },
         ]
       }
@@ -2945,15 +2973,29 @@ exports[`Select demo examples Snapshots: data 1`] = `
               "divider": true,
             },
             Object {
-              "text": "Danger variant",
-              "value": "variant",
-              "variant": "danger",
-            },
-            Object {
               "disabled": true,
               "onClick": [Function],
               "text": "Disabled menu item",
               "value": "disabled",
+            },
+            Object {
+              "group": true,
+              "title": "Group Title",
+            },
+            Object {
+              "text": "Success variant",
+              "value": "success",
+              "variant": "success",
+            },
+            Object {
+              "text": "Warning variant",
+              "value": "warning",
+              "variant": "warning",
+            },
+            Object {
+              "text": "Danger variant",
+              "value": "danger",
+              "variant": "danger",
             },
           ]
         }
@@ -2998,15 +3040,29 @@ exports[`Select demo examples Snapshots: data 1`] = `
                 "divider": true,
               },
               Object {
-                "text": "Danger variant",
-                "value": "variant",
-                "variant": "danger",
-              },
-              Object {
                 "disabled": true,
                 "onClick": [Function],
                 "text": "Disabled menu item",
                 "value": "disabled",
+              },
+              Object {
+                "group": true,
+                "title": "Group Title",
+              },
+              Object {
+                "text": "Success variant",
+                "value": "success",
+                "variant": "success",
+              },
+              Object {
+                "text": "Warning variant",
+                "value": "warning",
+                "variant": "warning",
+              },
+              Object {
+                "text": "Danger variant",
+                "value": "danger",
+                "variant": "danger",
               },
             ]
           }
@@ -3053,15 +3109,29 @@ exports[`Select demo examples Snapshots: data 1`] = `
                       "divider": true,
                     },
                     Object {
-                      "text": "Danger variant",
-                      "value": "variant",
-                      "variant": "danger",
-                    },
-                    Object {
                       "disabled": true,
                       "onClick": [Function],
                       "text": "Disabled menu item",
                       "value": "disabled",
+                    },
+                    Object {
+                      "group": true,
+                      "title": "Group Title",
+                    },
+                    Object {
+                      "text": "Success variant",
+                      "value": "success",
+                      "variant": "success",
+                    },
+                    Object {
+                      "text": "Warning variant",
+                      "value": "warning",
+                      "variant": "warning",
+                    },
+                    Object {
+                      "text": "Danger variant",
+                      "value": "danger",
+                      "variant": "danger",
                     },
                   ]
                 }
@@ -6984,20 +7054,20 @@ exports[`Select demo examples Snapshots: invalid 1`] = `
 `;
 
 exports[`Select demo examples Snapshots: overflow 1`] = `
-.emotion-34 {
+.emotion-33 {
   width: 100%;
 }
 
-.emotion-34 > span {
+.emotion-33 > span {
   width: 100%;
 }
 
-.emotion-32 {
+.emotion-31 {
   display: inline-block;
   width: 100%;
 }
 
-.emotion-32 > span {
+.emotion-31 > span {
   width: 100%;
 }
 
@@ -7210,7 +7280,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
   z-index: -1;
 }
 
-.emotion-28 {
+.emotion-27 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -7233,33 +7303,33 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
   z-index: 100;
 }
 
-.emotion-28 *,
-.emotion-28 *::before,
-.emotion-28 *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.emotion-28[data-placement^="top"] {
+.emotion-27[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-28[data-placement^="bottom"] {
+.emotion-27[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-28[data-placement^="left"] {
+.emotion-27[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-28[data-placement^="right"] {
+.emotion-27[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-28[data-x-out-of-boundaries] {
+.emotion-27[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-27 {
+.emotion-26 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -7270,23 +7340,10 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-26 *,
+.emotion-26 *::before,
+.emotion-26 *::after {
   box-sizing: inherit;
-}
-
-.emotion-26 {
-  margin: 0.5em 0;
-}
-
-.emotion-26:first-child,
-.emotion-26 + .emotion-26 {
-  margin-top: 0;
-}
-
-.emotion-26:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-17 {
@@ -7372,7 +7429,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
   word-break: break-word;
 }
 
-.emotion-39 {
+.emotion-38 {
   background-color: aliceblue;
   margin: 0 0 105px 0;
   overflow: hidden;
@@ -7381,7 +7438,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
 
 <Styled(div)>
   <div
-    className="emotion-39"
+    className="emotion-38"
   >
     <Select
       data={
@@ -7442,7 +7499,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
         size="large"
       >
         <WithTheme(Themed(Dropdown))
-          className="emotion-34"
+          className="emotion-33"
           data={
             Array [
               Object {
@@ -7478,7 +7535,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
           size="large"
         >
           <Themed(Dropdown)
-            className="emotion-34"
+            className="emotion-33"
             data={
               Array [
                 Object {
@@ -7516,7 +7573,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
             <ThemeProvider>
               <ThemeProvider>
                 <Dropdown
-                  className="emotion-34"
+                  className="emotion-33"
                   data={
                     Array [
                       Object {
@@ -7552,7 +7609,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                   size="large"
                 >
                   <Popover
-                    className="emotion-34"
+                    className="emotion-33"
                     content={[Function]}
                     focusTriggerOnClose={true}
                     hasArrow={true}
@@ -7575,7 +7632,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                     triggerRef={[Function]}
                   >
                     <Popover
-                      className="emotion-34"
+                      className="emotion-33"
                       content={[Function]}
                       focusTriggerOnClose={true}
                       hasArrow={true}
@@ -7599,12 +7656,12 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                       triggerRef={[Function]}
                     >
                       <Manager
-                        className="emotion-32"
+                        className="emotion-31"
                         id="select-72"
                         tag="span"
                       >
                         <span
-                          className="emotion-32"
+                          className="emotion-31"
                           id="select-72"
                         >
                           <PopoverTrigger
@@ -7927,7 +7984,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                               placement="bottom-start"
                             >
                               <WithTheme(RtlPopper)
-                                className="emotion-28"
+                                className="emotion-27"
                                 id="select-72-content"
                                 modifiers={
                                   Object {
@@ -7941,7 +7998,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                                 placement="bottom-start"
                               >
                                 <RtlPopper
-                                  className="emotion-28"
+                                  className="emotion-27"
                                   id="select-72-content"
                                   modifiers={
                                     Object {
@@ -7955,7 +8012,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                                   placement="bottom-start"
                                 >
                                   <Popper
-                                    className="emotion-28"
+                                    className="emotion-27"
                                     component="div"
                                     eventsEnabled={true}
                                     id="select-72-content"
@@ -7972,7 +8029,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                                     positionFixed={false}
                                   >
                                     <div
-                                      className="emotion-28"
+                                      className="emotion-27"
                                       id="select-72-content"
                                       onBlur={[Function]}
                                       style={
@@ -8012,266 +8069,256 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
                                           role="listbox"
                                         >
                                           <div
-                                            className="emotion-27"
+                                            className="emotion-26"
                                             id="select-72-menu"
                                             role="listbox"
                                           >
-                                            <MenuGroup
-                                              key="0"
+                                            <MenuItem
+                                              index={0}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Alpha",
+                                                  "value": "alpha",
+                                                }
+                                              }
+                                              key="alpha"
+                                              render={[Function]}
+                                              text="Alpha"
+                                              value="alpha"
                                             >
-                                              <MenuGroup>
-                                                <div
-                                                  className="emotion-26"
+                                              <MenuItem
+                                                aria-selected={false}
+                                                id="select-72-item-0"
+                                                index={0}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Alpha",
+                                                    "value": "alpha",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="option"
+                                                tabIndex={null}
+                                                text="Alpha"
+                                                value="alpha"
+                                              >
+                                                <MenuItem
+                                                  aria-selected={false}
+                                                  id="select-72-item-0"
+                                                  index={0}
+                                                  isHighlighted={false}
+                                                  item={
+                                                    Object {
+                                                      "text": "Alpha",
+                                                      "value": "alpha",
+                                                    }
+                                                  }
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="option"
+                                                  tabIndex={null}
+                                                  text="Alpha"
+                                                  value="alpha"
                                                 >
-                                                  <MenuItem
-                                                    index={0}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Alpha",
-                                                        "value": "alpha",
-                                                      }
-                                                    }
-                                                    key="alpha"
-                                                    render={[Function]}
-                                                    text="Alpha"
-                                                    value="alpha"
+                                                  <div
+                                                    aria-selected={false}
+                                                    className="emotion-17"
+                                                    id="select-72-item-0"
+                                                    onClick={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    role="option"
+                                                    tabIndex={null}
                                                   >
-                                                    <MenuItem
-                                                      aria-selected={false}
-                                                      id="select-72-item-0"
-                                                      index={0}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Alpha",
-                                                          "value": "alpha",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="option"
-                                                      tabIndex={null}
-                                                      text="Alpha"
-                                                      value="alpha"
-                                                    >
-                                                      <MenuItem
-                                                        aria-selected={false}
-                                                        id="select-72-item-0"
-                                                        index={0}
-                                                        isHighlighted={false}
-                                                        item={
-                                                          Object {
-                                                            "text": "Alpha",
-                                                            "value": "alpha",
-                                                          }
-                                                        }
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="option"
-                                                        tabIndex={null}
-                                                        text="Alpha"
-                                                        value="alpha"
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-16"
                                                       >
-                                                        <div
-                                                          aria-selected={false}
-                                                          className="emotion-17"
-                                                          id="select-72-item-0"
-                                                          onClick={[Function]}
-                                                          onKeyDown={[Function]}
-                                                          role="option"
-                                                          tabIndex={null}
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-16"
-                                                            >
-                                                              <Styled(span)>
-                                                                <span
-                                                                  className="emotion-15"
-                                                                >
-                                                                  <Styled(span)>
-                                                                    <span
-                                                                      className="emotion-14"
-                                                                    >
-                                                                      Alpha
-                                                                    </span>
-                                                                  </Styled(span)>
-                                                                </span>
-                                                              </Styled(span)>
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </div>
-                                                      </MenuItem>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                  <MenuItem
-                                                    index={1}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Beta",
-                                                        "value": "beta",
-                                                      }
+                                                        <Styled(span)>
+                                                          <span
+                                                            className="emotion-15"
+                                                          >
+                                                            <Styled(span)>
+                                                              <span
+                                                                className="emotion-14"
+                                                              >
+                                                                Alpha
+                                                              </span>
+                                                            </Styled(span)>
+                                                          </span>
+                                                        </Styled(span)>
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </div>
+                                                </MenuItem>
+                                              </MenuItem>
+                                            </MenuItem>
+                                            <MenuItem
+                                              index={1}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Beta",
+                                                  "value": "beta",
+                                                }
+                                              }
+                                              key="beta"
+                                              render={[Function]}
+                                              text="Beta"
+                                              value="beta"
+                                            >
+                                              <MenuItem
+                                                aria-selected={false}
+                                                id="select-72-item-1"
+                                                index={1}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Beta",
+                                                    "value": "beta",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="option"
+                                                tabIndex={null}
+                                                text="Beta"
+                                                value="beta"
+                                              >
+                                                <MenuItem
+                                                  aria-selected={false}
+                                                  id="select-72-item-1"
+                                                  index={1}
+                                                  isHighlighted={false}
+                                                  item={
+                                                    Object {
+                                                      "text": "Beta",
+                                                      "value": "beta",
                                                     }
-                                                    key="beta"
-                                                    render={[Function]}
-                                                    text="Beta"
-                                                    value="beta"
+                                                  }
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="option"
+                                                  tabIndex={null}
+                                                  text="Beta"
+                                                  value="beta"
+                                                >
+                                                  <div
+                                                    aria-selected={false}
+                                                    className="emotion-17"
+                                                    id="select-72-item-1"
+                                                    onClick={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    role="option"
+                                                    tabIndex={null}
                                                   >
-                                                    <MenuItem
-                                                      aria-selected={false}
-                                                      id="select-72-item-1"
-                                                      index={1}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Beta",
-                                                          "value": "beta",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="option"
-                                                      tabIndex={null}
-                                                      text="Beta"
-                                                      value="beta"
-                                                    >
-                                                      <MenuItem
-                                                        aria-selected={false}
-                                                        id="select-72-item-1"
-                                                        index={1}
-                                                        isHighlighted={false}
-                                                        item={
-                                                          Object {
-                                                            "text": "Beta",
-                                                            "value": "beta",
-                                                          }
-                                                        }
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="option"
-                                                        tabIndex={null}
-                                                        text="Beta"
-                                                        value="beta"
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-16"
                                                       >
-                                                        <div
-                                                          aria-selected={false}
-                                                          className="emotion-17"
-                                                          id="select-72-item-1"
-                                                          onClick={[Function]}
-                                                          onKeyDown={[Function]}
-                                                          role="option"
-                                                          tabIndex={null}
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-16"
-                                                            >
-                                                              <Styled(span)>
-                                                                <span
-                                                                  className="emotion-15"
-                                                                >
-                                                                  <Styled(span)>
-                                                                    <span
-                                                                      className="emotion-14"
-                                                                    >
-                                                                      Beta
-                                                                    </span>
-                                                                  </Styled(span)>
-                                                                </span>
-                                                              </Styled(span)>
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </div>
-                                                      </MenuItem>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                  <MenuItem
-                                                    index={2}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Gamma",
-                                                        "value": "gamma",
-                                                      }
+                                                        <Styled(span)>
+                                                          <span
+                                                            className="emotion-15"
+                                                          >
+                                                            <Styled(span)>
+                                                              <span
+                                                                className="emotion-14"
+                                                              >
+                                                                Beta
+                                                              </span>
+                                                            </Styled(span)>
+                                                          </span>
+                                                        </Styled(span)>
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </div>
+                                                </MenuItem>
+                                              </MenuItem>
+                                            </MenuItem>
+                                            <MenuItem
+                                              index={2}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Gamma",
+                                                  "value": "gamma",
+                                                }
+                                              }
+                                              key="gamma"
+                                              render={[Function]}
+                                              text="Gamma"
+                                              value="gamma"
+                                            >
+                                              <MenuItem
+                                                aria-selected={false}
+                                                id="select-72-item-2"
+                                                index={2}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Gamma",
+                                                    "value": "gamma",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="option"
+                                                tabIndex={null}
+                                                text="Gamma"
+                                                value="gamma"
+                                              >
+                                                <MenuItem
+                                                  aria-selected={false}
+                                                  id="select-72-item-2"
+                                                  index={2}
+                                                  isHighlighted={false}
+                                                  item={
+                                                    Object {
+                                                      "text": "Gamma",
+                                                      "value": "gamma",
                                                     }
-                                                    key="gamma"
-                                                    render={[Function]}
-                                                    text="Gamma"
-                                                    value="gamma"
+                                                  }
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="option"
+                                                  tabIndex={null}
+                                                  text="Gamma"
+                                                  value="gamma"
+                                                >
+                                                  <div
+                                                    aria-selected={false}
+                                                    className="emotion-17"
+                                                    id="select-72-item-2"
+                                                    onClick={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    role="option"
+                                                    tabIndex={null}
                                                   >
-                                                    <MenuItem
-                                                      aria-selected={false}
-                                                      id="select-72-item-2"
-                                                      index={2}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Gamma",
-                                                          "value": "gamma",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="option"
-                                                      tabIndex={null}
-                                                      text="Gamma"
-                                                      value="gamma"
-                                                    >
-                                                      <MenuItem
-                                                        aria-selected={false}
-                                                        id="select-72-item-2"
-                                                        index={2}
-                                                        isHighlighted={false}
-                                                        item={
-                                                          Object {
-                                                            "text": "Gamma",
-                                                            "value": "gamma",
-                                                          }
-                                                        }
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="option"
-                                                        tabIndex={null}
-                                                        text="Gamma"
-                                                        value="gamma"
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-16"
                                                       >
-                                                        <div
-                                                          aria-selected={false}
-                                                          className="emotion-17"
-                                                          id="select-72-item-2"
-                                                          onClick={[Function]}
-                                                          onKeyDown={[Function]}
-                                                          role="option"
-                                                          tabIndex={null}
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-16"
-                                                            >
-                                                              <Styled(span)>
-                                                                <span
-                                                                  className="emotion-15"
-                                                                >
-                                                                  <Styled(span)>
-                                                                    <span
-                                                                      className="emotion-14"
-                                                                    >
-                                                                      Gamma
-                                                                    </span>
-                                                                  </Styled(span)>
-                                                                </span>
-                                                              </Styled(span)>
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </div>
-                                                      </MenuItem>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                </div>
-                                              </MenuGroup>
-                                            </MenuGroup>
+                                                        <Styled(span)>
+                                                          <span
+                                                            className="emotion-15"
+                                                          >
+                                                            <Styled(span)>
+                                                              <span
+                                                                className="emotion-14"
+                                                              >
+                                                                Gamma
+                                                              </span>
+                                                            </Styled(span)>
+                                                          </span>
+                                                        </Styled(span)>
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </div>
+                                                </MenuItem>
+                                              </MenuItem>
+                                            </MenuItem>
                                           </div>
                                         </Menu>
                                       </Menu>
@@ -10001,20 +10048,20 @@ exports[`Select demo examples Snapshots: placeholder 1`] = `
 `;
 
 exports[`Select demo examples Snapshots: placement 1`] = `
-.emotion-34 {
+.emotion-33 {
   width: 100%;
 }
 
-.emotion-34 > span {
+.emotion-33 > span {
   width: 100%;
 }
 
-.emotion-32 {
+.emotion-31 {
   display: inline-block;
   width: 100%;
 }
 
-.emotion-32 > span {
+.emotion-31 > span {
   width: 100%;
 }
 
@@ -10227,7 +10274,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
   z-index: -1;
 }
 
-.emotion-28 {
+.emotion-27 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -10250,33 +10297,33 @@ exports[`Select demo examples Snapshots: placement 1`] = `
   z-index: 100;
 }
 
-.emotion-28 *,
-.emotion-28 *::before,
-.emotion-28 *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.emotion-28[data-placement^="top"] {
+.emotion-27[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-28[data-placement^="bottom"] {
+.emotion-27[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-28[data-placement^="left"] {
+.emotion-27[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-28[data-placement^="right"] {
+.emotion-27[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-28[data-x-out-of-boundaries] {
+.emotion-27[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-27 {
+.emotion-26 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -10287,23 +10334,10 @@ exports[`Select demo examples Snapshots: placement 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-26 *,
+.emotion-26 *::before,
+.emotion-26 *::after {
   box-sizing: inherit;
-}
-
-.emotion-26 {
-  margin: 0.5em 0;
-}
-
-.emotion-26:first-child,
-.emotion-26 + .emotion-26 {
-  margin-top: 0;
-}
-
-.emotion-26:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-17 {
@@ -10389,7 +10423,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
   word-break: break-word;
 }
 
-.emotion-39 {
+.emotion-38 {
   height: 175px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10407,7 +10441,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
 
 <Styled(div)>
   <div
-    className="emotion-39"
+    className="emotion-38"
   >
     <Select
       data={
@@ -10468,7 +10502,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
         size="large"
       >
         <WithTheme(Themed(Dropdown))
-          className="emotion-34"
+          className="emotion-33"
           data={
             Array [
               Object {
@@ -10504,7 +10538,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
           size="large"
         >
           <Themed(Dropdown)
-            className="emotion-34"
+            className="emotion-33"
             data={
               Array [
                 Object {
@@ -10542,7 +10576,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
             <ThemeProvider>
               <ThemeProvider>
                 <Dropdown
-                  className="emotion-34"
+                  className="emotion-33"
                   data={
                     Array [
                       Object {
@@ -10578,7 +10612,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                   size="large"
                 >
                   <Popover
-                    className="emotion-34"
+                    className="emotion-33"
                     content={[Function]}
                     focusTriggerOnClose={true}
                     hasArrow={true}
@@ -10601,7 +10635,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                     triggerRef={[Function]}
                   >
                     <Popover
-                      className="emotion-34"
+                      className="emotion-33"
                       content={[Function]}
                       focusTriggerOnClose={true}
                       hasArrow={true}
@@ -10625,12 +10659,12 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                       triggerRef={[Function]}
                     >
                       <Manager
-                        className="emotion-32"
+                        className="emotion-31"
                         id="select-68"
                         tag="span"
                       >
                         <span
-                          className="emotion-32"
+                          className="emotion-31"
                           id="select-68"
                         >
                           <PopoverTrigger
@@ -10953,7 +10987,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                               placement="bottom-start"
                             >
                               <WithTheme(RtlPopper)
-                                className="emotion-28"
+                                className="emotion-27"
                                 id="select-68-content"
                                 modifiers={
                                   Object {
@@ -10967,7 +11001,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                                 placement="bottom-start"
                               >
                                 <RtlPopper
-                                  className="emotion-28"
+                                  className="emotion-27"
                                   id="select-68-content"
                                   modifiers={
                                     Object {
@@ -10981,7 +11015,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                                   placement="bottom-start"
                                 >
                                   <Popper
-                                    className="emotion-28"
+                                    className="emotion-27"
                                     component="div"
                                     eventsEnabled={true}
                                     id="select-68-content"
@@ -10998,7 +11032,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                                     positionFixed={false}
                                   >
                                     <div
-                                      className="emotion-28"
+                                      className="emotion-27"
                                       id="select-68-content"
                                       onBlur={[Function]}
                                       style={
@@ -11038,266 +11072,256 @@ exports[`Select demo examples Snapshots: placement 1`] = `
                                           role="listbox"
                                         >
                                           <div
-                                            className="emotion-27"
+                                            className="emotion-26"
                                             id="select-68-menu"
                                             role="listbox"
                                           >
-                                            <MenuGroup
-                                              key="0"
+                                            <MenuItem
+                                              index={0}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Alpha",
+                                                  "value": "alpha",
+                                                }
+                                              }
+                                              key="alpha"
+                                              render={[Function]}
+                                              text="Alpha"
+                                              value="alpha"
                                             >
-                                              <MenuGroup>
-                                                <div
-                                                  className="emotion-26"
+                                              <MenuItem
+                                                aria-selected={false}
+                                                id="select-68-item-0"
+                                                index={0}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Alpha",
+                                                    "value": "alpha",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="option"
+                                                tabIndex={null}
+                                                text="Alpha"
+                                                value="alpha"
+                                              >
+                                                <MenuItem
+                                                  aria-selected={false}
+                                                  id="select-68-item-0"
+                                                  index={0}
+                                                  isHighlighted={false}
+                                                  item={
+                                                    Object {
+                                                      "text": "Alpha",
+                                                      "value": "alpha",
+                                                    }
+                                                  }
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="option"
+                                                  tabIndex={null}
+                                                  text="Alpha"
+                                                  value="alpha"
                                                 >
-                                                  <MenuItem
-                                                    index={0}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Alpha",
-                                                        "value": "alpha",
-                                                      }
-                                                    }
-                                                    key="alpha"
-                                                    render={[Function]}
-                                                    text="Alpha"
-                                                    value="alpha"
+                                                  <div
+                                                    aria-selected={false}
+                                                    className="emotion-17"
+                                                    id="select-68-item-0"
+                                                    onClick={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    role="option"
+                                                    tabIndex={null}
                                                   >
-                                                    <MenuItem
-                                                      aria-selected={false}
-                                                      id="select-68-item-0"
-                                                      index={0}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Alpha",
-                                                          "value": "alpha",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="option"
-                                                      tabIndex={null}
-                                                      text="Alpha"
-                                                      value="alpha"
-                                                    >
-                                                      <MenuItem
-                                                        aria-selected={false}
-                                                        id="select-68-item-0"
-                                                        index={0}
-                                                        isHighlighted={false}
-                                                        item={
-                                                          Object {
-                                                            "text": "Alpha",
-                                                            "value": "alpha",
-                                                          }
-                                                        }
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="option"
-                                                        tabIndex={null}
-                                                        text="Alpha"
-                                                        value="alpha"
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-16"
                                                       >
-                                                        <div
-                                                          aria-selected={false}
-                                                          className="emotion-17"
-                                                          id="select-68-item-0"
-                                                          onClick={[Function]}
-                                                          onKeyDown={[Function]}
-                                                          role="option"
-                                                          tabIndex={null}
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-16"
-                                                            >
-                                                              <Styled(span)>
-                                                                <span
-                                                                  className="emotion-15"
-                                                                >
-                                                                  <Styled(span)>
-                                                                    <span
-                                                                      className="emotion-14"
-                                                                    >
-                                                                      Alpha
-                                                                    </span>
-                                                                  </Styled(span)>
-                                                                </span>
-                                                              </Styled(span)>
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </div>
-                                                      </MenuItem>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                  <MenuItem
-                                                    index={1}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Beta",
-                                                        "value": "beta",
-                                                      }
+                                                        <Styled(span)>
+                                                          <span
+                                                            className="emotion-15"
+                                                          >
+                                                            <Styled(span)>
+                                                              <span
+                                                                className="emotion-14"
+                                                              >
+                                                                Alpha
+                                                              </span>
+                                                            </Styled(span)>
+                                                          </span>
+                                                        </Styled(span)>
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </div>
+                                                </MenuItem>
+                                              </MenuItem>
+                                            </MenuItem>
+                                            <MenuItem
+                                              index={1}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Beta",
+                                                  "value": "beta",
+                                                }
+                                              }
+                                              key="beta"
+                                              render={[Function]}
+                                              text="Beta"
+                                              value="beta"
+                                            >
+                                              <MenuItem
+                                                aria-selected={false}
+                                                id="select-68-item-1"
+                                                index={1}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Beta",
+                                                    "value": "beta",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="option"
+                                                tabIndex={null}
+                                                text="Beta"
+                                                value="beta"
+                                              >
+                                                <MenuItem
+                                                  aria-selected={false}
+                                                  id="select-68-item-1"
+                                                  index={1}
+                                                  isHighlighted={false}
+                                                  item={
+                                                    Object {
+                                                      "text": "Beta",
+                                                      "value": "beta",
                                                     }
-                                                    key="beta"
-                                                    render={[Function]}
-                                                    text="Beta"
-                                                    value="beta"
+                                                  }
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="option"
+                                                  tabIndex={null}
+                                                  text="Beta"
+                                                  value="beta"
+                                                >
+                                                  <div
+                                                    aria-selected={false}
+                                                    className="emotion-17"
+                                                    id="select-68-item-1"
+                                                    onClick={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    role="option"
+                                                    tabIndex={null}
                                                   >
-                                                    <MenuItem
-                                                      aria-selected={false}
-                                                      id="select-68-item-1"
-                                                      index={1}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Beta",
-                                                          "value": "beta",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="option"
-                                                      tabIndex={null}
-                                                      text="Beta"
-                                                      value="beta"
-                                                    >
-                                                      <MenuItem
-                                                        aria-selected={false}
-                                                        id="select-68-item-1"
-                                                        index={1}
-                                                        isHighlighted={false}
-                                                        item={
-                                                          Object {
-                                                            "text": "Beta",
-                                                            "value": "beta",
-                                                          }
-                                                        }
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="option"
-                                                        tabIndex={null}
-                                                        text="Beta"
-                                                        value="beta"
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-16"
                                                       >
-                                                        <div
-                                                          aria-selected={false}
-                                                          className="emotion-17"
-                                                          id="select-68-item-1"
-                                                          onClick={[Function]}
-                                                          onKeyDown={[Function]}
-                                                          role="option"
-                                                          tabIndex={null}
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-16"
-                                                            >
-                                                              <Styled(span)>
-                                                                <span
-                                                                  className="emotion-15"
-                                                                >
-                                                                  <Styled(span)>
-                                                                    <span
-                                                                      className="emotion-14"
-                                                                    >
-                                                                      Beta
-                                                                    </span>
-                                                                  </Styled(span)>
-                                                                </span>
-                                                              </Styled(span)>
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </div>
-                                                      </MenuItem>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                  <MenuItem
-                                                    index={2}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Gamma",
-                                                        "value": "gamma",
-                                                      }
+                                                        <Styled(span)>
+                                                          <span
+                                                            className="emotion-15"
+                                                          >
+                                                            <Styled(span)>
+                                                              <span
+                                                                className="emotion-14"
+                                                              >
+                                                                Beta
+                                                              </span>
+                                                            </Styled(span)>
+                                                          </span>
+                                                        </Styled(span)>
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </div>
+                                                </MenuItem>
+                                              </MenuItem>
+                                            </MenuItem>
+                                            <MenuItem
+                                              index={2}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Gamma",
+                                                  "value": "gamma",
+                                                }
+                                              }
+                                              key="gamma"
+                                              render={[Function]}
+                                              text="Gamma"
+                                              value="gamma"
+                                            >
+                                              <MenuItem
+                                                aria-selected={false}
+                                                id="select-68-item-2"
+                                                index={2}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Gamma",
+                                                    "value": "gamma",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="option"
+                                                tabIndex={null}
+                                                text="Gamma"
+                                                value="gamma"
+                                              >
+                                                <MenuItem
+                                                  aria-selected={false}
+                                                  id="select-68-item-2"
+                                                  index={2}
+                                                  isHighlighted={false}
+                                                  item={
+                                                    Object {
+                                                      "text": "Gamma",
+                                                      "value": "gamma",
                                                     }
-                                                    key="gamma"
-                                                    render={[Function]}
-                                                    text="Gamma"
-                                                    value="gamma"
+                                                  }
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="option"
+                                                  tabIndex={null}
+                                                  text="Gamma"
+                                                  value="gamma"
+                                                >
+                                                  <div
+                                                    aria-selected={false}
+                                                    className="emotion-17"
+                                                    id="select-68-item-2"
+                                                    onClick={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    role="option"
+                                                    tabIndex={null}
                                                   >
-                                                    <MenuItem
-                                                      aria-selected={false}
-                                                      id="select-68-item-2"
-                                                      index={2}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Gamma",
-                                                          "value": "gamma",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="option"
-                                                      tabIndex={null}
-                                                      text="Gamma"
-                                                      value="gamma"
-                                                    >
-                                                      <MenuItem
-                                                        aria-selected={false}
-                                                        id="select-68-item-2"
-                                                        index={2}
-                                                        isHighlighted={false}
-                                                        item={
-                                                          Object {
-                                                            "text": "Gamma",
-                                                            "value": "gamma",
-                                                          }
-                                                        }
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="option"
-                                                        tabIndex={null}
-                                                        text="Gamma"
-                                                        value="gamma"
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-16"
                                                       >
-                                                        <div
-                                                          aria-selected={false}
-                                                          className="emotion-17"
-                                                          id="select-68-item-2"
-                                                          onClick={[Function]}
-                                                          onKeyDown={[Function]}
-                                                          role="option"
-                                                          tabIndex={null}
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-16"
-                                                            >
-                                                              <Styled(span)>
-                                                                <span
-                                                                  className="emotion-15"
-                                                                >
-                                                                  <Styled(span)>
-                                                                    <span
-                                                                      className="emotion-14"
-                                                                    >
-                                                                      Gamma
-                                                                    </span>
-                                                                  </Styled(span)>
-                                                                </span>
-                                                              </Styled(span)>
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </div>
-                                                      </MenuItem>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                </div>
-                                              </MenuGroup>
-                                            </MenuGroup>
+                                                        <Styled(span)>
+                                                          <span
+                                                            className="emotion-15"
+                                                          >
+                                                            <Styled(span)>
+                                                              <span
+                                                                className="emotion-14"
+                                                              >
+                                                                Gamma
+                                                              </span>
+                                                            </Styled(span)>
+                                                          </span>
+                                                        </Styled(span)>
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </div>
+                                                </MenuItem>
+                                              </MenuItem>
+                                            </MenuItem>
                                           </div>
                                         </Menu>
                                       </Menu>
@@ -15538,20 +15562,20 @@ exports[`Select demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Select demo examples Snapshots: scrolling-container 1`] = `
-.emotion-34 {
+.emotion-33 {
   width: 100%;
 }
 
-.emotion-34 > span {
+.emotion-33 > span {
   width: 100%;
 }
 
-.emotion-32 {
+.emotion-31 {
   display: inline-block;
   width: 100%;
 }
 
-.emotion-32 > span {
+.emotion-31 > span {
   width: 100%;
 }
 
@@ -15764,7 +15788,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   z-index: -1;
 }
 
-.emotion-28 {
+.emotion-27 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -15787,33 +15811,33 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   z-index: 100;
 }
 
-.emotion-28 *,
-.emotion-28 *::before,
-.emotion-28 *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.emotion-28[data-placement^="top"] {
+.emotion-27[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-28[data-placement^="bottom"] {
+.emotion-27[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-28[data-placement^="left"] {
+.emotion-27[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-28[data-placement^="right"] {
+.emotion-27[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-28[data-x-out-of-boundaries] {
+.emotion-27[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-27 {
+.emotion-26 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -15824,23 +15848,10 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-26 *,
+.emotion-26 *::before,
+.emotion-26 *::after {
   box-sizing: inherit;
-}
-
-.emotion-26 {
-  margin: 0.5em 0;
-}
-
-.emotion-26:first-child,
-.emotion-26 + .emotion-26 {
-  margin-top: 0;
-}
-
-.emotion-26:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-17 {
@@ -15926,18 +15937,18 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   word-break: break-word;
 }
 
-.emotion-46 {
+.emotion-45 {
   position: relative;
 }
 
-.emotion-40 {
+.emotion-39 {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.emotion-39 {
+.emotion-38 {
   height: 860px;
   width: 300vw;
   display: -webkit-box;
@@ -15954,13 +15965,13 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   justify-content: center;
 }
 
-.emotion-44 {
+.emotion-43 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.emotion-43 {
+.emotion-42 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -15989,41 +16000,41 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   top: 0;
 }
 
-.emotion-43 *,
-.emotion-43 *::before,
-.emotion-43 *::after {
+.emotion-42 *,
+.emotion-42 *::before,
+.emotion-42 *::after {
   box-sizing: inherit;
 }
 
-.emotion-43:focus {
+.emotion-42:focus {
   border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-43:hover {
+.emotion-42:hover {
   background-color: #f5f7fa;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-43:focus:active,
-.emotion-43:focus:hover {
+.emotion-42:focus:active,
+.emotion-42:focus:hover {
   border-color: #1d5bbf;
 }
 
-.emotion-43:active {
+.emotion-42:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.emotion-43::-moz-focus-inner {
+.emotion-42::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-43 [role="img"] {
+.emotion-42 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -16032,19 +16043,19 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-43 [role="img"]:first-child {
+.emotion-42 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-43 [role="img"]:last-child {
+.emotion-42 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-43 [role="img"]:only-child {
+.emotion-42 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-42 {
+.emotion-41 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -16062,7 +16073,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   width: 100%;
 }
 
-.emotion-41 {
+.emotion-40 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -16079,19 +16090,19 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
 >
   <Styled(div)>
     <div
-      className="emotion-46"
+      className="emotion-45"
     >
       <Styled(div)
         height={360}
       >
         <div
-          className="emotion-40"
+          className="emotion-39"
         >
           <Styled(div)
             scrollAreaHeight={360}
           >
             <div
-              className="emotion-39"
+              className="emotion-38"
             >
               <Select
                 data={
@@ -16178,7 +16189,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                       size="large"
                     >
                       <WithTheme(Themed(Dropdown))
-                        className="emotion-34"
+                        className="emotion-33"
                         data={
                           Array [
                             Object {
@@ -16214,7 +16225,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                         size="large"
                       >
                         <Themed(Dropdown)
-                          className="emotion-34"
+                          className="emotion-33"
                           data={
                             Array [
                               Object {
@@ -16252,7 +16263,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                           <ThemeProvider>
                             <ThemeProvider>
                               <Dropdown
-                                className="emotion-34"
+                                className="emotion-33"
                                 data={
                                   Array [
                                     Object {
@@ -16288,7 +16299,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                 size="large"
                               >
                                 <Popover
-                                  className="emotion-34"
+                                  className="emotion-33"
                                   content={[Function]}
                                   focusTriggerOnClose={true}
                                   hasArrow={true}
@@ -16311,7 +16322,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                   triggerRef={[Function]}
                                 >
                                   <Popover
-                                    className="emotion-34"
+                                    className="emotion-33"
                                     content={[Function]}
                                     focusTriggerOnClose={true}
                                     hasArrow={true}
@@ -16335,12 +16346,12 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                     triggerRef={[Function]}
                                   >
                                     <Manager
-                                      className="emotion-32"
+                                      className="emotion-31"
                                       id="select-76"
                                       tag="span"
                                     >
                                       <span
-                                        className="emotion-32"
+                                        className="emotion-31"
                                         id="select-76"
                                       >
                                         <PopoverTrigger
@@ -16663,7 +16674,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                             placement="bottom-start"
                                           >
                                             <WithTheme(RtlPopper)
-                                              className="emotion-28"
+                                              className="emotion-27"
                                               id="select-76-content"
                                               modifiers={
                                                 Object {
@@ -16677,7 +16688,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                               placement="bottom-start"
                                             >
                                               <RtlPopper
-                                                className="emotion-28"
+                                                className="emotion-27"
                                                 id="select-76-content"
                                                 modifiers={
                                                   Object {
@@ -16691,7 +16702,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                                 placement="bottom-start"
                                               >
                                                 <Popper
-                                                  className="emotion-28"
+                                                  className="emotion-27"
                                                   component="div"
                                                   eventsEnabled={true}
                                                   id="select-76-content"
@@ -16708,7 +16719,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                                   positionFixed={false}
                                                 >
                                                   <div
-                                                    className="emotion-28"
+                                                    className="emotion-27"
                                                     id="select-76-content"
                                                     onBlur={[Function]}
                                                     style={
@@ -16748,266 +16759,256 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
                                                         role="listbox"
                                                       >
                                                         <div
-                                                          className="emotion-27"
+                                                          className="emotion-26"
                                                           id="select-76-menu"
                                                           role="listbox"
                                                         >
-                                                          <MenuGroup
-                                                            key="0"
+                                                          <MenuItem
+                                                            index={0}
+                                                            isHighlighted={false}
+                                                            item={
+                                                              Object {
+                                                                "text": "Alpha",
+                                                                "value": "alpha",
+                                                              }
+                                                            }
+                                                            key="alpha"
+                                                            render={[Function]}
+                                                            text="Alpha"
+                                                            value="alpha"
                                                           >
-                                                            <MenuGroup>
-                                                              <div
-                                                                className="emotion-26"
+                                                            <MenuItem
+                                                              aria-selected={false}
+                                                              id="select-76-item-0"
+                                                              index={0}
+                                                              isHighlighted={false}
+                                                              item={
+                                                                Object {
+                                                                  "text": "Alpha",
+                                                                  "value": "alpha",
+                                                                }
+                                                              }
+                                                              onClick={[Function]}
+                                                              onKeyDown={[Function]}
+                                                              role="option"
+                                                              tabIndex={null}
+                                                              text="Alpha"
+                                                              value="alpha"
+                                                            >
+                                                              <MenuItem
+                                                                aria-selected={false}
+                                                                id="select-76-item-0"
+                                                                index={0}
+                                                                isHighlighted={false}
+                                                                item={
+                                                                  Object {
+                                                                    "text": "Alpha",
+                                                                    "value": "alpha",
+                                                                  }
+                                                                }
+                                                                onClick={[Function]}
+                                                                onKeyDown={[Function]}
+                                                                role="option"
+                                                                tabIndex={null}
+                                                                text="Alpha"
+                                                                value="alpha"
                                                               >
-                                                                <MenuItem
-                                                                  index={0}
-                                                                  isHighlighted={false}
-                                                                  item={
-                                                                    Object {
-                                                                      "text": "Alpha",
-                                                                      "value": "alpha",
-                                                                    }
-                                                                  }
-                                                                  key="alpha"
-                                                                  render={[Function]}
-                                                                  text="Alpha"
-                                                                  value="alpha"
+                                                                <div
+                                                                  aria-selected={false}
+                                                                  className="emotion-17"
+                                                                  id="select-76-item-0"
+                                                                  onClick={[Function]}
+                                                                  onKeyDown={[Function]}
+                                                                  role="option"
+                                                                  tabIndex={null}
                                                                 >
-                                                                  <MenuItem
-                                                                    aria-selected={false}
-                                                                    id="select-76-item-0"
-                                                                    index={0}
-                                                                    isHighlighted={false}
-                                                                    item={
-                                                                      Object {
-                                                                        "text": "Alpha",
-                                                                        "value": "alpha",
-                                                                      }
-                                                                    }
-                                                                    onClick={[Function]}
-                                                                    onKeyDown={[Function]}
-                                                                    role="option"
-                                                                    tabIndex={null}
-                                                                    text="Alpha"
-                                                                    value="alpha"
-                                                                  >
-                                                                    <MenuItem
-                                                                      aria-selected={false}
-                                                                      id="select-76-item-0"
-                                                                      index={0}
-                                                                      isHighlighted={false}
-                                                                      item={
-                                                                        Object {
-                                                                          "text": "Alpha",
-                                                                          "value": "alpha",
-                                                                        }
-                                                                      }
-                                                                      onClick={[Function]}
-                                                                      onKeyDown={[Function]}
-                                                                      role="option"
-                                                                      tabIndex={null}
-                                                                      text="Alpha"
-                                                                      value="alpha"
+                                                                  <Styled(span)>
+                                                                    <span
+                                                                      className="emotion-16"
                                                                     >
-                                                                      <div
-                                                                        aria-selected={false}
-                                                                        className="emotion-17"
-                                                                        id="select-76-item-0"
-                                                                        onClick={[Function]}
-                                                                        onKeyDown={[Function]}
-                                                                        role="option"
-                                                                        tabIndex={null}
-                                                                      >
-                                                                        <Styled(span)>
-                                                                          <span
-                                                                            className="emotion-16"
-                                                                          >
-                                                                            <Styled(span)>
-                                                                              <span
-                                                                                className="emotion-15"
-                                                                              >
-                                                                                <Styled(span)>
-                                                                                  <span
-                                                                                    className="emotion-14"
-                                                                                  >
-                                                                                    Alpha
-                                                                                  </span>
-                                                                                </Styled(span)>
-                                                                              </span>
-                                                                            </Styled(span)>
-                                                                          </span>
-                                                                        </Styled(span)>
-                                                                      </div>
-                                                                    </MenuItem>
-                                                                  </MenuItem>
-                                                                </MenuItem>
-                                                                <MenuItem
-                                                                  index={1}
-                                                                  isHighlighted={false}
-                                                                  item={
-                                                                    Object {
-                                                                      "text": "Beta",
-                                                                      "value": "beta",
-                                                                    }
+                                                                      <Styled(span)>
+                                                                        <span
+                                                                          className="emotion-15"
+                                                                        >
+                                                                          <Styled(span)>
+                                                                            <span
+                                                                              className="emotion-14"
+                                                                            >
+                                                                              Alpha
+                                                                            </span>
+                                                                          </Styled(span)>
+                                                                        </span>
+                                                                      </Styled(span)>
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </div>
+                                                              </MenuItem>
+                                                            </MenuItem>
+                                                          </MenuItem>
+                                                          <MenuItem
+                                                            index={1}
+                                                            isHighlighted={false}
+                                                            item={
+                                                              Object {
+                                                                "text": "Beta",
+                                                                "value": "beta",
+                                                              }
+                                                            }
+                                                            key="beta"
+                                                            render={[Function]}
+                                                            text="Beta"
+                                                            value="beta"
+                                                          >
+                                                            <MenuItem
+                                                              aria-selected={false}
+                                                              id="select-76-item-1"
+                                                              index={1}
+                                                              isHighlighted={false}
+                                                              item={
+                                                                Object {
+                                                                  "text": "Beta",
+                                                                  "value": "beta",
+                                                                }
+                                                              }
+                                                              onClick={[Function]}
+                                                              onKeyDown={[Function]}
+                                                              role="option"
+                                                              tabIndex={null}
+                                                              text="Beta"
+                                                              value="beta"
+                                                            >
+                                                              <MenuItem
+                                                                aria-selected={false}
+                                                                id="select-76-item-1"
+                                                                index={1}
+                                                                isHighlighted={false}
+                                                                item={
+                                                                  Object {
+                                                                    "text": "Beta",
+                                                                    "value": "beta",
                                                                   }
-                                                                  key="beta"
-                                                                  render={[Function]}
-                                                                  text="Beta"
-                                                                  value="beta"
+                                                                }
+                                                                onClick={[Function]}
+                                                                onKeyDown={[Function]}
+                                                                role="option"
+                                                                tabIndex={null}
+                                                                text="Beta"
+                                                                value="beta"
+                                                              >
+                                                                <div
+                                                                  aria-selected={false}
+                                                                  className="emotion-17"
+                                                                  id="select-76-item-1"
+                                                                  onClick={[Function]}
+                                                                  onKeyDown={[Function]}
+                                                                  role="option"
+                                                                  tabIndex={null}
                                                                 >
-                                                                  <MenuItem
-                                                                    aria-selected={false}
-                                                                    id="select-76-item-1"
-                                                                    index={1}
-                                                                    isHighlighted={false}
-                                                                    item={
-                                                                      Object {
-                                                                        "text": "Beta",
-                                                                        "value": "beta",
-                                                                      }
-                                                                    }
-                                                                    onClick={[Function]}
-                                                                    onKeyDown={[Function]}
-                                                                    role="option"
-                                                                    tabIndex={null}
-                                                                    text="Beta"
-                                                                    value="beta"
-                                                                  >
-                                                                    <MenuItem
-                                                                      aria-selected={false}
-                                                                      id="select-76-item-1"
-                                                                      index={1}
-                                                                      isHighlighted={false}
-                                                                      item={
-                                                                        Object {
-                                                                          "text": "Beta",
-                                                                          "value": "beta",
-                                                                        }
-                                                                      }
-                                                                      onClick={[Function]}
-                                                                      onKeyDown={[Function]}
-                                                                      role="option"
-                                                                      tabIndex={null}
-                                                                      text="Beta"
-                                                                      value="beta"
+                                                                  <Styled(span)>
+                                                                    <span
+                                                                      className="emotion-16"
                                                                     >
-                                                                      <div
-                                                                        aria-selected={false}
-                                                                        className="emotion-17"
-                                                                        id="select-76-item-1"
-                                                                        onClick={[Function]}
-                                                                        onKeyDown={[Function]}
-                                                                        role="option"
-                                                                        tabIndex={null}
-                                                                      >
-                                                                        <Styled(span)>
-                                                                          <span
-                                                                            className="emotion-16"
-                                                                          >
-                                                                            <Styled(span)>
-                                                                              <span
-                                                                                className="emotion-15"
-                                                                              >
-                                                                                <Styled(span)>
-                                                                                  <span
-                                                                                    className="emotion-14"
-                                                                                  >
-                                                                                    Beta
-                                                                                  </span>
-                                                                                </Styled(span)>
-                                                                              </span>
-                                                                            </Styled(span)>
-                                                                          </span>
-                                                                        </Styled(span)>
-                                                                      </div>
-                                                                    </MenuItem>
-                                                                  </MenuItem>
-                                                                </MenuItem>
-                                                                <MenuItem
-                                                                  index={2}
-                                                                  isHighlighted={false}
-                                                                  item={
-                                                                    Object {
-                                                                      "text": "Gamma",
-                                                                      "value": "gamma",
-                                                                    }
+                                                                      <Styled(span)>
+                                                                        <span
+                                                                          className="emotion-15"
+                                                                        >
+                                                                          <Styled(span)>
+                                                                            <span
+                                                                              className="emotion-14"
+                                                                            >
+                                                                              Beta
+                                                                            </span>
+                                                                          </Styled(span)>
+                                                                        </span>
+                                                                      </Styled(span)>
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </div>
+                                                              </MenuItem>
+                                                            </MenuItem>
+                                                          </MenuItem>
+                                                          <MenuItem
+                                                            index={2}
+                                                            isHighlighted={false}
+                                                            item={
+                                                              Object {
+                                                                "text": "Gamma",
+                                                                "value": "gamma",
+                                                              }
+                                                            }
+                                                            key="gamma"
+                                                            render={[Function]}
+                                                            text="Gamma"
+                                                            value="gamma"
+                                                          >
+                                                            <MenuItem
+                                                              aria-selected={false}
+                                                              id="select-76-item-2"
+                                                              index={2}
+                                                              isHighlighted={false}
+                                                              item={
+                                                                Object {
+                                                                  "text": "Gamma",
+                                                                  "value": "gamma",
+                                                                }
+                                                              }
+                                                              onClick={[Function]}
+                                                              onKeyDown={[Function]}
+                                                              role="option"
+                                                              tabIndex={null}
+                                                              text="Gamma"
+                                                              value="gamma"
+                                                            >
+                                                              <MenuItem
+                                                                aria-selected={false}
+                                                                id="select-76-item-2"
+                                                                index={2}
+                                                                isHighlighted={false}
+                                                                item={
+                                                                  Object {
+                                                                    "text": "Gamma",
+                                                                    "value": "gamma",
                                                                   }
-                                                                  key="gamma"
-                                                                  render={[Function]}
-                                                                  text="Gamma"
-                                                                  value="gamma"
+                                                                }
+                                                                onClick={[Function]}
+                                                                onKeyDown={[Function]}
+                                                                role="option"
+                                                                tabIndex={null}
+                                                                text="Gamma"
+                                                                value="gamma"
+                                                              >
+                                                                <div
+                                                                  aria-selected={false}
+                                                                  className="emotion-17"
+                                                                  id="select-76-item-2"
+                                                                  onClick={[Function]}
+                                                                  onKeyDown={[Function]}
+                                                                  role="option"
+                                                                  tabIndex={null}
                                                                 >
-                                                                  <MenuItem
-                                                                    aria-selected={false}
-                                                                    id="select-76-item-2"
-                                                                    index={2}
-                                                                    isHighlighted={false}
-                                                                    item={
-                                                                      Object {
-                                                                        "text": "Gamma",
-                                                                        "value": "gamma",
-                                                                      }
-                                                                    }
-                                                                    onClick={[Function]}
-                                                                    onKeyDown={[Function]}
-                                                                    role="option"
-                                                                    tabIndex={null}
-                                                                    text="Gamma"
-                                                                    value="gamma"
-                                                                  >
-                                                                    <MenuItem
-                                                                      aria-selected={false}
-                                                                      id="select-76-item-2"
-                                                                      index={2}
-                                                                      isHighlighted={false}
-                                                                      item={
-                                                                        Object {
-                                                                          "text": "Gamma",
-                                                                          "value": "gamma",
-                                                                        }
-                                                                      }
-                                                                      onClick={[Function]}
-                                                                      onKeyDown={[Function]}
-                                                                      role="option"
-                                                                      tabIndex={null}
-                                                                      text="Gamma"
-                                                                      value="gamma"
+                                                                  <Styled(span)>
+                                                                    <span
+                                                                      className="emotion-16"
                                                                     >
-                                                                      <div
-                                                                        aria-selected={false}
-                                                                        className="emotion-17"
-                                                                        id="select-76-item-2"
-                                                                        onClick={[Function]}
-                                                                        onKeyDown={[Function]}
-                                                                        role="option"
-                                                                        tabIndex={null}
-                                                                      >
-                                                                        <Styled(span)>
-                                                                          <span
-                                                                            className="emotion-16"
-                                                                          >
-                                                                            <Styled(span)>
-                                                                              <span
-                                                                                className="emotion-15"
-                                                                              >
-                                                                                <Styled(span)>
-                                                                                  <span
-                                                                                    className="emotion-14"
-                                                                                  >
-                                                                                    Gamma
-                                                                                  </span>
-                                                                                </Styled(span)>
-                                                                              </span>
-                                                                            </Styled(span)>
-                                                                          </span>
-                                                                        </Styled(span)>
-                                                                      </div>
-                                                                    </MenuItem>
-                                                                  </MenuItem>
-                                                                </MenuItem>
-                                                              </div>
-                                                            </MenuGroup>
-                                                          </MenuGroup>
+                                                                      <Styled(span)>
+                                                                        <span
+                                                                          className="emotion-15"
+                                                                        >
+                                                                          <Styled(span)>
+                                                                            <span
+                                                                              className="emotion-14"
+                                                                            >
+                                                                              Gamma
+                                                                            </span>
+                                                                          </Styled(span)>
+                                                                        </span>
+                                                                      </Styled(span)>
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </div>
+                                                              </MenuItem>
+                                                            </MenuItem>
+                                                          </MenuItem>
                                                         </div>
                                                       </Menu>
                                                     </Menu>
@@ -17060,7 +17061,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
         type="button"
       >
         <Button
-          className="emotion-44"
+          className="emotion-43"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -17068,7 +17069,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
           type="button"
         >
           <Button
-            className="emotion-44"
+            className="emotion-43"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -17077,19 +17078,19 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
             type="button"
           >
             <button
-              className="emotion-43"
+              className="emotion-42"
               onClick={[Function]}
               type="button"
             >
               <Styled(span)>
                 <span
-                  className="emotion-42"
+                  className="emotion-41"
                 >
                   <Styled(span)
                     size="small"
                   >
                     <span
-                      className="emotion-41"
+                      className="emotion-40"
                     >
                       Re-center
                     </span>

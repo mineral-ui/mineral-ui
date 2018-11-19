@@ -134,20 +134,16 @@ exports[`Dropdown demo examples Snapshots: basic 1`] = `
   data={
     Array [
       Object {
-        "items": Array [
-          Object {
-            "text": "Light years",
-          },
-          Object {
-            "text": "Star stuff",
-          },
-          Object {
-            "text": "Encyclopaedia galactica",
-          },
-          Object {
-            "text": "Cosmic ocean",
-          },
-        ],
+        "text": "Light years",
+      },
+      Object {
+        "text": "Star stuff",
+      },
+      Object {
+        "text": "Encyclopaedia galactica",
+      },
+      Object {
+        "text": "Cosmic ocean",
       },
     ]
   }
@@ -436,20 +432,16 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
         data={
           Array [
             Object {
-              "items": Array [
-                Object {
-                  "text": "Light years",
-                },
-                Object {
-                  "text": "Star stuff",
-                },
-                Object {
-                  "text": "Encyclopaedia galactica",
-                },
-                Object {
-                  "text": "Cosmic ocean",
-                },
-              ],
+              "text": "Light years",
+            },
+            Object {
+              "text": "Star stuff",
+            },
+            Object {
+              "text": "Encyclopaedia galactica",
+            },
+            Object {
+              "text": "Cosmic ocean",
             },
           ]
         }
@@ -1047,20 +1039,16 @@ exports[`Dropdown demo examples Snapshots: custom-menu 1`] = `
     data={
       Array [
         Object {
-          "items": Array [
-            Object {
-              "text": "Light years",
-            },
-            Object {
-              "text": "Star stuff",
-            },
-            Object {
-              "text": "Encyclopaedia galactica",
-            },
-            Object {
-              "text": "Cosmic ocean",
-            },
-          ],
+          "text": "Light years",
+        },
+        Object {
+          "text": "Star stuff",
+        },
+        Object {
+          "text": "Encyclopaedia galactica",
+        },
+        Object {
+          "text": "Cosmic ocean",
         },
       ]
     }
@@ -1208,20 +1196,16 @@ exports[`Dropdown demo examples Snapshots: custom-trigger 1`] = `
     data={
       Array [
         Object {
-          "items": Array [
-            Object {
-              "text": "Light years",
-            },
-            Object {
-              "text": "Star stuff",
-            },
-            Object {
-              "text": "Encyclopaedia galactica",
-            },
-            Object {
-              "text": "Cosmic ocean",
-            },
-          ],
+          "text": "Light years",
+        },
+        Object {
+          "text": "Star stuff",
+        },
+        Object {
+          "text": "Encyclopaedia galactica",
+        },
+        Object {
+          "text": "Cosmic ocean",
         },
       ]
     }
@@ -1468,13 +1452,25 @@ exports[`Dropdown demo examples Snapshots: data 1`] = `
           "divider": true,
         },
         Object {
-          "text": "Danger variant",
-          "variant": "danger",
-        },
-        Object {
           "disabled": true,
           "onClick": [Function],
           "text": "Disabled menu item",
+        },
+        Object {
+          "group": true,
+          "title": "Group Title",
+        },
+        Object {
+          "text": "Success variant",
+          "variant": "success",
+        },
+        Object {
+          "text": "Warning variant",
+          "variant": "warning",
+        },
+        Object {
+          "text": "Danger variant",
+          "variant": "danger",
         },
       ]
     }
@@ -1740,20 +1736,16 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
   data={
     Array [
       Object {
-        "items": Array [
-          Object {
-            "text": "Light years",
-          },
-          Object {
-            "text": "Star stuff",
-          },
-          Object {
-            "text": "Encyclopaedia galactica",
-          },
-          Object {
-            "text": "Cosmic ocean",
-          },
-        ],
+        "text": "Light years",
+      },
+      Object {
+        "text": "Star stuff",
+      },
+      Object {
+        "text": "Encyclopaedia galactica",
+      },
+      Object {
+        "text": "Cosmic ocean",
       },
     ]
   }
@@ -2031,20 +2023,16 @@ exports[`Dropdown demo examples Snapshots: on-open-close 1`] = `
     data={
       Array [
         Object {
-          "items": Array [
-            Object {
-              "text": "Light years",
-            },
-            Object {
-              "text": "Star stuff",
-            },
-            Object {
-              "text": "Encyclopaedia galactica",
-            },
-            Object {
-              "text": "Cosmic ocean",
-            },
-          ],
+          "text": "Light years",
+        },
+        Object {
+          "text": "Star stuff",
+        },
+        Object {
+          "text": "Encyclopaedia galactica",
+        },
+        Object {
+          "text": "Cosmic ocean",
         },
       ]
     }
@@ -2327,20 +2315,16 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
       data={
         Array [
           Object {
-            "items": Array [
-              Object {
-                "text": "Light years",
-              },
-              Object {
-                "text": "Star stuff",
-              },
-              Object {
-                "text": "Encyclopaedia galactica",
-              },
-              Object {
-                "text": "Cosmic ocean",
-              },
-            ],
+            "text": "Light years",
+          },
+          Object {
+            "text": "Star stuff",
+          },
+          Object {
+            "text": "Encyclopaedia galactica",
+          },
+          Object {
+            "text": "Cosmic ocean",
           },
         ]
       }
@@ -2479,7 +2463,7 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: placement 1`] = `
-.emotion-27 {
+.emotion-26 {
   display: inline-block;
 }
 
@@ -2487,7 +2471,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   display: inline-block;
 }
 
-.emotion-23 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2510,33 +2494,33 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   z-index: 100;
 }
 
-.emotion-23 *,
-.emotion-23 *::before,
-.emotion-23 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-23[data-placement^="top"] {
+.emotion-22[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-23[data-placement^="bottom"] {
+.emotion-22[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-23[data-placement^="left"] {
+.emotion-22[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-23[data-placement^="right"] {
+.emotion-22[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-23[data-x-out-of-boundaries] {
+.emotion-22[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-22 {
+.emotion-21 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2547,23 +2531,10 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-22 *,
-.emotion-22 *::before,
-.emotion-22 *::after {
+.emotion-21 *,
+.emotion-21 *::before,
+.emotion-21 *::after {
   box-sizing: inherit;
-}
-
-.emotion-21 {
-  margin: 0.5em 0;
-}
-
-.emotion-21:first-child,
-.emotion-21 + .emotion-21 {
-  margin-top: 0;
-}
-
-.emotion-21:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-8 {
@@ -2770,7 +2741,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-29 {
+.emotion-28 {
   height: 400px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2788,26 +2759,22 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
 
 <Styled(div)>
   <div
-    className="emotion-29"
+    className="emotion-28"
   >
     <Dropdown
       data={
         Array [
           Object {
-            "items": Array [
-              Object {
-                "text": "Light years",
-              },
-              Object {
-                "text": "Star stuff",
-              },
-              Object {
-                "text": "Encyclopaedia galactica",
-              },
-              Object {
-                "text": "Cosmic ocean",
-              },
-            ],
+            "text": "Light years",
+          },
+          Object {
+            "text": "Star stuff",
+          },
+          Object {
+            "text": "Encyclopaedia galactica",
+          },
+          Object {
+            "text": "Cosmic ocean",
           },
         ]
       }
@@ -2841,12 +2808,12 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
           triggerRef={[Function]}
         >
           <Manager
-            className="emotion-27"
+            className="emotion-26"
             id="dropdown-7"
             tag="span"
           >
             <span
-              className="emotion-27"
+              className="emotion-26"
               id="dropdown-7"
             >
               <PopoverTrigger
@@ -2954,19 +2921,19 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                   placement="bottom-start"
                 >
                   <WithTheme(RtlPopper)
-                    className="emotion-23"
+                    className="emotion-22"
                     id="dropdown-7-content"
                     onBlur={[Function]}
                     placement="bottom-start"
                   >
                     <RtlPopper
-                      className="emotion-23"
+                      className="emotion-22"
                       id="dropdown-7-content"
                       onBlur={[Function]}
                       placement="bottom-start"
                     >
                       <Popper
-                        className="emotion-23"
+                        className="emotion-22"
                         component="div"
                         eventsEnabled={true}
                         id="dropdown-7-content"
@@ -2976,7 +2943,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                         positionFixed={false}
                       >
                         <div
-                          className="emotion-23"
+                          className="emotion-22"
                           id="dropdown-7-content"
                           onBlur={[Function]}
                           style={
@@ -2991,20 +2958,16 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                             data={
                               Array [
                                 Object {
-                                  "items": Array [
-                                    Object {
-                                      "text": "Light years",
-                                    },
-                                    Object {
-                                      "text": "Star stuff",
-                                    },
-                                    Object {
-                                      "text": "Encyclopaedia galactica",
-                                    },
-                                    Object {
-                                      "text": "Cosmic ocean",
-                                    },
-                                  ],
+                                  "text": "Light years",
+                                },
+                                Object {
+                                  "text": "Star stuff",
+                                },
+                                Object {
+                                  "text": "Encyclopaedia galactica",
+                                },
+                                Object {
+                                  "text": "Cosmic ocean",
                                 },
                               ]
                             }
@@ -3020,312 +2983,302 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                               role="menu"
                             >
                               <div
-                                className="emotion-22"
+                                className="emotion-21"
                                 id="dropdown-7-menu"
                                 role="menu"
                               >
-                                <MenuGroup
-                                  key="0"
+                                <MenuItem
+                                  index={0}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Light years",
+                                    }
+                                  }
+                                  key="Light years"
+                                  render={[Function]}
+                                  text="Light years"
                                 >
-                                  <MenuGroup>
-                                    <div
-                                      className="emotion-21"
+                                  <MenuItem
+                                    id="dropdown-7-item-0"
+                                    index={0}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Light years",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Light years"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-7-item-0"
+                                      index={0}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Light years",
+                                        }
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Light years"
                                     >
-                                      <MenuItem
-                                        index={0}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Light years",
-                                          }
-                                        }
-                                        key="Light years"
-                                        render={[Function]}
-                                        text="Light years"
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-7-item-0"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-7-item-0"
-                                          index={0}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Light years",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Light years"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-7-item-0"
-                                            index={0}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Light years",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Light years"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-7-item-0"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Light years
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                      <MenuItem
-                                        index={1}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Star stuff",
-                                          }
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Light years
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
+                                <MenuItem
+                                  index={1}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Star stuff",
+                                    }
+                                  }
+                                  key="Star stuff"
+                                  render={[Function]}
+                                  text="Star stuff"
+                                >
+                                  <MenuItem
+                                    id="dropdown-7-item-1"
+                                    index={1}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Star stuff",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Star stuff"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-7-item-1"
+                                      index={1}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Star stuff",
                                         }
-                                        key="Star stuff"
-                                        render={[Function]}
-                                        text="Star stuff"
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Star stuff"
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-7-item-1"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-7-item-1"
-                                          index={1}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Star stuff",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Star stuff"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-7-item-1"
-                                            index={1}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Star stuff",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Star stuff"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-7-item-1"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Star stuff
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                      <MenuItem
-                                        index={2}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Encyclopaedia galactica",
-                                          }
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Star stuff
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
+                                <MenuItem
+                                  index={2}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Encyclopaedia galactica",
+                                    }
+                                  }
+                                  key="Encyclopaedia galactica"
+                                  render={[Function]}
+                                  text="Encyclopaedia galactica"
+                                >
+                                  <MenuItem
+                                    id="dropdown-7-item-2"
+                                    index={2}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Encyclopaedia galactica",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Encyclopaedia galactica"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-7-item-2"
+                                      index={2}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Encyclopaedia galactica",
                                         }
-                                        key="Encyclopaedia galactica"
-                                        render={[Function]}
-                                        text="Encyclopaedia galactica"
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Encyclopaedia galactica"
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-7-item-2"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-7-item-2"
-                                          index={2}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Encyclopaedia galactica",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Encyclopaedia galactica"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-7-item-2"
-                                            index={2}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Encyclopaedia galactica",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Encyclopaedia galactica"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-7-item-2"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Encyclopaedia galactica
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                      <MenuItem
-                                        index={3}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Cosmic ocean",
-                                          }
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Encyclopaedia galactica
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
+                                <MenuItem
+                                  index={3}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Cosmic ocean",
+                                    }
+                                  }
+                                  key="Cosmic ocean"
+                                  render={[Function]}
+                                  text="Cosmic ocean"
+                                >
+                                  <MenuItem
+                                    id="dropdown-7-item-3"
+                                    index={3}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Cosmic ocean",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Cosmic ocean"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-7-item-3"
+                                      index={3}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Cosmic ocean",
                                         }
-                                        key="Cosmic ocean"
-                                        render={[Function]}
-                                        text="Cosmic ocean"
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Cosmic ocean"
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-7-item-3"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-7-item-3"
-                                          index={3}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Cosmic ocean",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Cosmic ocean"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-7-item-3"
-                                            index={3}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Cosmic ocean",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Cosmic ocean"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-7-item-3"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Cosmic ocean
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                    </div>
-                                  </MenuGroup>
-                                </MenuGroup>
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Cosmic ocean
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
                               </div>
                             </Menu>
                           </Menu>
@@ -3645,20 +3598,16 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
                 data={
                   Array [
                     Object {
-                      "items": Array [
-                        Object {
-                          "text": "Light years",
-                        },
-                        Object {
-                          "text": "Star stuff",
-                        },
-                        Object {
-                          "text": "Encyclopaedia galactica",
-                        },
-                        Object {
-                          "text": "Cosmic ocean",
-                        },
-                      ],
+                      "text": "Light years",
+                    },
+                    Object {
+                      "text": "Star stuff",
+                    },
+                    Object {
+                      "text": "Encyclopaedia galactica",
+                    },
+                    Object {
+                      "text": "Cosmic ocean",
                     },
                   ]
                 }
@@ -3898,7 +3847,7 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: rtl 1`] = `
-.emotion-27 {
+.emotion-26 {
   display: inline-block;
 }
 
@@ -3906,7 +3855,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   display: inline-block;
 }
 
-.emotion-23 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3929,33 +3878,33 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   z-index: 100;
 }
 
-.emotion-23 *,
-.emotion-23 *::before,
-.emotion-23 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-23[data-placement^="top"] {
+.emotion-22[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-23[data-placement^="bottom"] {
+.emotion-22[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-23[data-placement^="left"] {
+.emotion-22[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-23[data-placement^="right"] {
+.emotion-22[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-23[data-x-out-of-boundaries] {
+.emotion-22[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-22 {
+.emotion-21 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3966,23 +3915,10 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-22 *,
-.emotion-22 *::before,
-.emotion-22 *::after {
+.emotion-21 *,
+.emotion-21 *::before,
+.emotion-21 *::after {
   box-sizing: inherit;
-}
-
-.emotion-21 {
-  margin: 0.5em 0;
-}
-
-.emotion-21:first-child,
-.emotion-21 + .emotion-21 {
-  margin-top: 0;
-}
-
-.emotion-21:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-7 {
@@ -4034,7 +3970,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   width: 100%;
 }
 
-.emotion-29 {
+.emotion-28 {
   padding-bottom: 8.125em;
 }
 
@@ -4197,7 +4133,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   dir="rtl"
 >
   <div
-    className="emotion-29"
+    className="emotion-28"
     dir="rtl"
   >
     <ThemeProvider>
@@ -4206,20 +4142,16 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
           data={
             Array [
               Object {
-                "items": Array [
-                  Object {
-                    "text": "Light years",
-                  },
-                  Object {
-                    "text": "Star stuff",
-                  },
-                  Object {
-                    "text": "Encyclopaedia galactica",
-                  },
-                  Object {
-                    "text": "Cosmic ocean",
-                  },
-                ],
+                "text": "Light years",
+              },
+              Object {
+                "text": "Star stuff",
+              },
+              Object {
+                "text": "Encyclopaedia galactica",
+              },
+              Object {
+                "text": "Cosmic ocean",
               },
             ]
           }
@@ -4253,12 +4185,12 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
               triggerRef={[Function]}
             >
               <Manager
-                className="emotion-27"
+                className="emotion-26"
                 id="dropdown-21"
                 tag="span"
               >
                 <span
-                  className="emotion-27"
+                  className="emotion-26"
                   id="dropdown-21"
                 >
                   <PopoverTrigger
@@ -4366,19 +4298,19 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                       placement="bottom-start"
                     >
                       <WithTheme(RtlPopper)
-                        className="emotion-23"
+                        className="emotion-22"
                         id="dropdown-21-content"
                         onBlur={[Function]}
                         placement="bottom-start"
                       >
                         <RtlPopper
-                          className="emotion-23"
+                          className="emotion-22"
                           id="dropdown-21-content"
                           onBlur={[Function]}
                           placement="bottom-start"
                         >
                           <Popper
-                            className="emotion-23"
+                            className="emotion-22"
                             component="div"
                             eventsEnabled={true}
                             id="dropdown-21-content"
@@ -4388,7 +4320,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                             positionFixed={false}
                           >
                             <div
-                              className="emotion-23"
+                              className="emotion-22"
                               id="dropdown-21-content"
                               onBlur={[Function]}
                               style={
@@ -4403,20 +4335,16 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                 data={
                                   Array [
                                     Object {
-                                      "items": Array [
-                                        Object {
-                                          "text": "Light years",
-                                        },
-                                        Object {
-                                          "text": "Star stuff",
-                                        },
-                                        Object {
-                                          "text": "Encyclopaedia galactica",
-                                        },
-                                        Object {
-                                          "text": "Cosmic ocean",
-                                        },
-                                      ],
+                                      "text": "Light years",
+                                    },
+                                    Object {
+                                      "text": "Star stuff",
+                                    },
+                                    Object {
+                                      "text": "Encyclopaedia galactica",
+                                    },
+                                    Object {
+                                      "text": "Cosmic ocean",
                                     },
                                   ]
                                 }
@@ -4432,312 +4360,302 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                   role="menu"
                                 >
                                   <div
-                                    className="emotion-22"
+                                    className="emotion-21"
                                     id="dropdown-21-menu"
                                     role="menu"
                                   >
-                                    <MenuGroup
-                                      key="0"
+                                    <MenuItem
+                                      index={0}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Light years",
+                                        }
+                                      }
+                                      key="Light years"
+                                      render={[Function]}
+                                      text="Light years"
                                     >
-                                      <MenuGroup>
-                                        <div
-                                          className="emotion-21"
+                                      <MenuItem
+                                        id="dropdown-21-item-0"
+                                        index={0}
+                                        isHighlighted={false}
+                                        item={
+                                          Object {
+                                            "text": "Light years",
+                                          }
+                                        }
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
+                                        text="Light years"
+                                      >
+                                        <MenuItem
+                                          id="dropdown-21-item-0"
+                                          index={0}
+                                          isHighlighted={false}
+                                          item={
+                                            Object {
+                                              "text": "Light years",
+                                            }
+                                          }
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          role="menuitem"
+                                          tabIndex={null}
+                                          text="Light years"
                                         >
-                                          <MenuItem
-                                            index={0}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Light years",
-                                              }
-                                            }
-                                            key="Light years"
-                                            render={[Function]}
-                                            text="Light years"
+                                          <div
+                                            className="emotion-8"
+                                            id="dropdown-21-item-0"
+                                            onClick={[Function]}
+                                            onKeyDown={[Function]}
+                                            role="menuitem"
+                                            tabIndex={null}
                                           >
-                                            <MenuItem
-                                              id="dropdown-21-item-0"
-                                              index={0}
-                                              isHighlighted={false}
-                                              item={
-                                                Object {
-                                                  "text": "Light years",
-                                                }
-                                              }
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                              text="Light years"
-                                            >
-                                              <MenuItem
-                                                id="dropdown-21-item-0"
-                                                index={0}
-                                                isHighlighted={false}
-                                                item={
-                                                  Object {
-                                                    "text": "Light years",
-                                                  }
-                                                }
-                                                onClick={[Function]}
-                                                onKeyDown={[Function]}
-                                                role="menuitem"
-                                                tabIndex={null}
-                                                text="Light years"
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-7"
                                               >
-                                                <div
-                                                  className="emotion-8"
-                                                  id="dropdown-21-item-0"
-                                                  onClick={[Function]}
-                                                  onKeyDown={[Function]}
-                                                  role="menuitem"
-                                                  tabIndex={null}
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-7"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-5"
-                                                            >
-                                                              Light years
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </div>
-                                              </MenuItem>
-                                            </MenuItem>
-                                          </MenuItem>
-                                          <MenuItem
-                                            index={1}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Star stuff",
-                                              }
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-6"
+                                                  >
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-5"
+                                                      >
+                                                        Light years
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </div>
+                                        </MenuItem>
+                                      </MenuItem>
+                                    </MenuItem>
+                                    <MenuItem
+                                      index={1}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Star stuff",
+                                        }
+                                      }
+                                      key="Star stuff"
+                                      render={[Function]}
+                                      text="Star stuff"
+                                    >
+                                      <MenuItem
+                                        id="dropdown-21-item-1"
+                                        index={1}
+                                        isHighlighted={false}
+                                        item={
+                                          Object {
+                                            "text": "Star stuff",
+                                          }
+                                        }
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
+                                        text="Star stuff"
+                                      >
+                                        <MenuItem
+                                          id="dropdown-21-item-1"
+                                          index={1}
+                                          isHighlighted={false}
+                                          item={
+                                            Object {
+                                              "text": "Star stuff",
                                             }
-                                            key="Star stuff"
-                                            render={[Function]}
-                                            text="Star stuff"
+                                          }
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          role="menuitem"
+                                          tabIndex={null}
+                                          text="Star stuff"
+                                        >
+                                          <div
+                                            className="emotion-8"
+                                            id="dropdown-21-item-1"
+                                            onClick={[Function]}
+                                            onKeyDown={[Function]}
+                                            role="menuitem"
+                                            tabIndex={null}
                                           >
-                                            <MenuItem
-                                              id="dropdown-21-item-1"
-                                              index={1}
-                                              isHighlighted={false}
-                                              item={
-                                                Object {
-                                                  "text": "Star stuff",
-                                                }
-                                              }
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                              text="Star stuff"
-                                            >
-                                              <MenuItem
-                                                id="dropdown-21-item-1"
-                                                index={1}
-                                                isHighlighted={false}
-                                                item={
-                                                  Object {
-                                                    "text": "Star stuff",
-                                                  }
-                                                }
-                                                onClick={[Function]}
-                                                onKeyDown={[Function]}
-                                                role="menuitem"
-                                                tabIndex={null}
-                                                text="Star stuff"
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-7"
                                               >
-                                                <div
-                                                  className="emotion-8"
-                                                  id="dropdown-21-item-1"
-                                                  onClick={[Function]}
-                                                  onKeyDown={[Function]}
-                                                  role="menuitem"
-                                                  tabIndex={null}
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-7"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-5"
-                                                            >
-                                                              Star stuff
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </div>
-                                              </MenuItem>
-                                            </MenuItem>
-                                          </MenuItem>
-                                          <MenuItem
-                                            index={2}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Encyclopaedia galactica",
-                                              }
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-6"
+                                                  >
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-5"
+                                                      >
+                                                        Star stuff
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </div>
+                                        </MenuItem>
+                                      </MenuItem>
+                                    </MenuItem>
+                                    <MenuItem
+                                      index={2}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Encyclopaedia galactica",
+                                        }
+                                      }
+                                      key="Encyclopaedia galactica"
+                                      render={[Function]}
+                                      text="Encyclopaedia galactica"
+                                    >
+                                      <MenuItem
+                                        id="dropdown-21-item-2"
+                                        index={2}
+                                        isHighlighted={false}
+                                        item={
+                                          Object {
+                                            "text": "Encyclopaedia galactica",
+                                          }
+                                        }
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
+                                        text="Encyclopaedia galactica"
+                                      >
+                                        <MenuItem
+                                          id="dropdown-21-item-2"
+                                          index={2}
+                                          isHighlighted={false}
+                                          item={
+                                            Object {
+                                              "text": "Encyclopaedia galactica",
                                             }
-                                            key="Encyclopaedia galactica"
-                                            render={[Function]}
-                                            text="Encyclopaedia galactica"
+                                          }
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          role="menuitem"
+                                          tabIndex={null}
+                                          text="Encyclopaedia galactica"
+                                        >
+                                          <div
+                                            className="emotion-8"
+                                            id="dropdown-21-item-2"
+                                            onClick={[Function]}
+                                            onKeyDown={[Function]}
+                                            role="menuitem"
+                                            tabIndex={null}
                                           >
-                                            <MenuItem
-                                              id="dropdown-21-item-2"
-                                              index={2}
-                                              isHighlighted={false}
-                                              item={
-                                                Object {
-                                                  "text": "Encyclopaedia galactica",
-                                                }
-                                              }
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                              text="Encyclopaedia galactica"
-                                            >
-                                              <MenuItem
-                                                id="dropdown-21-item-2"
-                                                index={2}
-                                                isHighlighted={false}
-                                                item={
-                                                  Object {
-                                                    "text": "Encyclopaedia galactica",
-                                                  }
-                                                }
-                                                onClick={[Function]}
-                                                onKeyDown={[Function]}
-                                                role="menuitem"
-                                                tabIndex={null}
-                                                text="Encyclopaedia galactica"
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-7"
                                               >
-                                                <div
-                                                  className="emotion-8"
-                                                  id="dropdown-21-item-2"
-                                                  onClick={[Function]}
-                                                  onKeyDown={[Function]}
-                                                  role="menuitem"
-                                                  tabIndex={null}
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-7"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-5"
-                                                            >
-                                                              Encyclopaedia galactica
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </div>
-                                              </MenuItem>
-                                            </MenuItem>
-                                          </MenuItem>
-                                          <MenuItem
-                                            index={3}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Cosmic ocean",
-                                              }
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-6"
+                                                  >
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-5"
+                                                      >
+                                                        Encyclopaedia galactica
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </div>
+                                        </MenuItem>
+                                      </MenuItem>
+                                    </MenuItem>
+                                    <MenuItem
+                                      index={3}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Cosmic ocean",
+                                        }
+                                      }
+                                      key="Cosmic ocean"
+                                      render={[Function]}
+                                      text="Cosmic ocean"
+                                    >
+                                      <MenuItem
+                                        id="dropdown-21-item-3"
+                                        index={3}
+                                        isHighlighted={false}
+                                        item={
+                                          Object {
+                                            "text": "Cosmic ocean",
+                                          }
+                                        }
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
+                                        text="Cosmic ocean"
+                                      >
+                                        <MenuItem
+                                          id="dropdown-21-item-3"
+                                          index={3}
+                                          isHighlighted={false}
+                                          item={
+                                            Object {
+                                              "text": "Cosmic ocean",
                                             }
-                                            key="Cosmic ocean"
-                                            render={[Function]}
-                                            text="Cosmic ocean"
+                                          }
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          role="menuitem"
+                                          tabIndex={null}
+                                          text="Cosmic ocean"
+                                        >
+                                          <div
+                                            className="emotion-8"
+                                            id="dropdown-21-item-3"
+                                            onClick={[Function]}
+                                            onKeyDown={[Function]}
+                                            role="menuitem"
+                                            tabIndex={null}
                                           >
-                                            <MenuItem
-                                              id="dropdown-21-item-3"
-                                              index={3}
-                                              isHighlighted={false}
-                                              item={
-                                                Object {
-                                                  "text": "Cosmic ocean",
-                                                }
-                                              }
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                              text="Cosmic ocean"
-                                            >
-                                              <MenuItem
-                                                id="dropdown-21-item-3"
-                                                index={3}
-                                                isHighlighted={false}
-                                                item={
-                                                  Object {
-                                                    "text": "Cosmic ocean",
-                                                  }
-                                                }
-                                                onClick={[Function]}
-                                                onKeyDown={[Function]}
-                                                role="menuitem"
-                                                tabIndex={null}
-                                                text="Cosmic ocean"
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-7"
                                               >
-                                                <div
-                                                  className="emotion-8"
-                                                  id="dropdown-21-item-3"
-                                                  onClick={[Function]}
-                                                  onKeyDown={[Function]}
-                                                  role="menuitem"
-                                                  tabIndex={null}
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-7"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        >
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-5"
-                                                            >
-                                                              Cosmic ocean
-                                                            </span>
-                                                          </Styled(span)>
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </div>
-                                              </MenuItem>
-                                            </MenuItem>
-                                          </MenuItem>
-                                        </div>
-                                      </MenuGroup>
-                                    </MenuGroup>
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-6"
+                                                  >
+                                                    <Styled(span)>
+                                                      <span
+                                                        className="emotion-5"
+                                                      >
+                                                        Cosmic ocean
+                                                      </span>
+                                                    </Styled(span)>
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </div>
+                                        </MenuItem>
+                                      </MenuItem>
+                                    </MenuItem>
                                   </div>
                                 </Menu>
                               </Menu>
@@ -4777,7 +4695,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
-.emotion-27 {
+.emotion-26 {
   display: inline-block;
 }
 
@@ -4785,7 +4703,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
 }
 
-.emotion-23 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4808,33 +4726,33 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   z-index: 100;
 }
 
-.emotion-23 *,
-.emotion-23 *::before,
-.emotion-23 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-23[data-placement^="top"] {
+.emotion-22[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-23[data-placement^="bottom"] {
+.emotion-22[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-23[data-placement^="left"] {
+.emotion-22[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-23[data-placement^="right"] {
+.emotion-22[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-23[data-x-out-of-boundaries] {
+.emotion-22[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-22 {
+.emotion-21 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4845,23 +4763,10 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-22 *,
-.emotion-22 *::before,
-.emotion-22 *::after {
+.emotion-21 *,
+.emotion-21 *::before,
+.emotion-21 *::after {
   box-sizing: inherit;
-}
-
-.emotion-21 {
-  margin: 0.5em 0;
-}
-
-.emotion-21:first-child,
-.emotion-21 + .emotion-21 {
-  margin-top: 0;
-}
-
-.emotion-21:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-8 {
@@ -5068,18 +4973,18 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-36 {
+.emotion-35 {
   position: relative;
 }
 
-.emotion-30 {
+.emotion-29 {
   background-color: aliceblue;
   height: 430px;
   overflow: auto;
   position: relative;
 }
 
-.emotion-29 {
+.emotion-28 {
   height: 930px;
   width: 300vw;
   display: -webkit-box;
@@ -5096,13 +5001,13 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   justify-content: center;
 }
 
-.emotion-34 {
+.emotion-33 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.emotion-33 {
+.emotion-32 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -5131,41 +5036,41 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   top: 0;
 }
 
-.emotion-33 *,
-.emotion-33 *::before,
-.emotion-33 *::after {
+.emotion-32 *,
+.emotion-32 *::before,
+.emotion-32 *::after {
   box-sizing: inherit;
 }
 
-.emotion-33:focus {
+.emotion-32:focus {
   border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-33:hover {
+.emotion-32:hover {
   background-color: #f5f7fa;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-33:focus:active,
-.emotion-33:focus:hover {
+.emotion-32:focus:active,
+.emotion-32:focus:hover {
   border-color: #1d5bbf;
 }
 
-.emotion-33:active {
+.emotion-32:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.emotion-33::-moz-focus-inner {
+.emotion-32::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-33 [role="img"] {
+.emotion-32 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -5174,19 +5079,19 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-33 [role="img"]:first-child {
+.emotion-32 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-33 [role="img"]:last-child {
+.emotion-32 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-33 [role="img"]:only-child {
+.emotion-32 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-31 {
+.emotion-30 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -5203,38 +5108,34 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
 >
   <Styled(div)>
     <div
-      className="emotion-36"
+      className="emotion-35"
     >
       <Styled(div)
         height={430}
       >
         <div
-          className="emotion-30"
+          className="emotion-29"
         >
           <Styled(div)
             scrollAreaHeight={430}
           >
             <div
-              className="emotion-29"
+              className="emotion-28"
             >
               <Dropdown
                 data={
                   Array [
                     Object {
-                      "items": Array [
-                        Object {
-                          "text": "Light years",
-                        },
-                        Object {
-                          "text": "Star stuff",
-                        },
-                        Object {
-                          "text": "Encyclopaedia galactica",
-                        },
-                        Object {
-                          "text": "Cosmic ocean",
-                        },
-                      ],
+                      "text": "Light years",
+                    },
+                    Object {
+                      "text": "Star stuff",
+                    },
+                    Object {
+                      "text": "Encyclopaedia galactica",
+                    },
+                    Object {
+                      "text": "Cosmic ocean",
                     },
                   ]
                 }
@@ -5268,12 +5169,12 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                     triggerRef={[Function]}
                   >
                     <Manager
-                      className="emotion-27"
+                      className="emotion-26"
                       id="dropdown-11"
                       tag="span"
                     >
                       <span
-                        className="emotion-27"
+                        className="emotion-26"
                         id="dropdown-11"
                       >
                         <PopoverTrigger
@@ -5381,19 +5282,19 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                             placement="bottom-start"
                           >
                             <WithTheme(RtlPopper)
-                              className="emotion-23"
+                              className="emotion-22"
                               id="dropdown-11-content"
                               onBlur={[Function]}
                               placement="bottom-start"
                             >
                               <RtlPopper
-                                className="emotion-23"
+                                className="emotion-22"
                                 id="dropdown-11-content"
                                 onBlur={[Function]}
                                 placement="bottom-start"
                               >
                                 <Popper
-                                  className="emotion-23"
+                                  className="emotion-22"
                                   component="div"
                                   eventsEnabled={true}
                                   id="dropdown-11-content"
@@ -5403,7 +5304,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                   positionFixed={false}
                                 >
                                   <div
-                                    className="emotion-23"
+                                    className="emotion-22"
                                     id="dropdown-11-content"
                                     onBlur={[Function]}
                                     style={
@@ -5418,20 +5319,16 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                       data={
                                         Array [
                                           Object {
-                                            "items": Array [
-                                              Object {
-                                                "text": "Light years",
-                                              },
-                                              Object {
-                                                "text": "Star stuff",
-                                              },
-                                              Object {
-                                                "text": "Encyclopaedia galactica",
-                                              },
-                                              Object {
-                                                "text": "Cosmic ocean",
-                                              },
-                                            ],
+                                            "text": "Light years",
+                                          },
+                                          Object {
+                                            "text": "Star stuff",
+                                          },
+                                          Object {
+                                            "text": "Encyclopaedia galactica",
+                                          },
+                                          Object {
+                                            "text": "Cosmic ocean",
                                           },
                                         ]
                                       }
@@ -5447,312 +5344,302 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                         role="menu"
                                       >
                                         <div
-                                          className="emotion-22"
+                                          className="emotion-21"
                                           id="dropdown-11-menu"
                                           role="menu"
                                         >
-                                          <MenuGroup
-                                            key="0"
+                                          <MenuItem
+                                            index={0}
+                                            isHighlighted={false}
+                                            item={
+                                              Object {
+                                                "text": "Light years",
+                                              }
+                                            }
+                                            key="Light years"
+                                            render={[Function]}
+                                            text="Light years"
                                           >
-                                            <MenuGroup>
-                                              <div
-                                                className="emotion-21"
+                                            <MenuItem
+                                              id="dropdown-11-item-0"
+                                              index={0}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Light years",
+                                                }
+                                              }
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="menuitem"
+                                              tabIndex={null}
+                                              text="Light years"
+                                            >
+                                              <MenuItem
+                                                id="dropdown-11-item-0"
+                                                index={0}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Light years",
+                                                  }
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                                text="Light years"
                                               >
-                                                <MenuItem
-                                                  index={0}
-                                                  isHighlighted={false}
-                                                  item={
-                                                    Object {
-                                                      "text": "Light years",
-                                                    }
-                                                  }
-                                                  key="Light years"
-                                                  render={[Function]}
-                                                  text="Light years"
+                                                <div
+                                                  className="emotion-8"
+                                                  id="dropdown-11-item-0"
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="menuitem"
+                                                  tabIndex={null}
                                                 >
-                                                  <MenuItem
-                                                    id="dropdown-11-item-0"
-                                                    index={0}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Light years",
-                                                      }
-                                                    }
-                                                    onClick={[Function]}
-                                                    onKeyDown={[Function]}
-                                                    role="menuitem"
-                                                    tabIndex={null}
-                                                    text="Light years"
-                                                  >
-                                                    <MenuItem
-                                                      id="dropdown-11-item-0"
-                                                      index={0}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Light years",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                      text="Light years"
+                                                  <Styled(span)>
+                                                    <span
+                                                      className="emotion-7"
                                                     >
-                                                      <div
-                                                        className="emotion-8"
-                                                        id="dropdown-11-item-0"
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="menuitem"
-                                                        tabIndex={null}
-                                                      >
-                                                        <Styled(span)>
-                                                          <span
-                                                            className="emotion-7"
-                                                          >
-                                                            <Styled(span)>
-                                                              <span
-                                                                className="emotion-6"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-5"
-                                                                  >
-                                                                    Light years
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </span>
-                                                            </Styled(span)>
-                                                          </span>
-                                                        </Styled(span)>
-                                                      </div>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                </MenuItem>
-                                                <MenuItem
-                                                  index={1}
-                                                  isHighlighted={false}
-                                                  item={
-                                                    Object {
-                                                      "text": "Star stuff",
-                                                    }
+                                                      <Styled(span)>
+                                                        <span
+                                                          className="emotion-6"
+                                                        >
+                                                          <Styled(span)>
+                                                            <span
+                                                              className="emotion-5"
+                                                            >
+                                                              Light years
+                                                            </span>
+                                                          </Styled(span)>
+                                                        </span>
+                                                      </Styled(span)>
+                                                    </span>
+                                                  </Styled(span)>
+                                                </div>
+                                              </MenuItem>
+                                            </MenuItem>
+                                          </MenuItem>
+                                          <MenuItem
+                                            index={1}
+                                            isHighlighted={false}
+                                            item={
+                                              Object {
+                                                "text": "Star stuff",
+                                              }
+                                            }
+                                            key="Star stuff"
+                                            render={[Function]}
+                                            text="Star stuff"
+                                          >
+                                            <MenuItem
+                                              id="dropdown-11-item-1"
+                                              index={1}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Star stuff",
+                                                }
+                                              }
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="menuitem"
+                                              tabIndex={null}
+                                              text="Star stuff"
+                                            >
+                                              <MenuItem
+                                                id="dropdown-11-item-1"
+                                                index={1}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Star stuff",
                                                   }
-                                                  key="Star stuff"
-                                                  render={[Function]}
-                                                  text="Star stuff"
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                                text="Star stuff"
+                                              >
+                                                <div
+                                                  className="emotion-8"
+                                                  id="dropdown-11-item-1"
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="menuitem"
+                                                  tabIndex={null}
                                                 >
-                                                  <MenuItem
-                                                    id="dropdown-11-item-1"
-                                                    index={1}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Star stuff",
-                                                      }
-                                                    }
-                                                    onClick={[Function]}
-                                                    onKeyDown={[Function]}
-                                                    role="menuitem"
-                                                    tabIndex={null}
-                                                    text="Star stuff"
-                                                  >
-                                                    <MenuItem
-                                                      id="dropdown-11-item-1"
-                                                      index={1}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Star stuff",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                      text="Star stuff"
+                                                  <Styled(span)>
+                                                    <span
+                                                      className="emotion-7"
                                                     >
-                                                      <div
-                                                        className="emotion-8"
-                                                        id="dropdown-11-item-1"
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="menuitem"
-                                                        tabIndex={null}
-                                                      >
-                                                        <Styled(span)>
-                                                          <span
-                                                            className="emotion-7"
-                                                          >
-                                                            <Styled(span)>
-                                                              <span
-                                                                className="emotion-6"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-5"
-                                                                  >
-                                                                    Star stuff
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </span>
-                                                            </Styled(span)>
-                                                          </span>
-                                                        </Styled(span)>
-                                                      </div>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                </MenuItem>
-                                                <MenuItem
-                                                  index={2}
-                                                  isHighlighted={false}
-                                                  item={
-                                                    Object {
-                                                      "text": "Encyclopaedia galactica",
-                                                    }
+                                                      <Styled(span)>
+                                                        <span
+                                                          className="emotion-6"
+                                                        >
+                                                          <Styled(span)>
+                                                            <span
+                                                              className="emotion-5"
+                                                            >
+                                                              Star stuff
+                                                            </span>
+                                                          </Styled(span)>
+                                                        </span>
+                                                      </Styled(span)>
+                                                    </span>
+                                                  </Styled(span)>
+                                                </div>
+                                              </MenuItem>
+                                            </MenuItem>
+                                          </MenuItem>
+                                          <MenuItem
+                                            index={2}
+                                            isHighlighted={false}
+                                            item={
+                                              Object {
+                                                "text": "Encyclopaedia galactica",
+                                              }
+                                            }
+                                            key="Encyclopaedia galactica"
+                                            render={[Function]}
+                                            text="Encyclopaedia galactica"
+                                          >
+                                            <MenuItem
+                                              id="dropdown-11-item-2"
+                                              index={2}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Encyclopaedia galactica",
+                                                }
+                                              }
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="menuitem"
+                                              tabIndex={null}
+                                              text="Encyclopaedia galactica"
+                                            >
+                                              <MenuItem
+                                                id="dropdown-11-item-2"
+                                                index={2}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Encyclopaedia galactica",
                                                   }
-                                                  key="Encyclopaedia galactica"
-                                                  render={[Function]}
-                                                  text="Encyclopaedia galactica"
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                                text="Encyclopaedia galactica"
+                                              >
+                                                <div
+                                                  className="emotion-8"
+                                                  id="dropdown-11-item-2"
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="menuitem"
+                                                  tabIndex={null}
                                                 >
-                                                  <MenuItem
-                                                    id="dropdown-11-item-2"
-                                                    index={2}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Encyclopaedia galactica",
-                                                      }
-                                                    }
-                                                    onClick={[Function]}
-                                                    onKeyDown={[Function]}
-                                                    role="menuitem"
-                                                    tabIndex={null}
-                                                    text="Encyclopaedia galactica"
-                                                  >
-                                                    <MenuItem
-                                                      id="dropdown-11-item-2"
-                                                      index={2}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Encyclopaedia galactica",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                      text="Encyclopaedia galactica"
+                                                  <Styled(span)>
+                                                    <span
+                                                      className="emotion-7"
                                                     >
-                                                      <div
-                                                        className="emotion-8"
-                                                        id="dropdown-11-item-2"
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="menuitem"
-                                                        tabIndex={null}
-                                                      >
-                                                        <Styled(span)>
-                                                          <span
-                                                            className="emotion-7"
-                                                          >
-                                                            <Styled(span)>
-                                                              <span
-                                                                className="emotion-6"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-5"
-                                                                  >
-                                                                    Encyclopaedia galactica
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </span>
-                                                            </Styled(span)>
-                                                          </span>
-                                                        </Styled(span)>
-                                                      </div>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                </MenuItem>
-                                                <MenuItem
-                                                  index={3}
-                                                  isHighlighted={false}
-                                                  item={
-                                                    Object {
-                                                      "text": "Cosmic ocean",
-                                                    }
+                                                      <Styled(span)>
+                                                        <span
+                                                          className="emotion-6"
+                                                        >
+                                                          <Styled(span)>
+                                                            <span
+                                                              className="emotion-5"
+                                                            >
+                                                              Encyclopaedia galactica
+                                                            </span>
+                                                          </Styled(span)>
+                                                        </span>
+                                                      </Styled(span)>
+                                                    </span>
+                                                  </Styled(span)>
+                                                </div>
+                                              </MenuItem>
+                                            </MenuItem>
+                                          </MenuItem>
+                                          <MenuItem
+                                            index={3}
+                                            isHighlighted={false}
+                                            item={
+                                              Object {
+                                                "text": "Cosmic ocean",
+                                              }
+                                            }
+                                            key="Cosmic ocean"
+                                            render={[Function]}
+                                            text="Cosmic ocean"
+                                          >
+                                            <MenuItem
+                                              id="dropdown-11-item-3"
+                                              index={3}
+                                              isHighlighted={false}
+                                              item={
+                                                Object {
+                                                  "text": "Cosmic ocean",
+                                                }
+                                              }
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="menuitem"
+                                              tabIndex={null}
+                                              text="Cosmic ocean"
+                                            >
+                                              <MenuItem
+                                                id="dropdown-11-item-3"
+                                                index={3}
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Cosmic ocean",
                                                   }
-                                                  key="Cosmic ocean"
-                                                  render={[Function]}
-                                                  text="Cosmic ocean"
+                                                }
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                                text="Cosmic ocean"
+                                              >
+                                                <div
+                                                  className="emotion-8"
+                                                  id="dropdown-11-item-3"
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="menuitem"
+                                                  tabIndex={null}
                                                 >
-                                                  <MenuItem
-                                                    id="dropdown-11-item-3"
-                                                    index={3}
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Cosmic ocean",
-                                                      }
-                                                    }
-                                                    onClick={[Function]}
-                                                    onKeyDown={[Function]}
-                                                    role="menuitem"
-                                                    tabIndex={null}
-                                                    text="Cosmic ocean"
-                                                  >
-                                                    <MenuItem
-                                                      id="dropdown-11-item-3"
-                                                      index={3}
-                                                      isHighlighted={false}
-                                                      item={
-                                                        Object {
-                                                          "text": "Cosmic ocean",
-                                                        }
-                                                      }
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                      text="Cosmic ocean"
+                                                  <Styled(span)>
+                                                    <span
+                                                      className="emotion-7"
                                                     >
-                                                      <div
-                                                        className="emotion-8"
-                                                        id="dropdown-11-item-3"
-                                                        onClick={[Function]}
-                                                        onKeyDown={[Function]}
-                                                        role="menuitem"
-                                                        tabIndex={null}
-                                                      >
-                                                        <Styled(span)>
-                                                          <span
-                                                            className="emotion-7"
-                                                          >
-                                                            <Styled(span)>
-                                                              <span
-                                                                className="emotion-6"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-5"
-                                                                  >
-                                                                    Cosmic ocean
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </span>
-                                                            </Styled(span)>
-                                                          </span>
-                                                        </Styled(span)>
-                                                      </div>
-                                                    </MenuItem>
-                                                  </MenuItem>
-                                                </MenuItem>
-                                              </div>
-                                            </MenuGroup>
-                                          </MenuGroup>
+                                                      <Styled(span)>
+                                                        <span
+                                                          className="emotion-6"
+                                                        >
+                                                          <Styled(span)>
+                                                            <span
+                                                              className="emotion-5"
+                                                            >
+                                                              Cosmic ocean
+                                                            </span>
+                                                          </Styled(span)>
+                                                        </span>
+                                                      </Styled(span)>
+                                                    </span>
+                                                  </Styled(span)>
+                                                </div>
+                                              </MenuItem>
+                                            </MenuItem>
+                                          </MenuItem>
                                         </div>
                                       </Menu>
                                     </Menu>
@@ -5797,7 +5684,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
         type="button"
       >
         <Button
-          className="emotion-34"
+          className="emotion-33"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -5805,7 +5692,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
           type="button"
         >
           <Button
-            className="emotion-34"
+            className="emotion-33"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -5814,7 +5701,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
             type="button"
           >
             <button
-              className="emotion-33"
+              className="emotion-32"
               onClick={[Function]}
               type="button"
             >
@@ -5826,7 +5713,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                     size="small"
                   >
                     <span
-                      className="emotion-31"
+                      className="emotion-30"
                     >
                       Re-center
                     </span>
@@ -5843,7 +5730,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: wide 1`] = `
-.emotion-27 {
+.emotion-26 {
   display: inline-block;
 }
 
@@ -5851,7 +5738,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   display: inline-block;
 }
 
-.emotion-22 {
+.emotion-21 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -5862,23 +5749,10 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-22 *,
-.emotion-22 *::before,
-.emotion-22 *::after {
+.emotion-21 *,
+.emotion-21 *::before,
+.emotion-21 *::after {
   box-sizing: inherit;
-}
-
-.emotion-21 {
-  margin: 0.5em 0;
-}
-
-.emotion-21:first-child,
-.emotion-21 + .emotion-21 {
-  margin-top: 0;
-}
-
-.emotion-21:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-8 {
@@ -6085,11 +5959,11 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-29 {
+.emotion-28 {
   height: 210px;
 }
 
-.emotion-23 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -6112,54 +5986,50 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   z-index: 100;
 }
 
-.emotion-23 *,
-.emotion-23 *::before,
-.emotion-23 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-23[data-placement^="top"] {
+.emotion-22[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-23[data-placement^="bottom"] {
+.emotion-22[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-23[data-placement^="left"] {
+.emotion-22[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-23[data-placement^="right"] {
+.emotion-22[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-23[data-x-out-of-boundaries] {
+.emotion-22[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
 <Styled(div)>
   <div
-    className="emotion-29"
+    className="emotion-28"
   >
     <Dropdown
       data={
         Array [
           Object {
-            "items": Array [
-              Object {
-                "text": "Light years star stuff",
-              },
-              Object {
-                "text": "Harvesting star light citizens of distant epochs",
-              },
-              Object {
-                "text": "Encyclopaedia galactica vastness is bearable",
-              },
-              Object {
-                "text": "Shores of the cosmic ocean",
-              },
-            ],
+            "text": "Light years star stuff",
+          },
+          Object {
+            "text": "Harvesting star light citizens of distant epochs",
+          },
+          Object {
+            "text": "Encyclopaedia galactica vastness is bearable",
+          },
+          Object {
+            "text": "Shores of the cosmic ocean",
           },
         ]
       }
@@ -6196,12 +6066,12 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
           wide={true}
         >
           <Manager
-            className="emotion-27"
+            className="emotion-26"
             id="dropdown-5"
             tag="span"
           >
             <span
-              className="emotion-27"
+              className="emotion-26"
               id="dropdown-5"
             >
               <PopoverTrigger
@@ -6311,19 +6181,19 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                   wide={true}
                 >
                   <WithTheme(RtlPopper)
-                    className="emotion-23"
+                    className="emotion-22"
                     id="dropdown-5-content"
                     onBlur={[Function]}
                     placement="bottom-start"
                   >
                     <RtlPopper
-                      className="emotion-23"
+                      className="emotion-22"
                       id="dropdown-5-content"
                       onBlur={[Function]}
                       placement="bottom-start"
                     >
                       <Popper
-                        className="emotion-23"
+                        className="emotion-22"
                         component="div"
                         eventsEnabled={true}
                         id="dropdown-5-content"
@@ -6333,7 +6203,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                         positionFixed={false}
                       >
                         <div
-                          className="emotion-23"
+                          className="emotion-22"
                           id="dropdown-5-content"
                           onBlur={[Function]}
                           style={
@@ -6348,20 +6218,16 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                             data={
                               Array [
                                 Object {
-                                  "items": Array [
-                                    Object {
-                                      "text": "Light years star stuff",
-                                    },
-                                    Object {
-                                      "text": "Harvesting star light citizens of distant epochs",
-                                    },
-                                    Object {
-                                      "text": "Encyclopaedia galactica vastness is bearable",
-                                    },
-                                    Object {
-                                      "text": "Shores of the cosmic ocean",
-                                    },
-                                  ],
+                                  "text": "Light years star stuff",
+                                },
+                                Object {
+                                  "text": "Harvesting star light citizens of distant epochs",
+                                },
+                                Object {
+                                  "text": "Encyclopaedia galactica vastness is bearable",
+                                },
+                                Object {
+                                  "text": "Shores of the cosmic ocean",
                                 },
                               ]
                             }
@@ -6377,312 +6243,302 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                               role="menu"
                             >
                               <div
-                                className="emotion-22"
+                                className="emotion-21"
                                 id="dropdown-5-menu"
                                 role="menu"
                               >
-                                <MenuGroup
-                                  key="0"
+                                <MenuItem
+                                  index={0}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Light years star stuff",
+                                    }
+                                  }
+                                  key="Light years star stuff"
+                                  render={[Function]}
+                                  text="Light years star stuff"
                                 >
-                                  <MenuGroup>
-                                    <div
-                                      className="emotion-21"
+                                  <MenuItem
+                                    id="dropdown-5-item-0"
+                                    index={0}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Light years star stuff",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Light years star stuff"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-5-item-0"
+                                      index={0}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Light years star stuff",
+                                        }
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Light years star stuff"
                                     >
-                                      <MenuItem
-                                        index={0}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Light years star stuff",
-                                          }
-                                        }
-                                        key="Light years star stuff"
-                                        render={[Function]}
-                                        text="Light years star stuff"
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-5-item-0"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-5-item-0"
-                                          index={0}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Light years star stuff",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Light years star stuff"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-5-item-0"
-                                            index={0}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Light years star stuff",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Light years star stuff"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-5-item-0"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Light years star stuff
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                      <MenuItem
-                                        index={1}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Harvesting star light citizens of distant epochs",
-                                          }
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Light years star stuff
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
+                                <MenuItem
+                                  index={1}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Harvesting star light citizens of distant epochs",
+                                    }
+                                  }
+                                  key="Harvesting star light citizens of distant epochs"
+                                  render={[Function]}
+                                  text="Harvesting star light citizens of distant epochs"
+                                >
+                                  <MenuItem
+                                    id="dropdown-5-item-1"
+                                    index={1}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Harvesting star light citizens of distant epochs",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Harvesting star light citizens of distant epochs"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-5-item-1"
+                                      index={1}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Harvesting star light citizens of distant epochs",
                                         }
-                                        key="Harvesting star light citizens of distant epochs"
-                                        render={[Function]}
-                                        text="Harvesting star light citizens of distant epochs"
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Harvesting star light citizens of distant epochs"
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-5-item-1"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-5-item-1"
-                                          index={1}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Harvesting star light citizens of distant epochs",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Harvesting star light citizens of distant epochs"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-5-item-1"
-                                            index={1}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Harvesting star light citizens of distant epochs",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Harvesting star light citizens of distant epochs"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-5-item-1"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Harvesting star light citizens of distant epochs
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                      <MenuItem
-                                        index={2}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Encyclopaedia galactica vastness is bearable",
-                                          }
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Harvesting star light citizens of distant epochs
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
+                                <MenuItem
+                                  index={2}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Encyclopaedia galactica vastness is bearable",
+                                    }
+                                  }
+                                  key="Encyclopaedia galactica vastness is bearable"
+                                  render={[Function]}
+                                  text="Encyclopaedia galactica vastness is bearable"
+                                >
+                                  <MenuItem
+                                    id="dropdown-5-item-2"
+                                    index={2}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Encyclopaedia galactica vastness is bearable",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Encyclopaedia galactica vastness is bearable"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-5-item-2"
+                                      index={2}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Encyclopaedia galactica vastness is bearable",
                                         }
-                                        key="Encyclopaedia galactica vastness is bearable"
-                                        render={[Function]}
-                                        text="Encyclopaedia galactica vastness is bearable"
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Encyclopaedia galactica vastness is bearable"
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-5-item-2"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-5-item-2"
-                                          index={2}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Encyclopaedia galactica vastness is bearable",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Encyclopaedia galactica vastness is bearable"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-5-item-2"
-                                            index={2}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Encyclopaedia galactica vastness is bearable",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Encyclopaedia galactica vastness is bearable"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-5-item-2"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Encyclopaedia galactica vastness is bearable
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                      <MenuItem
-                                        index={3}
-                                        isHighlighted={false}
-                                        item={
-                                          Object {
-                                            "text": "Shores of the cosmic ocean",
-                                          }
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Encyclopaedia galactica vastness is bearable
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
+                                <MenuItem
+                                  index={3}
+                                  isHighlighted={false}
+                                  item={
+                                    Object {
+                                      "text": "Shores of the cosmic ocean",
+                                    }
+                                  }
+                                  key="Shores of the cosmic ocean"
+                                  render={[Function]}
+                                  text="Shores of the cosmic ocean"
+                                >
+                                  <MenuItem
+                                    id="dropdown-5-item-3"
+                                    index={3}
+                                    isHighlighted={false}
+                                    item={
+                                      Object {
+                                        "text": "Shores of the cosmic ocean",
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="menuitem"
+                                    tabIndex={null}
+                                    text="Shores of the cosmic ocean"
+                                  >
+                                    <MenuItem
+                                      id="dropdown-5-item-3"
+                                      index={3}
+                                      isHighlighted={false}
+                                      item={
+                                        Object {
+                                          "text": "Shores of the cosmic ocean",
                                         }
-                                        key="Shores of the cosmic ocean"
-                                        render={[Function]}
-                                        text="Shores of the cosmic ocean"
+                                      }
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="menuitem"
+                                      tabIndex={null}
+                                      text="Shores of the cosmic ocean"
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        id="dropdown-5-item-3"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="menuitem"
+                                        tabIndex={null}
                                       >
-                                        <MenuItem
-                                          id="dropdown-5-item-3"
-                                          index={3}
-                                          isHighlighted={false}
-                                          item={
-                                            Object {
-                                              "text": "Shores of the cosmic ocean",
-                                            }
-                                          }
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="menuitem"
-                                          tabIndex={null}
-                                          text="Shores of the cosmic ocean"
-                                        >
-                                          <MenuItem
-                                            id="dropdown-5-item-3"
-                                            index={3}
-                                            isHighlighted={false}
-                                            item={
-                                              Object {
-                                                "text": "Shores of the cosmic ocean",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="menuitem"
-                                            tabIndex={null}
-                                            text="Shores of the cosmic ocean"
+                                        <Styled(span)>
+                                          <span
+                                            className="emotion-7"
                                           >
-                                            <div
-                                              className="emotion-8"
-                                              id="dropdown-5-item-3"
-                                              onClick={[Function]}
-                                              onKeyDown={[Function]}
-                                              role="menuitem"
-                                              tabIndex={null}
-                                            >
-                                              <Styled(span)>
-                                                <span
-                                                  className="emotion-7"
-                                                >
-                                                  <Styled(span)>
-                                                    <span
-                                                      className="emotion-6"
-                                                    >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-5"
-                                                        >
-                                                          Shores of the cosmic ocean
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </span>
-                                                  </Styled(span)>
-                                                </span>
-                                              </Styled(span)>
-                                            </div>
-                                          </MenuItem>
-                                        </MenuItem>
-                                      </MenuItem>
-                                    </div>
-                                  </MenuGroup>
-                                </MenuGroup>
+                                            <Styled(span)>
+                                              <span
+                                                className="emotion-6"
+                                              >
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-5"
+                                                  >
+                                                    Shores of the cosmic ocean
+                                                  </span>
+                                                </Styled(span)>
+                                              </span>
+                                            </Styled(span)>
+                                          </span>
+                                        </Styled(span)>
+                                      </div>
+                                    </MenuItem>
+                                  </MenuItem>
+                                </MenuItem>
                               </div>
                             </Menu>
                           </Menu>
@@ -6824,7 +6680,5 @@ exports[`Dropdown when open when data is grouped item ids increment across group
 Array [
   "dropdown-76-item-0",
   "dropdown-76-item-1",
-  "dropdown-76-item-2",
-  "dropdown-76-item-3",
 ]
 `;
