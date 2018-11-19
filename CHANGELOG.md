@@ -1,3 +1,18 @@
+<a name="0.52.0"></a>
+# [0.52.0](https://github.com/mineral-ui/mineral-ui/compare/v0.51.0...v0.52.0) (2018-11-19)
+
+
+### Code Refactoring
+
+* **menu,dropdown,select,cardtitle:** Flatten data structure for Menu groups ([70a1c30](https://github.com/mineral-ui/mineral-ui/commit/70a1c30))
+
+
+### BREAKING CHANGES
+
+* **menu,dropdown,select,cardtitle:** The structure of the data for Menu, Dropdown, Select, and CardTitle components has changed.  Previously, grouped data was provided in a nested data structure.  A flat array of items is now required.  Groups are now created similarly to dividers, using { group: true, text: 'Group Title' }. The theme export for `menuGroupTitleTheme` has been renamed to `menuGroupTheme`.  The `MenuGroup_margin` theme key has been replaced with `MenuGroupTitle_marginTop`.
+
+
+
 <a name="0.51.0"></a>
 # [0.51.0](https://github.com/mineral-ui/mineral-ui/compare/v0.50.0...v0.51.0) (2018-11-15)
 
