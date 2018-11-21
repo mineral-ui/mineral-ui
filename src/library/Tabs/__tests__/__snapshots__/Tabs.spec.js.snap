@@ -204,7 +204,6 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -216,6 +215,12 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
 .emotion-0:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 .emotion-4 {
@@ -1411,6 +1416,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -1604,6 +1610,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -1797,6 +1804,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -2158,6 +2166,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -2351,6 +2360,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -2544,6 +2554,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -2905,6 +2916,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -3098,6 +3110,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -3291,6 +3304,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -3645,6 +3659,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -3831,6 +3846,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -4017,6 +4033,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -4379,6 +4396,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -4572,6 +4590,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -4765,6 +4784,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -5127,6 +5147,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -5320,6 +5341,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -5513,6 +5535,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -5875,6 +5898,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -6068,6 +6092,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -6261,6 +6286,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -6623,6 +6649,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -6816,6 +6843,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -7009,6 +7037,7 @@ exports[`Tabs demo examples Snapshots: alignment 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -7358,7 +7387,6 @@ exports[`Tabs demo examples Snapshots: basic 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -7370,6 +7398,12 @@ exports[`Tabs demo examples Snapshots: basic 1`] = `
 .emotion-0:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 .emotion-12 {
@@ -7785,6 +7819,7 @@ exports[`Tabs demo examples Snapshots: basic 1`] = `
                                                 <Truncate>
                                                   <Truncate
                                                     innerRef={[Function]}
+                                                    showTooltip={false}
                                                   >
                                                     <span
                                                       className="emotion-0"
@@ -7978,6 +8013,7 @@ exports[`Tabs demo examples Snapshots: basic 1`] = `
                                                 <Truncate>
                                                   <Truncate
                                                     innerRef={[Function]}
+                                                    showTooltip={false}
                                                   >
                                                     <span
                                                       className="emotion-0"
@@ -8171,6 +8207,7 @@ exports[`Tabs demo examples Snapshots: basic 1`] = `
                                                 <Truncate>
                                                   <Truncate
                                                     innerRef={[Function]}
+                                                    showTooltip={false}
                                                   >
                                                     <span
                                                       className="emotion-0"
@@ -8522,7 +8559,6 @@ exports[`Tabs demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-3 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -8534,6 +8570,12 @@ exports[`Tabs demo examples Snapshots: controlled 1`] = `
 .emotion-3:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-3:focus {
+    outline: none;
+  }
 }
 
 .emotion-7 {
@@ -9096,6 +9138,7 @@ exports[`Tabs demo examples Snapshots: controlled 1`] = `
                                                           <Truncate>
                                                             <Truncate
                                                               innerRef={[Function]}
+                                                              showTooltip={false}
                                                             >
                                                               <span
                                                                 className="emotion-3"
@@ -9289,6 +9332,7 @@ exports[`Tabs demo examples Snapshots: controlled 1`] = `
                                                           <Truncate>
                                                             <Truncate
                                                               innerRef={[Function]}
+                                                              showTooltip={false}
                                                             >
                                                               <span
                                                                 className="emotion-3"
@@ -9482,6 +9526,7 @@ exports[`Tabs demo examples Snapshots: controlled 1`] = `
                                                           <Truncate>
                                                             <Truncate
                                                               innerRef={[Function]}
+                                                              showTooltip={false}
                                                             >
                                                               <span
                                                                 className="emotion-3"
@@ -9720,7 +9765,6 @@ exports[`Tabs demo examples Snapshots: max-tab-width 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -9732,6 +9776,12 @@ exports[`Tabs demo examples Snapshots: max-tab-width 1`] = `
 .emotion-0:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 .emotion-30 {
@@ -10257,6 +10307,7 @@ exports[`Tabs demo examples Snapshots: max-tab-width 1`] = `
                                                 <Truncate>
                                                   <Truncate
                                                     innerRef={[Function]}
+                                                    showTooltip={false}
                                                   >
                                                     <span
                                                       className="emotion-0"
@@ -10450,6 +10501,7 @@ exports[`Tabs demo examples Snapshots: max-tab-width 1`] = `
                                                 <Truncate>
                                                   <Truncate
                                                     innerRef={[Function]}
+                                                    showTooltip={false}
                                                   >
                                                     <span
                                                       className="emotion-0"
@@ -10643,6 +10695,7 @@ exports[`Tabs demo examples Snapshots: max-tab-width 1`] = `
                                                 <Truncate>
                                                   <Truncate
                                                     innerRef={[Function]}
+                                                    showTooltip={false}
                                                   >
                                                     <span
                                                       className="emotion-0"
@@ -10988,7 +11041,6 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -11000,6 +11052,12 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
 .emotion-0:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 .emotion-4 {
@@ -11787,6 +11845,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -11980,6 +12039,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -12173,6 +12233,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -12366,6 +12427,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -12559,6 +12621,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -12752,6 +12815,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -12945,6 +13009,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -13138,6 +13203,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -13331,6 +13397,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -13524,6 +13591,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -13717,6 +13785,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -13910,6 +13979,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -14103,6 +14173,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -14296,6 +14367,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -14489,6 +14561,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -14682,6 +14755,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -14875,6 +14949,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -15068,6 +15143,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -15261,6 +15337,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -15454,6 +15531,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -15815,6 +15893,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -16008,6 +16087,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -16201,6 +16281,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -16394,6 +16475,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -16587,6 +16669,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -16780,6 +16863,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -16973,6 +17057,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -17166,6 +17251,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -17359,6 +17445,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -17552,6 +17639,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -17745,6 +17833,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -17938,6 +18027,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -18131,6 +18221,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -18324,6 +18415,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -18517,6 +18609,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -18710,6 +18803,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -18903,6 +18997,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -19096,6 +19191,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -19289,6 +19385,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -19482,6 +19579,7 @@ exports[`Tabs demo examples Snapshots: overflow 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -19831,7 +19929,6 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -19843,6 +19940,12 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
 .emotion-0:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 .emotion-4 {
@@ -21113,6 +21216,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -21306,6 +21410,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -21499,6 +21604,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -21860,6 +21966,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -22053,6 +22160,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -22246,6 +22354,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -22607,6 +22716,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -22800,6 +22910,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -22993,6 +23104,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -23354,6 +23466,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -23547,6 +23660,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -23740,6 +23854,7 @@ exports[`Tabs demo examples Snapshots: position 1`] = `
                                                         <Truncate>
                                                           <Truncate
                                                             innerRef={[Function]}
+                                                            showTooltip={false}
                                                           >
                                                             <span
                                                               className="emotion-0"
@@ -23972,7 +24087,6 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -23984,6 +24098,12 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
 .emotion-0:focus {
   outline: 1px solid #1d5bbf;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 .emotion-4 {
@@ -24893,6 +25013,7 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
                                                               <Truncate>
                                                                 <Truncate
                                                                   innerRef={[Function]}
+                                                                  showTooltip={false}
                                                                 >
                                                                   <span
                                                                     className="emotion-0"
@@ -25086,6 +25207,7 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
                                                               <Truncate>
                                                                 <Truncate
                                                                   innerRef={[Function]}
+                                                                  showTooltip={false}
                                                                 >
                                                                   <span
                                                                     className="emotion-0"
@@ -25279,6 +25401,7 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
                                                               <Truncate>
                                                                 <Truncate
                                                                   innerRef={[Function]}
+                                                                  showTooltip={false}
                                                                 >
                                                                   <span
                                                                     className="emotion-0"
@@ -25635,6 +25758,7 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
                                                               <Truncate>
                                                                 <Truncate
                                                                   innerRef={[Function]}
+                                                                  showTooltip={false}
                                                                 >
                                                                   <span
                                                                     className="emotion-0"
@@ -25828,6 +25952,7 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
                                                               <Truncate>
                                                                 <Truncate
                                                                   innerRef={[Function]}
+                                                                  showTooltip={false}
                                                                 >
                                                                   <span
                                                                     className="emotion-0"
@@ -26021,6 +26146,7 @@ exports[`Tabs demo examples Snapshots: rtl 1`] = `
                                                               <Truncate>
                                                                 <Truncate
                                                                   innerRef={[Function]}
+                                                                  showTooltip={false}
                                                                 >
                                                                   <span
                                                                     className="emotion-0"

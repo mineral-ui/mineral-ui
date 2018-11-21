@@ -2,7 +2,7 @@
 import React from 'react';
 import { createStyledComponent, pxToEm } from '../styles';
 import { createThemedComponent } from '../themes';
-import { onlyIEAndEdge } from '../utils/cssSelectors';
+import { ie10Plus } from '../utils/cssSelectors';
 import Button from '../Button';
 import OverflowContainer, {
   OverflowContainerWithShadows
@@ -284,7 +284,7 @@ export const TabListRoot = createStyledComponent(
 
     ...(vertical && height
       ? {
-          [onlyIEAndEdge]: {
+          [ie10Plus]: {
             height
           }
         }

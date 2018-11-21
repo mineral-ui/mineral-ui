@@ -2,7 +2,6 @@
 
 exports[`Truncate does not render tooltip when not truncated 1`] = `
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -16,9 +15,16 @@ exports[`Truncate does not render tooltip when not truncated 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
+}
+
 <Truncate>
   <Truncate
     innerRef={[Function]}
+    showTooltip={false}
   >
     <span
       className="emotion-0"
@@ -41,6 +47,19 @@ exports[`Truncate does not render tooltip when not truncated 1`] = `
 `;
 
 exports[`Truncate renders a tooltip when truncated 1`] = `
+.emotion-5 {
+  white-space: normal;
+}
+
+.emotion-3 {
+  display: inline-block;
+  white-space: normal;
+}
+
+.emotion-1 {
+  display: inline-block;
+}
+
 .emotion-0 {
   pointer-events: all;
   display: inline-block;
@@ -56,17 +75,10 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
   outline-offset: -1px;
 }
 
-.emotion-5 {
-  white-space: normal;
-}
-
-.emotion-3 {
-  display: inline-block;
-  white-space: normal;
-}
-
-.emotion-1 {
-  display: inline-block;
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
 }
 
 <Truncate>
@@ -147,6 +159,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                         onMouseEnter={[Function]}
                         onMouseLeave={[Function]}
                         role="button"
+                        showTooltip={true}
                         tabIndex={0}
                       >
                         <PopoverTrigger
@@ -169,6 +182,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                                 role="button"
+                                showTooltip={true}
                                 tabIndex={0}
                               >
                                 <span

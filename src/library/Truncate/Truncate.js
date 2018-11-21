@@ -28,8 +28,10 @@ export default class Truncate extends PureComponent<
 
   render() {
     const { children, ...restProps } = this.props;
+    const { showTooltip } = this.state;
     const rootProps = {
       innerRef: this.setRootRef,
+      showTooltip,
       ...restProps
     };
 
@@ -48,7 +50,7 @@ export default class Truncate extends PureComponent<
       </Root>
     );
 
-    return this.root && this.state.showTooltip ? (
+    return this.root && showTooltip ? (
       <Tooltip content={this.root.textContent}>{content}</Tooltip>
     ) : (
       content

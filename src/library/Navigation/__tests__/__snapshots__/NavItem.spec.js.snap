@@ -39,7 +39,6 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -53,8 +52,13 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
+}
+
 .emotion-19 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -66,6 +70,12 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
 .emotion-19:focus {
   outline: 1px solid #84b1fa;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-19:focus {
+    outline: none;
+  }
 }
 
 .emotion-20 {
@@ -541,6 +551,7 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -676,6 +687,7 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -811,6 +823,7 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -1003,6 +1016,7 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -1144,6 +1158,7 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -1285,6 +1300,7 @@ exports[`NavItem demo examples Snapshots: basic 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -1366,7 +1382,6 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -1380,8 +1395,13 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
+}
+
 .emotion-19 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -1393,6 +1413,12 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
 .emotion-19:focus {
   outline: 1px solid #84b1fa;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-19:focus {
+    outline: none;
+  }
 }
 
 .emotion-20 {
@@ -2052,6 +2078,7 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -2201,6 +2228,7 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -2336,6 +2364,7 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -2528,6 +2557,7 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -2683,6 +2713,7 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -2824,6 +2855,7 @@ exports[`NavItem demo examples Snapshots: disabled 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -2905,7 +2937,6 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -2919,8 +2950,13 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
+}
+
 .emotion-22 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -2932,6 +2968,12 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
 .emotion-22:focus {
   outline: 1px solid #84b1fa;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-22:focus {
+    outline: none;
+  }
 }
 
 .emotion-23 {
@@ -3417,6 +3459,7 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
                                             <Truncate>
                                               <Truncate
                                                 innerRef={[Function]}
+                                                showTooltip={false}
                                               >
                                                 <span
                                                   className="emotion-0"
@@ -3563,6 +3606,7 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
                                             <Truncate>
                                               <Truncate
                                                 innerRef={[Function]}
+                                                showTooltip={false}
                                               >
                                                 <span
                                                   className="emotion-0"
@@ -3709,6 +3753,7 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
                                             <Truncate>
                                               <Truncate
                                                 innerRef={[Function]}
+                                                showTooltip={false}
                                               >
                                                 <span
                                                   className="emotion-0"
@@ -3913,6 +3958,7 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
                                             <Truncate>
                                               <Truncate
                                                 innerRef={[Function]}
+                                                showTooltip={false}
                                               >
                                                 <span
                                                   className="emotion-22"
@@ -4066,6 +4112,7 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
                                             <Truncate>
                                               <Truncate
                                                 innerRef={[Function]}
+                                                showTooltip={false}
                                               >
                                                 <span
                                                   className="emotion-22"
@@ -4219,6 +4266,7 @@ exports[`NavItem demo examples Snapshots: element 1`] = `
                                             <Truncate>
                                               <Truncate
                                                 innerRef={[Function]}
+                                                showTooltip={false}
                                               >
                                                 <span
                                                   className="emotion-22"
@@ -4301,7 +4349,6 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-1 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -4315,8 +4362,13 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-1:focus {
+    outline: none;
+  }
+}
+
 .emotion-23 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -4328,6 +4380,12 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
 .emotion-23:focus {
   outline: 1px solid #84b1fa;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-23:focus {
+    outline: none;
+  }
 }
 
 .emotion-24 {
@@ -4854,6 +4912,7 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-1"
@@ -5026,6 +5085,7 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-1"
@@ -5203,6 +5263,7 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-1"
@@ -5432,6 +5493,7 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-23"
@@ -5610,6 +5672,7 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-23"
@@ -5793,6 +5856,7 @@ exports[`NavItem demo examples Snapshots: icons 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-23"
@@ -5874,7 +5938,6 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -5888,8 +5951,13 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
+}
+
 .emotion-19 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -5901,6 +5969,12 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
 .emotion-19:focus {
   outline: 1px solid #84b1fa;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-19:focus {
+    outline: none;
+  }
 }
 
 .emotion-20 {
@@ -6614,6 +6688,7 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -6749,6 +6824,7 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -6884,6 +6960,7 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -7076,6 +7153,7 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -7217,6 +7295,7 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -7358,6 +7437,7 @@ exports[`NavItem demo examples Snapshots: max-width 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -7439,7 +7519,6 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
 }
 
 .emotion-0 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -7453,8 +7532,13 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
   outline-offset: -1px;
 }
 
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-0:focus {
+    outline: none;
+  }
+}
+
 .emotion-19 {
-  pointer-events: all;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -7466,6 +7550,12 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
 .emotion-19:focus {
   outline: 1px solid #84b1fa;
   outline-offset: -1px;
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .emotion-19:focus {
+    outline: none;
+  }
 }
 
 .emotion-20 {
@@ -8215,6 +8305,7 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -8356,6 +8447,7 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -8491,6 +8583,7 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-0"
@@ -8683,6 +8776,7 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -8830,6 +8924,7 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
@@ -8971,6 +9066,7 @@ exports[`NavItem demo examples Snapshots: selected 1`] = `
                                           <Truncate>
                                             <Truncate
                                               innerRef={[Function]}
+                                              showTooltip={false}
                                             >
                                               <span
                                                 className="emotion-19"
