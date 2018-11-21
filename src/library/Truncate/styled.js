@@ -10,7 +10,7 @@ export const TruncateRoot = createStyledComponent(
     ...ellipsis('100%'),
 
     '&:focus': {
-      outline: `1px solid ${baseTheme.color_theme}`,
+      outline: `1px solid ${baseTheme.borderColor_theme_focus}`,
       outlineOffset: -1
     }
   }),

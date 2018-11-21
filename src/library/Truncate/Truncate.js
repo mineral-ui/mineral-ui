@@ -1,5 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
+import debounce from 'lodash.debounce';
+import EventListener from '../EventListener';
 import { TruncateRoot as Root, Tooltip } from './styled';
 
 import type { TruncateProps, TruncateState } from './types';
@@ -31,7 +33,21 @@ export default class Truncate extends PureComponent<
       ...restProps
     };
 
-    const content = <Root {...rootProps}>{children}</Root>;
+    const content = (
+      <Root {...rootProps}>
+        {children}
+        <EventListener
+          listeners={[
+            {
+              target: 'window',
+              event: 'resize',
+              handler: this.handleWindowResize
+            }
+          ]}
+        />
+      </Root>
+    );
+
     return this.root && this.state.showTooltip ? (
       <Tooltip content={this.root.textContent}>{content}</Tooltip>
     ) : (
@@ -56,4 +72,6 @@ export default class Truncate extends PureComponent<
       }
     }
   };
+
+  handleWindowResize = debounce(this.toggleTooltip, 100);
 }
