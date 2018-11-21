@@ -24,6 +24,8 @@ const iconMarginMap = {
   jumbo: 14
 };
 
+const stopPropagation = (event: SyntheticEvent<*>) => event.stopPropagation();
+
 export default class SelectTrigger extends Component<SelectTriggerProps> {
   static displayName = 'SelectTrigger';
 
@@ -64,6 +66,7 @@ export default class SelectTrigger extends Component<SelectTriggerProps> {
 
     const inputProps = {
       name,
+      onClick: stopPropagation, // Stop extra click Event in Edge from closing Select
       type: 'hidden',
       value: item ? item.value : ''
     };
