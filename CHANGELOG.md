@@ -1,3 +1,21 @@
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/mineral-ui/mineral-ui/compare/v0.52.0...v0.53.0) (2018-11-21)
+
+
+### Bug Fixes
+
+* **button:** Prevent disabled non-`button` elements from being focused ([dd2930f](https://github.com/mineral-ui/mineral-ui/commit/dd2930f))
+* **Truncate:** Add resize event listener ([57f7df6](https://github.com/mineral-ui/mineral-ui/commit/57f7df6))
+* **Truncate:** Adjust IE focus styles ([c3d1df5](https://github.com/mineral-ui/mineral-ui/commit/c3d1df5))
+
+
+### Features
+
+* **Menu:** Add `element` prop to MenuItem ([1664a69](https://github.com/mineral-ui/mineral-ui/commit/1664a69))
+* **navigation:** Add NavItem, PrimaryNav, & SecondaryNav ([36dbc80](https://github.com/mineral-ui/mineral-ui/commit/36dbc80))
+
+
+
 <a name="0.52.0"></a>
 # [0.52.0](https://github.com/mineral-ui/mineral-ui/compare/v0.51.0...v0.52.0) (2018-11-19)
 
