@@ -404,6 +404,7 @@ export const CardTitleTitle = createStyledComponent(
 
       '& > [role="img"]': {
         color: variant ? theme[`icon_color_${variant}`] : null,
+        flex: '0 0 auto',
         marginLeft: rtl ? theme.CardTitleIcon_margin : null,
         marginRight: rtl ? null : theme.CardTitleIcon_margin,
         position: 'relative',
