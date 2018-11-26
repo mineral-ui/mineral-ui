@@ -1,3 +1,14 @@
+<a name="0.54.0"></a>
+# [0.54.0](https://github.com/mineral-ui/mineral-ui/compare/v0.53.0...v0.54.0) (2018-11-26)
+
+
+### Bug Fixes
+
+* **CardTitle:** Ensure icons stay same size when resize card ([e3583e3](https://github.com/mineral-ui/mineral-ui/commit/e3583e3))
+* **Select:** Fix click to open in Edge ([70f9a34](https://github.com/mineral-ui/mineral-ui/commit/70f9a34))
+
+
+
 <a name="0.53.0"></a>
 # [0.53.0](https://github.com/mineral-ui/mineral-ui/compare/v0.52.0...v0.53.0) (2018-11-21)
 
