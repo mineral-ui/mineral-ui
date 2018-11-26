@@ -1,8 +1,9 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
+import { mountInWrapper } from '../../../../utils/enzymeUtils';
 import Button from '../Button';
+import * as styled from '../styled';
 import examples from '../../../website/app/demos/Button/Button/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
@@ -26,7 +27,10 @@ const mountButton = (props = {}) => {
     ...props
   };
 
-  return mountInThemeProvider(<Button {...buttonProps} />);
+  const wrapper = mountInWrapper(<Button {...buttonProps} />);
+  const button = wrapper.find(Button);
+
+  return [wrapper, button];
 };
 
 describe('Button', () => {
@@ -49,6 +53,43 @@ describe('Button', () => {
     button.simulate('click');
 
     expect(button.props().onClick).toHaveBeenCalled();
+  });
+
+  describe('root node', () => {
+    let button, createRootNode, wrapper;
+
+    beforeEach(() => {
+      createRootNode = jest.spyOn(styled, 'createButtonRootNode');
+      [wrapper, button] = mountButton();
+      createRootNode.mockClear();
+    });
+
+    afterEach(() => {
+      createRootNode.mockRestore();
+    });
+
+    describe('when element prop changed', () => {
+      it('is recreated', () => {
+        wrapper.setProps({ element: 'a' });
+
+        expect(createRootNode).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe('when other props change', () => {
+      it('is not recreated', () => {
+        wrapper.setProps({ id: 'test' });
+
+        expect(createRootNode).not.toHaveBeenCalled();
+      });
+
+      it('retains focus', () => {
+        button.getDOMNode().focus();
+        wrapper.setProps({ id: 'test' });
+
+        expect(document.activeElement).toEqual(button.getDOMNode());
+      });
+    });
   });
 
   describe('type prop', () => {
