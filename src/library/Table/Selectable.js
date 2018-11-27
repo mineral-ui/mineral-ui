@@ -1,25 +1,31 @@
 /* @flow */
 import { Component } from 'react';
+import { polyfill as polyfillReactLifecycles } from 'react-lifecycles-compat';
 import deepEqual from 'react-fast-compare';
 
 import type { SelectableItem, SelectableProps, SelectableState } from './types';
 
-export default class Selectable extends Component<
-  SelectableProps,
-  SelectableState
-> {
+class Selectable extends Component<SelectableProps, SelectableState> {
   static displayName = 'Selectable';
 
   state = {
     selected: this.props.defaultSelected || []
   };
 
-  componentWillReceiveProps(nextProps: SelectableProps) {
-    if (!deepEqual(this.props.selected, nextProps.selected)) {
-      this.setState({
+  static getDerivedStateFromProps(
+    nextProps: SelectableProps,
+    prevState: SelectableState
+  ): $Shape<SelectableState> | null {
+    if (
+      nextProps.selected !== undefined &&
+      !deepEqual(nextProps.selected, prevState.selected)
+    ) {
+      return {
         selected: nextProps.selected
-      });
+      };
     }
+
+    return null; // no change
   }
 
   render() {
@@ -116,3 +122,5 @@ export default class Selectable extends Component<
     return this.isControlled(key) ? this.props[key] : this.state[key];
   };
 }
+
+export default polyfillReactLifecycles(Selectable);

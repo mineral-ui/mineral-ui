@@ -1,10 +1,17 @@
 /* @flow */
 import React, { Component } from 'react';
 import deepEqual from 'react-fast-compare';
+import memoizeOne from 'memoize-one';
 import SelectableTable from './SelectableTable';
 import SelectableSortableTable from './SelectableSortableTable';
 import SortableTable from './SortableTable';
 import TableBase from './TableBase';
+import {
+  getColumns,
+  getComparators,
+  getSelectableRows,
+  getSortable
+} from './utils';
 import { DENSITY, TITLE_ELEMENT } from './constants';
 
 import { tablePropTypes } from './propTypes';
@@ -15,43 +22,6 @@ import type {
   TableDefaultProps,
   TableProps
 } from './types';
-
-const generateColumns = (data: Rows) =>
-  data[0]
-    ? Object.keys(data[0]).reduce((acc, value) => {
-        acc.push({ content: value, key: value });
-        return acc;
-      }, [])
-    : [];
-
-const getColumns = ({ columns, data }: TableProps) =>
-  columns || generateColumns(data);
-
-const getComparators = ({ columns }: TableProps) => {
-  const comparators =
-    columns &&
-    columns.reduce((acc, column) => {
-      const { key, sortComparator } = column;
-      if (sortComparator) {
-        acc[key] = sortComparator;
-      }
-      return acc;
-    }, {});
-
-  return comparators && Object.keys(comparators).length
-    ? comparators
-    : undefined;
-};
-
-const getSelectableRows = (rows: Rows) => rows.filter((row) => !row.disabled);
-
-const getSortable = ({ columns, defaultSort, sort, sortable }: TableProps) =>
-  Boolean(
-    defaultSort ||
-      sort ||
-      sortable ||
-      (columns && columns.some((column) => column.sortable))
-  );
 
 class Table extends Component<TableProps> {
   static displayName = 'Table';
@@ -72,33 +42,41 @@ class Table extends Component<TableProps> {
 
   static propTypes = tablePropTypes;
 
-  columns: Columns = getColumns(this.props);
+  columns: Columns;
 
-  comparators: Comparators | typeof undefined = getComparators(this.props);
+  comparators: Comparators | typeof undefined;
 
-  selectableRows: Rows = getSelectableRows(this.props.data);
+  selectableRows: Rows;
 
-  sortable: boolean = getSortable(this.props);
+  sortable: boolean;
 
-  componentWillUpdate(nextProps: TableProps) {
-    const columnsChanged = !deepEqual(this.props.columns, nextProps.columns);
-    const dataChanged = !deepEqual(this.props.data, nextProps.data);
+  getColumns = memoizeOne(
+    getColumns,
+    (nextProps: TableProps, prevProps: TableProps) =>
+      deepEqual(prevProps.columns, nextProps.columns) &&
+      (!prevProps.columns && deepEqual(prevProps.data, nextProps.data))
+  );
 
-    if (columnsChanged || (!this.props.columns && dataChanged)) {
-      this.columns = getColumns(nextProps);
-    }
+  getComparators = memoizeOne(
+    getComparators,
+    (nextProps: TableProps, prevProps: TableProps) =>
+      deepEqual(nextProps.columns, prevProps.columns)
+  );
 
-    if (columnsChanged) {
-      this.sortable = getSortable(nextProps);
-      this.comparators = getComparators(nextProps);
-    }
+  getSelectableRows = memoizeOne(getSelectableRows, deepEqual);
 
-    if (dataChanged) {
-      this.selectableRows = getSelectableRows(nextProps.data);
-    }
-  }
+  getSortable = memoizeOne(
+    getSortable,
+    (nextProps: TableProps, prevProps: TableProps) =>
+      deepEqual(nextProps.columns, prevProps.columns)
+  );
 
   render() {
+    this.columns = this.getColumns(this.props);
+    this.comparators = this.getComparators(this.props);
+    this.selectableRows = this.getSelectableRows(this.props.data);
+    this.sortable = this.getSortable(this.props);
+
     const {
       defaultSelectedRows,
       onToggleRow,
@@ -114,7 +92,9 @@ class Table extends Component<TableProps> {
       columns: this.columns,
       comparators: this.comparators,
       ...(defaultSelectedRows
-        ? { defaultSelected: getSelectableRows(defaultSelectedRows) }
+        ? {
+            defaultSelected: this.getSelectableRows(defaultSelectedRows)
+          }
         : undefined),
       ...(onToggleRow ? { onToggle: onToggleRow } : undefined),
       ...(onToggleAllRows ? { onToggleAll: onToggleAllRows } : undefined),
