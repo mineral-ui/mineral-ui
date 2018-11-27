@@ -7,6 +7,7 @@ import {
 } from '../../../../utils/enzymeUtils';
 import Checkbox from '../../Checkbox';
 import Table from '../Table';
+import * as TableUtils from '../utils';
 import TableBase from '../TableBase';
 import { TableBody } from '../styled';
 import TableHeader from '../TableHeader';
@@ -488,6 +489,65 @@ describe('Table', () => {
       const sortedData = wrapper.find(TableBase).props().data;
 
       expect(sortedData).toMatchSnapshot();
+    });
+  });
+
+  describe('memoization', () => {
+    let wrapper;
+    let mocks: { [string]: JestMockFn<any, any> };
+
+    beforeEach(() => {
+      mocks = {
+        getColumns: jest.spyOn(TableUtils, 'getColumns'),
+        getComparators: jest.spyOn(TableUtils, 'getComparators'),
+        getSelectableRows: jest.spyOn(TableUtils, 'getSelectableRows'),
+        getSortable: jest.spyOn(TableUtils, 'getSortable')
+      };
+
+      wrapper = mountInWrapper(<Table {...defaultProps} />);
+
+      // Ignore initial calls during first render
+      Object.keys(mocks).forEach((mock) => mocks[mock].mockClear());
+    });
+
+    afterEach(() => {
+      Object.keys(mocks).forEach((mock) => mocks[mock].mockRestore());
+    });
+
+    describe('when data changes', () => {
+      it('updates memoized values', () => {
+        wrapper.setState({
+          data: [{ aa: 'aa0', ab: 'ab0', ac: 'ac0', ad: 'ad0' }]
+        });
+
+        expect(mocks.getColumns).toHaveBeenCalledTimes(1);
+        expect(mocks.getSelectableRows).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe('when columns change', () => {
+      it('updates memoized values', () => {
+        wrapper.setProps({
+          columns: [{ key: 'aa', content: 'AA' }]
+        });
+
+        expect(mocks.getColumns).toHaveBeenCalledTimes(1);
+        expect(mocks.getComparators).toHaveBeenCalledTimes(1);
+        expect(mocks.getSortable).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe('when other props change', () => {
+      it('uses memoized values', () => {
+        wrapper.setProps({
+          id: 'test'
+        });
+
+        expect(mocks.getColumns).not.toHaveBeenCalled();
+        expect(mocks.getComparators).not.toHaveBeenCalled();
+        expect(mocks.getSelectableRows).not.toHaveBeenCalled();
+        expect(mocks.getSortable).not.toHaveBeenCalled();
+      });
     });
   });
 
