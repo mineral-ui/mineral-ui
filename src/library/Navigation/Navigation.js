@@ -44,8 +44,8 @@ export default class Navigation extends Component<NavigationProps> {
     const type = typeProp
       ? `_${typeProp}`
       : minimal
-        ? INTERNAL_TYPE.minimal
-        : INTERNAL_TYPE.none;
+      ? INTERNAL_TYPE.minimal
+      : INTERNAL_TYPE.none;
 
     const rootProps = {
       align,

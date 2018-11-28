@@ -24,8 +24,8 @@ const DialogActions = (props: DialogActionsProps) => {
           props.variant !== undefined
             ? props.variant
             : index === lastIndex
-              ? variant
-              : undefined
+            ? variant
+            : undefined
       });
     });
   }

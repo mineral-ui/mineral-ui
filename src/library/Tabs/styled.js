@@ -230,8 +230,8 @@ export const TabListList = createStyledComponent(
     const childMarginProperty = vertical
       ? 'marginBottom'
       : rtl
-        ? 'marginLeft'
-        : 'marginRight';
+      ? 'marginLeft'
+      : 'marginRight';
 
     return {
       display: 'flex',

@@ -46,8 +46,8 @@ const getIcons = ({
     iconEnd !== null && variant
       ? variantIcons[variant]
       : iconEnd
-        ? iconEnd
-        : null;
+      ? iconEnd
+      : null;
 
   const endIcon =
     endIconSource &&

@@ -38,12 +38,8 @@ type OverflowContainerThemeKeys = {|
   OverflowContainer_outline_focus: ThemeValue
 |};
 
-export type OverflowContainerWithShadowsThemeFn = ComponentThemeFn<
-  OverflowContainerWithShadowsTheme
->;
-export type OverflowContainerWithShadowsTheme = ComponentTheme<
-  OverflowContainerWithShadowsThemeKeys
->;
+export type OverflowContainerWithShadowsThemeFn = ComponentThemeFn<OverflowContainerWithShadowsTheme>;
+export type OverflowContainerWithShadowsTheme = ComponentTheme<OverflowContainerWithShadowsThemeKeys>;
 type OverflowContainerWithShadowsThemeKeys = {|
   OverflowContainerWithShadows_outline_focus: ThemeValue,
   OverflowContainerWithShadows_boxShadowBottom: ThemeValue,

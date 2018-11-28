@@ -68,8 +68,8 @@ const getTextStyles: GetTextStyles = (inherit, defaultProps) => {
           propAppearance !== defaultProps.appearance
             ? propAppearance
             : isHeadingElement
-              ? element
-              : undefined;
+            ? element
+            : undefined;
         const headingAppearance =
           HEADING_ELEMENTS.indexOf(appearance) !== -1 && appearance;
 

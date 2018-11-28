@@ -76,8 +76,8 @@ export const createTableCellRootNode: CreateRootNode<
     props.element && props.element !== defaultElement
       ? props.element
       : props.primary
-        ? 'th'
-        : defaultElement;
+      ? 'th'
+      : defaultElement;
 
   return createStyledComponent(
     element,

@@ -117,8 +117,8 @@ export default class Dialog extends Component<DialogProps, DialogState> {
       'aria-labelledby': this.props['aria-label']
         ? undefined
         : hasHeader
-          ? headerId
-          : contentId,
+        ? headerId
+        : contentId,
       'aria-modal': !modeless,
       id: this.id,
       innerRef: this.setRootRef,

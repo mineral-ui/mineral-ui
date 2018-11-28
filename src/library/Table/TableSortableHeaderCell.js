@@ -23,9 +23,7 @@ const sortIcon = {
   descending: <IconArrowDropdownDown {...iconProps} />
 };
 
-export default class TableSortableHeaderCell extends Component<
-  TableSortableHeaderCellProps
-> {
+export default class TableSortableHeaderCell extends Component<TableSortableHeaderCellProps> {
   static displayName = 'TableSortableHeaderCell';
 
   render() {

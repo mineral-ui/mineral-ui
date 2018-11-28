@@ -174,8 +174,8 @@ export const ChoiceGroupRoot = createStyledComponent(
         marginBottom: inline
           ? 0
           : size === 'jumbo'
-            ? theme.ChoiceGroupControl_marginVertical_stackedJumbo
-            : theme.ChoiceGroupControl_marginVertical_stacked,
+          ? theme.ChoiceGroupControl_marginVertical_stackedJumbo
+          : theme.ChoiceGroupControl_marginVertical_stacked,
         marginRight: inline
           ? theme.ChoiceGroupControl_marginHorizontal_inline
           : undefined

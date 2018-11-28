@@ -58,8 +58,8 @@ export default class TableHeaderRow extends Component<TableHeaderRowProps> {
             columnSortable === false
               ? undefined
               : isSortable || columnSortable
-                ? tableSortable
-                : undefined,
+              ? tableSortable
+              : undefined,
           ...restColumn
         };
 

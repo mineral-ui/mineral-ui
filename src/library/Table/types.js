@@ -320,12 +320,8 @@ export type TableSortableHeaderCellProps = {
   sortable: SortableType
 };
 
-export type TableSortableHeaderCellThemeFn = ComponentThemeFn<
-  TableSortableHeaderCellTheme
->;
-export type TableSortableHeaderCellTheme = ComponentTheme<
-  TableSortableHeaderCellThemeKeys
->;
+export type TableSortableHeaderCellThemeFn = ComponentThemeFn<TableSortableHeaderCellTheme>;
+export type TableSortableHeaderCellTheme = ComponentTheme<TableSortableHeaderCellThemeKeys>;
 type TableSortableHeaderCellThemeKeys = {|
   TableSortableHeaderCell_border_focus: ThemeValue,
   TableSortableHeaderCell_color_focus: ThemeValue,

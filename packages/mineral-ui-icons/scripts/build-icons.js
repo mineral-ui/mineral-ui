@@ -195,13 +195,12 @@ async function buildIcons() {
   );
 
   const components = await Promise.all(componentPromises);
-  components.sort(
-    (a, b) =>
-      a.componentName > b.componentName
-        ? 1
-        : b.componentName > a.componentName
-          ? -1
-          : 0
+  components.sort((a, b) =>
+    a.componentName > b.componentName
+      ? 1
+      : b.componentName > a.componentName
+      ? -1
+      : 0
   );
 
   return Promise.all([
