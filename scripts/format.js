@@ -1,8 +1,5 @@
 #! /usr/bin/env node
 
-/**
- * Script to inject license header into source files.
- */
 const fs = require('fs');
 const glob = require('glob');
 const prependFile = require('prepend-file');
