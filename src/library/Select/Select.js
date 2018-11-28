@@ -321,8 +321,8 @@ export default class Select extends Component<SelectProps, SelectState> {
                 ? this.items.indexOf(prevState.selectedItem)
                 : 0
               : prevState.highlightedIndex === this.items.length - 1
-                ? 0
-                : prevState.highlightedIndex + 1
+              ? 0
+              : prevState.highlightedIndex + 1
         }),
         this.scrollHighlightedItemIntoViewIfNeeded
       );
@@ -340,8 +340,8 @@ export default class Select extends Component<SelectProps, SelectState> {
                 ? this.items.indexOf(prevState.selectedItem)
                 : this.items.length - 1
               : prevState.highlightedIndex === 0
-                ? this.items.length - 1
-                : prevState.highlightedIndex - 1
+              ? this.items.length - 1
+              : prevState.highlightedIndex - 1
         }),
         this.scrollHighlightedItemIntoViewIfNeeded
       );
@@ -358,8 +358,8 @@ export default class Select extends Component<SelectProps, SelectState> {
           highlightedIndex: selectedItem
             ? this.items.indexOf(selectedItem)
             : prevState.highlightedIndex
-              ? prevState.highlightedIndex
-              : 0
+            ? prevState.highlightedIndex
+            : 0
         };
       }, this.scrollHighlightedItemIntoViewIfNeeded);
     }

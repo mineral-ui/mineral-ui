@@ -112,8 +112,8 @@ export const Suffix = createStyledComponent(
       marginRight: rtl
         ? marginWithoutIcon
         : iconEnd || variant
-          ? 0
-          : marginWithIcon,
+        ? 0
+        : marginWithIcon,
       whiteSpace: 'nowrap',
       ...ellipsis('8em')
     };

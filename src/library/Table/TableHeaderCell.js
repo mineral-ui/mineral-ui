@@ -11,9 +11,7 @@ import type {
   TableHeaderCellProps
 } from './types';
 
-export default class TableHeaderCell extends PureComponent<
-  TableHeaderCellProps
-> {
+export default class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
   static displayName = 'TableHeaderCell';
 
   static defaultProps: TableHeaderCellDefaultProps = {

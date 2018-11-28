@@ -189,8 +189,8 @@ export class Tabs extends Component<TabsProps, TabsState> {
           ? 0
           : this.getNonDisabledIndex(selectedTabIndex + 1)
         : selectedTabIndex === 0
-          ? this.lastIndex
-          : this.getNonDisabledIndex(selectedTabIndex - 1, { decrease: true });
+        ? this.lastIndex
+        : this.getNonDisabledIndex(selectedTabIndex - 1, { decrease: true });
     this.setSelectedTabIndex(nextIndex, event);
   };
 

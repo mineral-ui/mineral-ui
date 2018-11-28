@@ -37,41 +37,45 @@ export default function MarkdownTable(props: Props) {
   const bodyNode = body.find((element) => element);
   const bodyRows =
     bodyNode &&
-    bodyNode.props.children.filter((row) => row).map((row) => {
-      const rowCells = row.props.children.filter((cell) => cell).map((cell) => {
-        let { children: cellReactChildren } = cell.props;
-        if (cellReactChildren == null) {
-          return <TableCell key={cell.key} />;
+    bodyNode.props.children
+      .filter((row) => row)
+      .map((row) => {
+        const rowCells = row.props.children
+          .filter((cell) => cell)
+          .map((cell) => {
+            let { children: cellReactChildren } = cell.props;
+            if (cellReactChildren == null) {
+              return <TableCell key={cell.key} />;
+            }
+
+            const transforms = [
+              isAvailable,
+              isExperimental,
+              isInDevelopment,
+              isNew,
+              isPlanned
+            ];
+
+            const enhancedChildren = cellReactChildren
+              .filter((child) => child)
+              // all the transforms return a (possibly modified) node,
+              // which is passed to the next transform
+              .map((child) =>
+                transforms.reduce((node, transform) => transform(node), child)
+              );
+
+            return <TableCell key={cell.key}>{enhancedChildren}</TableCell>;
+          });
+
+        // Sometimes marksy returns null if the cell actually contains empty string.
+        // Pad out the length of the rowCells array so there are at least as many
+        // columns as defined in the header
+        while (headCells && rowCells.length < headCells.length) {
+          rowCells.push(<TableCell key={`emptyCell_${rowCells.length}`} />);
         }
 
-        const transforms = [
-          isAvailable,
-          isExperimental,
-          isInDevelopment,
-          isNew,
-          isPlanned
-        ];
-
-        const enhancedChildren = cellReactChildren
-          .filter((child) => child)
-          // all the transforms return a (possibly modified) node,
-          // which is passed to the next transform
-          .map((child) =>
-            transforms.reduce((node, transform) => transform(node), child)
-          );
-
-        return <TableCell key={cell.key}>{enhancedChildren}</TableCell>;
+        return <TableRow key={row.key}>{rowCells}</TableRow>;
       });
-
-      // Sometimes marksy returns null if the cell actually contains empty string.
-      // Pad out the length of the rowCells array so there are at least as many
-      // columns as defined in the header
-      while (headCells && rowCells.length < headCells.length) {
-        rowCells.push(<TableCell key={`emptyCell_${rowCells.length}`} />);
-      }
-
-      return <TableRow key={row.key}>{rowCells}</TableRow>;
-    });
 
   return (
     <Table>

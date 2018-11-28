@@ -12,11 +12,10 @@ export const findDeep = (
   children: React$Node,
   finder: (element: React$Element<*>) => boolean
 ): ?React$Element<*> =>
-  Children.toArray(children).find(
-    (child) =>
-      hasComplexChildren(child)
-        ? findDeep(child.props.children, finder)
-        : finder(child)
+  Children.toArray(children).find((child) =>
+    hasComplexChildren(child)
+      ? findDeep(child.props.children, finder)
+      : finder(child)
   );
 
 export function findByType(

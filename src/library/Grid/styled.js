@@ -43,10 +43,10 @@ export const GridItemRoot = createStyledComponent(
     };
 
     /*
-   * [1] IE11 doesn't use the correct box-sizing model with the flex-basis
-   *     property. The workaround is to set flex-basis to 'auto' and use 'width'
-   *     instead.
-   */
+     * [1] IE11 doesn't use the correct box-sizing model with the flex-basis
+     *     property. The workaround is to set flex-basis to 'auto' and use 'width'
+     *     instead.
+     */
     return {
       flexBasis: 'auto', // [1]
 

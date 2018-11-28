@@ -31,8 +31,8 @@ const NavItem = (props: NavItemProps) => {
       type === INTERNAL_TYPE.pills
         ? BUTTON_SIZE.small
         : type === INTERNAL_TYPE.tabs
-          ? BUTTON_SIZE.medium
-          : BUTTON_SIZE.large,
+        ? BUTTON_SIZE.medium
+        : BUTTON_SIZE.large,
     type,
     ...restProps
   };

@@ -27,8 +27,8 @@ export const AvatarRoot = createStyledComponent(
         shape === SHAPE.square
           ? null
           : shape === SHAPE.rounded
-            ? theme.borderRadius_1
-            : '100%',
+          ? theme.borderRadius_1
+          : '100%',
       display: 'inline-flex',
       fontWeight: theme.Avatar_fontWeight,
       height: size,

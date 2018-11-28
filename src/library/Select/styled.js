@@ -82,8 +82,8 @@ export const SelectTriggerRoot = createStyledComponent(
             disabled || readOnly
               ? theme.color_disabled
               : selectedItemVariant
-                ? theme[`color_${selectedItemVariant}`]
-                : theme.SelectIcon_color,
+              ? theme[`color_${selectedItemVariant}`]
+              : theme.SelectIcon_color,
           margin: `0 ${theme.SelectIcon_marginHorizontal}`
         }
       },
@@ -94,8 +94,8 @@ export const SelectTriggerRoot = createStyledComponent(
           disabled || readOnly
             ? theme.color_disabled
             : variant
-              ? theme[`icon_color_${variant}`]
-              : theme.SelectIcon_color
+            ? theme[`icon_color_${variant}`]
+            : theme.SelectIcon_color
       },
 
       // the variant icon
@@ -104,10 +104,10 @@ export const SelectTriggerRoot = createStyledComponent(
           disabled || readOnly
             ? theme.color_disabled
             : variant
-              ? theme[`color_${variant}`]
-              : selectedItemVariant
-                ? theme[`color_${selectedItemVariant}`]
-                : theme.SelectIcon_color,
+            ? theme[`color_${variant}`]
+            : selectedItemVariant
+            ? theme[`color_${selectedItemVariant}`]
+            : theme.SelectIcon_color,
         marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
         marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
       }

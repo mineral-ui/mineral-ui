@@ -57,27 +57,29 @@ export default function testDemoExamples(
   }
 
   return describe('demo examples', () => {
-    examples.filter(({ scope, source }) => scope && source).map((example) => {
-      /*
-       * Skip snapshot testing of components that use the create-react-context
-       * polyfill as these components render differently when the polyfill is
-       * used vs. when it is supported natively by React.
-       */
-      const itFn =
-        contextPolyfill && semver.lt(React.version, '16.3.0') ? xit : it;
+    examples
+      .filter(({ scope, source }) => scope && source)
+      .map((example) => {
+        /*
+         * Skip snapshot testing of components that use the create-react-context
+         * polyfill as these components render differently when the polyfill is
+         * used vs. when it is supported natively by React.
+         */
+        const itFn =
+          contextPolyfill && semver.lt(React.version, '16.3.0') ? xit : it;
 
-      describe('Snapshots:', () => {
-        itFn(example.id, () => {
-          const component = mountExample(example);
-          expect(component).toMatchSnapshot();
+        describe('Snapshots:', () => {
+          itFn(example.id, () => {
+            const component = mountExample(example);
+            expect(component).toMatchSnapshot();
+          });
+        });
+
+        describe('Server Side Rendering (SSR):', () => {
+          it(example.id, () => {
+            expect(() => ssrExample(example)).not.toThrow();
+          });
         });
       });
-
-      describe('Server Side Rendering (SSR):', () => {
-        it(example.id, () => {
-          expect(() => ssrExample(example)).not.toThrow();
-        });
-      });
-    });
   });
 }

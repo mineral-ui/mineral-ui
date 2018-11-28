@@ -59,8 +59,8 @@ export default class OverflowContainer extends Component<
       ...(tabIndex !== undefined
         ? { tabIndex }
         : this.state.scrollable
-          ? { tabIndex: 0 }
-          : undefined),
+        ? { tabIndex: 0 }
+        : undefined),
       ...restProps
     };
     return (

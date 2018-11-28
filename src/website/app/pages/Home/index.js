@@ -696,12 +696,11 @@ export default class Home extends Component<Props, State> {
                         point={heroPoint}>
                         <HeroCanvas />
                         <Header latestPost={latestPost} />
-                        {latestPost &&
-                          navExpanded && (
-                            <BlogLink href={latestPost.url}>
-                              {latestPost.title}
-                            </BlogLink>
-                          )}
+                        {latestPost && navExpanded && (
+                          <BlogLink href={latestPost.url}>
+                            {latestPost.title}
+                          </BlogLink>
+                        )}
                         <Intro>{intro}</Intro>
                         <Buttons>
                           <LinkButton to="/getting-started" primary>
