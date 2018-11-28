@@ -26,9 +26,3 @@ exec('babel ./src/library --out-dir ./dist --ignore *.spec.js,*.template.js', {
   BABEL_ENV: 'cjs',
   NODE_ENV
 });
-
-// flow definitions - not yet ready for public consumption
-// console.log('\n\nCopying Flow Definitions...');
-// exec(
-//   'flow-copy-source -v -i "**/__tests__/**" -i "**/dist/**" -i "**/lib/**" -i "**/templates/**" ./src/library ./dist'
-// );
