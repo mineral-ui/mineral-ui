@@ -153,6 +153,28 @@ const demoRoutes: DemoRoutes = [
       title: 'FormFieldDivider'
     }
   ],
+  [
+    {
+      description: 'TODO',
+      slug: 'header',
+      title: 'Header'
+    },
+    {
+      description: 'TODO',
+      slug: 'header-back-button',
+      title: 'HeaderBackButton'
+    },
+    {
+      description: 'TODO',
+      slug: 'header-container',
+      title: 'HeaderContainer'
+    },
+    {
+      description: 'TODO',
+      slug: 'header-title',
+      title: 'HeaderTitle'
+    }
+  ],
   {
     description:
       'Icons symbolize actions and objects in your interface. Use icons in combination with labels to help users more quickly process your UI.',

@@ -14,6 +14,7 @@ import form from './Form';
 import icon from './Icon';
 import flex from './Flex';
 import grid from './Grid';
+import header from './Header';
 import link from './Link';
 import menu from './Menu';
 import navigation from './Navigation';
@@ -42,6 +43,7 @@ const demos = flatten([
   flex,
   form,
   grid,
+  header,
   icon,
   link,
   menu,
