@@ -1,12 +1,25 @@
 /* @flow */
-import React, { Children, cloneElement } from 'react';
-// import { GridRoot as Root } from './styled';
+import React from 'react';
+import {
+  createHeaderTitleLogoNode,
+  HeaderTitleRoot,
+  HeaderTitleTitle
+} from './styled';
 // import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
 import { headerTitlePropTypes } from './propTypes';
 import type { HeaderTitleDefaultProps, HeaderTitleProps } from './types';
 
-const HeaderTitle = (props: HeaderTitleProps) => <div {...props} />;
+const HeaderTitle = ({ children, logo, ...rootProps }: HeaderTitleProps) => {
+  const Logo = logo && createHeaderTitleLogoNode(logo);
+
+  return (
+    <HeaderTitleRoot {...rootProps}>
+      {Logo && <Logo />}
+      <HeaderTitleTitle>{children}</HeaderTitleTitle>
+    </HeaderTitleRoot>
+  );
+};
 
 HeaderTitle.displayName = 'HeaderTitle';
 const defaultProps: HeaderTitleDefaultProps = {};

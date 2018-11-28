@@ -27,8 +27,8 @@ const navItems = [
 ];
 
 export default {
-  id: 'basic',
-  title: 'Basic Usage',
+  id: 'minimal',
+  title: 'Minimal',
   description: `TODO`,
   scope: {
     Avatar,
@@ -44,7 +44,7 @@ export default {
     navItems
   },
   source: `
-    <Header>
+    <Header minimal>
       <HeaderTitle logo={IconSuccess}>App Name is Long to Force Wrapping</HeaderTitle>
       <PrimaryNav items={navItems} />
       <HeaderContainer>
