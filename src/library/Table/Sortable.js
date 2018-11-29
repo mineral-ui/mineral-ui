@@ -3,6 +3,7 @@ import { Component } from 'react';
 
 import type {
   Sort,
+  SortableData,
   SortableProps,
   SortableState,
   SortComparator,
@@ -70,7 +71,7 @@ export default class Sortable extends Component<SortableProps, SortableState> {
     onSort && onSort(sort);
   };
 
-  sortData = () => {
+  sortData = (): SortableData => {
     const { comparators, data } = this.props;
     const sort = this.getControllableValue('sort');
 

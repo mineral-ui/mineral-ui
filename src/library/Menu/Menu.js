@@ -13,7 +13,7 @@ import type {
   MenuRenderFn
 } from './types';
 
-export const getItems = (data: MenuItems) =>
+export const getItems = (data: MenuItems): MenuItems =>
   data.filter((item) => !item.divider && !item.group);
 
 export default class Menu extends PureComponent<MenuProps> {
@@ -29,7 +29,7 @@ export default class Menu extends PureComponent<MenuProps> {
     );
   }
 
-  renderFromData = (data: MenuItems) => {
+  renderFromData = (data: MenuItems): Array<React$Node> => {
     const { highlightedIndex } = this.props;
 
     let index = 0;

@@ -170,7 +170,7 @@ export type SortableState = {
   sort: ?Sort
 };
 
-type SortableData = Array<Object>;
+export type SortableData = Array<Object>;
 
 export type Sort = {
   key: string,

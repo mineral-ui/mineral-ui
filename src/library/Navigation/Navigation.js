@@ -9,6 +9,7 @@ import NavOverflowMenu from './NavOverflowMenu';
 import type {
   AnchorEvent,
   NavigationDefaultProps,
+  NavigationItems,
   NavigationProps,
   PrefixAndType
 } from './types';
@@ -61,7 +62,7 @@ export default class Navigation extends Component<NavigationProps> {
     );
   }
 
-  renderItems = (prefixAndType: PrefixAndType) => {
+  renderItems = (prefixAndType: PrefixAndType): ?Array<React$Node> => {
     const {
       children,
       itemElement,
@@ -75,7 +76,7 @@ export default class Navigation extends Component<NavigationProps> {
       ...restProps
     } = this.props;
 
-    const items = children
+    const items: ?NavigationItems = children
       ? Children.map(children, (child) => {
           const { children, ...rest } = child.props;
           return {
@@ -91,10 +92,9 @@ export default class Navigation extends Component<NavigationProps> {
       overflowData = items.slice(overflowAtIndex);
     }
 
-    return (
-      items &&
-      items.length &&
-      items.map(
+    let navChildren;
+    if (items && items.length) {
+      navChildren = items.map(
         (
           {
             child,
@@ -121,7 +121,7 @@ export default class Navigation extends Component<NavigationProps> {
 
               return <NavOverflowMenu key={index} {...menuProps} />;
             } else {
-              return;
+              return null;
             }
           } else {
             const navItemProps = {
@@ -148,8 +148,10 @@ export default class Navigation extends Component<NavigationProps> {
             );
           }
         }
-      )
-    );
+      );
+    }
+
+    return navChildren;
   };
 
   handleClick = (event: AnchorEvent, selectedIndex: number) => {

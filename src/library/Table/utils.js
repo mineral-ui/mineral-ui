@@ -29,7 +29,7 @@ export const getComparators = ({ columns }: TableProps) => {
     : undefined;
 };
 
-export const getSelectableRows = (rows: Rows) =>
+export const getSelectableRows = (rows: Rows): Rows =>
   rows.filter((row) => !row.disabled);
 
 export const getSortable = ({
