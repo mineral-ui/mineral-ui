@@ -24,7 +24,8 @@
     "pack-ls": "cd dist && tar -tvf $(npm pack)"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.6",
     "fs-extra": "7.0.1",
     "theo": "7.0.1"
   }
