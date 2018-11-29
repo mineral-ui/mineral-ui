@@ -9,6 +9,7 @@ module.exports = {
   moduleNameMapper: {
     '.(md|svg)$': '<rootDir>/utils/emptyString.js'
   },
+  modulePathIgnorePatterns: ['<rootDir>/dist/'],
   setupFiles: ['raf/polyfill'],
   setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',
   snapshotSerializers: [

@@ -1,3 +1,4 @@
+/* @flow */
 const { DEBUG, BABEL_ENV, NODE_ENV, TARGET } = process.env;
 const isProduction = NODE_ENV === 'production';
 const isTest = NODE_ENV === 'test';
@@ -10,45 +11,46 @@ const isTest = NODE_ENV === 'test';
  * https://babeljs.io/docs/plugins/#plugin-preset-ordering
  */
 
-module.exports = {
+const config = {
   presets: [
     [
-      'env',
+      '@babel/preset-env',
       {
         targets: {
           browsers: ['last 1 version']
         },
-        useBuiltIns: TARGET === 'website',
+        useBuiltIns: TARGET === 'website' ? 'entry' : false,
         modules:
           BABEL_ENV === 'cjs' || NODE_ENV === 'test' ? 'commonjs' : false,
-        debug: DEBUG
+        debug: Boolean(DEBUG)
       }
     ],
-    'react'
+    '@babel/preset-react',
+    '@babel/preset-flow'
   ],
   plugins: (() => {
     let plugins = [
-      'transform-object-rest-spread',
-      'transform-class-properties',
-      'syntax-dynamic-import'
+      '@babel/plugin-proposal-object-rest-spread',
+      '@babel/plugin-proposal-class-properties',
+      '@babel/plugin-syntax-dynamic-import'
     ];
 
     if (TARGET !== 'icons') {
       // TARGET=icons is used when building mineral-ui-icons
       // mineral-ui package built using local paths - not dependent on mineral-ui-icons package
       // mineral-ui-icons package built using actual npm package name - dependent on mineral-ui package
-      plugins.push(
-        ['module-resolver', {
+      plugins.push([
+        'module-resolver',
+        {
           alias: {
             'mineral-ui': './src/library', // Used inside mineral-ui-icons components
             'mineral-ui-icons': './packages/mineral-ui-icons/src', // Used inside mineral-ui website,
-            'mineral-ui-tokens':
-              isProduction
-                ? 'mineral-ui-tokens'
-                : './packages/mineral-ui-tokens/src' // Used inside mineral-ui website and library
+            'mineral-ui-tokens': isProduction
+              ? 'mineral-ui-tokens'
+              : './packages/mineral-ui-tokens/src' // Used inside mineral-ui website and library
           }
-        }]
-      );
+        }
+      ]);
     }
 
     if (isTest) {
@@ -60,18 +62,29 @@ module.exports = {
 
     if (isProduction) {
       plugins.push(
-        'babel-plugin-transform-react-constant-elements',
-        'babel-plugin-transform-react-inline-elements',
-        ['transform-react-remove-prop-types', {
-          mode: 'wrap',
-          ignoreFilenames: ['node_modules'],
-          'plugins': [
-            'babel-plugin-transform-flow-strip-types'
-          ]
-        }]
+        '@babel/plugin-transform-react-constant-elements',
+        '@babel/plugin-transform-react-inline-elements',
+        '@babel/plugin-transform-flow-strip-types',
+        [
+          'transform-react-remove-prop-types',
+          {
+            mode: 'wrap',
+            ignoreFilenames: ['node_modules']
+          }
+        ]
       );
     }
 
     return plugins;
   })()
 };
+
+if (DEBUG) {
+  // eslint-disable-next-line no-console
+  console.log(
+    `\n\nLoaded ${__dirname}/babel.config.js\n`,
+    JSON.stringify(config, null, 2)
+  );
+}
+
+module.exports = config;
