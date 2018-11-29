@@ -17,7 +17,7 @@ type BaseNavigationProps = {
   align?: Align,
   children?: React$Node,
   itemElement?: ItemElement,
-  items?: Items,
+  items?: NavigationItems,
   maxItemWidth?: number | string,
   messages?: Messages,
   onChange?: (
@@ -29,7 +29,7 @@ type BaseNavigationProps = {
 };
 type InternalType = $Values<typeof FROZEN_INTERNAL_TYPE>; // [1]
 type ItemElement = React$Element<*> | string;
-type Items = Array<NavigationItem>;
+export type NavigationItems = Array<NavigationItem>;
 type Messages = {
   moreLabel: string,
   moreText: string
@@ -41,7 +41,7 @@ type Type = $Keys<typeof TYPE>;
 export type AnchorEvent = SyntheticEvent<HTMLAnchorElement>;
 
 export type GetDropdownData = ({
-  data: Items,
+  data: NavigationItems,
   disabled?: boolean,
   onClick: (event: AnchorEvent, selectedIndex: number) => void,
   startingIndex: number
@@ -76,7 +76,7 @@ export type NavItemDefaultProps = {
 };
 
 export type NavOverflowMenuProps = {
-  data: Items,
+  data: NavigationItems,
   onClick: (event: AnchorEvent, selectedIndex: number) => void,
   index: number,
   itemElement: ItemElement,
