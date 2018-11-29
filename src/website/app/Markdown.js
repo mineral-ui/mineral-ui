@@ -1,6 +1,6 @@
 /* @flow */
 import React, { createElement } from 'react';
-import marksy from 'marksy/components';
+import marksy from 'marksy/jsx';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
 import {
