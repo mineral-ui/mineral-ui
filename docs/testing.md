@@ -20,18 +20,6 @@ Unit tests are defined with the [Jest test framework](https://facebook.github.io
 npm run jest
 ```
 
-#### Run tests in different versions of React
-
-```sh
-npm run jest:react
-```
-
-or
-
-```sh
-npm run jest:react -- --version=16.0.0
-```
-
 #### Run a single spec
 
 ```sh
