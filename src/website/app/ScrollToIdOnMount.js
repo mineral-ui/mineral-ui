@@ -9,13 +9,14 @@ type Props = {
 
 export default class ScrollToIdOnMount extends Component<Props> {
   componentDidMount() {
-    const element =
-      canUseDOM &&
-      this.props.id &&
-      global.document.getElementById(this.props.id);
+    if (canUseDOM) {
+      const element = this.props.id && document.getElementById(this.props.id);
 
-    if (element) {
-      element.scrollIntoView();
+      if (element) {
+        element.scrollIntoView();
+      } else {
+        window.scrollTo(0, 0);
+      }
     }
   }
 
