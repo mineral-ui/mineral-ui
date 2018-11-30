@@ -1,5 +1,6 @@
 const path = require('path');
 const { RemoteBrowserTarget } = require('happo.io');
+const happoPluginPuppeteer = require('happo-plugin-puppeteer');
 
 const { HAPPO_KEY, HAPPO_SECRET } = process.env;
 
@@ -32,7 +33,11 @@ module.exports = {
   // The <LiveProvider> wrapper adds a full-width div around the content. We can
   // configure happo to use content in the inner div to prevent all examples
   // from being full-width.
-  getRootElement(document) {
-    return document.querySelector('.react-live-preview');
-  },
+  rootElementSelector: '.react-live-preview',
+
+  setupScript: path.resolve(__dirname, 'utils/happoSetup.js'),
+
+  plugins: [
+    happoPluginPuppeteer(),
+  ]
 };
