@@ -21,7 +21,7 @@ describe('Portal', () => {
   });
 
   afterEach(() => {
-    portal.unmount();
+    portal.exists() && portal.unmount();
   });
 
   it('renders', () => {
