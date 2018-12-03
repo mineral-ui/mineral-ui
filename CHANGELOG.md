@@ -1,3 +1,7 @@
+# [0.55.0](https://github.com/mineral-ui/mineral-ui/compare/v0.54.0...v0.55.0) (2018-12-03)
+
+
+
 <a name="0.54.0"></a>
 # [0.54.0](https://github.com/mineral-ui/mineral-ui/compare/v0.53.0...v0.54.0) (2018-11-26)
 
