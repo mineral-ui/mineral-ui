@@ -1,9 +1,8 @@
 /* @flow */
-import _Loadable from 'react-loadable';
+import _Loadable from 'jaybe-react-loadable';
 import Loading from './Loading';
 
 export default function Loadable(options: Object) {
-  // $FlowFixMe
   return _Loadable({
     delay: 500,
     loading: Loading,
