@@ -26,13 +26,13 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
 its dependencies.
 
 ```bash
-npm install --save mineral-ui emotion emotion-theming react-emotion react react-dom
+npm install --save mineral-ui@0.55.0 emotion@9.2.1 emotion-theming@9.2.1 react-emotion@9.2.1 react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui emotion emotion-theming react-emotion react react-dom
+yarn add mineral-ui@0.55.0 emotion@9.2.1 emotion-theming@9.2.1 react-emotion@9.2.1 react react-dom
 ```
 
 
