@@ -11,13 +11,13 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
 its dependencies.
 
 ```bash
-npm install --save mineral-ui emotion@9.2.9 emotion-theming@9.2.9 react-emotion@9.2.9 react react-dom
+npm install --save mineral-ui emotion emotion-theming @emotion/core @emotion/styled react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui emotion@9.2.9 emotion-theming@9.2.9 react-emotion@9.2.9 react react-dom
+yarn add mineral-ui emotion emotion-theming @emotion/core @emotion/styled react react-dom
 ```
 
 ## Usage
@@ -31,9 +31,7 @@ import { ThemeProvider } from 'mineral-ui/themes';
 function App() {
   return (
     <ThemeProvider>
-      <Button>
-        Hello World
-      </Button>
+      <Button>Hello World</Button>
     </ThemeProvider>
   );
 }
@@ -55,7 +53,10 @@ Mineral UI is designed around [Open Sans](https://fonts.google.com/specimen/Open
 To quickly include Open Sans in your app, copy this code into the `head` of your HTML document.
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+  rel="stylesheet"
+/>
 ```
 
 For more options loading this font from Google, check out the "Family Selected"

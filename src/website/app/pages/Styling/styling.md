@@ -1,10 +1,10 @@
-Mineral UI is built on a design system with styles ready to go out of the box.  We realize however that there will be cases when you need to customize styles for your unique needs.  Below are some different techniques for customizing Mineral UI styles across all levels of your application.
+Mineral UI is built on a design system with styles ready to go out of the box. We realize however that there will be cases when you need to customize styles for your unique needs. Below are some different techniques for customizing Mineral UI styles across all levels of your application.
 
 ## Customization Techniques
 
 ### Themes
 
-Theming is a core concept in Mineral UI.  It is powerful feature capable of providing style customizations from the application level to the component level and should generally be your first choice when looking to make style customizations. See the [theming page](/theming) for more details.
+Theming is a core concept in Mineral UI. It is powerful feature capable of providing style customizations from the application level to the component level and should generally be your first choice when looking to make style customizations. See the [theming page](/theming) for more details.
 
 ### createStyledComponent
 
@@ -29,15 +29,15 @@ Additional CSS classes can be applied to components using the standard React `cl
 <Button className="myButton" />
 ```
 
-Mineral UI uses [Emotion](https://emotion.sh/) for component styling.  Emotion
+Mineral UI uses [Emotion](https://emotion.sh/) for component styling. Emotion
 provides an additional styling utility, the
 [css function](https://emotion.sh/docs/css), which generates a CSS class that
 can be passed to a component using the standard React `className` prop.
 
 ```jsx
-import { css } from 'react-emotion';
+import { css } from '@emotion/core';
 
-<Button className={css({ outline: '3px dashed tomato' })} />
+<Button className={css({ outline: '3px dashed tomato' })} />;
 ```
 
 <Callout title="Note">
@@ -56,7 +56,6 @@ Inline styles can be applied to components using the standard React `style` prop
 <Button style={{ outline: '3px dashed tomato' }} />
 ```
 
-
 ## API
 
 ### `createStyledComponent(element, styles, options)`
@@ -65,13 +64,13 @@ This function is used to create a new styled component based on another componen
 
 **Parameters**
 
- * `element`: A React component or a DOM element tag name
- * `styles`: A [style rule object](https://emotion.sh/docs/css), an array of style rule objects, or a function that accepts props and context and returns either a style
- rule object or an array of style rule objects.
- * `options`: Optional. An object with the following shape. All properties are optional.
+- `element`: A React component or a DOM element tag name
+- `styles`: A [style rule object](https://emotion.sh/docs/css), an array of style rule objects, or a function that accepts props and context and returns either a style
+  rule object or an array of style rule objects.
+- `options`: Optional. An object with the following shape. All properties are optional.
 
 | Option              | Type          | Description                                                                                        |
-|---------------------|---------------|----------------------------------------------------------------------------------------------------|
+| ------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
 | `displayName`       | String        | Sets component displayName and CSS className label during development                              |
 | `filterProps`       | Array<String> | Props that should not be passed to child components                                                |
 | `forwardProps`      | Array<String> | Props that should be passed to child components. Takes precedence over `filterProps` and `rootEl`. |
@@ -81,18 +80,20 @@ This function is used to create a new styled component based on another componen
 
 **Returns**
 
-* A React component
+- A React component
 
 **Examples**
 
 _With a simple style object_
+
 ```jsx
 const StyledSample = createStyledComponent(Sample, {
   outline: '3px dashed tomato'
 });
 ```
 
-_With a style function.  Use a style function when you need access to the theme or other props._
+_With a style function. Use a style function when you need access to the theme or other props._
+
 ```jsx
 const StyledSample = createStyledComponent(Sample, ({ theme }) => ({
   outline: '3px dashed tomato',
@@ -101,11 +102,16 @@ const StyledSample = createStyledComponent(Sample, ({ theme }) => ({
 ```
 
 _With a style object and additional options_
+
 ```jsx
-const StyledSample = createStyledComponent(Sample, {
-  outline: '3px dashed tomato'
-}, {
-  displayName: 'StyledSample',
-  includeStyleReset: true
-});
+const StyledSample = createStyledComponent(
+  Sample,
+  {
+    outline: '3px dashed tomato'
+  },
+  {
+    displayName: 'StyledSample',
+    includeStyleReset: true
+  }
+);
 ```

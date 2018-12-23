@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { keyframes } from 'react-emotion';
+import { keyframes } from '@emotion/core';
 import { createStyledComponent } from '../../../../library/styles';
 import Button from '../../SiteButton';
 import Link from '../../SiteLink';

@@ -46,6 +46,8 @@
     }
   },
   "dependencies": {
+    "@emotion/core": "10.0.5",
+    "@emotion/styled": "10.0.5",
     "create-react-context": "0.2.3",
     "exenv": "1.2.2",
     "fast-memoize": "2.5.1",
@@ -96,9 +98,9 @@
     "cz-conventional-changelog": "2.1.0",
     "dedent": "0.7.0",
     "diff": "3.5.0",
-    "emotion": "9.2.1",
+    "emotion": "10.0.5",
     "emotion-server": "9.2.6",
-    "emotion-theming": "9.2.1",
+    "emotion-theming": "10.0.5",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.7.0",
     "enzyme-to-json": "3.3.4",
@@ -136,7 +138,6 @@
     "raw-loader": "0.5.1",
     "react": "16.6.3",
     "react-dom": "16.6.3",
-    "react-emotion": "9.2.1",
     "react-helmet": "5.2.0",
     "react-live": "1.12.0",
     "react-media": "1.8.0",
@@ -152,10 +153,11 @@
     "webpack-dev-server": "3.1.10"
   },
   "peerDependencies": {
-    "emotion": "^9.2.1",
-    "emotion-theming": "^9.2.1",
+    "@emotion/core": "10.0.5",
+    "@emotion/styled": "10.0.5",
+    "emotion": "^10.0.5",
+    "emotion-theming": "^10.0.5",
     "react": "^15.3.0 || ^16.0.0",
-    "react-dom": "^15.3.0 || ^16.0.0",
-    "react-emotion": "^9.2.1"
+    "react-dom": "^15.3.0 || ^16.0.0"
   }
 }

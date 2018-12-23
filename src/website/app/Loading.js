@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { keyframes } from 'react-emotion';
+import { keyframes } from '@emotion/core';
 import lighten from 'polished/lib/color/lighten';
 import darken from 'polished/lib/color/darken';
 import { createStyledComponent } from '../../library/styles';

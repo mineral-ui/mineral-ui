@@ -1,13 +1,13 @@
 ### Let’s Get Started
 
-1. **Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui)
-and its dependencies using `npm` or `yarn`**
+1.  **Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui)
+    and its dependencies using `npm` or `yarn`**
 
-    ```bash
-    npm install --save mineral-ui emotion@9.2.9 emotion-theming@9.2.9 react-emotion@9.2.9 react react-dom
-    ```
+        ```bash
+        npm install --save mineral-ui emotion emotion-theming @emotion/core @emotion/styled react react-dom
+        ```
 
-1. **Wrap your app in a [ThemeProvider](/components/theme-provider) at its root for styling**
+1.  **Wrap your app in a [ThemeProvider](/components/theme-provider) at its root for styling**
 
     ```jsx
     import React from 'react';
@@ -18,9 +18,7 @@ and its dependencies using `npm` or `yarn`**
     function App() {
       return (
         <ThemeProvider>
-          <Button>
-            Hello World
-          </Button>
+          <Button>Hello World</Button>
         </ThemeProvider>
       );
     }
@@ -28,4 +26,4 @@ and its dependencies using `npm` or `yarn`**
     render(<App />, document.getElementById('app'));
     ```
 
-1. **Mineral is open-source. [Contribute!](https://github.com/mineral-ui/mineral-ui)**
+1.  **Mineral is open-source. [Contribute!](https://github.com/mineral-ui/mineral-ui)**

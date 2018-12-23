@@ -1,4 +1,3 @@
-
 [![build status](https://travis-ci.com/mineral-ui/mineral-ui.svg?branch=master)](https://travis-ci.com/mineral-ui/mineral-ui)
 [![dependency status](https://david-dm.org/mineral-ui/mineral-ui.svg)](https://david-dm.org/mineral-ui/mineral-ui)
 [![managed with Waffle](https://img.shields.io/badge/managed_with-Waffle-72b2e4.svg)](https://waffle.io/mineral-ui/mineral-ui)
@@ -17,7 +16,6 @@ A design system and [React](https://reactjs.org/) component library for the web 
 - Responsive
 - Powerful and easy to develop with inside your app
 
-
 ## Getting Started
 
 ### Installation
@@ -26,15 +24,14 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
 its dependencies.
 
 ```bash
-npm install --save mineral-ui emotion@9.2.9 emotion-theming@9.2.9 react-emotion@9.2.9 react react-dom
+npm install --save mineral-ui emotion emotion-theming @emotion/core @emotion/styled react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui emotion@9.2.9 emotion-theming@9.2.9 react-emotion@9.2.9 react react-dom
+yarn add mineral-ui emotion emotion-theming @emotion/core @emotion/styled react react-dom
 ```
-
 
 ### Usage
 
@@ -47,9 +44,7 @@ import { ThemeProvider } from 'mineral-ui/themes';
 function App() {
   return (
     <ThemeProvider>
-      <Button>
-        Hello World
-      </Button>
+      <Button>Hello World</Button>
     </ThemeProvider>
   );
 }
@@ -61,17 +56,18 @@ render(<App />, document.getElementById('app'));
 
 > Also, please see our [import syntax guide](https://mineral-ui.com/import-syntax).
 
-
 ### Open Sans Font
 
 Mineral UI was designed around [Open Sans](https://fonts.google.com/specimen/Open+Sans). To get the components to look right, you will need to include this font in your project yourself or our styles will fall back to system fonts. To quickly include this font in your app, copy this code into the `<head>` of your HTML document.
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+  rel="stylesheet"
+/>
 ```
 
 For more options loading this font from Google, check out the Selected Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans). You can also download the font file and serve it yourself if you'd like, but we'll leave that to you.
-
 
 ### Styling
 
@@ -85,7 +81,6 @@ If you have read through the documentation but are still facing difficulties, we
 
 We welcome all contributors who abide by our [Code of Conduct](./CODE_OF_CONDUCT.md). Please see the [Contributors Guide](./CONTRIBUTING.md) and [Developer Docs](./docs/README.md) for more details on submitting a PR, setting up a local dev environment, running tests, etc...
 
-
 ### How You Can Help
 
 All of the work for this project is accomplished via pull requests and issues. You can submit a PR or issue to:
@@ -98,23 +93,19 @@ All of the work for this project is accomplished via pull requests and issues. Y
 
 Thank you for offering your time, expertise, and feedback. It’s greatly appreciated!
 
-
 ## Versioning
 
-Until this project reaches a 1.0 milestone, minor version numbers will simply be incremented during each release.  The [Changelog](./CHANGELOG.md) will continue to document the different types of updates, including any "breaking changes".
+Until this project reaches a 1.0 milestone, minor version numbers will simply be incremented during each release. The [Changelog](./CHANGELOG.md) will continue to document the different types of updates, including any "breaking changes".
 
 After the 1.0 milestone, this project will follow [SemVer](http://semver.org/).
-
 
 ## Browser Support
 
 Mineral UI supports the latest versions of Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
 
-
 ## Roadmap
 
 Future plans and high priority features and enhancements can be found on the [Roadmap](https://mineral-ui.com/roadmap).
-
 
 ## License
 

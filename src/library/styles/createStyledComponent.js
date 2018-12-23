@@ -1,6 +1,6 @@
 /* @flow */
 
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import withPropsFn from 'recompose/withProps';
 import componentStyleReset from './componentStyleReset';
 import isValidProp from '../utils/isValidProp';
