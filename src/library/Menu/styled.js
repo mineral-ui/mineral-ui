@@ -65,7 +65,7 @@ export const MenuGroupTitle = createStyledComponent(
       margin: 0,
       padding: `${paddingTop} ${paddingHorizontal} ${paddingBottom}`,
 
-      '&:not(:first-child)': {
+      '&:not(:first-of-type)': {
         marginTop
       }
     };
@@ -141,7 +141,7 @@ export const createMenuItemRootNode: CreateRootNode<
           display: 'block',
           flex: '0 0 auto',
 
-          '&:first-child': {
+          '&:first-of-type': {
             marginLeft:
               theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null,
             marginRight:

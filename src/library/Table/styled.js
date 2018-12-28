@@ -107,7 +107,7 @@ export const createTableCellRootNode: CreateRootNode<
         textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
         verticalAlign: theme.TableCell_verticalAlign,
 
-        '&:not(:first-child)': {
+        '&:not(:first-of-type)': {
           [borderProperty]: borderVertical
         }
       };
@@ -196,7 +196,7 @@ export const createTableHeaderCellRootNode: CreateRootNode<
 
         // Using this "border" to appease Firefox, which extends TableHeaderCell's
         // real border down the entire column after clicking a TableSortableHeaderCell.
-        '&:not(:first-child)': {
+        '&:not(:first-of-type)': {
           [borderProperty]: 0,
 
           '&::before': {
@@ -266,7 +266,7 @@ export const TableRowRoot = createStyledComponent(
 
       ...(isSelected
         ? {
-            '& > td:first-child, & > th:first-child': {
+            '& > td:first-of-type, & > th:first-of-type': {
               position: 'relative',
 
               '&::before': {

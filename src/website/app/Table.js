@@ -7,7 +7,7 @@ const styles = {
   cell: ({ theme }) => ({
     padding: `${theme.space_inset_md} ${theme.space_inset_sm}`,
 
-    '&:first-child': {
+    '&:first-of-type': {
       paddingLeft: 0
     },
 
@@ -23,7 +23,7 @@ const styles = {
     textAlign: 'left',
     width: width && width,
 
-    '&:first-child': {
+    '&:first-of-type': {
       paddingLeft: 0
     },
 

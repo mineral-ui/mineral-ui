@@ -1,3 +1,12 @@
+# [0.56.0](https://github.com/mineral-ui/mineral-ui/compare/v0.55.0...v0.56.0) (2018-12-28)
+
+
+### Bug Fixes
+
+* **documentation:** added fix across website and readme regarding the emotion/core update ([e51dd98](https://github.com/mineral-ui/mineral-ui/commit/e51dd98))
+
+
+
 # [0.55.0](https://github.com/mineral-ui/mineral-ui/compare/v0.54.0...v0.55.0) (2018-12-03)
 
 

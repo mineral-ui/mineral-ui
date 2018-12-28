@@ -147,14 +147,14 @@ export default class Pages extends PureComponent<PagesProps> {
         <IncrementButton
           direction="previous"
           focusedNodeWhenDisabled={this.nextButton}
-          innerRef={this.setPreviousButtonRef}
+          ref={this.setPreviousButtonRef}
           {...restProps}
         />
         {showPageNumbers && getPageButtons(this.props)}
         <IncrementButton
           direction="next"
           focusedNodeWhenDisabled={this.previousButton}
-          innerRef={this.setNextButtonRef}
+          ref={this.setNextButtonRef}
           {...restProps}
         />
       </Root>

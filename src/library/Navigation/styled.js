@@ -33,7 +33,7 @@ export const NavigationRoot = createStyledComponent(
           }
         : undefined),
 
-      '& > :not(:first-child)': {
+      '& > :not(:first-of-type)': {
         marginLeft: theme[`${prefix}Nav_gutter`]
       }
     };

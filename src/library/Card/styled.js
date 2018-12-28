@@ -27,7 +27,7 @@ export const CardRoot = createStyledComponent(
       boxShadow: theme.Card_boxShadow,
       cursor: props.onClick && 'pointer',
       paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-      paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
+      paddingTop: '0.01em', // Necessary to prevent margin collapse of first-of-type
 
       '&:focus': {
         boxShadow: theme.Card_boxShadow_focus
@@ -170,7 +170,7 @@ export const CardFooterRoot = createStyledComponent(
       borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
       margin: '0 -1px calc(-1px - 0.01em) -1px', // [1]
       paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-      paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
+      paddingTop: '0.01em' // Necessary to prevent margin collapse of first-of-type
     };
   },
   {
@@ -276,7 +276,7 @@ export const CardImageRoot = createStyledComponent(
       marginTop: theme.CardRow_marginVertical,
       maxWidth: '100%',
 
-      '&:first-child': {
+      '&:first-of-type': {
         borderRadius: `${theme.Card_borderRadius} ${
           theme.Card_borderRadius
         } 0 0`,

@@ -96,7 +96,7 @@ export const DialogBodyRoot = createStyledComponent(
       padding: 0,
 
       // Margins when no header or footer
-      '&:first-child': {
+      '&:first-of-type': {
         marginTop: marginVertical
       },
       '&:last-child': {
@@ -144,7 +144,7 @@ export const DialogBodyOverflowContainerWithShadows = createStyledComponent(
         paddingLeft: paddingHorizontal,
         paddingRight: paddingHorizontal,
 
-        '& > :first-child': {
+        '& > :first-of-type': {
           marginTop: 0
         },
         '& > :last-child': {

@@ -89,7 +89,7 @@ export default class FauxControl extends Component<FauxControlProps> {
 
     const rootProps = {
       disabled,
-      innerRef: fauxControlRef,
+      ref: fauxControlRef,
       variant,
       ...restProps
     };
@@ -130,7 +130,7 @@ export default class FauxControl extends Component<FauxControlProps> {
       iconEnd,
       iconStart,
       prefix: prefixIn,
-      innerRef: controlPropsIn && controlPropsIn.controlRef,
+      ref: controlPropsIn && controlPropsIn.controlRef,
       readOnly,
       ...(controlPropsIn && controlPropsIn.htmlSize
         ? { controlSize: size, size: controlPropsIn.htmlSize }

@@ -31,7 +31,7 @@ your data is sortable.
         padding: 0,
         verticalAlign: 'bottom',
 
-        '&:not(:first-child)': {
+        '&:not(:first-of-type)': {
           borderLeft: '1px dotted ' + theme.borderColor
         }
       }));
