@@ -87,7 +87,7 @@ export const ButtonGroupRoot = createStyledComponent(
 
       // 1 - Buttons except the first
       // 2 - "Anything" except the first with a nested button
-      '& > button:not(:first-of-type), & > *:not(:first-of-type) button': {
+      '& > button:not(:first-child), & > *:not(:first-child) button': {
         [borderBottomStartRadiusProperty]: 0,
         [borderTopStartRadiusProperty]: 0
       },

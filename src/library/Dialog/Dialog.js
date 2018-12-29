@@ -121,7 +121,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
         : contentId,
       'aria-modal': !modeless,
       id: this.id,
-      ref: this.setRootRef,
+      innerRef: this.setRootRef,
       modeless,
       role: 'dialog',
       tabIndex: '-1',
@@ -133,7 +133,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
 
     const contentProps = {
       id: contentId,
-      ref: this.setContentRef,
+      innerRef: this.setContentRef,
       role: 'document',
       size
     };

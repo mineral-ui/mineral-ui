@@ -317,7 +317,7 @@ export const TabPanelOverflowContainer = createStyledComponent(
   {
     flex: '1 1 auto',
 
-    '& > :first-of-type': {
+    '& > :first-child': {
       marginTop: 0
     },
 

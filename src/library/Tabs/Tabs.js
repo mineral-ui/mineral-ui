@@ -104,7 +104,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     });
 
     const rootProps = {
-      ref: this.setRootRef,
+      innerRef: this.setRootRef,
       height,
       position,
       ...restProps,

@@ -57,7 +57,7 @@ export const Content = createStyledComponent(
         fontSize
       );
       paddings = {
-        '&:first-of-type': {
+        '&:first-child': {
           [firstChildPaddingProperty]: padding
         },
 
@@ -240,7 +240,7 @@ export const createButtonRootNode: CreateRootNode<
           display: 'block',
           flexShrink: 0,
 
-          '&:first-of-type': {
+          '&:first-child': {
             [firstChildMarginProperty]: theme.ButtonIcon_margin
           },
 

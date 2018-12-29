@@ -30,7 +30,7 @@ export default class Truncate extends PureComponent<
     const { children, ...restProps } = this.props;
     const { showTooltip } = this.state;
     const rootProps = {
-      ref: this.setRootRef,
+      innerRef: this.setRootRef,
       showTooltip,
       ...restProps
     };

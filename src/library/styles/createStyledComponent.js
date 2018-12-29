@@ -48,7 +48,7 @@ const createStyledComponent: CreateStyledComponent = (
        * These props are filtered in Emotion's default implementation of
        * shouldForwardProp, which this overrides.
        */
-      const filteredProps = ['ref', 'theme'].concat(filterProps);
+      const filteredProps = ['innerRef', 'theme'].concat(filterProps);
       const isFiltered = filteredProps.indexOf(prop) !== -1;
       const isForwarded = forwardProps.indexOf(prop) !== -1;
       const tag = typeof element === 'string' ? element : rootEl;

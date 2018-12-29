@@ -1,11 +1,11 @@
 /* @flow */
 export type ThemeProviderProps = {
   children?: React$Node,
-  theme?: Theme<>
+  theme: Theme<>
 };
 
 export type Theme<T: ThemeObj = ThemeObj> = T | ThemeFn<T>;
-export type ThemeObj = { [key: string]: ThemeValue };
+export type ThemeObj = Object;
 export type ThemeFn<T: ThemeObj = ThemeObj> = (
   props: Object,
   context?: Object

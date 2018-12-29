@@ -276,7 +276,7 @@ export const CardImageRoot = createStyledComponent(
       marginTop: theme.CardRow_marginVertical,
       maxWidth: '100%',
 
-      '&:first-of-type': {
+      '&:first-child': {
         borderRadius: `${theme.Card_borderRadius} ${
           theme.Card_borderRadius
         } 0 0`,

@@ -34,7 +34,7 @@ const styles = {
     }
   }),
   componentDocExample: ({ theme }) => ({
-    '&:not(:first-of-type)': {
+    '&:not(:first-child)': {
       marginTop: pxToEm(27), // to baseline
 
       [theme.bp_moreSpacious]: {

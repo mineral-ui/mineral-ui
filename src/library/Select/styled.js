@@ -77,7 +77,7 @@ export const SelectTriggerRoot = createStyledComponent(
         color: theme.SelectIcon_color,
         flex: '0 0 auto',
 
-        '&:first-of-type': {
+        '&:first-child': {
           color:
             disabled || readOnly
               ? theme.color_disabled

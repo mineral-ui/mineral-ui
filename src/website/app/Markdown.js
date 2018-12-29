@@ -85,7 +85,7 @@ const styles = {
         theme.lineHeight_prose}em 0`,
       maxWidth: theme.maxTextWidth,
 
-      '&:first-of-type': {
+      '&:first-child': {
         marginTop: 0
       }
     },

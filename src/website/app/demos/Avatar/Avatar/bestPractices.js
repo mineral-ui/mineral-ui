@@ -11,7 +11,7 @@ const Name = createStyledComponent('div', ({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
 
-  '& > :first-of-type': {
+  '& > :first-child': {
     marginRight: theme.space_inline_sm
   }
 }));

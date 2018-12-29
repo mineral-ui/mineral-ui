@@ -43,7 +43,7 @@ export default class Choice extends PureComponent<ChoiceProps> {
       'aria-invalid': invalid,
       'aria-required': required,
       disabled,
-      ref: (ref) => {
+      innerRef: (ref) => {
         if (inputRef) {
           inputRef(ref);
         }

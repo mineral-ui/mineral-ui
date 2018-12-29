@@ -54,7 +54,7 @@ export default class TabList extends Component<TabListProps, TabListState> {
     const { scrollable } = this.state;
     const rootProps = {
       align,
-      ref: this.setRootRef,
+      innerRef: this.setRootRef,
       vertical,
       ...restProps,
       'aria-label': undefined
@@ -63,7 +63,7 @@ export default class TabList extends Component<TabListProps, TabListState> {
       align,
       'aria-label': restProps['aria-label'],
       count: Children.count(children),
-      ref: this.setListRef,
+      innerRef: this.setListRef,
       role,
       vertical
     };

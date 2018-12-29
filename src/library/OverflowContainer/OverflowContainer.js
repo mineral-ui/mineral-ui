@@ -55,7 +55,7 @@ export default class OverflowContainer extends Component<
     const { children, tabIndex, ...restProps } = this.props;
 
     const rootProps = {
-      ref: this.setContainerRef,
+      innerRef: this.setContainerRef,
       ...(tabIndex !== undefined
         ? { tabIndex }
         : this.state.scrollable
