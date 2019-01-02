@@ -1,53 +1,44 @@
 /* @flow */
 import React, { Component, cloneElement } from 'react';
-import memoizeOne from 'memoize-one';
-import { createButtonRootNode, Content, Inner } from './styled';
+import withForwardRef from '../utils/withForwardRef';
+import { Button as Root, Content, Inner } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
 
 import { buttonPropTypes } from './propTypes';
 import type { ButtonDefaultProps, ButtonProps } from './types';
 
-export default class Button extends Component<ButtonProps> {
+class Button extends Component<ButtonProps> {
   static displayName = 'Button';
 
   static defaultProps: ButtonDefaultProps = {
-    element: 'button',
-    size: SIZE.large,
-    type: 'button'
+    size: SIZE.large
   };
 
   static propTypes = buttonPropTypes;
-
-  // Must be an instance method to avoid affecting other instances memoized keys
-  getRootNode = memoizeOne(
-    createButtonRootNode,
-    (nextProps: ButtonProps, prevProps: ButtonProps) =>
-      nextProps.element === prevProps.element
-  );
 
   render() {
     const {
       children,
       disabled,
+      forwardedRef,
       iconStart,
       iconEnd,
       size = Button.defaultProps.size,
-      type = Button.defaultProps.type,
       variant,
       ...restProps
     } = this.props;
 
+    // [1] Necessary when rendering an `a` element, which doesn't use `disabled`
     const rootProps = {
+      'aria-disabled': disabled, // [1]
       disabled,
+      ref: forwardedRef,
       size,
-      tabIndex: disabled ? -1 : undefined,
+      tabIndex: disabled ? -1 : undefined, // [1]
       text: children,
-      type,
       variant,
       ...restProps
     };
-
-    const Root = this.getRootNode(this.props, Button.defaultProps);
 
     const startIcon = iconStart
       ? cloneElement(iconStart, { size: ICON_SIZE[size], key: 'iconStart' })
@@ -67,3 +58,8 @@ export default class Button extends Component<ButtonProps> {
     );
   }
 }
+
+export default withForwardRef<
+  React$Config<ButtonProps, ButtonDefaultProps>,
+  Button
+>(Button);

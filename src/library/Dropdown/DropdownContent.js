@@ -1,26 +1,55 @@
 /* @flow */
 import React, { Component } from 'react';
-import { DropdownContentRoot as Root } from './styled';
+import withForwardRef from '../utils/withForwardRef';
+import Popper from '../Popover/RtlPopper';
+import { DropdownContentWrapper } from './styled';
 
 import type { DropdownContentProps } from './types';
 
-export default class DropdownContent extends Component<DropdownContentProps> {
+class DropdownContent extends Component<DropdownContentProps> {
   static displayName = 'DropdownContent';
 
   render() {
-    const { children, ...rootProps } = this.props;
+    const {
+      children,
+      forwardedRef,
+      modifiers,
+      placement,
+      positionFixed,
+      ...restProps
+    } = this.props;
+    const popperProps = {
+      modifiers,
+      placement,
+      positionFixed
+    };
 
     return (
-      <Root {...rootProps}>
-        {({ popperProps, restProps }) => {
-          const wrapperProps = {
-            ...popperProps,
+      <Popper {...popperProps}>
+        {({ outOfBoundaries, placement, ref: popperRef, style }) => {
+          const dropdownContentWrapperProps = {
+            'data-placement': placement,
+            'data-out-of-boundaries': outOfBoundaries || undefined,
+            ref: (node: ?HTMLElement) => {
+              forwardedRef && forwardedRef(node);
+              popperRef(node);
+            },
+            style,
             ...restProps
           };
 
-          return <div {...wrapperProps}>{children}</div>;
+          return (
+            <DropdownContentWrapper {...dropdownContentWrapperProps}>
+              {children}
+            </DropdownContentWrapper>
+          );
         }}
-      </Root>
+      </Popper>
     );
   }
 }
+
+export default withForwardRef<
+  React$Config<DropdownContentProps, *>,
+  DropdownContent
+>(DropdownContent);

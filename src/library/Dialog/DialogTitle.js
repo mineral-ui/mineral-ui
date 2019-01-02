@@ -1,11 +1,11 @@
 /* @flow */
 import React from 'react';
-import { withTheme } from '../themes';
+import { withTheme } from 'emotion-theming';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
 import { textWithThemeOverrides } from '../Text';
-import { APPEARANCE, ELEMENT } from './constants';
+import { APPEARANCE } from './constants';
 import { DialogTitleRoot as Root, DialogTitleTitle } from './styled';
 import { dialogTitleTheme } from './themes';
 
@@ -19,6 +19,7 @@ const variantIcons = {
 };
 
 const DialogTitle = ({
+  as,
   id,
   theme,
   variant,
@@ -33,6 +34,7 @@ const DialogTitle = ({
   const TitleContent = (props) => <DialogTitleTitle id={id} {...props} />;
 
   const title = textWithThemeOverrides({
+    as: as || 'h1',
     displayName: 'DialogTitle',
     textComponent: TitleContent,
     theme,
@@ -53,8 +55,7 @@ const DialogTitle = ({
 };
 
 const defaultProps: DialogTitleDefaultProps = {
-  appearance: APPEARANCE.h4,
-  element: ELEMENT.h1
+  appearance: APPEARANCE.h4
 };
 
 DialogTitle.displayName = 'DialogTitle';

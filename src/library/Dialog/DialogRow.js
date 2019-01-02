@@ -1,26 +1,11 @@
 /* @flow */
-import React, { Component } from 'react';
-import memoizeOne from 'memoize-one';
-import { createDialogRowRootNode } from './styled';
+import React from 'react';
+import { DialogRowRoot as Root } from './styled';
 
-import type { DialogRowDefaultProps, DialogRowProps } from './types';
+import type { DialogRowProps } from './types';
 
-export default class DialogRow extends Component<DialogRowProps> {
-  static displayName = 'DialogRow';
-
-  static defaultProps: DialogRowDefaultProps = {
-    element: 'div'
-  };
-
-  getRootNode = memoizeOne(
-    createDialogRowRootNode,
-    (nextProps: DialogRowProps, prevProps: DialogRowProps) =>
-      nextProps.element === prevProps.element
-  );
-
-  render() {
-    const Root = this.getRootNode(this.props, DialogRow.defaultProps);
-
-    return <Root {...this.props} />;
-  }
+export default function DialogRow(props: DialogRowProps) {
+  return <Root {...props} />;
 }
+
+DialogRow.displayName = 'DialogRow';

@@ -5,7 +5,7 @@ import Truncate from '../Truncate';
 import { INTERNAL_TYPE } from './constants';
 import { NavItemRoot } from './styled';
 
-import type { NavItemDefaultProps, NavItemProps } from './types';
+import type { NavItemProps } from './types';
 
 const NavItem = (props: NavItemProps) => {
   const {
@@ -45,11 +45,5 @@ const NavItem = (props: NavItemProps) => {
 };
 
 NavItem.displayName = 'NavItem';
-
-const defaultProps: NavItemDefaultProps = {
-  element: 'a'
-};
-
-NavItem.defaultProps = defaultProps;
 
 export default NavItem;

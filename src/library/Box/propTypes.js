@@ -9,7 +9,6 @@ export const spacingPropType = oneOfType([
 
 export const boxPropTypes = {
   breakpoints: arrayOf(oneOfType([number, string])),
-  element: string,
   height: spacingPropType,
   inline: oneOfType([bool, arrayOf(bool)]),
   margin: spacingPropType,

@@ -26,6 +26,7 @@ export type DropdownProps = {
   onClose?: (event: SyntheticEvent<>) => void,
   onOpen?: (event: SyntheticEvent<>) => void,
   placement?: Placement,
+  positionFixed?: boolean,
   usePortal?: boolean,
   wide?: boolean
 };
@@ -61,9 +62,11 @@ type DropdownRenderProps = {
 
 export type DropdownContentProps = {
   children: React$Node,
+  forwardedRef?: (node: ?HTMLElement) => void,
   id: string,
   modifiers?: Object,
   placement?: Placement,
+  positionFixed?: boolean,
   wide?: boolean
 };
 

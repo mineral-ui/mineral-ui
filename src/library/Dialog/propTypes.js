@@ -63,8 +63,8 @@ export const dialogHeaderPropTypes = {
 
 export const dialogTitlePropTypes = {
   appearance: oneOf(Object.keys(APPEARANCE)),
+  as: oneOf(Object.keys(ELEMENT)),
   children: node.isRequired,
-  element: oneOf(Object.keys(ELEMENT)),
   id: string,
   variant
 };

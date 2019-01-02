@@ -1,10 +1,7 @@
 /* @flow */
-import type { ThemeObj } from '../themes/types';
-import type { StyleObj } from './types';
+import type { ComponentStyleReset } from './types';
 
-type ComponentStyleReset = ({ theme: ThemeObj }) => StyleObj;
-
-const componentStyleReset: ComponentStyleReset = ({ theme }) => ({
+const componentStyleReset: ComponentStyleReset = (theme) => ({
   boxSizing: 'border-box',
   color: theme.color,
   fontFamily: theme.fontFamily

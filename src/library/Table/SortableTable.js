@@ -7,7 +7,10 @@ import type { SortableTableProps } from './types';
 
 const SortableTable = (props: SortableTableProps) => (
   <Sortable {...props} isSortable={props.sortable}>
-    {({ ...props }) => <TableBase {...props} data={props.sortable.data} />}
+    {(props) => {
+      const { onSort: ignoreOnSort, ...restProps } = props;
+      return <TableBase {...restProps} data={props.sortable.data} />;
+    }}
   </Sortable>
 );
 

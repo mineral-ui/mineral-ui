@@ -15,6 +15,7 @@ export const tooltipPropTypes = {
   onClose: func,
   onOpen: func,
   placement: oneOf(Object.keys(PLACEMENT)),
+  positionFixed: bool,
   subtitle: any,
   title: any,
   usePortal: bool

@@ -28,7 +28,7 @@ export default class TableBase extends Component<
   static defaultProps: TableBaseDefaultProps = {
     density: DENSITY.compact,
     scrollable: true,
-    titleElement: TITLE_ELEMENT.h4
+    titleAs: TITLE_ELEMENT.h4
   };
 
   id: string = this.props.id || `table-${generateId()}`;
@@ -52,7 +52,7 @@ export default class TableBase extends Component<
       striped,
       title,
       titleAppearance,
-      titleElement,
+      titleAs,
       ...rootProps
     } = this.props;
     const appearanceProps = {
@@ -75,7 +75,7 @@ export default class TableBase extends Component<
         <Root {...rootProps}>
           <TableTitle
             appearance={titleAppearance}
-            element={titleElement}
+            as={titleAs}
             hide={hideTitle}
             id={this.titleId}>
             {title}

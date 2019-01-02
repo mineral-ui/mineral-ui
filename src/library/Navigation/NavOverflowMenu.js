@@ -29,7 +29,7 @@ const getDropdownData: GetDropdownData = ({ data, onClick, startingIndex }) =>
   }));
 
 // eslint-disable-next-line react/display-name
-const getDropdownItem: GetDropdownItem = (itemElement) => (
+const getDropdownItem: GetDropdownItem = (itemAs) => (
   props: ?MenuItemRenderProps
 ) => {
   const common = {
@@ -38,13 +38,13 @@ const getDropdownItem: GetDropdownItem = (itemElement) => (
      * with an `href` and then preventDefault (like we do for items directly in
      * Navigation). Instead, we force a `span` element.
      */
-    element:
-      itemElement === NavOverflowMenu.defaultProps.itemElement &&
+    as:
+      itemAs === NavOverflowMenu.defaultProps.itemAs &&
       props &&
       props.props &&
       props.props.disabled
         ? 'span'
-        : itemElement,
+        : itemAs,
     role: null,
     tabIndex: -1
   };
@@ -53,7 +53,7 @@ const getDropdownItem: GetDropdownItem = (itemElement) => (
 };
 
 const NavOverflowMenu = (props: NavOverflowMenuProps) => {
-  const { data, index, itemElement, onClick, prefix, messages, type } = props;
+  const { data, index, itemAs, onClick, prefix, messages, type } = props;
 
   const rootProps = {
     data: getDropdownData({
@@ -61,12 +61,12 @@ const NavOverflowMenu = (props: NavOverflowMenuProps) => {
       onClick,
       startingIndex: index
     }),
-    item: getDropdownItem(itemElement)
+    item: getDropdownItem(itemAs)
   };
   const triggerProps = {
     'aria-label': messages.moreLabel,
     children: messages.moreText,
-    element: 'button',
+    as: 'button',
     iconEnd: <IconArrowDropdownDown />,
     prefix,
     type
@@ -82,7 +82,7 @@ const NavOverflowMenu = (props: NavOverflowMenuProps) => {
 NavOverflowMenu.displayName = 'NavOverflowMenu';
 
 const defaultProps: NavOverflowMenuDefaultProps = {
-  itemElement: NavItem.defaultProps.element
+  itemAs: 'a'
 };
 
 NavOverflowMenu.defaultProps = defaultProps;

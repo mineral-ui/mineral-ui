@@ -10,12 +10,7 @@ import type {
 export type LinkProps = {
   children?: React$Node,
   href?: string,
-  element?: $FlowFixMe, // Should allow string | React$ComponentType<*>
   variant?: $Keys<typeof VARIANT>
-};
-
-export type LinkDefaultProps = {
-  element: $FlowFixMe // Should allow string | React$ComponentType<*>
 };
 
 export type LinkThemeFn = ComponentThemeFn<LinkTheme>;

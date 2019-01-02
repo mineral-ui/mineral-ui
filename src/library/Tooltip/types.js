@@ -22,6 +22,7 @@ export type TooltipProps = {
   onClose?: (event: SyntheticEvent<>) => void,
   onOpen?: (event: SyntheticEvent<>) => void,
   placement?: Placement,
+  positionFixed?: boolean,
   subtitle?: any,
   title?: any,
   usePortal?: boolean

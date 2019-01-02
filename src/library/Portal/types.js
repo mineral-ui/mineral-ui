@@ -1,6 +1,5 @@
 /* @flow */
 
 export type PortalProps = {
-  children: React$Node,
-  callback?: () => void
+  children: React$Node
 };

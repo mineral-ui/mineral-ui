@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { Popper } from 'react-popper';
-import { withTheme } from '../themes';
+import { withTheme } from 'emotion-theming';
 
 import type { RtlPopperProps } from './types';
 

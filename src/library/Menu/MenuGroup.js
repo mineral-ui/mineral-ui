@@ -6,9 +6,13 @@ import { menuGroupPropTypes } from './propTypes';
 import type { MenuGroupProps } from './types';
 
 const MenuGroup = (props: MenuGroupProps) => {
-  const { children, title } = props;
+  const { children, title, ...restProps } = props;
   return [
-    title && <MenuGroupTitle key="MenuGroup">{title}</MenuGroupTitle>,
+    title && (
+      <MenuGroupTitle {...restProps} key="MenuGroup">
+        {title}
+      </MenuGroupTitle>
+    ),
     children
   ];
 };

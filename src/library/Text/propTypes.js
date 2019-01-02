@@ -7,10 +7,9 @@ export const textPropTypes = {
   appearance: oneOf(Object.keys(APPEARANCE)),
   children: node.isRequired,
   color: string,
-  element: string,
   fontWeight: oneOfType([oneOf(Object.keys(FONT_WEIGHT)), number]),
   inherit: bool,
   noMargins: bool,
-  parentElement: string,
+  parentAs: string,
   truncate: oneOfType([bool, number, string])
 };

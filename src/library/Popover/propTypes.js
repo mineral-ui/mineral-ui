@@ -16,6 +16,7 @@ export const popoverPropTypes = {
   onClose: func,
   onOpen: func,
   placement: oneOf(Object.keys(PLACEMENT)),
+  positionFixed: bool,
   subtitle: node,
   title: node,
   triggerRef: func,

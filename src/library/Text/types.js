@@ -17,30 +17,31 @@ export type TextProps = {
   appearance?: Appearance,
   children: React$Node,
   color?: string,
-  element?: string,
+  as?: string,
   fontWeight?: FontWeight,
   inherit?: boolean,
   noMargins?: boolean,
-  parentElement?: string,
+  parentAs?: string,
   truncate?: boolean | number | string
 };
 
 export type TextDefaultProps = {
-  appearance: Appearance,
-  element: string
+  appearance: Appearance
 };
 
 export type TextProviderProps = TextProps;
 
-export type TextProviderDefaultProps = TextDefaultProps;
+export type TextProviderDefaultProps = TextDefaultProps & {
+  as: string
+};
 
 export type ElementContextType = string | void;
 
 export type TextWithThemeOverrides = ({
   appearance?: string,
+  as?: string,
   children: React$Node,
   displayName: string,
-  element?: string,
   textComponent: React$ComponentType<*>,
   theme: ThemeObj
 }) => React$Element<*>;

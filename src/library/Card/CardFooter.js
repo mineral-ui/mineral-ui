@@ -38,6 +38,8 @@ export default class CardFooter extends Component<
     const {
       children,
       expandable,
+      onClose: ignoreOnClose,
+      onOpen: ignoreOnOpen,
       title,
       triggerTitle = CardFooter.defaultProps.triggerTitle,
       variant,

@@ -7,7 +7,7 @@ import type {
   ThemeValue
 } from '../themes/types';
 
-type Size = $Keys<typeof SIZE> | string;
+type Size = $Keys<typeof SIZE> | number | string;
 
 export type IconProps = {
   children?: React$Node,

@@ -1,10 +1,9 @@
 /* @flow */
-import { createStyledComponent, getResponsiveStyles } from '../styles';
+import styled from '@emotion/styled';
+import { getResponsiveStyles } from '../styles';
 import Box from '../Box';
-import ActualFlex from './Flex';
 
-import type { CreateRootNode, StyleValue } from '../styles/types';
-import type { FlexItemProps } from './types';
+import type { StyleValue } from '../styles/types';
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;
@@ -35,8 +34,10 @@ const flexMapValueToProperty = (
   return map[property](value);
 };
 
-export const FlexRoot = createStyledComponent(
-  Box,
+export const FlexRoot = styled(Box, {
+  shouldForwardProp: (prop) =>
+    ['direction', 'inline', 'wrap'].indexOf(prop) === -1
+})(
   ({
     breakpoints,
     alignItems,
@@ -57,11 +58,7 @@ export const FlexRoot = createStyledComponent(
         justifyContent
       },
       theme
-    }),
-  {
-    displayName: 'Flex',
-    filterProps: ['inline']
-  }
+    })
 );
 
 const flexItemMapValueToProperty = (
@@ -80,29 +77,20 @@ const flexItemMapValueToProperty = (
   return map[property](value);
 };
 
-export const createFlexItemRootNode: CreateRootNode<FlexItemProps> = (
-  props
-) => {
-  const component = props.flex ? ActualFlex : Box;
-
-  return createStyledComponent(
-    component,
-    ({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
-      getResponsiveStyles({
-        breakpoints,
-        mapValueToProperty: flexItemMapValueToProperty,
-        styles: {
-          alignSelf,
-          flexBasis: width || 'auto',
-          flexGrow: grow,
-          flexShrink: shrink,
-          minWidth
-        },
-        theme
-      }),
-    {
-      displayName: 'FlexItem',
-      filterProps: ['inline', 'minWidth', 'width']
-    }
-  );
-};
+export const FlexItemRoot = styled(Box, {
+  shouldForwardProp: (prop) =>
+    ['inline', 'minWidth', 'width'].indexOf(prop) === -1
+})(({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
+  getResponsiveStyles({
+    breakpoints,
+    mapValueToProperty: flexItemMapValueToProperty,
+    styles: {
+      alignSelf,
+      flexBasis: width || 'auto',
+      flexGrow: grow,
+      flexShrink: shrink,
+      minWidth
+    },
+    theme
+  })
+);

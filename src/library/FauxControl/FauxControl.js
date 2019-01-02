@@ -1,11 +1,10 @@
 /* @flow */
-import React, { cloneElement, Component } from 'react';
-import memoizeOne from 'memoize-one';
+import React, { cloneElement } from 'react';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
 import {
-  createControlNode,
+  Control,
   FauxControlRoot as Root,
   Prefix,
   Suffix,
@@ -59,101 +58,90 @@ const getIcons = ({
   return [startIcon, endIcon];
 };
 
-export default class FauxControl extends Component<FauxControlProps> {
-  static displayName = 'FauxControl';
+export default function FauxControl({
+  afterItems,
+  beforeItems,
+  children,
+  control,
+  controlProps: controlPropsIn,
+  disabled,
+  fauxControlRef,
+  iconEnd,
+  iconStart,
+  prefix: prefixIn,
+  size,
+  readOnly,
+  suffix: suffixIn,
+  variant,
+  ...restProps
+}: FauxControlProps) {
+  const rootProps = {
+    disabled,
+    ref: fauxControlRef,
+    variant,
+    ...restProps
+  };
 
-  // Must be an instance method to avoid affecting other instances memoized keys
-  getControlNode = memoizeOne(
-    createControlNode,
-    (nextProps: FauxControlProps, prevProps: FauxControlProps) =>
-      nextProps.control === prevProps.control
+  const [startIcon, endIcon] = getIcons({
+    disabled,
+    iconStart,
+    iconEnd,
+    readOnly,
+    size,
+    variant,
+    variantIcons
+  });
+
+  const prefixAndSuffixProps = {
+    iconEnd,
+    iconStart,
+    size,
+    variant
+  };
+
+  const prefix = prefixIn ? (
+    <Prefix {...prefixAndSuffixProps} key="prefix">
+      {prefixIn}
+    </Prefix>
+  ) : null;
+  const suffix = suffixIn ? (
+    <Suffix {...prefixAndSuffixProps} key="suffix">
+      {suffixIn}
+    </Suffix>
+  ) : null;
+
+  const controlProps = {
+    as: control,
+    controlPropsIn,
+    ...controlPropsIn,
+    children,
+    disabled,
+    iconEnd,
+    iconStart,
+    prefix: prefixIn,
+    ref: controlPropsIn && controlPropsIn.controlRef,
+    readOnly,
+    ...(controlPropsIn && controlPropsIn.htmlSize
+      ? { controlSize: size, size: controlPropsIn.htmlSize }
+      : { size }),
+    suffix: suffixIn,
+    variant
+  };
+
+  const underlayProps = { disabled, readOnly, variant };
+
+  return (
+    <Root {...rootProps}>
+      {beforeItems}
+      {startIcon}
+      {prefix}
+      {<Control {...controlProps} key="control" />}
+      {suffix}
+      {endIcon}
+      {afterItems}
+      <Underlay {...underlayProps} />
+    </Root>
   );
-
-  render() {
-    const {
-      afterItems,
-      beforeItems,
-      children,
-      controlProps: controlPropsIn,
-      disabled,
-      fauxControlRef,
-      iconEnd,
-      iconStart,
-      prefix: prefixIn,
-      size,
-      readOnly,
-      suffix: suffixIn,
-      variant,
-      ...restProps
-    } = this.props;
-
-    const rootProps = {
-      disabled,
-      innerRef: fauxControlRef,
-      variant,
-      ...restProps
-    };
-
-    const [startIcon, endIcon] = getIcons({
-      disabled,
-      iconStart,
-      iconEnd,
-      readOnly,
-      size,
-      variant,
-      variantIcons
-    });
-
-    const prefixAndSuffixProps = {
-      iconEnd,
-      iconStart,
-      size,
-      variant
-    };
-
-    const prefix = prefixIn ? (
-      <Prefix {...prefixAndSuffixProps} key="prefix">
-        {prefixIn}
-      </Prefix>
-    ) : null;
-    const suffix = suffixIn ? (
-      <Suffix {...prefixAndSuffixProps} key="suffix">
-        {suffixIn}
-      </Suffix>
-    ) : null;
-
-    const controlProps = {
-      controlPropsIn,
-      ...controlPropsIn,
-      children,
-      disabled,
-      iconEnd,
-      iconStart,
-      prefix: prefixIn,
-      innerRef: controlPropsIn && controlPropsIn.controlRef,
-      readOnly,
-      ...(controlPropsIn && controlPropsIn.htmlSize
-        ? { controlSize: size, size: controlPropsIn.htmlSize }
-        : { size }),
-      suffix: suffixIn,
-      variant
-    };
-
-    const Control = this.getControlNode(this.props);
-
-    const underlayProps = { disabled, readOnly, variant };
-
-    return (
-      <Root {...rootProps}>
-        {beforeItems}
-        {startIcon}
-        {prefix}
-        {<Control {...controlProps} key="control" />}
-        {suffix}
-        {endIcon}
-        {afterItems}
-        <Underlay {...underlayProps} />
-      </Root>
-    );
-  }
 }
+
+FauxControl.displayName = 'FauxControl';

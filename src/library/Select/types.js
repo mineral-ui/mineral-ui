@@ -33,12 +33,13 @@ export type SelectProps = {
   onSelect?: (item: MenuItemType, event: SyntheticEvent<>) => void,
   placeholder?: string,
   placement?: Placement,
+  positionFixed?: boolean,
   readOnly?: boolean,
   required?: boolean,
   selectedItem?: MenuItemType,
   size?: Size,
   trigger?: SelectRenderFn,
-  triggerRef?: (node: ?React$Component<*, *>) => void,
+  triggerRef?: (node: ?HTMLElement) => void,
   usePortal?: boolean,
   variant?: Variant
 };
@@ -82,7 +83,7 @@ export type SelectTriggerProps = {
   required?: boolean,
   item?: MenuItemType,
   size?: Size,
-  triggerRef?: () => void,
+  triggerRef?: (node: ?HTMLElement) => void,
   variant?: Variant
 };
 

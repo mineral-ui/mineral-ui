@@ -12,10 +12,13 @@ export default class PageJumper extends PureComponent<PageJumperProps> {
   static displayName = 'PageJumper';
 
   render() {
-    const { inputRef, messages, size, ...restProps } = this.props;
-    const rootProps = {
-      ...restProps
-    };
+    const {
+      inputRef,
+      messages,
+      onPageChange: ignoreOnPageChange,
+      size,
+      ...rootProps
+    } = this.props;
 
     const { label, placeholder } = messages;
     const inputProps = {
