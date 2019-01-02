@@ -1,6 +1,5 @@
 /* @flow */
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
 import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
@@ -50,7 +49,7 @@ export default class Select extends Component<SelectProps, SelectState> {
 
   getItems = memoizeOne(getItems, deepEqual);
 
-  selectTrigger: ?React$Component<*, *>;
+  selectTrigger: ?HTMLElement;
 
   render() {
     return (
@@ -60,7 +59,11 @@ export default class Select extends Component<SelectProps, SelectState> {
             data,
             disabled,
             modifiers,
+            name: ignoreName,
+            placeholder: ignorePlaceholder,
             readOnly,
+            required: ignoreRequired,
+            size: ignoreSize,
             trigger,
             ...restProps
           } = this.props;
@@ -112,11 +115,15 @@ export default class Select extends Component<SelectProps, SelectState> {
     };
   };
 
-  setTriggerRef = (node: ?React$Component<*, *>) => {
+  setTriggerRef = (node: ?HTMLElement) => {
     const { triggerRef } = this.props;
 
     this.selectTrigger = node;
     triggerRef && triggerRef(node);
+  };
+
+  getContentId = () => {
+    return `${this.id}-content`;
   };
 
   getMenuItemId = (index: string | number) => {
@@ -366,12 +373,11 @@ export default class Select extends Component<SelectProps, SelectState> {
   };
 
   scrollHighlightedItemIntoViewIfNeeded = () => {
-    const highlightedItemNode = global.document.getElementById(
-      this.getHighlightedItemId()
-    );
-    const boundary = findDOMNode(this); // eslint-disable-line react/no-find-dom-node
+    const boundary = global.document.getElementById(this.getContentId());
+    const highlightedItemNode =
+      boundary && global.document.getElementById(this.getHighlightedItemId());
 
-    if (highlightedItemNode && boundary) {
+    if (highlightedItemNode) {
       scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
     }
   };
@@ -428,10 +434,8 @@ export default class Select extends Component<SelectProps, SelectState> {
   };
 
   focusTrigger = () => {
-    const node = findDOMNode(this.selectTrigger); // eslint-disable-line react/no-find-dom-node
-    if (node instanceof HTMLElement) {
-      node.focus();
-    }
+    const node = this.selectTrigger;
+    node && node.focus();
   };
 
   open = (event: SyntheticEvent<>) => {

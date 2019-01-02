@@ -1,31 +1,26 @@
 /* @flow */
-import React, { Component } from 'react';
-import memoizeOne from 'memoize-one';
-import { createFlexItemRootNode } from './styled';
+import React from 'react';
+import { FlexItemRoot as Root } from './styled';
+import Flex from './Flex';
 
 import { flexItemPropTypes } from './propTypes';
 import type { FlexItemDefaultProps, FlexItemProps } from './types';
 
-export default class FlexItem extends Component<FlexItemProps> {
-  static displayName = 'FlexItem';
-
-  static defaultProps: FlexItemDefaultProps = {
-    grow: 0,
-    shrink: 1
+export default function FlexItem({ flex, ...restProps }: FlexItemProps) {
+  const rootProps = {
+    ...(flex ? { as: Flex } : undefined),
+    flex,
+    ...restProps
   };
 
-  static propTypes = flexItemPropTypes;
-
-  // Must be an instance method to avoid affecting other instances memoized keys
-  getRootNode = memoizeOne(
-    createFlexItemRootNode,
-    (nextProps: FlexItemProps, prevProps: FlexItemProps) =>
-      nextProps.flex === prevProps.flex
-  );
-
-  render() {
-    const Root = this.getRootNode(this.props);
-
-    return <Root {...this.props} />;
-  }
+  return <Root {...rootProps} />;
 }
+
+const defaultProps: FlexItemDefaultProps = {
+  grow: 0,
+  shrink: 1
+};
+
+FlexItem.displayName = 'FlexItem';
+FlexItem.defaultProps = defaultProps;
+FlexItem.propTypes = flexItemPropTypes;

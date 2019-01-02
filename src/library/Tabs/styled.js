@@ -1,54 +1,58 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
-import { createThemedComponent } from '../themes';
+import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
+import { componentStyleReset, pxToEm } from '../styles';
+import { themed } from '../themes';
 import { ie10Plus } from '../utils/cssSelectors';
+import { ignoreSsrWarning } from '../utils/emotion';
 import Button from '../Button';
 import OverflowContainer, {
   OverflowContainerWithShadows
 } from '../OverflowContainer';
 import { tabTheme, tabListTheme, tabPanelTheme } from './themes';
 
-export const TabsRoot = createStyledComponent(
-  'div',
-  ({ height, position }) => {
-    const flexDirection = {
-      bottom: 'column-reverse',
-      end: 'row-reverse',
-      start: 'row',
-      top: 'column'
-    };
+export const TabsRoot = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
+})(({ height, position, theme }) => {
+  const flexDirection = {
+    bottom: 'column-reverse',
+    end: 'row-reverse',
+    start: 'row',
+    top: 'column'
+  };
 
-    return {
-      display: 'flex',
-      flexDirection: flexDirection[position],
-      height
-    };
-  },
-  {
-    displayName: 'Tabs',
-    includeStyleReset: true
-  }
-);
+  return {
+    ...componentStyleReset(theme),
 
-const TabThemedButton = createThemedComponent(
-  Button,
-  ({ theme: baseTheme }) => {
-    const theme = tabTheme(baseTheme);
-    return {
-      Button_backgroundColor_minimal_active: null,
-      Button_backgroundColor_minimal_hover: null,
-      Button_borderRadius: null,
-      Button_borderWidth: 0,
-      Button_boxShadow_focus: null,
-      Button_color_minimal: theme.Tab_color
-    };
-  }
-);
+    display: 'flex',
+    flexDirection: flexDirection[position],
+    height
+  };
+});
 
-export const TabAnchor = createStyledComponent(
-  TabThemedButton,
-  ({ disabled, maxWidth, position = 'top', selected, theme: baseTheme }) => {
+const TabThemedButton = themed(Button)(({ theme: baseTheme }) => {
+  const theme = tabTheme(baseTheme);
+  return {
+    Button_backgroundColor_minimal_active: null,
+    Button_backgroundColor_minimal_hover: null,
+    Button_borderRadius: null,
+    Button_borderWidth: 0,
+    Button_boxShadow_focus: null,
+    Button_color_minimal: theme.Tab_color
+  };
+});
+
+export const TabAnchor = withProps({
+  as: 'a',
+  fullWidth: true,
+  role: 'tab',
+  size: 'medium'
+})(
+  styled(TabThemedButton, {
+    shouldForwardProp: (prop) => ['selected', 'title'].indexOf(prop) === -1
+  })(({ disabled, maxWidth, position = 'top', selected, theme: baseTheme }) => {
     const theme = tabTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
 
@@ -105,43 +109,30 @@ export const TabAnchor = createStyledComponent(
         }
       }
     };
-  },
-  {
-    displayName: 'Tab',
-    filterProps: ['title'],
-    withProps: {
-      element: 'a',
-      fullWidth: true,
-      role: 'tab',
-      size: 'medium'
-    }
-  }
+  })
 );
 
-const TabListThemedButton = createThemedComponent(
-  Button,
-  ({ theme: baseTheme }) => {
-    const theme = tabListTheme(baseTheme);
-    return {
-      Button_backgroundColor_minimal_active: null,
-      Button_backgroundColor_minimal_hover: null,
-      Button_borderRadius: 0,
-      Button_borderWidth: 0,
-      Button_boxShadow_focus: null,
-      Button_paddingIconOnly_medium: 0,
-      ButtonIcon_color: theme.TabListArrow_color,
+const TabListThemedButton = themed(Button)(({ theme: baseTheme }) => {
+  const theme = tabListTheme(baseTheme);
+  return {
+    Button_backgroundColor_minimal_active: null,
+    Button_backgroundColor_minimal_hover: null,
+    Button_borderRadius: 0,
+    Button_borderWidth: 0,
+    Button_boxShadow_focus: null,
+    Button_paddingIconOnly_medium: 0,
+    ButtonIcon_color: theme.TabListArrow_color,
 
-      Icon_size_medium: pxToEm(20)
-    };
-  }
-);
+    Icon_size_medium: pxToEm(20)
+  };
+});
 
-const TabListThemedOverflowContainerWithShadows = createThemedComponent(
-  OverflowContainerWithShadows,
-  ({ theme: baseTheme }) => {
-    const theme = tabListTheme(baseTheme);
-    // prettier-ignore
-    return {
+const TabListThemedOverflowContainerWithShadows = themed(
+  OverflowContainerWithShadows
+)(({ theme: baseTheme }) => {
+  const theme = tabListTheme(baseTheme);
+  // prettier-ignore
+  return {
       OverflowContainerWithShadows_boxShadowBottom:
         `inset 0 -24px 22px -14px ${theme.TabListOverflowContainer_boxShadowColor}`,
       OverflowContainerWithShadows_boxShadowLeft:
@@ -151,12 +142,10 @@ const TabListThemedOverflowContainerWithShadows = createThemedComponent(
       OverflowContainerWithShadows_boxShadowTop:
         `inset 0 24px 22px -14px ${theme.TabListOverflowContainer_boxShadowColor}`
     };
-  }
-);
+});
 
-const TabListArrowButton = createStyledComponent(
-  TabListThemedButton,
-  ({ theme: baseTheme }) => {
+const TabListArrowButton = withProps({ type: 'button' })(
+  styled(TabListThemedButton)(({ theme: baseTheme }) => {
     const theme = tabListTheme(baseTheme);
 
     return {
@@ -172,57 +161,50 @@ const TabListArrowButton = createStyledComponent(
         height: '100%'
       }
     };
-  },
-  {
-    displayName: 'ArrowButton'
-  }
+  })
 );
 
-export const TabListInner = createStyledComponent(
-  TabListThemedOverflowContainerWithShadows,
-  ({ position, theme: baseTheme, vertical }) => {
-    const theme = {
-      ...tabListTheme(baseTheme),
-      ...tabPanelTheme(baseTheme)
-    };
-    const rtl = theme.direction === 'rtl';
-    const edge = {
-      bottom: 'top',
-      end: rtl ? 'right' : 'left',
-      start: rtl ? 'left' : 'right',
-      top: 'bottom'
-    };
-    const edgeProperty = edge[position];
+export const TabListInner = withProps({
+  hideScrollbars: true,
+  // We handle our own "scroll with the keyboard" interaction in Tabs, so
+  // null tabIndex is to prevent an extraneous tab stop
+  tabIndex: null
+})(
+  styled(TabListThemedOverflowContainerWithShadows)(
+    ({ position, theme: baseTheme, vertical }) => {
+      const theme = {
+        ...tabListTheme(baseTheme),
+        ...tabPanelTheme(baseTheme)
+      };
+      const rtl = theme.direction === 'rtl';
+      const edge = {
+        bottom: 'top',
+        end: rtl ? 'right' : 'left',
+        start: rtl ? 'left' : 'right',
+        top: 'bottom'
+      };
+      const edgeProperty = edge[position];
 
-    return {
-      display: 'flex',
-      // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
-      ...(vertical ? { minHeight: '0%' } : { minWidth: '0%' }),
+      return {
+        display: 'flex',
+        // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
+        ...(vertical ? { minHeight: '0%' } : { minWidth: '0%' }),
 
-      // This component should not apply this style unless used within Tabs
-      ...(theme.TabList_border
-        ? {
-            // OverflowContainerWithShadows > Shadows
-            '&::before': {
-              [edgeProperty]: theme.TabList_border.split('px')[0]
+        // This component should not apply this style unless used within Tabs
+        ...(theme.TabList_border
+          ? {
+              // OverflowContainerWithShadows > Shadows
+              '&::before': {
+                [edgeProperty]: `${theme.TabList_border.split('px')[0]}px`
+              }
             }
-          }
-        : undefined)
-    };
-  },
-  {
-    displayName: 'Inner',
-    withProps: {
-      hideScrollbars: true,
-      // We handle our own "scroll with the keyboard" interaction in Tabs, so
-      // null tabIndex is to prevent an extraneous tab stop
-      tabIndex: null
+          : undefined)
+      };
     }
-  }
+  )
 );
 
-export const TabListList = createStyledComponent(
-  'ul',
+export const TabListList = styled('ul')(
   ({ align, count, theme: baseTheme, vertical }) => {
     const theme = tabListTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -274,26 +256,22 @@ export const TabListList = createStyledComponent(
   }
 );
 
-export const TabListRoot = createStyledComponent(
-  'div',
-  ({ height, vertical }) => ({
-    display: 'flex',
-    flex: '0 0 auto',
-    flexDirection: vertical ? 'column' : undefined,
-    position: 'relative',
+export const TabListRoot = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
+})(({ height, vertical }) => ({
+  display: 'flex',
+  flex: '0 0 auto',
+  flexDirection: vertical ? 'column' : undefined,
+  position: 'relative',
 
-    ...(vertical && height
-      ? {
-          [ie10Plus]: {
-            height
-          }
+  ...(vertical && height
+    ? {
+        [ie10Plus]: {
+          height
         }
-      : undefined)
-  }),
-  {
-    displayName: 'TabList'
-  }
-);
+      }
+    : undefined)
+}));
 
 // eslint-disable-next-line react/display-name
 export const TabListIncrementButton = ({
@@ -312,31 +290,28 @@ export const TabListIncrementButton = ({
   />
 );
 
-export const TabPanelOverflowContainer = createStyledComponent(
-  OverflowContainer,
-  {
+export const TabPanelOverflowContainer = withProps({
+  scrollY: true,
+  // We always want the panel content to be focusable, for ease of keyboard users
+  tabIndex: 0
+})(
+  styled(OverflowContainer)({
     flex: '1 1 auto',
 
-    '& > :first-child': {
+    ['& > :first-child' + ignoreSsrWarning]: {
       marginTop: 0
     },
 
     '& > :last-child': {
       marginBottom: 0
     }
-  },
-  {
-    withProps: {
-      scrollY: true,
-      // We always want the panel content to be focusable, for ease of keyboard users
-      tabIndex: 0
-    }
-  }
+  })
 );
 
-export const TabPanelRoot = createStyledComponent(
-  'div',
-  ({ position, theme: baseTheme }) => {
+export const TabPanelRoot = withProps({
+  role: 'tabpanel'
+})(
+  styled('div')(({ position, theme: baseTheme }) => {
     const theme = tabPanelTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
 
@@ -359,11 +334,5 @@ export const TabPanelRoot = createStyledComponent(
       minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
       [paddingProperty]: theme.TabPanel_gap
     };
-  },
-  {
-    displayName: 'TabPanel',
-    withProps: {
-      role: 'tabpanel'
-    }
-  }
+  })
 );

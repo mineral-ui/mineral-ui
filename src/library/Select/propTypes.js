@@ -33,6 +33,7 @@ export const selectPropTypes = {
   onSelect: func,
   placeholder: string,
   placement: oneOf(Object.keys(PLACEMENT)),
+  positionFixed: bool,
   readOnly: bool,
   required: bool,
   selectedItem: object,

@@ -136,7 +136,7 @@ const getResponsiveStyles: GetResponsiveStyles = ({
 
     // Start with the non-responsive style properties and the first value of the
     // responsive properties.
-    let result = {
+    const result: StyleObj = {
       ...getStyles(nonResponsiveStyleKeys, styles, mapValueToProperty),
       ...getStyles(responsiveStyleKeys, styles, mapValueToProperty, 0)
     };

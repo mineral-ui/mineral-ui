@@ -1,11 +1,13 @@
 /* @flow */
 import { Component } from 'react';
-import { polyfill as polyfillReactLifecycles } from 'react-lifecycles-compat';
 import deepEqual from 'react-fast-compare';
 
 import type { SelectableItem, SelectableProps, SelectableState } from './types';
 
-class Selectable extends Component<SelectableProps, SelectableState> {
+export default class Selectable extends Component<
+  SelectableProps,
+  SelectableState
+> {
   static displayName = 'Selectable';
 
   state = {
@@ -122,5 +124,3 @@ class Selectable extends Component<SelectableProps, SelectableState> {
     return this.isControlled(key) ? this.props[key] : this.state[key];
   };
 }
-
-export default polyfillReactLifecycles(Selectable);

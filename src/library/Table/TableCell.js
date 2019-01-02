@@ -1,33 +1,21 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import memoizeOne from 'memoize-one';
 import { isRenderProp } from '../utils';
 import TableContext from './TableContext';
-import { createTableCellRootNode } from './styled';
+import { TableCellRoot as Root } from './styled';
 
-import type { TableCellDefaultProps, TableCellProps } from './types';
+import type { TableCellProps } from './types';
 
 export default class TableCell extends PureComponent<TableCellProps> {
   static displayName = 'TableCell';
-
-  static defaultProps: TableCellDefaultProps = {
-    element: 'td'
-  };
-
-  // Must be an instance method to avoid affecting other instances memoized keys
-  getRootNode = memoizeOne(
-    createTableCellRootNode,
-    (nextProps: TableCellProps, prevProps: TableCellProps) =>
-      nextProps.element === prevProps.element &&
-      nextProps.primary === prevProps.primary
-  );
 
   render() {
     return (
       <TableContext.Consumer>
         {(tableContextProps) => {
-          const { primary, render, ...restProps } = this.props;
+          const { as, primary, render, ...restProps } = this.props;
           const rootProps = {
+            as: as || (primary ? 'th' : 'td'),
             ...tableContextProps,
             ...(primary ? { scope: 'row' } : undefined),
             ...restProps
@@ -39,7 +27,6 @@ export default class TableCell extends PureComponent<TableCellProps> {
             });
           }
 
-          const Root = this.getRootNode(this.props, TableCell.defaultProps);
           return <Root {...rootProps} />;
         }}
       </TableContext.Consumer>

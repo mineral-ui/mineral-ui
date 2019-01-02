@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { withTheme } from '../themes';
+import { withTheme } from 'emotion-theming';
 import { FlexItem } from '../Flex';
 import Pages from './Pages';
 import PageJumper from './PageJumper';
@@ -51,6 +51,8 @@ export class Pagination extends PureComponent<PaginationProps> {
     const {
       currentPage,
       messages: propMessages,
+      onPageChange: ignoreOnPageChange,
+      onPageSizeChange: ignoreOnPageSizeChange,
       pageSize,
       pageSizes,
       showPageJumper,
@@ -106,7 +108,6 @@ export class Pagination extends PureComponent<PaginationProps> {
         currentPage,
         key: 'Page Sizer',
         messages: { category: messages.category, ...messages.pageSizer },
-        onPageChange: this.handlePageChange,
         onPageSizeChange: this.handlePageSizeChange,
         pageSize,
         pageSizes,
@@ -117,7 +118,7 @@ export class Pagination extends PureComponent<PaginationProps> {
     }
 
     return (
-      <Root justifyContent="end" {...rootProps}>
+      <Root {...rootProps}>
         {showPageSizerOrJumper && (
           <FlexItem flex grow={1}>
             {showPageSizer && (

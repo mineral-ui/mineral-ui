@@ -1,57 +1,77 @@
 /* @flow */
 import React, { Component } from 'react';
+import withForwardRef from '../utils/withForwardRef';
 import PopoverArrow from './PopoverArrow';
-import {
-  PopoverContentRoot as Root,
-  PopoverBlock,
-  PopoverTitle
-} from './styled';
+import Popper from './RtlPopper';
+import { PopoverContentWrapper, PopoverBlock, PopoverTitle } from './styled';
 import { ARROW_SIZE } from './constants';
 
 import type { PopoverContentProps } from './types';
 
-export default class PopoverContent extends Component<PopoverContentProps> {
+class PopoverContent extends Component<PopoverContentProps> {
   static displayName = 'PopoverContent';
 
   render() {
     const {
       children,
       hasArrow,
+      modifiers,
       placement,
+      positionFixed,
+      forwardedRef,
       subtitle,
       title,
       ...restProps
     } = this.props;
 
-    const rootProps = {
+    const popperProps = {
+      modifiers,
       placement,
-      ...restProps
-    };
-    const popoverArrowProps = {
-      size: ARROW_SIZE,
-      placement
+      positionFixed
     };
 
     return (
-      <Root {...rootProps}>
-        {({ popperProps, restProps }) => {
-          const wrapperProps = {
-            ...popperProps,
+      <Popper {...popperProps}>
+        {({
+          arrowProps,
+          outOfBoundaries,
+          placement,
+          ref: popperRef,
+          style
+        }) => {
+          const popoverContentWrapperProps = {
+            'data-placement': placement,
+            'data-out-of-boundaries': outOfBoundaries || undefined,
+            ref: (node: ?HTMLElement) => {
+              forwardedRef && forwardedRef(node);
+              popperRef(node);
+            },
+            style,
             ...restProps
           };
-          popoverArrowProps.placement = wrapperProps['data-placement'];
+
+          const popoverArrowProps = {
+            size: ARROW_SIZE,
+            placement,
+            ...arrowProps
+          };
 
           return (
-            <div {...wrapperProps}>
+            <PopoverContentWrapper {...popoverContentWrapperProps}>
               {title && (
                 <PopoverTitle subtitle={subtitle}>{title}</PopoverTitle>
               )}
               <PopoverBlock>{children}</PopoverBlock>
               {hasArrow && <PopoverArrow {...popoverArrowProps} />}
-            </div>
+            </PopoverContentWrapper>
           );
         }}
-      </Root>
+      </Popper>
     );
   }
 }
+
+export default withForwardRef<
+  React$Config<PopoverContentProps, *>,
+  PopoverContent
+>(PopoverContent);

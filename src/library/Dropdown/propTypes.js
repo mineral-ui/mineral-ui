@@ -28,6 +28,7 @@ export const dropdownPropTypes = {
   onClose: func,
   onOpen: func,
   placement: oneOf(Object.keys(PLACEMENT)),
+  positionFixed: bool,
   usePortal: bool,
   wide: bool
 };

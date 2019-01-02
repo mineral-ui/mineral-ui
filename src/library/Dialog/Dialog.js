@@ -4,7 +4,7 @@ import { canUseDOM } from 'exenv';
 import FocusTrap from 'focus-trap-react';
 import noScroll from 'no-scroll';
 import Transition from 'react-transition-group/Transition';
-import { withTheme } from '../themes';
+import { withTheme } from 'emotion-theming';
 import { generateId } from '../utils';
 import { excludeByType, findByType } from '../utils/children';
 import Button from '../Button';
@@ -85,6 +85,8 @@ export default class Dialog extends Component<DialogProps, DialogState> {
       isOpen,
       hideOverlay,
       modeless,
+      onClose: ignoreOnClose,
+      onOpen: ignoreOnOpen,
       size,
       title,
       usePortal,
@@ -121,7 +123,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
         : contentId,
       'aria-modal': !modeless,
       id: this.id,
-      innerRef: this.setRootRef,
+      ref: this.setRootRef,
       modeless,
       role: 'dialog',
       tabIndex: '-1',
@@ -133,7 +135,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
 
     const contentProps = {
       id: contentId,
-      innerRef: this.setContentRef,
+      ref: this.setContentRef,
       role: 'document',
       size
     };
@@ -346,7 +348,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
   };
 
   handleDocumentKeydown = (event: SyntheticKeyboardEvent<>) => {
-    if (event.key === 'Escape' && !event.defaultPrevented) {
+    if (event.key.indexOf('Esc') === 0 && !event.defaultPrevented) {
       this.close();
     }
   };

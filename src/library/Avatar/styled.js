@@ -1,10 +1,14 @@
 /* @flow */
-import { createStyledComponent } from '../styles';
+import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
+import { componentStyleReset } from '../styles';
 import { SHAPE } from './constants';
 import { avatarTheme } from './themes';
 
-export const AvatarRoot = createStyledComponent(
-  'span',
+export const AvatarRoot = styled('span', {
+  shouldForwardProp: (prop) =>
+    ['color', 'shape', 'size'].indexOf(prop) === -1 && isPropValid(prop)
+})(
   ({
     background,
     color: propColor,
@@ -20,6 +24,8 @@ export const AvatarRoot = createStyledComponent(
     const size = theme[`Avatar_size_${propSize}`];
 
     return {
+      ...componentStyleReset(baseTheme),
+
       alignItems: 'center',
       backgroundColor: noBackground ? null : background || theme.color_theme_60,
       color,
@@ -56,10 +62,5 @@ export const AvatarRoot = createStyledComponent(
         color
       }
     };
-  },
-  {
-    displayName: 'Avatar',
-    filterProps: ['icon'],
-    includeStyleReset: true
   }
 );

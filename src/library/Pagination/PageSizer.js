@@ -13,6 +13,7 @@ export default class PageSizer extends PureComponent<PageSizerProps> {
     const {
       currentPage,
       messages,
+      onPageSizeChange: ignoreOnPageSizeChange,
       pageSize,
       pageSizes,
       size,

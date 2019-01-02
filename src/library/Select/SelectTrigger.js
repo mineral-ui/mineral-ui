@@ -1,9 +1,11 @@
 /* @flow */
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
 import React, { Component } from 'react';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
-import { createStyledComponent, pxToEm } from '../styles';
+import { pxToEm } from '../styles';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import { SelectTriggerRoot as Root, Trigger, TriggerContent } from './styled';
@@ -44,19 +46,13 @@ export default class SelectTrigger extends Component<SelectTriggerProps> {
     } = this.props;
 
     const ArrowIcon = isOpen ? IconArrowDropdownUp : IconArrowDropdownDown;
-    const Arrow = createStyledComponent(
-      ArrowIcon,
-      {
+    const Arrow = withProps({
+      size:
+        size === SIZE.small || size === SIZE.medium ? SIZE.medium : pxToEm(24)
+    })(
+      styled(ArrowIcon)({
         margin: pxToEm(iconMarginMap[size])
-      },
-      {
-        withProps: {
-          size:
-            size === SIZE.small || size === SIZE.medium
-              ? SIZE.medium
-              : pxToEm(24)
-        }
-      }
+      })
     );
 
     const controlProps = {

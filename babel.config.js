@@ -12,23 +12,36 @@ const isTest = NODE_ENV === 'test';
  */
 
 const config = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          browsers: ['last 1 version']
-        },
-        useBuiltIns: TARGET === 'website' ? 'entry' : false,
-        loose: true,
-        modules:
-          BABEL_ENV === 'cjs' || NODE_ENV === 'test' ? 'commonjs' : false,
-        debug: Boolean(DEBUG)
-      }
-    ],
-    '@babel/preset-react',
-    '@babel/preset-flow'
-  ],
+  presets: (() => {
+    let presets = [
+      [
+        '@babel/preset-env',
+        {
+          targets: {
+            browsers: ['last 1 version']
+          },
+          useBuiltIns: TARGET === 'website' ? 'entry' : false,
+          loose: true,
+          modules:
+            BABEL_ENV === 'cjs' || NODE_ENV === 'test' ? 'commonjs' : false,
+          debug: Boolean(DEBUG)
+        }
+      ],
+      '@babel/preset-react',
+      '@babel/preset-flow'
+    ];
+
+    if (!isTest) {
+      presets.push([
+        '@emotion/babel-preset-css-prop',
+        {
+          sourceMap: !isProduction
+        }
+      ]);
+    }
+
+    return presets;
+  })(),
   plugins: (() => {
     let plugins = [
       '@babel/plugin-proposal-object-rest-spread',
@@ -64,7 +77,6 @@ const config = {
     if (isProduction) {
       plugins.push(
         '@babel/plugin-transform-react-constant-elements',
-        '@babel/plugin-transform-react-inline-elements',
         '@babel/plugin-transform-flow-strip-types',
         [
           'transform-react-remove-prop-types',

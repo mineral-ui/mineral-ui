@@ -75,6 +75,7 @@ export default class ButtonGroup extends Component<
 
   render() {
     const {
+      checked: ignoreChecked,
       children,
       disabled,
       fullWidth,
@@ -85,9 +86,7 @@ export default class ButtonGroup extends Component<
       ...restProps
     } = this.props;
     const rootProps = {
-      disabled,
       fullWidth,
-      mode,
       role: mode === MODE.radio ? 'radiogroup' : 'group',
       variant,
       ...restProps

@@ -70,5 +70,5 @@ export const tablePropTypes = {
   striped: bool,
   title: node.isRequired,
   titleAppearance: oneOf(Object.keys(TITLE_ELEMENT)),
-  titleElement: oneOf(Object.keys(TITLE_ELEMENT))
+  titleAs: oneOf(Object.keys(TITLE_ELEMENT))
 };

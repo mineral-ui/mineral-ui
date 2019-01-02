@@ -2,13 +2,13 @@
 import {
   bool,
   element,
-  func,
   string,
   node,
   object,
   oneOf,
   oneOfType
 } from 'prop-types';
+import { component } from '../utils/propTypes';
 import { VARIANT } from './constants';
 
 export const formFieldPropTypes = {
@@ -16,7 +16,7 @@ export const formFieldPropTypes = {
   children: node,
   hideLabel: bool,
   id: string,
-  input: func,
+  input: component,
   rootProps: object,
   label: oneOfType([string, element]).isRequired,
   required: bool,

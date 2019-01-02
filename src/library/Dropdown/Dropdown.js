@@ -1,6 +1,5 @@
 /* @flow */
 import React, { Children, Component, cloneElement } from 'react';
-import { findDOMNode } from 'react-dom';
 import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
@@ -38,7 +37,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     isOpen: Boolean(this.props.defaultIsOpen)
   };
 
-  dropdownTrigger: ?React$Component<*, *>;
+  dropdownTrigger: ?HTMLElement;
 
   highlightedItemId: ?string;
 
@@ -93,7 +92,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     };
   };
 
-  setTriggerRef = (node: ?React$Component<*, *>) => {
+  setTriggerRef = (node: ?HTMLElement) => {
     this.dropdownTrigger = node;
   };
 
@@ -104,7 +103,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
       tabIndex: ignoreTabIndex,
       ...restProps
     } = props;
-    const { modifiers, placement, wide } = this.props;
+    const { modifiers, placement, positionFixed, wide } = this.props;
 
     return {
       ...restProps,
@@ -112,6 +111,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
       id: this.getContentId(),
       modifiers,
       placement,
+      positionFixed,
       wide
     };
   };
@@ -328,12 +328,11 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
   };
 
   scrollHighlightedItemIntoViewIfNeeded = () => {
-    const highlightedItemNode = global.document.getElementById(
-      this.getHighlightedItemId()
-    );
-    const boundary = findDOMNode(this); // eslint-disable-line react/no-find-dom-node
+    const boundary = global.document.getElementById(this.getContentId());
+    const highlightedItemNode =
+      boundary && global.document.getElementById(this.getHighlightedItemId());
 
-    if (highlightedItemNode && boundary) {
+    if (highlightedItemNode) {
       scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
     }
   };
@@ -390,10 +389,21 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
   };
 
   focusTrigger = () => {
-    const node = findDOMNode(this.dropdownTrigger); // eslint-disable-line react/no-find-dom-node
-    if (node && node.firstChild && node.firstChild instanceof HTMLElement) {
-      node.firstChild.focus();
+    const node = this.dropdownTrigger;
+
+    if (!node) {
+      return;
     }
+
+    const element =
+      node instanceof HTMLButtonElement ||
+      node.getAttribute('role') === 'button'
+        ? node
+        : node.firstChild instanceof HTMLElement
+        ? node.firstChild
+        : null;
+
+    element && element.focus();
   };
 
   isControlled = (prop: string) => {
