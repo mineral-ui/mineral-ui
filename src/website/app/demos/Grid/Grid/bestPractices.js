@@ -1,6 +1,5 @@
 /* @flow */
 import React from 'react';
-import { css } from '@emotion/core';
 import { mineralTheme } from '../../../../../library/themes';
 import Grid, { GridItem } from '../../../../../library/Grid';
 import Button from '../../../../../library/Button';

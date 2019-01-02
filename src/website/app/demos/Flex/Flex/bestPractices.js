@@ -1,6 +1,5 @@
 /* @flow */
 import React from 'react';
-import { css } from '@emotion/core';
 import { mineralTheme } from '../../../../../library/themes';
 import Flex, { FlexItem } from '../../../../../library/Flex';
 import Button from '../../../../../library/Button';
