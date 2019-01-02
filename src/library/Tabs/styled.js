@@ -204,7 +204,7 @@ export const TabListInner = createStyledComponent(
         ? {
             // OverflowContainerWithShadows > Shadows
             '&::before': {
-              [edgeProperty]: theme.TabList_border.split('px')[0]
+              [edgeProperty]: theme.TabList_border.split('px')[0] + 'px'
             }
           }
         : undefined)

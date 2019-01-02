@@ -37,7 +37,7 @@ can be passed to a component using the standard React `className` prop.
 ```jsx
 import { css } from '@emotion/core';
 
-<Button className={css({ outline: '3px dashed tomato' })} />;
+<Button css={{ outline: '3px dashed tomato' }} />;
 ```
 
 <Callout title="Note">

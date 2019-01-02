@@ -41,12 +41,12 @@ components to a columnar layout.`,
         <GridItem
           span={3}
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_20 })}>
+          className={{ backgroundColor: mineralTheme.color_theme_20 }}>
           Sidebar
         </GridItem>
         <GridItem
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_10 })}>
+          className={{ backgroundColor: mineralTheme.color_theme_10 }}>
           Main Content
         </GridItem>
       </Grid>

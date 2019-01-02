@@ -38,19 +38,3 @@ Emotion provides a very similar API, is more performant, smaller in file size, a
 
 - No longer takes an options argument
 - See the [withTheme API docs](https://mineral-ui.com/theming#common-scenarios-api) for further details.
-
-#### `css` prop
-
-- Support for the `css` prop on Mineral components and those created with `createStyledComponent` has been dropped until Emotion supports it without a babel plugin. In the interim, Emotion's `css` function can be used to similar effect.
-
-  ```js
-  <Button css={{ outline: '3px dashed tomato' }} />;
-
-  // should become
-
-  import { css } from '@emotion/core';
-
-  <Button className={css({ outline: '3px dashed tomato' })} />;
-  ```
-
-- See the [Styling](https://mineral-ui.com/styling#customization-techniques-themes-css-classes) page for further details.

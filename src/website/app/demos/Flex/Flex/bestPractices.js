@@ -77,13 +77,13 @@ align components to a columnar layout. Use [Grid](/components/grid) and
         <FlexItem
           width={50}
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_20 })}>
+          className={{ backgroundColor: mineralTheme.color_theme_20 }}>
           Sidebar
         </FlexItem>
         <FlexItem
           grow={1}
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_10 })}>
+          className={{ backgroundColor: mineralTheme.color_theme_10 }}>
           Main Content
         </FlexItem>
       </Flex>
