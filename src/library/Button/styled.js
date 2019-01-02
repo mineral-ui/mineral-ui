@@ -1,12 +1,12 @@
 /* @flow */
-
+import styled from '@emotion/styled';
+import isPropValid from '@emotion/is-prop-valid';
 import { ellipsis } from 'polished';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { componentStyleReset, getNormalizedValue } from '../styles';
 import { SIZE } from './constants';
 import { buttonTheme } from './themes';
 
-import type { CreateRootNode } from '../styles/types';
-import type { ButtonDefaultProps, ButtonProps } from './types';
+import type { ButtonProps } from './types';
 
 const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
   if (disabled) {
@@ -20,65 +20,48 @@ const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
   }
 };
 
-const isTypeButton = (type: ?string) => {
-  return ['button', 'submit', 'reset'].indexOf(type) !== -1;
-};
+export const Content = styled('span', {
+  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+})(({ size, theme: baseTheme }) => {
+  const theme = buttonTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
+  const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
+  const lastChildPaddingProperty = rtl ? 'paddingLeft' : 'paddingRight';
 
-const filterProps = ({ element, type }: ButtonProps) => {
-  // When element is a component, e.g. ReactRouterLink,
-  // these are not filtered automatically by rootEl
-  const invalidComponentProps = ['primary', 'text', 'variant', 'element'];
-  const shouldFilterType =
-    (element === 'button' && !isTypeButton(type)) ||
-    (element !== 'button' && isTypeButton(type));
-  const invalidLinkProps = shouldFilterType ? ['type'] : [];
+  let paddings;
 
-  return invalidComponentProps.concat(invalidLinkProps);
-};
+  const fontSize =
+    size === SIZE.small
+      ? theme.ButtonContent_fontSize_small
+      : theme.ButtonContent_fontSize;
 
-export const Content = createStyledComponent(
-  'span',
-  ({ size, theme: baseTheme }) => {
-    const theme = buttonTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
-    const lastChildPaddingProperty = rtl ? 'paddingLeft' : 'paddingRight';
+  if (size === undefined || size === SIZE.large || size === SIZE.jumbo) {
+    const padding = getNormalizedValue(
+      theme.Button_paddingHorizontal,
+      fontSize
+    );
+    paddings = {
+      '&:first-child': {
+        [firstChildPaddingProperty]: padding
+      },
 
-    let paddings;
-
-    const fontSize =
-      size === SIZE.small
-        ? theme.ButtonContent_fontSize_small
-        : theme.ButtonContent_fontSize;
-
-    if (size === undefined || size === SIZE.large || size === SIZE.jumbo) {
-      const padding = getNormalizedValue(
-        theme.Button_paddingHorizontal,
-        fontSize
-      );
-      paddings = {
-        '&:first-child': {
-          [firstChildPaddingProperty]: padding
-        },
-
-        '&:last-child': {
-          [lastChildPaddingProperty]: padding
-        }
-      };
-    }
-
-    return {
-      ...ellipsis('100%'),
-
-      display: 'block',
-      fontSize,
-      lineHeight: getNormalizedValue(theme[`Button_height_${size}`], fontSize),
-      ...paddings
+      '&:last-child': {
+        [lastChildPaddingProperty]: padding
+      }
     };
   }
-);
 
-export const Inner = createStyledComponent('span', {
+  return {
+    ...ellipsis('100%'),
+
+    display: 'block',
+    fontSize,
+    lineHeight: getNormalizedValue(theme[`Button_height_${size}`], fontSize),
+    ...paddings
+  };
+});
+
+export const Inner = styled('span')({
   alignItems: 'center',
   display: 'inline-flex',
   justifyContent: 'center',
@@ -87,33 +70,28 @@ export const Inner = createStyledComponent('span', {
   width: '100%'
 });
 
-export const createButtonRootNode: CreateRootNode<
-  ButtonProps,
-  ButtonDefaultProps
-> = (props, defaultProps) => {
-  const { element = defaultProps.element } = props;
+export const Button = styled('button', {
+  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+})(
+  ({
+    circular,
+    disabled,
+    fullWidth,
+    minimal,
+    primary,
+    size,
+    text,
+    theme: baseTheme,
+    variant
+  }) => {
+    let theme = buttonTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
+    const firstChildMarginProperty = rtl ? 'marginLeft' : 'marginRight';
+    const lastChildMarginProperty = rtl ? 'marginRight' : 'marginLeft';
 
-  return createStyledComponent(
-    element,
-    ({
-      circular,
-      disabled,
-      fullWidth,
-      minimal,
-      primary,
-      size,
-      text,
-      theme: baseTheme,
-      variant
-    }) => {
-      let theme = buttonTheme(baseTheme);
-      const rtl = theme.direction === 'rtl';
-      const firstChildMarginProperty = rtl ? 'marginLeft' : 'marginRight';
-      const lastChildMarginProperty = rtl ? 'marginRight' : 'marginLeft';
-
-      if (variant) {
-        // prettier-ignore
-        theme = {
+    if (variant) {
+      // prettier-ignore
+      theme = {
           ...theme,
           Button_backgroundColor_primary: theme[`backgroundColor_${variant}Primary`],
           Button_backgroundColor_primary_active: theme[`backgroundColor_${variant}Primary_active`],
@@ -128,137 +106,132 @@ export const createButtonRootNode: CreateRootNode<
           Button_color_minimal: theme[`color_${variant}`],
           ButtonIcon_color: theme[`icon_color_${variant}`]
         };
-      }
+    }
 
-      const color = chooseColor({ disabled, primary, minimal }, theme);
-      return {
+    const color = chooseColor({ disabled, primary, minimal }, theme);
+    return {
+      ...componentStyleReset(baseTheme),
+
+      backgroundColor: (() => {
+        if (disabled && !minimal) {
+          return theme.backgroundColor_disabled;
+        } else if (primary) {
+          return theme.Button_backgroundColor_primary;
+        } else if (minimal) {
+          return 'transparent';
+        } else {
+          return theme.Button_backgroundColor;
+        }
+      })(),
+      borderColor:
+        disabled || primary || minimal
+          ? 'transparent'
+          : theme.Button_borderColor,
+      borderRadius: circular
+        ? `${parseFloat(theme[`Button_height_${size}`]) / 2}em`
+        : theme.Button_borderRadius,
+      borderStyle: 'solid',
+      borderWidth: `${theme.Button_borderWidth}px`,
+      color,
+      cursor: disabled ? 'default' : 'pointer',
+      display: 'inline-block',
+      fontWeight: theme.Button_fontWeight,
+      height: theme[`Button_height_${size}`],
+      margin: 0,
+      // if the user puts in a small icon in a large button
+      // we want to force the button to be round/square
+      // (really just pertinent on icon-only buttons)
+      minWidth: theme[`Button_height_${size}`],
+      padding:
+        text === undefined
+          ? theme[`Button_paddingIconOnly_${size}`]
+          : `0 ${theme.Button_paddingHorizontal}`,
+      textDecoration: 'none',
+      verticalAlign: 'middle',
+      width: fullWidth && '100%',
+      '&:focus': !disabled && {
         backgroundColor: (() => {
-          if (disabled && !minimal) {
-            return theme.backgroundColor_disabled;
-          } else if (primary) {
-            return theme.Button_backgroundColor_primary;
+          if (primary) {
+            return theme.Button_backgroundColor_primary_focus;
           } else if (minimal) {
-            return 'transparent';
+            return theme.Button_backgroundColor_minimal_focus;
           } else {
-            return theme.Button_backgroundColor;
+            return theme.Button_backgroundColor_focus;
+          }
+        })(),
+        borderColor: minimal ? theme.Button_borderColor_focus : undefined,
+        boxShadow: minimal ? undefined : theme.Button_boxShadow_focus,
+        color,
+        textDecoration: 'none'
+      },
+      '&:hover': {
+        backgroundColor: (() => {
+          if (!disabled) {
+            if (primary) {
+              return theme.Button_backgroundColor_primary_hover;
+            } else if (minimal) {
+              return theme.Button_backgroundColor_minimal_hover;
+            } else {
+              return theme.Button_backgroundColor_hover;
+            }
           }
         })(),
         borderColor:
-          disabled || primary || minimal
-            ? 'transparent'
-            : theme.Button_borderColor,
-        borderRadius: circular
-          ? `${parseFloat(theme[`Button_height_${size}`]) / 2}em`
-          : theme.Button_borderRadius,
-        borderStyle: 'solid',
-        borderWidth: `${theme.Button_borderWidth}px`,
+          disabled || minimal || primary
+            ? undefined
+            : theme.Button_borderColor_hover,
         color,
-        cursor: disabled ? 'default' : 'pointer',
-        display: 'inline-block',
-        fontWeight: theme.Button_fontWeight,
-        height: theme[`Button_height_${size}`],
-        margin: 0,
-        // if the user puts in a small icon in a large button
-        // we want to force the button to be round/square
-        // (really just pertinent on icon-only buttons)
-        minWidth: theme[`Button_height_${size}`],
-        padding:
-          text === undefined
-            ? theme[`Button_paddingIconOnly_${size}`]
-            : `0 ${theme.Button_paddingHorizontal}`,
-        textDecoration: 'none',
-        verticalAlign: 'middle',
-        width: fullWidth && '100%',
-        '&:focus': !disabled && {
-          backgroundColor: (() => {
-            if (primary) {
-              return theme.Button_backgroundColor_primary_focus;
-            } else if (minimal) {
-              return theme.Button_backgroundColor_minimal_focus;
-            } else {
-              return theme.Button_backgroundColor_focus;
-            }
-          })(),
-          borderColor: minimal ? theme.Button_borderColor_focus : undefined,
-          boxShadow: minimal ? undefined : theme.Button_boxShadow_focus,
-          color,
-          textDecoration: 'none'
-        },
-        '&:hover': {
-          backgroundColor: (() => {
-            if (!disabled) {
-              if (primary) {
-                return theme.Button_backgroundColor_primary_hover;
-              } else if (minimal) {
-                return theme.Button_backgroundColor_minimal_hover;
-              } else {
-                return theme.Button_backgroundColor_hover;
-              }
-            }
-          })(),
-          borderColor:
-            disabled || minimal || primary
-              ? undefined
-              : theme.Button_borderColor_hover,
-          color,
-          textDecoration: 'none'
-        },
-        '&:focus:active, &:focus:hover': {
-          borderColor: (() => {
-            if (primary) {
-              return 'transparent';
-            } else if (minimal) {
-              return theme.Button_borderColor_focus;
-            } else {
-              return theme.Button_borderColor;
-            }
-          })()
-        },
-        // `:active` must be last, to follow LVHFA order:
-        // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
-        '&:active': {
-          backgroundColor: (() => {
-            if (!disabled) {
-              if (primary) {
-                return theme.Button_backgroundColor_primary_active;
-              } else if (minimal) {
-                return theme.Button_backgroundColor_minimal_active;
-              } else {
-                return theme.Button_backgroundColor_active;
-              }
-            }
-          })(),
-          borderColor:
-            !minimal && !disabled ? theme.Button_borderColor_active : undefined,
-          color
-        },
-        '&::-moz-focus-inner': { border: 0 },
-
-        '& [role="img"]': {
-          boxSizing: 'content-box',
-          color: disabled || primary ? null : theme.ButtonIcon_color,
-          display: 'block',
-          flexShrink: 0,
-
-          '&:first-child': {
-            [firstChildMarginProperty]: theme.ButtonIcon_margin
-          },
-
-          '&:last-child': {
-            [lastChildMarginProperty]: theme.ButtonIcon_margin
-          },
-
-          '&:only-child': {
-            margin: 0
+        textDecoration: 'none'
+      },
+      '&:focus:active, &:focus:hover': {
+        borderColor: (() => {
+          if (primary) {
+            return 'transparent';
+          } else if (minimal) {
+            return theme.Button_borderColor_focus;
+          } else {
+            return theme.Button_borderColor;
           }
+        })()
+      },
+      // `:active` must be last, to follow LVHFA order:
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+      '&:active': {
+        backgroundColor: (() => {
+          if (!disabled) {
+            if (primary) {
+              return theme.Button_backgroundColor_primary_active;
+            } else if (minimal) {
+              return theme.Button_backgroundColor_minimal_active;
+            } else {
+              return theme.Button_backgroundColor_active;
+            }
+          }
+        })(),
+        borderColor:
+          !minimal && !disabled ? theme.Button_borderColor_active : undefined,
+        color
+      },
+      '&::-moz-focus-inner': { border: 0 },
+
+      '& [role="img"]': {
+        boxSizing: 'content-box',
+        color: disabled || primary ? null : theme.ButtonIcon_color,
+        display: 'block',
+        flexShrink: 0,
+
+        '&:first-child': {
+          [firstChildMarginProperty]: theme.ButtonIcon_margin
+        },
+
+        '&:last-child': {
+          [lastChildMarginProperty]: theme.ButtonIcon_margin
+        },
+
+        '&:only-child': {
+          margin: 0
         }
-      };
-    },
-    {
-      displayName: 'Button',
-      filterProps: filterProps(props),
-      includeStyleReset: true,
-      rootEl: element
-    }
-  );
-};
+      }
+    };
+  }
+);

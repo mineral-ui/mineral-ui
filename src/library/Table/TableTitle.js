@@ -1,12 +1,12 @@
 /* @flow */
 import React from 'react';
-import { withTheme } from '../themes';
+import { withTheme } from 'emotion-theming';
 import Text, { textWithThemeOverrides } from '../Text';
 import { TableTitleRoot as Root } from './styled';
 
 import type { TableTitleProps } from './types';
 
-const TableTitle = ({ hide, id, theme, ...restProps }: TableTitleProps) => {
+const TableTitle = ({ as, hide, id, theme, ...restProps }: TableTitleProps) => {
   const rootProps = {
     hide,
     ...restProps
@@ -16,6 +16,7 @@ const TableTitle = ({ hide, id, theme, ...restProps }: TableTitleProps) => {
   const TitleContent = (props) => <Text align="start" id={id} {...props} />;
 
   const title = textWithThemeOverrides({
+    as,
     displayName: 'TableTitle',
     textComponent: TitleContent,
     theme,

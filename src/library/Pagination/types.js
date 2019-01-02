@@ -47,6 +47,11 @@ export type PagesProps = {
   visibleRange: number
 };
 
+export type IncrementButtonProps = PagesProps & {
+  direction: string,
+  focusedNodeWhenDisabled: ?HTMLButtonElement
+};
+
 export type PageJumperProps = {
   'aria-label'?: string,
   currentPage: number,

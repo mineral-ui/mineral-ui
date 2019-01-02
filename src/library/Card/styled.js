@@ -1,8 +1,10 @@
 /* @flow */
+import styled from '@emotion/styled';
 import React from 'react';
 import { ellipsis } from 'polished';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { createThemedComponent } from '../themes';
+import withProps from 'recompose/withProps';
+import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
+import { themed } from '../themes';
 import Button from '../Button';
 
 import {
@@ -15,71 +17,54 @@ import {
   cardTheme
 } from './themes';
 
-export const CardRoot = createStyledComponent(
-  'div',
-  (props) => {
-    const theme = cardTheme(props.theme);
+export const CardRoot = styled('div')((props) => {
+  const theme = cardTheme(props.theme);
 
-    return {
-      backgroundColor: theme.Card_backgroundColor,
-      border: `1px solid ${theme.Card_borderColor}`,
-      borderRadius: theme.Card_borderRadius,
-      boxShadow: theme.Card_boxShadow,
-      cursor: props.onClick && 'pointer',
-      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-      paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
+  return {
+    ...componentStyleReset(props.theme),
 
-      '&:focus': {
-        boxShadow: theme.Card_boxShadow_focus
-      }
-    };
-  },
-  {
-    displayName: 'Card',
-    includeStyleReset: true
-  }
-);
+    backgroundColor: theme.Card_backgroundColor,
+    border: `1px solid ${theme.Card_borderColor}`,
+    borderRadius: theme.Card_borderRadius,
+    boxShadow: theme.Card_boxShadow,
+    cursor: props.onClick && 'pointer',
+    paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
+    paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
 
-export const CardRow = createStyledComponent(
-  'div',
-  (props) => {
-    const theme = cardTheme(props.theme);
+    '&:focus': {
+      boxShadow: theme.Card_boxShadow_focus
+    }
+  };
+});
 
-    return {
-      marginBottom: theme.CardRow_marginVertical,
-      marginTop: theme.CardRow_marginVertical,
-      paddingLeft: theme.CardRow_paddingHorizontal,
-      paddingRight: theme.CardRow_paddingHorizontal
-    };
-  },
-  {
-    displayName: 'CardRow'
-  }
-);
+export const CardRow = styled('div')((props) => {
+  const theme = cardTheme(props.theme);
 
-export const CardActionsRoot = createStyledComponent(
-  CardRow,
-  (props) => {
-    const theme = {
-      ...cardActionsTheme(props.theme),
-      ...cardTheme(props.theme)
-    };
+  return {
+    marginBottom: theme.CardRow_marginVertical,
+    marginTop: theme.CardRow_marginVertical,
+    paddingLeft: theme.CardRow_paddingHorizontal,
+    paddingRight: theme.CardRow_paddingHorizontal
+  };
+}, {});
 
-    return {
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'flex-end',
-      // We subtract `theme.CardActionsAction_spaceInline` because of the marginBottom on Action.
-      marginBottom: `${parseFloat(theme.CardRow_marginVertical) -
-        parseFloat(theme.CardActionsAction_spaceInline)}em`
-    };
-  },
-  {
-    displayName: 'CardActions'
-  }
-);
+export const CardActionsRoot = styled(CardRow)((props) => {
+  const theme = {
+    ...cardActionsTheme(props.theme),
+    ...cardTheme(props.theme)
+  };
 
-export const CardAction = createStyledComponent('span', (props) => {
+  return {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-end',
+    // We subtract `theme.CardActionsAction_spaceInline` because of the marginBottom on Action.
+    marginBottom: `${parseFloat(theme.CardRow_marginVertical) -
+      parseFloat(theme.CardActionsAction_spaceInline)}em`
+  };
+});
+
+export const CardAction = styled('span')((props) => {
   const theme = {
     ...cardActionsTheme(props.theme),
     ...cardBlockTheme(props.theme)
@@ -102,23 +87,17 @@ export const CardAction = createStyledComponent('span', (props) => {
   };
 });
 
-export const CardBlockRoot = createStyledComponent(
-  CardRow,
-  (props) => {
-    const theme = cardTheme(props.theme);
+export const CardBlockRoot = styled(CardRow)((props) => {
+  const theme = cardTheme(props.theme);
 
-    return {
-      '&:last-child': {
-        marginBottom: theme.CardRow_marginVerticalLast
-      }
-    };
-  },
-  {
-    displayName: 'CardBlock'
-  }
-);
+  return {
+    '&:last-child': {
+      marginBottom: theme.CardRow_marginVerticalLast
+    }
+  };
+});
 
-export const CardBlockInner = createStyledComponent('div', (props) => {
+export const CardBlockInner = styled('div')((props) => {
   const theme = cardBlockTheme(props.theme);
 
   return {
@@ -127,56 +106,44 @@ export const CardBlockInner = createStyledComponent('div', (props) => {
   };
 });
 
-export const CardDividerRoot = createStyledComponent(
-  'div',
-  (props) => {
-    const theme = {
-      ...cardDividerTheme(props.theme),
-      ...cardTheme(props.theme)
-    };
+export const CardDividerRoot = styled('div')((props) => {
+  const theme = {
+    ...cardDividerTheme(props.theme),
+    ...cardTheme(props.theme)
+  };
 
-    return {
-      backgroundColor: theme.CardDivider_borderColor,
-      height: theme.CardDivider_borderWidth,
-      margin: `${theme.CardRow_marginVertical} 0`
+  return {
+    backgroundColor: theme.CardDivider_borderColor,
+    height: theme.CardDivider_borderWidth,
+    margin: `${theme.CardRow_marginVertical} 0`
+  };
+});
+
+export const CardFooterRoot = styled('div')(({ variant, theme: baseTheme }) => {
+  let theme = {
+    ...cardFooterTheme(baseTheme),
+    ...cardTheme(baseTheme)
+  };
+
+  if (variant) {
+    theme = {
+      ...theme,
+      CardFooter_backgroundColor: theme[`well_backgroundColor_${variant}`],
+      CardFooter_borderColor: theme[`well_borderColor_${variant}`]
     };
-  },
-  {
-    displayName: 'CardDivider'
   }
-);
 
-export const CardFooterRoot = createStyledComponent(
-  'div',
-  ({ variant, theme: baseTheme }) => {
-    let theme = {
-      ...cardFooterTheme(baseTheme),
-      ...cardTheme(baseTheme)
-    };
-
-    if (variant) {
-      theme = {
-        ...theme,
-        CardFooter_backgroundColor: theme[`well_backgroundColor_${variant}`],
-        CardFooter_borderColor: theme[`well_borderColor_${variant}`]
-      };
-    }
-
-    // [1] Making the footer overlap the Card border. The `calc` bit accounts
-    //     for the paddingBottom on Card to prevent margin collapse.
-    return {
-      backgroundColor: theme.CardFooter_backgroundColor,
-      border: `1px solid ${theme.CardFooter_borderColor}`,
-      borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
-      margin: '0 -1px calc(-1px - 0.01em) -1px', // [1]
-      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-      paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
-    };
-  },
-  {
-    displayName: 'CardFooter'
-  }
-);
+  // [1] Making the footer overlap the Card border. The `calc` bit accounts
+  //     for the paddingBottom on Card to prevent margin collapse.
+  return {
+    backgroundColor: theme.CardFooter_backgroundColor,
+    border: `1px solid ${theme.CardFooter_borderColor}`,
+    borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
+    margin: '0 -1px calc(-1px - 0.01em) -1px', // [1]
+    paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
+    paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
+  };
+});
 
 /*
  * CardFooter can have children like CardBlock and CardActions. When those
@@ -194,15 +161,14 @@ const footerTheme = ({ theme }) => ({
 /*
  * We shouldn't just create a themed 'div', because it won't be able to apply
  * the provided theme to itself, which breaks the expectation of
- * createThemedComponent. So, we theme a simple functional component that
+ * themed. So, we theme a simple functional component that
  * returns a 'div' instead.
  */
-export const CardFooterContent = createThemedComponent(
-  (props) => <div {...props} />,
+export const CardFooterContent = themed((props) => <div {...props} />)(
   footerTheme
 );
 
-export const CardFooterTitle = createStyledComponent('div', (props) => {
+export const CardFooterTitle = styled('div')((props) => {
   const theme = {
     ...cardFooterTheme(props.theme),
     ...cardTheme(props.theme)
@@ -217,7 +183,7 @@ export const CardFooterTitle = createStyledComponent('div', (props) => {
   };
 });
 
-export const CardFooterTitleContent = createStyledComponent('h4', (props) => {
+export const CardFooterTitleContent = styled('h4')((props) => {
   const theme = cardFooterTheme(props.theme);
 
   return {
@@ -229,76 +195,65 @@ export const CardFooterTitleContent = createStyledComponent('h4', (props) => {
   };
 });
 
-export const CardFooterToggleButton = createStyledComponent(
-  Button,
-  /*
-   * A large Button, even with zero'd padding, is still a bit too large in this
-   * context. These styles allow the Button to shrink, but the Icon remains the
-   * same size.
-   */
-  ({ theme, variant }) => ({
-    flex: '0 0 auto',
-    height: 'auto',
-    minWidth: 0,
-    overflow: 'hidden',
-    padding: 0,
-    transform: `translateY(-${pxToEm(1)})`, // Optical alignment
+export const CardFooterToggleButton = withProps({ type: 'button' })(
+  styled(Button)(
+    /*
+     * A large Button, even with zero'd padding, is still a bit too large in this
+     * context. These styles allow the Button to shrink, but the Icon remains the
+     * same size.
+     */
+    ({ theme, variant }) => ({
+      flex: '0 0 auto',
+      height: 'auto',
+      minWidth: 0,
+      overflow: 'hidden',
+      padding: 0,
+      transform: `translateY(-${pxToEm(1)})`, // Optical alignment
 
-    ...(variant
-      ? {
-          '&:hover': {
-            backgroundColor: theme[`backgroundColor_${variant}_hover`]
+      ...(variant
+        ? {
+            '&:hover': {
+              backgroundColor: theme[`backgroundColor_${variant}_hover`]
+            }
           }
-        }
-      : undefined),
+        : undefined),
 
-    // Inner
-    '& > span': {
-      display: 'block',
-      margin: `-${pxToEm(4)}`
-    },
-
-    // Icon
-    '& [role="img"]': {
-      color: theme.icon_color
-    }
-  })
-);
-
-export const CardImageRoot = createStyledComponent(
-  'img',
-  (props) => {
-    const theme = cardTheme(props.theme);
-
-    return {
-      display: 'block',
-      marginBottom: theme.CardRow_marginVertical,
-      marginTop: theme.CardRow_marginVertical,
-      maxWidth: '100%',
-
-      '&:first-child': {
-        borderRadius: `${theme.Card_borderRadius} ${
-          theme.Card_borderRadius
-        } 0 0`,
-        marginTop: 0
+      // Inner
+      '& > span': {
+        display: 'block',
+        margin: `-${pxToEm(4)}`
       },
 
-      '&:last-child': {
-        borderRadius: `0 0 ${theme.Card_borderRadius} ${
-          theme.Card_borderRadius
-        }`,
-        marginBottom: 0
+      // Icon
+      '& [role="img"]': {
+        color: theme.icon_color
       }
-    };
-  },
-  {
-    displayName: 'CardImage',
-    rootEl: 'img'
-  }
+    })
+  )
 );
 
-export const CardStatusRoot = createStyledComponent(
-  CardRow,
+export const CardImageRoot = styled('img')((props) => {
+  const theme = cardTheme(props.theme);
+
+  return {
+    display: 'block',
+    marginBottom: theme.CardRow_marginVertical,
+    marginTop: theme.CardRow_marginVertical,
+    maxWidth: '100%',
+
+    '&:first-child': {
+      borderRadius: `${theme.Card_borderRadius} ${theme.Card_borderRadius} 0 0`,
+      marginTop: 0
+    },
+
+    '&:last-child': {
+      borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
+      marginBottom: 0
+    }
+  };
+});
+
+export const CardStatusRoot = styled(CardRow)(
   ({ theme: baseTheme, variant }) => {
     const theme = cardStatusTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -317,24 +272,14 @@ export const CardStatusRoot = createStyledComponent(
         width: theme.CardStatusIcon_size
       }
     };
-  },
-  {
-    displayName: 'CardStatus'
   }
 );
 
-export const CardTitleRoot = createStyledComponent(
-  CardRow,
-  {
-    display: 'flex'
-  },
-  {
-    displayName: 'CardTitle'
-  }
-);
+export const CardTitleRoot = styled(CardRow)({
+  display: 'flex'
+});
 
-export const CardTitleAvatar = createStyledComponent(
-  'span',
+export const CardTitleAvatar = styled('span')(
   ({ subtitle, theme: baseTheme }) => {
     const theme = cardTitleTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -356,11 +301,11 @@ export const CardTitleAvatar = createStyledComponent(
   }
 );
 
-export const CardTitleInner = createStyledComponent('div', {
+export const CardTitleInner = styled('div')({
   flex: '1 1 auto'
 });
 
-export const CardTitleSecondaryText = createStyledComponent('span', (props) => {
+export const CardTitleSecondaryText = styled('span')((props) => {
   const theme = cardTitleTheme(props.theme);
   const fontSize = theme.CardTitleSecondaryText_fontSize;
 
@@ -374,8 +319,7 @@ export const CardTitleSecondaryText = createStyledComponent('span', (props) => {
   };
 });
 
-export const CardTitleSubtitle = createStyledComponent(
-  'h4',
+export const CardTitleSubtitle = styled('h4')(
   ({ avatar, theme: baseTheme }) => {
     const theme = cardTitleTheme(baseTheme);
     const fontSize = theme.CardSubtitle_fontSize;
@@ -392,30 +336,26 @@ export const CardTitleSubtitle = createStyledComponent(
   }
 );
 
-export const CardTitleTitle = createStyledComponent(
-  'div',
-  ({ theme: baseTheme, variant }) => {
-    const theme = cardTitleTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+export const CardTitleTitle = styled('div')(({ theme: baseTheme, variant }) => {
+  const theme = cardTitleTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
 
-    return {
-      alignItems: 'flex-start',
-      display: 'flex',
+  return {
+    alignItems: 'flex-start',
+    display: 'flex',
 
-      '& > [role="img"]': {
-        color: variant ? theme[`icon_color_${variant}`] : null,
-        flex: '0 0 auto',
-        marginLeft: rtl ? theme.CardTitleIcon_margin : null,
-        marginRight: rtl ? null : theme.CardTitleIcon_margin,
-        position: 'relative',
-        top: pxToEm(4) // optical alignment
-      }
-    };
-  }
-);
+    '& > [role="img"]': {
+      color: variant ? theme[`icon_color_${variant}`] : null,
+      flex: '0 0 auto',
+      marginLeft: rtl ? theme.CardTitleIcon_margin : null,
+      marginRight: rtl ? null : theme.CardTitleIcon_margin,
+      position: 'relative',
+      top: pxToEm(4) // optical alignment
+    }
+  };
+});
 
-export const CardTitleTitleContent = createStyledComponent(
-  'h3',
+export const CardTitleTitleContent = styled('h3')(
   ({ actions, theme: baseTheme }) => {
     const theme = cardTitleTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -437,28 +377,29 @@ export const CardTitleTitleContent = createStyledComponent(
   }
 );
 
-export const CardTitleMenuButton = createStyledComponent(
-  Button,
-  /*
-   * A large Button, even with zero'd padding, is still a bit too large in this
-   * context. These styles allow the Button to shrink, but the Icon remains the
-   * same size.
-   */
-  ({ theme }) => ({
-    height: 'auto',
-    minWidth: 0,
-    overflow: 'hidden',
-    padding: 0,
+export const CardTitleMenuButton = withProps({ type: 'button' })(
+  styled(Button)(
+    /*
+     * A large Button, even with zero'd padding, is still a bit too large in this
+     * context. These styles allow the Button to shrink, but the Icon remains the
+     * same size.
+     */
+    ({ theme }) => ({
+      height: 'auto',
+      minWidth: 0,
+      overflow: 'hidden',
+      padding: 0,
 
-    // Inner
-    '& > span': {
-      display: 'block',
-      margin: `-${pxToEm(2)}`
-    },
+      // Inner
+      '& > span': {
+        display: 'block',
+        margin: `-${pxToEm(2)}`
+      },
 
-    // Icon
-    '& [role="img"]': {
-      color: theme.icon_color
-    }
-  })
+      // Icon
+      '& [role="img"]': {
+        color: theme.icon_color
+      }
+    })
+  )
 );

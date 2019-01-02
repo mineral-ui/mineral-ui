@@ -1,17 +1,18 @@
 /* @flow */
-import { createStyledComponent, getResponsiveStyles } from '../styles';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
+import { getResponsiveStyles } from '../styles';
 import Flex, { FlexItem } from '../Flex';
 
 import type { StyleValue } from '../styles/types';
 
-export const GridRoot = createStyledComponent(
-  Flex,
-  { display: 'flex' },
-  {
-    displayName: 'Grid',
-    filterProps: ['direction', 'inline', 'justifyContent'],
-    withProps: { wrap: true }
-  }
+export const GridRoot = withProps({ wrap: true })(
+  styled(Flex, {
+    shouldForwardProp: (prop) =>
+      ['direction', 'inline', 'justifyContent'].indexOf(prop) === -1
+  })({
+    display: 'flex'
+  })
 );
 
 const getFlexGrow = (value: number): number => (value ? 0 : 1);
@@ -22,9 +23,11 @@ const getWidth = (
 ): number | string =>
   value ? `calc(${(value / columns) * 100}% - ${gutter})` : 0;
 
-export const GridItemRoot = createStyledComponent(
-  FlexItem,
-  ({ breakpoints, columns, gutterWidth, span, theme }) => {
+export const GridItemRoot = withProps({ shrink: 0 })(
+  styled(FlexItem, {
+    shouldForwardProp: (prop) =>
+      ['alignSelf', 'grow', 'inline', 'span', 'width'].indexOf(prop) === -1
+  })(({ breakpoints, columns, gutterWidth, span, theme }) => {
     const gutter =
       typeof gutterWidth === 'number'
         ? `${gutterWidth}px`
@@ -60,10 +63,5 @@ export const GridItemRoot = createStyledComponent(
         theme
       })
     };
-  },
-  {
-    displayName: 'GridItem',
-    filterProps: ['alignSelf', 'grow', 'inline', 'width'],
-    withProps: { shrink: 0 }
-  }
+  })
 );

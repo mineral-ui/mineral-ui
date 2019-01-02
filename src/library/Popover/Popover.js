@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Children, Component } from 'react';
+import { Manager } from 'react-popper';
 import { findDOMNode } from 'react-dom';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
@@ -15,7 +16,7 @@ import type {
   PopoverDefaultProps,
   PopoverProps,
   PopoverPropGetter,
-  PopoverRenderFn,
+  PopoverRenderMethod,
   PopoverState,
   PopoverStateAndHelpers
 } from './types';
@@ -37,46 +38,55 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
 
   id: string = this.props.id || `popover-${generateId()}`;
 
-  popoverContent: ?React$Component<*, *>;
+  popoverContent: ?HTMLElement;
 
-  popoverTrigger: ?React$Component<*, *>;
+  popoverTrigger: ?HTMLElement;
 
   render() {
     return (
       <ModifiersContext.Consumer>
         {(contextModifiers) => {
-          const { modifiers, ...restProps } = this.props;
+          const {
+            content: ignoreContent,
+            cursor: ignoreCursor,
+            disabled: ignoreDisabled,
+            modifiers,
+            onClose: ignoreOnClose,
+            onOpen: ignoreOnOpen,
+            title: ignoreTitle,
+            ...rootProps
+          } = this.props;
           const isOpen = this.getControllableValue('isOpen');
 
-          const rootProps = {
-            ...restProps,
-            modifiers: modifiers || contextModifiers,
-            tag: 'span'
+          const contentProps = {
+            modifiers: modifiers || contextModifiers
           };
 
           return (
-            <Root {...rootProps}>
-              {this.renderTrigger()}
-              {isOpen && this.renderContent()}
-              {isOpen && (
-                <EventListener
-                  listeners={[
-                    {
-                      target: 'document',
-                      event: 'click',
-                      handler: this.handleDocumentClick,
-                      options: true
-                    },
-                    {
-                      target: 'document',
-                      event: 'keydown',
-                      handler: this.handleDocumentKeydown,
-                      options: true
-                    }
-                  ]}
-                />
-              )}
-            </Root>
+            <Manager>
+              <Root {...rootProps}>
+                {this.renderTrigger()}
+                {isOpen && this.renderContent(contentProps)}
+                {isOpen && (
+                  <EventListener
+                    listeners={[
+                      {
+                        target: 'document',
+                        event: 'click',
+                        handler: this.handleDocumentClick,
+                        options: true
+                      },
+                      {
+                        target: 'document',
+                        event: 'keydown',
+                        handler: this.handleDocumentKeydown,
+                        options: true
+                      }
+                    ]}
+                  />
+                )}
+              </Root>
+            </Manager>
           );
         }}
       </ModifiersContext.Consumer>
@@ -97,14 +107,14 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     };
   };
 
-  setTriggerRef = (node: ?React$Component<*, *>) => {
+  setTriggerRef = (node: ?HTMLElement) => {
     const { triggerRef } = this.props;
 
     this.popoverTrigger = node;
     triggerRef && triggerRef(node);
   };
 
-  setContentRef = (node: ?React$Component<*, *>) => {
+  setContentRef = (node: ?HTMLElement) => {
     this.popoverContent = node;
   };
 
@@ -115,6 +125,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
       hasArrow,
       modifiers,
       placement,
+      positionFixed,
       subtitle,
       title
     } = this.props;
@@ -125,6 +136,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
       id: contentId,
       modifiers,
       placement,
+      positionFixed,
       ref: this.setContentRef,
       subtitle,
       tabIndex: 0,
@@ -136,7 +148,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     };
   };
 
-  renderContent: PopoverRenderFn = (props = {}) => {
+  renderContent: PopoverRenderMethod = (props = {}) => {
     const { content, usePortal } = this.props;
     let popoverContent;
 
@@ -194,7 +206,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     };
   };
 
-  renderTrigger: PopoverRenderFn = (props = {}) => {
+  renderTrigger: PopoverRenderMethod = (props = {}) => {
     const { children } = this.props;
 
     if (isRenderProp(children)) {
@@ -240,10 +252,21 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
   };
 
   focusTrigger = () => {
-    const node = findDOMNode(this.popoverTrigger); // eslint-disable-line react/no-find-dom-node
-    if (node && node.firstChild && node.firstChild instanceof HTMLElement) {
-      node.firstChild.focus();
+    const node = this.popoverTrigger;
+
+    if (!node) {
+      return;
     }
+
+    const element =
+      node instanceof HTMLButtonElement ||
+      node.getAttribute('role') === 'button'
+        ? node
+        : node.firstChild instanceof HTMLElement
+        ? node.firstChild
+        : null;
+
+    element && element.focus();
   };
 
   handleDocumentClick = (event: SyntheticEvent<>) => {
@@ -253,7 +276,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
   };
 
   handleDocumentKeydown = (event: SyntheticKeyboardEvent<>) => {
-    if (event.key === 'Escape') {
+    if (event.key.indexOf('Esc') === 0) {
       event.preventDefault();
       this.close(event);
     }
@@ -265,7 +288,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     /* eslint-disable react/no-find-dom-node */
     const { usePortal } = this.props;
     const node = findDOMNode(this);
-    const popoverContentNode = findDOMNode(this.popoverContent);
+    const popoverContentNode = this.popoverContent;
 
     const target =
       event.type === 'blur' &&
@@ -282,7 +305,6 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
         target instanceof HTMLElement &&
         !node.contains(target) &&
         popoverContentNode &&
-        popoverContentNode instanceof HTMLElement &&
         !popoverContentNode.contains(target)
       );
     } else {

@@ -1,23 +1,18 @@
 /* @flow */
+import styled from '@emotion/styled';
 import { hideVisually } from 'polished';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { componentStyleReset, getNormalizedValue } from '../styles';
 import {
   formFieldTheme,
   formFieldDividerTheme,
   formFieldsetTheme
 } from './themes';
 
-export const FormFieldRoot = createStyledComponent(
-  'div',
-  {},
-  {
-    displayName: 'FormField',
-    includeStyleReset: true
-  }
+export const FormFieldRoot = styled('div')(({ theme }) =>
+  componentStyleReset(theme)
 );
 
-export const FormFieldCaption = createStyledComponent(
-  'div',
+export const FormFieldCaption = styled('div')(
   ({ isGroup, theme: baseTheme, variant }) => {
     let theme = formFieldTheme(baseTheme);
     if (variant) {
@@ -40,24 +35,17 @@ export const FormFieldCaption = createStyledComponent(
   }
 );
 
-export const FormFieldDividerRoot = createStyledComponent(
-  'div',
-  ({ theme: baseTheme }) => {
-    const theme = formFieldDividerTheme(baseTheme);
+export const FormFieldDividerRoot = styled('div')(({ theme: baseTheme }) => {
+  const theme = formFieldDividerTheme(baseTheme);
 
-    return {
-      backgroundColor: theme.FormFieldDivider_borderColor,
-      height: theme.FormFieldDivider_borderWidth,
-      margin: `${theme.FormFieldDivider_margin} 0`
-    };
-  },
-  {
-    displayName: 'FormFieldDivider'
-  }
-);
+  return {
+    backgroundColor: theme.FormFieldDivider_borderColor,
+    height: theme.FormFieldDivider_borderWidth,
+    margin: `${theme.FormFieldDivider_margin} 0`
+  };
+});
 
-export const FormFieldSecondaryText = createStyledComponent(
-  'span',
+export const FormFieldSecondaryText = styled('span')(
   ({ secondaryText, theme: baseTheme }) => {
     const theme = formFieldTheme(baseTheme);
 
@@ -71,12 +59,13 @@ export const FormFieldSecondaryText = createStyledComponent(
   }
 );
 
-export const FormFieldsetRoot = createStyledComponent(
-  'fieldset',
+export const FormFieldsetRoot = styled('fieldset')(
   ({ disabled, theme: baseTheme }) => {
     const theme = formFieldsetTheme(baseTheme);
 
     return {
+      ...componentStyleReset(baseTheme),
+
       border: '1px solid transparent',
       borderTopColor: theme.FormFieldset_borderColor,
       padding: 0,
@@ -91,16 +80,10 @@ export const FormFieldsetRoot = createStyledComponent(
         paddingRight: theme.direction === 'ltr' ? theme.space_inline_sm : null
       }
     };
-  },
-  {
-    displayName: 'FormFieldset',
-    includeStyleReset: true,
-    rootEl: 'fieldset'
   }
 );
 
-export const FormFieldTextWrapper = createStyledComponent(
-  'div',
+export const FormFieldTextWrapper = styled('div')(
   ({ hideLabel, theme: baseTheme }) => {
     const theme = formFieldTheme(baseTheme);
 

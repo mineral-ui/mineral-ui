@@ -75,26 +75,20 @@ export type DialogHeaderProps = {
 };
 
 export type DialogRowProps = {
-  children?: React$Node,
-  element?: string
-};
-
-export type DialogRowDefaultProps = {
-  element: string
+  children?: React$Node
 };
 
 export type DialogTitleProps = {
   appearance?: Appearance,
+  as?: Element,
   children: React$Node,
-  element?: Element,
   id?: string,
   theme: Object,
   variant?: Variant
 };
 
 export type DialogTitleDefaultProps = {
-  appearance: Appearance,
-  element: Element
+  appearance: Appearance
 };
 
 export type DialogThemeFn = ComponentThemeFn<DialogTheme>;

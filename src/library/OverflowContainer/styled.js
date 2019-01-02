@@ -1,10 +1,9 @@
 /* @flow */
-import { createStyledComponent } from '../styles';
+import styled from '@emotion/styled';
 import { overflowContainerTheme } from './themes';
 import { overflowContainerWithShadowsTheme } from './themes';
 
-export const OverflowContainerRoot = createStyledComponent(
-  'div',
+export const OverflowContainerRoot = styled('div')(
   ({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
     const theme = overflowContainerTheme(baseTheme);
 
@@ -22,7 +21,7 @@ export const OverflowContainerRoot = createStyledComponent(
       ...(hideScrollbars
         ? {
             overflow: '-moz-scrollbars-none',
-            '-ms-overflow-style': 'none',
+            msOverflowStyle: 'none',
 
             '&::-webkit-scrollbar': {
               display: 'none'
@@ -30,38 +29,29 @@ export const OverflowContainerRoot = createStyledComponent(
           }
         : undefined)
     };
-  },
-  {
-    displayName: 'OverflowContainer'
   }
 );
 
-export const OverflowContainerWithShadowsRoot = createStyledComponent(
-  'div',
-  (props) => {
-    const boxShadow = getBoxShadows(props);
-    return boxShadow
-      ? {
-          display: 'flex',
-          position: 'relative',
+export const OverflowContainerWithShadowsRoot = styled('div')((props) => {
+  const boxShadow = getBoxShadows(props);
+  return boxShadow
+    ? {
+        display: 'flex',
+        position: 'relative',
 
-          '&::before': {
-            bottom: 0,
-            boxShadow,
-            content: '""',
-            pointerEvents: 'none',
-            position: 'absolute',
-            left: 0,
-            right: 0,
-            top: 0
-          }
+        '&::before': {
+          bottom: 0,
+          boxShadow,
+          content: '""',
+          pointerEvents: 'none',
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0
         }
-      : undefined;
-  },
-  {
-    displayName: 'OverflowContainerWithShadows'
-  }
-);
+      }
+    : undefined;
+});
 
 const getBoxShadows = ({ theme: baseTheme, ...restProps }) => {
   const theme = overflowContainerWithShadowsTheme(baseTheme);

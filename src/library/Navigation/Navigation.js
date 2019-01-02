@@ -23,7 +23,7 @@ export default class Navigation extends Component<NavigationProps> {
   static displayName = 'Navigation';
 
   static defaultProps: NavigationDefaultProps = {
-    itemElement: 'a',
+    itemAs: 'a',
     maxItemWidth: '8.5em',
     messages: {
       moreLabel: 'More navigation items',
@@ -65,7 +65,7 @@ export default class Navigation extends Component<NavigationProps> {
   renderItems = (prefixAndType: PrefixAndType): ?Array<React$Node> => {
     const {
       children,
-      itemElement,
+      itemAs,
       items: itemsProp,
       maxItemWidth,
       messages,
@@ -97,9 +97,9 @@ export default class Navigation extends Component<NavigationProps> {
       navChildren = items.map(
         (
           {
+            as,
             child,
             disabled,
-            element,
             maxWidth,
             onClick,
             selected,
@@ -114,7 +114,7 @@ export default class Navigation extends Component<NavigationProps> {
                 data: overflowData,
                 onClick: this.handleClick,
                 index,
-                itemElement,
+                itemAs,
                 messages,
                 ...prefixAndType
               };
@@ -127,7 +127,7 @@ export default class Navigation extends Component<NavigationProps> {
             const navItemProps = {
               children: text,
               disabled,
-              element: element || itemElement,
+              as: as || itemAs || 'a',
               index,
               maxWidth: maxWidth || maxItemWidth,
               onClick: !disabled

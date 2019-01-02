@@ -1,9 +1,9 @@
 /* @flow */
-import { createStyledComponent } from '../styles';
+import styled from '@emotion/styled';
+import { componentStyleReset } from '../styles';
 import { buttonGroupTheme } from './themes';
 
-export const ButtonGroupRoot = createStyledComponent(
-  'div',
+export const ButtonGroupRoot = styled('div')(
   ({ fullWidth, theme: baseTheme, variant }) => {
     let theme = buttonGroupTheme(baseTheme);
     if (variant) {
@@ -29,6 +29,8 @@ export const ButtonGroupRoot = createStyledComponent(
     const borderTopEndRadiusProperty = `borderTop${end}Radius`;
 
     return {
+      ...componentStyleReset(baseTheme),
+
       display: 'flex',
 
       '& button': {
@@ -135,9 +137,5 @@ export const ButtonGroupRoot = createStyledComponent(
           theme.ButtonGroupButton_borderStartColor_checked
       }
     };
-  },
-  {
-    displayName: 'ButtonGroup',
-    includeStyleReset: true
   }
 );

@@ -1,10 +1,10 @@
 /* @flow */
-import { bool, node, string } from 'prop-types';
+import { bool, node, number, oneOfType, string } from 'prop-types';
 
 export const iconPropTypes = {
   children: node,
   color: string,
   rtl: bool,
-  size: string,
+  size: oneOfType([number, string]),
   title: string
 };

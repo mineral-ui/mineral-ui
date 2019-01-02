@@ -49,7 +49,6 @@ export type MenuGroupProps = {
 export type MenuItemProps = {
   children?: React$Node,
   disabled?: boolean,
-  element?: $FlowFixMe, // Should allow string | React class
   iconEnd?: React$Element<*>,
   iconStart?: React$Element<*>,
   index?: number,
@@ -59,10 +58,6 @@ export type MenuItemProps = {
   render?: MenuItemRenderFn,
   secondaryText?: React$Node,
   variant?: $Keys<typeof VARIANT>
-};
-
-export type MenuItemDefaultProps = {
-  element: string
 };
 
 export type MenuItemPropGetter = (props?: Object) => Object;

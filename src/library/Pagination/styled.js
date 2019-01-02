@@ -1,17 +1,24 @@
 /* @flow */
-import { createStyledComponent } from '../styles';
-import { createThemedComponent } from '../themes';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
+import { componentStyleReset } from '../styles';
+import { themed } from '../themes';
 import Flex, { FlexItem } from '../Flex';
 import TextInput from '../TextInput';
 import Button from '../Button';
 
 import { paginationTheme } from './themes';
 
-export const PaginationRoot = createStyledComponent(
-  Flex,
-  ({ theme: baseTheme }) => {
+export const PaginationRoot = withProps({
+  as: 'nav',
+  justifyContent: 'end'
+})(
+  styled(Flex)(({ theme: baseTheme }) => {
     const theme = paginationTheme(baseTheme);
+
     return {
+      ...componentStyleReset(baseTheme),
+
       flexWrap: 'wrap-reverse',
       marginBottom: `-${theme.Pagination_gutterWidth}`,
 
@@ -19,39 +26,38 @@ export const PaginationRoot = createStyledComponent(
         marginBottom: theme.Pagination_gutterWidth
       }
     };
-  },
-  {
-    includeStyleReset: true,
-    withProps: {
-      element: 'nav'
-    }
-  }
-);
-
-export const PagesRoot = createStyledComponent(
-  FlexItem,
-  ({ theme: baseTheme }) => {
-    const theme = paginationTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const middleMargin = rtl ? 'marginLeft' : 'marginRight';
-    return {
-      '& > button, & > span': {
-        '&:not(:last-child)': {
-          [middleMargin]: theme.Pagination_gutterWidth
-        }
-      }
-    };
-  }
-);
-
-export const PagesEllipsisButton = createThemedComponent(
-  Button,
-  ({ theme }) => ({
-    color_disabled: theme.color_theme
   })
 );
 
-export const PageJumperNumberInput = createStyledComponent(TextInput, {
+export const PagesRoot = styled(FlexItem)(({ theme: baseTheme }) => {
+  const theme = paginationTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
+  const middleMargin = rtl ? 'marginLeft' : 'marginRight';
+  return {
+    '& > button, & > span': {
+      '&:not(:last-child)': {
+        [middleMargin]: theme.Pagination_gutterWidth
+      }
+    }
+  };
+});
+
+const ThemedButton = themed(Button)(({ theme }) => ({
+  color_disabled: theme.color_theme
+}));
+
+export const PagesEllipsisButton = withProps({
+  'aria-disabled': true,
+  as: 'span',
+  minimal: true,
+  size: 'medium'
+})(
+  styled(ThemedButton)({
+    pointerEvents: 'none'
+  })
+);
+
+export const PageJumperNumberInput = styled(TextInput)({
   '& > input': {
     MozAppearance: 'textfield',
 
@@ -62,6 +68,6 @@ export const PageJumperNumberInput = createStyledComponent(TextInput, {
   }
 });
 
-export const PageJumperRoot = createStyledComponent(FlexItem, ({ width }) => ({
+export const PageJumperRoot = styled(FlexItem)(({ width }) => ({
   width
 }));

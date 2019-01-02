@@ -1,52 +1,53 @@
 /* @flow */
-import { createStyledComponent } from '../styles';
-import { createThemedComponent } from '../themes';
+import styled from '@emotion/styled';
+import isPropValid from '@emotion/is-prop-valid';
+import { componentStyleReset } from '../styles';
+import { themed } from '../themes';
 import Button from '../Button';
 import { ALIGN, INTERNAL_TYPE } from './constants';
 import { navigationTheme, navItemTheme } from './themes';
 
-export const NavigationRoot = createStyledComponent(
-  'nav',
-  ({ align, prefix, theme: baseTheme, type }) => {
-    const theme = navigationTheme(baseTheme);
+export const NavigationRoot = styled('nav', {
+  shouldForwardProp: (prop) =>
+    ['prefix', 'type'].indexOf(prop) === -1 && isPropValid(prop)
+})(({ align, prefix, theme: baseTheme, type }) => {
+  const theme = navigationTheme(baseTheme);
 
-    const aligns = {
-      [ALIGN.start]: 'flex-start',
-      [ALIGN.center]: 'center',
-      [ALIGN.end]: 'flex-end',
-      [ALIGN.justify]: undefined
-    };
+  const aligns = {
+    [ALIGN.start]: 'flex-start',
+    [ALIGN.center]: 'center',
+    [ALIGN.end]: 'flex-end',
+    [ALIGN.justify]: undefined
+  };
 
-    return {
-      backgroundColor: theme[`${prefix}Nav_backgroundColor${type}`],
-      borderBottom: theme[`${prefix}Nav_border`],
-      display: 'flex',
-      justifyContent: aligns[align],
-      listStyle: 'none',
-      margin: 0,
-      // prettier-ignore
-      padding: `${theme[`${prefix}Nav_paddingVertical`]} ${theme[`${prefix}Nav_paddingHorizontal`]}`,
+  return {
+    ...componentStyleReset(baseTheme),
 
-      ...(type === INTERNAL_TYPE.tabs
-        ? {
-            paddingBottom: 0
-          }
-        : undefined),
+    backgroundColor: theme[`${prefix}Nav_backgroundColor${type}`],
+    borderBottom: theme[`${prefix}Nav_border`],
+    display: 'flex',
+    justifyContent: aligns[align],
+    listStyle: 'none',
+    margin: 0,
+    // prettier-ignore
+    padding: `${theme[`${prefix}Nav_paddingVertical`]} ${theme[`${prefix}Nav_paddingHorizontal`]}`,
 
-      '& > :not(:first-child)': {
-        marginLeft: theme[`${prefix}Nav_gutter`]
-      }
-    };
-  },
-  {
-    displayName: 'Navigation',
-    filterProps: ['prefix'],
-    includeStyleReset: true
-  }
-);
+    ...(type === INTERNAL_TYPE.tabs
+      ? {
+          paddingBottom: 0
+        }
+      : undefined),
 
-const NavItemButton = createStyledComponent(
-  Button,
+    '& > :not(:first-child)': {
+      marginLeft: theme[`${prefix}Nav_gutter`]
+    }
+  };
+});
+
+const NavItemButton = styled(Button, {
+  shouldForwardProp: (prop) =>
+    prop === 'as' || ['prefix', 'selected', 'type'].indexOf(prop) === -1
+})(
   ({ align, disabled, maxWidth, prefix, selected, theme: baseTheme, type }) => {
     const theme = navItemTheme(baseTheme);
 
@@ -117,10 +118,6 @@ const NavItemButton = createStyledComponent(
         }
       }
     };
-  },
-  {
-    displayName: 'NavItem',
-    filterProps: ['prefix', 'type']
   }
 );
 
@@ -129,8 +126,7 @@ const NavItemButton = createStyledComponent(
  * usually do) because we need to filter some props, which breaks the usual
  * pattern.
  */
-export const NavItemRoot = createThemedComponent(
-  NavItemButton,
+export const NavItemRoot = themed(NavItemButton)(
   ({ prefix, theme: baseTheme, type }) => {
     const theme = {
       ...navItemTheme(baseTheme),

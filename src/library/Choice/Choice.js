@@ -43,13 +43,12 @@ export default class Choice extends PureComponent<ChoiceProps> {
       'aria-invalid': invalid,
       'aria-required': required,
       disabled,
-      innerRef: (ref) => {
+      ref: (ref) => {
         if (inputRef) {
           inputRef(ref);
         }
       },
       required,
-      size,
       ...restProps // Note: Props are spread to input rather than Root
     };
 

@@ -37,7 +37,7 @@ class Table extends Component<TableProps> {
       sortColumnAscending: 'Sort column in ascending order',
       sortColumnDescending: 'Sort column in descending order'
     },
-    titleElement: TITLE_ELEMENT.h4
+    titleAs: TITLE_ELEMENT.h4
   };
 
   static propTypes = tablePropTypes;

@@ -1,6 +1,7 @@
 /* @flow */
 import { PLACEMENT } from './constants';
 
+import type { PopperProps } from 'react-popper/lib/cjs/Popper';
 import type {
   ComponentTheme,
   ComponentThemeFn,
@@ -24,9 +25,10 @@ export type PopoverProps = {
   onClose?: (event: SyntheticEvent<>) => void,
   onOpen?: (event: SyntheticEvent<>) => void,
   placement?: Placement,
+  positionFixed?: boolean,
   subtitle?: React$Node,
   title?: React$Node,
-  triggerRef?: (node: ?React$Component<*, *>) => void,
+  triggerRef?: (node: ?HTMLElement) => void,
   usePortal?: boolean
 };
 
@@ -51,6 +53,7 @@ export type PopoverStateAndHelpers = {
   helpers: PopoverHelpers
 };
 
+export type PopoverRenderMethod = (props: Object) => React$Node;
 export type PopoverPropGetter = (props?: Object) => Object;
 export type PopoverRenderFn = (props?: PopoverRenderProps) => React$Node;
 type PopoverRenderProps = {
@@ -64,19 +67,22 @@ export type PopoverArrowProps = {
 
 export type PopoverContentProps = {
   children: React$Node,
+  forwardedRef?: (node: ?HTMLElement) => void,
   modifiers?: Object,
   hasArrow?: boolean,
   placement?: Placement,
+  positionFixed?: boolean,
   subtitle?: React$Node,
   title?: React$Node
 };
 
 export type PopoverTriggerProps = {
   children: React$Node,
-  cursor?: string
+  cursor?: string,
+  forwardedRef: (node: ?HTMLElement) => void
 };
 
-export type RtlPopperProps = {
+export type RtlPopperProps = PopperProps & {
   placement?: Placement,
   theme: ThemeObj
 };

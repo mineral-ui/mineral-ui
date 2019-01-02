@@ -6,16 +6,16 @@ import type { TextWithThemeOverrides } from './types';
 
 const textWithThemeOverrides: TextWithThemeOverrides = ({
   appearance,
+  as = 'h4',
   children,
   textComponent,
-  element = 'h4',
   displayName,
   theme
 }) => {
   const Text = textComponent;
   const textProps = {
     appearance,
-    element,
+    as,
     noMargins: true
   };
 
@@ -26,7 +26,7 @@ const textWithThemeOverrides: TextWithThemeOverrides = ({
     theme[`${displayName}_fontSize`] !== undefined ||
     theme[`${displayName}_fontWeight`] !== undefined
   ) {
-    const appliedAppearance = appearance || element;
+    const appliedAppearance = appearance || as;
     // prettier-ignore
     const getOverride = (variable) =>
       theme[`${displayName}_${variable}`] !== undefined

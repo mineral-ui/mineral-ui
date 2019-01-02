@@ -32,13 +32,18 @@ export default class TableDataRow extends Component<TableDataRowProps> {
     const selectable = Boolean(toggle);
 
     const cells = columns.map(({ cell: render, key, ...restColumn }) => {
+      const {
+        content: ignoreContent,
+        label: ignoreLabel,
+        ...column
+      } = restColumn;
       const cellProps = {
         children: data[key],
         columnKey: key,
         rowIndex,
         key,
         render,
-        ...restColumn
+        ...column
       };
 
       return <TableCell key={key} {...cellProps} />;

@@ -1,7 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
-import memoizeOne from 'memoize-one';
-import { createTextRootNode } from './styled';
+import { TextRoot as Root } from './styled';
 import ElementContext from './ElementContext';
 import { APPEARANCE } from './constants';
 
@@ -12,22 +11,23 @@ export default class TextProvider extends Component<TextProviderProps> {
 
   static defaultProps: TextProviderDefaultProps = {
     appearance: APPEARANCE.p,
-    element: 'p'
+    as: 'p'
   };
 
-  // Must be an instance method to avoid affecting other instances memoized keys
-  getRootNode = memoizeOne(
-    createTextRootNode,
-    (nextProps: TextProviderProps, prevProps: TextProviderProps) =>
-      nextProps.element === prevProps.element
-  );
-
   render() {
-    const Root = this.getRootNode(this.props, TextProvider.defaultProps);
-    const { parentElement: ignoreParentElement, ...rootProps } = this.props;
+    const {
+      appearance: defaultAppearance,
+      as: defaultAs
+    } = TextProvider.defaultProps;
+    const { as, parentAs, ...restProps } = this.props;
+    const rootProps = {
+      as: parentAs === defaultAppearance && as === defaultAs ? 'span' : as,
+      defaultAppearance,
+      ...restProps
+    };
 
     return (
-      <ElementContext.Provider value={this.props.element}>
+      <ElementContext.Provider value={this.props.as}>
         <Root {...rootProps} />
       </ElementContext.Provider>
     );

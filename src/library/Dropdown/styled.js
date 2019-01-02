@@ -1,14 +1,15 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../styles';
-import RtlPopper from '../Popover/RtlPopper';
+import styled from '@emotion/styled';
+import { componentStyleReset, pxToEm } from '../styles';
 import { dropdownContentTheme } from './themes';
 
-export const DropdownContentRoot = createStyledComponent(
-  RtlPopper,
+export const DropdownContentWrapper = styled('div')(
   ({ theme: baseTheme, wide }) => {
     const theme = dropdownContentTheme(baseTheme);
 
     return {
+      ...componentStyleReset(baseTheme),
+
       backgroundColor: theme.DropdownContent_backgroundColor,
       border: `1px solid ${theme.DropdownContent_borderColor}`,
       borderRadius: theme.DropdownContent_borderRadius,
@@ -31,14 +32,9 @@ export const DropdownContentRoot = createStyledComponent(
       '&[data-placement^="right"]': {
         marginLeft: theme.DropdownContent_margin
       },
-      '&[data-x-out-of-boundaries]': {
+      '&[data-out-of-boundaries]': {
         visibility: 'hidden'
       }
     };
-  },
-  {
-    displayName: 'DropdownContent',
-    includeStyleReset: true,
-    filterProps: ['hasArrow', 'wide']
   }
 );

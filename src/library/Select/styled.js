@@ -1,13 +1,15 @@
 /* @flow */
+import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
 import { ellipsis } from 'polished';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
+import { getNormalizedValue, pxToEm } from '../styles';
+import { themed, mapComponentThemes } from '../themes';
 import FauxControl from '../FauxControl';
 import Dropdown from '../Dropdown/Dropdown';
 import { selectTheme, selectTriggerTheme } from './themes';
 import { SIZE } from './constants';
 
-const ThemedDropdown = createThemedComponent(Dropdown, ({ theme: baseTheme }) =>
+const ThemedDropdown = themed(Dropdown)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'Select',
@@ -21,19 +23,13 @@ const ThemedDropdown = createThemedComponent(Dropdown, ({ theme: baseTheme }) =>
   )
 );
 
-export const SelectRoot = createStyledComponent(
-  ThemedDropdown,
-  {
-    width: '100%',
+export const SelectRoot = styled(ThemedDropdown)({
+  width: '100%',
 
-    '& > span': {
-      width: '100%'
-    }
-  },
-  {
-    displayName: 'Select'
+  '& > span': {
+    width: '100%'
   }
-);
+});
 
 export const contentWidthModifier = {
   enabled: true,
@@ -44,24 +40,21 @@ export const contentWidthModifier = {
   }
 };
 
-const ThemedFauxControl = createThemedComponent(
-  FauxControl,
-  ({ theme: baseTheme }) =>
-    mapComponentThemes(
-      {
-        name: 'Select',
-        theme: selectTriggerTheme(baseTheme)
-      },
-      {
-        name: 'FauxControl',
-        theme: {}
-      },
-      baseTheme
-    )
+const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
+  mapComponentThemes(
+    {
+      name: 'Select',
+      theme: selectTriggerTheme(baseTheme)
+    },
+    {
+      name: 'FauxControl',
+      theme: {}
+    },
+    baseTheme
+  )
 );
 
-export const SelectTriggerRoot = createStyledComponent(
-  ThemedFauxControl,
+export const SelectTriggerRoot = styled(ThemedFauxControl)(
   ({ disabled, readOnly, selectedItemVariant, theme: baseTheme, variant }) => {
     const theme = selectTriggerTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -112,41 +105,28 @@ export const SelectTriggerRoot = createStyledComponent(
         marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
       }
     };
-  },
-  {
-    displayName: 'SelectTrigger'
   }
 );
 
-export const Trigger = createStyledComponent(
-  'div',
-  ({ size, theme: baseTheme }) => {
-    const theme = selectTriggerTheme(baseTheme);
+export const Trigger = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+})(({ size, theme: baseTheme }) => {
+  const theme = selectTriggerTheme(baseTheme);
 
-    const fontSize =
-      size === SIZE.small ? theme.Select_fontSize_small : theme.Select_fontSize;
+  const fontSize =
+    size === SIZE.small ? theme.Select_fontSize_small : theme.Select_fontSize;
 
-    return {
-      alignItems: 'center',
-      display: 'flex',
-      flex: '1 1 auto',
-      height: getNormalizedValue(theme[`Select_height_${size}`], fontSize),
-      minWidth: 0
-    };
-  },
-  {
-    displayName: 'Trigger'
-  }
-);
+  return {
+    alignItems: 'center',
+    display: 'flex',
+    flex: '1 1 auto',
+    height: getNormalizedValue(theme[`Select_height_${size}`], fontSize),
+    minWidth: 0
+  };
+});
 
-export const TriggerContent = createStyledComponent(
-  'span',
-  {
-    ...ellipsis(null),
-    userSelect: 'none',
-    width: '100%'
-  },
-  {
-    displayName: 'TriggerContent'
-  }
-);
+export const TriggerContent = styled('span')({
+  ...ellipsis(null),
+  userSelect: 'none',
+  width: '100%'
+});

@@ -1,67 +1,40 @@
 /* @flow */
-import { Children, Component } from 'react';
+import { Component } from 'react';
+import { createPortal } from 'react-dom';
 import { canUseDOM } from 'exenv';
-import {
-  unmountComponentAtNode,
-  unstable_renderSubtreeIntoContainer
-} from 'react-dom';
 
 import type { PortalProps } from './types';
 
 export default class Portal extends Component<PortalProps> {
   static displayName = 'Portal';
 
-  content: React$Element<*>;
-
   node: ?HTMLElement;
 
-  componentDidMount() {
-    this.createPortal();
-    this.renderIntoPortal();
+  constructor(props: PortalProps) {
+    super(props);
+
+    if (canUseDOM) {
+      this.node = document.createElement('div');
+    }
   }
 
-  componentDidUpdate() {
-    this.renderIntoPortal();
+  componentDidMount() {
+    canUseDOM &&
+      document.body &&
+      this.node &&
+      document.body.appendChild(this.node);
   }
 
   componentWillUnmount() {
-    this.closePortal();
+    canUseDOM &&
+      document.body &&
+      this.node &&
+      document.body.removeChild(this.node);
   }
 
   render() {
-    return null;
-  }
-
-  renderIntoPortal() {
-    if (canUseDOM) {
-      const { children, callback } = this.props;
-      const content = Children.only(children);
-
-      this.content = unstable_renderSubtreeIntoContainer(
-        this,
-        content,
-        this.node,
-        callback
-      );
-    }
-  }
-
-  createPortal() {
-    if (canUseDOM) {
-      this.node = global.document.createElement('div');
-      global.document.body.appendChild(this.node);
-    }
-  }
-
-  closePortal() {
-    if (canUseDOM) {
-      unmountComponentAtNode(this.node);
-      if (
-        global.document.body.contains &&
-        global.document.body.contains(this.node)
-      ) {
-        global.document.body.removeChild(this.node);
-      }
-    }
+    return canUseDOM && this.node
+      ? createPortal(this.props.children, this.node)
+      : null;
   }
 }

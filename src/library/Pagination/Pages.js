@@ -1,5 +1,5 @@
 /* @flow */
-import React, { PureComponent } from 'react';
+import React, { forwardRef, PureComponent } from 'react';
 import range from 'lodash.range';
 import IconChevronLeft from '../Icon/IconChevronLeft';
 import IconChevronRight from '../Icon/IconChevronRight';
@@ -9,7 +9,7 @@ import {
   PagesEllipsisButton as EllipsisButton
 } from './styled';
 
-import type { PagesProps } from './types';
+import type { IncrementButtonProps, PagesProps } from './types';
 
 const firstPage = (current) => current === 1;
 const lastPage = (current, total) => current === total;
@@ -56,16 +56,7 @@ const getPageButtons = ({
 
       let pageView = null;
       if (firstPageInRange || lastPageInRange) {
-        pageView = (
-          <EllipsisButton
-            disabled
-            element="span"
-            key={page}
-            minimal
-            size="medium">
-            …
-          </EllipsisButton>
-        );
+        pageView = <EllipsisButton key={page}>…</EllipsisButton>;
       } else if (!isPageOutOfRange || isFirstPage || isLastPage) {
         pageView = (
           <Button
@@ -83,7 +74,8 @@ const getPageButtons = ({
             primary={isCurrentPage}
             key={page}
             onClick={handleClick.bind(null, page)}
-            size={size}>
+            size={size}
+            type="button">
             {page}
           </Button>
         );
@@ -94,43 +86,49 @@ const getPageButtons = ({
 };
 
 // eslint-disable-next-line react/display-name
-const IncrementButton = ({
-  currentPage,
-  direction,
-  focusedNodeWhenDisabled,
-  handleIncrement,
-  messages,
-  size,
-  totalPages,
-  ...restProps
-}: PagesProps & {
-  direction: string,
-  focusedNodeWhenDisabled: ?HTMLButtonElement
-}) => {
-  const next = direction === 'next';
-  const incrementIcon = next ? <IconChevronRight /> : <IconChevronLeft />;
-  const iconPosition = next ? 'iconEnd' : 'iconStart';
+const IncrementButton = forwardRef<IncrementButtonProps, HTMLButtonElement>(
+  (
+    {
+      currentPage,
+      direction,
+      focusedNodeWhenDisabled,
+      handleIncrement,
+      messages,
+      size,
+      totalPages,
+      ...restProps
+    }: IncrementButtonProps,
+    ref: React$Ref<*>
+  ) => {
+    const next = direction === 'next';
+    const incrementIcon = next ? <IconChevronRight /> : <IconChevronLeft />;
+    const iconPosition = next ? 'iconEnd' : 'iconStart';
 
-  const handleClick = (next) => {
-    handleIncrement(next, (nextPage) => {
-      isDisabled(next, nextPage, totalPages) &&
-        focusedNodeWhenDisabled &&
-        focusedNodeWhenDisabled.focus();
-    });
-  };
+    const handleClick = (next) => {
+      handleIncrement(next, (nextPage) => {
+        isDisabled(next, nextPage, totalPages) &&
+          focusedNodeWhenDisabled &&
+          focusedNodeWhenDisabled.focus();
+      });
+    };
 
-  const buttonProps = {
-    children: messages[direction],
-    disabled: isDisabled(next, currentPage, totalPages),
-    [iconPosition]: incrementIcon,
-    minimal: true,
-    onClick: handleClick.bind(null, next),
-    size,
-    ...restProps
-  };
+    const buttonProps = {
+      children: messages[direction],
+      disabled: isDisabled(next, currentPage, totalPages),
+      [iconPosition]: incrementIcon,
+      minimal: true,
+      onClick: handleClick.bind(null, next),
+      ref,
+      size,
+      type: 'button',
+      ...restProps
+    };
 
-  return <Button {...buttonProps} />;
-};
+    return <Button {...buttonProps} />;
+  }
+);
+
+IncrementButton.displayName = 'IncrementButton';
 
 export default class Pages extends PureComponent<PagesProps> {
   static displayName = 'Pages';
@@ -140,21 +138,23 @@ export default class Pages extends PureComponent<PagesProps> {
   nextButton: ?HTMLButtonElement;
 
   render() {
-    const { showPageNumbers, ...restProps } = this.props;
+    const { size, showPageNumbers, ...restProps } = this.props;
 
     return (
       <Root {...restProps}>
         <IncrementButton
           direction="previous"
           focusedNodeWhenDisabled={this.nextButton}
-          innerRef={this.setPreviousButtonRef}
+          ref={this.setPreviousButtonRef}
+          size={size}
           {...restProps}
         />
         {showPageNumbers && getPageButtons(this.props)}
         <IncrementButton
           direction="next"
           focusedNodeWhenDisabled={this.previousButton}
-          innerRef={this.setNextButtonRef}
+          ref={this.setNextButtonRef}
+          size={size}
           {...restProps}
         />
       </Root>

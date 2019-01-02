@@ -1,12 +1,11 @@
 /* @flow */
 import React, { cloneElement, PureComponent } from 'react';
-import memoizeOne from 'memoize-one';
 import { pxToEm } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
 import {
-  createMenuItemRootNode,
+  MenuItemRoot as Root,
   MenuItemContent,
   MenuItemInner,
   MenuItemSecondaryText,
@@ -14,11 +13,7 @@ import {
 } from './styled';
 
 import { menuItemPropTypes } from './propTypes';
-import type {
-  MenuItemDefaultProps,
-  MenuItemPropGetter,
-  MenuItemProps
-} from './types';
+import type { MenuItemPropGetter, MenuItemProps } from './types';
 
 const variantIcons = {
   danger: <IconDanger size={pxToEm(24)} />,
@@ -29,18 +24,7 @@ const variantIcons = {
 export default class MenuItem extends PureComponent<MenuItemProps> {
   static displayName = 'MenuItem';
 
-  static defaultProps: MenuItemDefaultProps = {
-    element: 'div'
-  };
-
   static propTypes = menuItemPropTypes;
-
-  // Must be an instance method to avoid affecting other instances memoized keys
-  getRootNode = memoizeOne(
-    createMenuItemRootNode,
-    (nextProps: MenuItemProps, prevProps: MenuItemProps) =>
-      nextProps.element === prevProps.element
-  );
 
   render() {
     const {
@@ -58,7 +42,6 @@ export default class MenuItem extends PureComponent<MenuItemProps> {
       });
     }
 
-    const Root = this.getRootNode(this.props, MenuItem.defaultProps);
     const rootProps = this.getItemProps(this.props);
 
     let startIcon = variant !== undefined && variant && variantIcons[variant];
@@ -94,6 +77,7 @@ export default class MenuItem extends PureComponent<MenuItemProps> {
 
     return {
       ...(render ? restProps : {}),
+      'aria-disabled': disabled,
       disabled,
       tabIndex: tabIndex !== undefined ? tabIndex : disabled ? '-1' : 0,
       ...(!render ? restProps : {}),

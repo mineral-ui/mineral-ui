@@ -11,8 +11,7 @@ export default class Text extends Component<TextProps> {
   static displayName = 'Text';
 
   static defaultProps: TextDefaultProps = {
-    appearance: APPEARANCE.p,
-    element: 'p'
+    appearance: APPEARANCE.p
   };
 
   static propTypes = textPropTypes;
@@ -22,10 +21,10 @@ export default class Text extends Component<TextProps> {
 
     return (
       <ElementContext.Consumer>
-        {(parentElement) => {
+        {(parentAs) => {
           const rootProps = {
-            inherit: inherit === false || !parentElement ? inherit : true,
-            parentElement,
+            inherit: inherit === false || !parentAs ? inherit : true,
+            parentAs,
             ...restProps
           };
           return <TextProvider {...rootProps} />;
