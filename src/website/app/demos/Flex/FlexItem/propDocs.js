@@ -46,6 +46,11 @@ const propDocs: ComponentPropDocs = {
     },
     defaultValue: getDefaultValue('grow')
   },
+  minWidth: {
+    description:
+      'Set the minimum width ([see example](#min-width)) [[Responsive-capable]](#responsive)',
+    type: 'number | string | Array<number | string | null>'
+  },
   shrink: {
     description:
       'Shrink factor along the main axis ([see example](#shrink)) [[Responsive-capable]](#responsive)',

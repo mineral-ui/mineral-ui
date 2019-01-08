@@ -7,6 +7,8 @@ import {
   JUSTIFY_CONTENT
 } from './constants';
 
+import type { HeightOrWidthProp } from '../Box/types';
+
 type StringOrArrayOfStrings<T> = $Keys<T> | Array<$Keys<T> | null>;
 
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
@@ -20,6 +22,7 @@ export type FlexProps = {
   children: React$Node,
   direction?: Direction,
   gutterWidth?: GutterWidth,
+  minWidth?: HeightOrWidthProp,
   justifyContent?: JustifyContent,
   wrap?: boolean | Array<boolean | null>
 };

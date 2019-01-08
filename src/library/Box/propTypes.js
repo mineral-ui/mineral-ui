@@ -1,7 +1,7 @@
 /* @flow */
 import { arrayOf, bool, number, oneOfType, string } from 'prop-types';
 
-const spacingPropType = oneOfType([
+export const spacingPropType = oneOfType([
   number,
   string,
   arrayOf(oneOfType([number, string]))
