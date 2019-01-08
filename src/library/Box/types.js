@@ -42,7 +42,7 @@ export type SpacingStyles = {
 
 export type SpacingValue = StyleValue | SpacingSize;
 
-type HeightOrWidthProp = number | string | Array<number | string | null>;
+export type HeightOrWidthProp = number | string | Array<number | string | null>;
 
 type SpacingProp =
   | number

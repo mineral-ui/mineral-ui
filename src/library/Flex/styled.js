@@ -14,6 +14,11 @@ const getJustification = (value: string): string =>
     ? `space-${value}`
     : getAlignment(value);
 
+const getWidthValue = (value) =>
+  typeof value === 'number' && value < 1 && value !== 0
+    ? `${value * 100}%`
+    : value;
+
 const flexMapValueToProperty = (
   property: string,
   value: StyleValue
@@ -66,12 +71,10 @@ const flexItemMapValueToProperty = (
   const map = {
     alignSelf: (value) =>
       value === 'start' || value === 'end' ? `flex-${value}` : value,
-    flexBasis: (value) =>
-      typeof value === 'number' && value < 1 && value !== 0
-        ? `${value * 100}%`
-        : value,
+    flexBasis: getWidthValue,
     flexGrow: (value) => value,
-    flexShrink: (value) => value
+    flexShrink: (value) => value,
+    minWidth: getWidthValue
   };
 
   return map[property](value);
@@ -84,7 +87,7 @@ export const createFlexItemRootNode: CreateRootNode<FlexItemProps> = (
 
   return createStyledComponent(
     component,
-    ({ alignSelf, breakpoints, grow, shrink, theme, width }) =>
+    ({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
       getResponsiveStyles({
         breakpoints,
         mapValueToProperty: flexItemMapValueToProperty,
@@ -92,13 +95,14 @@ export const createFlexItemRootNode: CreateRootNode<FlexItemProps> = (
           alignSelf,
           flexBasis: width || 'auto',
           flexGrow: grow,
-          flexShrink: shrink
+          flexShrink: shrink,
+          minWidth
         },
         theme
       }),
     {
       displayName: 'FlexItem',
-      filterProps: ['inline', 'width']
+      filterProps: ['inline', 'minWidth', 'width']
     }
   );
 };

@@ -8,6 +8,7 @@ import {
   oneOfType,
   string
 } from 'prop-types';
+import { spacingPropType } from '../Box/propTypes';
 import {
   ALIGN_ITEMS,
   ALIGN_SELF,
@@ -26,6 +27,7 @@ export const flexPropTypes = {
   children: node.isRequired,
   direction: stringOrArrayOfStringsPropType(DIRECTION),
   gutterWidth: oneOfType([number, string]),
+  minWidth: spacingPropType,
   justifyContent: stringOrArrayOfStringsPropType(JUSTIFY_CONTENT),
   wrap: oneOfType([bool, arrayOf(oneOfType([bool]))])
 };

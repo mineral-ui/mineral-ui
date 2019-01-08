@@ -82,8 +82,8 @@ export default {
                 <FlexItem>
                   <Dropdown data={[{ text: 'Dropdown' }]}><Button>Dropdown</Button></Dropdown>
                 </FlexItem>
-                <FlexItem>
-                  <Select data={data} name="state" />
+                <FlexItem minWidth={0}>
+                  <Select data={data} name="state" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
                 </FlexItem>
               </Flex>
 
