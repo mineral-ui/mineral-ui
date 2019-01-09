@@ -4,15 +4,9 @@ const { LiveProvider, LivePreview } = require('react-live');
 const { ThemeProvider } = require('../src/library/themes');
 const demos = require('../src/website/app/demos').default;
 
-const excludedComponents = [];
-
 module.exports = Object.values(demos)
   // $FlowFixMe
   .map(({ examples, title: component }) => {
-    if (excludedComponents.includes(component)) {
-      return;
-    }
-
     return examples.reduce(
       (acc, { scope, source, id }) => {
         if (source) {
