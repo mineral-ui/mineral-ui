@@ -20,7 +20,7 @@ module.exports = {
 
   // Make sure the OpenSans font is available
   stylesheets: [
-    'http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,greek'
+    'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,greek'
   ],
 
   // Some examples depend on images found in `src/website/public`. By adding
@@ -38,6 +38,6 @@ module.exports = {
   setupScript: path.resolve(__dirname, 'utils/happoSetup.js'),
 
   plugins: [
-    happoPluginPuppeteer(),
+    happoPluginPuppeteer()
   ]
 };
