@@ -291,6 +291,32 @@ const demoRoutes: DemoRoutes = [
     slug: 'select',
     title: 'Select'
   },
+  [
+    {
+      description:
+        'SideBars allow users to view one or more panels of content. These can be displayed overlapping or inline using flex.',
+      slug: 'side-bar',
+      title: 'SideBar'
+    },
+    {
+      description:
+        'SideBarPanels allow users to display content in separate areas. The panels can be faded in using animations.',
+      slug: 'side-bar-panel',
+      title: 'SideBarPanel'
+    },
+    {
+      description:
+        'SideBarOverlays make it possible to visually separate the panels from the rest of the content.',
+      slug: 'side-bar-overlay',
+      title: 'SideBarOverlay'
+    },
+    {
+      description:
+        'SideBarSpacers are spacers to display a panel on the right side.',
+      slug: 'side-bar-spacer',
+      title: 'SideBarSpacer'
+    }
+  ],
   {
     description:
       'Table displays structured data with sortable columns and selectable rows.',

@@ -35,6 +35,12 @@ export { default as Pagination } from './Pagination';
 export { default as Popover } from './Popover';
 export { default as Radio, RadioGroup } from './Radio';
 export { default as Select } from './Select';
+export {
+  default as SideBar,
+  SideBarPanel,
+  SideBarOverlay,
+  SideBarSpacer
+} from './SideBar';
 export { default as StartEnd } from './StartEnd';
 export { default as Table } from './Table';
 export { default as Tabs, Tab } from './Tabs';

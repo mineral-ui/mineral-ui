@@ -21,6 +21,7 @@ import popover from './Popover';
 import pagination from './Pagination';
 import radio from './Radio';
 import select from './Select';
+import sideBar from './SideBar';
 import startEnd from './StartEnd';
 import table from './Table';
 import tabs from './Tabs';
@@ -50,6 +51,7 @@ const demos = flatten([
   pagination,
   radio,
   select,
+  sideBar,
   startEnd,
   table,
   tabs,
