@@ -51,6 +51,7 @@ export default function Loading(props: Props) {
   if (pastDelay) {
     return <Message fancy>Loading...</Message>;
   } else if (timedOut || error) {
+    error && console.error(error);
     return <Message>Sorry, there was a problem loading the page.</Message>;
   } else {
     return null;
