@@ -1,6 +1,6 @@
 /* @flow */
 import { CheckboxGroup } from '../../../../../../library/Checkbox';
-import DemoForm from '../../common/DemoForm';
+import DemoForm from '../../../common/DemoForm';
 
 export default {
   id: 'inline',

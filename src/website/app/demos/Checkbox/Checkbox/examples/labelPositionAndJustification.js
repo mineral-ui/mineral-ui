@@ -1,5 +1,5 @@
 /* @flow */
-import DemoForm from '../../common/DemoForm';
+import DemoForm from '../../../common/DemoForm';
 import Checkbox from '../../../../../../library/Checkbox';
 import { FormFieldDivider } from '../../../../../../library/Form';
 

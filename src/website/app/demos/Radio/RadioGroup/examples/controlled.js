@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
 import { RadioGroup } from '../../../../../../library/Radio';
-import DemoForm from '../../common/DemoForm';
+import DemoForm from '../../../common/DemoForm';
 
 export default {
   id: 'controlled',

@@ -1,7 +1,7 @@
 /* @flow */
 import Radio, { RadioGroup } from '../../../../../../library/Radio';
 import { FormFieldDivider } from '../../../../../../library/Form';
-import DemoForm from '../../common/DemoForm';
+import DemoForm from '../../../common/DemoForm';
 
 export default {
   id: 'data-vs-children',

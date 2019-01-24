@@ -3,7 +3,7 @@ import { createStyledComponent } from '../../../../../../library/styles';
 import Button from '../../../../../../library/Button';
 import Radio from '../../../../../../library/Radio';
 import TextInput from '../../../../../../library/TextInput';
-import _DemoForm from '../../common/DemoForm';
+import _DemoForm from '../../../common/DemoForm';
 
 const DemoForm = createStyledComponent(_DemoForm, {
   '& > *': {

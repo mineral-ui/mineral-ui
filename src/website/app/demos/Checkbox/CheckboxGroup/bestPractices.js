@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import DemoForm from '../common/DemoForm';
+import DemoForm from '../../common/DemoForm';
 import { FormField } from '../../../../../library/Form';
 import Checkbox from '../../../../../library/Checkbox';
 import { CheckboxGroup } from '../../../../../library/Checkbox';

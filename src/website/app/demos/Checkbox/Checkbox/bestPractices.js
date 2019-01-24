@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import DemoForm from '../common/DemoForm';
+import DemoForm from '../../common/DemoForm';
 import CheckboxGroup from '../../../../../library/Checkbox/CheckboxGroup';
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';

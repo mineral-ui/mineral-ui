@@ -1,6 +1,6 @@
 /* @flow */
 import Checkbox from '../../../../../../library/Checkbox';
-import DemoForm from '../../common/DemoForm';
+import DemoForm from '../../../common/DemoForm';
 
 export default {
   id: 'disabled',

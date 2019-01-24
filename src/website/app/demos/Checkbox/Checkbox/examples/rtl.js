@@ -2,7 +2,7 @@
 import { ThemeProvider } from '../../../../../../library/themes';
 import Checkbox from '../../../../../../library/Checkbox';
 import { FormFieldDivider } from '../../../../../../library/Form';
-import DemoForm from '../../common/DemoForm';
+import DemoForm from '../../../common/DemoForm';
 
 /*
  * Note: The sample text used in the example is Arabic.
