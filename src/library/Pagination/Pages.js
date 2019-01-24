@@ -1,5 +1,6 @@
 /* @flow */
 import React, { PureComponent } from 'react';
+import range from 'lodash.range';
 import IconChevronLeft from '../Icon/IconChevronLeft';
 import IconChevronRight from '../Icon/IconChevronRight';
 import Button from '../Button';
@@ -23,8 +24,7 @@ const getPageButtons = ({
   totalPages,
   visibleRange
 }: PagesProps) => {
-  return [...Array(totalPages)]
-    .map((_, i) => i)
+  return range(totalPages)
     .map((_, index) => {
       const page = index + 1;
       const evenOffset = visibleRange % 2 === 0 ? 1 : 0;

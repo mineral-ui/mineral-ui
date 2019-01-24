@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react';
+import range from 'lodash.range';
 import {
   DialogBody,
   DialogHeader,
@@ -8,7 +9,7 @@ import {
 import DemoLayout from '../../common/DemoLayout';
 import Dialog from '../../common/DemoDialog';
 
-const content: Array<React$Element<*>> = [...Array(6)].map((_, index) => (
+const content: Array<React$Element<*>> = range(0, 6).map((_, index) => (
   <p key={index}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Viverra nam libero justo

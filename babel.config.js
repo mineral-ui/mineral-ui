@@ -20,6 +20,7 @@ const config = {
           browsers: ['last 1 version']
         },
         useBuiltIns: TARGET === 'website' ? 'entry' : false,
+        loose: true,
         modules:
           BABEL_ENV === 'cjs' || NODE_ENV === 'test' ? 'commonjs' : false,
         debug: Boolean(DEBUG)

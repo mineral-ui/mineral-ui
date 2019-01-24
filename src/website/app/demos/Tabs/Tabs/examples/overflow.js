@@ -1,4 +1,5 @@
 /* @flow */
+import range from 'lodash.range';
 import { CardDivider } from '../../../../../../library/Card';
 import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Text from '../../../../../../library/Text';
@@ -15,8 +16,7 @@ const content = (index: number) => {
   }
 };
 
-const oneThruTwenty = [...Array(21).keys()];
-oneThruTwenty.shift();
+const oneThruTwenty = range(1, 21);
 
 const title = (index: number) => {
   if (index % 3 === 0) {

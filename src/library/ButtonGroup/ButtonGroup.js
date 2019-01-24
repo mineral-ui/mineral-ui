@@ -158,7 +158,9 @@ export default class ButtonGroup extends Component<
               : checked.add(dataIndex);
           } else {
             checked = setFromArray([index]);
-            changed = [...prevState.checked][0] !== [...checked][0];
+            changed =
+              isItemAtIndexChecked(checked, index) !==
+              isItemAtIndexChecked(prevState.checked, index);
           }
 
           return { checked };

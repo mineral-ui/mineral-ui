@@ -1,6 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import { createStyledComponent } from '../../../../../library/styles';
+import range from 'lodash.range';
 import { countRender } from '../../../RenderCounter';
 
 import type {
@@ -57,7 +58,7 @@ const generateColumns = (count: number): Columns => {
 };
 
 const generateRows = (count: number, columns: Columns): Rows => {
-  return [...Array(count).keys()].map((i) => {
+  return range(0, count).map((i) => {
     return columns.reduce((acc, column) => {
       acc[column.key] = column.key + i;
       return acc;
