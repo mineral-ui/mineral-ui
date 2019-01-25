@@ -1,9 +1,16 @@
 /* @flow */
-
+import React from 'react';
+import styled from '@emotion/styled';
 import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
 import item from '../../../Menu/common/customItem';
 import renderPropsDescription from '../../../common/renderPropsDescription';
+
+const _DemoLayout = styled('div')({
+  marginBottom: 160
+});
+
+const DemoLayout = (props: {}) => <_DemoLayout {...props} />;
 
 export default {
   id: 'custom-item',
@@ -14,7 +21,7 @@ ${renderPropsDescription}
 
 The implementation of \`item\` used in the following example can be seen
 in full in the [Menu](/components/menu/#custom-item) example.`,
-  scope: { Button, Dropdown, item },
+  scope: { Button, DemoLayout, Dropdown, item },
   source: `
     () => {
       const data = [
@@ -36,9 +43,11 @@ in full in the [Menu](/components/menu/#custom-item) example.`,
       ];
 
       return (
-        <Dropdown data={data} item={item}>
-          <Button>Menu</Button>
-        </Dropdown>
+        <DemoLayout>
+          <Dropdown data={data} item={item} isOpen>
+            <Button>Menu</Button>
+          </Dropdown>
+        </DemoLayout>
       );
     }`
 };

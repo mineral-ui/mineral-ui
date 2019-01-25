@@ -1,14 +1,17 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import Select from '../../../../../../library/Select';
 import { basicData as data } from '../../common/selectData';
 
-const OverflowContainer = createStyledComponent('div', {
+const _OverflowContainer = styled('div')({
   backgroundColor: 'aliceblue',
   margin: '0 0 105px 0',
   overflow: 'hidden',
   padding: '25px'
 });
+
+const OverflowContainer = (props: {}) => <_OverflowContainer {...props} />;
 
 export default {
   id: 'overflow',

@@ -1,13 +1,11 @@
 /* @flow */
 import React, { createElement } from 'react';
+import styled from '@emotion/styled';
 import marksy from 'marksy/jsx';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../library/styles';
+import { getNormalizedValue, pxToEm } from '../../library/styles';
+import { ignoreSsrWarning } from '../../library/utils/emotion';
 import Text from '../../library/Text';
 import Heading from './SiteHeading';
 import Link from './SiteLink';
@@ -85,7 +83,7 @@ const styles = {
         theme.lineHeight_prose}em 0`,
       maxWidth: theme.maxTextWidth,
 
-      '&:first-child': {
+      ['&:first-child' + ignoreSsrWarning]: {
         marginTop: 0
       }
     },
@@ -237,12 +235,12 @@ const styles = {
   })
 };
 
-const Blockquote = createStyledComponent('blockquote', styles.blockquote);
-const CodeBlock = createStyledComponent('div', styles.codeBlock);
-const Image = createStyledComponent('img', styles.image);
-const Label = createStyledComponent(_Label, styles.label);
-const LI = createStyledComponent('li', styles.listItem);
-const Root = createStyledComponent('div', styles.root);
+const Blockquote = styled('blockquote')(styles.blockquote);
+const CodeBlock = styled('div')(styles.codeBlock);
+const Image = styled('img')(styles.image);
+const Label = styled(_Label)(styles.label);
+const LI = styled('li')(styles.listItem);
+const Root = styled('div')(styles.root);
 
 function replaceHeading(
   level,

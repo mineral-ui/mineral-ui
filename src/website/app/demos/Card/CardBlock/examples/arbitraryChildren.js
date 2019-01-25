@@ -1,12 +1,12 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import { mineralTheme } from '../../../../../../library/themes';
 import Button from '../../../../../../library/Button';
 import Card, { CardBlock, CardTitle } from '../../../../../../library/Card';
 import DemoLayout from '../../common/DemoLayout';
 
-const CustomContent = createStyledComponent('div', ({ theme }) => ({
+const CustomContent = styled('div')(({ theme }) => ({
   backgroundColor: theme.color_gray_20,
   padding: `${theme.space_stack_md} 0`
 }));

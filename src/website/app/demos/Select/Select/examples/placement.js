@@ -1,14 +1,17 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import Select from '../../../../../../library/Select';
 import { basicData as data } from '../../common/selectData';
 
-const DemoLayout = createStyledComponent('div', {
+const Root = styled('div')({
   height: '175px',
   display: 'flex',
   alignItems: 'flex-start',
   justifyContent: 'center'
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'placement',

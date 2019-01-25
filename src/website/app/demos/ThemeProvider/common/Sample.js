@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 
-const Root = createStyledComponent('span', ({ theme }) => ({
+const Root = styled('span')(({ theme }) => ({
   backgroundColor: theme.Sample_backgroundColor || 'lavender',
   color: theme.Sample_color || theme.color,
   display: 'inline-block',

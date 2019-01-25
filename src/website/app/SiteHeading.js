@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../library/styles';
-import { createThemedComponent } from '../../library/themes';
+import styled from '@emotion/styled';
+import { themed } from '../../library/themes';
 import Heading from './Heading';
 import Link from './SiteLink';
 
@@ -60,16 +60,13 @@ const siteHeadingStyles = ({ level, theme }) => ({
   }
 });
 
-const SiteThemedHeading = createThemedComponent(Heading, ({ theme }) => ({
+const SiteThemedHeading = themed(Heading)(({ theme }) => ({
   ...siteComponentTheme(theme)
 }));
 
-const SiteStyledHeading = createStyledComponent(
-  SiteThemedHeading,
-  siteHeadingStyles
-);
+const SiteStyledHeading = styled(SiteThemedHeading)(siteHeadingStyles);
 
-const Anchor = createStyledComponent(Link, ({ theme }) => ({
+const Anchor = styled(Link)(({ theme }) => ({
   color: theme.color_mouse,
   fontWeight: 'inherit',
   visibility: 'hidden'

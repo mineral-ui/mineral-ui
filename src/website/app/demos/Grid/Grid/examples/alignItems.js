@@ -1,16 +1,15 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import GridItem from '../../common/DemoGridItem';
 import _DemoLayout from '../../common/DemoLayout';
 import _Grid from '../../common/DemoGrid';
 
-const DemoLayout = createStyledComponent(
-  _DemoLayout,
-  {},
-  { withProps: { lastRowStartsAt: 5 } }
+const DemoLayout = (props: Object) => (
+  <_DemoLayout lastRowStartsAt={5} {...props} />
 );
 
-const Grid = createStyledComponent(_Grid, {
+const Grid = styled(_Grid)({
   height: '5rem'
 });
 

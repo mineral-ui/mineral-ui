@@ -78,6 +78,10 @@ const propDocs: ComponentPropDocs = {
     },
     defaultValue: `'${Popover.defaultProps.placement}'`
   },
+  positionFixed: {
+    description: 'Apply fixed positioning to the content',
+    type: 'boolean'
+  },
   subtitle: {
     description: 'Subtitle displayed under the title',
     type: 'React$Node'

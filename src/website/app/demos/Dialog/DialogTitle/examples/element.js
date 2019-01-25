@@ -6,7 +6,7 @@ import Dialog from '../../common/DemoDialog';
 export default {
   id: 'element-appearance',
   title: 'Element & Appearance',
-  description: `Apply the appropriate semantic meaning & styles the \`element\`
+  description: `Apply the appropriate semantic meaning & styles the \`as\`
 and \`appearance\` props. See [Text](/components/text/#headings) for more details.`,
   scope: {
     DemoLayout,
@@ -18,7 +18,7 @@ and \`appearance\` props. See [Text](/components/text/#headings) for more detail
     <DemoLayout>
       <Dialog>
         <DialogHeader>
-          <DialogTitle element='h3' appearance="h1">
+          <DialogTitle as='h3' appearance="h1">
             This title is an h3 that looks like a level 1 heading
           </DialogTitle>
         </DialogHeader>

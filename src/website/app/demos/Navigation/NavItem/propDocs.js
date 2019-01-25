@@ -1,6 +1,4 @@
 /* @flow */
-import { NavItem } from '../../../../../library/Navigation';
-
 import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
@@ -11,14 +9,6 @@ const propDocs: ComponentPropDocs = {
   disabled: {
     description: 'Disables NavItem',
     type: 'boolean'
-  },
-  element: {
-    description: 'React element used for NavItem [(see example)](#element)',
-    type: {
-      name: 'union',
-      value: 'React$Element<*> | string'
-    },
-    defaultValue: `'${NavItem.defaultProps.element}'`
   },
   icon: {
     description: 'Icon placed before the text',

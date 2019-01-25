@@ -1,30 +1,26 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
 import { palette } from 'mineral-ui-tokens';
 import _Text from '../../../../../../library/Text';
 import { mineralTheme as theme } from '../../../../../../library/themes';
-import { createStyledComponent } from '../../../../../../library/styles';
+import { componentStyleReset } from '../../../../../../library/styles';
 import _DemoLayout from '../../../common/DemoLayout';
 
 const StyledDemoLayout = (props) => (
   <_DemoLayout includeLastChild marginBottom="1em" {...props} />
 );
 
-const DemoLayout = createStyledComponent(
-  StyledDemoLayout,
-  {},
-  {
-    includeStyleReset: true
-  }
+const DemoLayout = styled(StyledDemoLayout)(({ theme }) =>
+  componentStyleReset(theme)
 );
 
-const Text = createStyledComponent(
-  _Text,
-  ({ theme }) => ({
+const Text = withProps({ noMargins: true })(
+  styled(_Text)(({ theme }) => ({
     backgroundColor: palette.indigo_20,
     padding: theme.space_inset_sm
-  }),
-  { withProps: { noMargins: true } }
+  }))
 );
 
 export default {
@@ -41,10 +37,10 @@ toggle inheritance in either case with the \`inherit\` prop.
     applied to the Text components below.
   </p>
 </Callout>`,
-  scope: { createStyledComponent, DemoLayout, palette, Text, theme },
+  scope: { styled, DemoLayout, palette, Text, theme },
   source: `
     () => {
-      const CustomDiv = createStyledComponent('div', {
+      const CustomDiv = styled('div')({
         backgroundColor: palette.sky_10,
         color: palette.sky_80,
         fontFamily: 'serif',
@@ -63,7 +59,7 @@ toggle inheritance in either case with the \`inherit\` prop.
             </Text>
           </CustomDiv>
 
-          <Text element="div">
+          <Text as="div">
             For nested Text components (inside another Text), you can opt
             <em>out</em> of style inheritance by passing false to the inherit prop.
 

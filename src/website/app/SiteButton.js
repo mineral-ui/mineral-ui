@@ -1,6 +1,6 @@
 /* @flow */
 import { pxToEm } from '../../library/styles';
-import { createThemedComponent } from '../../library/themes';
+import { themed } from '../../library/themes';
 import Button from '../../library/Button';
 
 // prettier-ignore
@@ -42,6 +42,6 @@ const componentTheme = baseTheme => ({
   ...baseTheme
 });
 
-export default createThemedComponent(Button, ({ theme }) => ({
+export default themed(Button)(({ theme }) => ({
   ...componentTheme(theme)
 }));

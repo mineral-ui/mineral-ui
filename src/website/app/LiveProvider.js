@@ -8,7 +8,8 @@ import {
   LiveError,
   LivePreview
 } from 'react-live';
-import { createStyledComponent } from '../../library/styles';
+import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
 import { ThemeProvider } from '../../library/themes';
 import getCodeBlockStyles from './utils/getCodeBlockStyles';
 import siteColors from './siteColors';
@@ -63,11 +64,11 @@ const styles = {
   })
 };
 
-const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
-  rootEl: 'div'
-});
-const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
-const MyLiveError = createStyledComponent(LiveError, styles.liveError);
+const MyLivePreview = styled(LivePreview, {
+  shouldForwardProp: (prop) => isPropValid(prop)
+})(styles.livePreview);
+const MyLiveEditor = styled(LiveEditor)(styles.liveEditor);
+const MyLiveError = styled(LiveError)(styles.liveError);
 
 export default function LiveProvider(props: Props) {
   const {

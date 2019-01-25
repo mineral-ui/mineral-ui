@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
 import IconInfo from 'mineral-ui-icons/IconInfo';
 import Button from '../../library/Button';
 import Popover from '../../library/Popover';
@@ -81,17 +81,14 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.root);
-const CodeValue = createStyledComponent('span', styles.codeValue);
-const PropName = createStyledComponent('span', styles.propName);
-const PropP = createStyledComponent(Markdown, styles.propP);
-const PropRequired = createStyledComponent('span', styles.propRequired);
-const PropType = createStyledComponent('span', styles.propType);
-const PropTypeButton = createStyledComponent(Button, styles.propTypeButton);
-const PropTypePopoverContent = createStyledComponent(
-  'div',
-  styles.propTypePopoverContent
-);
+const Root = styled('div')(styles.root);
+const CodeValue = styled('span')(styles.codeValue);
+const PropName = styled('span')(styles.propName);
+const PropP = styled(Markdown)(styles.propP);
+const PropRequired = styled('span')(styles.propRequired);
+const PropType = styled('span')(styles.propType);
+const PropTypeButton = styled(Button)(styles.propTypeButton);
+const PropTypePopoverContent = styled('div')(styles.propTypePopoverContent);
 
 const PropTypePopover = ({ content, children }: PropTypePopoverProps) => (
   <Popover content={<PropTypePopoverContent>{content}</PropTypePopoverContent>}>

@@ -1,11 +1,11 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Button from '../../../../../../library/Button';
 import Checkbox from '../../../../../../library/Checkbox';
 import TextInput from '../../../../../../library/TextInput';
 import _DemoForm from '../../../common/DemoForm';
 
-const DemoForm = createStyledComponent(_DemoForm, {
+const DemoForm = styled(_DemoForm)({
   '& > *': {
     alignItems: 'center',
     display: 'flex',

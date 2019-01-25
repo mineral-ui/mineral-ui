@@ -1,10 +1,12 @@
 /* @flow */
+import React from 'react';
+import styled from '@emotion/styled';
 import { clearFix } from 'polished';
-import { createStyledComponent } from '../../../../../library/styles';
+import { ignoreSsrWarning } from '../../../../../library/utils/emotion';
 
-export default createStyledComponent('div', ({ lastRowStartsAt }) => {
+const Root = styled('div')(({ lastRowStartsAt }) => {
   const condition = lastRowStartsAt
-    ? `:nth-child(n + ${lastRowStartsAt})`
+    ? `:nth-child(n + ${lastRowStartsAt})${ignoreSsrWarning}`
     : ':last-child';
   return {
     ...clearFix(),
@@ -14,3 +16,7 @@ export default createStyledComponent('div', ({ lastRowStartsAt }) => {
     }
   };
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
+
+export default DemoLayout;

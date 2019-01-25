@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import { mineralTheme } from '../../../../../library/themes';
 import Card, {
   CardBlock,
@@ -11,7 +11,7 @@ import loremIpsum from '../common/loremIpsum';
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const CardList = createStyledComponent('div', ({ theme }) => ({
+const CardList = styled('div')(({ theme }) => ({
   '& > div': {
     marginBottom: theme.space_stack_sm
   }

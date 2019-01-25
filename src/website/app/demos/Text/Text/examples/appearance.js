@@ -8,7 +8,7 @@ export default {
   scope: { Text },
   source: `
     <div>
-      <Text element="h1" appearance="h3">Heading 1 which looks like a Heading 3</Text>
+      <Text as="h1" appearance="h3">Heading 1 which looks like a Heading 3</Text>
       <Text appearance="prose">
         Prose (Long Form) Paragraph. Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Quisque molestie eros at nisl rhoncus, et condimentum

@@ -1,15 +1,18 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import { ThemeProvider } from '../../../../../../library/themes';
 import Sample from '../../common/Sample';
 
-const DemoLayout = createStyledComponent('div', ({ theme }) => ({
+const Root = styled('div')(({ theme }) => ({
   fontFamily: theme.fontFamily,
 
   '& > *': {
     marginRight: '0.5rem'
   }
 }));
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'theme-provider',

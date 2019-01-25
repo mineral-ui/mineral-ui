@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import { ThemeProvider } from '../../../../../library/themes';
 import Box from '../../../../../library/Box';
 import Button from '../../../../../library/Button';
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const Container = createStyledComponent('div', ({ theme }) => ({
+const Container = styled('div')(({ theme }) => ({
   backgroundColor: theme.color_gray_10,
   border: `1px solid ${theme.color_gray_20}`
 }));

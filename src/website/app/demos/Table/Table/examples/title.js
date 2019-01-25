@@ -8,8 +8,9 @@ export default {
   title: 'Title',
   description: `Display a title for your Table with the \`title\` prop. You
 can adjust the appearance (\`titleAppearance\`) and the rendered HTML element
-(\`titleElement\`). Use the \`hideTitle\` prop to hide the title visually, while
-maintaining accessibility.`,
+([\`titleAs\`](/styling#customization-techniques-try-theming-first-{{8}}-{{14}}-prop)).
+Use the \`hideTitle\` prop to hide the title visually, while maintaining
+accessibility.`,
   scope: { Table, Grid, GridItem, data },
   source: `
     <Grid alignItems="end" breakpoints={['57em']}>
@@ -23,7 +24,7 @@ maintaining accessibility.`,
         <Table
           title="Foods of the World"
           titleAppearance="h2"
-          titleElement="h3"
+          titleAs="h3"
           data={data}
           rowKey="Fruits"/>
       </GridItem>

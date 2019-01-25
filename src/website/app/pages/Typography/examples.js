@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import Text from '../../../../library/Text';
 
 type TypeExample = {
@@ -18,7 +18,7 @@ const styles = {
   })
 };
 
-const List = createStyledComponent('ul', styles.list);
+const List = styled('ul')(styles.list);
 const examples: TypeExamples = [
   {
     description: `### Long-form Text
@@ -61,13 +61,13 @@ as inline help or when captioning dashboard content.`,
         font: 'Regular (14/0.875)'
       },
       {
-        content: <Text element="h5">Caption - Strong</Text>,
+        content: <Text as="h5">Caption - Strong</Text>,
         value: '<h5>',
         color: 'color_gray_100',
         font: 'Bold (14/0.875)'
       },
       {
-        content: <Text element="h6">Caption - Light</Text>,
+        content: <Text as="h6">Caption - Light</Text>,
         value: '<h6>',
         color: 'color_gray_80',
         font: 'Regular (14/0.875)'
@@ -82,25 +82,25 @@ different sections in an application view. Display text is for short titles and
 section divisions—it’s not for long-form content.`,
     examples: [
       {
-        content: <Text element="h1">Page Title</Text>,
+        content: <Text as="h1">Page Title</Text>,
         value: '<h1>',
         color: 'color_gray_100',
         font: 'ExtraBold (34/2.125)'
       },
       {
-        content: <Text element="h2">Large Section Header</Text>,
+        content: <Text as="h2">Large Section Header</Text>,
         value: '<h2>',
         color: 'color_gray_80',
         font: 'Bold (28/1.75)'
       },
       {
-        content: <Text element="h3">Medium Section Header</Text>,
+        content: <Text as="h3">Medium Section Header</Text>,
         value: '<h3>',
         color: 'color_gray_80',
         font: 'Bold (22/1.375)'
       },
       {
-        content: <Text element="h4">Small Section Header</Text>,
+        content: <Text as="h4">Small Section Header</Text>,
         value: '<h4>',
         color: 'color_gray_80',
         font: 'Bold (18/1.125)'

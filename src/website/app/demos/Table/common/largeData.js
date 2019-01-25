@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import range from 'lodash.range';
 import { countRender } from '../../../RenderCounter';
 
@@ -10,7 +10,7 @@ import type {
   Rows
 } from '../../../../../library/Table/types';
 
-const CellRoot = createStyledComponent('td', ({ theme }) => ({
+const CellRoot = styled('td')(({ theme }) => ({
   background: theme.color_theme_20,
   padding: theme.space_stack_sm + ' ' + theme.space_inline_md
 }));

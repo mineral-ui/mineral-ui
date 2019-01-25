@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { keyframes } from 'react-emotion';
-import { createStyledComponent } from '../../../../library/styles';
+import { keyframes } from '@emotion/core';
+import styled from '@emotion/styled';
 import Button from '../../SiteButton';
 import Link from '../../SiteLink';
 import Markdown from '../../Markdown';
@@ -65,19 +65,12 @@ const styles = {
   }
 };
 
-const FloatingMineralsContainer = createStyledComponent(
-  'div',
+const FloatingMineralsContainer = styled('div')(
   styles.floatingMineralsContainer
 );
-const FloatingMinerals2 = createStyledComponent(
-  'div',
-  styles.floatingMinerals2
-);
-const FloatingMinerals3 = createStyledComponent(
-  'div',
-  styles.floatingMinerals3
-);
-const Message = createStyledComponent(Markdown, styles.message);
+const FloatingMinerals2 = styled('div')(styles.floatingMinerals2);
+const FloatingMinerals3 = styled('div')(styles.floatingMinerals3);
+const Message = styled(Markdown)(styles.message);
 
 export default function NotFound(props: Props) {
   return (

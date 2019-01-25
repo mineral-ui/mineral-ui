@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
 
 type Props = {
   /* rendered chilren */
@@ -21,7 +21,7 @@ const componentTheme = (baseTheme) => ({
   ...baseTheme
 });
 
-const Root = createStyledComponent('p', ({ variant, theme: baseTheme }) => {
+const Root = styled('p')(({ variant, theme: baseTheme }) => {
   let theme = componentTheme(baseTheme);
 
   return {

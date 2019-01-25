@@ -1,7 +1,7 @@
 /* @flow */
+import styled from '@emotion/styled';
 import React from 'react';
 import { withRouter } from 'react-router';
-import { createStyledComponent } from '../../library/styles';
 
 type Props = {
   fontSize?: number, // px
@@ -10,13 +10,11 @@ type Props = {
   offset?: number // px
 };
 
-const Root = createStyledComponent(
-  'div',
-  ({ fontSize, lineHeight, offset, theme }) => {
-    const rowHeight = fontSize * lineHeight;
+const Root = styled('div')(({ fontSize, lineHeight, offset, theme }) => {
+  const rowHeight = fontSize * lineHeight;
 
-    return {
-      backgroundImage: `repeating-linear-gradient(
+  return {
+    backgroundImage: `repeating-linear-gradient(
         0deg,
         rgba(0,255,255,0.07),
         rgba(0,255,255,0.07) ${rowHeight / 2}px,
@@ -27,17 +25,16 @@ const Root = createStyledComponent(
         rgba(255,0,255,0.14) ${rowHeight * 1.5}px,
         rgba(255,0,255,0.14) ${rowHeight * 2}px
       )`,
-      backgroundPosition: `0 ${offset}px`,
-      bottom: 0,
-      left: 0,
-      pointerEvents: 'none',
-      position: 'fixed',
-      right: 0,
-      top: 0,
-      zIndex: theme.zIndex_1600
-    };
-  }
-);
+    backgroundPosition: `0 ${offset}px`,
+    bottom: 0,
+    left: 0,
+    pointerEvents: 'none',
+    position: 'fixed',
+    right: 0,
+    top: 0,
+    zIndex: theme.zIndex_1600
+  };
+});
 
 function BaselineGrid({
   fontSize = 16,

@@ -1,15 +1,15 @@
 /* @flow */
 import React from 'react';
 import LiveProvider from '../../../LiveProvider';
-import { createStyledComponent } from '../../../../../library/styles';
-import { withTheme } from '../../../../../library/themes';
+import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
 import Menu from '../../../../../library/Menu';
 import { menuItemTheme } from '../../../../../library/Menu/themes';
 
 export default function ThemeAccess() {
   const liveProviderProps = {
     scope: {
-      createStyledComponent,
+      styled,
       Menu,
       menuItemTheme,
       React,
@@ -20,7 +20,7 @@ export default function ThemeAccess() {
         // import { menuItemTheme } from 'mineral-ui/Menu';
 
         const StyledDiv = withTheme(
-          createStyledComponent('div', ({ theme: baseTheme }) => {
+          styled('div')(({ theme: baseTheme }) => {
             const theme = menuItemTheme(baseTheme);
 
             return {

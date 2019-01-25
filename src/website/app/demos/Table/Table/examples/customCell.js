@@ -1,7 +1,8 @@
 /* @flow */
 import React from 'react';
+import withProps from 'recompose/withProps';
 import { palette } from 'mineral-ui-tokens';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Flex from '../../../../../../library/Flex';
 import Table from '../../../../../../library/Table';
 import data from '../../common/data';
@@ -14,16 +15,17 @@ export default {
 custom rendering control of all cells in that column.
 ${renderPropsDescription}`,
   scope: {
-    createStyledComponent,
+    styled,
     data,
     Flex,
     palette,
     React,
-    Table
+    Table,
+    withProps
   },
   source: `
     () => {
-       const Root = createStyledComponent('td', ({ theme }) => ({
+       const Root = styled('td')(({ theme }) => ({
          padding: theme.space_stack_sm + ' ' + theme.space_inline_md,
 
          'tr:hover > &': {
@@ -31,21 +33,17 @@ ${renderPropsDescription}`,
          }
        }));
 
-       const Emoji = createStyledComponent(
-         'span',
+       const Emoji = withProps({
+          'aria-hidden': true,
+          role: 'img'
+        })(styled('span')(
          ({ theme }) => ({
            display: 'inline-block',
            marginRight: theme.space_inline_sm
-         }),
-         {
-           withProps: {
-             'aria-hidden': true,
-             role: 'img'
-           }
-         }
-       );
+         })
+       ));
 
-       const Content = createStyledComponent('span', ({ theme }) => ({
+       const Content = styled('span')(({ theme }) => ({
          fontSize: theme.fontSize_ui,
          textAlign: 'left'
        }));
@@ -54,7 +52,7 @@ ${renderPropsDescription}`,
          render() {
            return (
              <Root {...this.props}>
-               <Flex element="span">
+               <Flex as="span">
                  <Emoji>🌿</Emoji>
                  <Content>{this.props.children}</Content>
                </Flex>

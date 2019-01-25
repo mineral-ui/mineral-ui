@@ -23,7 +23,7 @@ const propDocs: ComponentPropDocs = {
   },
   size: {
     description: `Available sizes, including custom - e.g. '5em' or '20px'`,
-    type: `${joinQuoted(Object.values(SIZE))} | string`,
+    type: `${joinQuoted(Object.values(SIZE))} | number | string`,
     defaultValue: `'${Icon.defaultProps.size}'`
   },
   title: {

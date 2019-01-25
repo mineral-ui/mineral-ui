@@ -11,11 +11,11 @@ you can use the [\`appearance\`](#appearance) prop.`,
   scope: { Text },
   source: `
     <div>
-      <Text element="h1">Heading 1</Text>
-      <Text element="h2">Heading 2</Text>
-      <Text element="h3">Heading 3</Text>
-      <Text element="h4">Heading 4</Text>
-      <Text element="h5">Heading 5</Text>
-      <Text element="h6">Heading 6</Text>
+      <Text as="h1">Heading 1</Text>
+      <Text as="h2">Heading 2</Text>
+      <Text as="h3">Heading 3</Text>
+      <Text as="h4">Heading 4</Text>
+      <Text as="h5">Heading 5</Text>
+      <Text as="h6">Heading 6</Text>
     </div>`
 };

@@ -1,8 +1,12 @@
 /* @flow */
+import React, { forwardRef } from 'react';
 import clearFix from 'polished/lib/mixins/clearFix';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
+import { ignoreSsrWarning } from '../../../../../library/utils/emotion';
 
-export default createStyledComponent('div', ({ theme }) => {
+type DemoLayoutProps = {};
+
+const Root = styled('div')(({ theme }) => {
   const rtl = theme.direction === 'rtl';
 
   return {
@@ -20,10 +24,19 @@ export default createStyledComponent('div', ({ theme }) => {
     },
 
     // http://quantityqueries.com/
-    '& > *:nth-last-child(n+3), & > *:nth-last-child(n+3) ~ *': {
+    ['& > *:nth-last-child(n+3), & > *:nth-last-child(n+3) ~ *' +
+    ignoreSsrWarning]: {
       '@media(min-width: 64em)': {
         width: '30%'
       }
     }
   };
 });
+
+const DemoLayout = forwardRef<DemoLayoutProps, HTMLElement>(
+  (props: DemoLayoutProps, ref: React$Ref<*>) => <Root {...props} ref={ref} />
+);
+
+DemoLayout.displayName = 'DemoLayout';
+
+export default DemoLayout;

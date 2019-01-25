@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../library/styles';
-import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 import colorable from 'colorable';
 import { darken, getLuminance } from 'polished';
+import styled from '@emotion/styled';
+import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 
 type Props = {
   baseTheme?: Object,
@@ -12,14 +12,16 @@ type Props = {
   valueColor: (theme: Object, variable: string, baseTheme?: Object) => any
 };
 
-const Root = createStyledComponent('div', ({ theme }) => ({
+const Root = styled('div')(({ theme }) => ({
   margin: `${theme.space_stack_xl} 0 0`,
   overflowX: 'auto'
 }));
-const Name = createStyledComponent('span', ({ theme }) => ({
+const Name = styled('span')(({ theme }) => ({
   fontWeight: theme.fontWeight_semiBold
 }));
-const Value = createStyledComponent('span', ({ color, theme }) => {
+const Value = styled('span', {
+  shouldForwardProp: (prop) => prop !== 'color'
+})(({ color, theme }) => {
   if (color) {
     return {
       border: `1px solid ${

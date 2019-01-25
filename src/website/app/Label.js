@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
 
 type Props = {
   children: React$Node,
   variant?: 'success' | 'warning' | 'danger'
 };
 
-const Root = createStyledComponent('span', ({ theme, variant }) => {
+const Root = styled('span')(({ theme, variant }) => {
   const backgroundColor = variant
     ? theme[`backgroundColor_${variant}Primary`]
     : theme.color_theme_60;

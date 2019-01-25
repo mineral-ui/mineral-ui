@@ -1,23 +1,20 @@
 /* @flow */
 import React from 'react';
+import withProps from 'recompose/withProps';
 import * as Icons from 'mineral-ui-icons';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import Figure from '../common/Figure';
 import FigCaption from '../common/FigCaption';
 import FigContainer from '../common/FigContainer';
 import Heading from '../../../SiteHeading';
 
-const CategoryHeading = createStyledComponent(
-  Heading,
-  ({ theme }) => ({
+const CategoryHeading = withProps({ as: 'h5', level: 4 })(
+  styled(Heading)(({ theme }) => ({
     borderTop: `1px solid ${theme.borderColor}`,
     paddingTop: theme.space_stack_lg,
     position: 'relative',
     textTransform: 'capitalize'
-  }),
-  {
-    withProps: { as: 'h5', level: 4 }
-  }
+  }))
 );
 
 const componentsByCategory: {
@@ -46,7 +43,7 @@ export default function ComponentsByCategory() {
                 components.map((IconComponent, index) => {
                   return (
                     <Figure tabIndex={0} key={index}>
-                      <IconComponent size="32" />
+                      <IconComponent size={32} />
                       <FigCaption>{IconComponent.displayName}</FigCaption>
                     </Figure>
                   );

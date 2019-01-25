@@ -1,13 +1,15 @@
 /* @flow */
 import React, { Component } from 'react';
+import styled from '@emotion/styled';
 import Media from 'react-media';
 import Helmet from 'react-helmet';
 import noScroll from 'no-scroll';
 import lighten from 'polished/lib/color/lighten';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
+import withProps from 'recompose/withProps';
 import {
-  createStyledComponent,
+  componentStyleReset,
   getNormalizedValue,
   pxToEm
 } from '../../library/styles';
@@ -328,6 +330,8 @@ const styles = {
         };
   },
   root: ({ theme, glitched }) => ({
+    ...componentStyleReset(theme),
+
     backgroundColor: glitched ? 'white' : null,
     filter: glitched ? 'invert(100%) contrast(120%)' : null,
     fontFamily: theme.fontFamily_system,
@@ -353,28 +357,18 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent('div', styles.root, {
-  includeStyleReset: true
-});
-const Canvas = createStyledComponent(_Canvas, styles.canvas);
-const Content = createStyledComponent('main', styles.content);
-const Dialog = createStyledComponent('div', styles.dialog);
-const Footer = createStyledComponent(_Footer, styles.footer);
-const Header = createStyledComponent(Section, styles.header, {
-  withProps: {
-    element: 'header'
-  }
-});
-const MenuButton = createStyledComponent(Button, styles.menuButton, {
-  withProps: {
-    circular: true
-  }
-});
-const Nav = createStyledComponent(_Nav, styles.nav, {
-  filterProps: ['glitched']
-});
-const Wrap = createStyledComponent('div', styles.wrap);
-const WrapInner = createStyledComponent('div', styles.wrapInner);
+const Root = styled('div')(styles.root);
+const Canvas = styled(_Canvas)(styles.canvas);
+const Content = styled('main')(styles.content);
+const Dialog = styled('div')(styles.dialog);
+const Footer = styled(_Footer)(styles.footer);
+const Header = withProps({ as: 'header' })(styled(Section)(styles.header));
+const MenuButton = withProps({ circular: true })(
+  styled(Button)(styles.menuButton)
+);
+const Nav = styled(_Nav)(styles.nav);
+const Wrap = styled('div')(styles.wrap);
+const WrapInner = styled('div')(styles.wrapInner);
 
 export default class Page extends Component<Props, State> {
   state: State = {
@@ -473,7 +467,6 @@ export default class Page extends Component<Props, State> {
                     <ThemeProvider theme={heroTheme}>
                       <Header
                         angles={moreSpacious ? [5, 6] : [4, 4]}
-                        as="header"
                         point={1 / 1000}>
                         <Canvas />
                         {typeof headerContent === 'string' ? (

@@ -1,5 +1,4 @@
 /* @flow */
-import Box from '../../../../../library/Box';
 import {
   SPACING_SIZE,
   INSET_SPACING_SIZE
@@ -28,11 +27,6 @@ const propDocs: ComponentPropDocs = {
     description:
       'Media query (min-width) breakpoints along which to apply props marked "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;',
     type: 'Array<number | string>'
-  },
-  element: {
-    description: 'Rendered root HTML element',
-    type: 'string',
-    defaultValue: `'${Box.defaultProps.element}'`
   },
   height: {
     description: 'Sets the box height. [[Responsive-capable]](#responsive)',

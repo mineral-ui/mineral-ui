@@ -13,7 +13,7 @@ display with expected styles.`,
   source: `
     <div>
       <Text appearance="prose">
-        This <Text element="strong">strong text</Text> is in a <Text element="code">paragraph</Text>.
+        This <Text as="strong">strong text</Text> is in a <Text as="code">paragraph</Text>.
 
         <Text>This <Text>span text</Text> is in a span</Text>
 
@@ -24,7 +24,7 @@ display with expected styles.`,
 
       <hr />
 
-      <Text appearance="prose" element="div">
+      <Text appearance="prose" as="div">
         This text is in a div
         <Text>This <Text>span text</Text> is in a paragraph</Text>
       </Text>

@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Table from '../../../../../../library/Table';
 import sharedData from '../../common/data';
 import renderPropsDescription from '../../../common/renderPropsDescription';
@@ -11,22 +11,22 @@ export default {
   description: `Use the \`row\` render prop as a row property in your data to
 provide custom rendering control of the table row. ${renderPropsDescription}`,
   scope: {
-    createStyledComponent,
+    styled,
     React,
     sharedData,
     Table
   },
   source: `
     () => {
-      const Root = createStyledComponent('tr', ({ theme }) => ({
+      const Root = styled('tr')(({ theme }) => ({
         backgroundColor: theme.well_backgroundColor_warning
       }));
 
-      const Cell = createStyledComponent('td', ({ theme }) => ({
+      const Cell = styled('td')(({ theme }) => ({
         padding: theme.space_stack_sm + ' ' + theme.space_inline_md
       }));
 
-      const Divider = createStyledComponent('hr', ({ theme }) => ({
+      const Divider = styled('hr')(({ theme }) => ({
         backgroundColor: theme.color_warning,
         border: 0,
         height: 1

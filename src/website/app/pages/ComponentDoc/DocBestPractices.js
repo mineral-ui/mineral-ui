@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import DocPractice from './DocPractice';
 import Section from './DocSection';
 import DocSectionTitle from './DocSectionTitle';
@@ -18,8 +18,8 @@ const styles = {
   })
 };
 
-const Grid = createStyledComponent('div', styles.grid);
-const Practice = createStyledComponent(DocPractice, styles.practice);
+const Grid = styled('div')(styles.grid);
+const Practice = styled(DocPractice)(styles.practice);
 
 export default function DocBestPractices(props: Props) {
   const { practices } = props;
