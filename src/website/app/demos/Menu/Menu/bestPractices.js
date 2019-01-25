@@ -1,17 +1,20 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import styled from '@emotion/styled';
+import { pxToEm } from '../../../../../library/styles';
 import { mineralTheme } from '../../../../../library/themes';
 import Menu, { MenuItem } from '../../../../../library/Menu';
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const DemoLayout = createStyledComponent('div', {
+const Root = styled('div')({
   '& > div': {
     backgroundColor: 'white',
     width: pxToEm(224)
   }
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 const backgroundColor = mineralTheme.color_gray_10;
 

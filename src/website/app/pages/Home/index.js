@@ -1,22 +1,20 @@
 /* @flow */
 import React, { Component } from 'react';
+import styled from '@emotion/styled';
 import Media from 'react-media';
 import Helmet from 'react-helmet';
 import { canUseDOM } from 'exenv';
 import darken from 'polished/lib/color/darken';
 import desaturate from 'polished/lib/color/desaturate';
 import rgba from 'polished/lib/color/rgba';
+import withProps from 'recompose/withProps';
 import { palette } from 'mineral-ui-tokens';
 import {
-  createStyledComponent,
+  componentStyleReset,
   getNormalizedValue,
   pxToEm
 } from '../../../../library/styles';
-import {
-  createTheme,
-  createThemedComponent,
-  ThemeProvider
-} from '../../../../library/themes';
+import { createTheme, themed, ThemeProvider } from '../../../../library/themes';
 import _Button from '../../../../library/Button';
 import IconChevronRight from 'mineral-ui-icons/IconChevronRight';
 import IconFavorite from 'mineral-ui-icons/IconFavorite';
@@ -353,6 +351,8 @@ const styles = {
     }
   }),
   getStartedContent: ({ theme }) => ({
+    ...componentStyleReset(theme),
+
     margin: '0 auto',
     maxWidth: 'min-content',
     textAlign: 'center',
@@ -452,6 +452,8 @@ const styles = {
     }
   }),
   home: ({ theme }) => ({
+    ...componentStyleReset(theme),
+
     '& ::selection': {
       backgroundColor: rgba(theme.color_theme, 0.2)
     }
@@ -572,69 +574,37 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.home, {
-  includeStyleReset: true
-});
+const Root = styled('div')(styles.home);
 // Markdown must come before all of the other Markdown-based components
-const Markdown = createStyledComponent(_Markdown, styles.markdown, {
-  withProps: {
-    anchors: false
-  }
-});
-const SiteButton = createThemedComponent(_SiteButton, buttonTheme);
-const BlogLink = createStyledComponent(Link, styles.blogLink);
-const Button = createThemedComponent(_Button, buttonTheme);
-const Buttons = createStyledComponent('div', styles.buttons);
-const ThemedCTALink = createThemedComponent(Link, CTALinkTheme);
-const CTALink = createStyledComponent(ThemedCTALink, styles.CTALink);
-const Feature = createStyledComponent('div', styles.feature);
-const FeatureImg = createStyledComponent('img', styles.featureImg, {
-  withProps: {
-    alt: ''
-  }
-});
-const FloatingMinerals = createStyledComponent('div', styles.floatingMinerals);
-const FeatureSection = createStyledComponent(Section, styles.featureSection);
-const GetStarted = createStyledComponent(Markdown, styles.getStarted);
-const GetStartedBackgrounds = createStyledComponent(
-  'div',
-  styles.getStartedBackgrounds
+const Markdown = withProps({ anchors: false })(
+  styled(_Markdown)(styles.markdown)
 );
-const GetStartedContent = createStyledComponent(
-  'div',
-  styles.getStartedContent,
-  {
-    includeStyleReset: true
-  }
-);
-const GetStartedSection = createStyledComponent(
-  Section,
-  styles.getStartedSection
-);
-const Guidelines = createStyledComponent(Markdown, styles.guidelines);
-const GuidelinesSection = createStyledComponent(
-  Section,
-  styles.guidelinesSection
-);
-const Hero = createStyledComponent(Section, styles.hero, {
-  withProps: {
-    element: 'header'
-  }
-});
-const HeroCanvas = createStyledComponent(Canvas, styles.heroCanvas);
-const Intro = createStyledComponent(Markdown, styles.intro);
-const LinkButton = createStyledComponent(SiteButton, styles.button, {
-  withProps: {
-    element: Link,
-    size: 'jumbo',
-    type: null
-  }
-});
-const PlaygroundCanvas = createStyledComponent(Canvas, styles.playgroundCanvas);
-const PlaygroundSection = createStyledComponent(
-  Section,
-  styles.playgroundSection
-);
+const SiteButton = themed(_SiteButton)(buttonTheme);
+const BlogLink = styled(Link)(styles.blogLink);
+const Button = themed(_Button)(buttonTheme);
+const Buttons = styled('div')(styles.buttons);
+const ThemedCTALink = themed(Link)(CTALinkTheme);
+const CTALink = styled(ThemedCTALink)(styles.CTALink);
+const Feature = styled('div')(styles.feature);
+const FeatureImg = withProps({ alt: '' })(styled('img')(styles.featureImg));
+const FloatingMinerals = styled('div')(styles.floatingMinerals);
+const FeatureSection = styled(Section)(styles.featureSection);
+const GetStarted = styled(Markdown)(styles.getStarted);
+const GetStartedBackgrounds = styled('div')(styles.getStartedBackgrounds);
+const GetStartedContent = styled('div')(styles.getStartedContent);
+const GetStartedSection = styled(Section)(styles.getStartedSection);
+const Guidelines = styled(Markdown)(styles.guidelines);
+const GuidelinesSection = styled(Section)(styles.guidelinesSection);
+const Hero = withProps({ as: 'header' })(styled(Section)(styles.hero));
+const HeroCanvas = styled(Canvas)(styles.heroCanvas);
+const Intro = styled(Markdown)(styles.intro);
+const LinkButton = withProps({
+  as: Link,
+  size: 'jumbo',
+  type: null
+})(styled(SiteButton)(styles.button));
+const PlaygroundCanvas = styled(Canvas)(styles.playgroundCanvas);
+const PlaygroundSection = styled(Section)(styles.playgroundSection);
 
 const GetStartedBackground = () => (
   <GetStartedBackgrounds>
@@ -746,25 +716,17 @@ export default class Home extends Component<Props, State> {
                   themes={playgroundThemes}>
                   <Media query="(min-width: 23em)">
                     {(navExpanded) => {
-                      const PlaygroundButton = createStyledComponent(
-                        Button,
-                        {
+                      const PlaygroundButton = withProps({
+                        as: Link,
+                        iconStart: navExpanded ? <IconFavorite /> : undefined,
+                        primary: true,
+                        size: 'jumbo',
+                        type: null
+                      })(
+                        styled(Button)({
                           ...styles.button,
                           fontFamily: 'inherit'
-                        },
-                        {
-                          withProps: {
-                            element: Link,
-                            iconStart: navExpanded ? (
-                              <IconFavorite />
-                            ) : (
-                              undefined
-                            ),
-                            primary: true,
-                            size: 'jumbo',
-                            type: null
-                          }
-                        }
+                        })
                       );
 
                       return (

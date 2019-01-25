@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Avatar from '../../../../../library/Avatar';
-import { createStyledComponent } from '../../../../../library/styles';
 import DemoLayout from '../../common/DemoLayout';
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const Name = createStyledComponent('div', ({ theme }) => ({
+const Name = styled('div')(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
 

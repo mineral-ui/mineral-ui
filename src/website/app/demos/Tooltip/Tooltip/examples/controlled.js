@@ -1,14 +1,16 @@
 /* @flow */
-import { Component } from 'react';
-import { createStyledComponent } from '../../../../../../library/styles';
+import React, { Component } from 'react';
+import styled from '@emotion/styled';
 import Button from '../../../../../../library/Button';
 import Tooltip from '../../../../../../library/Tooltip';
 
-const DemoLayout = createStyledComponent('div', {
+const Root = styled('div')({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between'
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'controlled',

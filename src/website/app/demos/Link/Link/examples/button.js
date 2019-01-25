@@ -7,5 +7,5 @@ export default {
   description:
     'Use the [Button](/components/button#link) component to create a link with Button styling.',
   scope: { Button },
-  source: `<Button element="a" href="#button">Link</Button>`
+  source: `<Button as="a" href="#button">Link</Button>`
 };

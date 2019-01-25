@@ -1,9 +1,9 @@
 /* @flow */
 import Button from '../../../../../../library/Button';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Tooltip from '../../../../../../library/Tooltip';
 
-const OverflowContainer = createStyledComponent('div', {
+const OverflowContainer = styled('div')({
   backgroundColor: 'aliceblue',
   overflow: 'hidden',
   padding: '10px'

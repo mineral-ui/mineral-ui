@@ -1,16 +1,15 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import FlexItem from '../../common/DemoFlexItem';
 import _DemoLayout from '../../common/DemoLayout';
 import _Flex from '../../common/DemoFlex';
 
-const DemoLayout = createStyledComponent(
-  _DemoLayout,
-  {},
-  { withProps: { lastRowStartsAt: 10 } }
+const DemoLayout = (props: Object) => (
+  <_DemoLayout lastRowStartsAt={10} {...props} />
 );
 
-const Flex = createStyledComponent(_Flex, ({ direction }) => {
+const Flex = styled(_Flex)(({ direction }) => {
   return direction === 'column'
     ? {
         float: 'left',

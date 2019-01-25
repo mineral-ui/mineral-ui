@@ -1,10 +1,10 @@
 /* @flow */
+import styled from '@emotion/styled';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import { createStyledComponent } from '../../../../../../library/styles';
 import Button from '../../../../../../library/Button';
 import _DemoLayout from '../../common/DemoLayout';
 
-const FixedWidthLayout = createStyledComponent(_DemoLayout, {
+const FixedWidthLayout = styled(_DemoLayout)({
   '&[class][class] > *': {
     width: '10rem'
   }

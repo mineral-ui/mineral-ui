@@ -1,12 +1,15 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import Button from '../../../../../../library/Button';
 import DemoContent from '../../common/DemoContent';
 import Popover from '../../../../../../library/Popover';
 
-const DemoLayout = createStyledComponent('div', {
+const Root = styled('div')({
   padding: '5em 0'
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'title',

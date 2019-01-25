@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../library/styles';
+import styled from '@emotion/styled';
+import { pxToEm } from '../../library/styles';
 import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
 import SubHeading from './SiteSubHeading';
@@ -56,9 +57,9 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.componentDocExample);
-const Description = createStyledComponent(Markdown, styles.description);
-const BackLink = createStyledComponent(Link, styles.backLink);
+const Root = styled('div')(styles.componentDocExample);
+const Description = styled(Markdown)(styles.description);
+const BackLink = styled(Link)(styles.backLink);
 
 export default function ComponentDocExample(props: Props) {
   const {

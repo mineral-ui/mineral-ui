@@ -1,6 +1,6 @@
 /* @flow */
-
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import FormField from '../../../../../../library/Form/FormField';
 import IconSearch from 'mineral-ui-icons/IconSearch';
 import Select from '../../../../../../library/Select';
@@ -9,6 +9,12 @@ import TextInput from '../../../../../../library/TextInput';
 import Text from '../../../../../../library/Text';
 import { basicData as data } from '../../common/selectData';
 import renderPropsDescription from '../../../common/renderPropsDescription';
+
+const _DemoLayout = styled('div')({
+  marginBottom: 200
+});
+
+const DemoLayout = (props: {}) => <_DemoLayout {...props} />;
 
 export default {
   id: 'custom-menu',
@@ -22,8 +28,9 @@ While neither fully functional nor accessible, it hopefully serves to give the
 user an idea of something that could be achieved with this technique.
 </Callout>`,
   scope: {
-    createStyledComponent,
+    styled,
     data,
+    DemoLayout,
     FormField,
     IconSearch,
     Menu,
@@ -34,7 +41,7 @@ user an idea of something that could be achieved with this technique.
   source: `
     () => {
       const menu = ({ props }) => {
-        const Search = createStyledComponent('div', ({ theme }) => ({
+        const Search = styled('div')(({ theme }) => ({
           borderBottom: '1px solid ' + theme.color_gray_40,
           padding: theme.space_inset_md
         }));
@@ -56,7 +63,9 @@ user an idea of something that could be achieved with this technique.
       };
 
       return (
-        <Select data={data} menu={menu} />
+        <DemoLayout>
+          <Select data={data} menu={menu} isOpen />
+        </DemoLayout>
       );
     }`
 };

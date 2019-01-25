@@ -1,14 +1,12 @@
 /* @flow */
-import {
-  createStyledComponent,
-  pxToEm
-} from '../../../../../../library/styles';
+import styled from '@emotion/styled';
+import { pxToEm } from '../../../../../../library/styles';
 import { mineralTheme } from '../../../../../../library/themes';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
 import _DemoLayout from '../../common/DemoLayout';
 
-const DemoLayout = createStyledComponent(_DemoLayout, {
+const DemoLayout = styled(_DemoLayout)({
   '& > div:last-child': {
     // For <DropdownContent wide={true} />
     width: pxToEm(344)

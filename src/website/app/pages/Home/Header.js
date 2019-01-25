@@ -1,8 +1,9 @@
 /* @flow */
 import React, { Component } from 'react';
+import styled from '@emotion/styled';
 import Media from 'react-media';
-import { createStyledComponent, pxToEm } from '../../../../library/styles';
-import { createThemedComponent } from '../../../../library/themes';
+import { pxToEm } from '../../../../library/styles';
+import { themed } from '../../../../library/themes';
 import Button from '../../../../library/Button';
 import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
 import _Popover from '../../../../library/Popover';
@@ -131,7 +132,7 @@ const styles = {
   })
 };
 
-const ThemedMenuButton = createThemedComponent(Button, ({ theme }) => ({
+const ThemedMenuButton = themed(Button)(({ theme }) => ({
   fontFamily: theme.fontFamily_headline,
   Button_color_minimal: theme.color_white,
   Button_backgroundColor_minimal_hover: 'transparent',
@@ -143,7 +144,7 @@ const ThemedMenuButton = createThemedComponent(Button, ({ theme }) => ({
   ButtonIcon_margin: null
 }));
 
-const Popover = createThemedComponent(_Popover, {
+const Popover = themed(_Popover)({
   PopoverContent_backgroundColor: null,
   PopoverContent_borderColor: 'transparent',
   PopoverContent_borderRadius: null,
@@ -151,11 +152,11 @@ const Popover = createThemedComponent(_Popover, {
   PopoverContent_paddingVertical: null
 });
 
-const Root = createStyledComponent('div', styles.root);
-const Link = createStyledComponent(_Link, styles.link);
-const Logotype = createStyledComponent(Heading, styles.logotype);
-const MenuButton = createStyledComponent(ThemedMenuButton, styles.menuButton);
-const StyledNav = createStyledComponent('nav', styles.nav);
+const Root = styled('div')(styles.root);
+const Link = styled(_Link)(styles.link);
+const Logotype = styled(Heading)(styles.logotype);
+const MenuButton = styled(ThemedMenuButton)(styles.menuButton);
+const StyledNav = styled('nav')(styles.nav);
 
 const Nav = ({
   latestPost

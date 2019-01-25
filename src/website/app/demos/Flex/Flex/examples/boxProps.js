@@ -12,7 +12,7 @@ accepts any of [Box's props](/components/box#props).`,
   source: `
     <div>
       {/* You can apply Box props directly to Flex: */}
-      <Flex padding="lg" width={1/2}>
+      <Flex as="header" padding="lg" width={1/2}>
         <FlexItem>A</FlexItem>
         <FlexItem>B</FlexItem>
         <FlexItem>C</FlexItem>

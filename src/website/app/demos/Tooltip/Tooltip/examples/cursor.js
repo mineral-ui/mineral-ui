@@ -1,14 +1,17 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
 import Tooltip from '../../../../../../library/Tooltip';
 
-const DemoLayout = createStyledComponent('div', ({ theme }) => ({
+const Root = styled('div')(({ theme }) => ({
   fontFamily: theme.fontFamily,
 
   '& > *': {
     marginRight: theme.space_inline_lg
   }
 }));
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'cursor',

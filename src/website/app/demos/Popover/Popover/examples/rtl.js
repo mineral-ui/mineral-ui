@@ -1,16 +1,17 @@
 /* @flow */
-import {
-  createStyledComponent,
-  pxToEm
-} from '../../../../../../library/styles';
+import React from 'react';
+import styled from '@emotion/styled';
+import { pxToEm } from '../../../../../../library/styles';
 import Button from '../../../../../../library/Button';
 import DemoContent from '../../common/DemoContent';
 import Popover from '../../../../../../library/Popover';
 import { ThemeProvider } from '../../../../../../library/themes';
 
-const DemoLayout = createStyledComponent('div', {
+const Root = styled('div')({
   paddingBottom: pxToEm(130)
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'rtl',

@@ -17,7 +17,10 @@ export default function FakeRouterLink({
   const rootProps = {
     className,
     'data-index': rest['data-index'],
-    href: to
+    href: to,
+    onClick: (event) => {
+      event.preventDefault();
+    }
   };
 
   return <a {...rootProps}>{children}</a>;

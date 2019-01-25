@@ -12,13 +12,13 @@ const bestPractices: BestPractices = [
   for the headings in your app.`,
     example: (
       <div>
-        <Text element="h1">Heading 1</Text>
+        <Text as="h1">Heading 1</Text>
         <Text>
           This is a paragraph. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Quisque molestie eros at nisl rhoncus, et condimentum
           dui elementum.
         </Text>
-        <Text element="h2">Heading 2</Text>
+        <Text as="h2">Heading 2</Text>
         <Text>
           This is a paragraph. Praesent gravida metus at scelerisque ultrices.
           Suspendisse at facilisis massa.
@@ -32,7 +32,7 @@ const bestPractices: BestPractices = [
 to improve the reading experience.`,
     example: (
       <div>
-        <Text element="h1">Title</Text>
+        <Text as="h1">Title</Text>
         <Text appearance="prose">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           molestie eros at nisl rhoncus, et condimentum dui elementum. Praesent

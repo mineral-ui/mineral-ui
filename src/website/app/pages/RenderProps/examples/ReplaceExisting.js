@@ -1,19 +1,19 @@
 /* @flow */
 import React from 'react';
 import LiveProvider from '../../../LiveProvider';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import Menu from '../../../../../library/Menu';
 
 export default function ReplaceExisting() {
   const liveProviderProps = {
     scope: {
-      createStyledComponent,
+      styled,
       Menu,
       React
     },
     source: `
       () => {
-        const StyledDiv = createStyledComponent('div', ({ theme }) => ({
+        const StyledDiv = styled('div')(({ theme }) => ({
           backgroundColor: theme.color_gray_40,
           margin: theme.space_stack_xs,
           padding: theme.space_inset_sm + ' ' + theme.space_inset_md

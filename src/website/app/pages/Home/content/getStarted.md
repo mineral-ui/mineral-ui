@@ -4,7 +4,7 @@
 and its dependencies using `npm` or `yarn`**
 
     ```bash
-    npm install --save mineral-ui emotion@9.2.9 emotion-theming@9.2.9 react-emotion@9.2.9 react react-dom
+    npm i mineral-ui emotion-theming @emotion/core @emotion/is-prop-valid @emotion/styled react react-dom
     ```
 
 1. **Wrap your app in a [ThemeProvider](/components/theme-provider) at its root for styling**

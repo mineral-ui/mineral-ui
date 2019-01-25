@@ -53,14 +53,13 @@ overridden to adjust styles on a per component basis.  These are documented on
 the individual component pages,  e.g.
 [Button theme variables](/components/button#theme-variables).
 
-To theme a component, use [createThemedComponent](#common-scenarios-api) as
-shown below.  It is effectively the same as wrapping your component with a
-ThemeProvider.
+To theme a component, use [themed](#common-scenarios-api) as shown below. It is
+effectively the same as wrapping your component with a ThemeProvider.
 
 ```jsx
-import { createThemedComponent } from 'mineral-ui/themes';
+import { themed } from 'mineral-ui/themes';
 
-const MyButton = createThemedComponent(Button, {
+const MyButton = themed(Button)({
   Button_backgroundColor: 'tomato'
 });
 ```
@@ -131,7 +130,7 @@ parent theme.
 See the previous examples and the [ThemeProvider](/components/theme-provider)
 page for more details.
 
-### `createThemedComponent(component, theme)`
+### `themed(component)(theme)`
 
 This function is useful when you need to override component-level theme
 variables.  It is effectively the same as wrapping a ThemeProvider around a
@@ -141,7 +140,7 @@ single component.
 
 * `component`: A React component
 * `theme`: A shallow object of theme variables or a function that accepts props
-and context and returns an object of theme variables
+and returns a shallow object of theme variables
 
 **Returns**
 
@@ -151,11 +150,13 @@ provided.
 **Example**
 
 ```jsx
-import { createThemedComponent } from 'mineral-ui/themes';
+import { themed } from 'mineral-ui/themes';
 
-const MyButton = createThemedComponent(Button, {
-  Button_backgroundColor: 'tomato'
-});
+// The \`theme\` prop is the theme available from the nearest ThemeProvider in
+// the component tree
+const MyButton = themed(Button)(({ theme }) => ({
+  Button_backgroundColor: theme.color_theme_10
+}));
 ```
 
 ### `createTheme(options)`
@@ -242,7 +243,7 @@ const myTheme = createTheme({
 });
 ```
 
-### `withTheme(component, options)`
+### `withTheme(component)`
 
 A [higher order component (HOC)](https://reactjs.org/docs/higher-order-components.html)
 that enables theme access inside any component.
@@ -258,7 +259,7 @@ that enables theme access inside any component.
 **Example**
 
 ```jsx
-import { withTheme } from 'mineral-ui/themes';
+import { withTheme } from 'emotion-theming';
 
 const Direction = withTheme(({ theme }) => {
   return <span>{theme.direction}</span>;

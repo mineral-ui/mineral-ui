@@ -72,6 +72,10 @@ const propDocs: ComponentPropDocs = {
     },
     defaultValue: `'${Tooltip.defaultProps.placement}'`
   },
+  positionFixed: {
+    description: 'Apply fixed positioning to the content',
+    type: 'boolean'
+  },
   usePortal: {
     description:
       'Use a Portal to render the Tooltip to the body rather than as a sibling to the trigger.',

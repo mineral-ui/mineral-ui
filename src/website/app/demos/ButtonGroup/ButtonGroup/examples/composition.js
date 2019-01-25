@@ -1,15 +1,15 @@
 /* @flow */
+import styled from '@emotion/styled';
 import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
 import Button from '../../../../../../library/Button';
 import ButtonGroup from '../../../../../../library/ButtonGroup';
 import Dropdown from '../../../../../../library/Dropdown';
 import Popover from '../../../../../../library/Popover';
-import { createStyledComponent } from '../../../../../../library/styles';
 import Tooltip from '../../../../../../library/Tooltip';
 import data from '../../../Menu/common/menuData';
 import DemoContent from '../../../Popover/common/DemoContent';
 
-const FixedWidthLayout = createStyledComponent('div', {
+const FixedWidthLayout = styled('div')({
   '@media only screen and (max-width: 450px)': {
     '& > * button': {
       maxWidth: '5rem'

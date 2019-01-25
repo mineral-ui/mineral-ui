@@ -1,7 +1,6 @@
 /* @flow */
-import React from 'react';
-import { css } from 'react-emotion';
-import { mineralTheme } from '../../../../../library/themes';
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import Grid, { GridItem } from '../../../../../library/Grid';
 import Button from '../../../../../library/Button';
 
@@ -41,12 +40,12 @@ components to a columnar layout.`,
         <GridItem
           span={3}
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_20 })}>
+          css={(theme) => ({ backgroundColor: theme.color_theme_20 })}>
           Sidebar
         </GridItem>
         <GridItem
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_10 })}>
+          css={(theme) => ({ backgroundColor: theme.color_theme_10 })}>
           Main Content
         </GridItem>
       </Grid>

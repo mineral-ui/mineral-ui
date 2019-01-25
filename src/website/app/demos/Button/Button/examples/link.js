@@ -6,5 +6,5 @@ export default {
   title: 'Link',
   description: `Link with Button styling.  See the [Link](/components/link) component for more conventionally styled links.`,
   scope: { Button },
-  source: `<Button element="a" href="#link">Link</Button>`
+  source: `<Button as="a" href="#link">Link</Button>`
 };

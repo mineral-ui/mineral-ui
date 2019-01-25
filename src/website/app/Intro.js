@@ -1,13 +1,10 @@
 /* @flow */
 import React from 'react';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../library/styles';
+import styled from '@emotion/styled';
+import { getNormalizedValue, pxToEm } from '../../library/styles';
 import _Markdown from './Markdown';
 
-const Markdown = createStyledComponent(_Markdown, ({ theme }) => ({
+const Markdown = styled(_Markdown)(({ theme }) => ({
   '& > p': {
     color: theme.color_gray_70,
     fontSize: pxToEm(20),

@@ -1,16 +1,24 @@
 /* @flow */
+import React, { forwardRef } from 'react';
 import { Component } from 'react';
-import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
 import data from '../../../Menu/common/menuData';
 
-const DemoLayout = createStyledComponent('div', {
+type DemoLayoutProps = {};
+
+const Root = styled('div')({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between'
 });
+
+const DemoLayout = forwardRef<DemoLayoutProps, HTMLElement>(
+  (props: DemoLayoutProps, ref: React$Ref<*>) => <Root {...props} ref={ref} />
+);
+
+DemoLayout.displayName = 'DemoLayout';
 
 export default {
   id: 'controlled',
@@ -18,7 +26,7 @@ export default {
 and can optionally be managed by the application as a controlled component through the \`isOpen\` prop.
 Callbacks for \`onOpen\` and \`onClose\` are also provided.`,
   title: 'Controlled',
-  scope: { Button, Component, data, DemoLayout, Dropdown, findDOMNode },
+  scope: { Button, Component, data, DemoLayout, Dropdown },
   source: `
     class App extends Component {
       constructor(props) {
@@ -40,7 +48,7 @@ Callbacks for \`onOpen\` and \`onClose\` are also provided.`,
       onClose(event) {
         // Prevent extra call to toggleDropdown when clicking the controlling button.
         // Also avoid interactions with other dropdowns.
-        const demoLayoutNode = findDOMNode(this.demoLayout);
+        const demoLayoutNode = this.demoLayout;
         if (
           !event.nativeEvent &&
           demoLayoutNode &&

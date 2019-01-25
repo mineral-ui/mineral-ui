@@ -28,13 +28,13 @@ const navPropDocs: NavPropDocs = (component, componentName) => ({
     description: `[NavItems](/components/nav-item) [(see example)](#basic)`,
     type: 'React$Node'
   },
-  itemElement: {
-    description: 'React element used for items [(see example)](#item-element)',
+  itemAs: {
+    description: 'React element used for items [(see example)](#item-as)',
     type: {
       name: 'union',
       value: 'React$Element<*> | string'
     },
-    defaultValue: `'${component.defaultProps.itemElement}'`
+    defaultValue: `'${component.defaultProps.itemAs}'`
   },
   items: {
     description: 'Navigational items [(see example)](#data)',

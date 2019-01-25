@@ -1,9 +1,10 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
 import clearFix from 'polished/lib/mixins/clearFix';
-import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import { pxToEm } from '../../../../library/styles';
 import { mineralTheme, ThemeProvider } from '../../../../library/themes';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconClose from 'mineral-ui-icons/IconClose';
@@ -105,9 +106,9 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.root);
-const Example = createStyledComponent('div', styles.example);
-const Header = createStyledComponent('div', styles.header);
+const Root = styled('div')(styles.root);
+const Example = styled('div')(styles.example);
+const Header = styled('div')(styles.header);
 
 export default function DocPractice(props: Props) {
   const { backgroundColor, children, className, example, type } = props;

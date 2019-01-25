@@ -1,11 +1,12 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
 import ColorRampRow from './ColorRampRow';
-import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import { pxToEm } from '../../../../library/styles';
 
 const getBadges = () => {
   return [1, 2, 3, 4].map((num) => {
-    const Badge = createStyledComponent('span', ({ theme }) => ({
+    const Badge = styled('span')(({ theme }) => ({
       backgroundColor: theme.color_gray_30,
       borderRadius: theme.size_small,
       fontSize: theme.fontSize_mouse,
@@ -117,14 +118,14 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.root);
-const Black = createStyledComponent('p', styles.black);
-const Column = createStyledComponent('div', styles.column);
-const CenterColumn = createStyledComponent('div', styles.centerColumn);
-const HSL = createStyledComponent('p', styles.hsl);
-const MobileList = createStyledComponent('ol', styles.mobileList);
-const Name = createStyledComponent('div', styles.name);
-const White = createStyledComponent('div', styles.white);
+const Root = styled('div')(styles.root);
+const Black = styled('p')(styles.black);
+const Column = styled('div')(styles.column);
+const CenterColumn = styled('div')(styles.centerColumn);
+const HSL = styled('p')(styles.hsl);
+const MobileList = styled('ol')(styles.mobileList);
+const Name = styled('div')(styles.name);
+const White = styled('div')(styles.white);
 
 export default function RampLegend() {
   const themeName = 'The name of the hue in the Mineral UI theme.';

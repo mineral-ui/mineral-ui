@@ -1,15 +1,15 @@
 /* @flow */
 import React from 'react';
 import _Link from '../../../../../../library/Link';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import DemoLayout from '../../common/DemoLayout';
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
-const Big = createStyledComponent('p', { fontSize: '1.5em' });
-const Bold = createStyledComponent('p', { fontWeight: 700 });
-const Serif = createStyledComponent('p', { fontFamily: 'serif' });
-const Small = createStyledComponent('p', { fontSize: '0.75em' });
+const Big = styled('p')({ fontSize: '1.5em' });
+const Bold = styled('p')({ fontWeight: 700 });
+const Serif = styled('p')({ fontFamily: 'serif' });
+const Small = styled('p')({ fontSize: '0.75em' });
 
 export default {
   id: 'basic',

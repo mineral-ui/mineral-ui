@@ -1,10 +1,10 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import FlexItem from '../../common/DemoFlexItem';
 import DemoLayout from '../../common/DemoLayout';
 import _Flex from '../../common/DemoFlex';
 
-const Flex = createStyledComponent(_Flex, ({ direction }) => ({
+const Flex = styled(_Flex)(({ direction }) => ({
   height: direction === 'column' ? null : '5rem'
 }));
 

@@ -44,7 +44,7 @@ customize your implementation.
 * __props__: Props to be spread to your custom component
     * Note that these may not all be necessary for your implementation, or even
     valid DOM attributes, so you’ll want to apply them judiciously.  _If your
-    component has been created with [createStyledComponent][], invalid DOM
+    component has been created with [styled][], invalid DOM
     attributes will be removed automatically._
     * Further, you can override and/or compose these props as you see fit.
 * __state__: The internal state of the component, if any.
@@ -103,10 +103,10 @@ better to apply them judiciously.
 contain the entire implementation, but we opted to create separate class
 components to take advantage of [PureComponent][], so that they only re-render
 when appropriate. Alternatively, they could implement [shouldComponentUpdate][].
-* The custom components are created with [createStyledComponent][] in order to
+* The custom components are created with [styled][] in order to
 apply custom styling with easy theme access and also to automatically filter out
 invalid DOM attributes.
-* [createThemedComponent][] is used in some examples to easily theme existing
+* [themed][] is used in some examples to easily theme existing
 component instances.
 * The render callbacks, as well as the other components, should not be defined
 in a render method. It is only done so here due to limitations in our example
@@ -129,7 +129,7 @@ in the [Table][] component by modifying the default implementation.
 ### Theme Access
 
 The typical mechanisms of accessing and overriding themes, e.g.
-[createStyledComponent][], [createThemedComponent][], [withTheme][], and
+[styled][], [themed][], [withTheme][], and
 [ThemeProvider][] can be used in render callbacks as well, however there is an
 additional case that demands an example.
 
@@ -156,8 +156,8 @@ those components that support render props._
 
 [styling]: /styling
 [theming]: /theming
-[createStyledComponent]: /styling#customization-techniques-api
-[createThemedComponent]: /theming#common-scenarios-api
+[styled]: /styling#customization-techniques-api
+[themed]: /theming#common-scenarios-api
 [withTheme]: /theming#common-scenarios-api
 [ThemeProvider]: /theming#common-scenarios-api
 

@@ -13,7 +13,7 @@ true when using the [\`flex\` prop](#flex-props), as
   source: `
     <Flex>
       <FlexItem>A</FlexItem>
-      <FlexItem marginRight="auto" padding="lg">B</FlexItem>
+      <FlexItem as="span" marginRight="auto" padding="lg">B</FlexItem>
       <FlexItem>C</FlexItem>
     </Flex>`
 };

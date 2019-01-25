@@ -148,13 +148,13 @@ const propDocs: ComponentPropDocs = {
       value: joinQuoted(Object.values(TITLE_ELEMENT))
     }
   },
-  titleElement: {
+  titleAs: {
     description: 'Available title elements (see [Text](/components/text))',
     type: {
       name: 'union',
       value: joinQuoted(Object.values(TITLE_ELEMENT))
     },
-    defaultValue: `'${Table.defaultProps.titleElement}'`
+    defaultValue: `'${Table.defaultProps.titleAs}'`
   }
 };
 

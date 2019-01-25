@@ -1,17 +1,13 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
+import { componentStyleReset } from '../../../../../../library/styles';
 import _Link from '../../../../../../library/Link';
 import _DemoLayout from '../../../common/DemoLayout';
 
-const DemoLayout = createStyledComponent(
-  _DemoLayout,
-  {},
-  {
-    includeStyleReset: true,
-    withProps: { marginRight: '1em' }
-  }
-);
+const Root = styled(_DemoLayout)(({ theme }) => componentStyleReset(theme));
+
+const DemoLayout = (props: Object) => <Root marginRight="1em" {...props} />;
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
 

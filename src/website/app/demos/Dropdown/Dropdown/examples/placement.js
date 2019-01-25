@@ -1,15 +1,18 @@
 /* @flow */
+import React from 'react';
 import Button from '../../../../../../library/Button';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Dropdown from '../../../../../../library/Dropdown';
 import data from '../../../Menu/common/menuData';
 
-const DemoLayout = createStyledComponent('div', {
+const Root = styled('div')({
   height: '400px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center'
 });
+
+const DemoLayout = (props: Object) => <Root {...props} />;
 
 export default {
   id: 'placement',

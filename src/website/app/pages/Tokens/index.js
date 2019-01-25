@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Component, Fragment } from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import Box from '../../../../library/Box';
 import { FormField } from '../../../../library/Form';
 import { RadioGroup } from '../../../../library/Radio';
@@ -24,7 +24,7 @@ type Theme = { [string]: string };
 
 type Variable = string;
 
-const Callout = createStyledComponent(_Callout, ({ theme }) => ({
+const Callout = styled(_Callout)(({ theme }) => ({
   marginTop: theme.space_stack_xxl
 }));
 

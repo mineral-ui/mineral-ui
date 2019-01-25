@@ -1,11 +1,8 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
 import colorable from 'colorable';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../../../library/styles';
+import { getNormalizedValue, pxToEm } from '../../../../library/styles';
 import Markdown from '../../Markdown';
 import {
   Table as _Table,
@@ -68,15 +65,12 @@ const styles = {
   })
 };
 
-const ColorValue = createStyledComponent('span', styles.colorValue);
-const OverflowContainer = createStyledComponent(
-  'div',
-  styles.overflowContainer
-);
-const Section = createStyledComponent('section', styles.section);
-const Table = createStyledComponent(_Table, styles.table);
-const ExampleCell = createStyledComponent(TableCell, styles.exampleCell);
-const ValueCell = createStyledComponent(TableCell, styles.valueCell);
+const ColorValue = styled('span')(styles.colorValue);
+const OverflowContainer = styled('div')(styles.overflowContainer);
+const Section = styled('section')(styles.section);
+const Table = styled(_Table)(styles.table);
+const ExampleCell = styled(TableCell)(styles.exampleCell);
+const ValueCell = styled(TableCell)(styles.valueCell);
 
 export default function Typography(props: Props) {
   return (

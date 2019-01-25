@@ -126,6 +126,10 @@ const propDocs: ComponentPropDocs = {
     },
     defaultValue: `'${Select.defaultProps.placement}'`
   },
+  positionFixed: {
+    description: 'Apply fixed positioning to the menu',
+    type: 'boolean'
+  },
   readOnly: {
     description:
       'Indicates that the user cannot modify the value of the control',

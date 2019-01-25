@@ -4,7 +4,7 @@ If you want to see the types of work we're doing, what's been completed and what
 
 We are working in Agile sprints. Since all of our work is expressed in Github issues in our repo, we are able to publish our current progress and the issues that we're working on with Waffle.io. Feel free to check out what we're doing day-to-day if that's something that you find useful.
 
-<Button primary element='a' href='https://waffle.io/mineral-ui/mineral-ui'>View our Waffle Board</Button>
+<Button primary as="a" href="https://waffle.io/mineral-ui/mineral-ui">View our Waffle Board</Button>
 
 ## Past and Future Work
 

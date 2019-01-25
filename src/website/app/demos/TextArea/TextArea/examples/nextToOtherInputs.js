@@ -1,11 +1,11 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Button from '../../../../../../library/Button';
 import TextArea from '../../../../../../library/TextArea';
 import TextInput from '../../../../../../library/TextInput/';
 import _DemoLayout from '../../../common/DemoLayout';
 
-const DemoLayout = createStyledComponent(_DemoLayout, {
+const DemoLayout = styled(_DemoLayout)({
   '& > *': {
     alignItems: 'flex-start',
     display: 'flex',

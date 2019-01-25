@@ -1,7 +1,6 @@
 /* @flow */
-import React, { Children, cloneElement, Component } from 'react';
-import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../library/styles';
+import React, { Component, createRef } from 'react';
+import styled from '@emotion/styled';
 import Button from '../../../../../library/Button';
 
 type Props = {
@@ -11,29 +10,26 @@ type Props = {
   height?: number
 };
 
-const Root = createStyledComponent('div', {
+const Root = styled('div')({
   position: 'relative'
 });
 
-const ScrollArea = createStyledComponent('div', ({ height }: Object) => ({
+const ScrollArea = styled('div')(({ height }: Object) => ({
   backgroundColor: 'aliceblue',
   height: `${height}px`,
   overflow: 'auto',
   position: 'relative'
 }));
 
-const ScrollContent = createStyledComponent(
-  'div',
-  ({ scrollAreaHeight }: Object) => ({
-    height: `${parseInt(scrollAreaHeight) + 500}px`,
-    width: '300vw',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  })
-);
+const ScrollContent = styled('div')(({ scrollAreaHeight }: Object) => ({
+  height: `${parseInt(scrollAreaHeight) + 500}px`,
+  width: '300vw',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
+}));
 
-const Recenter = createStyledComponent(Button, {
+const Recenter = styled(Button)({
   left: 0,
   position: 'absolute',
   top: 0
@@ -45,11 +41,18 @@ export default class ScrollBox extends Component<Props> {
     height: 360
   };
 
+  constructor(props: Props) {
+    super(props);
+
+    this.scrollArea = createRef();
+    this.scrollTarget = createRef();
+  }
+
   props: Props;
 
-  scrollArea: ?React$Component<*, *>;
+  scrollArea: { current: any };
 
-  scrollTarget: ?React$Component<*, *>;
+  scrollTarget: { current: any };
 
   componentDidMount() {
     if (this.props.autoCenter) {
@@ -59,21 +62,12 @@ export default class ScrollBox extends Component<Props> {
 
   render() {
     const { children, height } = this.props;
-    const scrollTarget = cloneElement(Children.only(children), {
-      ref: (node) => {
-        this.scrollTarget = node;
-      }
-    });
 
     return (
       <Root>
-        <ScrollArea
-          ref={(node) => {
-            this.scrollArea = node;
-          }}
-          height={height}>
+        <ScrollArea ref={this.scrollArea} height={height}>
           <ScrollContent scrollAreaHeight={height}>
-            {scrollTarget}
+            <span ref={this.scrollTarget}>{children}</span>
           </ScrollContent>
         </ScrollArea>
         <Recenter onClick={this.scrollToCenter} minimal size="small">
@@ -84,23 +78,17 @@ export default class ScrollBox extends Component<Props> {
   }
 
   scrollToCenter = () => {
-    /* eslint-disable react/no-find-dom-node */
-    const scrollArea = findDOMNode(this.scrollArea);
-    const scrollTarget = findDOMNode(this.scrollTarget);
-    if (
-      scrollArea &&
-      scrollTarget &&
-      scrollArea instanceof HTMLElement &&
-      scrollTarget instanceof HTMLElement
-    ) {
-      scrollArea.scrollTop =
-        scrollTarget.offsetTop +
-        scrollTarget.clientHeight / 2 -
-        scrollArea.clientHeight / 2;
-      scrollArea.scrollLeft =
-        scrollTarget.offsetLeft +
-        scrollTarget.clientWidth / 2 -
-        scrollArea.clientWidth / 2;
-    }
+    const scrollArea = this.scrollArea.current;
+    const scrollTarget = this.scrollTarget.current;
+
+    scrollArea.scrollTop =
+      scrollTarget.offsetTop +
+      scrollTarget.clientHeight / 2 -
+      scrollArea.clientHeight / 2;
+
+    scrollArea.scrollLeft =
+      scrollTarget.offsetLeft +
+      scrollTarget.clientWidth / 2 -
+      scrollArea.clientWidth / 2;
   };
 }

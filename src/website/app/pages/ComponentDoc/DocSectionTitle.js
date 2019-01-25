@@ -1,13 +1,10 @@
 /* @flow */
 import React from 'react';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../../../library/styles';
+import styled from '@emotion/styled';
+import { getNormalizedValue, pxToEm } from '../../../../library/styles';
 import Heading from '../../SiteHeading';
 
-const Root = createStyledComponent(Heading, ({ level, theme }) => {
+const Root = styled(Heading)(({ level, theme }) => {
   const fontSize = theme[`SiteHeading_fontSize_${level}`];
   const fontSizeWide = theme[`SiteHeading_fontSize_${level}_wide`];
 

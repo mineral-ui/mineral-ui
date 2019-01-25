@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import { mineralTheme } from '../../../../../../library/themes';
 import Button from '../../../../../../library/Button';
 import Card, {
@@ -12,7 +12,7 @@ import Card, {
 import _DemoLayout from '../../common/DemoLayout';
 import loremIpsum from '../../common/loremIpsum';
 
-const DemoLayout = createStyledComponent(_DemoLayout, {
+const DemoLayout = styled(_DemoLayout)({
   '& img': {
     width: '100%'
   }

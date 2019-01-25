@@ -1,16 +1,16 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 
-const Root = createStyledComponent('div', {
+const Root = styled('div')({
   width: '13.75em'
 });
 
-export default function DemoContent() {
-  return (
-    <Root>
-      Light years star stuff harvesting star light citizens of distant epochs
-      encyclopaedia galactica.
-    </Root>
-  );
-}
+const DemoLayout = (props: Object) => (
+  <Root {...props}>
+    Light years star stuff harvesting star light citizens of distant epochs
+    encyclopaedia galactica.
+  </Root>
+);
+
+export default DemoLayout;

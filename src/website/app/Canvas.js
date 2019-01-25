@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
 
 type Props = {};
 
-const Root = createStyledComponent('div', {
+const Root = styled('div')({
   bottom: 0,
   left: 'calc(-50vw + 50%)',
   position: 'absolute',
@@ -13,7 +13,7 @@ const Root = createStyledComponent('div', {
   zIndex: '-1'
 });
 
-const Triangles = createStyledComponent('div', {
+const Triangles = styled('div')({
   backgroundImage: 'url(/images/triangles.svg)',
   backgroundPosition: 'center center',
   backgroundSize: 'cover',

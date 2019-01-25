@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import Heading from '../../SiteHeading';
 
 const styles = {
@@ -29,9 +29,9 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.root);
-const OpenSans = createStyledComponent('div', styles.openSans);
-const SystemFont = createStyledComponent('div', styles.systemFont);
+const Root = styled('div')(styles.root);
+const OpenSans = styled('div')(styles.openSans);
+const SystemFont = styled('div')(styles.systemFont);
 
 export default function FontDemo() {
   return (

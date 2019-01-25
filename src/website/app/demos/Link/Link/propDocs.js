@@ -1,5 +1,4 @@
 /* @flow */
-import Link from '../../../../../library/Link';
 import { VARIANT } from '../../../../../library/Link/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
@@ -13,12 +12,6 @@ const propDocs: ComponentPropDocs = {
   href: {
     description: 'A URL or URL fragment to which the Link points',
     type: 'string'
-  },
-  element: {
-    description:
-      'Element to be used as the root node - e.g. `a` or `ReactRouterLink`',
-    type: 'string | React$ComponentType<*>',
-    defaultValue: `'${Link.defaultProps.element}'`
   },
   variant: {
     description: 'Available variants',

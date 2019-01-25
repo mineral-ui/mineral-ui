@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import IconCameraAlt from 'mineral-ui-icons/IconCameraAlt';
 import IconInfoOutline from 'mineral-ui-icons/IconInfoOutline';
 import IconMusicNote from 'mineral-ui-icons/IconMusicNote';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Grid, { GridItem } from '../../../../../../library/Grid';
 import Text from '../../../../../../library/Text';
@@ -29,9 +29,9 @@ const styles = {
   }
 };
 
-const Album = createStyledComponent('li', styles.album);
-const Albums = createStyledComponent('ol', styles.albums);
-const Img = createStyledComponent('img', styles.img);
+const Album = styled('li')(styles.album);
+const Albums = styled('ol')(styles.albums);
+const Img = styled('img')(styles.img);
 
 const content = {
   /* eslint-disable react/no-unescaped-entities */

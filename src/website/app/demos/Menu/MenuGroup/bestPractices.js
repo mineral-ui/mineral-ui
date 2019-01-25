@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import styled from '@emotion/styled';
+import { pxToEm } from '../../../../../library/styles';
 import { mineralTheme } from '../../../../../library/themes';
 import Menu, {
   MenuDivider,
@@ -10,7 +11,7 @@ import Menu, {
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const DemoLayout = createStyledComponent('div', {
+const DemoLayout = styled('div')({
   '& > div': {
     backgroundColor: 'white',
     width: pxToEm(224)
