@@ -1,10 +1,8 @@
 /* @flow */
 import React, { Fragment } from 'react';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../../../library/styles';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
+import { getNormalizedValue, pxToEm } from '../../../../library/styles';
 import { mineralTheme } from '../../../../library/themes';
 import Heading from '../../SiteHeading';
 import Intro from '../../Intro';
@@ -22,9 +20,8 @@ type ComponentDocProps = {
   componentDoc: ComponentDocType
 };
 
-const StyledDocHeading = createStyledComponent(
-  Heading,
-  ({ theme }) => ({
+const StyledDocHeading = withProps({ level: 2 })(
+  styled(Heading)(({ theme }) => ({
     marginBottom: 0,
     paddingTop: getNormalizedValue(pxToEm(62), theme.SiteHeading_fontSize_2),
 
@@ -35,10 +32,7 @@ const StyledDocHeading = createStyledComponent(
         theme.SiteHeading_fontSize_2_wide
       )
     }
-  }),
-  {
-    withProps: { level: 2 }
-  }
+  }))
 );
 
 const DocHeading = ({
@@ -49,7 +43,7 @@ const DocHeading = ({
   children?: React$Node,
   id?: string
 }) => (
-  <DocSection element="div" {...restProps}>
+  <DocSection as="div" {...restProps}>
     <StyledDocHeading id={id}>{children}</StyledDocHeading>
   </DocSection>
 );

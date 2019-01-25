@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { keyframes } from 'react-emotion';
+import { keyframes } from '@emotion/core';
 import lighten from 'polished/lib/color/lighten';
 import darken from 'polished/lib/color/darken';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
 
 type Props = {
   error?: string,
@@ -11,7 +11,7 @@ type Props = {
   timedOut: boolean
 };
 
-const Message = createStyledComponent('div', ({ fancy, theme }) => {
+const Message = styled('div')(({ fancy, theme }) => {
   const loading = keyframes({
     '0%': { backgroundPosition: '0 0' },
     '100%': { backgroundPosition: '100% 0' }

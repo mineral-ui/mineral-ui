@@ -1,13 +1,14 @@
 /* @flow */
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
+import { ignoreSsrWarning } from '../../library/utils/emotion';
 import siteColors from './siteColors';
 
 const styles = {
   cell: ({ theme }) => ({
     padding: `${theme.space_inset_md} ${theme.space_inset_sm}`,
 
-    '&:first-child': {
+    ['&:first-child' + ignoreSsrWarning]: {
       paddingLeft: 0
     },
 
@@ -23,7 +24,7 @@ const styles = {
     textAlign: 'left',
     width: width && width,
 
-    '&:first-child': {
+    ['&:first-child' + ignoreSsrWarning]: {
       paddingLeft: 0
     },
 
@@ -42,7 +43,7 @@ const styles = {
   })
 };
 
-export const Table = createStyledComponent('table', styles.table);
-export const TableCell = createStyledComponent('td', styles.cell);
-export const TableHeaderCell = createStyledComponent('th', styles.headerCell);
-export const TableRow = createStyledComponent('tr', styles.row);
+export const Table = styled('table')(styles.table);
+export const TableCell = styled('td')(styles.cell);
+export const TableHeaderCell = styled('th')(styles.headerCell);
+export const TableRow = styled('tr')(styles.row);

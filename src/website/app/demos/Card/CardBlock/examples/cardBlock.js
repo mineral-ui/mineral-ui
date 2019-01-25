@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import { mineralTheme } from '../../../../../../library/themes';
 import Card, {
   CardBlock as _CardBlock,
@@ -8,7 +8,7 @@ import Card, {
 import DemoLayout from '../../common/DemoLayout';
 import loremIpsum from '../../common/loremIpsum';
 
-const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
+const CardBlock = styled(_CardBlock)(({ theme }) => ({
   position: 'relative',
 
   '&::before': {

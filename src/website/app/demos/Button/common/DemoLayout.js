@@ -1,18 +1,16 @@
 /* @flow */
 import React from 'react';
-import _DemoLayout from '../../common/DemoLayout';
+import Root from '../../common/DemoLayout';
 
-type Props = {
-  children: React$Node
-};
+import type { DemoLayoutProps } from '../../common/types';
 
-export default function DemoLayout(props: Props) {
-  return (
-    <_DemoLayout
-      includeLastChild
-      marginBottom="0.5rem"
-      marginRight="0.5rem"
-      {...props}
-    />
-  );
-}
+const DemoLayout = (props: DemoLayoutProps) => (
+  <Root
+    includeLastChild
+    marginBottom="0.5rem"
+    marginRight="0.5rem"
+    {...props}
+  />
+);
+
+export default DemoLayout;

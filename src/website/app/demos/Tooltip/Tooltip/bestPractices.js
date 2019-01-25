@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import Button from '../../../../../library/Button';
 import Card, { CardBlock, CardTitle } from '../../../../../library/Card';
 import Tooltip from '../../../../../library/Tooltip';
@@ -20,22 +20,22 @@ import TextInput from '../../../../../library/TextInput/';
 
 import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const DemoCardLayout = createStyledComponent('div', {
+const DemoCardLayout = styled('div')({
   width: '250px'
 });
 
-const VerticalLayout = createStyledComponent('div', {
+const VerticalLayout = styled('div')({
   '& > * + *': {
     marginTop: '1em'
   }
 });
 
-const StackedButtons = createStyledComponent(VerticalLayout, {
+const StackedButtons = styled(VerticalLayout)({
   width: '50px',
   textAlign: 'center'
 });
 
-const HorizontalLayout = createStyledComponent('div', {
+const HorizontalLayout = styled('div')({
   '& > *': {
     marginRight: '0.5em'
   }

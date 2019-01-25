@@ -1,7 +1,8 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import { componentStyleReset, pxToEm } from '../../../../library/styles';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import { ThemeProvider } from '../../../../library/themes';
 
@@ -22,6 +23,8 @@ type OptionProps = {
 
 const styles = {
   root: ({ theme, themes, index }) => ({
+    ...componentStyleReset(theme),
+
     marginTop: theme.space_stack_xl,
     position: 'relative', // for z-index
     zIndex: 2,
@@ -52,6 +55,8 @@ const styles = {
     }
   }),
   optionRoot: ({ isActive, theme, themes, thisIndex }) => ({
+    ...componentStyleReset(theme),
+
     alignItems: 'center',
     backgroundColor: isActive
       ? themes[thisIndex].color_theme_10
@@ -167,16 +172,12 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.root, {
-  includeStyleReset: true
-});
-const OptionRoot = createStyledComponent('button', styles.optionRoot, {
-  includeStyleReset: true
-});
-const OptionHex = createStyledComponent('span', styles.optionHex);
-const OptionIcon = createStyledComponent(IconCheck, styles.optionIcon);
-const OptionName = createStyledComponent('span', styles.optionName);
-const Sandbox = createStyledComponent('div', styles.sandbox);
+const Root = styled('div')(styles.root);
+const OptionRoot = styled('button')(styles.optionRoot);
+const OptionHex = styled('span')(styles.optionHex);
+const OptionIcon = styled(IconCheck)(styles.optionIcon);
+const OptionName = styled('span')(styles.optionName);
+const Sandbox = styled('div')(styles.sandbox);
 
 const Option = ({
   children,

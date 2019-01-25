@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import ColorRampRow from './ColorRampRow';
 import range from 'lodash/range';
 
@@ -8,7 +8,7 @@ type Props = {
   baseColor: string
 };
 
-const Root = createStyledComponent('div', ({ theme }) => ({
+const Root = styled('div')(({ theme }) => ({
   display: 'inline-block',
   marginRight: theme.space_inline_sm,
   marginBottom: theme.space_stack_sm,

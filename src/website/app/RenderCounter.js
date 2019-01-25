@@ -1,6 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
+import { componentStyleReset } from '../../library/styles';
 
 type Props = {};
 
@@ -36,36 +37,32 @@ export const countRender = (key: string) => {
     global.performance.mark(formatEntry(key));
 };
 
-const Root = createStyledComponent(
-  'div',
-  ({ theme }) => ({
-    backgroundColor: theme.color_theme_20,
-    bottom: 0,
-    display: 'inline-block',
-    fontSize: theme.fontSize_ui,
-    maxHeight: '100vh',
-    overflow: 'auto',
-    padding: theme.space_inset_md,
-    position: 'fixed',
-    right: 0,
-    zIndex: theme.zIndex_800,
+const Root = styled('div')(({ theme }) => ({
+  ...componentStyleReset(theme),
 
-    '& th': {
-      textAlign: 'left'
-    },
+  backgroundColor: theme.color_theme_20,
+  bottom: 0,
+  display: 'inline-block',
+  fontSize: theme.fontSize_ui,
+  maxHeight: '100vh',
+  overflow: 'auto',
+  padding: theme.space_inset_md,
+  position: 'fixed',
+  right: 0,
+  zIndex: theme.zIndex_800,
 
-    '& tbody td:last-child': {
-      textAlign: 'right'
-    },
+  '& th': {
+    textAlign: 'left'
+  },
 
-    button: {
-      marginLeft: theme.space_inline_md
-    }
-  }),
-  {
-    includeStyleReset: true
+  '& tbody td:last-child': {
+    textAlign: 'right'
+  },
+
+  button: {
+    marginLeft: theme.space_inline_md
   }
-);
+}));
 
 /**
  * RenderCounter - Display a table of render counts for the instrumented

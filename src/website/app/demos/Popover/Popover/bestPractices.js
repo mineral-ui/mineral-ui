@@ -1,7 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../library/styles';
+import styled from '@emotion/styled';
 import Button from '../../../../../library/Button';
 import Heading from '../../../SiteHeading';
 import Popover from '../../../../../library/Popover';
@@ -28,10 +27,10 @@ const styles = {
   })
 };
 
-const BadContentLayout = createStyledComponent('div', styles.badContentLayout);
-const GoodDemo = createStyledComponent('div', styles.goodDemo);
-const DemoLayout = createStyledComponent('div', styles.demoLayout);
-const P = createStyledComponent('p', styles.p);
+const BadContentLayout = styled('div')(styles.badContentLayout);
+const GoodDemo = styled('div')(styles.goodDemo);
+const DemoLayout = styled('div')(styles.demoLayout);
+const P = styled('p')(styles.p);
 
 type State = {
   isOpen?: boolean
@@ -42,7 +41,7 @@ class PopOverDo extends Component<{}, State> {
     isOpen: false
   };
 
-  demoLayout: ?React$Component<*, *>;
+  demoLayout: ?HTMLElement;
 
   onOpen = () => {
     this.setState({ isOpen: true });
@@ -52,7 +51,7 @@ class PopOverDo extends Component<{}, State> {
     // Prevent extra call to togglePopover when clicking the controlling button.
     // Also avoid interactions with other popovers.
     // eslint-disable-next-line
-    const demoLayoutNode = findDOMNode(this.demoLayout);
+    const demoLayoutNode = this.demoLayout;
     if (
       !event.nativeEvent &&
       demoLayoutNode &&

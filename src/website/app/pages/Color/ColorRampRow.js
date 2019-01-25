@@ -3,7 +3,7 @@ import React from 'react';
 import colorable from 'colorable';
 import readableColor from 'polished/lib/color/readableColor';
 import { palette } from 'mineral-ui-tokens';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 
 type Props = {
   name: string
@@ -43,21 +43,12 @@ const styles = {
   }
 };
 
-const Row = createStyledComponent('div', styles.row);
-const BlackOnBackground = createStyledComponent(
-  'span',
-  styles.blackonBackground
-);
-const WhiteOnBackground = createStyledComponent(
-  'span',
-  styles.whiteOnBackground
-);
-const ColorName = createStyledComponent('span', styles.colorName);
-const AccessibilityInfo = createStyledComponent(
-  'div',
-  styles.accessibilityInfo
-);
-const HSL = createStyledComponent('span', styles.hsl);
+const Row = styled('div')(styles.row);
+const BlackOnBackground = styled('span')(styles.blackonBackground);
+const WhiteOnBackground = styled('span')(styles.whiteOnBackground);
+const ColorName = styled('span')(styles.colorName);
+const AccessibilityInfo = styled('div')(styles.accessibilityInfo);
+const HSL = styled('span')(styles.hsl);
 
 function getBestAccessibility(access) {
   if (access.aaa) {

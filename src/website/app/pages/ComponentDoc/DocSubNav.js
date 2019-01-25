@@ -1,6 +1,8 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
+import { pxToEm } from '../../../../library/styles';
 import Link from '../../SiteLink';
 import Section from './DocSection';
 
@@ -40,12 +42,8 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent(Section, styles.subnav, {
-  withProps: {
-    element: 'nav'
-  }
-});
-const NavElement = createStyledComponent(Link, styles.navElement);
+const Root = withProps({ as: 'nav' })(styled(Section)(styles.subnav));
+const NavElement = styled(Link)(styles.navElement);
 
 export default function DocSubNav(props: DocSubNavProps) {
   const { componentDoc, ...rootProps } = props;

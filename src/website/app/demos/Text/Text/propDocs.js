@@ -34,11 +34,6 @@ const propDocs: ComponentPropDocs = {
     description: 'Color of text',
     type: 'string'
   },
-  element: {
-    description: "The rendered HTML element, e.g. `'span'`, `'strong'`",
-    type: 'string',
-    defaultValue: `'${Text.defaultProps.element}'`
-  },
   fontWeight: {
     description: 'Available font weights',
     type: {

@@ -1,12 +1,10 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
 import { NavLink } from 'react-router-dom';
 import { darken, rgba } from 'polished';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../library/styles';
+import { getNormalizedValue, pxToEm } from '../../library/styles';
 import { mineralTheme, ThemeProvider } from '../../library/themes';
 import _Logo from './Logo';
 import Heading from './SiteHeading';
@@ -161,26 +159,19 @@ const styles = {
   }
 };
 
-const Link = createStyledComponent(_Link, styles.link, {
-  filterProps: ['wide'],
-  withProps: {
-    element: NavLink
-  }
-});
-const List = createStyledComponent('ol', styles.list);
-const ListItem = createStyledComponent('li', styles.listItem);
-const SectionHeading = createStyledComponent(Heading, styles.heading, {
-  withProps: {
-    as: 'h2',
-    level: 4
-  }
-});
-const SubList = createStyledComponent('ol', styles.subList);
-const LogoHeading = createStyledComponent(Heading, styles.logoHeading, {
-  withProps: {
-    level: 1
-  }
-});
+const Link = withProps({ as: NavLink })(
+  styled(_Link, { shouldForwardProp: (prop) => prop !== 'wide' })(styles.link)
+);
+const List = styled('ol')(styles.list);
+const ListItem = styled('li')(styles.listItem);
+const SectionHeading = withProps({
+  as: 'h2',
+  level: 4
+})(styled(Heading)(styles.heading));
+const SubList = styled('ol')(styles.subList);
+const LogoHeading = withProps({ level: 1 })(
+  styled(Heading)(styles.logoHeading)
+);
 
 const Logo = (wide) => (
   <LogoHeading wide={wide}>

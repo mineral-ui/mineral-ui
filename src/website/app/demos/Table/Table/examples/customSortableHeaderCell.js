@@ -1,6 +1,6 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
-import { createThemedComponent } from '../../../../../../library/themes';
+import styled from '@emotion/styled';
+import { themed } from '../../../../../../library/themes';
 import Table from '../../../../../../library/Table';
 import TableSortableHeaderCell from '../../../../../../library/Table/TableSortableHeaderCell';
 import data from '../../common/data';
@@ -13,24 +13,22 @@ export default {
 provide custom rendering control of all table header cells in that column.
 ${renderPropsDescription}`,
   scope: {
-    createStyledComponent,
-    createThemedComponent,
+    styled,
+    themed,
     Table,
     data,
     TableSortableHeaderCell
   },
   source: `
   () => {
-    const ThemedSortableTableHeaderCell = createThemedComponent(
-      TableSortableHeaderCell,
+    const ThemedSortableTableHeaderCell = themed(TableSortableHeaderCell)(
       ({ theme }) => ({
         TableSortableHeaderCell_border_focus: '1px dotted ' + theme.color_black,
         TableSortableHeaderCell_color_focus: theme.color_black
       })
     );
 
-    const StyledSortableTableHeaderCell = createStyledComponent(
-      ThemedSortableTableHeaderCell,
+    const StyledSortableTableHeaderCell = styled(ThemedSortableTableHeaderCell)(
       ({ direction, isSorted, theme }) => ({
         boxShadow: isSorted
           ? direction === 'descending'

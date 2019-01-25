@@ -1,5 +1,6 @@
 /* @flow */
 import box from './box';
+import element from './element';
 import height from './height';
 import importSyntax from './importSyntax';
 import inline from './inline';
@@ -16,6 +17,7 @@ export default [
   width,
   height,
   inline,
+  element,
   responsive,
   rtl,
   precedence

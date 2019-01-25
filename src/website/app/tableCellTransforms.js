@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { palette } from 'mineral-ui-tokens';
-import { createStyledComponent } from '../../library/styles';
+import styled from '@emotion/styled';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
@@ -33,11 +33,11 @@ const styles = {
   }
 };
 
-const Label = createStyledComponent(_Label, styles.label);
-const Available = createStyledComponent('span', styles.icon);
-const InDevelopment = createStyledComponent('span', styles.icon);
-const Planned = createStyledComponent('span', styles.icon);
-const Deprecated = createStyledComponent('span', styles.icon);
+const Label = styled(_Label)(styles.label);
+const Available = styled('span')(styles.icon);
+const InDevelopment = styled('span')(styles.icon);
+const Planned = styled('span')(styles.icon);
+const Deprecated = styled('span')(styles.icon);
 
 export const isNew = (child: React$Node, index: number) => {
   if (typeof child !== 'string' || !child.match(REGEX_LABEL_NEW)) {

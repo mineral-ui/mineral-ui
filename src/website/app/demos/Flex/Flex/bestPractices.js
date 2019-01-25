@@ -1,7 +1,6 @@
 /* @flow */
-import React from 'react';
-import { css } from 'react-emotion';
-import { mineralTheme } from '../../../../../library/themes';
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import Flex, { FlexItem } from '../../../../../library/Flex';
 import Button from '../../../../../library/Button';
 
@@ -77,13 +76,13 @@ align components to a columnar layout. Use [Grid](/components/grid) and
         <FlexItem
           width={50}
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_20 })}>
+          css={(theme) => ({ backgroundColor: theme.color_theme_20 })}>
           Sidebar
         </FlexItem>
         <FlexItem
           grow={1}
           padding="sm"
-          className={css({ backgroundColor: mineralTheme.color_theme_10 })}>
+          css={(theme) => ({ backgroundColor: theme.color_theme_10 })}>
           Main Content
         </FlexItem>
       </Flex>

@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import Markdown from '../../Markdown';
 import Legend from './Legend';
 import content from './componentStatus.md';
 
 type Props = {};
 
-const Layout = createStyledComponent('div', ({ theme }) => ({
+const Layout = styled('div')(({ theme }) => ({
   '& table': {
     maxWidth: '40em'
   },

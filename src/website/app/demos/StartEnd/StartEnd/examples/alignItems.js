@@ -1,10 +1,10 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Box from '../../../Box/common/DemoBox';
 import DemoLayout from '../../common/DemoLayout';
 import _StartEnd from '../../common/DemoStartEnd';
 
-const StartEnd = createStyledComponent(_StartEnd, {
+const StartEnd = styled(_StartEnd)({
   height: '5rem'
 });
 

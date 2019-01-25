@@ -1,3 +1,3 @@
 Page not found.
 
-<Button primary element={Link} to="/">Home</Button>
+<Button primary as={Link} to="/">Home</Button>

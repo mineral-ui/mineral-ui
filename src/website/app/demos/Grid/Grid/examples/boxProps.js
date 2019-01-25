@@ -12,7 +12,7 @@ accepts any of [Box's props](/components/box#props).`,
   source: `
     <div>
       {/* You can apply Box props directly to Grid: */}
-      <Grid padding="lg" width={1/2}>
+      <Grid as="section" padding="lg" width={1/2}>
         <GridItem>A</GridItem>
         <GridItem>B</GridItem>
         <GridItem>C</GridItem>

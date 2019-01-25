@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import { type Color as ColorType } from '../../../../library/themes/generated/palette';
 import Markdown from '../../Markdown';
 import ColorRamp from './ColorRamp';
@@ -27,7 +27,7 @@ const baseColors: Array<ColorType | 'black'> = [
   'black'
 ];
 
-const RampHolder = createStyledComponent('div', {
+const RampHolder = styled('div')({
   display: 'flex',
   flexWrap: 'wrap'
 });

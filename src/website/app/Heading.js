@@ -1,9 +1,7 @@
 /* @flow */
 import React from 'react';
-import {
-  createStyledComponent,
-  getNormalizedValue
-} from '../../library/styles';
+import styled from '@emotion/styled';
+import { getNormalizedValue } from '../../library/styles';
 
 type Props = {
   /** element used when rendering */
@@ -67,6 +65,6 @@ export default function Heading(props: Props) {
     ...restProps
   };
   const useAs = as ? as : `h${level}`;
-  const Root = createStyledComponent(useAs, headingStyles);
+  const Root = styled(useAs)(headingStyles);
   return <Root {...rootProps}>{children}</Root>;
 }

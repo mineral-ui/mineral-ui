@@ -1,17 +1,16 @@
 /* @flow */
 import React from 'react';
-import {
-  createStyledComponent,
-  getNormalizedValue
-} from '../../library/styles';
-import { createThemedComponent, mineralTheme } from '../../library/themes';
+import styled from '@emotion/styled';
+import withProps from 'recompose/withProps';
+import { componentStyleReset, getNormalizedValue } from '../../library/styles';
+import { themed, mineralTheme } from '../../library/themes';
 import Markdown from './Markdown';
 import Section from './Section';
 import siteColors from './siteColors';
 
 type Props = {};
 
-const ThemedSection = createThemedComponent(Section, {
+const ThemedSection = themed(Section)({
   color: mineralTheme.color_white,
 
   Heading_color_4: mineralTheme.color_white,
@@ -22,9 +21,10 @@ const ThemedSection = createThemedComponent(Section, {
   Link_color_hover: siteColors.yellow_hover
 });
 
-const Root = createStyledComponent(
-  ThemedSection,
-  ({ theme }) => ({
+const Root = withProps({ as: 'footer' })(
+  styled(ThemedSection)(({ theme }) => ({
+    ...componentStyleReset(theme),
+
     backgroundColor: theme.color_black,
     color: theme.color_gray_40,
     fontWeight: theme.fontWeight_medium,
@@ -58,11 +58,7 @@ const Root = createStyledComponent(
         }
       }
     }
-  }),
-  {
-    includeStyleReset: true,
-    withProps: { element: 'footer' }
-  }
+  }))
 );
 
 export default function Footer(props: Props) {

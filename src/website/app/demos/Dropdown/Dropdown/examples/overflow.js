@@ -1,11 +1,12 @@
 /* @flow */
 import Button from '../../../../../../library/Button';
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Dropdown from '../../../../../../library/Dropdown';
 import data from '../../../Menu/common/menuData';
 
-const OverflowContainer = createStyledComponent('div', {
+const OverflowContainer = styled('div')({
   backgroundColor: 'aliceblue',
+  margin: '0 0 145px 0',
   overflow: 'hidden',
   padding: '25px'
 });
@@ -17,7 +18,7 @@ export default {
   scope: { Button, data, Dropdown, OverflowContainer },
   source: `
     <OverflowContainer>
-      <Dropdown data={data}>
+      <Dropdown data={data} isOpen>
         <Button>Menu</Button>
       </Dropdown>
     </OverflowContainer>`

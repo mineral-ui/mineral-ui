@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { palette } from 'mineral-ui-tokens';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
@@ -26,10 +26,10 @@ const styles = {
   }
 };
 
-const Available = createStyledComponent(IconCheck, styles.icon);
-const InDevelopment = createStyledComponent(IconSlowMotionVideo, styles.icon);
-const Planned = createStyledComponent(IconAssignment, styles.icon);
-const List = createStyledComponent('ul', styles.list);
+const Available = styled(IconCheck)(styles.icon);
+const InDevelopment = styled(IconSlowMotionVideo)(styles.icon);
+const Planned = styled(IconAssignment)(styles.icon);
+const List = styled('ul')(styles.list);
 
 export default function Legend() {
   return (

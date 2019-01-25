@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
+import styled from '@emotion/styled';
 import darken from 'polished/lib/color/darken';
 import desaturate from 'polished/lib/color/desaturate';
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent } from '../../library/styles';
 
 type Props = {
   children: React$Node,
@@ -12,7 +12,7 @@ type Props = {
   variant?: 'danger' | 'regular'
 };
 
-const Root = createStyledComponent('div', ({ theme, variant }) => {
+const Root = styled('div')(({ theme, variant }) => {
   const linkColors = {
     active: darken(0.1, theme.SiteLink_color_active),
     focus: darken(0.1, theme.SiteLink_color_focus),
@@ -112,7 +112,7 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
     }
   };
 });
-const Title = createStyledComponent('h4', ({ variant, theme }) => ({
+const Title = styled('h4')(({ variant, theme }) => ({
   color:
     variant === 'danger'
       ? darken(0.1, theme.color_danger)

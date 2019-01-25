@@ -12,7 +12,7 @@ it accepts any of [Box's props](/components/box#props), **except** \`width\` (us
   source: `
     <Grid>
       <GridItem>A</GridItem>
-      <GridItem padding="lg">B</GridItem>
+      <GridItem as="section" padding="lg">B</GridItem>
       <GridItem>C</GridItem>
     </Grid>`
 };

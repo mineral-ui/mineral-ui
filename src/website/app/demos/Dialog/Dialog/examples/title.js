@@ -21,7 +21,7 @@ some props, such as \`id\` & \`variant\`, to DialogTitle.`,
     <div>
       <DemoLayout>
         <Dialog
-          title={<DialogTitle appearance="h3" element="h2">Lorem <em>ipsum</em> dolor sit amet</DialogTitle>}
+          title={<DialogTitle appearance="h3" as="h2">Lorem <em>ipsum</em> dolor sit amet</DialogTitle>}
           actions={[
             { text: 'Cancel' },
             { text: 'Action' }

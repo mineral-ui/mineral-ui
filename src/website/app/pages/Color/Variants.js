@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 import Button from '../../../../library/Button';
 
-const Root = createStyledComponent('div', ({ theme }) => ({
+const Root = styled('div')(({ theme }) => ({
   '& > button': {
     marginRight: theme.space_inline_sm,
     marginBottom: theme.space_stack_sm

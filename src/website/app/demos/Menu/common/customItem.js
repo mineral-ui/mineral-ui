@@ -1,7 +1,8 @@
 /* @flow */
 import React from 'react';
-import { withTheme } from '../../../../../library/themes';
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
+import { componentStyleReset, pxToEm } from '../../../../../library/styles';
 import Avatar from '../../../../../library/Avatar';
 import { menuItemTheme } from '../../../../../library/Menu/themes';
 
@@ -10,43 +11,37 @@ export default function customItem({ props }: Object) {
     const theme = menuItemTheme(baseTheme);
     const { item } = props;
 
-    const Root = createStyledComponent(
-      'div',
-      {
-        backgroundColor: props.isHighlighted && theme.color_theme_20,
-        display: 'flex',
-        padding:
-          theme.MenuItem_paddingVertical +
-          ' ' +
-          theme.MenuItem_paddingHorizontal,
-        textDecoration: 'none',
+    const Root = styled('div')({
+      ...componentStyleReset(theme),
 
-        '&:focus': {
-          backgroundColor: !props.disabled && theme.color_theme_20,
-          outline: 0
-        },
+      backgroundColor: props.isHighlighted && theme.color_theme_20,
+      display: 'flex',
+      padding:
+        theme.MenuItem_paddingVertical + ' ' + theme.MenuItem_paddingHorizontal,
+      textDecoration: 'none',
 
-        '&:hover': {
-          backgroundColor: !props.disabled && theme.color_theme_20
-        },
-
-        '&:active': {
-          backgroundColor: !props.disabled && theme.color_theme_40
-        }
+      '&:focus': {
+        backgroundColor: !props.disabled && theme.color_theme_20,
+        outline: 0
       },
-      {
-        includeStyleReset: true
-      }
-    );
 
-    const Work = createStyledComponent('span', {
+      '&:hover': {
+        backgroundColor: !props.disabled && theme.color_theme_20
+      },
+
+      '&:active': {
+        backgroundColor: !props.disabled && theme.color_theme_40
+      }
+    });
+
+    const Work = styled('span')({
       color: theme.color_mouse,
       display: 'block',
       fontSize: theme.fontSize_mouse,
       marginTop: theme.space_stack_xs
     });
 
-    const UserAvatar = createStyledComponent(Avatar, {
+    const UserAvatar = styled(Avatar)({
       display: 'block',
       flex: '0 0 auto',
       height: pxToEm(36),
@@ -55,7 +50,7 @@ export default function customItem({ props }: Object) {
       width: pxToEm(36)
     });
 
-    const Content = createStyledComponent('span', {
+    const Content = styled('span')({
       flex: '1 1 auto',
       fontSize: theme.MenuItemContent_fontSize,
       whiteSpace: 'normal',

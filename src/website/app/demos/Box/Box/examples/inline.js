@@ -1,9 +1,9 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../library/styles';
+import styled from '@emotion/styled';
 import Box from '../../common/DemoBox';
 import _DemoLayout from '../../common/DemoLayout';
 
-const DemoLayout = createStyledComponent(_DemoLayout, {
+const DemoLayout = styled(_DemoLayout)({
   '& > *[class]': {
     marginBottom: 0
   }

@@ -1,16 +1,10 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
+import styled from '@emotion/styled';
 
-type Props = {
-  children: React$Node,
-  includeLastChild?: boolean,
-  marginRight?: string,
-  marginBottom?: string
-};
+import type { DemoLayoutProps } from './types';
 
-const Root = createStyledComponent(
-  'div',
+const Root = styled('div')(
   ({ includeLastChild, marginRight, marginBottom }) => {
     if (includeLastChild) {
       return {
@@ -30,11 +24,8 @@ const Root = createStyledComponent(
   }
 );
 
-export default function DemoLayout({
-  children,
-  marginBottom = '1rem',
-  ...restProps
-}: Props) {
-  const rootProps = { marginBottom, ...restProps };
-  return <Root {...rootProps}>{children}</Root>;
-}
+const DemoLayout = (props: DemoLayoutProps) => (
+  <Root marginBottom="1rem" {...props} />
+);
+
+export default DemoLayout;
