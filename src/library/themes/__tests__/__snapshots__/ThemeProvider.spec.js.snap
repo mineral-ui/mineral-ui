@@ -17,16 +17,10 @@ exports[`ThemeProvider demo examples Snapshots: theme-provider 1`] = `
   padding: 0.5em;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-1"
-  >
-    <ThemeProvider
-      theme={
-        Object {
-          "color": "tomato",
-        }
-      }
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-1"
     >
       <ThemeProvider
         theme={
@@ -35,19 +29,27 @@ exports[`ThemeProvider demo examples Snapshots: theme-provider 1`] = `
           }
         }
       >
-        <Sample>
-          <Styled(span)>
-            <span
-              className="emotion-0"
-            >
-              Sample
-            </span>
-          </Styled(span)>
-        </Sample>
+        <ThemeProvider
+          theme={
+            Object {
+              "color": "tomato",
+            }
+          }
+        >
+          <Sample>
+            <Styled(span)>
+              <span
+                className="emotion-0"
+              >
+                Sample
+              </span>
+            </Styled(span)>
+          </Sample>
+        </ThemeProvider>
       </ThemeProvider>
-    </ThemeProvider>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`ThemeProvider merges nested theme variables 1`] = `

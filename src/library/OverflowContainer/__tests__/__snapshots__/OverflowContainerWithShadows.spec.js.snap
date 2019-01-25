@@ -49,14 +49,14 @@ exports[`OverflowContainerWithShadows applies shadow when scrollable 1`] = `
 <OverflowContainerWithShadows
   scrollX={true}
 >
-  <OverflowContainerWithShadows
+  <Styled(div)
     hasShadowLeft={false}
     hasShadowRight={true}
   >
     <div
       className="emotion-5"
     >
-      <Scroller
+      <Styled(WithTheme(Themed(OverflowContainer)))
         containerRef={[Function]}
         onScroll={[Function]}
         scrollX={true}
@@ -85,10 +85,9 @@ exports[`OverflowContainerWithShadows applies shadow when scrollable 1`] = `
                   scrollX={true}
                   tabIndex={0}
                 >
-                  <OverflowContainer
+                  <Styled(div)
                     className="emotion-1"
                     containerRef={[Function]}
-                    innerRef={[Function]}
                     onScroll={[Function]}
                     scrollX={true}
                     tabIndex={0}
@@ -110,15 +109,15 @@ exports[`OverflowContainerWithShadows applies shadow when scrollable 1`] = `
                         }
                       />
                     </div>
-                  </OverflowContainer>
+                  </Styled(div)>
                 </OverflowContainer>
               </ThemeProvider>
             </ThemeProvider>
           </Themed(OverflowContainer)>
         </WithTheme(Themed(OverflowContainer))>
-      </Scroller>
+      </Styled(WithTheme(Themed(OverflowContainer)))>
     </div>
-  </OverflowContainerWithShadows>
+  </Styled(div)>
 </OverflowContainerWithShadows>
 `;
 
@@ -152,14 +151,14 @@ exports[`OverflowContainerWithShadows does not apply shadow when not scrollable 
 <OverflowContainerWithShadows
   scrollX={true}
 >
-  <OverflowContainerWithShadows
+  <Styled(div)
     hasShadowLeft={false}
     hasShadowRight={false}
   >
     <div
       className="emotion-5"
     >
-      <Scroller
+      <Styled(WithTheme(Themed(OverflowContainer)))
         containerRef={[Function]}
         onScroll={[Function]}
         scrollX={true}
@@ -184,10 +183,9 @@ exports[`OverflowContainerWithShadows does not apply shadow when not scrollable 
                   onScroll={[Function]}
                   scrollX={true}
                 >
-                  <OverflowContainer
+                  <Styled(div)
                     className="emotion-1"
                     containerRef={[Function]}
-                    innerRef={[Function]}
                     onScroll={[Function]}
                     scrollX={true}
                   >
@@ -207,14 +205,14 @@ exports[`OverflowContainerWithShadows does not apply shadow when not scrollable 
                         }
                       />
                     </div>
-                  </OverflowContainer>
+                  </Styled(div)>
                 </OverflowContainer>
               </ThemeProvider>
             </ThemeProvider>
           </Themed(OverflowContainer)>
         </WithTheme(Themed(OverflowContainer))>
-      </Scroller>
+      </Styled(WithTheme(Themed(OverflowContainer)))>
     </div>
-  </OverflowContainerWithShadows>
+  </Styled(div)>
 </OverflowContainerWithShadows>
 `;

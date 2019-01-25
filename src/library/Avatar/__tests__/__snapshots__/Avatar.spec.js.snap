@@ -1,64 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar demo examples Snapshots: basic 1`] = `
-.emotion-1 {
-  box-sizing: border-box;
-  color: #ffffff;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 2.5em;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #3272d9;
-  border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-weight: 700;
-  height: 2.5em;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  vertical-align: middle;
-  width: 2.5em;
-}
-
-.emotion-1 *,
-.emotion-1 *::before,
-.emotion-1 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-1 > abbr,
-.emotion-1 > span {
-  font-size: 1.125em;
-}
-
-.emotion-1 > abbr {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-1 > img {
-  border-radius: 100%;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  max-width: 100%;
-}
-
-.emotion-1 > [role="img"] {
-  color: #ffffff;
-}
-
 .emotion-4[class] > * {
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -118,6 +60,64 @@ exports[`Avatar demo examples Snapshots: basic 1`] = `
 }
 
 .emotion-0 > [role="img"] {
+  color: #ffffff;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 2.5em;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3272d9;
+  border-radius: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  height: 2.5em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.emotion-1 *,
+.emotion-1 *::before,
+.emotion-1 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-1 > abbr,
+.emotion-1 > span {
+  font-size: 1.125em;
+}
+
+.emotion-1 > abbr {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-1 > img {
+  border-radius: 100%;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.emotion-1 > [role="img"] {
   color: #ffffff;
 }
 
@@ -198,7 +198,7 @@ exports[`Avatar demo examples Snapshots: basic 1`] = `
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             noBackground={true}
             shape="circle"
             size="large"
@@ -211,13 +211,13 @@ exports[`Avatar demo examples Snapshots: basic 1`] = `
                 src="/images/avatar.svg"
               />
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             shape="circle"
             size="large"
           >
@@ -230,13 +230,13 @@ exports[`Avatar demo examples Snapshots: basic 1`] = `
                 A
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             icon={
               <IconCloud
                 size="1.5em"
@@ -290,7 +290,7 @@ exports[`Avatar demo examples Snapshots: basic 1`] = `
                 </Icon>
               </IconCloud>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
       </div>
     </Styled(div)>
@@ -299,6 +299,11 @@ exports[`Avatar demo examples Snapshots: basic 1`] = `
 `;
 
 exports[`Avatar demo examples Snapshots: colors 1`] = `
+.emotion-14[class] > * {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 .emotion-0 {
   box-sizing: border-box;
   color: #ffffff;
@@ -355,11 +360,6 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
 
 .emotion-0 > [role="img"] {
   color: #ffffff;
-}
-
-.emotion-14[class] > * {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
 }
 
 .emotion-1 {
@@ -1075,7 +1075,7 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             shape="circle"
             size="large"
           >
@@ -1088,14 +1088,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 T
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#de1b1b"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#de1b1b"
             shape="circle"
             size="large"
@@ -1109,14 +1109,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 R
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#d6246e"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#d6246e"
             shape="circle"
             size="large"
@@ -1130,14 +1130,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 M
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#9656d6"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#9656d6"
             shape="circle"
             size="large"
@@ -1151,14 +1151,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 P
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#6767e6"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#6767e6"
             shape="circle"
             size="large"
@@ -1172,14 +1172,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 I
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#3272d9"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#3272d9"
             shape="circle"
             size="large"
@@ -1193,14 +1193,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 B
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#0c7bb3"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#0c7bb3"
             shape="circle"
             size="large"
@@ -1214,14 +1214,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 S
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#17827b"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#17827b"
             shape="circle"
             size="large"
@@ -1235,14 +1235,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 T
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#2a854e"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#2a854e"
             shape="circle"
             size="large"
@@ -1256,14 +1256,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 G
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#ad5f00"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#ad5f00"
             shape="circle"
             size="large"
@@ -1277,7 +1277,7 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 B
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#8e99ab"
@@ -1285,7 +1285,7 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#8e99ab"
             color="#1d1f24"
             shape="circle"
@@ -1300,14 +1300,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 G
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#48799c"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#48799c"
             shape="circle"
             size="large"
@@ -1321,14 +1321,14 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 S
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="#7a68b3"
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="#7a68b3"
             shape="circle"
             size="large"
@@ -1342,7 +1342,7 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 D
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           background="rgba(139,231,172,0.8)"
@@ -1350,7 +1350,7 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             background="rgba(139,231,172,0.8)"
             color="hsl(322,71%,27%)"
             shape="circle"
@@ -1365,7 +1365,7 @@ exports[`Avatar demo examples Snapshots: colors 1`] = `
                 C
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
       </div>
     </Styled(div)>
@@ -1437,7 +1437,7 @@ exports[`Avatar demo examples Snapshots: custom-text-abbr 1`] = `
   shape="circle"
   size="large"
 >
-  <Avatar
+  <Styled(span)
     shape="circle"
     size="large"
   >
@@ -1450,11 +1450,16 @@ exports[`Avatar demo examples Snapshots: custom-text-abbr 1`] = `
         B
       </abbr>
     </span>
-  </Avatar>
+  </Styled(span)>
 </Avatar>
 `;
 
 exports[`Avatar demo examples Snapshots: shapes 1`] = `
+.emotion-3[class] > * {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 .emotion-0 {
   box-sizing: border-box;
   color: #ffffff;
@@ -1511,11 +1516,6 @@ exports[`Avatar demo examples Snapshots: shapes 1`] = `
 
 .emotion-0 > [role="img"] {
   color: #ffffff;
-}
-
-.emotion-3[class] > * {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
 }
 
 .emotion-1 {
@@ -1650,7 +1650,7 @@ exports[`Avatar demo examples Snapshots: shapes 1`] = `
           shape="circle"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             shape="circle"
             size="large"
           >
@@ -1663,13 +1663,13 @@ exports[`Avatar demo examples Snapshots: shapes 1`] = `
                 C
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="rounded"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             shape="rounded"
             size="large"
           >
@@ -1682,13 +1682,13 @@ exports[`Avatar demo examples Snapshots: shapes 1`] = `
                 R
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="square"
           size="large"
         >
-          <Avatar
+          <Styled(span)
             shape="square"
             size="large"
           >
@@ -1701,7 +1701,7 @@ exports[`Avatar demo examples Snapshots: shapes 1`] = `
                 S
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
       </div>
     </Styled(div)>
@@ -1710,64 +1710,6 @@ exports[`Avatar demo examples Snapshots: shapes 1`] = `
 `;
 
 exports[`Avatar demo examples Snapshots: sizes 1`] = `
-.emotion-9 {
-  box-sizing: border-box;
-  color: #ffffff;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 2.5em;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #3272d9;
-  border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-weight: 700;
-  height: 2.5em;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  vertical-align: middle;
-  width: 2.5em;
-}
-
-.emotion-9 *,
-.emotion-9 *::before,
-.emotion-9 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-9 > abbr,
-.emotion-9 > span {
-  font-size: 1.125em;
-}
-
-.emotion-9 > abbr {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-9 > img {
-  border-radius: 100%;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  max-width: 100%;
-}
-
-.emotion-9 > [role="img"] {
-  color: #ffffff;
-}
-
 .emotion-16[class] > * {
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -1827,6 +1769,64 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-8 > [role="img"] {
+  color: #ffffff;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 2.5em;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3272d9;
+  border-radius: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  height: 2.5em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-9 > abbr,
+.emotion-9 > span {
+  font-size: 1.125em;
+}
+
+.emotion-9 > abbr {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-9 > img {
+  border-radius: 100%;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.emotion-9 > [role="img"] {
   color: #ffffff;
 }
 
@@ -2418,7 +2418,7 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
           shape="circle"
           size="small"
         >
-          <Avatar
+          <Styled(span)
             noBackground={true}
             shape="circle"
             size="small"
@@ -2431,13 +2431,13 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
                 src="/images/avatar.svg"
               />
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
           size="small"
         >
-          <Avatar
+          <Styled(span)
             shape="circle"
             size="small"
           >
@@ -2450,13 +2450,13 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
                 S
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
           size="small"
         >
-          <Avatar
+          <Styled(span)
             icon={
               <IconCloud
                 size="medium"
@@ -2468,6 +2468,105 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
           >
             <span
               className="emotion-3"
+            >
+              <IconCloud
+                size="medium"
+                title="cloud"
+              >
+                <Icon
+                  rtl={false}
+                  size="medium"
+                  title="cloud"
+                >
+                  <Styled(svg)
+                    aria-hidden={null}
+                    aria-labelledby="icon-title-icon-2"
+                    focusable="false"
+                    role="img"
+                    rtl={false}
+                    size="medium"
+                    viewBox="0 0 24 24"
+                  >
+                    <svg
+                      aria-hidden={null}
+                      aria-labelledby="icon-title-icon-2"
+                      className="emotion-2"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <title
+                        id="icon-title-icon-2"
+                      >
+                        cloud
+                      </title>
+                      <g>
+                        <path
+                          d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                        />
+                      </g>
+                    </svg>
+                  </Styled(svg)>
+                </Icon>
+              </IconCloud>
+            </span>
+          </Styled(span)>
+        </Avatar>
+        <br />
+        <Avatar
+          shape="circle"
+          size="medium"
+        >
+          <Styled(span)
+            noBackground={true}
+            shape="circle"
+            size="medium"
+          >
+            <span
+              className="emotion-4"
+            >
+              <img
+                alt="Melissa"
+                src="/images/avatar.svg"
+              />
+            </span>
+          </Styled(span)>
+        </Avatar>
+        <Avatar
+          shape="circle"
+          size="medium"
+        >
+          <Styled(span)
+            shape="circle"
+            size="medium"
+          >
+            <span
+              className="emotion-5"
+            >
+              <abbr
+                title="Melissa"
+              >
+                M
+              </abbr>
+            </span>
+          </Styled(span)>
+        </Avatar>
+        <Avatar
+          shape="circle"
+          size="medium"
+        >
+          <Styled(span)
+            icon={
+              <IconCloud
+                size="medium"
+                title="cloud"
+              />
+            }
+            shape="circle"
+            size="medium"
+          >
+            <span
+              className="emotion-7"
             >
               <IconCloud
                 size="medium"
@@ -2510,71 +2609,71 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
                 </Icon>
               </IconCloud>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <br />
         <Avatar
           shape="circle"
-          size="medium"
+          size="large"
         >
-          <Avatar
+          <Styled(span)
             noBackground={true}
             shape="circle"
-            size="medium"
+            size="large"
           >
             <span
-              className="emotion-4"
+              className="emotion-8"
             >
               <img
-                alt="Melissa"
+                alt="Larry"
                 src="/images/avatar.svg"
               />
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
-          size="medium"
+          size="large"
         >
-          <Avatar
+          <Styled(span)
             shape="circle"
-            size="medium"
+            size="large"
           >
             <span
-              className="emotion-5"
+              className="emotion-9"
             >
               <abbr
-                title="Melissa"
+                title="Larry"
               >
-                M
+                L
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
-          size="medium"
+          size="large"
         >
-          <Avatar
+          <Styled(span)
             icon={
               <IconCloud
-                size="medium"
+                size="1.5em"
                 title="cloud"
               />
             }
             shape="circle"
-            size="medium"
+            size="large"
           >
             <span
-              className="emotion-7"
+              className="emotion-11"
             >
               <IconCloud
-                size="medium"
+                size="1.5em"
                 title="cloud"
               >
                 <Icon
                   rtl={false}
-                  size="medium"
+                  size="1.5em"
                   title="cloud"
                 >
                   <Styled(svg)
@@ -2583,13 +2682,13 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
                     focusable="false"
                     role="img"
                     rtl={false}
-                    size="medium"
+                    size="1.5em"
                     viewBox="0 0 24 24"
                   >
                     <svg
                       aria-hidden={null}
                       aria-labelledby="icon-title-icon-4"
-                      className="emotion-2"
+                      className="emotion-10"
                       focusable="false"
                       role="img"
                       viewBox="0 0 24 24"
@@ -2609,52 +2708,52 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
                 </Icon>
               </IconCloud>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <br />
         <Avatar
           shape="circle"
-          size="large"
+          size="jumbo"
         >
-          <Avatar
+          <Styled(span)
             noBackground={true}
             shape="circle"
-            size="large"
+            size="jumbo"
           >
             <span
-              className="emotion-8"
+              className="emotion-12"
             >
               <img
-                alt="Larry"
+                alt="Jennifer"
                 src="/images/avatar.svg"
               />
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
-          size="large"
+          size="jumbo"
         >
-          <Avatar
+          <Styled(span)
             shape="circle"
-            size="large"
+            size="jumbo"
           >
             <span
-              className="emotion-9"
+              className="emotion-13"
             >
               <abbr
-                title="Larry"
+                title="Jennifer"
               >
-                L
+                J
               </abbr>
             </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
         <Avatar
           shape="circle"
-          size="large"
+          size="jumbo"
         >
-          <Avatar
+          <Styled(span)
             icon={
               <IconCloud
                 size="1.5em"
@@ -2662,10 +2761,10 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
               />
             }
             shape="circle"
-            size="large"
+            size="jumbo"
           >
             <span
-              className="emotion-11"
+              className="emotion-15"
             >
               <IconCloud
                 size="1.5em"
@@ -2708,106 +2807,7 @@ exports[`Avatar demo examples Snapshots: sizes 1`] = `
                 </Icon>
               </IconCloud>
             </span>
-          </Avatar>
-        </Avatar>
-        <br />
-        <Avatar
-          shape="circle"
-          size="jumbo"
-        >
-          <Avatar
-            noBackground={true}
-            shape="circle"
-            size="jumbo"
-          >
-            <span
-              className="emotion-12"
-            >
-              <img
-                alt="Jennifer"
-                src="/images/avatar.svg"
-              />
-            </span>
-          </Avatar>
-        </Avatar>
-        <Avatar
-          shape="circle"
-          size="jumbo"
-        >
-          <Avatar
-            shape="circle"
-            size="jumbo"
-          >
-            <span
-              className="emotion-13"
-            >
-              <abbr
-                title="Jennifer"
-              >
-                J
-              </abbr>
-            </span>
-          </Avatar>
-        </Avatar>
-        <Avatar
-          shape="circle"
-          size="jumbo"
-        >
-          <Avatar
-            icon={
-              <IconCloud
-                size="1.5em"
-                title="cloud"
-              />
-            }
-            shape="circle"
-            size="jumbo"
-          >
-            <span
-              className="emotion-15"
-            >
-              <IconCloud
-                size="1.5em"
-                title="cloud"
-              >
-                <Icon
-                  rtl={false}
-                  size="1.5em"
-                  title="cloud"
-                >
-                  <Styled(svg)
-                    aria-hidden={null}
-                    aria-labelledby="icon-title-icon-6"
-                    focusable="false"
-                    role="img"
-                    rtl={false}
-                    size="1.5em"
-                    viewBox="0 0 24 24"
-                  >
-                    <svg
-                      aria-hidden={null}
-                      aria-labelledby="icon-title-icon-6"
-                      className="emotion-10"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="icon-title-icon-6"
-                      >
-                        cloud
-                      </title>
-                      <g>
-                        <path
-                          d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                        />
-                      </g>
-                    </svg>
-                  </Styled(svg)>
-                </Icon>
-              </IconCloud>
-            </span>
-          </Avatar>
+          </Styled(span)>
         </Avatar>
       </div>
     </Styled(div)>

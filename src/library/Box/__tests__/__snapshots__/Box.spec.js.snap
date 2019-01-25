@@ -39,7 +39,6 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -104,7 +103,6 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   padding-bottom: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -154,7 +152,6 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 50%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -189,7 +186,6 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10em;
@@ -217,100 +213,182 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-12"
-  >
-    <Styled(Box)
-      element="div"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-12"
     >
-      <Box
-        className="emotion-1"
-        element="div"
-      >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
-        >
-          <div
-            className="emotion-0"
+      <DemoBox>
+        <Styled(Box)>
+          <Box
+            className="emotion-1"
           >
-            A
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      padding="lg"
-    >
-      <Box
-        className="emotion-4"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+            >
+              <div
+                className="emotion-0"
+              >
+                A
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         padding="lg"
       >
-        <Styled(div)
-          className="emotion-4"
-          element="div"
+        <Styled(Box)
           padding="lg"
         >
-          <div
-            className="emotion-3"
+          <Box
+            className="emotion-4"
+            padding="lg"
           >
-            B
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      marginRight="50%"
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-4"
+              padding="lg"
+            >
+              <div
+                className="emotion-3"
+              >
+                B
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         marginRight="50%"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           marginRight="50%"
         >
-          <div
-            className="emotion-6"
+          <Box
+            className="emotion-1"
+            marginRight="50%"
           >
-            C
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      marginHorizontal="auto"
-      width="10em"
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+              marginRight="50%"
+            >
+              <div
+                className="emotion-6"
+              >
+                C
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         marginHorizontal="auto"
         width="10em"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           marginHorizontal="auto"
           width="10em"
         >
-          <div
-            className="emotion-9"
+          <Box
+            className="emotion-1"
+            marginHorizontal="auto"
+            width="10em"
           >
-            D
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-  </div>
-</Styled(div)>
+            <Styled(div)
+              className="emotion-1"
+              marginHorizontal="auto"
+              width="10em"
+            >
+              <div
+                className="emotion-9"
+              >
+                D
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+    </div>
+  </Styled(div)>
+</DemoLayout>
+`;
+
+exports[`Box demo examples Snapshots: element 1`] = `
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
+  box-sizing: inherit;
+}
+
+<DemoBox
+  as="section"
+>
+  <Styled(Box)
+    as="section"
+  >
+    <Box
+      as="section"
+      className="emotion-1"
+    >
+      <Styled(div)
+        as="section"
+        className="emotion-1"
+      >
+        <section
+          className="emotion-0"
+        >
+          This renders as a section, instead of a div.
+        </section>
+      </Styled(div)>
+    </Box>
+  </Styled(Box)>
+</DemoBox>
 `;
 
 exports[`Box demo examples Snapshots: height 1`] = `
@@ -331,6 +409,19 @@ exports[`Box demo examples Snapshots: height 1`] = `
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-10 > * {
+  float: left;
+  width: 30%;
+}
+
+.emotion-10 > *[class] {
+  margin-bottom: 0;
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-right: 5%;
 }
 
 .emotion-9::after {
@@ -365,7 +456,6 @@ exports[`Box demo examples Snapshots: height 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   height: 10em;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -400,7 +490,6 @@ exports[`Box demo examples Snapshots: height 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   height: 100px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -435,7 +524,6 @@ exports[`Box demo examples Snapshots: height 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   height: 33.33333333333333%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -461,81 +549,96 @@ exports[`Box demo examples Snapshots: height 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-9"
+<Styled(DemoLayout)>
+  <DemoLayout
+    className="emotion-10"
   >
-    <Styled(Box)
-      element="div"
-      height="10em"
+    <Styled(div)
+      className="emotion-10"
     >
-      <Box
-        className="emotion-1"
-        element="div"
-        height="10em"
+      <div
+        className="emotion-9"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <DemoBox
           height="10em"
         >
-          <div
-            className="emotion-0"
+          <Styled(Box)
+            height="10em"
           >
-            A
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      height={100}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
-        height={100}
-      >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+            <Box
+              className="emotion-1"
+              height="10em"
+            >
+              <Styled(div)
+                className="emotion-1"
+                height="10em"
+              >
+                <div
+                  className="emotion-0"
+                >
+                  A
+                </div>
+              </Styled(div)>
+            </Box>
+          </Styled(Box)>
+        </DemoBox>
+        <DemoBox
           height={100}
         >
-          <div
-            className="emotion-3"
+          <Styled(Box)
+            height={100}
           >
-            B
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      height={0.3333333333333333}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
-        height={0.3333333333333333}
-      >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+            <Box
+              className="emotion-1"
+              height={100}
+            >
+              <Styled(div)
+                className="emotion-1"
+                height={100}
+              >
+                <div
+                  className="emotion-3"
+                >
+                  B
+                </div>
+              </Styled(div)>
+            </Box>
+          </Styled(Box)>
+        </DemoBox>
+        <DemoBox
           height={0.3333333333333333}
         >
-          <div
-            className="emotion-6"
+          <Styled(Box)
+            height={0.3333333333333333}
           >
-            C
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-  </div>
-</Styled(div)>
+            <Box
+              className="emotion-1"
+              height={0.3333333333333333}
+            >
+              <Styled(div)
+                className="emotion-1"
+                height={0.3333333333333333}
+              >
+                <div
+                  className="emotion-6"
+                >
+                  C
+                </div>
+              </Styled(div)>
+            </Box>
+          </Styled(Box)>
+        </DemoBox>
+      </div>
+    </Styled(div)>
+  </DemoLayout>
+</Styled(DemoLayout)>
 `;
 
 exports[`Box demo examples Snapshots: inline 1`] = `
+.emotion-10 > *[class] {
+  margin-bottom: 0;
+}
+
 .emotion-9::after {
   clear: both;
   content: "";
@@ -638,81 +741,93 @@ exports[`Box demo examples Snapshots: inline 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-9"
+<Styled(DemoLayout)>
+  <DemoLayout
+    className="emotion-10"
   >
-    <Styled(Box)
-      element="div"
-      inline={true}
+    <Styled(div)
+      className="emotion-10"
     >
-      <Box
-        className="emotion-1"
-        element="div"
-        inline={true}
+      <div
+        className="emotion-9"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <DemoBox
           inline={true}
         >
-          <div
-            className="emotion-0"
+          <Styled(Box)
+            inline={true}
           >
-            A
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      inline={true}
-      width={100}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
-        inline={true}
-        width={100}
-      >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+            <Box
+              className="emotion-1"
+              inline={true}
+            >
+              <Styled(div)
+                className="emotion-1"
+                inline={true}
+              >
+                <div
+                  className="emotion-0"
+                >
+                  A
+                </div>
+              </Styled(div)>
+            </Box>
+          </Styled(Box)>
+        </DemoBox>
+        <DemoBox
           inline={true}
           width={100}
         >
-          <div
-            className="emotion-3"
+          <Styled(Box)
+            inline={true}
+            width={100}
           >
-            B
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      inline={true}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
-        inline={true}
-      >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+            <Box
+              className="emotion-1"
+              inline={true}
+              width={100}
+            >
+              <Styled(div)
+                className="emotion-1"
+                inline={true}
+                width={100}
+              >
+                <div
+                  className="emotion-3"
+                >
+                  B
+                </div>
+              </Styled(div)>
+            </Box>
+          </Styled(Box)>
+        </DemoBox>
+        <DemoBox
           inline={true}
         >
-          <div
-            className="emotion-0"
+          <Styled(Box)
+            inline={true}
           >
-            C
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-  </div>
-</Styled(div)>
+            <Box
+              className="emotion-1"
+              inline={true}
+            >
+              <Styled(div)
+                className="emotion-1"
+                inline={true}
+              >
+                <div
+                  className="emotion-0"
+                >
+                  C
+                </div>
+              </Styled(div)>
+            </Box>
+          </Styled(Box)>
+        </DemoBox>
+      </div>
+    </Styled(div)>
+  </DemoLayout>
+</Styled(DemoLayout)>
 `;
 
 exports[`Box demo examples Snapshots: precedence 1`] = `
@@ -744,7 +859,6 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-bottom: 10px;
   margin-left: 30px;
   margin-right: 20px;
@@ -782,7 +896,6 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 30px;
@@ -820,7 +933,6 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-bottom: 10px;
   margin-left: 40px;
   margin-right: 20px;
@@ -858,7 +970,6 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 40px;
@@ -896,7 +1007,6 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -934,7 +1044,6 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
@@ -964,180 +1073,200 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
 }
 
 <div>
-  <Styled(Box)
-    element="div"
+  <DemoBox
     margin={10}
     marginHorizontal={20}
     marginStart={30}
   >
-    <Box
-      className="emotion-1"
-      element="div"
+    <Styled(Box)
       margin={10}
       marginHorizontal={20}
       marginStart={30}
     >
-      <Styled(div)
+      <Box
         className="emotion-1"
-        element="div"
         margin={10}
         marginHorizontal={20}
         marginStart={30}
       >
-        <div
-          className="emotion-0"
+        <Styled(div)
+          className="emotion-1"
+          margin={10}
+          marginHorizontal={20}
+          marginStart={30}
         >
-          10 20 10 30
-        </div>
-      </Styled(div)>
-    </Box>
-  </Styled(Box)>
-  <Styled(Box)
-    element="div"
+          <div
+            className="emotion-0"
+          >
+            10 20 10 30
+          </div>
+        </Styled(div)>
+      </Box>
+    </Styled(Box)>
+  </DemoBox>
+  <DemoBox
     margin={10}
     marginEnd={30}
     marginHorizontal={20}
   >
-    <Box
-      className="emotion-1"
-      element="div"
+    <Styled(Box)
       margin={10}
       marginEnd={30}
       marginHorizontal={20}
     >
-      <Styled(div)
+      <Box
         className="emotion-1"
-        element="div"
         margin={10}
         marginEnd={30}
         marginHorizontal={20}
       >
-        <div
-          className="emotion-3"
+        <Styled(div)
+          className="emotion-1"
+          margin={10}
+          marginEnd={30}
+          marginHorizontal={20}
         >
-          10 30 10 20
-        </div>
-      </Styled(div)>
-    </Box>
-  </Styled(Box)>
-  <Styled(Box)
-    element="div"
+          <div
+            className="emotion-3"
+          >
+            10 30 10 20
+          </div>
+        </Styled(div)>
+      </Box>
+    </Styled(Box)>
+  </DemoBox>
+  <DemoBox
     margin={10}
     marginHorizontal={20}
     marginLeft={40}
     marginStart={30}
   >
-    <Box
-      className="emotion-1"
-      element="div"
+    <Styled(Box)
       margin={10}
       marginHorizontal={20}
       marginLeft={40}
       marginStart={30}
     >
-      <Styled(div)
+      <Box
         className="emotion-1"
-        element="div"
         margin={10}
         marginHorizontal={20}
         marginLeft={40}
         marginStart={30}
       >
-        <div
-          className="emotion-6"
+        <Styled(div)
+          className="emotion-1"
+          margin={10}
+          marginHorizontal={20}
+          marginLeft={40}
+          marginStart={30}
         >
-          10 20 10 40
-        </div>
-      </Styled(div)>
-    </Box>
-  </Styled(Box)>
-  <Styled(Box)
-    element="div"
+          <div
+            className="emotion-6"
+          >
+            10 20 10 40
+          </div>
+        </Styled(div)>
+      </Box>
+    </Styled(Box)>
+  </DemoBox>
+  <DemoBox
     margin={10}
     marginEnd={30}
     marginHorizontal={20}
     marginRight={40}
   >
-    <Box
-      className="emotion-1"
-      element="div"
+    <Styled(Box)
       margin={10}
       marginEnd={30}
       marginHorizontal={20}
       marginRight={40}
     >
-      <Styled(div)
+      <Box
         className="emotion-1"
-        element="div"
         margin={10}
         marginEnd={30}
         marginHorizontal={20}
         marginRight={40}
       >
-        <div
-          className="emotion-9"
+        <Styled(div)
+          className="emotion-1"
+          margin={10}
+          marginEnd={30}
+          marginHorizontal={20}
+          marginRight={40}
         >
-          10 40 10 20
-        </div>
-      </Styled(div)>
-    </Box>
-  </Styled(Box)>
-  <Styled(Box)
-    element="div"
+          <div
+            className="emotion-9"
+          >
+            10 40 10 20
+          </div>
+        </Styled(div)>
+      </Box>
+    </Styled(Box)>
+  </DemoBox>
+  <DemoBox
     margin={10}
     marginTop={40}
     marginVertical={20}
   >
-    <Box
-      className="emotion-1"
-      element="div"
+    <Styled(Box)
       margin={10}
       marginTop={40}
       marginVertical={20}
     >
-      <Styled(div)
+      <Box
         className="emotion-1"
-        element="div"
         margin={10}
         marginTop={40}
         marginVertical={20}
       >
-        <div
-          className="emotion-12"
+        <Styled(div)
+          className="emotion-1"
+          margin={10}
+          marginTop={40}
+          marginVertical={20}
         >
-          40 10 20 10
-        </div>
-      </Styled(div)>
-    </Box>
-  </Styled(Box)>
-  <Styled(Box)
-    element="div"
+          <div
+            className="emotion-12"
+          >
+            40 10 20 10
+          </div>
+        </Styled(div)>
+      </Box>
+    </Styled(Box)>
+  </DemoBox>
+  <DemoBox
     margin={10}
     marginBottom={40}
     marginVertical={20}
   >
-    <Box
-      className="emotion-1"
-      element="div"
+    <Styled(Box)
       margin={10}
       marginBottom={40}
       marginVertical={20}
     >
-      <Styled(div)
+      <Box
         className="emotion-1"
-        element="div"
         margin={10}
         marginBottom={40}
         marginVertical={20}
       >
-        <div
-          className="emotion-15"
+        <Styled(div)
+          className="emotion-1"
+          margin={10}
+          marginBottom={40}
+          marginVertical={20}
         >
-          20 10 40 10
-        </div>
-      </Styled(div)>
-    </Box>
-  </Styled(Box)>
+          <div
+            className="emotion-15"
+          >
+            20 10 40 10
+          </div>
+        </Styled(div)>
+      </Box>
+    </Styled(Box)>
+  </DemoBox>
 </div>
 `;
 
@@ -1170,7 +1299,6 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 50px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1208,14 +1336,13 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
   }
 }
 
-<Styled(Box)
+<DemoBox
   breakpoints={
     Array [
       800,
       "wide",
     ]
   }
-  element="div"
   marginRight={
     Array [
       50,
@@ -1224,15 +1351,13 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
     ]
   }
 >
-  <Box
+  <Styled(Box)
     breakpoints={
       Array [
         800,
         "wide",
       ]
     }
-    className="emotion-1"
-    element="div"
     marginRight={
       Array [
         50,
@@ -1241,7 +1366,7 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
       ]
     }
   >
-    <Styled(div)
+    <Box
       breakpoints={
         Array [
           800,
@@ -1249,7 +1374,6 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
         ]
       }
       className="emotion-1"
-      element="div"
       marginRight={
         Array [
           50,
@@ -1258,14 +1382,31 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
         ]
       }
     >
-      <div
-        className="emotion-0"
+      <Styled(div)
+        breakpoints={
+          Array [
+            800,
+            "wide",
+          ]
+        }
+        className="emotion-1"
+        marginRight={
+          Array [
+            50,
+            100,
+            150,
+          ]
+        }
       >
-        A
-      </div>
-    </Styled(div)>
-  </Box>
-</Styled(Box)>
+        <div
+          className="emotion-0"
+        >
+          A
+        </div>
+      </Styled(div)>
+    </Box>
+  </Styled(Box)>
+</DemoBox>
 `;
 
 exports[`Box demo examples Snapshots: rtl 1`] = `
@@ -1307,7 +1448,6 @@ exports[`Box demo examples Snapshots: rtl 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-left: 1.5em;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1342,7 +1482,6 @@ exports[`Box demo examples Snapshots: rtl 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 1.5em;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1373,78 +1512,83 @@ exports[`Box demo examples Snapshots: rtl 1`] = `
 >
   <ThemeProvider>
     <ThemeProvider>
-      <Styled(div)>
-        <div
-          className="emotion-9"
-        >
-          <Styled(Box)
-            element="div"
-            marginLeft="lg"
+      <DemoLayout>
+        <Styled(div)>
+          <div
+            className="emotion-9"
           >
-            <Box
-              className="emotion-1"
-              element="div"
+            <DemoBox
               marginLeft="lg"
             >
-              <Styled(div)
-                className="emotion-1"
-                element="div"
+              <Styled(Box)
                 marginLeft="lg"
               >
-                <div
-                  className="emotion-0"
+                <Box
+                  className="emotion-1"
+                  marginLeft="lg"
                 >
-                  اليسار
-                </div>
-              </Styled(div)>
-            </Box>
-          </Styled(Box)>
-          <Styled(Box)
-            element="div"
-            marginStart="lg"
-          >
-            <Box
-              className="emotion-1"
-              element="div"
+                  <Styled(div)
+                    className="emotion-1"
+                    marginLeft="lg"
+                  >
+                    <div
+                      className="emotion-0"
+                    >
+                      اليسار
+                    </div>
+                  </Styled(div)>
+                </Box>
+              </Styled(Box)>
+            </DemoBox>
+            <DemoBox
               marginStart="lg"
             >
-              <Styled(div)
-                className="emotion-1"
-                element="div"
+              <Styled(Box)
                 marginStart="lg"
               >
-                <div
-                  className="emotion-3"
+                <Box
+                  className="emotion-1"
+                  marginStart="lg"
                 >
-                  بداية
-                </div>
-              </Styled(div)>
-            </Box>
-          </Styled(Box)>
-          <Styled(Box)
-            element="div"
-            marginEnd="lg"
-          >
-            <Box
-              className="emotion-1"
-              element="div"
+                  <Styled(div)
+                    className="emotion-1"
+                    marginStart="lg"
+                  >
+                    <div
+                      className="emotion-3"
+                    >
+                      بداية
+                    </div>
+                  </Styled(div)>
+                </Box>
+              </Styled(Box)>
+            </DemoBox>
+            <DemoBox
               marginEnd="lg"
             >
-              <Styled(div)
-                className="emotion-1"
-                element="div"
+              <Styled(Box)
                 marginEnd="lg"
               >
-                <div
-                  className="emotion-0"
+                <Box
+                  className="emotion-1"
+                  marginEnd="lg"
                 >
-                  النهاية
-                </div>
-              </Styled(div)>
-            </Box>
-          </Styled(Box)>
-        </div>
-      </Styled(div)>
+                  <Styled(div)
+                    className="emotion-1"
+                    marginEnd="lg"
+                  >
+                    <div
+                      className="emotion-0"
+                    >
+                      النهاية
+                    </div>
+                  </Styled(div)>
+                </Box>
+              </Styled(Box)>
+            </DemoBox>
+          </div>
+        </Styled(div)>
+      </DemoLayout>
     </ThemeProvider>
   </ThemeProvider>
 </div>
@@ -1489,7 +1633,6 @@ exports[`Box demo examples Snapshots: spacing 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1523,7 +1666,6 @@ exports[`Box demo examples Snapshots: spacing 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 2em;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1558,7 +1700,6 @@ exports[`Box demo examples Snapshots: spacing 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 6em;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1593,7 +1734,6 @@ exports[`Box demo examples Snapshots: spacing 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 120px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1628,7 +1768,6 @@ exports[`Box demo examples Snapshots: spacing 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 33.33333333333333%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1654,119 +1793,123 @@ exports[`Box demo examples Snapshots: spacing 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-15"
-  >
-    <Styled(Box)
-      element="div"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-15"
     >
-      <Box
-        className="emotion-1"
-        element="div"
-      >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
-        >
-          <div
-            className="emotion-0"
+      <DemoBox>
+        <Styled(Box)>
+          <Box
+            className="emotion-1"
           >
-            none
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      marginRight="xl"
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+            >
+              <div
+                className="emotion-0"
+              >
+                none
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         marginRight="xl"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           marginRight="xl"
         >
-          <div
-            className="emotion-3"
+          <Box
+            className="emotion-1"
+            marginRight="xl"
           >
-            xl
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      marginRight="6em"
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+              marginRight="xl"
+            >
+              <div
+                className="emotion-3"
+              >
+                xl
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         marginRight="6em"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           marginRight="6em"
         >
-          <div
-            className="emotion-6"
+          <Box
+            className="emotion-1"
+            marginRight="6em"
           >
-            6em
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      marginRight={120}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+              marginRight="6em"
+            >
+              <div
+                className="emotion-6"
+              >
+                6em
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         marginRight={120}
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           marginRight={120}
         >
-          <div
-            className="emotion-9"
+          <Box
+            className="emotion-1"
+            marginRight={120}
           >
-            120
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      marginRight={0.3333333333333333}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+              marginRight={120}
+            >
+              <div
+                className="emotion-9"
+              >
+                120
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         marginRight={0.3333333333333333}
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           marginRight={0.3333333333333333}
         >
-          <div
-            className="emotion-12"
+          <Box
+            className="emotion-1"
+            marginRight={0.3333333333333333}
           >
-            1/3
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-  </div>
-</Styled(div)>
+            <Styled(div)
+              className="emotion-1"
+              marginRight={0.3333333333333333}
+            >
+              <div
+                className="emotion-12"
+              >
+                1/3
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`Box demo examples Snapshots: width 1`] = `
@@ -1808,7 +1951,6 @@ exports[`Box demo examples Snapshots: width 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   width: 10em;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1843,7 +1985,6 @@ exports[`Box demo examples Snapshots: width 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   width: 100px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1878,7 +2019,6 @@ exports[`Box demo examples Snapshots: width 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   width: 33.33333333333333%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1904,76 +2044,81 @@ exports[`Box demo examples Snapshots: width 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-9"
-  >
-    <Styled(Box)
-      element="div"
-      width="10em"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-9"
     >
-      <Box
-        className="emotion-1"
-        element="div"
+      <DemoBox
         width="10em"
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           width="10em"
         >
-          <div
-            className="emotion-0"
+          <Box
+            className="emotion-1"
+            width="10em"
           >
-            A
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      width={100}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+              width="10em"
+            >
+              <div
+                className="emotion-0"
+              >
+                A
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         width={100}
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           width={100}
         >
-          <div
-            className="emotion-3"
+          <Box
+            className="emotion-1"
+            width={100}
           >
-            B
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-    <Styled(Box)
-      element="div"
-      width={0.3333333333333333}
-    >
-      <Box
-        className="emotion-1"
-        element="div"
+            <Styled(div)
+              className="emotion-1"
+              width={100}
+            >
+              <div
+                className="emotion-3"
+              >
+                B
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+      <DemoBox
         width={0.3333333333333333}
       >
-        <Styled(div)
-          className="emotion-1"
-          element="div"
+        <Styled(Box)
           width={0.3333333333333333}
         >
-          <div
-            className="emotion-6"
+          <Box
+            className="emotion-1"
+            width={0.3333333333333333}
           >
-            C
-          </div>
-        </Styled(div)>
-      </Box>
-    </Styled(Box)>
-  </div>
-</Styled(div)>
+            <Styled(div)
+              className="emotion-1"
+              width={0.3333333333333333}
+            >
+              <div
+                className="emotion-6"
+              >
+                C
+              </div>
+            </Styled(div)>
+          </Box>
+        </Styled(Box)>
+      </DemoBox>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
+.emotion-16 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-15 {
   box-sizing: border-box;
   color: #333840;
@@ -27,10 +31,6 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
 
 .emotion-15 > *:not(:last-child) {
   margin-bottom: 1em;
-}
-
-.emotion-16 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-4 {
@@ -69,7 +69,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -77,7 +77,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -280,7 +280,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                       size="large"
                       type="checkbox"
                     >
-                      <ChoiceGroup
+                      <Styled(div)
                         role="group"
                         size="large"
                       >
@@ -354,7 +354,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                       type="checkbox"
                                       value="fluorite"
                                     >
-                                      <Choice
+                                      <Styled(label)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -363,11 +363,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                         >
                                           <Styled(input)
                                             checked={false}
-                                            innerRef={[Function]}
                                             name="minerals"
                                             onChange={[Function]}
                                             onClick={[Function]}
-                                            size="large"
                                             type="checkbox"
                                             value="fluorite"
                                           >
@@ -377,12 +375,11 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                               name="minerals"
                                               onChange={[Function]}
                                               onClick={[Function]}
-                                              size="large"
                                               type="checkbox"
                                               value="fluorite"
                                             />
                                           </Styled(input)>
-                                          <Control
+                                          <Styled(span)
                                             size="large"
                                           >
                                             <span
@@ -418,8 +415,8 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                 </Icon>
                                               </IconCheckBoxCheck>
                                             </span>
-                                          </Control>
-                                          <Text
+                                          </Styled(span)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -428,9 +425,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                             >
                                               Fluorite
                                             </span>
-                                          </Text>
+                                          </Styled(span)>
                                         </label>
-                                      </Choice>
+                                      </Styled(label)>
                                     </Choice>
                                   </ThemeProvider>
                                 </ThemeProvider>
@@ -503,7 +500,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                       type="checkbox"
                                       value="magnetite"
                                     >
-                                      <Choice
+                                      <Styled(label)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -512,11 +509,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                         >
                                           <Styled(input)
                                             checked={true}
-                                            innerRef={[Function]}
                                             name="minerals"
                                             onChange={[Function]}
                                             onClick={[Function]}
-                                            size="large"
                                             type="checkbox"
                                             value="magnetite"
                                           >
@@ -526,12 +521,11 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                               name="minerals"
                                               onChange={[Function]}
                                               onClick={[Function]}
-                                              size="large"
                                               type="checkbox"
                                               value="magnetite"
                                             />
                                           </Styled(input)>
-                                          <Control
+                                          <Styled(span)
                                             size="large"
                                           >
                                             <span
@@ -567,8 +561,8 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                 </Icon>
                                               </IconCheckBoxCheck>
                                             </span>
-                                          </Control>
-                                          <Text
+                                          </Styled(span)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -577,9 +571,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                             >
                                               Magnetite
                                             </span>
-                                          </Text>
+                                          </Styled(span)>
                                         </label>
-                                      </Choice>
+                                      </Styled(label)>
                                     </Choice>
                                   </ThemeProvider>
                                 </ThemeProvider>
@@ -652,7 +646,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                       type="checkbox"
                                       value="quartz"
                                     >
-                                      <Choice
+                                      <Styled(label)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -661,11 +655,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                         >
                                           <Styled(input)
                                             checked={true}
-                                            innerRef={[Function]}
                                             name="minerals"
                                             onChange={[Function]}
                                             onClick={[Function]}
-                                            size="large"
                                             type="checkbox"
                                             value="quartz"
                                           >
@@ -675,12 +667,11 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                               name="minerals"
                                               onChange={[Function]}
                                               onClick={[Function]}
-                                              size="large"
                                               type="checkbox"
                                               value="quartz"
                                             />
                                           </Styled(input)>
-                                          <Control
+                                          <Styled(span)
                                             size="large"
                                           >
                                             <span
@@ -716,8 +707,8 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                 </Icon>
                                               </IconCheckBoxCheck>
                                             </span>
-                                          </Control>
-                                          <Text
+                                          </Styled(span)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -726,9 +717,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                             >
                                               Quartz
                                             </span>
-                                          </Text>
+                                          </Styled(span)>
                                         </label>
-                                      </Choice>
+                                      </Styled(label)>
                                     </Choice>
                                   </ThemeProvider>
                                 </ThemeProvider>
@@ -736,7 +727,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                             </WithTheme(Themed(Choice))>
                           </Checkbox>
                         </div>
-                      </ChoiceGroup>
+                      </Styled(div)>
                     </ChoiceGroup>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -751,6 +742,10 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
+.emotion-33 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-15 {
   box-sizing: border-box;
   color: #333840;
@@ -777,10 +772,6 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
 
 .emotion-15 > *:not(:last-child) {
   margin-bottom: 1em;
-}
-
-.emotion-33 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-4 {
@@ -819,7 +810,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -827,7 +818,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1030,7 +1021,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                   size="large"
                   type="checkbox"
                 >
-                  <ChoiceGroup
+                  <Styled(div)
                     role="group"
                     size="large"
                   >
@@ -1100,7 +1091,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                   type="checkbox"
                                   value="fluorite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -1109,10 +1100,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={false}
-                                        innerRef={[Function]}
                                         name="minerals-1"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="fluorite"
                                       >
@@ -1121,12 +1110,11 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                           defaultChecked={false}
                                           name="minerals-1"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="fluorite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -1162,8 +1150,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -1172,9 +1160,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         >
                                           Fluorite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -1243,7 +1231,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                   type="checkbox"
                                   value="magnetite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -1252,10 +1240,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals-1"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="magnetite"
                                       >
@@ -1264,12 +1250,11 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                           defaultChecked={true}
                                           name="minerals-1"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="magnetite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -1305,8 +1290,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -1315,9 +1300,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         >
                                           Magnetite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -1386,7 +1371,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                   type="checkbox"
                                   value="quartz"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -1395,10 +1380,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals-1"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="quartz"
                                       >
@@ -1407,12 +1390,11 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                           defaultChecked={true}
                                           name="minerals-1"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="quartz"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -1448,8 +1430,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -1458,9 +1440,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         >
                                           Quartz
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -1468,7 +1450,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
-                  </ChoiceGroup>
+                  </Styled(div)>
                 </ChoiceGroup>
               </ThemeProvider>
             </ThemeProvider>
@@ -1476,14 +1458,14 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
         </WithTheme(Themed(ChoiceGroup))>
       </CheckboxGroup>
       <FormFieldDivider>
-        <FormFieldDivider
+        <Styled(div)
           role="separator"
         >
           <div
             className="emotion-16"
             role="separator"
           />
-        </FormFieldDivider>
+        </Styled(div)>
       </FormFieldDivider>
       <CheckboxGroup
         defaultChecked={
@@ -1534,7 +1516,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                   size="large"
                   type="checkbox"
                 >
-                  <ChoiceGroup
+                  <Styled(div)
                     role="group"
                     size="large"
                   >
@@ -1604,7 +1586,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                   type="checkbox"
                                   value="azurite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -1613,10 +1595,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={false}
-                                        innerRef={[Function]}
                                         name="minerals-2"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="azurite"
                                       >
@@ -1625,12 +1605,11 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                           defaultChecked={false}
                                           name="minerals-2"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="azurite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -1666,8 +1645,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -1676,9 +1655,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         >
                                           Azurite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -1747,7 +1726,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                   type="checkbox"
                                   value="hematite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -1756,10 +1735,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals-2"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="hematite"
                                       >
@@ -1768,12 +1745,11 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                           defaultChecked={true}
                                           name="minerals-2"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="hematite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -1809,8 +1785,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -1819,9 +1795,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         >
                                           Hematite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -1890,7 +1866,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                   type="checkbox"
                                   value="pyrite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -1899,10 +1875,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals-2"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="pyrite"
                                       >
@@ -1911,12 +1885,11 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                           defaultChecked={true}
                                           name="minerals-2"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="pyrite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -1952,8 +1925,8 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -1962,9 +1935,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         >
                                           Pyrite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -1972,7 +1945,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
-                  </ChoiceGroup>
+                  </Styled(div)>
                 </ChoiceGroup>
               </ThemeProvider>
             </ThemeProvider>
@@ -1985,6 +1958,10 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
+.emotion-30 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-27 {
   box-sizing: border-box;
   color: #333840;
@@ -2011,10 +1988,6 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
 
 .emotion-27 > *:not(:last-child) {
   margin-bottom: 1em;
-}
-
-.emotion-30 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-6 {
@@ -2053,7 +2026,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
 }
 
 .emotion-2 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -2061,7 +2034,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -2229,19 +2202,19 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
         requiredText="Required"
         variant="success"
       >
-        <FormField>
+        <Styled(div)>
           <div
             className="emotion-29"
           >
             <div>
               <Styled(div)
-                key="formField-31-textWrapper"
+                key="formField-16-textWrapper"
               >
                 <div
                   className="emotion-1"
                 >
                   <span
-                    id="formField-31-labelText"
+                    id="formField-16-labelText"
                   >
                     What are the primary characteristics of a mineral?
                   </span>
@@ -2255,7 +2228,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                 </div>
               </Styled(div)>
               <CheckboxGroup
-                aria-describedby="formField-31-caption"
+                aria-describedby="formField-16-caption"
                 data={
                   Array [
                     Object {
@@ -2280,19 +2253,19 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                     },
                   ]
                 }
-                key="formField-31-control"
+                key="formField-16-control"
                 name="contact"
                 required={true}
                 rootProps={
                   Object {
-                    "aria-describedby": "formField-31-caption",
-                    "aria-labelledby": "formField-31-labelText",
+                    "aria-describedby": "formField-16-caption",
+                    "aria-labelledby": "formField-16-labelText",
                   }
                 }
                 variant="success"
               >
                 <WithTheme(Themed(ChoiceGroup))
-                  aria-describedby="formField-31-caption"
+                  aria-describedby="formField-16-caption"
                   data={
                     Array [
                       Object {
@@ -2322,15 +2295,15 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                   required={true}
                   rootProps={
                     Object {
-                      "aria-describedby": "formField-31-caption",
-                      "aria-labelledby": "formField-31-labelText",
+                      "aria-describedby": "formField-16-caption",
+                      "aria-labelledby": "formField-16-labelText",
                     }
                   }
                   type="checkbox"
                   variant="success"
                 >
                   <Themed(ChoiceGroup)
-                    aria-describedby="formField-31-caption"
+                    aria-describedby="formField-16-caption"
                     data={
                       Array [
                         Object {
@@ -2360,8 +2333,8 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                     required={true}
                     rootProps={
                       Object {
-                        "aria-describedby": "formField-31-caption",
-                        "aria-labelledby": "formField-31-labelText",
+                        "aria-describedby": "formField-16-caption",
+                        "aria-labelledby": "formField-16-labelText",
                       }
                     }
                     type="checkbox"
@@ -2370,7 +2343,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                     <ThemeProvider>
                       <ThemeProvider>
                         <ChoiceGroup
-                          aria-describedby="formField-31-caption"
+                          aria-describedby="formField-16-caption"
                           data={
                             Array [
                               Object {
@@ -2401,28 +2374,28 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                           role="group"
                           rootProps={
                             Object {
-                              "aria-describedby": "formField-31-caption",
-                              "aria-labelledby": "formField-31-labelText",
+                              "aria-describedby": "formField-16-caption",
+                              "aria-labelledby": "formField-16-labelText",
                             }
                           }
                           size="large"
                           type="checkbox"
                           variant="success"
                         >
-                          <ChoiceGroup
-                            aria-describedby="formField-31-caption"
-                            aria-labelledby="formField-31-labelText"
+                          <Styled(div)
+                            aria-describedby="formField-16-caption"
+                            aria-labelledby="formField-16-labelText"
                             role="group"
                             size="large"
                           >
                             <div
-                              aria-describedby="formField-31-caption"
-                              aria-labelledby="formField-31-labelText"
+                              aria-describedby="formField-16-caption"
+                              aria-labelledby="formField-16-labelText"
                               className="emotion-27"
                               role="group"
                             >
                               <Checkbox
-                                aria-describedby="formField-31-caption"
+                                aria-describedby="formField-16-caption"
                                 key="0"
                                 label="Naturally occurring"
                                 labelPosition="end"
@@ -2432,7 +2405,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-31-caption"
+                                  aria-describedby="formField-16-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Naturally occurring"
@@ -2450,7 +2423,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-31-caption"
+                                    aria-describedby="formField-16-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Naturally occurring"
@@ -2470,7 +2443,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-31-caption"
+                                          aria-describedby="formField-16-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Naturally occurring"
@@ -2487,7 +2460,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                           value="natural"
                                           variant="success"
                                         >
-                                          <Choice
+                                          <Styled(label)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -2495,26 +2468,23 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-31-caption"
-                                                innerRef={[Function]}
+                                                aria-describedby="formField-16-caption"
                                                 name="contact"
                                                 onClick={[Function]}
-                                                size="large"
                                                 type="checkbox"
                                                 value="natural"
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-31-caption"
+                                                  aria-describedby="formField-16-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
-                                                  size="large"
                                                   type="checkbox"
                                                   value="natural"
                                                 />
                                               </Styled(input)>
-                                              <Control
+                                              <Styled(span)
                                                 size="large"
                                               >
                                                 <span
@@ -2550,8 +2520,8 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </Control>
-                                              <Text
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
@@ -2560,9 +2530,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                 >
                                                   Naturally occurring
                                                 </span>
-                                              </Text>
+                                              </Styled(span)>
                                             </label>
-                                          </Choice>
+                                          </Styled(label)>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
@@ -2570,7 +2540,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-31-caption"
+                                aria-describedby="formField-16-caption"
                                 key="1"
                                 label="Inorganic"
                                 labelPosition="end"
@@ -2580,7 +2550,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-31-caption"
+                                  aria-describedby="formField-16-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Inorganic"
@@ -2598,7 +2568,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-31-caption"
+                                    aria-describedby="formField-16-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Inorganic"
@@ -2618,7 +2588,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-31-caption"
+                                          aria-describedby="formField-16-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Inorganic"
@@ -2635,7 +2605,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                           value="inorganic"
                                           variant="success"
                                         >
-                                          <Choice
+                                          <Styled(label)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -2643,26 +2613,23 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-31-caption"
-                                                innerRef={[Function]}
+                                                aria-describedby="formField-16-caption"
                                                 name="contact"
                                                 onClick={[Function]}
-                                                size="large"
                                                 type="checkbox"
                                                 value="inorganic"
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-31-caption"
+                                                  aria-describedby="formField-16-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
-                                                  size="large"
                                                   type="checkbox"
                                                   value="inorganic"
                                                 />
                                               </Styled(input)>
-                                              <Control
+                                              <Styled(span)
                                                 size="large"
                                               >
                                                 <span
@@ -2698,8 +2665,8 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </Control>
-                                              <Text
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
@@ -2708,9 +2675,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                 >
                                                   Inorganic
                                                 </span>
-                                              </Text>
+                                              </Styled(span)>
                                             </label>
-                                          </Choice>
+                                          </Styled(label)>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
@@ -2718,7 +2685,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-31-caption"
+                                aria-describedby="formField-16-caption"
                                 key="2"
                                 label="Solid"
                                 labelPosition="end"
@@ -2728,7 +2695,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-31-caption"
+                                  aria-describedby="formField-16-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Solid"
@@ -2746,7 +2713,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-31-caption"
+                                    aria-describedby="formField-16-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Solid"
@@ -2766,7 +2733,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-31-caption"
+                                          aria-describedby="formField-16-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Solid"
@@ -2783,7 +2750,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                           value="solid"
                                           variant="success"
                                         >
-                                          <Choice
+                                          <Styled(label)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -2791,26 +2758,23 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-31-caption"
-                                                innerRef={[Function]}
+                                                aria-describedby="formField-16-caption"
                                                 name="contact"
                                                 onClick={[Function]}
-                                                size="large"
                                                 type="checkbox"
                                                 value="solid"
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-31-caption"
+                                                  aria-describedby="formField-16-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
-                                                  size="large"
                                                   type="checkbox"
                                                   value="solid"
                                                 />
                                               </Styled(input)>
-                                              <Control
+                                              <Styled(span)
                                                 size="large"
                                               >
                                                 <span
@@ -2846,8 +2810,8 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </Control>
-                                              <Text
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
@@ -2856,9 +2820,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                 >
                                                   Solid
                                                 </span>
-                                              </Text>
+                                              </Styled(span)>
                                             </label>
-                                          </Choice>
+                                          </Styled(label)>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
@@ -2866,7 +2830,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-31-caption"
+                                aria-describedby="formField-16-caption"
                                 key="3"
                                 label="Definite chemical composition"
                                 labelPosition="end"
@@ -2876,7 +2840,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-31-caption"
+                                  aria-describedby="formField-16-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Definite chemical composition"
@@ -2894,7 +2858,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-31-caption"
+                                    aria-describedby="formField-16-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Definite chemical composition"
@@ -2914,7 +2878,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-31-caption"
+                                          aria-describedby="formField-16-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Definite chemical composition"
@@ -2931,7 +2895,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                           value="composition"
                                           variant="success"
                                         >
-                                          <Choice
+                                          <Styled(label)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -2939,26 +2903,23 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-31-caption"
-                                                innerRef={[Function]}
+                                                aria-describedby="formField-16-caption"
                                                 name="contact"
                                                 onClick={[Function]}
-                                                size="large"
                                                 type="checkbox"
                                                 value="composition"
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-31-caption"
+                                                  aria-describedby="formField-16-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
-                                                  size="large"
                                                   type="checkbox"
                                                   value="composition"
                                                 />
                                               </Styled(input)>
-                                              <Control
+                                              <Styled(span)
                                                 size="large"
                                               >
                                                 <span
@@ -2994,8 +2955,8 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </Control>
-                                              <Text
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
@@ -3004,9 +2965,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                 >
                                                   Definite chemical composition
                                                 </span>
-                                              </Text>
+                                              </Styled(span)>
                                             </label>
-                                          </Choice>
+                                          </Styled(label)>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
@@ -3014,7 +2975,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-31-caption"
+                                aria-describedby="formField-16-caption"
                                 key="4"
                                 label="Crystalline structure"
                                 labelPosition="end"
@@ -3024,7 +2985,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-31-caption"
+                                  aria-describedby="formField-16-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Crystalline structure"
@@ -3042,7 +3003,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-31-caption"
+                                    aria-describedby="formField-16-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Crystalline structure"
@@ -3062,7 +3023,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-31-caption"
+                                          aria-describedby="formField-16-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Crystalline structure"
@@ -3079,7 +3040,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                           value="crystalline"
                                           variant="success"
                                         >
-                                          <Choice
+                                          <Styled(label)
                                             labelPosition="end"
                                             size="large"
                                           >
@@ -3087,26 +3048,23 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-31-caption"
-                                                innerRef={[Function]}
+                                                aria-describedby="formField-16-caption"
                                                 name="contact"
                                                 onClick={[Function]}
-                                                size="large"
                                                 type="checkbox"
                                                 value="crystalline"
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-31-caption"
+                                                  aria-describedby="formField-16-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
-                                                  size="large"
                                                   type="checkbox"
                                                   value="crystalline"
                                                 />
                                               </Styled(input)>
-                                              <Control
+                                              <Styled(span)
                                                 size="large"
                                               >
                                                 <span
@@ -3142,8 +3100,8 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </Control>
-                                              <Text
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
@@ -3152,9 +3110,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                 >
                                                   Crystalline structure
                                                 </span>
-                                              </Text>
+                                              </Styled(span)>
                                             </label>
-                                          </Choice>
+                                          </Styled(label)>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
@@ -3162,7 +3120,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                             </div>
-                          </ChoiceGroup>
+                          </Styled(div)>
                         </ChoiceGroup>
                       </ThemeProvider>
                     </ThemeProvider>
@@ -3172,19 +3130,19 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
             </div>
             <Styled(div)
               caption="Hint: All of the above"
-              id="formField-31-caption"
+              id="formField-16-caption"
               isGroup={true}
               variant="success"
             >
               <div
                 className="emotion-28"
-                id="formField-31-caption"
+                id="formField-16-caption"
               >
                 Hint: All of the above
               </div>
             </Styled(div)>
           </div>
-        </FormField>
+        </Styled(div)>
       </FormField>
     </form>
   </Styled(form)>
@@ -3232,7 +3190,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -3240,7 +3198,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -3470,7 +3428,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                   size="large"
                   type="checkbox"
                 >
-                  <ChoiceGroup
+                  <Styled(div)
                     inline={true}
                     role="group"
                     size="large"
@@ -3541,7 +3499,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                   type="checkbox"
                                   value="fluorite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -3550,10 +3508,8 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={false}
-                                        innerRef={[Function]}
                                         name="minerals"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="fluorite"
                                       >
@@ -3562,12 +3518,11 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                           defaultChecked={false}
                                           name="minerals"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="fluorite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -3603,8 +3558,8 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -3613,9 +3568,9 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                         >
                                           Fluorite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -3684,7 +3639,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                   type="checkbox"
                                   value="magnetite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -3693,10 +3648,8 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="magnetite"
                                       >
@@ -3705,12 +3658,11 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                           defaultChecked={true}
                                           name="minerals"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="magnetite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -3746,8 +3698,8 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -3756,9 +3708,9 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                         >
                                           Magnetite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -3827,7 +3779,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                   type="checkbox"
                                   value="quartz"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -3836,10 +3788,8 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="quartz"
                                       >
@@ -3848,12 +3798,11 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                           defaultChecked={true}
                                           name="minerals"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="quartz"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -3889,8 +3838,8 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -3899,9 +3848,9 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                         >
                                           Quartz
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -3909,7 +3858,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                         </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
-                  </ChoiceGroup>
+                  </Styled(div)>
                 </ChoiceGroup>
               </ThemeProvider>
             </ThemeProvider>
@@ -3922,6 +3871,10 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
+.emotion-16 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-15 {
   box-sizing: border-box;
   color: #333840;
@@ -3948,10 +3901,6 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
 
 .emotion-15 > *:not(:last-child) {
   margin-bottom: 1em;
-}
-
-.emotion-16 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-4 {
@@ -3990,7 +3939,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -3998,7 +3947,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -4195,7 +4144,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                   size="large"
                   type="checkbox"
                 >
-                  <ChoiceGroup
+                  <Styled(div)
                     role="group"
                     size="large"
                   >
@@ -4265,7 +4214,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                   type="checkbox"
                                   value="fluorite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -4274,10 +4223,8 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={false}
-                                        innerRef={[Function]}
                                         name="minerals"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="fluorite"
                                       >
@@ -4286,12 +4233,11 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                           defaultChecked={false}
                                           name="minerals"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="fluorite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -4327,8 +4273,8 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -4337,9 +4283,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                         >
                                           Fluorite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -4408,7 +4354,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                   type="checkbox"
                                   value="magnetite"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -4417,10 +4363,8 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="magnetite"
                                       >
@@ -4429,12 +4373,11 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                           defaultChecked={true}
                                           name="minerals"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="magnetite"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -4470,8 +4413,8 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -4480,9 +4423,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                         >
                                           Magnetite
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -4551,7 +4494,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                   type="checkbox"
                                   value="quartz"
                                 >
-                                  <Choice
+                                  <Styled(label)
                                     labelPosition="end"
                                     size="large"
                                   >
@@ -4560,10 +4503,8 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                     >
                                       <Styled(input)
                                         defaultChecked={true}
-                                        innerRef={[Function]}
                                         name="minerals"
                                         onClick={[Function]}
-                                        size="large"
                                         type="checkbox"
                                         value="quartz"
                                       >
@@ -4572,12 +4513,11 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                           defaultChecked={true}
                                           name="minerals"
                                           onClick={[Function]}
-                                          size="large"
                                           type="checkbox"
                                           value="quartz"
                                         />
                                       </Styled(input)>
-                                      <Control
+                                      <Styled(span)
                                         size="large"
                                       >
                                         <span
@@ -4613,8 +4553,8 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </Control>
-                                      <Text
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
@@ -4623,9 +4563,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                         >
                                           Quartz
                                         </span>
-                                      </Text>
+                                      </Styled(span)>
                                     </label>
-                                  </Choice>
+                                  </Styled(label)>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
@@ -4633,7 +4573,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                         </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
-                  </ChoiceGroup>
+                  </Styled(div)>
                 </ChoiceGroup>
               </ThemeProvider>
             </ThemeProvider>

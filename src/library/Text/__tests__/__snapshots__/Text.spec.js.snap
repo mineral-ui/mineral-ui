@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[` 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  color: red;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 32px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
+  box-sizing: inherit;
+}
+
+<Text
+  appearance="h1"
+  as="h4"
+  noMargins={true}
+>
+  <TextProvider
+    appearance="h1"
+    as="h4"
+    noMargins={true}
+  >
+    <Styled(p)
+      appearance="h1"
+      as="h4"
+      defaultAppearance="p"
+      noMargins={true}
+    >
+      <h4
+        className="emotion-0"
+      >
+        Test
+      </h4>
+    </Styled(p)>
+  </TextProvider>
+</Text>
+`;
+
 exports[`Text demo examples Snapshots: alignment 1`] = `
 .emotion-0 {
   box-sizing: border-box;
@@ -65,17 +112,17 @@ exports[`Text demo examples Snapshots: alignment 1`] = `
   <Text
     align="end"
     appearance="p"
-    element="p"
   >
     <TextProvider
       align="end"
       appearance="p"
-      element="p"
+      as="p"
     >
       <Styled(p)
         align="end"
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-0"
@@ -88,17 +135,17 @@ exports[`Text demo examples Snapshots: alignment 1`] = `
   <Text
     align="center"
     appearance="p"
-    element="p"
   >
     <TextProvider
       align="center"
       appearance="p"
-      element="p"
+      as="p"
     >
       <Styled(p)
         align="center"
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-1"
@@ -111,17 +158,17 @@ exports[`Text demo examples Snapshots: alignment 1`] = `
   <Text
     align="justify"
     appearance="p"
-    element="p"
   >
     <TextProvider
       align="justify"
       appearance="p"
-      element="p"
+      as="p"
     >
       <Styled(p)
         align="justify"
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-2"
@@ -196,35 +243,36 @@ exports[`Text demo examples Snapshots: appearance 1`] = `
 <div>
   <Text
     appearance="h3"
-    element="h1"
+    as="h1"
   >
     <TextProvider
       appearance="h3"
-      element="h1"
+      as="h1"
     >
-      <Styled(h1)
+      <Styled(p)
         appearance="h3"
-        element="h1"
+        as="h1"
+        defaultAppearance="p"
       >
         <h1
           className="emotion-0"
         >
           Heading 1 which looks like a Heading 3
         </h1>
-      </Styled(h1)>
+      </Styled(p)>
     </TextProvider>
   </Text>
   <Text
     appearance="prose"
-    element="p"
   >
     <TextProvider
       appearance="prose"
-      element="p"
+      as="p"
     >
       <Styled(p)
         appearance="prose"
-        element="p"
+        as="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-1"
@@ -236,15 +284,15 @@ exports[`Text demo examples Snapshots: appearance 1`] = `
   </Text>
   <Text
     appearance="mouse"
-    element="p"
   >
     <TextProvider
       appearance="mouse"
-      element="p"
+      as="p"
     >
       <Styled(p)
         appearance="mouse"
-        element="p"
+        as="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-2"
@@ -286,15 +334,15 @@ exports[`Text demo examples Snapshots: basic 1`] = `
 
 <Text
   appearance="p"
-  element="p"
 >
   <TextProvider
     appearance="p"
-    element="p"
+    as="p"
   >
     <Styled(p)
       appearance="p"
-      element="p"
+      as="p"
+      defaultAppearance="p"
     >
       <p
         className="emotion-1"
@@ -405,17 +453,17 @@ exports[`Text demo examples Snapshots: color 1`] = `
   <Text
     appearance="p"
     color="#2a854e"
-    element="p"
   >
     <TextProvider
       appearance="p"
+      as="p"
       color="#2a854e"
-      element="p"
     >
       <Styled(p)
         appearance="p"
+        as="p"
         color="#2a854e"
-        element="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-0"
@@ -428,17 +476,17 @@ exports[`Text demo examples Snapshots: color 1`] = `
   <Text
     appearance="p"
     color="#d6246e"
-    element="p"
   >
     <TextProvider
       appearance="p"
+      as="p"
       color="#d6246e"
-      element="p"
     >
       <Styled(p)
         appearance="p"
+        as="p"
         color="#d6246e"
-        element="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-1"
@@ -457,19 +505,19 @@ exports[`Text demo examples Snapshots: color 1`] = `
       <Text
         appearance="p"
         color="#bfe7d4"
-        element="p"
         noMargins={true}
       >
         <TextProvider
           appearance="p"
+          as="p"
           color="#bfe7d4"
-          element="p"
           noMargins={true}
         >
           <Styled(p)
             appearance="p"
+            as="p"
             color="#bfe7d4"
-            element="p"
+            defaultAppearance="p"
             noMargins={true}
           >
             <p
@@ -569,17 +617,17 @@ exports[`Text demo examples Snapshots: font-weight 1`] = `
 <div>
   <Text
     appearance="p"
-    element="p"
     fontWeight="semiBold"
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       fontWeight="semiBold"
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         fontWeight="semiBold"
       >
         <p
@@ -592,17 +640,17 @@ exports[`Text demo examples Snapshots: font-weight 1`] = `
   </Text>
   <Text
     appearance="p"
-    element="p"
     fontWeight="bold"
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       fontWeight="bold"
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         fontWeight="bold"
       >
         <p
@@ -615,17 +663,17 @@ exports[`Text demo examples Snapshots: font-weight 1`] = `
   </Text>
   <Text
     appearance="p"
-    element="p"
     fontWeight="extraBold"
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       fontWeight="extraBold"
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         fontWeight="extraBold"
       >
         <p
@@ -638,17 +686,17 @@ exports[`Text demo examples Snapshots: font-weight 1`] = `
   </Text>
   <Text
     appearance="p"
-    element="p"
     fontWeight={300}
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       fontWeight={300}
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         fontWeight={300}
       >
         <p
@@ -784,122 +832,128 @@ exports[`Text demo examples Snapshots: headings 1`] = `
 <div>
   <Text
     appearance="p"
-    element="h1"
+    as="h1"
   >
     <TextProvider
       appearance="p"
-      element="h1"
+      as="h1"
     >
-      <Styled(h1)
+      <Styled(p)
         appearance="p"
-        element="h1"
+        as="h1"
+        defaultAppearance="p"
       >
         <h1
           className="emotion-0"
         >
           Heading 1
         </h1>
-      </Styled(h1)>
+      </Styled(p)>
     </TextProvider>
   </Text>
   <Text
     appearance="p"
-    element="h2"
+    as="h2"
   >
     <TextProvider
       appearance="p"
-      element="h2"
+      as="h2"
     >
-      <Styled(h2)
+      <Styled(p)
         appearance="p"
-        element="h2"
+        as="h2"
+        defaultAppearance="p"
       >
         <h2
           className="emotion-1"
         >
           Heading 2
         </h2>
-      </Styled(h2)>
+      </Styled(p)>
     </TextProvider>
   </Text>
   <Text
     appearance="p"
-    element="h3"
+    as="h3"
   >
     <TextProvider
       appearance="p"
-      element="h3"
+      as="h3"
     >
-      <Styled(h3)
+      <Styled(p)
         appearance="p"
-        element="h3"
+        as="h3"
+        defaultAppearance="p"
       >
         <h3
           className="emotion-2"
         >
           Heading 3
         </h3>
-      </Styled(h3)>
+      </Styled(p)>
     </TextProvider>
   </Text>
   <Text
     appearance="p"
-    element="h4"
+    as="h4"
   >
     <TextProvider
       appearance="p"
-      element="h4"
+      as="h4"
     >
-      <Styled(h4)
+      <Styled(p)
         appearance="p"
-        element="h4"
+        as="h4"
+        defaultAppearance="p"
       >
         <h4
           className="emotion-3"
         >
           Heading 4
         </h4>
-      </Styled(h4)>
+      </Styled(p)>
     </TextProvider>
   </Text>
   <Text
     appearance="p"
-    element="h5"
+    as="h5"
   >
     <TextProvider
       appearance="p"
-      element="h5"
+      as="h5"
     >
-      <Styled(h5)
+      <Styled(p)
         appearance="p"
-        element="h5"
+        as="h5"
+        defaultAppearance="p"
       >
         <h5
           className="emotion-4"
         >
           Heading 5
         </h5>
-      </Styled(h5)>
+      </Styled(p)>
     </TextProvider>
   </Text>
   <Text
     appearance="p"
-    element="h6"
+    as="h6"
   >
     <TextProvider
       appearance="p"
-      element="h6"
+      as="h6"
     >
-      <Styled(h6)
+      <Styled(p)
         appearance="p"
-        element="h6"
+        as="h6"
+        defaultAppearance="p"
       >
         <h6
           className="emotion-5"
         >
           Heading 6
         </h6>
-      </Styled(h6)>
+      </Styled(p)>
     </TextProvider>
   </Text>
 </div>
@@ -928,17 +982,18 @@ exports[`Text demo examples Snapshots: margin 1`] = `
 
 <Text
   appearance="p"
-  element="h1"
+  as="h1"
   noMargins={true}
 >
   <TextProvider
     appearance="p"
-    element="h1"
+    as="h1"
     noMargins={true}
   >
-    <Styled(h1)
+    <Styled(p)
       appearance="p"
-      element="h1"
+      as="h1"
+      defaultAppearance="p"
       noMargins={true}
     >
       <h1
@@ -946,7 +1001,7 @@ exports[`Text demo examples Snapshots: margin 1`] = `
       >
         Heading 1
       </h1>
-    </Styled(h1)>
+    </Styled(p)>
   </TextProvider>
 </Text>
 `;
@@ -1064,28 +1119,27 @@ exports[`Text demo examples Snapshots: nested 1`] = `
                 >
                   <Styled(Text)
                     appearance="p"
-                    element="p"
                     inherit={true}
                     noMargins={true}
                   >
                     <Text
                       appearance="p"
                       className="emotion-1"
-                      element="p"
                       inherit={true}
                       noMargins={true}
                     >
                       <TextProvider
                         appearance="p"
+                        as="p"
                         className="emotion-1"
-                        element="p"
                         inherit={true}
                         noMargins={true}
                       >
                         <Styled(p)
                           appearance="p"
+                          as="p"
                           className="emotion-1"
-                          element="p"
+                          defaultAppearance="p"
                           inherit={true}
                           noMargins={true}
                         >
@@ -1102,29 +1156,30 @@ exports[`Text demo examples Snapshots: nested 1`] = `
               </div>
             </Styled(div)>
             <withProps(Styled(Text))
-              element="div"
+              as="div"
             >
               <Styled(Text)
                 appearance="p"
-                element="div"
+                as="div"
                 noMargins={true}
               >
                 <Text
                   appearance="p"
+                  as="div"
                   className="emotion-1"
-                  element="div"
                   noMargins={true}
                 >
                   <TextProvider
                     appearance="p"
+                    as="div"
                     className="emotion-1"
-                    element="div"
                     noMargins={true}
                   >
-                    <Styled(div)
+                    <Styled(p)
                       appearance="p"
+                      as="div"
                       className="emotion-1"
-                      element="div"
+                      defaultAppearance="p"
                       noMargins={true}
                     >
                       <div
@@ -1145,29 +1200,28 @@ exports[`Text demo examples Snapshots: nested 1`] = `
                             >
                               <Styled(Text)
                                 appearance="p"
-                                element="p"
                                 inherit={false}
                                 noMargins={true}
                               >
                                 <Text
                                   appearance="p"
                                   className="emotion-1"
-                                  element="p"
                                   inherit={false}
                                   noMargins={true}
                                 >
                                   <TextProvider
                                     appearance="p"
+                                    as="p"
                                     className="emotion-1"
-                                    element="p"
                                     inherit={false}
                                     noMargins={true}
-                                    parentElement="div"
+                                    parentAs="div"
                                   >
                                     <Styled(p)
                                       appearance="p"
+                                      as="p"
                                       className="emotion-1"
-                                      element="p"
+                                      defaultAppearance="p"
                                       inherit={false}
                                       noMargins={true}
                                     >
@@ -1184,7 +1238,7 @@ exports[`Text demo examples Snapshots: nested 1`] = `
                           </div>
                         </Styled(div)>
                       </div>
-                    </Styled(div)>
+                    </Styled(p)>
                   </TextProvider>
                 </Text>
               </Styled(Text)>
@@ -1253,15 +1307,15 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
 <div>
   <Text
     appearance="prose"
-    element="p"
   >
     <TextProvider
       appearance="prose"
-      element="p"
+      as="p"
     >
       <Styled(p)
         appearance="prose"
-        element="p"
+        as="p"
+        defaultAppearance="p"
       >
         <p
           className="emotion-6"
@@ -1269,17 +1323,18 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
           This 
           <Text
             appearance="p"
-            element="strong"
+            as="strong"
           >
             <TextProvider
               appearance="p"
-              element="strong"
+              as="strong"
               inherit={true}
-              parentElement="p"
+              parentAs="p"
             >
-              <Styled(strong)
+              <Styled(p)
                 appearance="p"
-                element="strong"
+                as="strong"
+                defaultAppearance="p"
                 inherit={true}
               >
                 <strong
@@ -1287,23 +1342,24 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                 >
                   strong text
                 </strong>
-              </Styled(strong)>
+              </Styled(p)>
             </TextProvider>
           </Text>
            is in a 
           <Text
             appearance="p"
-            element="code"
+            as="code"
           >
             <TextProvider
               appearance="p"
-              element="code"
+              as="code"
               inherit={true}
-              parentElement="p"
+              parentAs="p"
             >
-              <Styled(code)
+              <Styled(p)
                 appearance="p"
-                element="code"
+                as="code"
+                defaultAppearance="p"
                 inherit={true}
               >
                 <code
@@ -1311,23 +1367,23 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                 >
                   paragraph
                 </code>
-              </Styled(code)>
+              </Styled(p)>
             </TextProvider>
           </Text>
           . 
           <Text
             appearance="p"
-            element="p"
           >
             <TextProvider
               appearance="p"
-              element="p"
+              as="p"
               inherit={true}
-              parentElement="p"
+              parentAs="p"
             >
-              <Styled(span)
+              <Styled(p)
                 appearance="p"
-                element="p"
+                as="span"
+                defaultAppearance="p"
                 inherit={true}
               >
                 <span
@@ -1336,17 +1392,17 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                   This 
                   <Text
                     appearance="p"
-                    element="p"
                   >
                     <TextProvider
                       appearance="p"
-                      element="p"
+                      as="p"
                       inherit={true}
-                      parentElement="p"
+                      parentAs="p"
                     >
-                      <Styled(span)
+                      <Styled(p)
                         appearance="p"
-                        element="p"
+                        as="span"
+                        defaultAppearance="p"
                         inherit={true}
                       >
                         <span
@@ -1354,21 +1410,19 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                         >
                           span text
                         </span>
-                      </Styled(span)>
+                      </Styled(p)>
                     </TextProvider>
                   </Text>
                    is in a span
                 </span>
-              </Styled(span)>
+              </Styled(p)>
             </TextProvider>
           </Text>
           This text is in a paragraph. 
           <Link
-            element="a"
             href="http://example.com"
           >
-            <Link
-              element="a"
+            <Styled(a)
               href="http://example.com"
             >
               <a
@@ -1377,17 +1431,17 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
               >
                 <Text
                   appearance="p"
-                  element="p"
                 >
                   <TextProvider
                     appearance="p"
-                    element="p"
+                    as="p"
                     inherit={true}
-                    parentElement="p"
+                    parentAs="p"
                   >
-                    <Styled(span)
+                    <Styled(p)
                       appearance="p"
-                      element="p"
+                      as="span"
+                      defaultAppearance="p"
                       inherit={true}
                     >
                       <span
@@ -1395,11 +1449,11 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                       >
                         This link has a span inside
                       </span>
-                    </Styled(span)>
+                    </Styled(p)>
                   </TextProvider>
                 </Text>
               </a>
-            </Link>
+            </Styled(a)>
           </Link>
         </p>
       </Styled(p)>
@@ -1408,15 +1462,16 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
   <hr />
   <Text
     appearance="prose"
-    element="div"
+    as="div"
   >
     <TextProvider
       appearance="prose"
-      element="div"
+      as="div"
     >
-      <Styled(div)
+      <Styled(p)
         appearance="prose"
-        element="div"
+        as="div"
+        defaultAppearance="p"
       >
         <div
           className="emotion-6"
@@ -1424,17 +1479,17 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
           This text is in a div 
           <Text
             appearance="p"
-            element="p"
           >
             <TextProvider
               appearance="p"
-              element="p"
+              as="p"
               inherit={true}
-              parentElement="div"
+              parentAs="div"
             >
               <Styled(p)
                 appearance="p"
-                element="p"
+                as="p"
+                defaultAppearance="p"
                 inherit={true}
               >
                 <p
@@ -1443,17 +1498,17 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                   This 
                   <Text
                     appearance="p"
-                    element="p"
                   >
                     <TextProvider
                       appearance="p"
-                      element="p"
+                      as="p"
                       inherit={true}
-                      parentElement="p"
+                      parentAs="p"
                     >
-                      <Styled(span)
+                      <Styled(p)
                         appearance="p"
-                        element="p"
+                        as="span"
+                        defaultAppearance="p"
                         inherit={true}
                       >
                         <span
@@ -1461,7 +1516,7 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
                         >
                           span text
                         </span>
-                      </Styled(span)>
+                      </Styled(p)>
                     </TextProvider>
                   </Text>
                    is in a paragraph
@@ -1470,7 +1525,7 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
             </TextProvider>
           </Text>
         </div>
-      </Styled(div)>
+      </Styled(p)>
     </TextProvider>
   </Text>
 </div>
@@ -1524,15 +1579,15 @@ exports[`Text demo examples Snapshots: rtl 1`] = `
       <div>
         <Text
           appearance="p"
-          element="p"
         >
           <TextProvider
             appearance="p"
-            element="p"
+            as="p"
           >
             <Styled(p)
               appearance="p"
-              element="p"
+              as="p"
+              defaultAppearance="p"
             >
               <p
                 className="emotion-0"
@@ -1545,17 +1600,17 @@ exports[`Text demo examples Snapshots: rtl 1`] = `
         <Text
           align="end"
           appearance="p"
-          element="p"
         >
           <TextProvider
             align="end"
             appearance="p"
-            element="p"
+            as="p"
           >
             <Styled(p)
               align="end"
               appearance="p"
-              element="p"
+              as="p"
+              defaultAppearance="p"
             >
               <p
                 className="emotion-1"
@@ -1647,17 +1702,17 @@ exports[`Text demo examples Snapshots: truncate 1`] = `
 <div>
   <Text
     appearance="p"
-    element="p"
     truncate={true}
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       truncate={true}
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         truncate={true}
       >
         <p
@@ -1670,17 +1725,17 @@ exports[`Text demo examples Snapshots: truncate 1`] = `
   </Text>
   <Text
     appearance="p"
-    element="p"
     truncate={200}
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       truncate={200}
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         truncate={200}
       >
         <p
@@ -1693,17 +1748,17 @@ exports[`Text demo examples Snapshots: truncate 1`] = `
   </Text>
   <Text
     appearance="p"
-    element="p"
     truncate="50%"
   >
     <TextProvider
       appearance="p"
-      element="p"
+      as="p"
       truncate="50%"
     >
       <Styled(p)
         appearance="p"
-        element="p"
+        as="p"
+        defaultAppearance="p"
         truncate="50%"
       >
         <p

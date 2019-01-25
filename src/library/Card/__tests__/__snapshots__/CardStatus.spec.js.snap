@@ -1,37 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardStatus demo examples Snapshots: basic 1`] = `
-.emotion-7 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #de1b1b;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0.875em;
-  font-weight: 400;
-}
-
-.emotion-7 > [role="img"] {
-  height: 0.75em;
-  margin-right: 0.5em;
-  width: 0.75em;
-}
-
-.emotion-6 {
-  fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
-}
-
 .emotion-27::after {
   clear: both;
   content: "";
@@ -147,6 +116,37 @@ exports[`CardStatus demo examples Snapshots: basic 1`] = `
   line-height: 1.5;
 }
 
+.emotion-7 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #de1b1b;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+.emotion-7 > [role="img"] {
+  height: 0.75em;
+  margin-right: 0.5em;
+  width: 0.75em;
+}
+
+.emotion-6 {
+  fill: currentcolor;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+}
+
 .emotion-16 {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -195,307 +195,302 @@ exports[`CardStatus demo examples Snapshots: basic 1`] = `
   width: 0.75em;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-27"
-  >
-    <Card>
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-27"
+    >
       <Card>
-        <div
-          className="emotion-8"
-        >
-          <CardTitle>
+        <Styled(div)>
+          <div
+            className="emotion-8"
+          >
             <CardTitle>
-              <div
-                className="emotion-3"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-2"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-1"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+              <Styled(div)>
+                <div
+                  className="emotion-3"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-2"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-5"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-4"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-          <CardStatus
-            variant="danger"
-          >
             <CardStatus
               variant="danger"
             >
-              <div
-                className="emotion-7"
+              <Styled(div)
+                variant="danger"
               >
-                <IconDangerSimple>
-                  <Icon
-                    rtl={false}
-                    size="medium"
-                  >
-                    <Styled(svg)
-                      aria-hidden={true}
-                      focusable="false"
-                      role="img"
+                <div
+                  className="emotion-7"
+                >
+                  <IconDangerSimple>
+                    <Icon
                       rtl={false}
                       size="medium"
-                      viewBox="0 0 24 24"
                     >
-                      <svg
+                      <Styled(svg)
                         aria-hidden={true}
-                        className="emotion-6"
                         focusable="false"
                         role="img"
+                        rtl={false}
+                        size="medium"
                         viewBox="0 0 24 24"
                       >
-                        <g>
-                          <path
-                            d="M3.94 20.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 18.993a.998.998 0 0 0 .867 1.499l-.001-.002z"
-                          />
-                        </g>
-                      </svg>
-                    </Styled(svg)>
-                  </Icon>
-                </IconDangerSimple>
-                Unavailable
-              </div>
+                        <svg
+                          aria-hidden={true}
+                          className="emotion-6"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 24 24"
+                        >
+                          <g>
+                            <path
+                              d="M3.94 20.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 18.993a.998.998 0 0 0 .867 1.499l-.001-.002z"
+                            />
+                          </g>
+                        </svg>
+                      </Styled(svg)>
+                    </Icon>
+                  </IconDangerSimple>
+                  Unavailable
+                </div>
+              </Styled(div)>
             </CardStatus>
-          </CardStatus>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-    <Card>
       <Card>
-        <div
-          className="emotion-8"
-        >
-          <CardTitle>
+        <Styled(div)>
+          <div
+            className="emotion-8"
+          >
             <CardTitle>
-              <div
-                className="emotion-3"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-2"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-1"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+              <Styled(div)>
+                <div
+                  className="emotion-3"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-2"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-5"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-4"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-          <CardStatus
-            variant="success"
-          >
             <CardStatus
               variant="success"
             >
-              <div
-                className="emotion-16"
+              <Styled(div)
+                variant="success"
               >
-                <IconSuccessSimple>
-                  <Icon
-                    rtl={false}
-                    size="medium"
-                  >
-                    <Styled(svg)
-                      aria-hidden={true}
-                      focusable="false"
-                      role="img"
+                <div
+                  className="emotion-16"
+                >
+                  <IconSuccessSimple>
+                    <Icon
                       rtl={false}
                       size="medium"
-                      viewBox="0 0 24 24"
                     >
-                      <svg
+                      <Styled(svg)
                         aria-hidden={true}
-                        className="emotion-6"
                         focusable="false"
                         role="img"
+                        rtl={false}
+                        size="medium"
                         viewBox="0 0 24 24"
                       >
-                        <g>
-                          <path
-                            d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9z"
-                          />
-                        </g>
-                      </svg>
-                    </Styled(svg)>
-                  </Icon>
-                </IconSuccessSimple>
-                Available
-              </div>
+                        <svg
+                          aria-hidden={true}
+                          className="emotion-6"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 24 24"
+                        >
+                          <g>
+                            <path
+                              d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9z"
+                            />
+                          </g>
+                        </svg>
+                      </Styled(svg)>
+                    </Icon>
+                  </IconSuccessSimple>
+                  Available
+                </div>
+              </Styled(div)>
             </CardStatus>
-          </CardStatus>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-    <Card>
       <Card>
-        <div
-          className="emotion-8"
-        >
-          <CardTitle>
+        <Styled(div)>
+          <div
+            className="emotion-8"
+          >
             <CardTitle>
-              <div
-                className="emotion-3"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-2"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-1"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+              <Styled(div)>
+                <div
+                  className="emotion-3"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-2"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-5"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-4"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-          <CardStatus
-            variant="warning"
-          >
             <CardStatus
               variant="warning"
             >
-              <div
-                className="emotion-25"
+              <Styled(div)
+                variant="warning"
               >
-                <IconWarningSimple>
-                  <Icon
-                    rtl={false}
-                    size="medium"
-                  >
-                    <Styled(svg)
-                      aria-hidden={true}
-                      focusable="false"
-                      role="img"
+                <div
+                  className="emotion-25"
+                >
+                  <IconWarningSimple>
+                    <Icon
                       rtl={false}
                       size="medium"
-                      viewBox="0 0 24 24"
                     >
-                      <svg
+                      <Styled(svg)
                         aria-hidden={true}
-                        className="emotion-6"
                         focusable="false"
                         role="img"
+                        rtl={false}
+                        size="medium"
                         viewBox="0 0 24 24"
                       >
-                        <g>
-                          <path
-                            d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0z"
-                          />
-                        </g>
-                      </svg>
-                    </Styled(svg)>
-                  </Icon>
-                </IconWarningSimple>
-                Warning
-              </div>
+                        <svg
+                          aria-hidden={true}
+                          className="emotion-6"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 24 24"
+                        >
+                          <g>
+                            <path
+                              d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0z"
+                            />
+                          </g>
+                        </svg>
+                      </Styled(svg)>
+                    </Icon>
+                  </IconWarningSimple>
+                  Warning
+                </div>
+              </Styled(div)>
             </CardStatus>
-          </CardStatus>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`CardStatus demo examples Snapshots: rtl 1`] = `
-.emotion-2 {
-  fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
-}
-
 .emotion-5::after {
   clear: both;
   content: "";
@@ -564,6 +559,13 @@ exports[`CardStatus demo examples Snapshots: rtl 1`] = `
   line-height: 1.5;
 }
 
+.emotion-2 {
+  fill: currentcolor;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+}
+
 .emotion-3 {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -588,84 +590,88 @@ exports[`CardStatus demo examples Snapshots: rtl 1`] = `
   width: 0.75em;
 }
 
-<Styled(div)
+<DemoLayout
   dir="rtl"
 >
-  <div
-    className="emotion-5"
+  <Styled(div)
     dir="rtl"
   >
-    <ThemeProvider>
+    <div
+      className="emotion-5"
+      dir="rtl"
+    >
       <ThemeProvider>
-        <Card>
+        <ThemeProvider>
           <Card>
-            <div
-              className="emotion-4"
-            >
-              <CardBlock>
+            <Styled(div)>
+              <div
+                className="emotion-4"
+              >
                 <CardBlock>
-                  <div
-                    className="emotion-1"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-0"
-                      >
-                        
+                  <Styled(div)>
+                    <div
+                      className="emotion-1"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-0"
+                        >
+                          
   خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
 
-                      </div>
-                    </Styled(div)>
-                  </div>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
                 </CardBlock>
-              </CardBlock>
-              <CardStatus
-                variant="danger"
-              >
                 <CardStatus
                   variant="danger"
                 >
-                  <div
-                    className="emotion-3"
+                  <Styled(div)
+                    variant="danger"
                   >
-                    <IconDangerSimple>
-                      <Icon
-                        rtl={false}
-                        size="medium"
-                      >
-                        <Styled(svg)
-                          aria-hidden={true}
-                          focusable="false"
-                          role="img"
+                    <div
+                      className="emotion-3"
+                    >
+                      <IconDangerSimple>
+                        <Icon
                           rtl={false}
                           size="medium"
-                          viewBox="0 0 24 24"
                         >
-                          <svg
+                          <Styled(svg)
                             aria-hidden={true}
-                            className="emotion-2"
                             focusable="false"
                             role="img"
+                            rtl={false}
+                            size="medium"
                             viewBox="0 0 24 24"
                           >
-                            <g>
-                              <path
-                                d="M3.94 20.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 18.993a.998.998 0 0 0 .867 1.499l-.001-.002z"
-                              />
-                            </g>
-                          </svg>
-                        </Styled(svg)>
-                      </Icon>
-                    </IconDangerSimple>
-                    غير متوفره
-                  </div>
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-2"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M3.94 20.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 18.993a.998.998 0 0 0 .867 1.499l-.001-.002z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconDangerSimple>
+                      غير متوفره
+                    </div>
+                  </Styled(div)>
                 </CardStatus>
-              </CardStatus>
-            </div>
+              </div>
+            </Styled(div)>
           </Card>
-        </Card>
+        </ThemeProvider>
       </ThemeProvider>
-    </ThemeProvider>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

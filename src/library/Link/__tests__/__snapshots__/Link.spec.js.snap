@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link demo examples Snapshots: basic 1`] = `
+.emotion-8 {
+  font-family: "Open Sans";
+}
+
+.emotion-1 {
+  font-size: 1.5em;
+}
+
 .emotion-0 {
   color: #3272d9;
   -webkit-text-decoration: none;
@@ -23,14 +31,6 @@ exports[`Link demo examples Snapshots: basic 1`] = `
   color: #1d5bbf;
 }
 
-.emotion-8 {
-  font-family: "Open Sans";
-}
-
-.emotion-1 {
-  font-size: 1.5em;
-}
-
 .emotion-3 {
   font-size: 0.75em;
 }
@@ -43,136 +43,130 @@ exports[`Link demo examples Snapshots: basic 1`] = `
   font-family: serif;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-8"
-  >
-    <Styled(p)>
-      <p
-        className="emotion-1"
-      >
-        Lorem ipsum dolor sit amet, 
-        <Link
-          href="http://example.com"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-8"
+    >
+      <Styled(p)>
+        <p
+          className="emotion-1"
         >
+          Lorem ipsum dolor sit amet, 
           <Link
-            element="a"
             href="http://example.com"
-            target="_blank"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
             >
-              <a
-                className="emotion-0"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
               >
-                consectetur
-              </a>
+                <a
+                  className="emotion-0"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  consectetur
+                </a>
+              </Styled(a)>
             </Link>
           </Link>
-        </Link>
-         adipiscing elit,
-      </p>
-    </Styled(p)>
-    <Styled(p)>
-      <p
-        className="emotion-3"
-      >
-        sed do eiusmod tempor 
-        <Link
-          href="http://example.com"
+           adipiscing elit,
+        </p>
+      </Styled(p)>
+      <Styled(p)>
+        <p
+          className="emotion-3"
         >
+          sed do eiusmod tempor 
           <Link
-            element="a"
             href="http://example.com"
-            target="_blank"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
             >
-              <a
-                className="emotion-0"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
               >
-                incididunt
-              </a>
+                <a
+                  className="emotion-0"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  incididunt
+                </a>
+              </Styled(a)>
             </Link>
           </Link>
-        </Link>
-         ut labore et dolore magna aliqua.
-      </p>
-    </Styled(p)>
-    <Styled(p)>
-      <p
-        className="emotion-5"
-      >
-        Ut enim 
-        <Link
-          href="http://example.com"
+           ut labore et dolore magna aliqua.
+        </p>
+      </Styled(p)>
+      <Styled(p)>
+        <p
+          className="emotion-5"
         >
+          Ut enim 
           <Link
-            element="a"
             href="http://example.com"
-            target="_blank"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
             >
-              <a
-                className="emotion-0"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
               >
-                ad minim veniam
-              </a>
+                <a
+                  className="emotion-0"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  ad minim veniam
+                </a>
+              </Styled(a)>
             </Link>
           </Link>
-        </Link>
-         quis nostrud exercitation
-      </p>
-    </Styled(p)>
-    <Styled(p)>
-      <p
-        className="emotion-7"
-      >
-        ullamco laboris 
-        <Link
-          href="http://example.com"
+           quis nostrud exercitation
+        </p>
+      </Styled(p)>
+      <Styled(p)>
+        <p
+          className="emotion-7"
         >
+          ullamco laboris 
           <Link
-            element="a"
             href="http://example.com"
-            target="_blank"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
             >
-              <a
-                className="emotion-0"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
               >
-                nisi ut
-              </a>
+                <a
+                  className="emotion-0"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  nisi ut
+                </a>
+              </Styled(a)>
             </Link>
           </Link>
-        </Link>
-         aliquip ex ea commodo consequat.
-      </p>
-    </Styled(p)>
-  </div>
-</Styled(div)>
+           aliquip ex ea commodo consequat.
+        </p>
+      </Styled(p)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`Link demo examples Snapshots: button 1`] = `
@@ -297,41 +291,46 @@ exports[`Link demo examples Snapshots: button 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-<Button
-  element="a"
+<WithForwardRef(Button)
+  as="a"
   href="#button"
   size="large"
-  type="button"
 >
   <Button
-    element="a"
+    as="a"
+    forwardedRef={null}
     href="#button"
     size="large"
-    text="Link"
-    type="button"
   >
-    <a
-      className="emotion-2"
+    <Styled(button)
+      as="a"
       href="#button"
+      size="large"
+      text="Link"
     >
-      <Styled(span)>
-        <span
-          className="emotion-1"
-        >
-          <Styled(span)
-            size="large"
+      <a
+        className="emotion-2"
+        href="#button"
+      >
+        <Styled(span)>
+          <span
+            className="emotion-1"
           >
-            <span
-              className="emotion-0"
+            <Styled(span)
+              size="large"
             >
-              Link
-            </span>
-          </Styled(span)>
-        </span>
-      </Styled(span)>
-    </a>
+              <span
+                className="emotion-0"
+              >
+                Link
+              </span>
+            </Styled(span)>
+          </span>
+        </Styled(span)>
+      </a>
+    </Styled(button)>
   </Button>
-</Button>
+</WithForwardRef(Button)>
 `;
 
 exports[`Link demo examples Snapshots: children 1`] = `
@@ -361,12 +360,10 @@ exports[`Link demo examples Snapshots: children 1`] = `
   href="http://example.com"
 >
   <Link
-    element="a"
     href="http://example.com"
     target="_blank"
   >
-    <Link
-      element="a"
+    <Styled(a)
       href="http://example.com"
       target="_blank"
     >
@@ -380,12 +377,16 @@ exports[`Link demo examples Snapshots: children 1`] = `
           src="/images/125x125.png"
         />
       </a>
-    </Link>
+    </Styled(a)>
   </Link>
 </Link>
 `;
 
 exports[`Link demo examples Snapshots: other 1`] = `
+.emotion-2 {
+  font-family: "Open Sans";
+}
+
 .emotion-0 {
   color: #3272d9;
   -webkit-text-decoration: none;
@@ -408,65 +409,62 @@ exports[`Link demo examples Snapshots: other 1`] = `
   color: #1d5bbf;
 }
 
-.emotion-2 {
-  font-family: "Open Sans";
-}
-
-<Styled(div)>
-  <div
-    className="emotion-2"
-  >
-    <BrowserRouter>
-      <Router
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-2"
+    >
+      <BrowserRouter>
+        <Router
+          history={
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
           }
-        }
-      >
-        <Link
-          element={[Function]}
-          to="/components/link"
         >
           <Link
-            element={[Function]}
-            replace={false}
+            as={[Function]}
             to="/components/link"
           >
-            <Link
-              className="emotion-0"
-              replace={false}
+            <Styled(a)
+              as={[Function]}
               to="/components/link"
             >
-              <a
+              <Link
                 className="emotion-0"
-                href="/components/link"
-                onClick={[Function]}
+                replace={false}
+                to="/components/link"
               >
-                ReactRouter Link
-              </a>
-            </Link>
+                <a
+                  className="emotion-0"
+                  href="/components/link"
+                  onClick={[Function]}
+                >
+                  ReactRouter Link
+                </a>
+              </Link>
+            </Styled(a)>
           </Link>
-        </Link>
-      </Router>
-    </BrowserRouter>
-  </div>
-</Styled(div)>
+        </Router>
+      </BrowserRouter>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`Link demo examples Snapshots: variants 1`] = `
@@ -597,7 +595,7 @@ exports[`Link demo examples Snapshots: variants 1`] = `
   color: #8a4d03;
 }
 
-<withProps(Styled(DemoLayout))>
+<DemoLayout>
   <Styled(DemoLayout)
     marginRight="1em"
   >
@@ -617,12 +615,10 @@ exports[`Link demo examples Snapshots: variants 1`] = `
             href="http://example.com"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
             >
-              <Link
-                element="a"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
               >
@@ -633,7 +629,7 @@ exports[`Link demo examples Snapshots: variants 1`] = `
                 >
                   Default
                 </a>
-              </Link>
+              </Styled(a)>
             </Link>
           </Link>
           <Link
@@ -641,13 +637,11 @@ exports[`Link demo examples Snapshots: variants 1`] = `
             variant="danger"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
               variant="danger"
             >
-              <Link
-                element="a"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
                 variant="danger"
@@ -659,7 +653,7 @@ exports[`Link demo examples Snapshots: variants 1`] = `
                 >
                   Danger
                 </a>
-              </Link>
+              </Styled(a)>
             </Link>
           </Link>
           <Link
@@ -667,13 +661,11 @@ exports[`Link demo examples Snapshots: variants 1`] = `
             variant="success"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
               variant="success"
             >
-              <Link
-                element="a"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
                 variant="success"
@@ -685,7 +677,7 @@ exports[`Link demo examples Snapshots: variants 1`] = `
                 >
                   Success
                 </a>
-              </Link>
+              </Styled(a)>
             </Link>
           </Link>
           <Link
@@ -693,13 +685,11 @@ exports[`Link demo examples Snapshots: variants 1`] = `
             variant="warning"
           >
             <Link
-              element="a"
               href="http://example.com"
               target="_blank"
               variant="warning"
             >
-              <Link
-                element="a"
+              <Styled(a)
                 href="http://example.com"
                 target="_blank"
                 variant="warning"
@@ -711,12 +701,12 @@ exports[`Link demo examples Snapshots: variants 1`] = `
                 >
                   Warning
                 </a>
-              </Link>
+              </Styled(a)>
             </Link>
           </Link>
         </div>
       </Styled(div)>
     </DemoLayout>
   </Styled(DemoLayout)>
-</withProps(Styled(DemoLayout))>
+</DemoLayout>
 `;
