@@ -15,7 +15,7 @@ PR's should be kept as small and focused, and not include more than one feature 
 
 If your PR adds new features or changes existing code, please attempt to write tests covering the new behavior.
 
-If you wish to add a new component, please begin the conversation by either reaching out to us directly or by opening a PR adding a [New Component RFC](./rfcs/_new-component.md).
+If you wish to add a new component, please begin the conversation by either reaching out to us directly or by opening a PR adding a [New Component RFC](./docs/rfcs/_new-component.md).
 
 For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](./.github/PULL_REQUEST_TEMPLATE.md), and all authors must sign the [Contributor License Agreement ("CLA")](https://cla-assistant.io/mineral-ui/mineral-ui).
 
