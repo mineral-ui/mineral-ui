@@ -5,7 +5,6 @@ import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import TextArea from '../TextArea';
 import examples from '../../../website/app/demos/TextArea/TextArea/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 function shallowTextArea(props = {}) {
   const textAreaProps = {
@@ -32,10 +31,6 @@ describe('TextArea', () => {
     const textArea = shallowTextArea();
 
     expect(textArea.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(<TextArea />, ['TextArea_backgroundColor']);
   });
 
   it('calls onInput when input changes', () => {

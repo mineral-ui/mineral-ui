@@ -6,12 +6,10 @@ import Button from '../../Button';
 import { MenuItem } from '../../Menu';
 import Select from '../../Select';
 import SelectTrigger from '../../Select/SelectTrigger';
-import Pagination, { paginationTheme } from '../';
+import Pagination from '../index';
 import examples from '../../../website/app/demos/Pagination/Pagination/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 const defaultProps = {
   currentPage: 1,
@@ -90,27 +88,12 @@ const findPageSizer = (pagination) => {
 };
 
 describe('Pagination', () => {
-  testDemoExamples(examples, {
-    contextPolyfill: true
-  });
+  testDemoExamples(examples);
 
   it('renders', () => {
     const [, pagination] = mountPagination();
 
     expect(pagination.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <Pagination
-        currentPage={1}
-        onPageChange={jest.fn()}
-        pageSize={10}
-        totalCount={100}
-        showPageJumper
-      />,
-      getProcessedComponentThemeKeys(paginationTheme)
-    );
   });
 
   describe('Page Jumper', () => {

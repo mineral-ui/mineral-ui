@@ -5,7 +5,6 @@ import { mountInWrapper } from '../../../../utils/enzymeUtils';
 import Checkbox from '../Checkbox';
 import examples from '../../../website/app/demos/Checkbox/Checkbox/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 const defaultProps = {
   label: 'example'
@@ -26,12 +25,6 @@ describe('Checkbox', () => {
     const checkbox = shallowCheckbox();
 
     expect(checkbox.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(<Checkbox label="test" />, [
-      'CheckboxControl_backgroundColor'
-    ]);
   });
 
   describe('indeterminate', () => {

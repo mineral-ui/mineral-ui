@@ -2,6 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
+  getSerializedHTML,
   mountInThemeProvider,
   mountInWrapper
 } from '../../../../utils/enzymeUtils';
@@ -15,7 +16,6 @@ import TableRow from '../TableRow';
 import TableSortableHeaderCell from '../TableSortableHeaderCell';
 import examples from '../../../website/app/demos/Table/Table/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 import type { RenderFn } from '../types';
 
@@ -66,29 +66,15 @@ const findCheckedCheckboxes = (table) => {
     .findWhere((n) => n.type() === Checkbox && n.props().checked);
 };
 
-// Needed to run jest:react for snapshot testing in old versions of React
-const REGEX_REACT_TEXT = /<!-- react-text: \d+ -->(.*)<!-- \/react-text -->/g;
-const stripReactTextTags = (string: string) => {
-  return string.replace(REGEX_REACT_TEXT, '$1');
-};
-
 describe('Table', () => {
   testDemoExamples(examples, {
-    exclude: ['large-data-sets'],
-    contextPolyfill: true
+    exclude: ['large-data-sets']
   });
 
   it('renders', () => {
     const table = shallowTable();
 
     expect(table.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <Table id="test" data={defaultProps.data} title="test" />,
-      ['Table_outline_focus']
-    );
   });
 
   describe('selectable', () => {
@@ -406,7 +392,7 @@ describe('Table', () => {
         wrapper.update();
         table = wrapper.find(Table);
         const sortedData = table.find(TableBase).props().data;
-        const headerCellHtml = stripReactTextTags(headerCell.html());
+        const headerCellHtml = getSerializedHTML(headerCell);
 
         expect(sortedData).toMatchSnapshot();
         expect(headerCellHtml).toMatchSnapshot();
@@ -422,7 +408,7 @@ describe('Table', () => {
         wrapper.update();
         table = wrapper.find(Table);
         const sortedData = table.find(TableBase).props().data;
-        const headerCellHtml = stripReactTextTags(headerCell.html());
+        const headerCellHtml = getSerializedHTML(headerCell);
 
         expect(sortedData).toMatchSnapshot();
         expect(headerCellHtml).toMatchSnapshot();
@@ -440,10 +426,8 @@ describe('Table', () => {
         wrapper.update();
         table = wrapper.find(Table);
         const sortedData = table.find(TableBase).props().data;
-        const headerCellHtml = stripReactTextTags(headerCell.html());
-        const secondHeaderCellHtml = stripReactTextTags(
-          secondHeaderCell.html()
-        );
+        const headerCellHtml = getSerializedHTML(headerCell);
+        const secondHeaderCellHtml = getSerializedHTML(secondHeaderCell);
 
         expect(sortedData).toMatchSnapshot();
         expect(headerCellHtml).toMatchSnapshot('Idle');

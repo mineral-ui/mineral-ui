@@ -3,10 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import CardStatus from '../CardStatus';
 import examples from '../../../website/app/demos/Card/CardStatus/examples';
-import { cardStatusTheme } from '../themes';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 function shallowCardStatus(props = {}) {
   const cardStatusProps = {
@@ -24,12 +21,5 @@ describe('CardStatus', () => {
     const cardStatus = shallowCardStatus();
 
     expect(cardStatus.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <CardStatus variant="danger">children</CardStatus>,
-      getProcessedComponentThemeKeys(cardStatusTheme)
-    );
   });
 });

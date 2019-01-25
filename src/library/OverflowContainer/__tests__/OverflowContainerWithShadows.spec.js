@@ -1,11 +1,7 @@
 /* @flow */
 import React from 'react';
-import { mineralTheme } from '../../themes';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
-import { overflowContainerWithShadowsTheme } from '../themes';
 import OverflowContainerWithShadows from '../OverflowContainerWithShadows';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 /*
  * [1] This getter does not exist on the HTMLElement.prototype in JSDOM, so we
@@ -33,23 +29,6 @@ describe('OverflowContainerWithShadows', () => {
     const [, overflowContainer] = mountOverflowContainerWithShadows();
 
     expect(overflowContainer.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <OverflowContainerWithShadows {...defaultProps} />,
-      getProcessedComponentThemeKeys(
-        overflowContainerWithShadowsTheme(mineralTheme),
-        {
-          excludeKeys: [
-            'OverflowContainerWithShadows_boxShadowBottom',
-            'OverflowContainerWithShadows_boxShadowLeft',
-            'OverflowContainerWithShadows_boxShadowRight',
-            'OverflowContainerWithShadows_boxShadowTop'
-          ]
-        }
-      )
-    );
   });
 
   it('does not apply shadow when not scrollable', () => {

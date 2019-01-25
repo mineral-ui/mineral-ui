@@ -4,12 +4,10 @@ import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import { DropdownContent } from '../../Dropdown';
 import { MenuItem } from '../../Menu';
-import Select, { selectTheme } from '../';
+import Select from '../index';
 import SelectTrigger from '../../Select/SelectTrigger';
 import examples from '../../../website/app/demos/Select/Select/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 import type { MenuItems } from '../../Menu/types';
 
@@ -92,25 +90,6 @@ describe('Select', () => {
 
       expect(select.exists()).toEqual(true);
     });
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <Select data={data} id="test" isOpen>
-        <button>trigger</button>
-      </Select>,
-      getProcessedComponentThemeKeys(selectTheme, {
-        excludeKeys: [
-          'Select_color',
-          'Select_color_readOnly',
-          'Select_fontSize_small',
-          'Select_paddingHorizontal_small',
-          'Select_height_small',
-          'Select_height_medium',
-          'Select_height_jumbo'
-        ]
-      })
-    );
   });
 
   describe('mounted in DOM', () => {

@@ -2,12 +2,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import { menuItemTheme } from '../themes';
 import MenuItem from '../MenuItem';
 import examples from '../../../website/app/demos/Menu/MenuItem/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 function shallowMenuItem(props = {}) {
   const menuItemProps = {
@@ -38,15 +35,6 @@ describe('MenuItem', () => {
 
       expect(menuItem.exists()).toEqual(true);
     });
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <MenuItem secondaryText="test">test</MenuItem>,
-      getProcessedComponentThemeKeys(menuItemTheme, {
-        excludeKeys: ['MenuItem_backgroundColor_selectedHover']
-      })
-    );
   });
 
   describe('click', () => {

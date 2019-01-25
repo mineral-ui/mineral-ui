@@ -2,14 +2,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import Popover, { popoverTheme } from '../';
+import Popover from '../index';
 import PopoverArrow from '../PopoverArrow';
 import PopoverContent from '../PopoverContent';
 import PopoverTrigger from '../PopoverTrigger';
 import examples from '../../../website/app/demos/Popover/Popover/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 import type { PopoverRenderFn } from '../types';
 
@@ -60,15 +58,6 @@ describe('Popover', () => {
 
       expect(arrow.exists()).toEqual(false);
     });
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <Popover content={<div>content</div>}>
-        <button>trigger</button>
-      </Popover>,
-      getProcessedComponentThemeKeys(popoverTheme)
-    );
   });
 
   describe('event handler composition', () => {

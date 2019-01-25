@@ -1,9 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Tab, tabTheme } from '../';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
+import { Tab } from '../index';
 
 function shallowTab(props = {}) {
   const tabProps = {
@@ -22,21 +20,5 @@ describe('Tab', () => {
     const tabs = shallowTab();
 
     expect(tabs.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    const tabProps = {
-      id: 'test',
-      index: 0,
-      title: 'Test',
-      panelId: 'panel',
-      selected: true
-    };
-    testThemeOverrides(
-      <Tab {...tabProps}>test</Tab>,
-      getProcessedComponentThemeKeys(tabTheme, {
-        excludeKeys: ['Tab_color']
-      })
-    );
   });
 });

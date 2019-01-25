@@ -2,8 +2,16 @@
 import React, { cloneElement } from 'react';
 import { renderToString } from 'react-dom/server';
 import { mount } from 'enzyme';
-import type { ReactWrapper } from 'enzyme';
 import ThemeProvider from '../src/library/themes/ThemeProvider';
+
+import type { ReactWrapper } from 'enzyme';
+
+// This regex is likely specific to emotion ('css-[lowercaseandnumberhash]-DisplayName')
+const REGEX_CLASSNAME_HASH = /css-[a-z0-9]+/g;
+
+export const getSerializedHTML = (mountedComponent: ReactWrapper) =>
+  // mountedComponent.html();
+  mountedComponent.html().replace(REGEX_CLASSNAME_HASH, 'css-emotion');
 
 export const mountInWrapper = (component: React$Element<*>) => {
   // eslint-disable-next-line react/display-name
@@ -53,8 +61,8 @@ export const mountInThemeProvider = (
   return [themeProvider, component];
 };
 
-export const ssrInThemeProvider = (Component: React$Element<*>) => {
-  return renderToString(<ThemeProvider>{Component}</ThemeProvider>);
+export const ssrInThemeProvider = (element: React$Element<*>) => {
+  return renderToString(<ThemeProvider>{element}</ThemeProvider>);
 };
 
 export const spyOn = (wrapper: ReactWrapper, method: string) => {

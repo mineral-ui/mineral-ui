@@ -1,11 +1,9 @@
 /* @flow */
 import React from 'react';
-import { SecondaryNav, secondaryNavTheme } from '../';
+import { SecondaryNav } from '../index';
 import examples from '../../../website/app/demos/Navigation/SecondaryNav/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import { mountInWrapper } from '../../../../utils/enzymeUtils';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 const defaultProps = {
   items: [
@@ -40,20 +38,5 @@ describe('SecondaryNav', () => {
     const wrapper = mountSecondaryNav();
 
     expect(wrapper.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <SecondaryNav {...defaultProps} />,
-      getProcessedComponentThemeKeys(secondaryNavTheme).filter(
-        (key) => key.indexOf('tabs') === -1
-      )
-    );
-    testThemeOverrides(
-      <SecondaryNav {...defaultProps} type="tabs" />,
-      getProcessedComponentThemeKeys(secondaryNavTheme).filter(
-        (key) => key.indexOf('pills') === -1
-      )
-    );
   });
 });

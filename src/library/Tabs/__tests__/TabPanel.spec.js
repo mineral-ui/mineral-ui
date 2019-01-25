@@ -1,9 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { TabPanel, tabPanelTheme } from '../';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
+import { TabPanel } from '../index';
 
 function shallowTabPanel() {
   return shallow(<TabPanel />);
@@ -14,12 +12,5 @@ describe('TabPanel', () => {
     const tabs = shallowTabPanel();
 
     expect(tabs.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <TabPanel />,
-      getProcessedComponentThemeKeys(tabPanelTheme)
-    );
   });
 });
