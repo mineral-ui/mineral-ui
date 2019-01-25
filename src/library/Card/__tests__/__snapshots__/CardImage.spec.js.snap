@@ -133,78 +133,80 @@ exports[`CardImage demo examples Snapshots: with-image 1`] = `
   line-height: 1.5;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-8"
-  >
-    <Card>
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-8"
+    >
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardImage
-            alt="gradient image"
-            src="/images/500x281.png"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
             <CardImage
               alt="gradient image"
               src="/images/500x281.png"
             >
-              <img
+              <Styled(img)
                 alt="gradient image"
-                className="emotion-0"
                 src="/images/500x281.png"
-              />
+              >
+                <img
+                  alt="gradient image"
+                  className="emotion-0"
+                  src="/images/500x281.png"
+                />
+              </Styled(img)>
             </CardImage>
-          </CardImage>
-          <CardTitle>
             <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-2"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-1"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-2"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-1"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

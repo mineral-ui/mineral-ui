@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox demo examples Snapshots: controlled 1`] = `
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -37,7 +41,7 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -45,7 +49,7 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -119,10 +123,6 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-15 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 <Component>
@@ -200,7 +200,7 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                       type="checkbox"
                       value="fluorite"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="large"
                       >
@@ -209,11 +209,9 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                         >
                           <Styled(input)
                             checked={false}
-                            innerRef={[Function]}
                             name="minerals"
                             onChange={[Function]}
                             onClick={[Function]}
-                            size="large"
                             type="checkbox"
                             value="fluorite"
                           >
@@ -223,12 +221,11 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                               name="minerals"
                               onChange={[Function]}
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                               value="fluorite"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="large"
                           >
                             <span
@@ -264,8 +261,8 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="large"
                           >
@@ -274,9 +271,9 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                             >
                               Fluorite
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -348,7 +345,7 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                       type="checkbox"
                       value="quartz"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="large"
                       >
@@ -357,11 +354,9 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                         >
                           <Styled(input)
                             checked={true}
-                            innerRef={[Function]}
                             name="minerals"
                             onChange={[Function]}
                             onClick={[Function]}
-                            size="large"
                             type="checkbox"
                             value="quartz"
                           >
@@ -371,12 +366,11 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                               name="minerals"
                               onChange={[Function]}
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                               value="quartz"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="large"
                           >
                             <span
@@ -412,8 +406,8 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="large"
                           >
@@ -422,9 +416,9 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                             >
                               Quartz
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -496,7 +490,7 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                       type="checkbox"
                       value="magnetite"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="large"
                       >
@@ -505,11 +499,9 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                         >
                           <Styled(input)
                             checked={true}
-                            innerRef={[Function]}
                             name="minerals"
                             onChange={[Function]}
                             onClick={[Function]}
-                            size="large"
                             type="checkbox"
                             value="magnetite"
                           >
@@ -519,12 +511,11 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                               name="minerals"
                               onChange={[Function]}
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                               value="magnetite"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="large"
                           >
                             <span
@@ -560,8 +551,8 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="large"
                           >
@@ -570,9 +561,9 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
                             >
                               Magnetite
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -587,8 +578,12 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: disabled 1`] = `
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -596,7 +591,7 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -630,10 +625,6 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
   font-size: 16px;
   height: 1em;
   width: 1em;
-}
-
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-4 {
@@ -771,7 +762,7 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                   type="checkbox"
                   value="quartz"
                 >
-                  <Choice
+                  <Styled(label)
                     disabled={true}
                     labelPosition="end"
                     size="large"
@@ -781,9 +772,7 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                     >
                       <Styled(input)
                         disabled={true}
-                        innerRef={[Function]}
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="quartz"
                       >
@@ -791,12 +780,11 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                           className="emotion-0"
                           disabled={true}
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         disabled={true}
                         size="large"
                       >
@@ -833,8 +821,8 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         disabled={true}
                         labelPosition="end"
                         size="large"
@@ -844,9 +832,9 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                         >
                           Quartz
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -914,7 +902,7 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                   type="checkbox"
                   value="magnetite"
                 >
-                  <Choice
+                  <Styled(label)
                     disabled={true}
                     labelPosition="end"
                     size="large"
@@ -925,9 +913,7 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                       <Styled(input)
                         defaultChecked={true}
                         disabled={true}
-                        innerRef={[Function]}
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="magnetite"
                       >
@@ -936,12 +922,11 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                           defaultChecked={true}
                           disabled={true}
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         disabled={true}
                         size="large"
                       >
@@ -978,8 +963,8 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         disabled={true}
                         labelPosition="end"
                         size="large"
@@ -989,9 +974,9 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -1004,8 +989,12 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -1013,7 +1002,7 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1082,10 +1071,6 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
   width: 1em;
 }
 
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -1133,7 +1118,7 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -1141,7 +1126,7 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1208,7 +1193,7 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
                   size="large"
                   type="checkbox"
                 >
-                  <Choice
+                  <Styled(label)
                     hideLabel={true}
                     labelPosition="end"
                     size="large"
@@ -1217,19 +1202,16 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
                       className="emotion-4"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                       >
                         <input
                           className="emotion-0"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -1265,8 +1247,8 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         hideLabel={true}
                         labelPosition="end"
                         size="large"
@@ -1276,9 +1258,9 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
                         >
                           Select All
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -1291,6 +1273,10 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -1327,7 +1313,7 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -1335,7 +1321,7 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1409,10 +1395,6 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 <Component>
@@ -1487,7 +1469,7 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
                       type="checkbox"
                       value="indeterminate"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="large"
                       >
@@ -1495,11 +1477,9 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
                           className="emotion-4"
                         >
                           <Styled(input)
-                            innerRef={[Function]}
                             name="indeterminate"
                             onChange={[Function]}
                             onClick={[Function]}
-                            size="large"
                             type="checkbox"
                             value="indeterminate"
                           >
@@ -1508,12 +1488,11 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
                               name="indeterminate"
                               onChange={[Function]}
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                               value="indeterminate"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="large"
                           >
                             <span
@@ -1549,8 +1528,8 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
                                 </Icon>
                               </IconCheckBoxIndeterminate>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="large"
                           >
@@ -1559,9 +1538,9 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
                             >
                               Indeterminate
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -1612,7 +1591,7 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -1620,7 +1599,7 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1884,7 +1863,7 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
                       type="checkbox"
                       value="1"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="large"
                       >
@@ -1892,21 +1871,18 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
                           className="emotion-4"
                         >
                           <Styled(input)
-                            innerRef={[Function]}
                             onClick={[Function]}
-                            size="large"
                             type="checkbox"
                             value="1"
                           >
                             <input
                               className="emotion-0"
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                               value="1"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="large"
                           >
                             <span
@@ -1942,8 +1918,8 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="large"
                           >
@@ -1952,51 +1928,52 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
                             >
                               Option 1
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(Choice)>
             </WithTheme(Themed(Choice))>
           </Checkbox>
-          <Button
-            element="button"
+          <WithForwardRef(Button)
             onClick={[Function]}
             size="large"
-            type="button"
           >
             <Button
-              element="button"
+              forwardedRef={null}
               onClick={[Function]}
               size="large"
-              text="Focus the input"
-              type="button"
             >
-              <button
-                className="emotion-7"
+              <Styled(button)
                 onClick={[Function]}
-                type="button"
+                size="large"
+                text="Focus the input"
               >
-                <Styled(span)>
-                  <span
-                    className="emotion-6"
-                  >
-                    <Styled(span)
-                      size="large"
+                <button
+                  className="emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-6"
                     >
-                      <span
-                        className="emotion-5"
+                      <Styled(span)
+                        size="large"
                       >
-                        Focus the input
-                      </span>
-                    </Styled(span)>
-                  </span>
-                </Styled(span)>
-              </button>
+                        <span
+                          className="emotion-5"
+                        >
+                          Focus the input
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </button>
+              </Styled(button)>
             </Button>
-          </Button>
+          </WithForwardRef(Button)>
         </div>
       </Styled(div)>
     </DemoLayout>
@@ -2005,6 +1982,10 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: invalid 1`] = `
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -2041,7 +2022,7 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -2049,7 +2030,7 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -2123,10 +2104,6 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -2202,7 +2179,7 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                   type="checkbox"
                   value="quartz"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -2212,10 +2189,8 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                       <Styled(input)
                         aria-invalid={true}
                         defaultChecked={true}
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="quartz"
                       >
@@ -2225,12 +2200,11 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                           defaultChecked={true}
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -2266,8 +2240,8 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -2276,9 +2250,9 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                         >
                           Quartz
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -2346,7 +2320,7 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                   type="checkbox"
                   value="magnetite"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -2355,10 +2329,8 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                     >
                       <Styled(input)
                         aria-invalid={true}
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="magnetite"
                       >
@@ -2367,12 +2339,11 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                           className="emotion-0"
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -2408,8 +2379,8 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -2418,9 +2389,9 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -2433,6 +2404,10 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] = `
+.emotion-23 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -2469,7 +2444,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -2477,7 +2452,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -2551,10 +2526,6 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-23 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-5 {
@@ -2752,7 +2723,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                   type="checkbox"
                   value="quartz"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -2760,10 +2731,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                       className="emotion-4"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="quartz"
                       >
@@ -2771,12 +2740,11 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                           className="emotion-0"
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -2812,8 +2780,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -2822,9 +2790,9 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                         >
                           Quartz
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -2832,14 +2800,14 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
         </WithTheme(Themed(Choice))>
       </Checkbox>
       <FormFieldDivider>
-        <FormFieldDivider
+        <Styled(div)
           role="separator"
         >
           <div
             className="emotion-5"
             role="separator"
           />
-        </FormFieldDivider>
+        </Styled(div)>
       </FormFieldDivider>
       <Checkbox
         label="Magnetite"
@@ -2898,7 +2866,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                   type="checkbox"
                   value="magnetite"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="start"
                     size="large"
                   >
@@ -2906,10 +2874,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                       className="emotion-10"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="magnetite"
                       >
@@ -2917,12 +2883,11 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                           className="emotion-0"
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -2958,8 +2923,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="start"
                         size="large"
                       >
@@ -2968,9 +2933,9 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                         >
                           Magnetite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -2978,14 +2943,14 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
         </WithTheme(Themed(Choice))>
       </Checkbox>
       <FormFieldDivider>
-        <FormFieldDivider
+        <Styled(div)
           role="separator"
         >
           <div
             className="emotion-5"
             role="separator"
           />
-        </FormFieldDivider>
+        </Styled(div)>
       </FormFieldDivider>
       <Checkbox
         justify={true}
@@ -3048,7 +3013,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                   type="checkbox"
                   value="azurite"
                 >
-                  <Choice
+                  <Styled(label)
                     justify={true}
                     labelPosition="end"
                     size="large"
@@ -3057,10 +3022,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                       className="emotion-16"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="azurite"
                       >
@@ -3068,12 +3031,11 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                           className="emotion-0"
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="azurite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -3109,8 +3071,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         justify={true}
                         labelPosition="end"
                         size="large"
@@ -3120,9 +3082,9 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                         >
                           Azurite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -3130,14 +3092,14 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
         </WithTheme(Themed(Choice))>
       </Checkbox>
       <FormFieldDivider>
-        <FormFieldDivider
+        <Styled(div)
           role="separator"
         >
           <div
             className="emotion-5"
             role="separator"
           />
-        </FormFieldDivider>
+        </Styled(div)>
       </FormFieldDivider>
       <Checkbox
         justify={true}
@@ -3200,7 +3162,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                   type="checkbox"
                   value="hematite"
                 >
-                  <Choice
+                  <Styled(label)
                     justify={true}
                     labelPosition="start"
                     size="large"
@@ -3209,10 +3171,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                       className="emotion-22"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="hematite"
                       >
@@ -3220,12 +3180,11 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                           className="emotion-0"
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="hematite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -3261,8 +3220,8 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         justify={true}
                         labelPosition="start"
                         size="large"
@@ -3272,9 +3231,9 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
                         >
                           Hematite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -3287,6 +3246,10 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
 `;
 
 exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -3323,7 +3286,7 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -3331,7 +3294,7 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -3405,10 +3368,6 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -3476,7 +3435,7 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
                   size="large"
                   type="checkbox"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -3485,10 +3444,8 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
                     >
                       <Styled(input)
                         defaultChecked={true}
-                        innerRef={[Function]}
                         name="example"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                       >
                         <input
@@ -3496,11 +3453,10 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
                           defaultChecked={true}
                           name="example"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -3536,8 +3492,8 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -3546,9 +3502,9 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis.
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -3597,7 +3553,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -3605,7 +3561,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -3674,7 +3630,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   width: 1em;
 }
 
-.emotion-18 {
+.emotion-19 {
   color: #333840;
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
@@ -3688,7 +3644,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   margin-right: 0;
 }
 
-.emotion-47 {
+.emotion-50 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3715,13 +3671,13 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   width: 1.5em;
 }
 
-.emotion-47 svg {
+.emotion-50 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
 }
 
-.emotion-44 {
+.emotion-47 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3747,13 +3703,13 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   vertical-align: middle;
 }
 
-.emotion-44 *,
-.emotion-44 *::before,
-.emotion-44 *::after {
+.emotion-47 *,
+.emotion-47 *::before,
+.emotion-47 *::after {
   box-sizing: inherit;
 }
 
-.emotion-44:focus {
+.emotion-47:focus {
   background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
@@ -3761,7 +3717,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-44:hover {
+.emotion-47:hover {
   background-color: #f5f7fa;
   border-color: #5691f0;
   color: #3272d9;
@@ -3769,22 +3725,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-44:focus:active,
-.emotion-44:focus:hover {
+.emotion-47:focus:active,
+.emotion-47:focus:hover {
   border-color: #c8d1e0;
 }
 
-.emotion-44:active {
+.emotion-47:active {
   background-color: #ebeff5;
   border-color: #1d5bbf;
   color: #3272d9;
 }
 
-.emotion-44::-moz-focus-inner {
+.emotion-47::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-44 [role="img"] {
+.emotion-47 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -3793,19 +3749,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-44 [role="img"]:first-child {
+.emotion-47 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-44 [role="img"]:last-child {
+.emotion-47 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-44 [role="img"]:only-child {
+.emotion-47 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-13 {
+.emotion-14 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3823,7 +3779,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   width: 100%;
 }
 
-.emotion-42 {
+.emotion-45 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3834,15 +3790,15 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.emotion-42:first-child {
+.emotion-45:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.emotion-42:last-child {
+.emotion-45:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-61 > * {
+.emotion-65 > * {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3853,18 +3809,18 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   display: flex;
 }
 
-.emotion-61 > * > * {
+.emotion-65 > * > * {
   -webkit-flex: 0 0 8rem;
   -ms-flex: 0 0 8rem;
   flex: 0 0 8rem;
   margin-right: 0.5rem;
 }
 
-.emotion-60 > *:not(:last-child) {
+.emotion-64 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-60 > * {
+.emotion-64 > * {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3875,14 +3831,14 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   display: flex;
 }
 
-.emotion-60 > * > * {
+.emotion-64 > * > * {
   -webkit-flex: 0 0 8rem;
   -ms-flex: 0 0 8rem;
   flex: 0 0 8rem;
   margin-right: 0.5rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3895,7 +3851,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   width: 100%;
 }
 
-.emotion-8 [role="img"] {
+.emotion-9 [role="img"] {
   color: #c8d1e0;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -3904,11 +3860,11 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-8 [role="img"]:last-of-type {
+.emotion-9 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.emotion-7 {
+.emotion-8 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3931,27 +3887,27 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   width: 100%;
 }
 
-.emotion-7 *,
-.emotion-7 *::before,
-.emotion-7 *::after {
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
   box-sizing: inherit;
 }
 
-.emotion-7:hover > div:last-child {
+.emotion-8:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.emotion-7:focus > div:last-child {
+.emotion-8:focus > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-7:active > div:last-child {
+.emotion-8:active > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-7 [role="img"] {
+.emotion-8 [role="img"] {
   color: #c8d1e0;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -3960,8 +3916,62 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-7 [role="img"]:last-of-type {
+.emotion-8 [role="img"]:last-of-type {
   color: #c8d1e0;
+}
+
+.emotion-6 {
+  color: #333840;
+  -webkit-text-fill-color: #333840;
+  font-size: 0.75em;
+  outline: 0;
+  padding-left: 0.6666666666666666em;
+  padding-right: 0.6666666666666666em;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-6::-moz-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-6::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-6::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-6::-ms-clear {
+  display: none;
+}
+
+.emotion-6:focus ~ div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
 .emotion-5 {
@@ -4036,7 +4046,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-6 {
+.emotion-7 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -4050,7 +4060,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   z-index: -1;
 }
 
-.emotion-14 {
+.emotion-15 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4076,13 +4086,13 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   vertical-align: middle;
 }
 
-.emotion-14 *,
-.emotion-14 *::before,
-.emotion-14 *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.emotion-14:focus {
+.emotion-15:focus {
   background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
@@ -4090,7 +4100,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-14:hover {
+.emotion-15:hover {
   background-color: #f5f7fa;
   border-color: #5691f0;
   color: #3272d9;
@@ -4098,22 +4108,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-14:focus:active,
-.emotion-14:focus:hover {
+.emotion-15:focus:active,
+.emotion-15:focus:hover {
   border-color: #c8d1e0;
 }
 
-.emotion-14:active {
+.emotion-15:active {
   background-color: #ebeff5;
   border-color: #1d5bbf;
   color: #3272d9;
 }
 
-.emotion-14::-moz-focus-inner {
+.emotion-15::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-14 [role="img"] {
+.emotion-15 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -4122,19 +4132,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-14 [role="img"]:first-child {
+.emotion-15 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-14 [role="img"]:last-child {
+.emotion-15 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-14 [role="img"]:only-child {
+.emotion-15 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -4145,7 +4155,61 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   line-height: 2em;
 }
 
-.emotion-20 {
+.emotion-22 {
+  color: #333840;
+  -webkit-text-fill-color: #333840;
+  font-size: 0.875em;
+  outline: 0;
+  padding-left: 0.5714285714285714em;
+  padding-right: 0.5714285714285714em;
+}
+
+.emotion-22::-webkit-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-22::-moz-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-22:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-22::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-22::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-22:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-22::-ms-clear {
+  display: none;
+}
+
+.emotion-22:focus ~ div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+}
+
+.emotion-21 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -4164,60 +4228,60 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-20[type="search"] {
+.emotion-21[type="search"] {
   -webkit-appearance: none;
 }
 
-.emotion-20[type="search"]::-webkit-search-decoration {
+.emotion-21[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.emotion-20::-webkit-input-placeholder {
+.emotion-21::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-20::-moz-placeholder {
+.emotion-21::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-20:-ms-input-placeholder {
+.emotion-21:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-20::placeholder {
+.emotion-21::placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-20::-ms-input-placeholder {
+.emotion-21::-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-20:-ms-input-placeholder {
+.emotion-21:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-20::-ms-clear {
+.emotion-21::-ms-clear {
   display: none;
 }
 
-.emotion-20:focus ~ div:last-child {
+.emotion-21:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-29 {
+.emotion-31 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4243,13 +4307,13 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   vertical-align: middle;
 }
 
-.emotion-29 *,
-.emotion-29 *::before,
-.emotion-29 *::after {
+.emotion-31 *,
+.emotion-31 *::before,
+.emotion-31 *::after {
   box-sizing: inherit;
 }
 
-.emotion-29:focus {
+.emotion-31:focus {
   background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
@@ -4257,7 +4321,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-29:hover {
+.emotion-31:hover {
   background-color: #f5f7fa;
   border-color: #5691f0;
   color: #3272d9;
@@ -4265,22 +4329,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-29:focus:active,
-.emotion-29:focus:hover {
+.emotion-31:focus:active,
+.emotion-31:focus:hover {
   border-color: #c8d1e0;
 }
 
-.emotion-29:active {
+.emotion-31:active {
   background-color: #ebeff5;
   border-color: #1d5bbf;
   color: #3272d9;
 }
 
-.emotion-29::-moz-focus-inner {
+.emotion-31::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-29 [role="img"] {
+.emotion-31 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -4289,19 +4353,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-29 [role="img"]:first-child {
+.emotion-31 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-29 [role="img"]:last-child {
+.emotion-31 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-29 [role="img"]:only-child {
+.emotion-31 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-27 {
+.emotion-29 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -4312,7 +4376,61 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   line-height: 2.2857142857142856em;
 }
 
-.emotion-35 {
+.emotion-38 {
+  color: #333840;
+  -webkit-text-fill-color: #333840;
+  font-size: 0.875em;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 1.1428571428571428em;
+}
+
+.emotion-38::-webkit-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-38::-moz-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-38:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-38::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-38::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-38:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-38::-ms-clear {
+  display: none;
+}
+
+.emotion-38:focus ~ div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+}
+
+.emotion-37 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -4331,60 +4449,60 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   padding-right: 1.1428571428571428em;
 }
 
-.emotion-35[type="search"] {
+.emotion-37[type="search"] {
   -webkit-appearance: none;
 }
 
-.emotion-35[type="search"]::-webkit-search-decoration {
+.emotion-37[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.emotion-35::-webkit-input-placeholder {
+.emotion-37::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-35::-moz-placeholder {
+.emotion-37::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-35:-ms-input-placeholder {
+.emotion-37:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-35::placeholder {
+.emotion-37::placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-35::-ms-input-placeholder {
+.emotion-37::-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-35:-ms-input-placeholder {
+.emotion-37:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-35::-ms-clear {
+.emotion-37::-ms-clear {
   display: none;
 }
 
-.emotion-35:focus ~ div:last-child {
+.emotion-37:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-50 {
+.emotion-53 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -4403,60 +4521,60 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   padding-right: 1.1428571428571428em;
 }
 
-.emotion-50[type="search"] {
+.emotion-53[type="search"] {
   -webkit-appearance: none;
 }
 
-.emotion-50[type="search"]::-webkit-search-decoration {
+.emotion-53[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.emotion-50::-webkit-input-placeholder {
+.emotion-53::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-50::-moz-placeholder {
+.emotion-53::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-50:-ms-input-placeholder {
+.emotion-53:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-50::placeholder {
+.emotion-53::placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-50::-ms-input-placeholder {
+.emotion-53::-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-50:-ms-input-placeholder {
+.emotion-53:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-50::-ms-clear {
+.emotion-53::-ms-clear {
   display: none;
 }
 
-.emotion-50:focus ~ div:last-child {
+.emotion-53:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-59 {
+.emotion-63 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4482,13 +4600,13 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   vertical-align: middle;
 }
 
-.emotion-59 *,
-.emotion-59 *::before,
-.emotion-59 *::after {
+.emotion-63 *,
+.emotion-63 *::before,
+.emotion-63 *::after {
   box-sizing: inherit;
 }
 
-.emotion-59:focus {
+.emotion-63:focus {
   background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
@@ -4496,7 +4614,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-59:hover {
+.emotion-63:hover {
   background-color: #f5f7fa;
   border-color: #5691f0;
   color: #3272d9;
@@ -4504,22 +4622,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   text-decoration: none;
 }
 
-.emotion-59:focus:active,
-.emotion-59:focus:hover {
+.emotion-63:focus:active,
+.emotion-63:focus:hover {
   border-color: #c8d1e0;
 }
 
-.emotion-59:active {
+.emotion-63:active {
   background-color: #ebeff5;
   border-color: #1d5bbf;
   color: #3272d9;
 }
 
-.emotion-59::-moz-focus-inner {
+.emotion-63::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-59 [role="img"] {
+.emotion-63 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -4528,19 +4646,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-59 [role="img"]:first-child {
+.emotion-63 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-59 [role="img"]:last-child {
+.emotion-63 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-59 [role="img"]:only-child {
+.emotion-63 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-57 {
+.emotion-61 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -4551,24 +4669,24 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
   line-height: 3.7142857142857144em;
 }
 
-.emotion-57:first-child {
+.emotion-61:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.emotion-57:last-child {
+.emotion-61:last-child {
   padding-right: 0.5714285714285714em;
 }
 
 <Styled(DemoForm)>
   <DemoForm
-    className="emotion-61"
+    className="emotion-65"
   >
     <Styled(form)
-      className="emotion-61"
+      className="emotion-65"
       onSubmit={[Function]}
     >
       <form
-        className="emotion-60"
+        className="emotion-64"
         onSubmit={[Function]}
       >
         <div>
@@ -4625,7 +4743,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                       size="small"
                       type="checkbox"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="small"
                       >
@@ -4633,21 +4751,18 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                           className="emotion-4"
                         >
                           <Styled(input)
-                            innerRef={[Function]}
                             name="size"
                             onClick={[Function]}
-                            size="small"
                             type="checkbox"
                           >
                             <input
                               className="emotion-0"
                               name="size"
                               onClick={[Function]}
-                              size="small"
                               type="checkbox"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="small"
                           >
                             <span
@@ -4683,8 +4798,8 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="small"
                           >
@@ -4693,9 +4808,9 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                             >
                               Small
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -4707,8 +4822,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
             size="small"
             type="text"
           >
-            <TextInput
-              control={[Function]}
+            <Styled(WithTheme(Themed(FauxControl)))
+              control={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "__emotion_base": "input",
+                  "__emotion_forwardProp": undefined,
+                  "__emotion_real": [Circular],
+                  "__emotion_styles": Array [
+                    [Function],
+                  ],
+                  "defaultProps": undefined,
+                  "displayName": "Styled(input)",
+                  "render": [Function],
+                  "withComponent": [Function],
+                }
+              }
               controlProps={
                 Object {
                   "aria-invalid": undefined,
@@ -4724,8 +4853,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
               size="small"
             >
               <WithTheme(Themed(FauxControl))
-                className="emotion-8"
-                control={[Function]}
+                className="emotion-9"
+                control={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "__emotion_base": "input",
+                    "__emotion_forwardProp": undefined,
+                    "__emotion_real": [Circular],
+                    "__emotion_styles": Array [
+                      [Function],
+                    ],
+                    "defaultProps": undefined,
+                    "displayName": "Styled(input)",
+                    "render": [Function],
+                    "withComponent": [Function],
+                  }
+                }
                 controlProps={
                   Object {
                     "aria-invalid": undefined,
@@ -4741,8 +4884,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                 size="small"
               >
                 <Themed(FauxControl)
-                  className="emotion-8"
-                  control={[Function]}
+                  className="emotion-9"
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-invalid": undefined,
@@ -4760,8 +4917,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                   <ThemeProvider>
                     <ThemeProvider>
                       <FauxControl
-                        className="emotion-8"
-                        control={[Function]}
+                        className="emotion-9"
+                        control={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "__emotion_base": "input",
+                            "__emotion_forwardProp": undefined,
+                            "__emotion_real": [Circular],
+                            "__emotion_styles": Array [
+                              [Function],
+                            ],
+                            "defaultProps": undefined,
+                            "displayName": "Styled(input)",
+                            "render": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
                         controlProps={
                           Object {
                             "aria-invalid": undefined,
@@ -4776,14 +4947,28 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                         }
                         size="small"
                       >
-                        <FauxControl
-                          className="emotion-8"
-                          control={[Function]}
+                        <Styled(div)
+                          className="emotion-9"
                         >
                           <div
-                            className="emotion-7"
+                            className="emotion-8"
                           >
-                            <Control
+                            <Styled(input)
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "__emotion_base": "input",
+                                  "__emotion_forwardProp": undefined,
+                                  "__emotion_real": [Circular],
+                                  "__emotion_styles": Array [
+                                    [Function],
+                                  ],
+                                  "defaultProps": undefined,
+                                  "displayName": "Styled(input)",
+                                  "render": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
                               controlPropsIn={
                                 Object {
                                   "aria-invalid": undefined,
@@ -4801,60 +4986,79 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                               size="small"
                               type="text"
                             >
-                              <input
-                                className="emotion-5"
+                              <Styled(input)
+                                className="emotion-6"
+                                controlPropsIn={
+                                  Object {
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "defaultValue": "Small",
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
+                                  }
+                                }
                                 defaultValue="Small"
                                 size="small"
                                 type="text"
-                              />
-                            </Control>
-                            <Underlay>
+                              >
+                                <input
+                                  className="emotion-5"
+                                  defaultValue="Small"
+                                  size="small"
+                                  type="text"
+                                />
+                              </Styled(input)>
+                            </Styled(input)>
+                            <Styled(div)>
                               <div
-                                className="emotion-6"
+                                className="emotion-7"
                               />
-                            </Underlay>
+                            </Styled(div)>
                           </div>
-                        </FauxControl>
+                        </Styled(div)>
                       </FauxControl>
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
               </WithTheme(Themed(FauxControl))>
-            </TextInput>
+            </Styled(WithTheme(Themed(FauxControl)))>
           </TextInput>
-          <Button
-            element="button"
+          <WithForwardRef(Button)
             size="small"
-            type="button"
           >
             <Button
-              element="button"
+              forwardedRef={null}
               size="small"
-              text="Small"
-              type="button"
             >
-              <button
-                className="emotion-14"
-                type="button"
+              <Styled(button)
+                size="small"
+                text="Small"
               >
-                <Styled(span)>
-                  <span
-                    className="emotion-13"
-                  >
-                    <Styled(span)
-                      size="small"
+                <button
+                  className="emotion-15"
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-14"
                     >
-                      <span
-                        className="emotion-12"
+                      <Styled(span)
+                        size="small"
                       >
-                        Small
-                      </span>
-                    </Styled(span)>
-                  </span>
-                </Styled(span)>
-              </button>
+                        <span
+                          className="emotion-13"
+                        >
+                          Small
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </button>
+              </Styled(button)>
             </Button>
-          </Button>
+          </WithForwardRef(Button)>
         </div>
         <div>
           <Checkbox
@@ -4910,7 +5114,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                       size="medium"
                       type="checkbox"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="medium"
                       >
@@ -4918,21 +5122,18 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                           className="emotion-4"
                         >
                           <Styled(input)
-                            innerRef={[Function]}
                             name="size"
                             onClick={[Function]}
-                            size="medium"
                             type="checkbox"
                           >
                             <input
                               className="emotion-0"
                               name="size"
                               onClick={[Function]}
-                              size="medium"
                               type="checkbox"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="medium"
                           >
                             <span
@@ -4968,19 +5169,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="medium"
                           >
                             <span
-                              className="emotion-18"
+                              className="emotion-19"
                             >
                               Medium
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -4992,8 +5193,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
             size="medium"
             type="text"
           >
-            <TextInput
-              control={[Function]}
+            <Styled(WithTheme(Themed(FauxControl)))
+              control={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "__emotion_base": "input",
+                  "__emotion_forwardProp": undefined,
+                  "__emotion_real": [Circular],
+                  "__emotion_styles": Array [
+                    [Function],
+                  ],
+                  "defaultProps": undefined,
+                  "displayName": "Styled(input)",
+                  "render": [Function],
+                  "withComponent": [Function],
+                }
+              }
               controlProps={
                 Object {
                   "aria-invalid": undefined,
@@ -5009,8 +5224,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
               size="medium"
             >
               <WithTheme(Themed(FauxControl))
-                className="emotion-8"
-                control={[Function]}
+                className="emotion-9"
+                control={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "__emotion_base": "input",
+                    "__emotion_forwardProp": undefined,
+                    "__emotion_real": [Circular],
+                    "__emotion_styles": Array [
+                      [Function],
+                    ],
+                    "defaultProps": undefined,
+                    "displayName": "Styled(input)",
+                    "render": [Function],
+                    "withComponent": [Function],
+                  }
+                }
                 controlProps={
                   Object {
                     "aria-invalid": undefined,
@@ -5026,8 +5255,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                 size="medium"
               >
                 <Themed(FauxControl)
-                  className="emotion-8"
-                  control={[Function]}
+                  className="emotion-9"
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-invalid": undefined,
@@ -5045,8 +5288,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                   <ThemeProvider>
                     <ThemeProvider>
                       <FauxControl
-                        className="emotion-8"
-                        control={[Function]}
+                        className="emotion-9"
+                        control={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "__emotion_base": "input",
+                            "__emotion_forwardProp": undefined,
+                            "__emotion_real": [Circular],
+                            "__emotion_styles": Array [
+                              [Function],
+                            ],
+                            "defaultProps": undefined,
+                            "displayName": "Styled(input)",
+                            "render": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
                         controlProps={
                           Object {
                             "aria-invalid": undefined,
@@ -5061,14 +5318,28 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                         }
                         size="medium"
                       >
-                        <FauxControl
-                          className="emotion-8"
-                          control={[Function]}
+                        <Styled(div)
+                          className="emotion-9"
                         >
                           <div
-                            className="emotion-7"
+                            className="emotion-8"
                           >
-                            <Control
+                            <Styled(input)
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "__emotion_base": "input",
+                                  "__emotion_forwardProp": undefined,
+                                  "__emotion_real": [Circular],
+                                  "__emotion_styles": Array [
+                                    [Function],
+                                  ],
+                                  "defaultProps": undefined,
+                                  "displayName": "Styled(input)",
+                                  "render": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
                               controlPropsIn={
                                 Object {
                                   "aria-invalid": undefined,
@@ -5086,60 +5357,79 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                               size="medium"
                               type="text"
                             >
-                              <input
-                                className="emotion-20"
+                              <Styled(input)
+                                className="emotion-22"
+                                controlPropsIn={
+                                  Object {
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "defaultValue": "Medium",
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
+                                  }
+                                }
                                 defaultValue="Medium"
                                 size="medium"
                                 type="text"
-                              />
-                            </Control>
-                            <Underlay>
+                              >
+                                <input
+                                  className="emotion-21"
+                                  defaultValue="Medium"
+                                  size="medium"
+                                  type="text"
+                                />
+                              </Styled(input)>
+                            </Styled(input)>
+                            <Styled(div)>
                               <div
-                                className="emotion-6"
+                                className="emotion-7"
                               />
-                            </Underlay>
+                            </Styled(div)>
                           </div>
-                        </FauxControl>
+                        </Styled(div)>
                       </FauxControl>
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
               </WithTheme(Themed(FauxControl))>
-            </TextInput>
+            </Styled(WithTheme(Themed(FauxControl)))>
           </TextInput>
-          <Button
-            element="button"
+          <WithForwardRef(Button)
             size="medium"
-            type="button"
           >
             <Button
-              element="button"
+              forwardedRef={null}
               size="medium"
-              text="Medium"
-              type="button"
             >
-              <button
-                className="emotion-29"
-                type="button"
+              <Styled(button)
+                size="medium"
+                text="Medium"
               >
-                <Styled(span)>
-                  <span
-                    className="emotion-13"
-                  >
-                    <Styled(span)
-                      size="medium"
+                <button
+                  className="emotion-31"
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-14"
                     >
-                      <span
-                        className="emotion-27"
+                      <Styled(span)
+                        size="medium"
                       >
-                        Medium
-                      </span>
-                    </Styled(span)>
-                  </span>
-                </Styled(span)>
-              </button>
+                        <span
+                          className="emotion-29"
+                        >
+                          Medium
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </button>
+              </Styled(button)>
             </Button>
-          </Button>
+          </WithForwardRef(Button)>
         </div>
         <div>
           <Checkbox
@@ -5195,7 +5485,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                       size="large"
                       type="checkbox"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="large"
                       >
@@ -5203,21 +5493,18 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                           className="emotion-4"
                         >
                           <Styled(input)
-                            innerRef={[Function]}
                             name="size"
                             onClick={[Function]}
-                            size="large"
                             type="checkbox"
                           >
                             <input
                               className="emotion-0"
                               name="size"
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="large"
                           >
                             <span
@@ -5253,19 +5540,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="large"
                           >
                             <span
-                              className="emotion-18"
+                              className="emotion-19"
                             >
                               Large
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -5277,8 +5564,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
             size="large"
             type="text"
           >
-            <TextInput
-              control={[Function]}
+            <Styled(WithTheme(Themed(FauxControl)))
+              control={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "__emotion_base": "input",
+                  "__emotion_forwardProp": undefined,
+                  "__emotion_real": [Circular],
+                  "__emotion_styles": Array [
+                    [Function],
+                  ],
+                  "defaultProps": undefined,
+                  "displayName": "Styled(input)",
+                  "render": [Function],
+                  "withComponent": [Function],
+                }
+              }
               controlProps={
                 Object {
                   "aria-invalid": undefined,
@@ -5294,8 +5595,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
               size="large"
             >
               <WithTheme(Themed(FauxControl))
-                className="emotion-8"
-                control={[Function]}
+                className="emotion-9"
+                control={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "__emotion_base": "input",
+                    "__emotion_forwardProp": undefined,
+                    "__emotion_real": [Circular],
+                    "__emotion_styles": Array [
+                      [Function],
+                    ],
+                    "defaultProps": undefined,
+                    "displayName": "Styled(input)",
+                    "render": [Function],
+                    "withComponent": [Function],
+                  }
+                }
                 controlProps={
                   Object {
                     "aria-invalid": undefined,
@@ -5311,8 +5626,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                 size="large"
               >
                 <Themed(FauxControl)
-                  className="emotion-8"
-                  control={[Function]}
+                  className="emotion-9"
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-invalid": undefined,
@@ -5330,8 +5659,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                   <ThemeProvider>
                     <ThemeProvider>
                       <FauxControl
-                        className="emotion-8"
-                        control={[Function]}
+                        className="emotion-9"
+                        control={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "__emotion_base": "input",
+                            "__emotion_forwardProp": undefined,
+                            "__emotion_real": [Circular],
+                            "__emotion_styles": Array [
+                              [Function],
+                            ],
+                            "defaultProps": undefined,
+                            "displayName": "Styled(input)",
+                            "render": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
                         controlProps={
                           Object {
                             "aria-invalid": undefined,
@@ -5346,14 +5689,28 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                         }
                         size="large"
                       >
-                        <FauxControl
-                          className="emotion-8"
-                          control={[Function]}
+                        <Styled(div)
+                          className="emotion-9"
                         >
                           <div
-                            className="emotion-7"
+                            className="emotion-8"
                           >
-                            <Control
+                            <Styled(input)
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "__emotion_base": "input",
+                                  "__emotion_forwardProp": undefined,
+                                  "__emotion_real": [Circular],
+                                  "__emotion_styles": Array [
+                                    [Function],
+                                  ],
+                                  "defaultProps": undefined,
+                                  "displayName": "Styled(input)",
+                                  "render": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
                               controlPropsIn={
                                 Object {
                                   "aria-invalid": undefined,
@@ -5371,60 +5728,79 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                               size="large"
                               type="text"
                             >
-                              <input
-                                className="emotion-35"
+                              <Styled(input)
+                                className="emotion-38"
+                                controlPropsIn={
+                                  Object {
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "defaultValue": "Large",
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
+                                  }
+                                }
                                 defaultValue="Large"
                                 size="large"
                                 type="text"
-                              />
-                            </Control>
-                            <Underlay>
+                              >
+                                <input
+                                  className="emotion-37"
+                                  defaultValue="Large"
+                                  size="large"
+                                  type="text"
+                                />
+                              </Styled(input)>
+                            </Styled(input)>
+                            <Styled(div)>
                               <div
-                                className="emotion-6"
+                                className="emotion-7"
                               />
-                            </Underlay>
+                            </Styled(div)>
                           </div>
-                        </FauxControl>
+                        </Styled(div)>
                       </FauxControl>
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
               </WithTheme(Themed(FauxControl))>
-            </TextInput>
+            </Styled(WithTheme(Themed(FauxControl)))>
           </TextInput>
-          <Button
-            element="button"
+          <WithForwardRef(Button)
             size="large"
-            type="button"
           >
             <Button
-              element="button"
+              forwardedRef={null}
               size="large"
-              text="Large"
-              type="button"
             >
-              <button
-                className="emotion-44"
-                type="button"
+              <Styled(button)
+                size="large"
+                text="Large"
               >
-                <Styled(span)>
-                  <span
-                    className="emotion-13"
-                  >
-                    <Styled(span)
-                      size="large"
+                <button
+                  className="emotion-47"
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-14"
                     >
-                      <span
-                        className="emotion-42"
+                      <Styled(span)
+                        size="large"
                       >
-                        Large
-                      </span>
-                    </Styled(span)>
-                  </span>
-                </Styled(span)>
-              </button>
+                        <span
+                          className="emotion-45"
+                        >
+                          Large
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </button>
+              </Styled(button)>
             </Button>
-          </Button>
+          </WithForwardRef(Button)>
         </div>
         <div>
           <Checkbox
@@ -5480,7 +5856,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                       size="jumbo"
                       type="checkbox"
                     >
-                      <Choice
+                      <Styled(label)
                         labelPosition="end"
                         size="jumbo"
                       >
@@ -5488,25 +5864,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                           className="emotion-4"
                         >
                           <Styled(input)
-                            innerRef={[Function]}
                             name="size"
                             onClick={[Function]}
-                            size="jumbo"
                             type="checkbox"
                           >
                             <input
                               className="emotion-0"
                               name="size"
                               onClick={[Function]}
-                              size="jumbo"
                               type="checkbox"
                             />
                           </Styled(input)>
-                          <Control
+                          <Styled(span)
                             size="jumbo"
                           >
                             <span
-                              className="emotion-47"
+                              className="emotion-50"
                             >
                               <IconCheckBoxCheck>
                                 <Icon
@@ -5538,19 +5911,19 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconCheckBoxCheck>
                             </span>
-                          </Control>
-                          <Text
+                          </Styled(span)>
+                          <Styled(span)
                             labelPosition="end"
                             size="jumbo"
                           >
                             <span
-                              className="emotion-18"
+                              className="emotion-19"
                             >
                               Jumbo
                             </span>
-                          </Text>
+                          </Styled(span)>
                         </label>
-                      </Choice>
+                      </Styled(label)>
                     </Choice>
                   </ThemeProvider>
                 </ThemeProvider>
@@ -5562,8 +5935,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
             size="jumbo"
             type="text"
           >
-            <TextInput
-              control={[Function]}
+            <Styled(WithTheme(Themed(FauxControl)))
+              control={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "__emotion_base": "input",
+                  "__emotion_forwardProp": undefined,
+                  "__emotion_real": [Circular],
+                  "__emotion_styles": Array [
+                    [Function],
+                  ],
+                  "defaultProps": undefined,
+                  "displayName": "Styled(input)",
+                  "render": [Function],
+                  "withComponent": [Function],
+                }
+              }
               controlProps={
                 Object {
                   "aria-invalid": undefined,
@@ -5579,8 +5966,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
               size="jumbo"
             >
               <WithTheme(Themed(FauxControl))
-                className="emotion-8"
-                control={[Function]}
+                className="emotion-9"
+                control={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "__emotion_base": "input",
+                    "__emotion_forwardProp": undefined,
+                    "__emotion_real": [Circular],
+                    "__emotion_styles": Array [
+                      [Function],
+                    ],
+                    "defaultProps": undefined,
+                    "displayName": "Styled(input)",
+                    "render": [Function],
+                    "withComponent": [Function],
+                  }
+                }
                 controlProps={
                   Object {
                     "aria-invalid": undefined,
@@ -5596,8 +5997,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                 size="jumbo"
               >
                 <Themed(FauxControl)
-                  className="emotion-8"
-                  control={[Function]}
+                  className="emotion-9"
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-invalid": undefined,
@@ -5615,8 +6030,22 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                   <ThemeProvider>
                     <ThemeProvider>
                       <FauxControl
-                        className="emotion-8"
-                        control={[Function]}
+                        className="emotion-9"
+                        control={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "__emotion_base": "input",
+                            "__emotion_forwardProp": undefined,
+                            "__emotion_real": [Circular],
+                            "__emotion_styles": Array [
+                              [Function],
+                            ],
+                            "defaultProps": undefined,
+                            "displayName": "Styled(input)",
+                            "render": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
                         controlProps={
                           Object {
                             "aria-invalid": undefined,
@@ -5631,14 +6060,28 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                         }
                         size="jumbo"
                       >
-                        <FauxControl
-                          className="emotion-8"
-                          control={[Function]}
+                        <Styled(div)
+                          className="emotion-9"
                         >
                           <div
-                            className="emotion-7"
+                            className="emotion-8"
                           >
-                            <Control
+                            <Styled(input)
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "__emotion_base": "input",
+                                  "__emotion_forwardProp": undefined,
+                                  "__emotion_real": [Circular],
+                                  "__emotion_styles": Array [
+                                    [Function],
+                                  ],
+                                  "defaultProps": undefined,
+                                  "displayName": "Styled(input)",
+                                  "render": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
                               controlPropsIn={
                                 Object {
                                   "aria-invalid": undefined,
@@ -5656,60 +6099,79 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
                               size="jumbo"
                               type="text"
                             >
-                              <input
-                                className="emotion-50"
+                              <Styled(input)
+                                className="emotion-38"
+                                controlPropsIn={
+                                  Object {
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "defaultValue": "Jumbo",
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
+                                  }
+                                }
                                 defaultValue="Jumbo"
                                 size="jumbo"
                                 type="text"
-                              />
-                            </Control>
-                            <Underlay>
+                              >
+                                <input
+                                  className="emotion-53"
+                                  defaultValue="Jumbo"
+                                  size="jumbo"
+                                  type="text"
+                                />
+                              </Styled(input)>
+                            </Styled(input)>
+                            <Styled(div)>
                               <div
-                                className="emotion-6"
+                                className="emotion-7"
                               />
-                            </Underlay>
+                            </Styled(div)>
                           </div>
-                        </FauxControl>
+                        </Styled(div)>
                       </FauxControl>
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
               </WithTheme(Themed(FauxControl))>
-            </TextInput>
+            </Styled(WithTheme(Themed(FauxControl)))>
           </TextInput>
-          <Button
-            element="button"
+          <WithForwardRef(Button)
             size="jumbo"
-            type="button"
           >
             <Button
-              element="button"
+              forwardedRef={null}
               size="jumbo"
-              text="Jumbo"
-              type="button"
             >
-              <button
-                className="emotion-59"
-                type="button"
+              <Styled(button)
+                size="jumbo"
+                text="Jumbo"
               >
-                <Styled(span)>
-                  <span
-                    className="emotion-13"
-                  >
-                    <Styled(span)
-                      size="jumbo"
+                <button
+                  className="emotion-63"
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-14"
                     >
-                      <span
-                        className="emotion-57"
+                      <Styled(span)
+                        size="jumbo"
                       >
-                        Jumbo
-                      </span>
-                    </Styled(span)>
-                  </span>
-                </Styled(span)>
-              </button>
+                        <span
+                          className="emotion-61"
+                        >
+                          Jumbo
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </button>
+              </Styled(button)>
             </Button>
-          </Button>
+          </WithForwardRef(Button)>
         </div>
       </form>
     </Styled(form)>
@@ -5718,6 +6180,10 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: required 1`] = `
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -5754,7 +6220,7 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -5762,7 +6228,7 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -5836,10 +6302,6 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -5915,7 +6377,7 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                   type="checkbox"
                   value="quartz"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -5925,11 +6387,9 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                       <Styled(input)
                         aria-required={true}
                         defaultChecked={true}
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
                         required={true}
-                        size="large"
                         type="checkbox"
                         value="quartz"
                       >
@@ -5940,12 +6400,11 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                           name="minerals"
                           onClick={[Function]}
                           required={true}
-                          size="large"
                           type="checkbox"
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -5981,8 +6440,8 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -5991,9 +6450,9 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                         >
                           Quartz
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -6061,7 +6520,7 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                   type="checkbox"
                   value="magnetite"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -6070,11 +6529,9 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                     >
                       <Styled(input)
                         aria-required={true}
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
                         required={true}
-                        size="large"
                         type="checkbox"
                         value="magnetite"
                       >
@@ -6084,12 +6541,11 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                           name="minerals"
                           onClick={[Function]}
                           required={true}
-                          size="large"
                           type="checkbox"
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -6125,8 +6581,8 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -6135,9 +6591,9 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -6150,6 +6606,10 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: rtl 1`] = `
+.emotion-21 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -6186,7 +6646,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -6194,7 +6654,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -6268,10 +6728,6 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-21 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-10 {
@@ -6470,7 +6926,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                         size="large"
                         type="checkbox"
                       >
-                        <Choice
+                        <Styled(label)
                           labelPosition="end"
                           size="large"
                         >
@@ -6478,21 +6934,18 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                             className="emotion-4"
                           >
                             <Styled(input)
-                              innerRef={[Function]}
                               name="example"
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                             >
                               <input
                                 className="emotion-0"
                                 name="example"
                                 onClick={[Function]}
-                                size="large"
                                 type="checkbox"
                               />
                             </Styled(input)>
-                            <Control
+                            <Styled(span)
                               size="large"
                             >
                               <span
@@ -6528,8 +6981,8 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconCheckBoxCheck>
                               </span>
-                            </Control>
-                            <Text
+                            </Styled(span)>
+                            <Styled(span)
                               labelPosition="end"
                               size="large"
                             >
@@ -6538,9 +6991,9 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Text>
+                            </Styled(span)>
                           </label>
-                        </Choice>
+                        </Styled(label)>
                       </Choice>
                     </ThemeProvider>
                   </ThemeProvider>
@@ -6600,7 +7053,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                         size="large"
                         type="checkbox"
                       >
-                        <Choice
+                        <Styled(label)
                           labelPosition="start"
                           size="large"
                         >
@@ -6608,21 +7061,18 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                             className="emotion-9"
                           >
                             <Styled(input)
-                              innerRef={[Function]}
                               name="example"
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                             >
                               <input
                                 className="emotion-0"
                                 name="example"
                                 onClick={[Function]}
-                                size="large"
                                 type="checkbox"
                               />
                             </Styled(input)>
-                            <Control
+                            <Styled(span)
                               size="large"
                             >
                               <span
@@ -6658,8 +7108,8 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconCheckBoxCheck>
                               </span>
-                            </Control>
-                            <Text
+                            </Styled(span)>
+                            <Styled(span)
                               labelPosition="start"
                               size="large"
                             >
@@ -6668,9 +7118,9 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Text>
+                            </Styled(span)>
                           </label>
-                        </Choice>
+                        </Styled(label)>
                       </Choice>
                     </ThemeProvider>
                   </ThemeProvider>
@@ -6678,14 +7128,14 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
               </WithTheme(Themed(Choice))>
             </Checkbox>
             <FormFieldDivider>
-              <FormFieldDivider
+              <Styled(div)
                 role="separator"
               >
                 <div
                   className="emotion-10"
                   role="separator"
                 />
-              </FormFieldDivider>
+              </Styled(div)>
             </FormFieldDivider>
             <Checkbox
               justify={true}
@@ -6744,7 +7194,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                         size="large"
                         type="checkbox"
                       >
-                        <Choice
+                        <Styled(label)
                           justify={true}
                           labelPosition="end"
                           size="large"
@@ -6753,21 +7203,18 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                             className="emotion-15"
                           >
                             <Styled(input)
-                              innerRef={[Function]}
                               name="example"
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                             >
                               <input
                                 className="emotion-0"
                                 name="example"
                                 onClick={[Function]}
-                                size="large"
                                 type="checkbox"
                               />
                             </Styled(input)>
-                            <Control
+                            <Styled(span)
                               size="large"
                             >
                               <span
@@ -6803,8 +7250,8 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconCheckBoxCheck>
                               </span>
-                            </Control>
-                            <Text
+                            </Styled(span)>
+                            <Styled(span)
                               justify={true}
                               labelPosition="end"
                               size="large"
@@ -6814,9 +7261,9 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Text>
+                            </Styled(span)>
                           </label>
-                        </Choice>
+                        </Styled(label)>
                       </Choice>
                     </ThemeProvider>
                   </ThemeProvider>
@@ -6880,7 +7327,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                         size="large"
                         type="checkbox"
                       >
-                        <Choice
+                        <Styled(label)
                           justify={true}
                           labelPosition="start"
                           size="large"
@@ -6889,21 +7336,18 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                             className="emotion-20"
                           >
                             <Styled(input)
-                              innerRef={[Function]}
                               name="example"
                               onClick={[Function]}
-                              size="large"
                               type="checkbox"
                             >
                               <input
                                 className="emotion-0"
                                 name="example"
                                 onClick={[Function]}
-                                size="large"
                                 type="checkbox"
                               />
                             </Styled(input)>
-                            <Control
+                            <Styled(span)
                               size="large"
                             >
                               <span
@@ -6939,8 +7383,8 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconCheckBoxCheck>
                               </span>
-                            </Control>
-                            <Text
+                            </Styled(span)>
+                            <Styled(span)
                               justify={true}
                               labelPosition="start"
                               size="large"
@@ -6950,9 +7394,9 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Text>
+                            </Styled(span)>
                           </label>
-                        </Choice>
+                        </Styled(label)>
                       </Choice>
                     </ThemeProvider>
                   </ThemeProvider>
@@ -6968,6 +7412,10 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: sizes 1`] = `
+.emotion-20 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -7004,7 +7452,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -7012,7 +7460,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -7086,10 +7534,6 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
-}
-
-.emotion-20 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-3 {
@@ -7197,7 +7641,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                   type="checkbox"
                   value="small"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="small"
                   >
@@ -7205,10 +7649,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                       className="emotion-4"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="size"
                         onClick={[Function]}
-                        size="small"
                         type="checkbox"
                         value="small"
                       >
@@ -7216,12 +7658,11 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                           className="emotion-0"
                           name="size"
                           onClick={[Function]}
-                          size="small"
                           type="checkbox"
                           value="small"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="small"
                       >
                         <span
@@ -7257,8 +7698,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="small"
                       >
@@ -7267,9 +7708,9 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                         >
                           Small
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -7333,7 +7774,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                   type="checkbox"
                   value="medium"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="medium"
                   >
@@ -7341,10 +7782,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                       className="emotion-4"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="size"
                         onClick={[Function]}
-                        size="medium"
                         type="checkbox"
                         value="medium"
                       >
@@ -7352,12 +7791,11 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                           className="emotion-0"
                           name="size"
                           onClick={[Function]}
-                          size="medium"
                           type="checkbox"
                           value="medium"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="medium"
                       >
                         <span
@@ -7393,8 +7831,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="medium"
                       >
@@ -7403,9 +7841,9 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                         >
                           Medium
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -7473,7 +7911,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                   type="checkbox"
                   value="large"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -7482,10 +7920,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                     >
                       <Styled(input)
                         defaultChecked={true}
-                        innerRef={[Function]}
                         name="size"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="large"
                       >
@@ -7494,12 +7930,11 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                           defaultChecked={true}
                           name="size"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="large"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -7535,8 +7970,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -7545,9 +7980,9 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                         >
                           Large
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -7611,7 +8046,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                   type="checkbox"
                   value="jumbo"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="jumbo"
                   >
@@ -7619,10 +8054,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                       className="emotion-4"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="size"
                         onClick={[Function]}
-                        size="jumbo"
                         type="checkbox"
                         value="jumbo"
                       >
@@ -7630,12 +8063,11 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                           className="emotion-0"
                           name="size"
                           onClick={[Function]}
-                          size="jumbo"
                           type="checkbox"
                           value="jumbo"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="jumbo"
                       >
                         <span
@@ -7671,8 +8103,8 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="jumbo"
                       >
@@ -7681,9 +8113,9 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
                         >
                           Jumbo
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -7696,6 +8128,10 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -7732,7 +8168,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
 }
 
 .emotion-0 {
-  border: 0px;
+  border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -7740,7 +8176,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -7816,10 +8252,6 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
   margin-right: 0;
 }
 
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 <DemoForm>
   <Styled(form)
     onSubmit={[Function]}
@@ -7889,7 +8321,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                   type="checkbox"
                   value="quartz"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -7898,10 +8330,8 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                     >
                       <Styled(input)
                         defaultChecked={true}
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="quartz"
                       >
@@ -7910,12 +8340,11 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                           defaultChecked={true}
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -7951,8 +8380,8 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -7961,9 +8390,9 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                         >
                           Quartz
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
@@ -8027,7 +8456,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                   type="checkbox"
                   value="magnetite"
                 >
-                  <Choice
+                  <Styled(label)
                     labelPosition="end"
                     size="large"
                   >
@@ -8035,10 +8464,8 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                       className="emotion-4"
                     >
                       <Styled(input)
-                        innerRef={[Function]}
                         name="minerals"
                         onClick={[Function]}
-                        size="large"
                         type="checkbox"
                         value="magnetite"
                       >
@@ -8046,12 +8473,11 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                           className="emotion-0"
                           name="minerals"
                           onClick={[Function]}
-                          size="large"
                           type="checkbox"
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Control
+                      <Styled(span)
                         size="large"
                       >
                         <span
@@ -8087,8 +8513,8 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                             </Icon>
                           </IconCheckBoxCheck>
                         </span>
-                      </Control>
-                      <Text
+                      </Styled(span)>
+                      <Styled(span)
                         labelPosition="end"
                         size="large"
                       >
@@ -8097,9 +8523,9 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Text>
+                      </Styled(span)>
                     </label>
-                  </Choice>
+                  </Styled(label)>
                 </Choice>
               </ThemeProvider>
             </ThemeProvider>
