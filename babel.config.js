@@ -1,7 +1,8 @@
 /* @flow */
-const { DEBUG, BABEL_ENV, NODE_ENV, TARGET } = process.env;
+const { DEBUG, BABEL_ENV, HAPPO, NODE_ENV, TARGET } = process.env;
 const isProduction = NODE_ENV === 'production';
 const isTest = NODE_ENV === 'test';
+const isHappo = HAPPO === 'true';
 
 /**
  * Plugins run before presets.
@@ -31,7 +32,7 @@ const config = {
       '@babel/preset-flow'
     ];
 
-    if (!isTest) {
+    if (!isTest && !isHappo) {
       presets.push([
         '@emotion/babel-preset-css-prop',
         {

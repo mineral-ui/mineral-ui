@@ -1,10 +1,8 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { TabList, tabListTheme } from '../';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
+import { TabList } from '../index';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 /*
  * [1] This getter does not exist on the HTMLElement.prototype in JSDOM, so we
@@ -22,20 +20,6 @@ describe('TabList', () => {
     const tabs = shallowTabList();
 
     expect(tabs.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <TabList />,
-      getProcessedComponentThemeKeys(tabListTheme, {
-        excludeKeys: [
-          'TabList_gutterVertical',
-          'TabListArrow_color',
-          'TabListArrow_color_hover',
-          'TabListOverflowContainer_boxShadowColor'
-        ]
-      })
-    );
   });
 
   it('does not apply shadow when not scrollable', () => {

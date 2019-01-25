@@ -1,8 +1,7 @@
 /* @flow */
 import React from 'react';
-import semver from 'semver';
 import { LiveProvider, LivePreview } from 'react-live';
-import { mountInThemeProvider, ssrInThemeProvider } from '../utils/enzymeUtils';
+import { mountInThemeProvider, ssrInThemeProvider } from './enzymeUtils';
 
 import type {
   Example,
@@ -46,40 +45,32 @@ export default function testDemoExamples(
   examples: Examples,
   options: {
     exclude?: Array<string>, // Example id
-    contextPolyfill?: boolean
+    mode?: 'snapshot' | 'ssr'
   } = {}
 ) {
-  const { exclude, contextPolyfill } = options;
-
-  if (exclude) {
-    const exclusions = exclude || [];
-    examples = examples.filter((example) => !exclusions.includes(example.id));
-  }
+  const { exclude = [], mode = 'snapshot' } = options;
+  examples = examples.filter((example) => {
+    return exclude && !exclude.includes(example.id);
+  });
 
   return describe('demo examples', () => {
     examples
       .filter(({ scope, source }) => scope && source)
       .map((example) => {
-        /*
-         * Skip snapshot testing of components that use the create-react-context
-         * polyfill as these components render differently when the polyfill is
-         * used vs. when it is supported natively by React.
-         */
-        const itFn =
-          contextPolyfill && semver.lt(React.version, '16.3.0') ? xit : it;
-
-        describe('Snapshots:', () => {
-          itFn(example.id, () => {
-            const component = mountExample(example);
-            expect(component).toMatchSnapshot();
+        if (mode === 'snapshot') {
+          describe('Snapshots:', () => {
+            it(example.id, () => {
+              const component = mountExample(example);
+              expect(component).toMatchSnapshot();
+            });
           });
-        });
-
-        describe('Server Side Rendering (SSR):', () => {
-          it(example.id, () => {
-            expect(() => ssrExample(example)).not.toThrow();
+        } else if (mode === 'ssr') {
+          describe('Server Side Rendering (SSR):', () => {
+            it(example.id, () => {
+              expect(() => ssrExample(example)).not.toThrow();
+            });
           });
-        });
+        }
       });
   });
 }

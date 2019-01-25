@@ -1,11 +1,9 @@
 /* @flow */
 import React from 'react';
-import { PrimaryNav, primaryNavTheme } from '../';
+import { PrimaryNav } from '../index';
 import examples from '../../../website/app/demos/Navigation/PrimaryNav/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import { mountInWrapper } from '../../../../utils/enzymeUtils';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 const defaultProps = {
   items: [
@@ -40,20 +38,5 @@ describe('PrimaryNav', () => {
     const wrapper = mountPrimaryNav();
 
     expect(wrapper.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <PrimaryNav {...defaultProps} />,
-      getProcessedComponentThemeKeys(primaryNavTheme).filter(
-        (key) => key.indexOf('minimal') === -1
-      )
-    );
-    testThemeOverrides(
-      <PrimaryNav {...defaultProps} minimal />,
-      getProcessedComponentThemeKeys(primaryNavTheme).filter(
-        (key) => key.indexOf('minimal') !== -1
-      )
-    );
   });
 });

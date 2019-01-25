@@ -40,14 +40,6 @@ describe('Portal', () => {
     expect(portalNode).toBeTruthy();
   });
 
-  it('calls callback if provided', () => {
-    const callback = jest.fn();
-    portal.unmount();
-    portal = mountPortal({ callback });
-
-    expect(callback).toHaveBeenCalled();
-  });
-
   describe('when unmounted', () => {
     beforeEach(() => {
       portal.unmount();
