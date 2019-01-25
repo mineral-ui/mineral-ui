@@ -1,12 +1,11 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { mineralTheme } from '../../themes';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
-import { overflowContainerTheme } from '../themes';
 import OverflowContainer from '../OverflowContainer';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
+import {
+  getSerializedHTML,
+  mountInThemeProvider
+} from '../../../../utils/enzymeUtils';
 
 /*
  * [1] This getter does not exist on the HTMLElement.prototype in JSDOM, so we
@@ -34,13 +33,6 @@ describe('OverflowContainer', () => {
     expect(overflowContainer.exists()).toEqual(true);
   });
 
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <OverflowContainer />,
-      getProcessedComponentThemeKeys(overflowContainerTheme(mineralTheme))
-    );
-  });
-
   it('applies tabIndex=0 when scrollable', () => {
     // [1]
     // $FlowFixMe
@@ -65,6 +57,6 @@ describe('OverflowContainer', () => {
       }
     });
 
-    expect(overflowContainer.html()).toMatchSnapshot();
+    expect(getSerializedHTML(overflowContainer)).toMatchSnapshot();
   });
 });

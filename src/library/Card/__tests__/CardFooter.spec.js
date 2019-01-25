@@ -6,7 +6,6 @@ import Button from '../../Button';
 import { CardFooter } from '../../Card';
 import examples from '../../../website/app/demos/Card/CardFooter/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 function shallowCardFooter(props = {}) {
   const cardFooterProps = {
@@ -35,12 +34,6 @@ describe('CardFooter', () => {
     const cardFooter = shallowCardFooter();
 
     expect(cardFooter.exists()).toEqual(true);
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(<CardFooter>children</CardFooter>, [
-      'CardFooter_backgroundColor'
-    ]);
   });
 
   describe('opens', () => {

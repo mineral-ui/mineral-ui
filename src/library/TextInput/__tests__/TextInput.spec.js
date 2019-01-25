@@ -1,11 +1,13 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import TextInput from '../TextInput';
 import examples from '../../../website/app/demos/TextInput/TextInput/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
+import {
+  getSerializedHTML,
+  mountInThemeProvider
+} from '../../../../utils/enzymeUtils';
 
 function shallowTextInput(props = {}) {
   const textInputProps = {
@@ -37,10 +39,6 @@ describe('TextInput', () => {
       htmlSize: 1
     });
 
-    expect(textInput.html()).toMatchSnapshot();
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(<TextInput />, ['TextInput_backgroundColor']);
+    expect(getSerializedHTML(textInput)).toMatchSnapshot();
   });
 });

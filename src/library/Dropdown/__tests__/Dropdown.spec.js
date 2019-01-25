@@ -2,15 +2,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import { dropdownTheme } from '../themes';
 import Dropdown from '../../Dropdown/Dropdown';
 import { DropdownContent, DropdownTrigger } from '../../Dropdown';
 import PopoverTrigger from '../../Popover/PopoverTrigger';
 import { MenuItem } from '../../Menu';
 import examples from '../../../website/app/demos/Dropdown/Dropdown/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 import type { MenuItems } from '../../Menu/types';
 import type { DropdownRenderFn } from '../types';
@@ -91,15 +88,6 @@ describe('Dropdown', () => {
 
       expect(dropdown.exists()).toEqual(true);
     });
-  });
-
-  describe('theme overrides', () => {
-    testThemeOverrides(
-      <Dropdown data={data} id="test" isOpen>
-        <button>trigger</button>
-      </Dropdown>,
-      getProcessedComponentThemeKeys(dropdownTheme)
-    );
   });
 
   describe('render props', () => {

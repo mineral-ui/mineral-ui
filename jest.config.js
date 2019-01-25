@@ -11,8 +11,9 @@ module.exports = {
   },
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
   setupFiles: ['raf/polyfill'],
-  setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',
+  setupFilesAfterEnv: ['<rootDir>/utils/setupTestFramework.js'],
   snapshotSerializers: [
+    'jest-emotion',
     'enzyme-to-json/serializer',
     '<rootDir>/utils/snapshotSerializer'
   ],

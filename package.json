@@ -29,7 +29,7 @@
     "flow:watch": "nodemon --exec 'flow || echo' --watch src",
     "flow-typed": "flow-typed",
     "format": "./scripts/format.js && eslint --fix .",
-    "happo": "happo",
+    "happo": "HAPPO=true happo",
     "happo-ci-travis": "happo-ci-travis",
     "jest": "jest",
     "jest:debug": "node --inspect --inspect-brk node_modules/.bin/jest",

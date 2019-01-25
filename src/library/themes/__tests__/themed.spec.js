@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import { createThemedComponent } from '../index';
+import { themed } from '../index';
 import Link from '../../Link';
 import Sample from '../../../website/app/demos/ThemeProvider/common/Sample';
 
@@ -13,18 +13,18 @@ snapshotSerializer.print = (val: Object, serialize: Function) => {
 };
 
 function mountThemedLink(theme) {
-  const ThemedLink = createThemedComponent(Link, theme);
+  const ThemedLink = themed(Link)(theme);
 
   return mountInThemeProvider(<ThemedLink />);
 }
 
 function mountThemedSample(theme) {
-  const ThemedSample = createThemedComponent(Sample, theme);
+  const ThemedSample = themed(Sample)(theme);
 
   return mountInThemeProvider(<ThemedSample />);
 }
 
-describe('createThemedComponent', () => {
+describe('themed', () => {
   it('renders correctly', () => {
     const [themedSample] = mountThemedSample({
       color: 'mediumvioletred'

@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import dedent from 'dedent';
-import { createThemedComponent } from '../src/library/themes';
+import { themed } from '../src/library/themes';
 import renderComponentStylesToString from './renderComponentStylesToString';
 import logDiff from './logDiff';
 
@@ -48,7 +48,7 @@ export default function testThemeOverrides(
   const defaultStyles = renderComponentStylesToString(component);
   themeKeys.forEach((key) => {
     it(`"${key}" override affects styles`, () => {
-      const ThemedComponent = createThemedComponent(component.type, {
+      const ThemedComponent = themed(component.type)({
         [key]: null
       });
       const themedStyles = renderComponentStylesToString(

@@ -4,11 +4,9 @@ import { shallow } from 'enzyme';
 import { mountInWrapper } from '../../../../utils/enzymeUtils';
 import Button from '../../Button';
 import Dialog from '../Dialog';
-import { dialogTheme } from '../themes';
+import { DialogContent } from '../styled';
 import examples from '../../../website/app/demos/Dialog/Dialog/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
-import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 jest.mock('react-transition-group/Transition', () => {
   return jest.fn(({ children, in: show, onEntered }) => {
@@ -37,29 +35,6 @@ describe('Dialog', () => {
     expect(dialog.exists()).toEqual(true);
   });
 
-  describe('theme overrides', () => {
-    const props = {
-      id: 'test',
-      isOpen: true,
-      title: 'Test',
-      usePortal: false
-    };
-    testThemeOverrides(
-      <Dialog {...props} />,
-      getProcessedComponentThemeKeys(dialogTheme, {
-        excludeKeys: ['Dialog_transitionDuration', 'DialogCloseButton_margin']
-      }).filter((key) => {
-        const parts = key.split('_');
-        const lastPart = parts[parts.length - 1];
-
-        return lastPart !== 'small' && lastPart !== 'large';
-      })
-    );
-    testThemeOverrides(<Dialog {...props} showCloseButton title="title" />, [
-      'DialogCloseButton_margin'
-    ]);
-  });
-
   describe('opens', () => {
     let wrapper;
     let onOpen = jest.fn();
@@ -77,7 +52,7 @@ describe('Dialog', () => {
     });
 
     it('displays dialog content', () => {
-      const content = wrapper.find('DialogContent');
+      const content = wrapper.find(DialogContent);
 
       expect(content.exists()).toEqual(true);
     });
