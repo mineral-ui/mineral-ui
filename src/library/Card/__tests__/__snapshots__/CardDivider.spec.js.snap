@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardDivider demo examples Snapshots: basic 1`] = `
-.emotion-6 {
-  background-color: #c8d1e0;
-  height: 1px;
-  margin: 1em 0;
-}
-
 .emotion-13::after {
   clear: both;
   content: "";
@@ -122,119 +116,127 @@ exports[`CardDivider demo examples Snapshots: basic 1`] = `
   line-height: 1.5;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-13"
-  >
-    <Card>
+.emotion-6 {
+  background-color: #c8d1e0;
+  height: 1px;
+  margin: 1em 0;
+}
+
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-13"
+    >
       <Card>
-        <div
-          className="emotion-12"
-        >
-          <CardTitle>
+        <Styled(div)>
+          <div
+            className="emotion-12"
+          >
             <CardTitle>
-              <div
-                className="emotion-3"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-2"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-1"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+              <Styled(div)>
+                <div
+                  className="emotion-3"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-2"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-5"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-4"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-          <CardDivider>
-            <CardDivider
-              role="separator"
-            >
-              <div
-                className="emotion-6"
+            <CardDivider>
+              <Styled(div)
                 role="separator"
-              />
-            </CardDivider>
-          </CardDivider>
-          <CardBlock>
-            <CardBlock>
-              <div
-                className="emotion-5"
               >
-                <Styled(div)>
-                  <div
-                    className="emotion-4"
-                  >
-                    
+                <div
+                  className="emotion-6"
+                  role="separator"
+                />
+              </Styled(div)>
+            </CardDivider>
+            <CardBlock>
+              <Styled(div)>
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-          <CardDivider>
-            <CardDivider
-              role="separator"
-            >
-              <div
-                className="emotion-6"
+            <CardDivider>
+              <Styled(div)
                 role="separator"
-              />
-            </CardDivider>
-          </CardDivider>
-          <CardBlock>
-            <CardBlock>
-              <div
-                className="emotion-5"
               >
-                <Styled(div)>
-                  <div
-                    className="emotion-4"
-                  >
-                    
+                <div
+                  className="emotion-6"
+                  role="separator"
+                />
+              </Styled(div)>
+            </CardDivider>
+            <CardBlock>
+              <Styled(div)>
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

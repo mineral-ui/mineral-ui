@@ -22,8 +22,7 @@ exports[`Truncate does not render tooltip when not truncated 1`] = `
 }
 
 <Truncate>
-  <Truncate
-    innerRef={[Function]}
+  <Styled(span)
     showTooltip={false}
   >
     <span
@@ -42,16 +41,16 @@ exports[`Truncate does not render tooltip when not truncated 1`] = `
         }
       />
     </span>
-  </Truncate>
+  </Styled(span)>
 </Truncate>
 `;
 
 exports[`Truncate renders a tooltip when truncated 1`] = `
-.emotion-5 {
+.emotion-3 {
   white-space: normal;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: inline-block;
   white-space: normal;
 }
@@ -88,13 +87,13 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
     placement="bottom"
   >
     <Tooltip
-      className="emotion-5"
+      className="emotion-3"
       content="Long text string that hopefully truncates"
       hasArrow={true}
       placement="bottom"
     >
       <WithTheme(Themed(Popover))
-        className="emotion-5"
+        className="emotion-3"
         content={[Function]}
         focusTriggerOnClose={false}
         hasArrow={true}
@@ -105,7 +104,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
         placement="bottom"
       >
         <Themed(Popover)
-          className="emotion-5"
+          className="emotion-3"
           content={[Function]}
           focusTriggerOnClose={false}
           hasArrow={true}
@@ -118,7 +117,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
           <ThemeProvider>
             <ThemeProvider>
               <Popover
-                className="emotion-5"
+                className="emotion-3"
                 content={[Function]}
                 focusTriggerOnClose={false}
                 hasArrow={true}
@@ -128,31 +127,22 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                 onOpen={[Function]}
                 placement="bottom"
               >
-                <Popover
-                  className="emotion-5"
-                  content={[Function]}
-                  focusTriggerOnClose={false}
-                  hasArrow={true}
-                  id="tooltip-1"
-                  isOpen={false}
-                  onClose={[Function]}
-                  onOpen={[Function]}
-                  placement="bottom"
-                  tag="span"
-                >
-                  <Manager
+                <Manager>
+                  <Styled(span)
                     className="emotion-3"
+                    focusTriggerOnClose={false}
+                    hasArrow={true}
                     id="tooltip-1"
-                    tag="span"
+                    isOpen={false}
+                    placement="bottom"
                   >
                     <span
-                      className="emotion-3"
+                      className="emotion-2"
                       id="tooltip-1"
                     >
-                      <PopoverTrigger
+                      <WithForwardRef(PopoverTrigger)
                         aria-describedby="tooltip-1-content"
                         aria-owns="tooltip-1-content"
-                        innerRef={[Function]}
                         onBlur={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
@@ -163,61 +153,73 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                         tabIndex={0}
                       >
                         <PopoverTrigger
-                          component="span"
+                          aria-describedby="tooltip-1-content"
+                          aria-owns="tooltip-1-content"
+                          forwardedRef={[Function]}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          role="button"
+                          showTooltip={true}
+                          tabIndex={0}
                         >
-                          <Target
-                            className="emotion-1"
-                            component="span"
-                          >
-                            <span
-                              className="emotion-1"
+                          <Reference>
+                            <InnerReference
+                              setReferenceNode={[Function]}
                             >
-                              <Truncate
-                                aria-describedby="tooltip-1-content"
-                                aria-owns="tooltip-1-content"
-                                innerRef={[Function]}
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
-                                role="button"
-                                showTooltip={true}
-                                tabIndex={0}
-                              >
+                              <Styled(span)>
                                 <span
-                                  aria-describedby="tooltip-1-content"
-                                  aria-owns="tooltip-1-content"
-                                  className="emotion-0"
-                                  onBlur={[Function]}
-                                  onClick={[Function]}
-                                  onFocus={[Function]}
-                                  onMouseEnter={[Function]}
-                                  onMouseLeave={[Function]}
-                                  role="button"
-                                  tabIndex={0}
+                                  className="emotion-1"
                                 >
-                                  Long text string that hopefully truncates
-                                  <EventListener
-                                    listeners={
-                                      Array [
-                                        Object {
-                                          "event": "resize",
-                                          "handler": [Function],
-                                          "target": "window",
-                                        },
-                                      ]
-                                    }
-                                  />
+                                  <Styled(span)
+                                    aria-describedby="tooltip-1-content"
+                                    aria-owns="tooltip-1-content"
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseEnter={[Function]}
+                                    onMouseLeave={[Function]}
+                                    role="button"
+                                    showTooltip={true}
+                                    tabIndex={0}
+                                  >
+                                    <span
+                                      aria-describedby="tooltip-1-content"
+                                      aria-owns="tooltip-1-content"
+                                      className="emotion-0"
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                      role="button"
+                                      tabIndex={0}
+                                    >
+                                      Long text string that hopefully truncates
+                                      <EventListener
+                                        listeners={
+                                          Array [
+                                            Object {
+                                              "event": "resize",
+                                              "handler": [Function],
+                                              "target": "window",
+                                            },
+                                          ]
+                                        }
+                                      />
+                                    </span>
+                                  </Styled(span)>
                                 </span>
-                              </Truncate>
-                            </span>
-                          </Target>
+                              </Styled(span)>
+                            </InnerReference>
+                          </Reference>
                         </PopoverTrigger>
-                      </PopoverTrigger>
+                      </WithForwardRef(PopoverTrigger)>
                     </span>
-                  </Manager>
-                </Popover>
+                  </Styled(span)>
+                </Manager>
               </Popover>
             </ThemeProvider>
           </ThemeProvider>

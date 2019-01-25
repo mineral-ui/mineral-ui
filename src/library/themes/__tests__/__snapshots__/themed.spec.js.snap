@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createThemedComponent renders a Link correctly with a custom theme function 1`] = `
+exports[`themed renders a Link correctly with a custom theme function 1`] = `
 .emotion-0 {
   color: #de1b1b;
   -webkit-text-decoration: none;
@@ -617,16 +617,12 @@ exports[`createThemedComponent renders a Link correctly with a custom theme func
               }
             }
           >
-            <Link
-              element="a"
-            >
-              <Link
-                element="a"
-              >
+            <Link>
+              <Styled(a)>
                 <a
                   className="emotion-0"
                 />
-              </Link>
+              </Styled(a)>
             </Link>
           </ThemeProvider>
         </ThemeProvider>
@@ -636,7 +632,7 @@ exports[`createThemedComponent renders a Link correctly with a custom theme func
 </ThemeProvider>
 `;
 
-exports[`createThemedComponent renders a Link correctly with a custom theme object 1`] = `
+exports[`themed renders a Link correctly with a custom theme object 1`] = `
 .emotion-0 {
   color: mediumvioletred;
   -webkit-text-decoration: none;
@@ -1253,16 +1249,12 @@ exports[`createThemedComponent renders a Link correctly with a custom theme obje
               }
             }
           >
-            <Link
-              element="a"
-            >
-              <Link
-                element="a"
-              >
+            <Link>
+              <Styled(a)>
                 <a
                   className="emotion-0"
                 />
-              </Link>
+              </Styled(a)>
             </Link>
           </ThemeProvider>
         </ThemeProvider>
@@ -1272,7 +1264,7 @@ exports[`createThemedComponent renders a Link correctly with a custom theme obje
 </ThemeProvider>
 `;
 
-exports[`createThemedComponent renders correctly 1`] = `
+exports[`themed renders correctly 1`] = `
 .emotion-0 {
   background-color: lavender;
   color: mediumvioletred;

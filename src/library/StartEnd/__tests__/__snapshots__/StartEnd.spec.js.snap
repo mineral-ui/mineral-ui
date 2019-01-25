@@ -23,7 +23,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 1em;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
@@ -71,7 +70,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -105,7 +103,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -124,14 +121,18 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-80::after {
+.emotion-88::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.emotion-80 > *:not(:last-child) {
+.emotion-88 > *:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.emotion-20 {
+  height: 5rem;
 }
 
 .emotion-15 {
@@ -170,7 +171,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -197,7 +197,7 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-33 {
+.emotion-35 {
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -218,7 +218,7 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   height: 5rem;
 }
 
-.emotion-32 {
+.emotion-34 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -227,7 +227,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -248,13 +247,13 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   height: 5rem;
 }
 
-.emotion-32 *,
-.emotion-32 *::before,
-.emotion-32 *::after {
+.emotion-34 *,
+.emotion-34 *::before,
+.emotion-34 *::after {
   box-sizing: inherit;
 }
 
-.emotion-53 {
+.emotion-57 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -275,7 +274,7 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   height: 5rem;
 }
 
-.emotion-52 {
+.emotion-56 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -284,7 +283,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -305,13 +303,13 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   height: 5rem;
 }
 
-.emotion-52 *,
-.emotion-52 *::before,
-.emotion-52 *::after {
+.emotion-56 *,
+.emotion-56 *::before,
+.emotion-56 *::after {
   box-sizing: inherit;
 }
 
-.emotion-73 {
+.emotion-79 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -332,7 +330,7 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   height: 5rem;
 }
 
-.emotion-72 {
+.emotion-78 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -341,7 +339,6 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -362,687 +359,669 @@ exports[`StartEnd demo examples Snapshots: align-items 1`] = `
   height: 5rem;
 }
 
-.emotion-72 *,
-.emotion-72 *::before,
-.emotion-72 *::after {
+.emotion-78 *,
+.emotion-78 *::before,
+.emotion-78 *::after {
   box-sizing: inherit;
 }
 
 <Component>
-  <Styled(div)>
-    <div
-      className="emotion-80"
-    >
-      <Styled(StartEnd)
-        alignItems="stretch"
-        key="0"
+  <DemoLayout>
+    <Styled(div)>
+      <div
+        className="emotion-88"
       >
-        <StartEnd
+        <Styled(DemoStartEnd)
           alignItems="stretch"
-          className="emotion-15"
+          key="0"
         >
-          <Flex
+          <DemoStartEnd
             alignItems="stretch"
-            className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            className="emotion-20"
           >
-            <WithTheme(Component)
+            <Styled(StartEnd)
               alignItems="stretch"
-              className="emotion-15"
-              direction="row"
-              gutterWidth="md"
-              justifyContent="between"
+              className="emotion-20"
             >
-              <Component
+              <StartEnd
                 alignItems="stretch"
                 className="emotion-15"
-                direction="row"
-                gutterWidth="md"
-                justifyContent="between"
               >
                 <Flex
                   alignItems="stretch"
                   className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Box
+                  <WithTheme(Component)
                     alignItems="stretch"
-                    className="emotion-13"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <Styled(div)
+                    <Component
                       alignItems="stretch"
-                      className="emotion-13"
+                      className="emotion-15"
                       direction="row"
-                      element="div"
                       gutterWidth="md"
                       justifyContent="between"
                     >
-                      <div
-                        className="emotion-12"
+                      <Styled(Box)
+                        alignItems="stretch"
+                        className="emotion-15"
+                        direction="row"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          grow={0}
-                          key=".$.0"
-                          marginEnd="1em"
-                          shrink={1}
+                        <Box
+                          alignItems="stretch"
+                          className="emotion-13"
+                          gutterWidth="md"
+                          justifyContent="between"
                         >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            marginEnd="1em"
-                            shrink={1}
+                          <Styled(div)
+                            alignItems="stretch"
+                            className="emotion-13"
+                            gutterWidth="md"
+                            justifyContent="between"
                           >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              marginEnd="1em"
-                              shrink={1}
+                            <div
+                              className="emotion-12"
                             >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                              <FlexItem
                                 grow={0}
+                                key=".$.0"
                                 marginEnd="1em"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-3"
+                                <Styled(Box)
+                                  grow={0}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    marginEnd="1em"
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      marginEnd="1em"
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-3"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          Start
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                        <FlexItem
-                          grow={0}
-                          key=".$.1"
-                          shrink={1}
-                        >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            shrink={1}
-                          >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              shrink={1}
-                            >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  Start
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                              <FlexItem
                                 grow={0}
+                                key=".$.1"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-9"
+                                <Styled(Box)
+                                  grow={0}
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-9"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          End
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                      </div>
-                    </Styled(div)>
-                  </Box>
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  End
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
+                    </Component>
+                  </WithTheme(Component)>
                 </Flex>
-              </Component>
-            </WithTheme(Component)>
-          </Flex>
-        </StartEnd>
-      </Styled(StartEnd)>
-      <Styled(StartEnd)
-        alignItems="start"
-        key="1"
-      >
-        <StartEnd
+              </StartEnd>
+            </Styled(StartEnd)>
+          </DemoStartEnd>
+        </Styled(DemoStartEnd)>
+        <Styled(DemoStartEnd)
           alignItems="start"
-          className="emotion-15"
+          key="1"
         >
-          <Flex
+          <DemoStartEnd
             alignItems="start"
-            className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            className="emotion-20"
           >
-            <WithTheme(Component)
+            <Styled(StartEnd)
               alignItems="start"
-              className="emotion-15"
-              direction="row"
-              gutterWidth="md"
-              justifyContent="between"
+              className="emotion-20"
             >
-              <Component
+              <StartEnd
                 alignItems="start"
                 className="emotion-15"
-                direction="row"
-                gutterWidth="md"
-                justifyContent="between"
               >
                 <Flex
                   alignItems="start"
                   className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Box
+                  <WithTheme(Component)
                     alignItems="start"
-                    className="emotion-33"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <Styled(div)
+                    <Component
                       alignItems="start"
-                      className="emotion-33"
+                      className="emotion-15"
                       direction="row"
-                      element="div"
                       gutterWidth="md"
                       justifyContent="between"
                     >
-                      <div
-                        className="emotion-32"
+                      <Styled(Box)
+                        alignItems="start"
+                        className="emotion-15"
+                        direction="row"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          grow={0}
-                          key=".$.0"
-                          marginEnd="1em"
-                          shrink={1}
+                        <Box
+                          alignItems="start"
+                          className="emotion-35"
+                          gutterWidth="md"
+                          justifyContent="between"
                         >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            marginEnd="1em"
-                            shrink={1}
+                          <Styled(div)
+                            alignItems="start"
+                            className="emotion-35"
+                            gutterWidth="md"
+                            justifyContent="between"
                           >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              marginEnd="1em"
-                              shrink={1}
+                            <div
+                              className="emotion-34"
                             >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                              <FlexItem
                                 grow={0}
+                                key=".$.0"
                                 marginEnd="1em"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-3"
+                                <Styled(Box)
+                                  grow={0}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    marginEnd="1em"
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      marginEnd="1em"
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-3"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          Start
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                        <FlexItem
-                          grow={0}
-                          key=".$.1"
-                          shrink={1}
-                        >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            shrink={1}
-                          >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              shrink={1}
-                            >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  Start
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                              <FlexItem
                                 grow={0}
+                                key=".$.1"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-9"
+                                <Styled(Box)
+                                  grow={0}
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-9"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          End
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                      </div>
-                    </Styled(div)>
-                  </Box>
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  End
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
+                    </Component>
+                  </WithTheme(Component)>
                 </Flex>
-              </Component>
-            </WithTheme(Component)>
-          </Flex>
-        </StartEnd>
-      </Styled(StartEnd)>
-      <Styled(StartEnd)
-        alignItems="center"
-        key="2"
-      >
-        <StartEnd
+              </StartEnd>
+            </Styled(StartEnd)>
+          </DemoStartEnd>
+        </Styled(DemoStartEnd)>
+        <Styled(DemoStartEnd)
           alignItems="center"
-          className="emotion-15"
+          key="2"
         >
-          <Flex
+          <DemoStartEnd
             alignItems="center"
-            className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            className="emotion-20"
           >
-            <WithTheme(Component)
+            <Styled(StartEnd)
               alignItems="center"
-              className="emotion-15"
-              direction="row"
-              gutterWidth="md"
-              justifyContent="between"
+              className="emotion-20"
             >
-              <Component
+              <StartEnd
                 alignItems="center"
                 className="emotion-15"
-                direction="row"
-                gutterWidth="md"
-                justifyContent="between"
               >
                 <Flex
                   alignItems="center"
                   className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Box
+                  <WithTheme(Component)
                     alignItems="center"
-                    className="emotion-53"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <Styled(div)
+                    <Component
                       alignItems="center"
-                      className="emotion-53"
+                      className="emotion-15"
                       direction="row"
-                      element="div"
                       gutterWidth="md"
                       justifyContent="between"
                     >
-                      <div
-                        className="emotion-52"
+                      <Styled(Box)
+                        alignItems="center"
+                        className="emotion-15"
+                        direction="row"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          grow={0}
-                          key=".$.0"
-                          marginEnd="1em"
-                          shrink={1}
+                        <Box
+                          alignItems="center"
+                          className="emotion-57"
+                          gutterWidth="md"
+                          justifyContent="between"
                         >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            marginEnd="1em"
-                            shrink={1}
+                          <Styled(div)
+                            alignItems="center"
+                            className="emotion-57"
+                            gutterWidth="md"
+                            justifyContent="between"
                           >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              marginEnd="1em"
-                              shrink={1}
+                            <div
+                              className="emotion-56"
                             >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                              <FlexItem
                                 grow={0}
+                                key=".$.0"
                                 marginEnd="1em"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-3"
+                                <Styled(Box)
+                                  grow={0}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    marginEnd="1em"
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      marginEnd="1em"
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-3"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          Start
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                        <FlexItem
-                          grow={0}
-                          key=".$.1"
-                          shrink={1}
-                        >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            shrink={1}
-                          >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              shrink={1}
-                            >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  Start
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                              <FlexItem
                                 grow={0}
+                                key=".$.1"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-9"
+                                <Styled(Box)
+                                  grow={0}
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-9"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          End
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                      </div>
-                    </Styled(div)>
-                  </Box>
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  End
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
+                    </Component>
+                  </WithTheme(Component)>
                 </Flex>
-              </Component>
-            </WithTheme(Component)>
-          </Flex>
-        </StartEnd>
-      </Styled(StartEnd)>
-      <Styled(StartEnd)
-        alignItems="end"
-        key="3"
-      >
-        <StartEnd
+              </StartEnd>
+            </Styled(StartEnd)>
+          </DemoStartEnd>
+        </Styled(DemoStartEnd)>
+        <Styled(DemoStartEnd)
           alignItems="end"
-          className="emotion-15"
+          key="3"
         >
-          <Flex
+          <DemoStartEnd
             alignItems="end"
-            className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            className="emotion-20"
           >
-            <WithTheme(Component)
+            <Styled(StartEnd)
               alignItems="end"
-              className="emotion-15"
-              direction="row"
-              gutterWidth="md"
-              justifyContent="between"
+              className="emotion-20"
             >
-              <Component
+              <StartEnd
                 alignItems="end"
                 className="emotion-15"
-                direction="row"
-                gutterWidth="md"
-                justifyContent="between"
               >
                 <Flex
                   alignItems="end"
                   className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Box
+                  <WithTheme(Component)
                     alignItems="end"
-                    className="emotion-73"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <Styled(div)
+                    <Component
                       alignItems="end"
-                      className="emotion-73"
+                      className="emotion-15"
                       direction="row"
-                      element="div"
                       gutterWidth="md"
                       justifyContent="between"
                     >
-                      <div
-                        className="emotion-72"
+                      <Styled(Box)
+                        alignItems="end"
+                        className="emotion-15"
+                        direction="row"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          grow={0}
-                          key=".$.0"
-                          marginEnd="1em"
-                          shrink={1}
+                        <Box
+                          alignItems="end"
+                          className="emotion-79"
+                          gutterWidth="md"
+                          justifyContent="between"
                         >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            marginEnd="1em"
-                            shrink={1}
+                          <Styled(div)
+                            alignItems="end"
+                            className="emotion-79"
+                            gutterWidth="md"
+                            justifyContent="between"
                           >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              marginEnd="1em"
-                              shrink={1}
+                            <div
+                              className="emotion-78"
                             >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                              <FlexItem
                                 grow={0}
+                                key=".$.0"
                                 marginEnd="1em"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-3"
+                                <Styled(Box)
+                                  grow={0}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    marginEnd="1em"
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      marginEnd="1em"
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-3"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          Start
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                        <FlexItem
-                          grow={0}
-                          key=".$.1"
-                          shrink={1}
-                        >
-                          <FlexItem
-                            element="div"
-                            grow={0}
-                            shrink={1}
-                          >
-                            <Box
-                              className="emotion-4"
-                              element="div"
-                              grow={0}
-                              shrink={1}
-                            >
-                              <Styled(div)
-                                className="emotion-4"
-                                element="div"
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  Start
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                              <FlexItem
                                 grow={0}
+                                key=".$.1"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-9"
+                                <Styled(Box)
+                                  grow={0}
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <Box
+                                    className="emotion-4"
+                                    grow={0}
+                                    shrink={1}
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
+                                    <Styled(div)
+                                      className="emotion-4"
+                                      grow={0}
+                                      shrink={1}
                                     >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
+                                      <div
+                                        className="emotion-9"
                                       >
-                                        <div
-                                          className="emotion-0"
-                                        >
-                                          End
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
-                          </FlexItem>
-                        </FlexItem>
-                      </div>
-                    </Styled(div)>
-                  </Box>
+                                        <DemoBox>
+                                          <Styled(Box)>
+                                            <Box
+                                              className="emotion-1"
+                                            >
+                                              <Styled(div)
+                                                className="emotion-1"
+                                              >
+                                                <div
+                                                  className="emotion-0"
+                                                >
+                                                  End
+                                                </div>
+                                              </Styled(div)>
+                                            </Box>
+                                          </Styled(Box)>
+                                        </DemoBox>
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </FlexItem>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
+                    </Component>
+                  </WithTheme(Component)>
                 </Flex>
-              </Component>
-            </WithTheme(Component)>
-          </Flex>
-        </StartEnd>
-      </Styled(StartEnd)>
-    </div>
-  </Styled(div)>
+              </StartEnd>
+            </Styled(StartEnd)>
+          </DemoStartEnd>
+        </Styled(DemoStartEnd)>
+      </div>
+    </Styled(div)>
+  </DemoLayout>
 </Component>
 `;
 
@@ -1081,7 +1060,6 @@ exports[`StartEnd demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -1129,7 +1107,6 @@ exports[`StartEnd demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 1em;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
@@ -1177,7 +1154,6 @@ exports[`StartEnd demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1211,7 +1187,6 @@ exports[`StartEnd demo examples Snapshots: basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1230,169 +1205,156 @@ exports[`StartEnd demo examples Snapshots: basic 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(StartEnd)>
-  <StartEnd
-    className="emotion-15"
-  >
-    <Flex
-      alignItems="stretch"
+<DemoStartEnd>
+  <Styled(StartEnd)>
+    <StartEnd
       className="emotion-15"
-      direction="row"
-      gutterWidth="md"
-      justifyContent="between"
     >
-      <WithTheme(Component)
+      <Flex
         alignItems="stretch"
         className="emotion-15"
         direction="row"
         gutterWidth="md"
         justifyContent="between"
       >
-        <Component
+        <WithTheme(Component)
           alignItems="stretch"
           className="emotion-15"
           direction="row"
           gutterWidth="md"
           justifyContent="between"
         >
-          <Flex
+          <Component
             alignItems="stretch"
             className="emotion-15"
             direction="row"
-            element="div"
             gutterWidth="md"
             justifyContent="between"
           >
-            <Box
+            <Styled(Box)
               alignItems="stretch"
-              className="emotion-13"
+              className="emotion-15"
               direction="row"
-              element="div"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Styled(div)
+              <Box
                 alignItems="stretch"
                 className="emotion-13"
-                direction="row"
-                element="div"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <div
-                  className="emotion-12"
+                <Styled(div)
+                  alignItems="stretch"
+                  className="emotion-13"
+                  gutterWidth="md"
+                  justifyContent="between"
                 >
-                  <FlexItem
-                    grow={0}
-                    key=".$.0"
-                    marginEnd="1em"
-                    shrink={1}
+                  <div
+                    className="emotion-12"
                   >
                     <FlexItem
-                      element="div"
                       grow={0}
+                      key=".$.0"
                       marginEnd="1em"
                       shrink={1}
                     >
-                      <Box
-                        className="emotion-4"
-                        element="div"
+                      <Styled(Box)
                         grow={0}
                         marginEnd="1em"
                         shrink={1}
                       >
-                        <Styled(div)
+                        <Box
                           className="emotion-4"
-                          element="div"
                           grow={0}
                           marginEnd="1em"
                           shrink={1}
                         >
-                          <div
-                            className="emotion-3"
+                          <Styled(div)
+                            className="emotion-4"
+                            grow={0}
+                            marginEnd="1em"
+                            shrink={1}
                           >
-                            <Styled(Box)
-                              element="div"
+                            <div
+                              className="emotion-3"
                             >
-                              <Box
-                                className="emotion-1"
-                                element="div"
-                              >
-                                <Styled(div)
-                                  className="emotion-1"
-                                  element="div"
-                                >
-                                  <div
-                                    className="emotion-0"
+                              <DemoBox>
+                                <Styled(Box)>
+                                  <Box
+                                    className="emotion-1"
                                   >
-                                    Start
-                                  </div>
-                                </Styled(div)>
-                              </Box>
-                            </Styled(Box)>
-                          </div>
-                        </Styled(div)>
-                      </Box>
+                                    <Styled(div)
+                                      className="emotion-1"
+                                    >
+                                      <div
+                                        className="emotion-0"
+                                      >
+                                        Start
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </DemoBox>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
                     </FlexItem>
-                  </FlexItem>
-                  <FlexItem
-                    grow={0}
-                    key=".$.1"
-                    shrink={1}
-                  >
                     <FlexItem
-                      element="div"
                       grow={0}
+                      key=".$.1"
                       shrink={1}
                     >
-                      <Box
-                        className="emotion-4"
-                        element="div"
+                      <Styled(Box)
                         grow={0}
                         shrink={1}
                       >
-                        <Styled(div)
+                        <Box
                           className="emotion-4"
-                          element="div"
                           grow={0}
                           shrink={1}
                         >
-                          <div
-                            className="emotion-9"
+                          <Styled(div)
+                            className="emotion-4"
+                            grow={0}
+                            shrink={1}
                           >
-                            <Styled(Box)
-                              element="div"
+                            <div
+                              className="emotion-9"
                             >
-                              <Box
-                                className="emotion-1"
-                                element="div"
-                              >
-                                <Styled(div)
-                                  className="emotion-1"
-                                  element="div"
-                                >
-                                  <div
-                                    className="emotion-0"
+                              <DemoBox>
+                                <Styled(Box)>
+                                  <Box
+                                    className="emotion-1"
                                   >
-                                    End
-                                  </div>
-                                </Styled(div)>
-                              </Box>
-                            </Styled(Box)>
-                          </div>
-                        </Styled(div)>
-                      </Box>
+                                    <Styled(div)
+                                      className="emotion-1"
+                                    >
+                                      <div
+                                        className="emotion-0"
+                                      >
+                                        End
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </DemoBox>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
                     </FlexItem>
-                  </FlexItem>
-                </div>
-              </Styled(div)>
-            </Box>
-          </Flex>
-        </Component>
-      </WithTheme(Component)>
-    </Flex>
-  </StartEnd>
-</Styled(StartEnd)>
+                  </div>
+                </Styled(div)>
+              </Box>
+            </Styled(Box)>
+          </Component>
+        </WithTheme(Component)>
+      </Flex>
+    </StartEnd>
+  </Styled(StartEnd)>
+</DemoStartEnd>
 `;
 
 exports[`StartEnd demo examples Snapshots: direction 1`] = `
@@ -1442,7 +1404,6 @@ exports[`StartEnd demo examples Snapshots: direction 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1476,7 +1437,6 @@ exports[`StartEnd demo examples Snapshots: direction 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1524,7 +1484,6 @@ exports[`StartEnd demo examples Snapshots: direction 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -1550,168 +1509,157 @@ exports[`StartEnd demo examples Snapshots: direction 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(StartEnd)
+<DemoStartEnd
   direction="column"
 >
-  <StartEnd
-    className="emotion-15"
+  <Styled(StartEnd)
     direction="column"
   >
-    <Flex
-      alignItems="stretch"
+    <StartEnd
       className="emotion-15"
       direction="column"
-      gutterWidth="md"
-      justifyContent="between"
     >
-      <WithTheme(Component)
+      <Flex
         alignItems="stretch"
         className="emotion-15"
         direction="column"
         gutterWidth="md"
         justifyContent="between"
       >
-        <Component
+        <WithTheme(Component)
           alignItems="stretch"
           className="emotion-15"
           direction="column"
           gutterWidth="md"
           justifyContent="between"
         >
-          <Flex
+          <Component
             alignItems="stretch"
             className="emotion-15"
             direction="column"
-            element="div"
             gutterWidth="md"
             justifyContent="between"
           >
-            <Box
+            <Styled(Box)
               alignItems="stretch"
-              className="emotion-13"
+              className="emotion-15"
               direction="column"
-              element="div"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Styled(div)
+              <Box
                 alignItems="stretch"
                 className="emotion-13"
-                direction="column"
-                element="div"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <div
-                  className="emotion-12"
+                <Styled(div)
+                  alignItems="stretch"
+                  className="emotion-13"
+                  gutterWidth="md"
+                  justifyContent="between"
                 >
-                  <FlexItem
-                    grow={0}
-                    key=".$.0"
-                    shrink={1}
+                  <div
+                    className="emotion-12"
                   >
                     <FlexItem
-                      element="div"
                       grow={0}
+                      key=".$.0"
                       shrink={1}
                     >
-                      <Box
-                        className="emotion-4"
-                        element="div"
+                      <Styled(Box)
                         grow={0}
                         shrink={1}
                       >
-                        <Styled(div)
+                        <Box
                           className="emotion-4"
-                          element="div"
                           grow={0}
                           shrink={1}
                         >
-                          <div
-                            className="emotion-3"
+                          <Styled(div)
+                            className="emotion-4"
+                            grow={0}
+                            shrink={1}
                           >
-                            <Styled(Box)
-                              element="div"
+                            <div
+                              className="emotion-3"
                             >
-                              <Box
-                                className="emotion-1"
-                                element="div"
-                              >
-                                <Styled(div)
-                                  className="emotion-1"
-                                  element="div"
-                                >
-                                  <div
-                                    className="emotion-0"
+                              <DemoBox>
+                                <Styled(Box)>
+                                  <Box
+                                    className="emotion-1"
                                   >
-                                    Start
-                                  </div>
-                                </Styled(div)>
-                              </Box>
-                            </Styled(Box)>
-                          </div>
-                        </Styled(div)>
-                      </Box>
+                                    <Styled(div)
+                                      className="emotion-1"
+                                    >
+                                      <div
+                                        className="emotion-0"
+                                      >
+                                        Start
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </DemoBox>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
                     </FlexItem>
-                  </FlexItem>
-                  <FlexItem
-                    grow={0}
-                    key=".$.1"
-                    shrink={1}
-                  >
                     <FlexItem
-                      element="div"
                       grow={0}
+                      key=".$.1"
                       shrink={1}
                     >
-                      <Box
-                        className="emotion-4"
-                        element="div"
+                      <Styled(Box)
                         grow={0}
                         shrink={1}
                       >
-                        <Styled(div)
+                        <Box
                           className="emotion-4"
-                          element="div"
                           grow={0}
                           shrink={1}
                         >
-                          <div
-                            className="emotion-3"
+                          <Styled(div)
+                            className="emotion-4"
+                            grow={0}
+                            shrink={1}
                           >
-                            <Styled(Box)
-                              element="div"
+                            <div
+                              className="emotion-3"
                             >
-                              <Box
-                                className="emotion-1"
-                                element="div"
-                              >
-                                <Styled(div)
-                                  className="emotion-1"
-                                  element="div"
-                                >
-                                  <div
-                                    className="emotion-0"
+                              <DemoBox>
+                                <Styled(Box)>
+                                  <Box
+                                    className="emotion-1"
                                   >
-                                    End
-                                  </div>
-                                </Styled(div)>
-                              </Box>
-                            </Styled(Box)>
-                          </div>
-                        </Styled(div)>
-                      </Box>
+                                    <Styled(div)
+                                      className="emotion-1"
+                                    >
+                                      <div
+                                        className="emotion-0"
+                                      >
+                                        End
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </DemoBox>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
                     </FlexItem>
-                  </FlexItem>
-                </div>
-              </Styled(div)>
-            </Box>
-          </Flex>
-        </Component>
-      </WithTheme(Component)>
-    </Flex>
-  </StartEnd>
-</Styled(StartEnd)>
+                  </div>
+                </Styled(div)>
+              </Box>
+            </Styled(Box)>
+          </Component>
+        </WithTheme(Component)>
+      </Flex>
+    </StartEnd>
+  </Styled(StartEnd)>
+</DemoStartEnd>
 `;
 
 exports[`StartEnd demo examples Snapshots: priority 1`] = `
@@ -1749,7 +1697,6 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -1797,7 +1744,6 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 1em;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
@@ -1845,7 +1791,6 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1879,7 +1824,6 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1930,7 +1874,6 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-right: 1em;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
@@ -1959,7 +1902,6 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1978,510 +1920,479 @@ exports[`StartEnd demo examples Snapshots: priority 1`] = `
   box-sizing: inherit;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-60"
-  >
-    <Styled(StartEnd)
-      priority="start"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-60"
     >
-      <StartEnd
-        className="emotion-15"
+      <DemoStartEnd
         priority="start"
       >
-        <Flex
-          alignItems="stretch"
-          className="emotion-15"
-          direction="row"
-          gutterWidth="md"
-          justifyContent="between"
+        <Styled(StartEnd)
+          priority="start"
         >
-          <WithTheme(Component)
-            alignItems="stretch"
+          <StartEnd
             className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            priority="start"
           >
-            <Component
+            <Flex
               alignItems="stretch"
               className="emotion-15"
               direction="row"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Flex
+              <WithTheme(Component)
                 alignItems="stretch"
                 className="emotion-15"
                 direction="row"
-                element="div"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <Box
+                <Component
                   alignItems="stretch"
-                  className="emotion-13"
+                  className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Styled(div)
+                  <Styled(Box)
                     alignItems="stretch"
-                    className="emotion-13"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <div
-                      className="emotion-12"
+                    <Box
+                      alignItems="stretch"
+                      className="emotion-13"
+                      gutterWidth="md"
+                      justifyContent="between"
                     >
-                      <FlexItem
-                        grow={1}
-                        key=".$.0"
-                        marginEnd="1em"
-                        shrink={1}
+                      <Styled(div)
+                        alignItems="stretch"
+                        className="emotion-13"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          element="div"
-                          grow={1}
-                          marginEnd="1em"
-                          shrink={1}
+                        <div
+                          className="emotion-12"
                         >
-                          <Box
-                            className="emotion-4"
-                            element="div"
+                          <FlexItem
                             grow={1}
+                            key=".$.0"
                             marginEnd="1em"
                             shrink={1}
                           >
-                            <Styled(div)
-                              className="emotion-4"
-                              element="div"
+                            <Styled(Box)
                               grow={1}
                               marginEnd="1em"
                               shrink={1}
                             >
-                              <div
-                                className="emotion-3"
+                              <Box
+                                className="emotion-4"
+                                grow={1}
+                                marginEnd="1em"
+                                shrink={1}
                               >
-                                <Styled(Box)
-                                  element="div"
+                                <Styled(div)
+                                  className="emotion-4"
+                                  grow={1}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Box
-                                    className="emotion-1"
-                                    element="div"
+                                  <div
+                                    className="emotion-3"
                                   >
-                                    <Styled(div)
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <div
-                                        className="emotion-0"
-                                      >
-                                        Start
-                                      </div>
-                                    </Styled(div)>
-                                  </Box>
-                                </Styled(Box)>
-                              </div>
-                            </Styled(div)>
-                          </Box>
-                        </FlexItem>
-                      </FlexItem>
-                      <FlexItem
-                        grow={0}
-                        key=".$.1"
-                        shrink={1}
-                      >
-                        <FlexItem
-                          element="div"
-                          grow={0}
-                          shrink={1}
-                        >
-                          <Box
-                            className="emotion-10"
-                            element="div"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
+                                        >
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              Start
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
+                          </FlexItem>
+                          <FlexItem
                             grow={0}
+                            key=".$.1"
                             shrink={1}
                           >
-                            <Styled(div)
-                              className="emotion-10"
-                              element="div"
+                            <Styled(Box)
                               grow={0}
                               shrink={1}
                             >
-                              <div
-                                className="emotion-9"
+                              <Box
+                                className="emotion-10"
+                                grow={0}
+                                shrink={1}
                               >
-                                <Styled(Box)
-                                  element="div"
+                                <Styled(div)
+                                  className="emotion-10"
+                                  grow={0}
+                                  shrink={1}
                                 >
-                                  <Box
-                                    className="emotion-1"
-                                    element="div"
+                                  <div
+                                    className="emotion-9"
                                   >
-                                    <Styled(div)
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <div
-                                        className="emotion-0"
-                                      >
-                                        End
-                                      </div>
-                                    </Styled(div)>
-                                  </Box>
-                                </Styled(Box)>
-                              </div>
-                            </Styled(div)>
-                          </Box>
-                        </FlexItem>
-                      </FlexItem>
-                    </div>
-                  </Styled(div)>
-                </Box>
-              </Flex>
-            </Component>
-          </WithTheme(Component)>
-        </Flex>
-      </StartEnd>
-    </Styled(StartEnd)>
-    <Styled(StartEnd)
-      priority="end"
-    >
-      <StartEnd
-        className="emotion-15"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
+                                        >
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              End
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
+                          </FlexItem>
+                        </div>
+                      </Styled(div)>
+                    </Box>
+                  </Styled(Box)>
+                </Component>
+              </WithTheme(Component)>
+            </Flex>
+          </StartEnd>
+        </Styled(StartEnd)>
+      </DemoStartEnd>
+      <DemoStartEnd
         priority="end"
       >
-        <Flex
-          alignItems="stretch"
-          className="emotion-15"
-          direction="row"
-          gutterWidth="md"
-          justifyContent="between"
+        <Styled(StartEnd)
+          priority="end"
         >
-          <WithTheme(Component)
-            alignItems="stretch"
+          <StartEnd
             className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            priority="end"
           >
-            <Component
+            <Flex
               alignItems="stretch"
               className="emotion-15"
               direction="row"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Flex
+              <WithTheme(Component)
                 alignItems="stretch"
                 className="emotion-15"
                 direction="row"
-                element="div"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <Box
+                <Component
                   alignItems="stretch"
-                  className="emotion-13"
+                  className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Styled(div)
+                  <Styled(Box)
                     alignItems="stretch"
-                    className="emotion-13"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <div
-                      className="emotion-12"
+                    <Box
+                      alignItems="stretch"
+                      className="emotion-13"
+                      gutterWidth="md"
+                      justifyContent="between"
                     >
-                      <FlexItem
-                        grow={0}
-                        key=".$.0"
-                        marginEnd="1em"
-                        shrink={1}
+                      <Styled(div)
+                        alignItems="stretch"
+                        className="emotion-13"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          element="div"
-                          grow={0}
-                          marginEnd="1em"
-                          shrink={1}
+                        <div
+                          className="emotion-12"
                         >
-                          <Box
-                            className="emotion-10"
-                            element="div"
+                          <FlexItem
                             grow={0}
+                            key=".$.0"
                             marginEnd="1em"
                             shrink={1}
                           >
-                            <Styled(div)
-                              className="emotion-10"
-                              element="div"
+                            <Styled(Box)
                               grow={0}
                               marginEnd="1em"
                               shrink={1}
                             >
-                              <div
-                                className="emotion-23"
+                              <Box
+                                className="emotion-10"
+                                grow={0}
+                                marginEnd="1em"
+                                shrink={1}
                               >
-                                <Styled(Box)
-                                  element="div"
+                                <Styled(div)
+                                  className="emotion-10"
+                                  grow={0}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Box
-                                    className="emotion-1"
-                                    element="div"
+                                  <div
+                                    className="emotion-23"
                                   >
-                                    <Styled(div)
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <div
-                                        className="emotion-0"
-                                      >
-                                        Start
-                                      </div>
-                                    </Styled(div)>
-                                  </Box>
-                                </Styled(Box)>
-                              </div>
-                            </Styled(div)>
-                          </Box>
-                        </FlexItem>
-                      </FlexItem>
-                      <FlexItem
-                        grow={1}
-                        key=".$.1"
-                        shrink={1}
-                      >
-                        <FlexItem
-                          element="div"
-                          grow={1}
-                          shrink={1}
-                        >
-                          <Box
-                            className="emotion-4"
-                            element="div"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
+                                        >
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              Start
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
+                          </FlexItem>
+                          <FlexItem
                             grow={1}
+                            key=".$.1"
                             shrink={1}
                           >
-                            <Styled(div)
-                              className="emotion-4"
-                              element="div"
+                            <Styled(Box)
                               grow={1}
                               shrink={1}
                             >
-                              <div
-                                className="emotion-29"
+                              <Box
+                                className="emotion-4"
+                                grow={1}
+                                shrink={1}
                               >
-                                <Styled(Box)
-                                  element="div"
+                                <Styled(div)
+                                  className="emotion-4"
+                                  grow={1}
+                                  shrink={1}
                                 >
-                                  <Box
-                                    className="emotion-1"
-                                    element="div"
+                                  <div
+                                    className="emotion-29"
                                   >
-                                    <Styled(div)
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <div
-                                        className="emotion-0"
-                                      >
-                                        End
-                                      </div>
-                                    </Styled(div)>
-                                  </Box>
-                                </Styled(Box)>
-                              </div>
-                            </Styled(div)>
-                          </Box>
-                        </FlexItem>
-                      </FlexItem>
-                    </div>
-                  </Styled(div)>
-                </Box>
-              </Flex>
-            </Component>
-          </WithTheme(Component)>
-        </Flex>
-      </StartEnd>
-    </Styled(StartEnd)>
-    <Styled(StartEnd)
-      priority="both"
-    >
-      <StartEnd
-        className="emotion-15"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
+                                        >
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              End
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
+                          </FlexItem>
+                        </div>
+                      </Styled(div)>
+                    </Box>
+                  </Styled(Box)>
+                </Component>
+              </WithTheme(Component)>
+            </Flex>
+          </StartEnd>
+        </Styled(StartEnd)>
+      </DemoStartEnd>
+      <DemoStartEnd
         priority="both"
       >
-        <Flex
-          alignItems="stretch"
-          className="emotion-15"
-          direction="row"
-          gutterWidth="md"
-          justifyContent="between"
+        <Styled(StartEnd)
+          priority="both"
         >
-          <WithTheme(Component)
-            alignItems="stretch"
+          <StartEnd
             className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
+            priority="both"
           >
-            <Component
+            <Flex
               alignItems="stretch"
               className="emotion-15"
               direction="row"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Flex
+              <WithTheme(Component)
                 alignItems="stretch"
                 className="emotion-15"
                 direction="row"
-                element="div"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <Box
+                <Component
                   alignItems="stretch"
-                  className="emotion-13"
+                  className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Styled(div)
+                  <Styled(Box)
                     alignItems="stretch"
-                    className="emotion-13"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <div
-                      className="emotion-12"
+                    <Box
+                      alignItems="stretch"
+                      className="emotion-13"
+                      gutterWidth="md"
+                      justifyContent="between"
                     >
-                      <FlexItem
-                        grow={1}
-                        key=".$.0"
-                        marginEnd="1em"
-                        shrink={1}
+                      <Styled(div)
+                        alignItems="stretch"
+                        className="emotion-13"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          element="div"
-                          grow={1}
-                          marginEnd="1em"
-                          shrink={1}
+                        <div
+                          className="emotion-12"
                         >
-                          <Box
-                            className="emotion-4"
-                            element="div"
+                          <FlexItem
                             grow={1}
+                            key=".$.0"
                             marginEnd="1em"
                             shrink={1}
                           >
-                            <Styled(div)
-                              className="emotion-4"
-                              element="div"
+                            <Styled(Box)
                               grow={1}
                               marginEnd="1em"
                               shrink={1}
                             >
-                              <div
-                                className="emotion-3"
+                              <Box
+                                className="emotion-4"
+                                grow={1}
+                                marginEnd="1em"
+                                shrink={1}
                               >
-                                <Styled(Box)
-                                  element="div"
+                                <Styled(div)
+                                  className="emotion-4"
+                                  grow={1}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Box
-                                    className="emotion-1"
-                                    element="div"
+                                  <div
+                                    className="emotion-3"
                                   >
-                                    <Styled(div)
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <div
-                                        className="emotion-0"
-                                      >
-                                        Start
-                                      </div>
-                                    </Styled(div)>
-                                  </Box>
-                                </Styled(Box)>
-                              </div>
-                            </Styled(div)>
-                          </Box>
-                        </FlexItem>
-                      </FlexItem>
-                      <FlexItem
-                        grow={1}
-                        key=".$.1"
-                        shrink={1}
-                      >
-                        <FlexItem
-                          element="div"
-                          grow={1}
-                          shrink={1}
-                        >
-                          <Box
-                            className="emotion-4"
-                            element="div"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
+                                        >
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              Start
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
+                          </FlexItem>
+                          <FlexItem
                             grow={1}
+                            key=".$.1"
                             shrink={1}
                           >
-                            <Styled(div)
-                              className="emotion-4"
-                              element="div"
+                            <Styled(Box)
                               grow={1}
                               shrink={1}
                             >
-                              <div
-                                className="emotion-29"
+                              <Box
+                                className="emotion-4"
+                                grow={1}
+                                shrink={1}
                               >
-                                <Styled(Box)
-                                  element="div"
+                                <Styled(div)
+                                  className="emotion-4"
+                                  grow={1}
+                                  shrink={1}
                                 >
-                                  <Box
-                                    className="emotion-1"
-                                    element="div"
+                                  <div
+                                    className="emotion-29"
                                   >
-                                    <Styled(div)
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <div
-                                        className="emotion-0"
-                                      >
-                                        End
-                                      </div>
-                                    </Styled(div)>
-                                  </Box>
-                                </Styled(Box)>
-                              </div>
-                            </Styled(div)>
-                          </Box>
-                        </FlexItem>
-                      </FlexItem>
-                    </div>
-                  </Styled(div)>
-                </Box>
-              </Flex>
-            </Component>
-          </WithTheme(Component)>
-        </Flex>
-      </StartEnd>
-    </Styled(StartEnd)>
-  </div>
-</Styled(div)>
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
+                                        >
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              End
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
+                          </FlexItem>
+                        </div>
+                      </Styled(div)>
+                    </Box>
+                  </Styled(Box)>
+                </Component>
+              </WithTheme(Component)>
+            </Flex>
+          </StartEnd>
+        </Styled(StartEnd)>
+      </DemoStartEnd>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`StartEnd demo examples Snapshots: responsive 1`] = `
@@ -2518,7 +2429,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2580,7 +2490,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -2607,10 +2516,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
 }
 
 @media (min-width:800px) {
-
-}
-
-@media (min-width:800px) {
   .emotion-12 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -2631,10 +2536,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   flex-shrink: 1;
 }
 
-@media (min-width:800px) {
-
-}
-
 .emotion-3 {
   box-sizing: border-box;
   color: #333840;
@@ -2644,7 +2545,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-left: 0;
   margin-right: 0;
   -webkit-flex-basis: auto;
@@ -2672,10 +2572,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   }
 }
 
-@media (min-width:800px) {
-
-}
-
 .emotion-9 {
   box-sizing: border-box;
   color: #333840;
@@ -2685,7 +2581,6 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -2704,15 +2599,7 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
   box-sizing: inherit;
 }
 
-@media (min-width:800px) {
-
-}
-
-@media (min-width:800px) {
-
-}
-
-<Styled(StartEnd)
+<DemoStartEnd
   breakpoints={
     Array [
       800,
@@ -2725,13 +2612,12 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
     ]
   }
 >
-  <StartEnd
+  <Styled(StartEnd)
     breakpoints={
       Array [
         800,
       ]
     }
-    className="emotion-15"
     direction={
       Array [
         "column",
@@ -2739,8 +2625,7 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
       ]
     }
   >
-    <Flex
-      alignItems="stretch"
+    <StartEnd
       breakpoints={
         Array [
           800,
@@ -2753,10 +2638,8 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
           "row",
         ]
       }
-      gutterWidth="md"
-      justifyContent="between"
     >
-      <WithTheme(Component)
+      <Flex
         alignItems="stretch"
         breakpoints={
           Array [
@@ -2773,7 +2656,7 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
         gutterWidth="md"
         justifyContent="between"
       >
-        <Component
+        <WithTheme(Component)
           alignItems="stretch"
           breakpoints={
             Array [
@@ -2790,7 +2673,7 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
           gutterWidth="md"
           justifyContent="between"
         >
-          <Flex
+          <Component
             alignItems="stretch"
             breakpoints={
               Array [
@@ -2804,29 +2687,27 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
                 "row",
               ]
             }
-            element="div"
             gutterWidth="md"
             justifyContent="between"
           >
-            <Box
+            <Styled(Box)
               alignItems="stretch"
               breakpoints={
                 Array [
                   800,
                 ]
               }
-              className="emotion-13"
+              className="emotion-15"
               direction={
                 Array [
                   "column",
                   "row",
                 ]
               }
-              element="div"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Styled(div)
+              <Box
                 alignItems="stretch"
                 breakpoints={
                   Array [
@@ -2834,40 +2715,22 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
                   ]
                 }
                 className="emotion-13"
-                direction={
-                  Array [
-                    "column",
-                    "row",
-                  ]
-                }
-                element="div"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <div
-                  className="emotion-12"
+                <Styled(div)
+                  alignItems="stretch"
+                  breakpoints={
+                    Array [
+                      800,
+                    ]
+                  }
+                  className="emotion-13"
+                  gutterWidth="md"
+                  justifyContent="between"
                 >
-                  <FlexItem
-                    breakpoints={
-                      Array [
-                        800,
-                      ]
-                    }
-                    grow={0}
-                    key=".$.0"
-                    marginEnd={
-                      Array [
-                        0,
-                        "1em",
-                      ]
-                    }
-                    marginStart={
-                      Array [
-                        0,
-                        0,
-                      ]
-                    }
-                    shrink={1}
+                  <div
+                    className="emotion-12"
                   >
                     <FlexItem
                       breakpoints={
@@ -2875,8 +2738,8 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
                           800,
                         ]
                       }
-                      element="div"
                       grow={0}
+                      key=".$.0"
                       marginEnd={
                         Array [
                           0,
@@ -2891,14 +2754,12 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
                       }
                       shrink={1}
                     >
-                      <Box
+                      <Styled(Box)
                         breakpoints={
                           Array [
                             800,
                           ]
                         }
-                        className="emotion-4"
-                        element="div"
                         grow={0}
                         marginEnd={
                           Array [
@@ -2914,14 +2775,13 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
                         }
                         shrink={1}
                       >
-                        <Styled(div)
+                        <Box
                           breakpoints={
                             Array [
                               800,
                             ]
                           }
                           className="emotion-4"
-                          element="div"
                           grow={0}
                           marginEnd={
                             Array [
@@ -2937,111 +2797,127 @@ exports[`StartEnd demo examples Snapshots: responsive 1`] = `
                           }
                           shrink={1}
                         >
-                          <div
-                            className="emotion-3"
+                          <Styled(div)
+                            breakpoints={
+                              Array [
+                                800,
+                              ]
+                            }
+                            className="emotion-4"
+                            grow={0}
+                            marginEnd={
+                              Array [
+                                0,
+                                "1em",
+                              ]
+                            }
+                            marginStart={
+                              Array [
+                                0,
+                                0,
+                              ]
+                            }
+                            shrink={1}
                           >
-                            <Styled(Box)
-                              element="div"
+                            <div
+                              className="emotion-3"
                             >
-                              <Box
-                                className="emotion-1"
-                                element="div"
-                              >
-                                <Styled(div)
-                                  className="emotion-1"
-                                  element="div"
-                                >
-                                  <div
-                                    className="emotion-0"
+                              <DemoBox>
+                                <Styled(Box)>
+                                  <Box
+                                    className="emotion-1"
                                   >
-                                    Start
-                                  </div>
-                                </Styled(div)>
-                              </Box>
-                            </Styled(Box)>
-                          </div>
-                        </Styled(div)>
-                      </Box>
+                                    <Styled(div)
+                                      className="emotion-1"
+                                    >
+                                      <div
+                                        className="emotion-0"
+                                      >
+                                        Start
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </DemoBox>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
                     </FlexItem>
-                  </FlexItem>
-                  <FlexItem
-                    breakpoints={
-                      Array [
-                        800,
-                      ]
-                    }
-                    grow={0}
-                    key=".$.1"
-                    shrink={1}
-                  >
                     <FlexItem
                       breakpoints={
                         Array [
                           800,
                         ]
                       }
-                      element="div"
                       grow={0}
+                      key=".$.1"
                       shrink={1}
                     >
-                      <Box
+                      <Styled(Box)
                         breakpoints={
                           Array [
                             800,
                           ]
                         }
-                        className="emotion-4"
-                        element="div"
                         grow={0}
                         shrink={1}
                       >
-                        <Styled(div)
+                        <Box
                           breakpoints={
                             Array [
                               800,
                             ]
                           }
                           className="emotion-4"
-                          element="div"
                           grow={0}
                           shrink={1}
                         >
-                          <div
-                            className="emotion-9"
+                          <Styled(div)
+                            breakpoints={
+                              Array [
+                                800,
+                              ]
+                            }
+                            className="emotion-4"
+                            grow={0}
+                            shrink={1}
                           >
-                            <Styled(Box)
-                              element="div"
+                            <div
+                              className="emotion-9"
                             >
-                              <Box
-                                className="emotion-1"
-                                element="div"
-                              >
-                                <Styled(div)
-                                  className="emotion-1"
-                                  element="div"
-                                >
-                                  <div
-                                    className="emotion-0"
+                              <DemoBox>
+                                <Styled(Box)>
+                                  <Box
+                                    className="emotion-1"
                                   >
-                                    End
-                                  </div>
-                                </Styled(div)>
-                              </Box>
-                            </Styled(Box)>
-                          </div>
-                        </Styled(div)>
-                      </Box>
+                                    <Styled(div)
+                                      className="emotion-1"
+                                    >
+                                      <div
+                                        className="emotion-0"
+                                      >
+                                        End
+                                      </div>
+                                    </Styled(div)>
+                                  </Box>
+                                </Styled(Box)>
+                              </DemoBox>
+                            </div>
+                          </Styled(div)>
+                        </Box>
+                      </Styled(Box)>
                     </FlexItem>
-                  </FlexItem>
-                </div>
-              </Styled(div)>
-            </Box>
-          </Flex>
-        </Component>
-      </WithTheme(Component)>
-    </Flex>
-  </StartEnd>
-</Styled(StartEnd)>
+                  </div>
+                </Styled(div)>
+              </Box>
+            </Styled(Box)>
+          </Component>
+        </WithTheme(Component)>
+      </Flex>
+    </StartEnd>
+  </Styled(StartEnd)>
+</DemoStartEnd>
 `;
 
 exports[`StartEnd demo examples Snapshots: rtl 1`] = `
@@ -3079,7 +2955,6 @@ exports[`StartEnd demo examples Snapshots: rtl 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -3146,7 +3021,6 @@ exports[`StartEnd demo examples Snapshots: rtl 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3180,7 +3054,6 @@ exports[`StartEnd demo examples Snapshots: rtl 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -3208,7 +3081,6 @@ exports[`StartEnd demo examples Snapshots: rtl 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: block;
   margin-left: 1em;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
@@ -3233,169 +3105,156 @@ exports[`StartEnd demo examples Snapshots: rtl 1`] = `
 >
   <ThemeProvider>
     <ThemeProvider>
-      <Styled(StartEnd)>
-        <StartEnd
-          className="emotion-15"
-        >
-          <Flex
-            alignItems="stretch"
+      <DemoStartEnd>
+        <Styled(StartEnd)>
+          <StartEnd
             className="emotion-15"
-            direction="row"
-            gutterWidth="md"
-            justifyContent="between"
           >
-            <WithTheme(Component)
+            <Flex
               alignItems="stretch"
               className="emotion-15"
               direction="row"
               gutterWidth="md"
               justifyContent="between"
             >
-              <Component
+              <WithTheme(Component)
                 alignItems="stretch"
                 className="emotion-15"
                 direction="row"
                 gutterWidth="md"
                 justifyContent="between"
               >
-                <Flex
+                <Component
                   alignItems="stretch"
                   className="emotion-15"
                   direction="row"
-                  element="div"
                   gutterWidth="md"
                   justifyContent="between"
                 >
-                  <Box
+                  <Styled(Box)
                     alignItems="stretch"
-                    className="emotion-13"
+                    className="emotion-15"
                     direction="row"
-                    element="div"
                     gutterWidth="md"
                     justifyContent="between"
                   >
-                    <Styled(div)
+                    <Box
                       alignItems="stretch"
                       className="emotion-13"
-                      direction="row"
-                      element="div"
                       gutterWidth="md"
                       justifyContent="between"
                     >
-                      <div
-                        className="emotion-12"
+                      <Styled(div)
+                        alignItems="stretch"
+                        className="emotion-13"
+                        gutterWidth="md"
+                        justifyContent="between"
                       >
-                        <FlexItem
-                          grow={0}
-                          key=".$.0"
-                          marginEnd="1em"
-                          shrink={1}
+                        <div
+                          className="emotion-12"
                         >
                           <FlexItem
-                            element="div"
                             grow={0}
+                            key=".$.0"
                             marginEnd="1em"
                             shrink={1}
                           >
-                            <Box
-                              className="emotion-4"
-                              element="div"
+                            <Styled(Box)
                               grow={0}
                               marginEnd="1em"
                               shrink={1}
                             >
-                              <Styled(div)
+                              <Box
                                 className="emotion-4"
-                                element="div"
                                 grow={0}
                                 marginEnd="1em"
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-3"
+                                <Styled(div)
+                                  className="emotion-4"
+                                  grow={0}
+                                  marginEnd="1em"
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <div
+                                    className="emotion-3"
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
-                                      >
-                                        <div
-                                          className="emotion-0"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
                                         >
-                                          بداية
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              بداية
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
                           </FlexItem>
-                        </FlexItem>
-                        <FlexItem
-                          grow={0}
-                          key=".$.1"
-                          shrink={1}
-                        >
                           <FlexItem
-                            element="div"
                             grow={0}
+                            key=".$.1"
                             shrink={1}
                           >
-                            <Box
-                              className="emotion-4"
-                              element="div"
+                            <Styled(Box)
                               grow={0}
                               shrink={1}
                             >
-                              <Styled(div)
+                              <Box
                                 className="emotion-4"
-                                element="div"
                                 grow={0}
                                 shrink={1}
                               >
-                                <div
-                                  className="emotion-9"
+                                <Styled(div)
+                                  className="emotion-4"
+                                  grow={0}
+                                  shrink={1}
                                 >
-                                  <Styled(Box)
-                                    element="div"
+                                  <div
+                                    className="emotion-9"
                                   >
-                                    <Box
-                                      className="emotion-1"
-                                      element="div"
-                                    >
-                                      <Styled(div)
-                                        className="emotion-1"
-                                        element="div"
-                                      >
-                                        <div
-                                          className="emotion-0"
+                                    <DemoBox>
+                                      <Styled(Box)>
+                                        <Box
+                                          className="emotion-1"
                                         >
-                                          النهاية
-                                        </div>
-                                      </Styled(div)>
-                                    </Box>
-                                  </Styled(Box)>
-                                </div>
-                              </Styled(div)>
-                            </Box>
+                                          <Styled(div)
+                                            className="emotion-1"
+                                          >
+                                            <div
+                                              className="emotion-0"
+                                            >
+                                              النهاية
+                                            </div>
+                                          </Styled(div)>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </DemoBox>
+                                  </div>
+                                </Styled(div)>
+                              </Box>
+                            </Styled(Box)>
                           </FlexItem>
-                        </FlexItem>
-                      </div>
-                    </Styled(div)>
-                  </Box>
-                </Flex>
-              </Component>
-            </WithTheme(Component)>
-          </Flex>
-        </StartEnd>
-      </Styled(StartEnd)>
+                        </div>
+                      </Styled(div)>
+                    </Box>
+                  </Styled(Box)>
+                </Component>
+              </WithTheme(Component)>
+            </Flex>
+          </StartEnd>
+        </Styled(StartEnd)>
+      </DemoStartEnd>
     </ThemeProvider>
   </ThemeProvider>
 </div>

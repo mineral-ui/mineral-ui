@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardBlock demo examples Snapshots: children 1`] = `
-.emotion-9 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.emotion-9:last-child {
-  margin-bottom: 1.5em;
-}
-
-.emotion-8 {
-  font-size: 0.875em;
-  line-height: 1.5;
-}
-
 .emotion-11::after {
   clear: both;
   content: "";
@@ -114,6 +98,22 @@ exports[`CardBlock demo examples Snapshots: children 1`] = `
   font-size: 1.125em;
   font-weight: 700;
   margin: 0;
+}
+
+.emotion-8 {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.emotion-9 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.emotion-9:last-child {
+  margin-bottom: 1.5em;
 }
 
 .emotion-7 {
@@ -243,110 +243,108 @@ exports[`CardBlock demo examples Snapshots: children 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-11"
-  >
-    <Card>
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-11"
+    >
       <Card>
-        <div
-          className="emotion-10"
-        >
-          <CardTitle>
+        <Styled(div)>
+          <div
+            className="emotion-10"
+          >
             <CardTitle>
-              <div
-                className="emotion-3"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-2"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-1"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
-            </CardTitle>
-          </CardTitle>
-          <CardBlock>
-            <CardBlock>
-              <div
-                className="emotion-9"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-8"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-7"
-                      >
-                        <Button
-                          element="button"
-                          fullWidth={true}
-                          size="large"
-                          type="button"
+              <Styled(div)>
+                <div
+                  className="emotion-3"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-2"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
                         >
-                          <Button
-                            element="button"
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </CardTitle>
+            <CardBlock>
+              <Styled(div)>
+                <div
+                  className="emotion-9"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-8"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-7"
+                        >
+                          <WithForwardRef(Button)
                             fullWidth={true}
                             size="large"
-                            text="Button"
-                            type="button"
                           >
-                            <button
-                              className="emotion-6"
-                              type="button"
+                            <Button
+                              forwardedRef={null}
+                              fullWidth={true}
+                              size="large"
                             >
-                              <Styled(span)>
-                                <span
-                                  className="emotion-5"
+                              <Styled(button)
+                                fullWidth={true}
+                                size="large"
+                                text="Button"
+                              >
+                                <button
+                                  className="emotion-6"
                                 >
-                                  <Styled(span)
-                                    size="large"
-                                  >
+                                  <Styled(span)>
                                     <span
-                                      className="emotion-4"
+                                      className="emotion-5"
                                     >
-                                      Button
+                                      <Styled(span)
+                                        size="large"
+                                      >
+                                        <span
+                                          className="emotion-4"
+                                        >
+                                          Button
+                                        </span>
+                                      </Styled(span)>
                                     </span>
                                   </Styled(span)>
-                                </span>
-                              </Styled(span)>
-                            </button>
-                          </Button>
-                        </Button>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+                                </button>
+                              </Styled(button)>
+                            </Button>
+                          </WithForwardRef(Button)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`CardBlock demo examples Snapshots: consistent-spacing 1`] = `
-.emotion-4 {
-  font-size: 0.875em;
-  line-height: 1.5;
-}
-
 .emotion-9::after {
   clear: both;
   content: "";
@@ -486,69 +484,76 @@ exports[`CardBlock demo examples Snapshots: consistent-spacing 1`] = `
   top: -1em;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-9"
-  >
-    <Card>
+.emotion-4 {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-9"
+    >
       <Card>
-        <div
-          className="emotion-8"
-        >
-          <CardTitle>
+        <Styled(div)>
+          <div
+            className="emotion-8"
+          >
             <CardTitle>
-              <div
-                className="emotion-3"
+              <Styled(div)>
+                <div
+                  className="emotion-3"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-2"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </CardTitle>
+            <Styled(CardBlock)>
+              <CardBlock
+                className="emotion-6"
               >
-                <Styled(div)>
+                <Styled(div)
+                  className="emotion-6"
+                >
                   <div
-                    className="emotion-2"
+                    className="emotion-5"
                   >
                     <Styled(div)>
                       <div
-                        className="emotion-1"
+                        className="emotion-4"
                       >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
+                        
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+  pretium massa. Aliquam erat volutpat. Nulla facilisi.
+
                       </div>
                     </Styled(div)>
                   </div>
                 </Styled(div)>
-              </div>
-            </CardTitle>
-          </CardTitle>
-          <Styled(CardBlock)>
-            <CardBlock
-              className="emotion-6"
-            >
-              <CardBlock
-                className="emotion-6"
-              >
-                <div
-                  className="emotion-5"
-                >
-                  <Styled(div)>
-                    <div
-                      className="emotion-4"
-                    >
-                      
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-
-                    </div>
-                  </Styled(div)>
-                </div>
               </CardBlock>
-            </CardBlock>
-          </Styled(CardBlock)>
-        </div>
+            </Styled(CardBlock)>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

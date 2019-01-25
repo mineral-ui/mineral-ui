@@ -1,55 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
-.emotion-12 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-11 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-10 {
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-10 > [role="img"] {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  margin-right: 0.5em;
-  position: relative;
-  top: 0.25em;
-}
-
-.emotion-16::after {
+.emotion-15::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.emotion-16 > * {
+.emotion-15 > * {
   margin-bottom: 1em;
 }
 
 @media (min-width:40em) {
-  .emotion-16 > * {
+  .emotion-15 > * {
     float: left;
     margin-right: 1em;
     width: 47%;
@@ -57,13 +20,13 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
 }
 
 @media (min-width:64em) {
-  .emotion-16 > *:nth-last-child(n+3),
-  .emotion-16 > *:nth-last-child(n+3) ~ * {
+  .emotion-15 > *:nth-last-child(n+3),
+  .emotion-15 > *:nth-last-child(n+3) ~ * {
     width: 30%;
   }
 }
 
-.emotion-15 {
+.emotion-14 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -80,28 +43,65 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
   padding-top: 0.01em;
 }
 
-.emotion-15 *,
-.emotion-15 *::before,
-.emotion-15 *::after {
+.emotion-14 *,
+.emotion-14 *::before,
+.emotion-14 *::after {
   box-sizing: inherit;
 }
 
-.emotion-15:focus {
+.emotion-14:focus {
   box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-14 {
+.emotion-11 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-10 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-9 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 > [role="img"] {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.25em;
+}
+
+.emotion-13 {
   margin-bottom: 1em;
   margin-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.emotion-14:last-child {
+.emotion-13:last-child {
   margin-bottom: 1.5em;
 }
 
-.emotion-13 {
+.emotion-12 {
   font-size: 0.875em;
   line-height: 1.5;
 }
@@ -121,7 +121,7 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
   display: inline-block;
 }
 
-.emotion-6 {
+.emotion-7 {
   display: inline-block;
 }
 
@@ -261,109 +261,87 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
 }
 
 <Component>
-  <Styled(div)>
-    <div
-      className="emotion-16"
-    >
-      <Card>
+  <DemoLayout>
+    <Styled(div)>
+      <div
+        className="emotion-15"
+      >
         <Card>
-          <div
-            className="emotion-15"
-          >
-            <CardTitle
-              actions={
-                <CardTitleMenu
-                  data={
-                    Array [
-                      Object {
-                        "onClick": [Function],
-                        "text": "MenuItem 1",
-                      },
-                      Object {
-                        "onClick": [Function],
-                        "text": "MenuItem 2",
-                      },
-                      Object {
-                        "divider": true,
-                      },
-                      Object {
-                        "onClick": [Function],
-                        "text": "MenuItem 3",
-                      },
-                    ]
-                  }
-                  triggerTitle="Card actions"
-                />
-              }
+          <Styled(div)>
+            <div
+              className="emotion-14"
             >
-              <CardTitle>
-                <div
-                  className="emotion-12"
-                >
-                  <Styled(div)>
-                    <div
-                      className="emotion-11"
-                    >
-                      <Styled(div)>
-                        <div
-                          className="emotion-10"
-                        >
-                          <Styled(h3)
-                            actions={
-                              <CardTitleMenu
-                                data={
-                                  Array [
-                                    Object {
-                                      "onClick": [Function],
-                                      "text": "MenuItem 1",
-                                    },
-                                    Object {
-                                      "onClick": [Function],
-                                      "text": "MenuItem 2",
-                                    },
-                                    Object {
-                                      "divider": true,
-                                    },
-                                    Object {
-                                      "onClick": [Function],
-                                      "text": "MenuItem 3",
-                                    },
-                                  ]
-                                }
-                                triggerTitle="Card actions"
-                              />
-                            }
+              <CardTitle
+                actions={
+                  <CardTitleMenu
+                    data={
+                      Array [
+                        Object {
+                          "onClick": [Function],
+                          "text": "MenuItem 1",
+                        },
+                        Object {
+                          "onClick": [Function],
+                          "text": "MenuItem 2",
+                        },
+                        Object {
+                          "divider": true,
+                        },
+                        Object {
+                          "onClick": [Function],
+                          "text": "MenuItem 3",
+                        },
+                      ]
+                    }
+                    triggerTitle="Card actions"
+                  />
+                }
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-11"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-10"
+                      >
+                        <Styled(div)>
+                          <div
+                            className="emotion-9"
                           >
-                            <h3
-                              className="emotion-0"
+                            <Styled(h3)
+                              actions={
+                                <CardTitleMenu
+                                  data={
+                                    Array [
+                                      Object {
+                                        "onClick": [Function],
+                                        "text": "MenuItem 1",
+                                      },
+                                      Object {
+                                        "onClick": [Function],
+                                        "text": "MenuItem 2",
+                                      },
+                                      Object {
+                                        "divider": true,
+                                      },
+                                      Object {
+                                        "onClick": [Function],
+                                        "text": "MenuItem 3",
+                                      },
+                                    ]
+                                  }
+                                  triggerTitle="Card actions"
+                                />
+                              }
                             >
-                              Card Title
-                            </h3>
-                          </Styled(h3)>
-                          <CardTitleMenu
-                            data={
-                              Array [
-                                Object {
-                                  "onClick": [Function],
-                                  "text": "MenuItem 1",
-                                },
-                                Object {
-                                  "onClick": [Function],
-                                  "text": "MenuItem 2",
-                                },
-                                Object {
-                                  "divider": true,
-                                },
-                                Object {
-                                  "onClick": [Function],
-                                  "text": "MenuItem 3",
-                                },
-                              ]
-                            }
-                            key="0/.0"
-                            triggerTitle="Card actions"
-                          >
-                            <Dropdown
+                              <h3
+                                className="emotion-0"
+                              >
+                                Card Title
+                              </h3>
+                            </Styled(h3)>
+                            <CardTitleMenu
                               data={
                                 Array [
                                   Object {
@@ -383,20 +361,31 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
                                   },
                                 ]
                               }
-                              itemKey="text"
-                              placement="bottom-end"
+                              key="0/.0"
+                              triggerTitle="Card actions"
                             >
-                              <Popover
-                                content={[Function]}
-                                focusTriggerOnClose={true}
-                                hasArrow={true}
-                                id="dropdown-1"
-                                isOpen={false}
+                              <Dropdown
+                                data={
+                                  Array [
+                                    Object {
+                                      "onClick": [Function],
+                                      "text": "MenuItem 1",
+                                    },
+                                    Object {
+                                      "onClick": [Function],
+                                      "text": "MenuItem 2",
+                                    },
+                                    Object {
+                                      "divider": true,
+                                    },
+                                    Object {
+                                      "onClick": [Function],
+                                      "text": "MenuItem 3",
+                                    },
+                                  ]
+                                }
                                 itemKey="text"
-                                onClose={[Function]}
-                                onOpen={[Function]}
                                 placement="bottom-end"
-                                triggerRef={[Function]}
                               >
                                 <Popover
                                   content={[Function]}
@@ -408,260 +397,270 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
                                   onClose={[Function]}
                                   onOpen={[Function]}
                                   placement="bottom-end"
-                                  tag="span"
                                   triggerRef={[Function]}
                                 >
-                                  <Manager
-                                    className="emotion-8"
-                                    id="dropdown-1"
-                                    tag="span"
-                                  >
-                                    <span
-                                      className="emotion-8"
+                                  <Manager>
+                                    <Styled(span)
+                                      focusTriggerOnClose={true}
+                                      hasArrow={true}
                                       id="dropdown-1"
+                                      isOpen={false}
+                                      itemKey="text"
+                                      placement="bottom-end"
+                                      triggerRef={[Function]}
                                     >
-                                      <PopoverTrigger
-                                        aria-describedby="dropdown-1-content"
-                                        aria-expanded={false}
-                                        aria-haspopup={true}
-                                        aria-owns="dropdown-1-content"
-                                        element="button"
-                                        iconStart={
-                                          <IconMoreHoriz
-                                            title="Card actions"
-                                          />
-                                        }
-                                        minimal={true}
-                                        onBlur={[Function]}
-                                        onClick={[Function]}
-                                        onKeyDown={[Function]}
-                                        onKeyUp={[Function]}
-                                        role="button"
-                                        size="large"
-                                        type="button"
+                                      <span
+                                        className="emotion-8"
+                                        id="dropdown-1"
                                       >
-                                        <PopoverTrigger
-                                          component="span"
+                                        <WithForwardRef(PopoverTrigger)
+                                          aria-describedby="dropdown-1-content"
+                                          aria-expanded={false}
+                                          aria-haspopup={true}
+                                          aria-owns="dropdown-1-content"
+                                          iconStart={
+                                            <IconMoreHoriz
+                                              title="Card actions"
+                                            />
+                                          }
+                                          minimal={true}
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          onKeyUp={[Function]}
+                                          role="button"
                                         >
-                                          <Target
-                                            className="emotion-6"
-                                            component="span"
+                                          <PopoverTrigger
+                                            aria-describedby="dropdown-1-content"
+                                            aria-expanded={false}
+                                            aria-haspopup={true}
+                                            aria-owns="dropdown-1-content"
+                                            forwardedRef={[Function]}
+                                            iconStart={
+                                              <IconMoreHoriz
+                                                title="Card actions"
+                                              />
+                                            }
+                                            minimal={true}
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onKeyDown={[Function]}
+                                            onKeyUp={[Function]}
+                                            role="button"
                                           >
-                                            <span
-                                              className="emotion-6"
-                                            >
-                                              <Styled(Button)
-                                                aria-describedby="dropdown-1-content"
-                                                aria-expanded={false}
-                                                aria-haspopup={true}
-                                                aria-owns="dropdown-1-content"
-                                                element="button"
-                                                iconStart={
-                                                  <IconMoreHoriz
-                                                    title="Card actions"
-                                                  />
-                                                }
-                                                minimal={true}
-                                                onBlur={[Function]}
-                                                onClick={[Function]}
-                                                onKeyDown={[Function]}
-                                                onKeyUp={[Function]}
-                                                role="button"
-                                                size="large"
-                                                type="button"
+                                            <Reference>
+                                              <InnerReference
+                                                setReferenceNode={[Function]}
                                               >
-                                                <Button
-                                                  aria-describedby="dropdown-1-content"
-                                                  aria-expanded={false}
-                                                  aria-haspopup={true}
-                                                  aria-owns="dropdown-1-content"
-                                                  className="emotion-4"
-                                                  element="button"
-                                                  iconStart={
-                                                    <IconMoreHoriz
-                                                      title="Card actions"
-                                                    />
-                                                  }
-                                                  minimal={true}
-                                                  onBlur={[Function]}
-                                                  onClick={[Function]}
-                                                  onKeyDown={[Function]}
-                                                  onKeyUp={[Function]}
-                                                  role="button"
-                                                  size="large"
-                                                  type="button"
-                                                >
-                                                  <Button
-                                                    aria-describedby="dropdown-1-content"
-                                                    aria-expanded={false}
-                                                    aria-haspopup={true}
-                                                    aria-owns="dropdown-1-content"
-                                                    className="emotion-4"
-                                                    element="button"
-                                                    minimal={true}
-                                                    onBlur={[Function]}
-                                                    onClick={[Function]}
-                                                    onKeyDown={[Function]}
-                                                    onKeyUp={[Function]}
-                                                    role="button"
-                                                    size="large"
-                                                    type="button"
+                                                <Styled(span)>
+                                                  <span
+                                                    className="emotion-7"
                                                   >
-                                                    <button
+                                                    <withProps(Styled(WithForwardRef(Button)))
                                                       aria-describedby="dropdown-1-content"
                                                       aria-expanded={false}
                                                       aria-haspopup={true}
                                                       aria-owns="dropdown-1-content"
-                                                      className="emotion-3"
+                                                      iconStart={
+                                                        <IconMoreHoriz
+                                                          title="Card actions"
+                                                        />
+                                                      }
+                                                      minimal={true}
                                                       onBlur={[Function]}
                                                       onClick={[Function]}
                                                       onKeyDown={[Function]}
                                                       onKeyUp={[Function]}
                                                       role="button"
-                                                      type="button"
                                                     >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-2"
-                                                        >
+                                                      <Styled(WithForwardRef(Button))
+                                                        aria-describedby="dropdown-1-content"
+                                                        aria-expanded={false}
+                                                        aria-haspopup={true}
+                                                        aria-owns="dropdown-1-content"
+                                                        iconStart={
                                                           <IconMoreHoriz
-                                                            key="iconStart"
-                                                            size="1.5em"
                                                             title="Card actions"
-                                                          >
-                                                            <Icon
-                                                              rtl={false}
-                                                              size="1.5em"
+                                                          />
+                                                        }
+                                                        minimal={true}
+                                                        onBlur={[Function]}
+                                                        onClick={[Function]}
+                                                        onKeyDown={[Function]}
+                                                        onKeyUp={[Function]}
+                                                        role="button"
+                                                        size="large"
+                                                        type="button"
+                                                      >
+                                                        <WithForwardRef(Button)
+                                                          aria-describedby="dropdown-1-content"
+                                                          aria-expanded={false}
+                                                          aria-haspopup={true}
+                                                          aria-owns="dropdown-1-content"
+                                                          className="emotion-4"
+                                                          iconStart={
+                                                            <IconMoreHoriz
                                                               title="Card actions"
+                                                            />
+                                                          }
+                                                          minimal={true}
+                                                          onBlur={[Function]}
+                                                          onClick={[Function]}
+                                                          onKeyDown={[Function]}
+                                                          onKeyUp={[Function]}
+                                                          role="button"
+                                                          size="large"
+                                                          type="button"
+                                                        >
+                                                          <Button
+                                                            aria-describedby="dropdown-1-content"
+                                                            aria-expanded={false}
+                                                            aria-haspopup={true}
+                                                            aria-owns="dropdown-1-content"
+                                                            className="emotion-4"
+                                                            forwardedRef={null}
+                                                            iconStart={
+                                                              <IconMoreHoriz
+                                                                title="Card actions"
+                                                              />
+                                                            }
+                                                            minimal={true}
+                                                            onBlur={[Function]}
+                                                            onClick={[Function]}
+                                                            onKeyDown={[Function]}
+                                                            onKeyUp={[Function]}
+                                                            role="button"
+                                                            size="large"
+                                                            type="button"
+                                                          >
+                                                            <Styled(button)
+                                                              aria-describedby="dropdown-1-content"
+                                                              aria-expanded={false}
+                                                              aria-haspopup={true}
+                                                              aria-owns="dropdown-1-content"
+                                                              className="emotion-4"
+                                                              minimal={true}
+                                                              onBlur={[Function]}
+                                                              onClick={[Function]}
+                                                              onKeyDown={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              role="button"
+                                                              size="large"
+                                                              type="button"
                                                             >
-                                                              <Styled(svg)
-                                                                aria-hidden={null}
-                                                                aria-labelledby="icon-title-icon-2"
-                                                                focusable="false"
-                                                                role="img"
-                                                                rtl={false}
-                                                                size="1.5em"
-                                                                viewBox="0 0 24 24"
+                                                              <button
+                                                                aria-describedby="dropdown-1-content"
+                                                                aria-expanded={false}
+                                                                aria-haspopup={true}
+                                                                aria-owns="dropdown-1-content"
+                                                                className="emotion-3"
+                                                                onBlur={[Function]}
+                                                                onClick={[Function]}
+                                                                onKeyDown={[Function]}
+                                                                onKeyUp={[Function]}
+                                                                role="button"
+                                                                type="button"
                                                               >
-                                                                <svg
-                                                                  aria-hidden={null}
-                                                                  aria-labelledby="icon-title-icon-2"
-                                                                  className="emotion-1"
-                                                                  focusable="false"
-                                                                  role="img"
-                                                                  viewBox="0 0 24 24"
-                                                                >
-                                                                  <title
-                                                                    id="icon-title-icon-2"
+                                                                <Styled(span)>
+                                                                  <span
+                                                                    className="emotion-2"
                                                                   >
-                                                                    Card actions
-                                                                  </title>
-                                                                  <g>
-                                                                    <path
-                                                                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-                                                                    />
-                                                                  </g>
-                                                                </svg>
-                                                              </Styled(svg)>
-                                                            </Icon>
-                                                          </IconMoreHoriz>
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </button>
-                                                  </Button>
-                                                </Button>
-                                              </Styled(Button)>
-                                            </span>
-                                          </Target>
-                                        </PopoverTrigger>
-                                      </PopoverTrigger>
-                                    </span>
+                                                                    <IconMoreHoriz
+                                                                      key="iconStart"
+                                                                      size="1.5em"
+                                                                      title="Card actions"
+                                                                    >
+                                                                      <Icon
+                                                                        rtl={false}
+                                                                        size="1.5em"
+                                                                        title="Card actions"
+                                                                      >
+                                                                        <Styled(svg)
+                                                                          aria-hidden={null}
+                                                                          aria-labelledby="icon-title-icon-2"
+                                                                          focusable="false"
+                                                                          role="img"
+                                                                          rtl={false}
+                                                                          size="1.5em"
+                                                                          viewBox="0 0 24 24"
+                                                                        >
+                                                                          <svg
+                                                                            aria-hidden={null}
+                                                                            aria-labelledby="icon-title-icon-2"
+                                                                            className="emotion-1"
+                                                                            focusable="false"
+                                                                            role="img"
+                                                                            viewBox="0 0 24 24"
+                                                                          >
+                                                                            <title
+                                                                              id="icon-title-icon-2"
+                                                                            >
+                                                                              Card actions
+                                                                            </title>
+                                                                            <g>
+                                                                              <path
+                                                                                d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                                                                              />
+                                                                            </g>
+                                                                          </svg>
+                                                                        </Styled(svg)>
+                                                                      </Icon>
+                                                                    </IconMoreHoriz>
+                                                                  </span>
+                                                                </Styled(span)>
+                                                              </button>
+                                                            </Styled(button)>
+                                                          </Button>
+                                                        </WithForwardRef(Button)>
+                                                      </Styled(WithForwardRef(Button))>
+                                                    </withProps(Styled(WithForwardRef(Button)))>
+                                                  </span>
+                                                </Styled(span)>
+                                              </InnerReference>
+                                            </Reference>
+                                          </PopoverTrigger>
+                                        </WithForwardRef(PopoverTrigger)>
+                                      </span>
+                                    </Styled(span)>
                                   </Manager>
                                 </Popover>
-                              </Popover>
-                            </Dropdown>
-                          </CardTitleMenu>
-                        </div>
-                      </Styled(div)>
-                    </div>
-                  </Styled(div)>
-                </div>
+                              </Dropdown>
+                            </CardTitleMenu>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
               </CardTitle>
-            </CardTitle>
-            <CardBlock>
               <CardBlock>
-                <div
-                  className="emotion-14"
-                >
-                  <Styled(div)>
-                    <div
-                      className="emotion-13"
-                    >
-                      
+                <Styled(div)>
+                  <div
+                    className="emotion-13"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-12"
+                      >
+                        
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                    </div>
-                  </Styled(div)>
-                </div>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
               </CardBlock>
-            </CardBlock>
-          </div>
+            </div>
+          </Styled(div)>
         </Card>
-      </Card>
-    </div>
-  </Styled(div)>
+      </div>
+    </Styled(div)>
+  </DemoLayout>
 </Component>
 `;
 
 exports[`CardTitle demo examples Snapshots: avatar 1`] = `
-.emotion-5 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-3 {
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-3 > [role="img"] {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  margin-right: 0.5em;
-  position: relative;
-  top: 0.25em;
-}
-
-.emotion-2 {
-  color: #58606e;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  font-size: 1.125em;
-  font-weight: 700;
-  margin: 0;
-}
-
 .emotion-19::after {
   clear: both;
   content: "";
@@ -712,6 +711,53 @@ exports[`CardTitle demo examples Snapshots: avatar 1`] = `
 
 .emotion-8:focus {
   box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-5 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-3 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 > [role="img"] {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.25em;
+}
+
+.emotion-2 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
 }
 
 .emotion-7 {
@@ -821,263 +867,220 @@ exports[`CardTitle demo examples Snapshots: avatar 1`] = `
 }
 
 <Component>
-  <Styled(div)>
-    <div
-      className="emotion-19"
-    >
-      <Card>
+  <DemoLayout>
+    <Styled(div)>
+      <div
+        className="emotion-19"
+      >
         <Card>
-          <div
-            className="emotion-8"
-          >
-            <CardTitle
-              avatar={
-                <Avatar
-                  shape="circle"
-                  size="large"
-                >
-                  <img
-                    alt="Alt text"
-                    src="/images/avatar.svg"
-                  />
-                </Avatar>
-              }
+          <Styled(div)>
+            <div
+              className="emotion-8"
             >
-              <CardTitle>
-                <div
-                  className="emotion-5"
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-1"
-                    >
-                      <Avatar
-                        shape="circle"
-                        size="large"
-                      >
-                        <Avatar
-                          noBackground={true}
-                          shape="circle"
-                          size="large"
-                        >
-                          <span
-                            className="emotion-0"
-                          >
-                            <img
-                              alt="Alt text"
-                              src="/images/avatar.svg"
-                            />
-                          </span>
-                        </Avatar>
-                      </Avatar>
-                    </span>
-                  </Styled(span)>
-                  <Styled(div)>
-                    <div
-                      className="emotion-4"
-                    >
-                      <Styled(div)>
-                        <div
-                          className="emotion-3"
-                        >
-                          <Styled(h3)>
-                            <h3
-                              className="emotion-2"
-                            >
-                              Card Title
-                            </h3>
-                          </Styled(h3)>
-                        </div>
-                      </Styled(div)>
-                    </div>
-                  </Styled(div)>
-                </div>
-              </CardTitle>
-            </CardTitle>
-            <CardBlock>
-              <CardBlock>
-                <div
-                  className="emotion-7"
-                >
-                  <Styled(div)>
-                    <div
-                      className="emotion-6"
-                    >
-                      
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-
-                    </div>
-                  </Styled(div)>
-                </div>
-              </CardBlock>
-            </CardBlock>
-          </div>
-        </Card>
-      </Card>
-      <Card>
-        <Card>
-          <div
-            className="emotion-8"
-          >
-            <CardTitle
-              avatar={
-                <Avatar
-                  shape="circle"
-                  size="large"
-                >
-                  <img
-                    alt="Alt text"
-                    src="/images/avatar.svg"
-                  />
-                </Avatar>
-              }
-              subtitle="Card Subtitle"
-            >
-              <CardTitle>
-                <div
-                  className="emotion-5"
-                >
-                  <Styled(span)
-                    subtitle="Card Subtitle"
+              <CardTitle
+                avatar={
+                  <Avatar
+                    shape="circle"
+                    size="large"
                   >
-                    <span
-                      className="emotion-10"
-                    >
-                      <Avatar
-                        shape="circle"
-                        size="large"
+                    <img
+                      alt="Alt text"
+                      src="/images/avatar.svg"
+                    />
+                  </Avatar>
+                }
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-5"
+                  >
+                    <Styled(span)>
+                      <span
+                        className="emotion-1"
                       >
                         <Avatar
-                          noBackground={true}
                           shape="circle"
                           size="large"
                         >
-                          <span
-                            className="emotion-0"
-                          >
-                            <img
-                              alt="Alt text"
-                              src="/images/avatar.svg"
-                            />
-                          </span>
-                        </Avatar>
-                      </Avatar>
-                    </span>
-                  </Styled(span)>
-                  <Styled(div)>
-                    <div
-                      className="emotion-4"
-                    >
-                      <Styled(div)>
-                        <div
-                          className="emotion-3"
-                        >
-                          <Styled(h3)>
-                            <h3
-                              className="emotion-2"
-                            >
-                              Card Title
-                            </h3>
-                          </Styled(h3)>
-                        </div>
-                      </Styled(div)>
-                      <Styled(h4)
-                        avatar={
-                          <Avatar
+                          <Styled(span)
+                            noBackground={true}
                             shape="circle"
                             size="large"
                           >
-                            <img
-                              alt="Alt text"
-                              src="/images/avatar.svg"
-                            />
-                          </Avatar>
-                        }
+                            <span
+                              className="emotion-0"
+                            >
+                              <img
+                                alt="Alt text"
+                                src="/images/avatar.svg"
+                              />
+                            </span>
+                          </Styled(span)>
+                        </Avatar>
+                      </span>
+                    </Styled(span)>
+                    <Styled(div)>
+                      <div
+                        className="emotion-4"
                       >
-                        <h4
-                          className="emotion-13"
-                        >
-                          Card Subtitle
-                        </h4>
-                      </Styled(h4)>
-                    </div>
-                  </Styled(div)>
-                </div>
+                        <Styled(div)>
+                          <div
+                            className="emotion-3"
+                          >
+                            <Styled(h3)>
+                              <h3
+                                className="emotion-2"
+                              >
+                                Card Title
+                              </h3>
+                            </Styled(h3)>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
               </CardTitle>
-            </CardTitle>
-            <CardBlock>
               <CardBlock>
-                <div
-                  className="emotion-7"
-                >
-                  <Styled(div)>
-                    <div
-                      className="emotion-6"
-                    >
-                      
+                <Styled(div)>
+                  <div
+                    className="emotion-7"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-6"
+                      >
+                        
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                    </div>
-                  </Styled(div)>
-                </div>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
               </CardBlock>
-            </CardBlock>
-          </div>
+            </div>
+          </Styled(div)>
         </Card>
-      </Card>
-    </div>
-  </Styled(div)>
+        <Card>
+          <Styled(div)>
+            <div
+              className="emotion-8"
+            >
+              <CardTitle
+                avatar={
+                  <Avatar
+                    shape="circle"
+                    size="large"
+                  >
+                    <img
+                      alt="Alt text"
+                      src="/images/avatar.svg"
+                    />
+                  </Avatar>
+                }
+                subtitle="Card Subtitle"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-5"
+                  >
+                    <Styled(span)
+                      subtitle="Card Subtitle"
+                    >
+                      <span
+                        className="emotion-10"
+                      >
+                        <Avatar
+                          shape="circle"
+                          size="large"
+                        >
+                          <Styled(span)
+                            noBackground={true}
+                            shape="circle"
+                            size="large"
+                          >
+                            <span
+                              className="emotion-0"
+                            >
+                              <img
+                                alt="Alt text"
+                                src="/images/avatar.svg"
+                              />
+                            </span>
+                          </Styled(span)>
+                        </Avatar>
+                      </span>
+                    </Styled(span)>
+                    <Styled(div)>
+                      <div
+                        className="emotion-4"
+                      >
+                        <Styled(div)>
+                          <div
+                            className="emotion-3"
+                          >
+                            <Styled(h3)>
+                              <h3
+                                className="emotion-2"
+                              >
+                                Card Title
+                              </h3>
+                            </Styled(h3)>
+                          </div>
+                        </Styled(div)>
+                        <Styled(h4)
+                          avatar={
+                            <Avatar
+                              shape="circle"
+                              size="large"
+                            >
+                              <img
+                                alt="Alt text"
+                                src="/images/avatar.svg"
+                              />
+                            </Avatar>
+                          }
+                        >
+                          <h4
+                            className="emotion-13"
+                          >
+                            Card Subtitle
+                          </h4>
+                        </Styled(h4)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </CardTitle>
+              <CardBlock>
+                <Styled(div)>
+                  <div
+                    className="emotion-7"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-6"
+                      >
+                        
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+  pretium massa. Aliquam erat volutpat. Nulla facilisi.
+
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </CardBlock>
+            </div>
+          </Styled(div)>
+        </Card>
+      </div>
+    </Styled(div)>
+  </DemoLayout>
 </Component>
 `;
 
 exports[`CardTitle demo examples Snapshots: rtl 1`] = `
-.emotion-6 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-5 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-2 {
-  color: #58606e;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  font-size: 1.125em;
-  font-weight: 700;
-  margin: 0;
-}
-
-.emotion-11 {
-  color: #58606e;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  font-size: 0.6875em;
-  font-weight: 400;
-  -webkit-transform: translateY(0.45454545454545453em);
-  -ms-transform: translateY(0.45454545454545453em);
-  transform: translateY(0.45454545454545453em);
-  display: inline-block;
-  max-width: 33%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-}
-
 .emotion-9 {
   box-sizing: border-box;
   color: #333840;
@@ -1103,6 +1106,33 @@ exports[`CardTitle demo examples Snapshots: rtl 1`] = `
 
 .emotion-9:focus {
   box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-6 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-2 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
 }
 
 .emotion-8 {
@@ -1185,6 +1215,24 @@ exports[`CardTitle demo examples Snapshots: rtl 1`] = `
   margin: 0;
 }
 
+.emotion-11 {
+  color: #58606e;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.6875em;
+  font-weight: 400;
+  -webkit-transform: translateY(0.45454545454545453em);
+  -ms-transform: translateY(0.45454545454545453em);
+  transform: translateY(0.45454545454545453em);
+  display: inline-block;
+  max-width: 33%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
 .emotion-18::after {
   clear: both;
   content: "";
@@ -1248,255 +1296,192 @@ exports[`CardTitle demo examples Snapshots: rtl 1`] = `
 >
   <ThemeProvider>
     <ThemeProvider>
-      <Styled(div)>
-        <div
-          className="emotion-18"
-        >
-          <Card>
+      <DemoLayout>
+        <Styled(div)>
+          <div
+            className="emotion-18"
+          >
             <Card>
-              <div
-                className="emotion-9"
-              >
-                <CardTitle
-                  avatar={
-                    <Avatar
-                      shape="circle"
-                      size="large"
-                    >
-                      <img
-                        alt="نص بديل"
-                        src="/images/avatar.svg"
-                      />
-                    </Avatar>
-                  }
-                  subtitle="الترجمة هنا"
+              <Styled(div)>
+                <div
+                  className="emotion-9"
                 >
-                  <CardTitle>
-                    <div
-                      className="emotion-6"
-                    >
-                      <Styled(span)
-                        subtitle="الترجمة هنا"
+                  <CardTitle
+                    avatar={
+                      <Avatar
+                        shape="circle"
+                        size="large"
                       >
-                        <span
-                          className="emotion-1"
+                        <img
+                          alt="نص بديل"
+                          src="/images/avatar.svg"
+                        />
+                      </Avatar>
+                    }
+                    subtitle="الترجمة هنا"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-6"
+                      >
+                        <Styled(span)
+                          subtitle="الترجمة هنا"
                         >
-                          <Avatar
-                            shape="circle"
-                            size="large"
+                          <span
+                            className="emotion-1"
                           >
                             <Avatar
-                              noBackground={true}
                               shape="circle"
                               size="large"
                             >
-                              <span
-                                className="emotion-0"
-                              >
-                                <img
-                                  alt="نص بديل"
-                                  src="/images/avatar.svg"
-                                />
-                              </span>
-                            </Avatar>
-                          </Avatar>
-                        </span>
-                      </Styled(span)>
-                      <Styled(div)>
-                        <div
-                          className="emotion-5"
-                        >
-                          <Styled(div)>
-                            <div
-                              className="emotion-3"
-                            >
-                              <Styled(h3)>
-                                <h3
-                                  className="emotion-2"
-                                >
-                                  عنوان البطاقة
-                                </h3>
-                              </Styled(h3)>
-                            </div>
-                          </Styled(div)>
-                          <Styled(h4)
-                            avatar={
-                              <Avatar
+                              <Styled(span)
+                                noBackground={true}
                                 shape="circle"
                                 size="large"
                               >
-                                <img
-                                  alt="نص بديل"
-                                  src="/images/avatar.svg"
-                                />
-                              </Avatar>
-                            }
-                          >
-                            <h4
-                              className="emotion-4"
-                            >
-                              الترجمة هنا
-                            </h4>
-                          </Styled(h4)>
-                        </div>
-                      </Styled(div)>
-                    </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="emotion-8"
-                    >
-                      <Styled(div)>
-                        <div
-                          className="emotion-7"
-                        >
-                          
-  خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
-
-                        </div>
-                      </Styled(div)>
-                    </div>
-                  </CardBlock>
-                </CardBlock>
-              </div>
-            </Card>
-          </Card>
-          <Card>
-            <Card>
-              <div
-                className="emotion-9"
-              >
-                <CardTitle
-                  secondaryText="نص ثانوي"
-                >
-                  <CardTitle>
-                    <div
-                      className="emotion-6"
-                    >
-                      <Styled(div)>
-                        <div
-                          className="emotion-5"
-                        >
-                          <Styled(div)>
-                            <div
-                              className="emotion-3"
-                            >
-                              <Styled(h3)>
-                                <h3
-                                  className="emotion-2"
-                                >
-                                  عنوان البطاقة
-                                </h3>
-                              </Styled(h3)>
-                              <Styled(span)>
                                 <span
-                                  className="emotion-11"
+                                  className="emotion-0"
                                 >
-                                  نص ثانوي
+                                  <img
+                                    alt="نص بديل"
+                                    src="/images/avatar.svg"
+                                  />
                                 </span>
                               </Styled(span)>
-                            </div>
-                          </Styled(div)>
-                        </div>
-                      </Styled(div)>
-                    </div>
+                            </Avatar>
+                          </span>
+                        </Styled(span)>
+                        <Styled(div)>
+                          <div
+                            className="emotion-5"
+                          >
+                            <Styled(div)>
+                              <div
+                                className="emotion-3"
+                              >
+                                <Styled(h3)>
+                                  <h3
+                                    className="emotion-2"
+                                  >
+                                    عنوان البطاقة
+                                  </h3>
+                                </Styled(h3)>
+                              </div>
+                            </Styled(div)>
+                            <Styled(h4)
+                              avatar={
+                                <Avatar
+                                  shape="circle"
+                                  size="large"
+                                >
+                                  <img
+                                    alt="نص بديل"
+                                    src="/images/avatar.svg"
+                                  />
+                                </Avatar>
+                              }
+                            >
+                              <h4
+                                className="emotion-4"
+                              >
+                                الترجمة هنا
+                              </h4>
+                            </Styled(h4)>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
                   </CardTitle>
-                </CardTitle>
-                <CardBlock>
                   <CardBlock>
-                    <div
-                      className="emotion-8"
-                    >
-                      <Styled(div)>
-                        <div
-                          className="emotion-7"
-                        >
-                          
+                    <Styled(div)>
+                      <div
+                        className="emotion-8"
+                      >
+                        <Styled(div)>
+                          <div
+                            className="emotion-7"
+                          >
+                            
   خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
 
-                        </div>
-                      </Styled(div)>
-                    </div>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
                   </CardBlock>
-                </CardBlock>
-              </div>
+                </div>
+              </Styled(div)>
             </Card>
-          </Card>
-        </div>
-      </Styled(div)>
+            <Card>
+              <Styled(div)>
+                <div
+                  className="emotion-9"
+                >
+                  <CardTitle
+                    secondaryText="نص ثانوي"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-6"
+                      >
+                        <Styled(div)>
+                          <div
+                            className="emotion-5"
+                          >
+                            <Styled(div)>
+                              <div
+                                className="emotion-3"
+                              >
+                                <Styled(h3)>
+                                  <h3
+                                    className="emotion-2"
+                                  >
+                                    عنوان البطاقة
+                                  </h3>
+                                </Styled(h3)>
+                                <Styled(span)>
+                                  <span
+                                    className="emotion-11"
+                                  >
+                                    نص ثانوي
+                                  </span>
+                                </Styled(span)>
+                              </div>
+                            </Styled(div)>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                  </CardTitle>
+                  <CardBlock>
+                    <Styled(div)>
+                      <div
+                        className="emotion-8"
+                      >
+                        <Styled(div)>
+                          <div
+                            className="emotion-7"
+                          >
+                            
+  خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
+
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                  </CardBlock>
+                </div>
+              </Styled(div)>
+            </Card>
+          </div>
+        </Styled(div)>
+      </DemoLayout>
     </ThemeProvider>
   </ThemeProvider>
 </div>
 `;
 
 exports[`CardTitle demo examples Snapshots: secondary-text 1`] = `
-.emotion-4 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-3 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-2 {
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 > [role="img"] {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  margin-right: 0.5em;
-  position: relative;
-  top: 0.25em;
-}
-
-.emotion-0 {
-  color: #58606e;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  font-size: 1.125em;
-  font-weight: 700;
-  margin: 0;
-}
-
-.emotion-1 {
-  color: #58606e;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  font-size: 0.6875em;
-  font-weight: 400;
-  -webkit-transform: translateY(0.45454545454545453em);
-  -ms-transform: translateY(0.45454545454545453em);
-  transform: translateY(0.45454545454545453em);
-  display: inline-block;
-  max-width: 33%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-}
-
 .emotion-16::after {
   clear: both;
   content: "";
@@ -1549,6 +1534,53 @@ exports[`CardTitle demo examples Snapshots: secondary-text 1`] = `
   box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-2 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 > [role="img"] {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.25em;
+}
+
+.emotion-0 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
 .emotion-6 {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -1565,139 +1597,211 @@ exports[`CardTitle demo examples Snapshots: secondary-text 1`] = `
   line-height: 1.5;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-16"
-  >
-    <Card>
+.emotion-1 {
+  color: #58606e;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.6875em;
+  font-weight: 400;
+  -webkit-transform: translateY(0.45454545454545453em);
+  -ms-transform: translateY(0.45454545454545453em);
+  transform: translateY(0.45454545454545453em);
+  display: inline-block;
+  max-width: 33%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-16"
+    >
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardTitle
-            secondaryText="Secondary info"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
-            <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-2"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          >
-                            Secondary info
-                          </span>
-                        </Styled(span)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+            <CardTitle
+              secondaryText="Secondary info"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-2"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Secondary info
+                            </span>
+                          </Styled(span)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-    <Card>
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardTitle
-            secondaryText="Longer secondary info will be truncated"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
-            <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-2"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          >
-                            Longer secondary info will be truncated
-                          </span>
-                        </Styled(span)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+            <CardTitle
+              secondaryText="Longer secondary info will be truncated"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-2"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Longer secondary info will be truncated
+                            </span>
+                          </Styled(span)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`CardTitle demo examples Snapshots: titles 1`] = `
+.emotion-8::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.emotion-8 > * {
+  margin-bottom: 1em;
+}
+
+@media (min-width:40em) {
+  .emotion-8 > * {
+    float: left;
+    margin-right: 1em;
+    width: 47%;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-8 > *:nth-last-child(n+3),
+  .emotion-8 > *:nth-last-child(n+3) ~ * {
+    width: 30%;
+  }
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-bottom: 0.01em;
+  padding-top: 0.01em;
+}
+
+.emotion-7 *,
+.emotion-7 *::before,
+.emotion-7 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-7:focus {
+  box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
 .emotion-4 {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -1753,58 +1857,6 @@ exports[`CardTitle demo examples Snapshots: titles 1`] = `
   margin-top: 0.7272727272727273em;
 }
 
-.emotion-8::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.emotion-8 > * {
-  margin-bottom: 1em;
-}
-
-@media (min-width:40em) {
-  .emotion-8 > * {
-    float: left;
-    margin-right: 1em;
-    width: 47%;
-  }
-}
-
-@media (min-width:64em) {
-  .emotion-8 > *:nth-last-child(n+3),
-  .emotion-8 > *:nth-last-child(n+3) ~ * {
-    width: 30%;
-  }
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  border: 1px solid #ebeff5;
-  border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
-  padding-bottom: 0.01em;
-  padding-top: 0.01em;
-}
-
-.emotion-7 *,
-.emotion-7 *::before,
-.emotion-7 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-7:focus {
-  box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
-}
-
 .emotion-6 {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -1821,112 +1873,79 @@ exports[`CardTitle demo examples Snapshots: titles 1`] = `
   line-height: 1.5;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-8"
-  >
-    <Card>
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-8"
+    >
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardTitle
-            subtitle="Card Subtitle"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
-            <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)>
-                      <div
-                        className="emotion-1"
-                      >
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-0"
-                          >
-                            Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                    <Styled(h4)>
-                      <h4
-                        className="emotion-2"
-                      >
-                        Card Subtitle
-                      </h4>
-                    </Styled(h4)>
-                  </div>
-                </Styled(div)>
-              </div>
+            <CardTitle
+              subtitle="Card Subtitle"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-1"
+                        >
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-0"
+                            >
+                              Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                      <Styled(h4)>
+                        <h4
+                          className="emotion-2"
+                        >
+                          Card Subtitle
+                        </h4>
+                      </Styled(h4)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`CardTitle demo examples Snapshots: variants 1`] = `
-.emotion-4 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-3 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-1 {
-  color: #58606e;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  font-size: 1.125em;
-  font-weight: 700;
-  margin: 0;
-}
-
-.emotion-19 {
-  color: #58606e;
-  font-size: 0.6875em;
-  font-weight: 400;
-  margin: 0;
-  margin-top: 0.7272727272727273em;
-}
-
 .emotion-25::after {
   clear: both;
   content: "";
@@ -1977,6 +1996,41 @@ exports[`CardTitle demo examples Snapshots: variants 1`] = `
 
 .emotion-7:focus {
   box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-1 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.emotion-19 {
+  color: #58606e;
+  font-size: 0.6875em;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 0.7272727272727273em;
 }
 
 .emotion-6 {
@@ -2065,282 +2119,284 @@ exports[`CardTitle demo examples Snapshots: variants 1`] = `
   top: 0.25em;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-25"
-  >
-    <Card>
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-25"
+    >
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardTitle
-            variant="danger"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
-            <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)
-                      variant="danger"
+            <CardTitle
+              variant="danger"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
                     >
-                      <div
-                        className="emotion-2"
+                      <Styled(div)
+                        variant="danger"
                       >
-                        <IconDanger
-                          size="medium"
+                        <div
+                          className="emotion-2"
                         >
-                          <Icon
-                            rtl={false}
+                          <IconDanger
                             size="medium"
                           >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
+                            <Icon
                               rtl={false}
                               size="medium"
-                              viewBox="0 0 24 24"
                             >
-                              <svg
+                              <Styled(svg)
                                 aria-hidden={true}
-                                className="emotion-0"
                                 focusable="false"
                                 role="img"
+                                rtl={false}
+                                size="medium"
                                 viewBox="0 0 24 24"
                               >
-                                <g>
-                                  <path
-                                    d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
-                                  />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconDanger>
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-1"
-                          >
-                            Danger Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-0"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <path
+                                      d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconDanger>
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-1"
+                            >
+                              Danger Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-    <Card>
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardTitle
-            variant="success"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
-            <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)
-                      variant="success"
+            <CardTitle
+              variant="success"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
                     >
-                      <div
-                        className="emotion-10"
+                      <Styled(div)
+                        variant="success"
                       >
-                        <IconSuccess
-                          size="medium"
+                        <div
+                          className="emotion-10"
                         >
-                          <Icon
-                            rtl={false}
+                          <IconSuccess
                             size="medium"
                           >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
+                            <Icon
                               rtl={false}
                               size="medium"
-                              viewBox="0 0 24 24"
                             >
-                              <svg
+                              <Styled(svg)
                                 aria-hidden={true}
-                                className="emotion-0"
                                 focusable="false"
                                 role="img"
+                                rtl={false}
+                                size="medium"
                                 viewBox="0 0 24 24"
                               >
-                                <g>
-                                  <path
-                                    d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
-                                  />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconSuccess>
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-1"
-                          >
-                            Success Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                  </div>
-                </Styled(div)>
-              </div>
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-0"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <path
+                                      d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconSuccess>
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-1"
+                            >
+                              Success Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-    <Card>
       <Card>
-        <div
-          className="emotion-7"
-        >
-          <CardTitle
-            subtitle="Card Subtitle"
-            variant="warning"
+        <Styled(div)>
+          <div
+            className="emotion-7"
           >
-            <CardTitle>
-              <div
-                className="emotion-4"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-3"
-                  >
-                    <Styled(div)
-                      variant="warning"
+            <CardTitle
+              subtitle="Card Subtitle"
+              variant="warning"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-4"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-3"
                     >
-                      <div
-                        className="emotion-18"
+                      <Styled(div)
+                        variant="warning"
                       >
-                        <IconWarning
-                          size="medium"
+                        <div
+                          className="emotion-18"
                         >
-                          <Icon
-                            rtl={false}
+                          <IconWarning
                             size="medium"
                           >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
+                            <Icon
                               rtl={false}
                               size="medium"
-                              viewBox="0 0 24 24"
                             >
-                              <svg
+                              <Styled(svg)
                                 aria-hidden={true}
-                                className="emotion-0"
                                 focusable="false"
                                 role="img"
+                                rtl={false}
+                                size="medium"
                                 viewBox="0 0 24 24"
                               >
-                                <g>
-                                  <path
-                                    d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
-                                  />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconWarning>
-                        <Styled(h3)>
-                          <h3
-                            className="emotion-1"
-                          >
-                            Warning Card Title
-                          </h3>
-                        </Styled(h3)>
-                      </div>
-                    </Styled(div)>
-                    <Styled(h4)>
-                      <h4
-                        className="emotion-19"
-                      >
-                        Card Subtitle
-                      </h4>
-                    </Styled(h4)>
-                  </div>
-                </Styled(div)>
-              </div>
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-0"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <path
+                                      d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconWarning>
+                          <Styled(h3)>
+                            <h3
+                              className="emotion-1"
+                            >
+                              Warning Card Title
+                            </h3>
+                          </Styled(h3)>
+                        </div>
+                      </Styled(div)>
+                      <Styled(h4)>
+                        <h4
+                          className="emotion-19"
+                        >
+                          Card Subtitle
+                        </h4>
+                      </Styled(h4)>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardTitle>
-          </CardTitle>
-          <CardBlock>
             <CardBlock>
-              <div
-                className="emotion-6"
-              >
-                <Styled(div)>
-                  <div
-                    className="emotion-5"
-                  >
-                    
+              <Styled(div)>
+                <div
+                  className="emotion-6"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-5"
+                    >
+                      
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
   pretium massa. Aliquam erat volutpat. Nulla facilisi.
 
-                  </div>
-                </Styled(div)>
-              </div>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
             </CardBlock>
-          </CardBlock>
-        </div>
+          </div>
+        </Styled(div)>
       </Card>
-    </Card>
-  </div>
-</Styled(div)>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

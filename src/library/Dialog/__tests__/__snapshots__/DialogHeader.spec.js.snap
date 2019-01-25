@@ -1,50 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DialogHeader demo examples Snapshots: basic 1`] = `
-.emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-6 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.875em;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  margin: 1.7142857142857142em 0;
-  padding: 0 1.7142857142857142em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-6 *,
-.emotion-6 *::before,
-.emotion-6 *::after {
-  box-sizing: inherit;
-}
-
 .emotion-28 {
   padding: 1em;
   position: relative;
@@ -153,6 +109,50 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
   }
 }
 
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.875em;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  margin: 1.7142857142857142em 0;
+  padding: 0 1.7142857142857142em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
+  box-sizing: inherit;
+}
+
 .emotion-5 {
   color: #58606e;
   display: -webkit-box;
@@ -259,30 +259,6 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
   margin-bottom: 1.7142857142857142em;
 }
 
-.emotion-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: 100%;
-}
-
-.emotion-15 > div {
-  padding-left: 1.7142857142857142em;
-  padding-right: 1.7142857142857142em;
-}
-
-.emotion-15 > div > :first-child {
-  margin-top: 0;
-}
-
-.emotion-15 > div > :last-child {
-  margin-bottom: 0;
-}
-
 .emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -333,24 +309,13 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
   outline: 1px solid #1d5bbf;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-28"
-  >
-    <withProps(DemoDialog)>
-      <DemoDialog
-        closeButtonLabel="close"
-        closeOnClickOutside={false}
-        closeOnEscape={false}
-        disableFocusOnOpen={true}
-        disableFocusTrap={true}
-        isOpen={true}
-        preventCloseButtonClose={true}
-        size="medium"
-        usePortal={false}
-      >
-        <Dialog
-          className="emotion-25"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-28"
+    >
+      <withProps(Styled(Dialog))>
+        <Styled(Dialog)
           closeButtonLabel="close"
           closeOnClickOutside={false}
           closeOnEscape={false}
@@ -361,353 +326,314 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
           size="medium"
           usePortal={false}
         >
-          <WithTheme(Component)
-            in={true}
-            onEntered={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
+          <Dialog
+            className="emotion-25"
+            closeButtonLabel="close"
+            closeOnClickOutside={false}
+            closeOnEscape={false}
+            disableFocusOnOpen={true}
+            disableFocusTrap={true}
+            isOpen={true}
+            preventCloseButtonClose={true}
+            size="medium"
+            usePortal={false}
           >
-            <Component
+            <WithTheme(Component)
               in={true}
               onEntered={[Function]}
               onExited={[Function]}
               onExiting={[Function]}
             >
-              <Transition
-                appear={true}
-                enter={true}
-                exit={true}
+              <Component
                 in={true}
-                mountOnEnter={true}
-                onEnter={[Function]}
                 onEntered={[Function]}
-                onEntering={[Function]}
-                onExit={[Function]}
                 onExited={[Function]}
                 onExiting={[Function]}
-                timeout={250}
-                unmountOnExit={true}
               >
-                <Animate
-                  state="entering"
+                <Transition
+                  appear={true}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={true}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={250}
+                  unmountOnExit={true}
                 >
-                  <div
-                    className="emotion-26"
+                  <Styled(div)
+                    state="entering"
                   >
-                    <FocusTrap
-                      _createFocusTrap={[Function]}
-                      active={false}
-                      focusTrapOptions={Object {}}
-                      paused={false}
-                      tag="div"
+                    <div
+                      className="emotion-26"
                     >
-                      <div>
-                        <Dialog
-                          aria-labelledby="dialog-1-title"
-                          aria-modal={true}
-                          className="emotion-25"
-                          closeButtonLabel="close"
-                          disableFocusOnOpen={true}
-                          id="dialog-1"
-                          innerRef={[Function]}
-                          preventCloseButtonClose={true}
-                          role="dialog"
-                          tabIndex="-1"
-                        >
-                          <div
+                      <FocusTrap
+                        _createFocusTrap={[Function]}
+                        active={false}
+                        focusTrapOptions={Object {}}
+                        paused={false}
+                        tag="div"
+                      >
+                        <div>
+                          <Styled(div)
                             aria-labelledby="dialog-1-title"
                             aria-modal={true}
-                            className="emotion-24"
+                            className="emotion-25"
+                            closeButtonLabel="close"
+                            disableFocusOnOpen={true}
                             id="dialog-1"
+                            preventCloseButtonClose={true}
                             role="dialog"
                             tabIndex="-1"
                           >
-                            <Overlay>
-                              <div
-                                className="emotion-0"
-                              />
-                            </Overlay>
-                            <Styled(div)>
-                              <div
-                                className="emotion-23"
-                              >
-                                <DialogContent
-                                  id="dialog-1-content"
-                                  innerRef={[Function]}
-                                  role="document"
-                                  size="medium"
+                            <div
+                              aria-labelledby="dialog-1-title"
+                              aria-modal={true}
+                              className="emotion-24"
+                              id="dialog-1"
+                              role="dialog"
+                              tabIndex="-1"
+                            >
+                              <Styled(div)>
+                                <div
+                                  className="emotion-0"
+                                />
+                              </Styled(div)>
+                              <Styled(div)>
+                                <div
+                                  className="emotion-23"
                                 >
-                                  <div
-                                    className="emotion-22"
+                                  <Styled(div)
                                     id="dialog-1-content"
                                     role="document"
+                                    size="medium"
                                   >
-                                    <DialogHeader
-                                      titleProps={
-                                        Object {
-                                          "id": "dialog-1-title",
-                                          "variant": undefined,
-                                        }
-                                      }
+                                    <div
+                                      className="emotion-22"
+                                      id="dialog-1-content"
+                                      role="document"
                                     >
-                                      <withProps(DialogHeader)>
-                                        <DialogHeader
-                                          element="header"
-                                        >
-                                          <DialogRow
-                                            className="emotion-7"
-                                            element="header"
+                                      <DialogHeader
+                                        titleProps={
+                                          Object {
+                                            "id": "dialog-1-title",
+                                            "variant": undefined,
+                                          }
+                                        }
+                                      >
+                                        <withProps(Styled(DialogRow))>
+                                          <Styled(DialogRow)
+                                            as="header"
                                           >
-                                            <Styled(header)
+                                            <DialogRow
+                                              as="header"
                                               className="emotion-7"
-                                              element="header"
                                             >
-                                              <header
-                                                className="emotion-6"
+                                              <Styled(div)
+                                                as="header"
+                                                className="emotion-7"
                                               >
-                                                <WithTheme(DialogTitle)
-                                                  id="dialog-1-title"
+                                                <header
+                                                  className="emotion-6"
                                                 >
-                                                  <DialogTitle
-                                                    appearance="h4"
-                                                    element="h1"
+                                                  <WithTheme(DialogTitle)
                                                     id="dialog-1-title"
                                                   >
                                                     <DialogTitle
                                                       appearance="h4"
-                                                      element="h1"
+                                                      id="dialog-1-title"
                                                     >
-                                                      <div
-                                                        className="emotion-5"
+                                                      <Styled(div)
+                                                        appearance="h4"
                                                       >
-                                                        <TitleContent
-                                                          appearance="h4"
-                                                          element="h1"
-                                                          noMargins={true}
+                                                        <div
+                                                          className="emotion-5"
                                                         >
-                                                          <Styled(Text)
+                                                          <TitleContent
                                                             appearance="h4"
-                                                            element="h1"
-                                                            id="dialog-1-title"
+                                                            as="h1"
                                                             noMargins={true}
                                                           >
-                                                            <Text
+                                                            <Styled(Text)
                                                               appearance="h4"
-                                                              className="emotion-2"
-                                                              element="h1"
+                                                              as="h1"
                                                               id="dialog-1-title"
                                                               noMargins={true}
                                                             >
-                                                              <TextProvider
+                                                              <Text
                                                                 appearance="h4"
+                                                                as="h1"
                                                                 className="emotion-2"
-                                                                element="h1"
                                                                 id="dialog-1-title"
                                                                 noMargins={true}
                                                               >
-                                                                <Styled(h1)
+                                                                <TextProvider
                                                                   appearance="h4"
+                                                                  as="h1"
                                                                   className="emotion-2"
-                                                                  element="h1"
                                                                   id="dialog-1-title"
                                                                   noMargins={true}
                                                                 >
-                                                                  <h1
-                                                                    className="emotion-1"
+                                                                  <Styled(p)
+                                                                    appearance="h4"
+                                                                    as="h1"
+                                                                    className="emotion-2"
+                                                                    defaultAppearance="p"
                                                                     id="dialog-1-title"
+                                                                    noMargins={true}
                                                                   >
-                                                                    Title
-                                                                  </h1>
-                                                                </Styled(h1)>
-                                                              </TextProvider>
-                                                            </Text>
-                                                          </Styled(Text)>
-                                                        </TitleContent>
-                                                      </div>
+                                                                    <h1
+                                                                      className="emotion-1"
+                                                                      id="dialog-1-title"
+                                                                    >
+                                                                      Title
+                                                                    </h1>
+                                                                  </Styled(p)>
+                                                                </TextProvider>
+                                                              </Text>
+                                                            </Styled(Text)>
+                                                          </TitleContent>
+                                                        </div>
+                                                      </Styled(div)>
                                                     </DialogTitle>
-                                                  </DialogTitle>
-                                                </WithTheme(DialogTitle)>
-                                              </header>
-                                            </Styled(header)>
-                                          </DialogRow>
-                                        </DialogHeader>
-                                      </withProps(DialogHeader)>
-                                    </DialogHeader>
-                                    <DialogBody>
-                                      <DialogBody
-                                        element="div"
-                                      >
-                                        <DialogRow
-                                          className="emotion-20"
-                                          element="div"
-                                        >
-                                          <Styled(div)
+                                                  </WithTheme(DialogTitle)>
+                                                </header>
+                                              </Styled(div)>
+                                            </DialogRow>
+                                          </Styled(DialogRow)>
+                                        </withProps(Styled(DialogRow))>
+                                      </DialogHeader>
+                                      <DialogBody>
+                                        <Styled(DialogRow)>
+                                          <DialogRow
                                             className="emotion-20"
-                                            element="div"
                                           >
-                                            <div
-                                              className="emotion-19"
+                                            <Styled(div)
+                                              className="emotion-20"
                                             >
-                                              <withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
-                                                <Styled(WithTheme(Themed(OverflowContainerWithShadows)))
-                                                  scrollY={true}
-                                                >
-                                                  <WithTheme(Themed(OverflowContainerWithShadows))
-                                                    className="emotion-15"
+                                              <div
+                                                className="emotion-19"
+                                              >
+                                                <withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
+                                                  <Styled(WithTheme(Themed(OverflowContainerWithShadows)))
                                                     scrollY={true}
                                                   >
-                                                    <Themed(OverflowContainerWithShadows)
-                                                      className="emotion-15"
+                                                    <WithTheme(Themed(OverflowContainerWithShadows))
+                                                      className="emotion-14"
                                                       scrollY={true}
                                                     >
-                                                      <ThemeProvider>
+                                                      <Themed(OverflowContainerWithShadows)
+                                                        className="emotion-14"
+                                                        scrollY={true}
+                                                      >
                                                         <ThemeProvider>
-                                                          <OverflowContainerWithShadows
-                                                            className="emotion-15"
-                                                            scrollY={true}
-                                                          >
+                                                          <ThemeProvider>
                                                             <OverflowContainerWithShadows
-                                                              className="emotion-15"
-                                                              hasShadowBottom={false}
-                                                              hasShadowTop={false}
+                                                              className="emotion-14"
+                                                              scrollY={true}
                                                             >
-                                                              <div
+                                                              <Styled(div)
                                                                 className="emotion-14"
+                                                                hasShadowBottom={false}
+                                                                hasShadowTop={false}
                                                               >
-                                                                <Scroller
-                                                                  containerRef={[Function]}
-                                                                  onScroll={[Function]}
-                                                                  scrollY={true}
+                                                                <div
+                                                                  className="emotion-14"
                                                                 >
-                                                                  <WithTheme(Themed(OverflowContainer))
-                                                                    className="emotion-10"
+                                                                  <Styled(WithTheme(Themed(OverflowContainer)))
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Themed(OverflowContainer)
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-10"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
                                                                       scrollY={true}
                                                                     >
-                                                                      <ThemeProvider>
+                                                                      <Themed(OverflowContainer)
+                                                                        className="emotion-10"
+                                                                        containerRef={[Function]}
+                                                                        onScroll={[Function]}
+                                                                        scrollY={true}
+                                                                      >
                                                                         <ThemeProvider>
-                                                                          <OverflowContainer
-                                                                            className="emotion-10"
-                                                                            containerRef={[Function]}
-                                                                            onScroll={[Function]}
-                                                                            scrollY={true}
-                                                                          >
+                                                                          <ThemeProvider>
                                                                             <OverflowContainer
                                                                               className="emotion-10"
                                                                               containerRef={[Function]}
-                                                                              innerRef={[Function]}
                                                                               onScroll={[Function]}
                                                                               scrollY={true}
                                                                             >
-                                                                              <div
-                                                                                className="emotion-9"
+                                                                              <Styled(div)
+                                                                                className="emotion-10"
+                                                                                containerRef={[Function]}
                                                                                 onScroll={[Function]}
+                                                                                scrollY={true}
                                                                               >
-                                                                                <EventListener
-                                                                                  listeners={
-                                                                                    Array [
-                                                                                      Object {
-                                                                                        "event": "resize",
-                                                                                        "handler": [Function],
-                                                                                        "target": "window",
-                                                                                      },
-                                                                                    ]
-                                                                                  }
-                                                                                />
-                                                                              </div>
+                                                                                <div
+                                                                                  className="emotion-9"
+                                                                                  onScroll={[Function]}
+                                                                                >
+                                                                                  <EventListener
+                                                                                    listeners={
+                                                                                      Array [
+                                                                                        Object {
+                                                                                          "event": "resize",
+                                                                                          "handler": [Function],
+                                                                                          "target": "window",
+                                                                                        },
+                                                                                      ]
+                                                                                    }
+                                                                                  />
+                                                                                </div>
+                                                                              </Styled(div)>
                                                                             </OverflowContainer>
-                                                                          </OverflowContainer>
+                                                                          </ThemeProvider>
                                                                         </ThemeProvider>
-                                                                      </ThemeProvider>
-                                                                    </Themed(OverflowContainer)>
-                                                                  </WithTheme(Themed(OverflowContainer))>
-                                                                </Scroller>
-                                                              </div>
+                                                                      </Themed(OverflowContainer)>
+                                                                    </WithTheme(Themed(OverflowContainer))>
+                                                                  </Styled(WithTheme(Themed(OverflowContainer)))>
+                                                                </div>
+                                                              </Styled(div)>
                                                             </OverflowContainerWithShadows>
-                                                          </OverflowContainerWithShadows>
+                                                          </ThemeProvider>
                                                         </ThemeProvider>
-                                                      </ThemeProvider>
-                                                    </Themed(OverflowContainerWithShadows)>
-                                                  </WithTheme(Themed(OverflowContainerWithShadows))>
-                                                </Styled(WithTheme(Themed(OverflowContainerWithShadows)))>
-                                              </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
-                                            </div>
-                                          </Styled(div)>
-                                        </DialogRow>
+                                                      </Themed(OverflowContainerWithShadows)>
+                                                    </WithTheme(Themed(OverflowContainerWithShadows))>
+                                                  </Styled(WithTheme(Themed(OverflowContainerWithShadows)))>
+                                                </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
+                                              </div>
+                                            </Styled(div)>
+                                          </DialogRow>
+                                        </Styled(DialogRow)>
                                       </DialogBody>
-                                    </DialogBody>
-                                  </div>
-                                </DialogContent>
-                              </div>
-                            </Styled(div)>
-                          </div>
-                        </Dialog>
-                      </div>
-                    </FocusTrap>
-                  </div>
-                </Animate>
-              </Transition>
-            </Component>
-          </WithTheme(Component)>
-        </Dialog>
-      </DemoDialog>
-    </withProps(DemoDialog)>
-  </div>
-</Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </div>
+                      </FocusTrap>
+                    </div>
+                  </Styled(div)>
+                </Transition>
+              </Component>
+            </WithTheme(Component)>
+          </Dialog>
+        </Styled(Dialog)>
+      </withProps(Styled(Dialog))>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;
 
 exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-9 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.875em;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  margin: 1.7142857142857142em 0;
-  padding: 0 1.7142857142857142em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-9 *,
-.emotion-9 *::before,
-.emotion-9 *::after {
-  box-sizing: inherit;
-}
-
 .emotion-31 {
   padding: 1em;
   position: relative;
@@ -816,6 +742,50 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
   }
 }
 
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.875em;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  margin: 1.7142857142857142em 0;
+  padding: 0 1.7142857142857142em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
+  box-sizing: inherit;
+}
+
 .emotion-5 {
   color: #58606e;
   display: -webkit-box;
@@ -920,30 +890,6 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
 
 .emotion-22:last-child {
   margin-bottom: 1.7142857142857142em;
-}
-
-.emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: 100%;
-}
-
-.emotion-18 > div {
-  padding-left: 1.7142857142857142em;
-  padding-right: 1.7142857142857142em;
-}
-
-.emotion-18 > div > :first-child {
-  margin-top: 0;
-}
-
-.emotion-18 > div > :last-child {
-  margin-bottom: 0;
 }
 
 .emotion-17 {
@@ -1105,24 +1051,13 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
   width: 1em;
 }
 
-<Styled(div)>
-  <div
-    className="emotion-31"
-  >
-    <withProps(DemoDialog)>
-      <DemoDialog
-        closeButtonLabel="close"
-        closeOnClickOutside={false}
-        closeOnEscape={false}
-        disableFocusOnOpen={true}
-        disableFocusTrap={true}
-        isOpen={true}
-        preventCloseButtonClose={true}
-        size="medium"
-        usePortal={false}
-      >
-        <Dialog
-          className="emotion-28"
+<DemoLayout>
+  <Styled(div)>
+    <div
+      className="emotion-31"
+    >
+      <withProps(Styled(Dialog))>
+        <Styled(Dialog)
           closeButtonLabel="close"
           closeOnClickOutside={false}
           closeOnEscape={false}
@@ -1133,375 +1068,381 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
           size="medium"
           usePortal={false}
         >
-          <WithTheme(Component)
-            in={true}
-            onEntered={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
+          <Dialog
+            className="emotion-28"
+            closeButtonLabel="close"
+            closeOnClickOutside={false}
+            closeOnEscape={false}
+            disableFocusOnOpen={true}
+            disableFocusTrap={true}
+            isOpen={true}
+            preventCloseButtonClose={true}
+            size="medium"
+            usePortal={false}
           >
-            <Component
+            <WithTheme(Component)
               in={true}
               onEntered={[Function]}
               onExited={[Function]}
               onExiting={[Function]}
             >
-              <Transition
-                appear={true}
-                enter={true}
-                exit={true}
+              <Component
                 in={true}
-                mountOnEnter={true}
-                onEnter={[Function]}
                 onEntered={[Function]}
-                onEntering={[Function]}
-                onExit={[Function]}
                 onExited={[Function]}
                 onExiting={[Function]}
-                timeout={250}
-                unmountOnExit={true}
               >
-                <Animate
-                  state="entering"
+                <Transition
+                  appear={true}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={true}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={250}
+                  unmountOnExit={true}
                 >
-                  <div
-                    className="emotion-29"
+                  <Styled(div)
+                    state="entering"
                   >
-                    <FocusTrap
-                      _createFocusTrap={[Function]}
-                      active={false}
-                      focusTrapOptions={Object {}}
-                      paused={false}
-                      tag="div"
+                    <div
+                      className="emotion-29"
                     >
-                      <div>
-                        <Dialog
-                          aria-labelledby="dialog-3-title"
-                          aria-modal={true}
-                          className="emotion-28"
-                          closeButtonLabel="close"
-                          disableFocusOnOpen={true}
-                          id="dialog-3"
-                          innerRef={[Function]}
-                          preventCloseButtonClose={true}
-                          role="dialog"
-                          tabIndex="-1"
-                        >
-                          <div
-                            aria-labelledby="dialog-3-title"
+                      <FocusTrap
+                        _createFocusTrap={[Function]}
+                        active={false}
+                        focusTrapOptions={Object {}}
+                        paused={false}
+                        tag="div"
+                      >
+                        <div>
+                          <Styled(div)
+                            aria-labelledby="dialog-2-title"
                             aria-modal={true}
-                            className="emotion-27"
-                            id="dialog-3"
+                            className="emotion-28"
+                            closeButtonLabel="close"
+                            disableFocusOnOpen={true}
+                            id="dialog-2"
+                            preventCloseButtonClose={true}
                             role="dialog"
                             tabIndex="-1"
                           >
-                            <Overlay>
-                              <div
-                                className="emotion-0"
-                              />
-                            </Overlay>
-                            <Styled(div)>
-                              <div
-                                className="emotion-26"
-                              >
-                                <DialogContent
-                                  id="dialog-3-content"
-                                  innerRef={[Function]}
-                                  role="document"
-                                  size="medium"
+                            <div
+                              aria-labelledby="dialog-2-title"
+                              aria-modal={true}
+                              className="emotion-27"
+                              id="dialog-2"
+                              role="dialog"
+                              tabIndex="-1"
+                            >
+                              <Styled(div)>
+                                <div
+                                  className="emotion-0"
+                                />
+                              </Styled(div)>
+                              <Styled(div)>
+                                <div
+                                  className="emotion-26"
                                 >
-                                  <div
-                                    className="emotion-25"
-                                    id="dialog-3-content"
+                                  <Styled(div)
+                                    id="dialog-2-content"
                                     role="document"
+                                    size="medium"
                                   >
-                                    <DialogHeader
-                                      closeButton={
-                                        <Button
-                                          aria-label="Close"
-                                          element="button"
-                                          iconStart={<IconClear />}
-                                          size="small"
-                                          type="button"
-                                          variant="danger"
-                                        />
-                                      }
-                                      titleProps={
-                                        Object {
-                                          "id": "dialog-3-title",
-                                          "variant": undefined,
-                                        }
-                                      }
+                                    <div
+                                      className="emotion-25"
+                                      id="dialog-2-content"
+                                      role="document"
                                     >
-                                      <withProps(DialogHeader)>
-                                        <DialogHeader
-                                          element="header"
-                                        >
-                                          <DialogRow
-                                            className="emotion-10"
-                                            element="header"
+                                      <DialogHeader
+                                        closeButton={
+                                          <ForwardRef
+                                            aria-label="Close"
+                                            iconStart={<IconClear />}
+                                            size="small"
+                                            variant="danger"
+                                          />
+                                        }
+                                        titleProps={
+                                          Object {
+                                            "id": "dialog-2-title",
+                                            "variant": undefined,
+                                          }
+                                        }
+                                      >
+                                        <withProps(Styled(DialogRow))>
+                                          <Styled(DialogRow)
+                                            as="header"
                                           >
-                                            <Styled(header)
+                                            <DialogRow
+                                              as="header"
                                               className="emotion-10"
-                                              element="header"
                                             >
-                                              <header
-                                                className="emotion-9"
+                                              <Styled(div)
+                                                as="header"
+                                                className="emotion-10"
                                               >
-                                                <WithTheme(DialogTitle)
-                                                  id="dialog-3-title"
+                                                <header
+                                                  className="emotion-9"
                                                 >
-                                                  <DialogTitle
-                                                    appearance="h4"
-                                                    element="h1"
-                                                    id="dialog-3-title"
+                                                  <WithTheme(DialogTitle)
+                                                    id="dialog-2-title"
                                                   >
                                                     <DialogTitle
                                                       appearance="h4"
-                                                      element="h1"
+                                                      id="dialog-2-title"
                                                     >
-                                                      <div
-                                                        className="emotion-5"
+                                                      <Styled(div)
+                                                        appearance="h4"
                                                       >
-                                                        <TitleContent
-                                                          appearance="h4"
-                                                          element="h1"
-                                                          noMargins={true}
+                                                        <div
+                                                          className="emotion-5"
                                                         >
-                                                          <Styled(Text)
+                                                          <TitleContent
                                                             appearance="h4"
-                                                            element="h1"
-                                                            id="dialog-3-title"
+                                                            as="h1"
                                                             noMargins={true}
                                                           >
-                                                            <Text
+                                                            <Styled(Text)
                                                               appearance="h4"
-                                                              className="emotion-2"
-                                                              element="h1"
-                                                              id="dialog-3-title"
+                                                              as="h1"
+                                                              id="dialog-2-title"
                                                               noMargins={true}
                                                             >
-                                                              <TextProvider
+                                                              <Text
                                                                 appearance="h4"
+                                                                as="h1"
                                                                 className="emotion-2"
-                                                                element="h1"
-                                                                id="dialog-3-title"
+                                                                id="dialog-2-title"
                                                                 noMargins={true}
                                                               >
-                                                                <Styled(h1)
+                                                                <TextProvider
                                                                   appearance="h4"
+                                                                  as="h1"
                                                                   className="emotion-2"
-                                                                  element="h1"
-                                                                  id="dialog-3-title"
+                                                                  id="dialog-2-title"
                                                                   noMargins={true}
                                                                 >
-                                                                  <h1
-                                                                    className="emotion-1"
-                                                                    id="dialog-3-title"
+                                                                  <Styled(p)
+                                                                    appearance="h4"
+                                                                    as="h1"
+                                                                    className="emotion-2"
+                                                                    defaultAppearance="p"
+                                                                    id="dialog-2-title"
+                                                                    noMargins={true}
                                                                   >
-                                                                    Title
-                                                                  </h1>
-                                                                </Styled(h1)>
-                                                              </TextProvider>
-                                                            </Text>
-                                                          </Styled(Text)>
-                                                        </TitleContent>
-                                                      </div>
+                                                                    <h1
+                                                                      className="emotion-1"
+                                                                      id="dialog-2-title"
+                                                                    >
+                                                                      Title
+                                                                    </h1>
+                                                                  </Styled(p)>
+                                                                </TextProvider>
+                                                              </Text>
+                                                            </Styled(Text)>
+                                                          </TitleContent>
+                                                        </div>
+                                                      </Styled(div)>
                                                     </DialogTitle>
-                                                  </DialogTitle>
-                                                </WithTheme(DialogTitle)>
-                                                <Button
-                                                  aria-label="Close"
-                                                  element="button"
-                                                  iconStart={<IconClear />}
-                                                  size="small"
-                                                  type="button"
-                                                  variant="danger"
-                                                >
-                                                  <Button
+                                                  </WithTheme(DialogTitle)>
+                                                  <WithForwardRef(Button)
                                                     aria-label="Close"
-                                                    element="button"
+                                                    iconStart={<IconClear />}
                                                     size="small"
-                                                    type="button"
                                                     variant="danger"
                                                   >
-                                                    <button
+                                                    <Button
                                                       aria-label="Close"
-                                                      className="emotion-8"
-                                                      type="button"
+                                                      forwardedRef={null}
+                                                      iconStart={<IconClear />}
+                                                      size="small"
+                                                      variant="danger"
                                                     >
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-7"
+                                                      <Styled(button)
+                                                        aria-label="Close"
+                                                        size="small"
+                                                        variant="danger"
+                                                      >
+                                                        <button
+                                                          aria-label="Close"
+                                                          className="emotion-8"
                                                         >
-                                                          <IconClear
-                                                            key="iconStart"
-                                                            size="medium"
-                                                          >
-                                                            <Icon
-                                                              rtl={false}
-                                                              size="medium"
+                                                          <Styled(span)>
+                                                            <span
+                                                              className="emotion-7"
                                                             >
-                                                              <Styled(svg)
-                                                                aria-hidden={true}
-                                                                focusable="false"
-                                                                role="img"
-                                                                rtl={false}
+                                                              <IconClear
+                                                                key="iconStart"
                                                                 size="medium"
-                                                                viewBox="0 0 24 24"
                                                               >
-                                                                <svg
-                                                                  aria-hidden={true}
-                                                                  className="emotion-6"
-                                                                  focusable="false"
-                                                                  role="img"
-                                                                  viewBox="0 0 24 24"
+                                                                <Icon
+                                                                  rtl={false}
+                                                                  size="medium"
                                                                 >
-                                                                  <g>
-                                                                    <path
-                                                                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                                                                    />
-                                                                  </g>
-                                                                </svg>
-                                                              </Styled(svg)>
-                                                            </Icon>
-                                                          </IconClear>
-                                                        </span>
-                                                      </Styled(span)>
-                                                    </button>
-                                                  </Button>
-                                                </Button>
-                                              </header>
-                                            </Styled(header)>
-                                          </DialogRow>
-                                        </DialogHeader>
-                                      </withProps(DialogHeader)>
-                                    </DialogHeader>
-                                    <DialogBody>
-                                      <DialogBody
-                                        element="div"
-                                      >
-                                        <DialogRow
-                                          className="emotion-23"
-                                          element="div"
-                                        >
-                                          <Styled(div)
+                                                                  <Styled(svg)
+                                                                    aria-hidden={true}
+                                                                    focusable="false"
+                                                                    role="img"
+                                                                    rtl={false}
+                                                                    size="medium"
+                                                                    viewBox="0 0 24 24"
+                                                                  >
+                                                                    <svg
+                                                                      aria-hidden={true}
+                                                                      className="emotion-6"
+                                                                      focusable="false"
+                                                                      role="img"
+                                                                      viewBox="0 0 24 24"
+                                                                    >
+                                                                      <g>
+                                                                        <path
+                                                                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                                                        />
+                                                                      </g>
+                                                                    </svg>
+                                                                  </Styled(svg)>
+                                                                </Icon>
+                                                              </IconClear>
+                                                            </span>
+                                                          </Styled(span)>
+                                                        </button>
+                                                      </Styled(button)>
+                                                    </Button>
+                                                  </WithForwardRef(Button)>
+                                                </header>
+                                              </Styled(div)>
+                                            </DialogRow>
+                                          </Styled(DialogRow)>
+                                        </withProps(Styled(DialogRow))>
+                                      </DialogHeader>
+                                      <DialogBody>
+                                        <Styled(DialogRow)>
+                                          <DialogRow
                                             className="emotion-23"
-                                            element="div"
                                           >
-                                            <div
-                                              className="emotion-22"
+                                            <Styled(div)
+                                              className="emotion-23"
                                             >
-                                              <withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
-                                                <Styled(WithTheme(Themed(OverflowContainerWithShadows)))
-                                                  scrollY={true}
-                                                >
-                                                  <WithTheme(Themed(OverflowContainerWithShadows))
-                                                    className="emotion-18"
+                                              <div
+                                                className="emotion-22"
+                                              >
+                                                <withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
+                                                  <Styled(WithTheme(Themed(OverflowContainerWithShadows)))
                                                     scrollY={true}
                                                   >
-                                                    <Themed(OverflowContainerWithShadows)
-                                                      className="emotion-18"
+                                                    <WithTheme(Themed(OverflowContainerWithShadows))
+                                                      className="emotion-17"
                                                       scrollY={true}
                                                     >
-                                                      <ThemeProvider>
+                                                      <Themed(OverflowContainerWithShadows)
+                                                        className="emotion-17"
+                                                        scrollY={true}
+                                                      >
                                                         <ThemeProvider>
-                                                          <OverflowContainerWithShadows
-                                                            className="emotion-18"
-                                                            scrollY={true}
-                                                          >
+                                                          <ThemeProvider>
                                                             <OverflowContainerWithShadows
-                                                              className="emotion-18"
-                                                              hasShadowBottom={false}
-                                                              hasShadowTop={false}
+                                                              className="emotion-17"
+                                                              scrollY={true}
                                                             >
-                                                              <div
+                                                              <Styled(div)
                                                                 className="emotion-17"
+                                                                hasShadowBottom={false}
+                                                                hasShadowTop={false}
                                                               >
-                                                                <Scroller
-                                                                  containerRef={[Function]}
-                                                                  onScroll={[Function]}
-                                                                  scrollY={true}
+                                                                <div
+                                                                  className="emotion-17"
                                                                 >
-                                                                  <WithTheme(Themed(OverflowContainer))
-                                                                    className="emotion-13"
+                                                                  <Styled(WithTheme(Themed(OverflowContainer)))
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Themed(OverflowContainer)
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-13"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
                                                                       scrollY={true}
                                                                     >
-                                                                      <ThemeProvider>
+                                                                      <Themed(OverflowContainer)
+                                                                        className="emotion-13"
+                                                                        containerRef={[Function]}
+                                                                        onScroll={[Function]}
+                                                                        scrollY={true}
+                                                                      >
                                                                         <ThemeProvider>
-                                                                          <OverflowContainer
-                                                                            className="emotion-13"
-                                                                            containerRef={[Function]}
-                                                                            onScroll={[Function]}
-                                                                            scrollY={true}
-                                                                          >
+                                                                          <ThemeProvider>
                                                                             <OverflowContainer
                                                                               className="emotion-13"
                                                                               containerRef={[Function]}
-                                                                              innerRef={[Function]}
                                                                               onScroll={[Function]}
                                                                               scrollY={true}
                                                                             >
-                                                                              <div
-                                                                                className="emotion-12"
+                                                                              <Styled(div)
+                                                                                className="emotion-13"
+                                                                                containerRef={[Function]}
                                                                                 onScroll={[Function]}
+                                                                                scrollY={true}
                                                                               >
-                                                                                <EventListener
-                                                                                  listeners={
-                                                                                    Array [
-                                                                                      Object {
-                                                                                        "event": "resize",
-                                                                                        "handler": [Function],
-                                                                                        "target": "window",
-                                                                                      },
-                                                                                    ]
-                                                                                  }
-                                                                                />
-                                                                              </div>
+                                                                                <div
+                                                                                  className="emotion-12"
+                                                                                  onScroll={[Function]}
+                                                                                >
+                                                                                  <EventListener
+                                                                                    listeners={
+                                                                                      Array [
+                                                                                        Object {
+                                                                                          "event": "resize",
+                                                                                          "handler": [Function],
+                                                                                          "target": "window",
+                                                                                        },
+                                                                                      ]
+                                                                                    }
+                                                                                  />
+                                                                                </div>
+                                                                              </Styled(div)>
                                                                             </OverflowContainer>
-                                                                          </OverflowContainer>
+                                                                          </ThemeProvider>
                                                                         </ThemeProvider>
-                                                                      </ThemeProvider>
-                                                                    </Themed(OverflowContainer)>
-                                                                  </WithTheme(Themed(OverflowContainer))>
-                                                                </Scroller>
-                                                              </div>
+                                                                      </Themed(OverflowContainer)>
+                                                                    </WithTheme(Themed(OverflowContainer))>
+                                                                  </Styled(WithTheme(Themed(OverflowContainer)))>
+                                                                </div>
+                                                              </Styled(div)>
                                                             </OverflowContainerWithShadows>
-                                                          </OverflowContainerWithShadows>
+                                                          </ThemeProvider>
                                                         </ThemeProvider>
-                                                      </ThemeProvider>
-                                                    </Themed(OverflowContainerWithShadows)>
-                                                  </WithTheme(Themed(OverflowContainerWithShadows))>
-                                                </Styled(WithTheme(Themed(OverflowContainerWithShadows)))>
-                                              </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
-                                            </div>
-                                          </Styled(div)>
-                                        </DialogRow>
+                                                      </Themed(OverflowContainerWithShadows)>
+                                                    </WithTheme(Themed(OverflowContainerWithShadows))>
+                                                  </Styled(WithTheme(Themed(OverflowContainerWithShadows)))>
+                                                </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
+                                              </div>
+                                            </Styled(div)>
+                                          </DialogRow>
+                                        </Styled(DialogRow)>
                                       </DialogBody>
-                                    </DialogBody>
-                                  </div>
-                                </DialogContent>
-                              </div>
-                            </Styled(div)>
-                          </div>
-                        </Dialog>
-                      </div>
-                    </FocusTrap>
-                  </div>
-                </Animate>
-              </Transition>
-            </Component>
-          </WithTheme(Component)>
-        </Dialog>
-      </DemoDialog>
-    </withProps(DemoDialog)>
-  </div>
-</Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </div>
+                      </FocusTrap>
+                    </div>
+                  </Styled(div)>
+                </Transition>
+              </Component>
+            </WithTheme(Component)>
+          </Dialog>
+        </Styled(Dialog)>
+      </withProps(Styled(Dialog))>
+    </div>
+  </Styled(div)>
+</DemoLayout>
 `;

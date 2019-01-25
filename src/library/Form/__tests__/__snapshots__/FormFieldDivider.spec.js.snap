@@ -1,17 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
-.emotion-9 {
-  background-color: #c8d1e0;
-  height: 1px;
-  margin: 0.5em 0;
-}
-
-.emotion-28[class] > *:not(:last-child) {
+.emotion-31[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -22,9 +16,9 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-8 *,
-.emotion-8 *::before,
-.emotion-8 *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
@@ -50,7 +44,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   display: inline-block;
 }
 
-.emotion-4 {
+.emotion-5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -63,7 +57,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   width: 100%;
 }
 
-.emotion-4 [role="img"] {
+.emotion-5 [role="img"] {
   color: #c8d1e0;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -72,11 +66,11 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-4 [role="img"]:last-of-type {
+.emotion-5 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -99,27 +93,27 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   width: 100%;
 }
 
-.emotion-3 *,
-.emotion-3 *::before,
-.emotion-3 *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.emotion-3:hover > div:last-child {
+.emotion-4:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.emotion-3:focus > div:last-child {
+.emotion-4:focus > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-3:active > div:last-child {
+.emotion-4:active > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-3 [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -128,8 +122,62 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-3 [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
+}
+
+.emotion-2 {
+  color: #333840;
+  -webkit-text-fill-color: #333840;
+  font-size: 0.875em;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 1.1428571428571428em;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
+}
+
+.emotion-2:focus ~ div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
 .emotion-1 {
@@ -204,7 +252,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-2 {
+.emotion-3 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -218,20 +266,26 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
+.emotion-10 {
+  background-color: #c8d1e0;
+  height: 1px;
+  margin: 0.5em 0;
+}
+
 <DemoLayout>
   <Styled(div)
     marginBottom="1rem"
   >
     <div
-      className="emotion-28"
+      className="emotion-31"
     >
       <FormField
         label="Old Password"
         requiredText="Required"
       >
-        <FormField>
+        <Styled(div)>
           <div
-            className="emotion-8"
+            className="emotion-9"
           >
             <label>
               <Styled(div)
@@ -252,8 +306,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                 size="large"
                 type="password"
               >
-                <TextInput
-                  control={[Function]}
+                <Styled(WithTheme(Themed(FauxControl)))
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-describedby": undefined,
@@ -269,8 +337,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   size="large"
                 >
                   <WithTheme(Themed(FauxControl))
-                    className="emotion-4"
-                    control={[Function]}
+                    className="emotion-5"
+                    control={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "__emotion_base": "input",
+                        "__emotion_forwardProp": undefined,
+                        "__emotion_real": [Circular],
+                        "__emotion_styles": Array [
+                          [Function],
+                        ],
+                        "defaultProps": undefined,
+                        "displayName": "Styled(input)",
+                        "render": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
                     controlProps={
                       Object {
                         "aria-describedby": undefined,
@@ -286,8 +368,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <Themed(FauxControl)
-                      className="emotion-4"
-                      control={[Function]}
+                      className="emotion-5"
+                      control={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "__emotion_base": "input",
+                          "__emotion_forwardProp": undefined,
+                          "__emotion_real": [Circular],
+                          "__emotion_styles": Array [
+                            [Function],
+                          ],
+                          "defaultProps": undefined,
+                          "displayName": "Styled(input)",
+                          "render": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
                       controlProps={
                         Object {
                           "aria-describedby": undefined,
@@ -305,8 +401,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                       <ThemeProvider>
                         <ThemeProvider>
                           <FauxControl
-                            className="emotion-4"
-                            control={[Function]}
+                            className="emotion-5"
+                            control={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "__emotion_base": "input",
+                                "__emotion_forwardProp": undefined,
+                                "__emotion_real": [Circular],
+                                "__emotion_styles": Array [
+                                  [Function],
+                                ],
+                                "defaultProps": undefined,
+                                "displayName": "Styled(input)",
+                                "render": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
                             controlProps={
                               Object {
                                 "aria-describedby": undefined,
@@ -321,14 +431,28 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                             }
                             size="large"
                           >
-                            <FauxControl
-                              className="emotion-4"
-                              control={[Function]}
+                            <Styled(div)
+                              className="emotion-5"
                             >
                               <div
-                                className="emotion-3"
+                                className="emotion-4"
                               >
-                                <Control
+                                <Styled(input)
+                                  as={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "__emotion_base": "input",
+                                      "__emotion_forwardProp": undefined,
+                                      "__emotion_real": [Circular],
+                                      "__emotion_styles": Array [
+                                        [Function],
+                                      ],
+                                      "defaultProps": undefined,
+                                      "displayName": "Styled(input)",
+                                      "render": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
                                   controlPropsIn={
                                     Object {
                                       "aria-describedby": undefined,
@@ -345,47 +469,65 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                                   size="large"
                                   type="password"
                                 >
-                                  <input
-                                    className="emotion-1"
+                                  <Styled(input)
+                                    className="emotion-2"
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "password",
+                                      }
+                                    }
                                     size="large"
                                     type="password"
-                                  />
-                                </Control>
-                                <Underlay>
+                                  >
+                                    <input
+                                      className="emotion-1"
+                                      size="large"
+                                      type="password"
+                                    />
+                                  </Styled(input)>
+                                </Styled(input)>
+                                <Styled(div)>
                                   <div
-                                    className="emotion-2"
+                                    className="emotion-3"
                                   />
-                                </Underlay>
+                                </Styled(div)>
                               </div>
-                            </FauxControl>
+                            </Styled(div)>
                           </FauxControl>
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
                   </WithTheme(Themed(FauxControl))>
-                </TextInput>
+                </Styled(WithTheme(Themed(FauxControl)))>
               </TextInput>
             </label>
           </div>
-        </FormField>
+        </Styled(div)>
       </FormField>
       <FormFieldDivider>
-        <FormFieldDivider
+        <Styled(div)
           role="separator"
         >
           <div
-            className="emotion-9"
+            className="emotion-10"
             role="separator"
           />
-        </FormFieldDivider>
+        </Styled(div)>
       </FormFieldDivider>
       <FormField
         label="New Password"
         requiredText="Required"
       >
-        <FormField>
+        <Styled(div)>
           <div
-            className="emotion-8"
+            className="emotion-9"
           >
             <label>
               <Styled(div)
@@ -406,8 +548,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                 size="large"
                 type="password"
               >
-                <TextInput
-                  control={[Function]}
+                <Styled(WithTheme(Themed(FauxControl)))
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-describedby": undefined,
@@ -423,8 +579,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   size="large"
                 >
                   <WithTheme(Themed(FauxControl))
-                    className="emotion-4"
-                    control={[Function]}
+                    className="emotion-5"
+                    control={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "__emotion_base": "input",
+                        "__emotion_forwardProp": undefined,
+                        "__emotion_real": [Circular],
+                        "__emotion_styles": Array [
+                          [Function],
+                        ],
+                        "defaultProps": undefined,
+                        "displayName": "Styled(input)",
+                        "render": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
                     controlProps={
                       Object {
                         "aria-describedby": undefined,
@@ -440,8 +610,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <Themed(FauxControl)
-                      className="emotion-4"
-                      control={[Function]}
+                      className="emotion-5"
+                      control={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "__emotion_base": "input",
+                          "__emotion_forwardProp": undefined,
+                          "__emotion_real": [Circular],
+                          "__emotion_styles": Array [
+                            [Function],
+                          ],
+                          "defaultProps": undefined,
+                          "displayName": "Styled(input)",
+                          "render": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
                       controlProps={
                         Object {
                           "aria-describedby": undefined,
@@ -459,8 +643,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                       <ThemeProvider>
                         <ThemeProvider>
                           <FauxControl
-                            className="emotion-4"
-                            control={[Function]}
+                            className="emotion-5"
+                            control={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "__emotion_base": "input",
+                                "__emotion_forwardProp": undefined,
+                                "__emotion_real": [Circular],
+                                "__emotion_styles": Array [
+                                  [Function],
+                                ],
+                                "defaultProps": undefined,
+                                "displayName": "Styled(input)",
+                                "render": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
                             controlProps={
                               Object {
                                 "aria-describedby": undefined,
@@ -475,14 +673,28 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                             }
                             size="large"
                           >
-                            <FauxControl
-                              className="emotion-4"
-                              control={[Function]}
+                            <Styled(div)
+                              className="emotion-5"
                             >
                               <div
-                                className="emotion-3"
+                                className="emotion-4"
                               >
-                                <Control
+                                <Styled(input)
+                                  as={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "__emotion_base": "input",
+                                      "__emotion_forwardProp": undefined,
+                                      "__emotion_real": [Circular],
+                                      "__emotion_styles": Array [
+                                        [Function],
+                                      ],
+                                      "defaultProps": undefined,
+                                      "displayName": "Styled(input)",
+                                      "render": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
                                   controlPropsIn={
                                     Object {
                                       "aria-describedby": undefined,
@@ -499,37 +711,55 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                                   size="large"
                                   type="password"
                                 >
-                                  <input
-                                    className="emotion-1"
+                                  <Styled(input)
+                                    className="emotion-2"
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "password",
+                                      }
+                                    }
                                     size="large"
                                     type="password"
-                                  />
-                                </Control>
-                                <Underlay>
+                                  >
+                                    <input
+                                      className="emotion-1"
+                                      size="large"
+                                      type="password"
+                                    />
+                                  </Styled(input)>
+                                </Styled(input)>
+                                <Styled(div)>
                                   <div
-                                    className="emotion-2"
+                                    className="emotion-3"
                                   />
-                                </Underlay>
+                                </Styled(div)>
                               </div>
-                            </FauxControl>
+                            </Styled(div)>
                           </FauxControl>
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
                   </WithTheme(Themed(FauxControl))>
-                </TextInput>
+                </Styled(WithTheme(Themed(FauxControl)))>
               </TextInput>
             </label>
           </div>
-        </FormField>
+        </Styled(div)>
       </FormField>
       <FormField
         label="Repeat New Password"
         requiredText="Required"
       >
-        <FormField>
+        <Styled(div)>
           <div
-            className="emotion-8"
+            className="emotion-9"
           >
             <label>
               <Styled(div)
@@ -550,8 +780,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                 size="large"
                 type="password"
               >
-                <TextInput
-                  control={[Function]}
+                <Styled(WithTheme(Themed(FauxControl)))
+                  control={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "__emotion_base": "input",
+                      "__emotion_forwardProp": undefined,
+                      "__emotion_real": [Circular],
+                      "__emotion_styles": Array [
+                        [Function],
+                      ],
+                      "defaultProps": undefined,
+                      "displayName": "Styled(input)",
+                      "render": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
                   controlProps={
                     Object {
                       "aria-describedby": undefined,
@@ -567,8 +811,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   size="large"
                 >
                   <WithTheme(Themed(FauxControl))
-                    className="emotion-4"
-                    control={[Function]}
+                    className="emotion-5"
+                    control={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "__emotion_base": "input",
+                        "__emotion_forwardProp": undefined,
+                        "__emotion_real": [Circular],
+                        "__emotion_styles": Array [
+                          [Function],
+                        ],
+                        "defaultProps": undefined,
+                        "displayName": "Styled(input)",
+                        "render": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
                     controlProps={
                       Object {
                         "aria-describedby": undefined,
@@ -584,8 +842,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <Themed(FauxControl)
-                      className="emotion-4"
-                      control={[Function]}
+                      className="emotion-5"
+                      control={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "__emotion_base": "input",
+                          "__emotion_forwardProp": undefined,
+                          "__emotion_real": [Circular],
+                          "__emotion_styles": Array [
+                            [Function],
+                          ],
+                          "defaultProps": undefined,
+                          "displayName": "Styled(input)",
+                          "render": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
                       controlProps={
                         Object {
                           "aria-describedby": undefined,
@@ -603,8 +875,22 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                       <ThemeProvider>
                         <ThemeProvider>
                           <FauxControl
-                            className="emotion-4"
-                            control={[Function]}
+                            className="emotion-5"
+                            control={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "__emotion_base": "input",
+                                "__emotion_forwardProp": undefined,
+                                "__emotion_real": [Circular],
+                                "__emotion_styles": Array [
+                                  [Function],
+                                ],
+                                "defaultProps": undefined,
+                                "displayName": "Styled(input)",
+                                "render": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
                             controlProps={
                               Object {
                                 "aria-describedby": undefined,
@@ -619,14 +905,28 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                             }
                             size="large"
                           >
-                            <FauxControl
-                              className="emotion-4"
-                              control={[Function]}
+                            <Styled(div)
+                              className="emotion-5"
                             >
                               <div
-                                className="emotion-3"
+                                className="emotion-4"
                               >
-                                <Control
+                                <Styled(input)
+                                  as={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "__emotion_base": "input",
+                                      "__emotion_forwardProp": undefined,
+                                      "__emotion_real": [Circular],
+                                      "__emotion_styles": Array [
+                                        [Function],
+                                      ],
+                                      "defaultProps": undefined,
+                                      "displayName": "Styled(input)",
+                                      "render": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
                                   controlPropsIn={
                                     Object {
                                       "aria-describedby": undefined,
@@ -643,29 +943,47 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                                   size="large"
                                   type="password"
                                 >
-                                  <input
-                                    className="emotion-1"
+                                  <Styled(input)
+                                    className="emotion-2"
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "password",
+                                      }
+                                    }
                                     size="large"
                                     type="password"
-                                  />
-                                </Control>
-                                <Underlay>
+                                  >
+                                    <input
+                                      className="emotion-1"
+                                      size="large"
+                                      type="password"
+                                    />
+                                  </Styled(input)>
+                                </Styled(input)>
+                                <Styled(div)>
                                   <div
-                                    className="emotion-2"
+                                    className="emotion-3"
                                   />
-                                </Underlay>
+                                </Styled(div)>
                               </div>
-                            </FauxControl>
+                            </Styled(div)>
                           </FauxControl>
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
                   </WithTheme(Themed(FauxControl))>
-                </TextInput>
+                </Styled(WithTheme(Themed(FauxControl)))>
               </TextInput>
             </label>
           </div>
-        </FormField>
+        </Styled(div)>
       </FormField>
     </div>
   </Styled(div)>

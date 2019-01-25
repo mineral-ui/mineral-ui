@@ -124,39 +124,39 @@ exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1
 
 <ThemeProvider>
   <ThemeProvider>
-    <Button
-      element="button"
+    <WithForwardRef(Button)
       size="large"
-      type="button"
     >
       <Button
-        element="button"
+        forwardedRef={null}
         size="large"
-        text="Submit"
-        type="button"
       >
-        <button
-          className="emotion-2"
-          type="button"
+        <Styled(button)
+          size="large"
+          text="Submit"
         >
-          <Styled(span)>
-            <span
-              className="emotion-1"
-            >
-              <Styled(span)
-                size="large"
+          <button
+            className="emotion-2"
+          >
+            <Styled(span)>
+              <span
+                className="emotion-1"
               >
-                <span
-                  className="emotion-0"
+                <Styled(span)
+                  size="large"
                 >
-                  Submit
-                </span>
-              </Styled(span)>
-            </span>
-          </Styled(span)>
-        </button>
+                  <span
+                    className="emotion-0"
+                  >
+                    Submit
+                  </span>
+                </Styled(span)>
+              </span>
+            </Styled(span)>
+          </button>
+        </Styled(button)>
       </Button>
-    </Button>
+    </WithForwardRef(Button)>
   </ThemeProvider>
 </ThemeProvider>
 `;
