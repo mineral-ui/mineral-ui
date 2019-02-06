@@ -11,7 +11,7 @@ const REGEX_NUM_OR_END_IN_PX = /^[\d.]+(px)?$/;
 const convert = (input: number): string =>
   `${input / parseInt(fontSize_base)}em`;
 
-const errorMsg = (actual) => {
+const errorMsg = (actual: any) => {
   const value = typeof actual === 'string' ? actual : typeof actual;
   return `[mineral-ui/styles/pxToEm]: Expected a number or string in px units. Instead got: '${value}'.`;
 };
