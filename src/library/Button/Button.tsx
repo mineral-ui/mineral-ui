@@ -59,7 +59,4 @@ class Button extends Component<ButtonProps> {
   }
 }
 
-export default withForwardRef<
-  React$Config<ButtonProps, ButtonDefaultProps>,
-  Button
->(Button);
+export default withForwardRef<ButtonProps>(Button);

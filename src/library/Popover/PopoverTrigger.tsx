@@ -36,7 +36,4 @@ class PopoverTrigger extends Component<PopoverTriggerProps> {
   }
 }
 
-export default withForwardRef<
-  React$Config<PopoverTriggerProps, *>,
-  PopoverTrigger
->(PopoverTrigger);
+export default withForwardRef<PopoverTriggerProps>(PopoverTrigger);

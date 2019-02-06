@@ -71,7 +71,4 @@ class PopoverContent extends Component<PopoverContentProps> {
   }
 }
 
-export default withForwardRef<
-  React$Config<PopoverContentProps, *>,
-  PopoverContent
->(PopoverContent);
+export default withForwardRef<PopoverContentProps>(PopoverContent);

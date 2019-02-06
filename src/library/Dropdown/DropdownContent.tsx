@@ -49,7 +49,4 @@ class DropdownContent extends Component<DropdownContentProps> {
   }
 }
 
-export default withForwardRef<
-  React$Config<DropdownContentProps, *>,
-  DropdownContent
->(DropdownContent);
+export default withForwardRef<DropdownContentProps>(DropdownContent);

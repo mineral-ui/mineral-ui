@@ -3,17 +3,15 @@ import React, { forwardRef } from 'react';
 import wrapDisplayName from 'recompose/wrapDisplayName';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 
-export default function withForwardRef<Config, Instance>(
-  WrappedComponent: React$AbstractComponent<Config, Instance>
-): React$AbstractComponent<Config, Instance> {
-  const Wrapper = forwardRef<Config, Instance>((props, ref: React.Ref<any>) => (
+export default function withForwardRef<P extends object>(WrappedComponent: React.ComponentType<P>) {
+  const Wrapper = forwardRef((props: P, ref: React.Ref<any>) => (
     <WrappedComponent {...props} forwardedRef={ref} />
   ));
 
   Wrapper.displayName = wrapDisplayName(WrappedComponent, 'WithForwardRef');
-  // $FlowFixMe - defaultProps missing in React.AbstractComponentStatics
+  // @ts-ignore
   Wrapper.defaultProps = WrappedComponent.defaultProps;
-  // $FlowFixMe - defaultProps missing in React.AbstractComponentStatics
+  // @ts-ignore
   Wrapper.propTypes = WrappedComponent.propTypes;
 
   hoistNonReactStatics(Wrapper, WrappedComponent);
