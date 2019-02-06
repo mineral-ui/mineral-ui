@@ -85,7 +85,7 @@ export default class MenuItem extends PureComponent<MenuItemProps> {
     };
   };
 
-  onKeyDown = (event: SyntheticKeyboardEvent<>) => {
+  onKeyDown = (event: React.KeyboardEvent) => {
     const { onClick } = this.props;
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();

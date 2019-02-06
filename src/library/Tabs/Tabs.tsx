@@ -158,7 +158,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     }
   };
 
-  handleKeyDown = (event: SyntheticKeyboardEvent<HTMLAnchorElement>) => {
+  handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
     event.persist();
     if (['ArrowLeft', 'ArrowRight'].indexOf(event.key) !== -1) {
       event.preventDefault();
@@ -181,7 +181,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     }
   };
 
-  handleIncrement = (direction: string, event: React.SyntheticEvent<*>) => {
+  handleIncrement = (direction: string, event: React.SyntheticEvent) => {
     const selectedTabIndex = this.getControllableValue('selectedTabIndex');
     const nextIndex =
       direction === 'ArrowRight' || direction === 'ArrowDown'

@@ -265,7 +265,7 @@ export default class Select extends Component<SelectProps, SelectState> {
       : undefined;
   };
 
-  onTriggerKeyDown = (event: SyntheticKeyboardEvent<>) => {
+  onTriggerKeyDown = (event: React.KeyboardEvent) => {
     // $FlowFixMe
     event.nativeEvent.preventMineralDefault = true;
 

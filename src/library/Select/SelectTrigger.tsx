@@ -26,7 +26,7 @@ const iconMarginMap = {
   jumbo: 14
 };
 
-const stopPropagation = (event: React.SyntheticEvent<*>) => event.stopPropagation();
+const stopPropagation = (event: React.SyntheticEvent) => event.stopPropagation();
 
 export default class SelectTrigger extends Component<SelectTriggerProps> {
   static displayName = 'SelectTrigger';

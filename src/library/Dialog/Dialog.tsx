@@ -347,7 +347,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
     }
   };
 
-  handleDocumentKeydown = (event: SyntheticKeyboardEvent<>) => {
+  handleDocumentKeydown = (event: React.KeyboardEvent) => {
     if (event.key.indexOf('Esc') === 0 && !event.defaultPrevented) {
       this.close();
     }

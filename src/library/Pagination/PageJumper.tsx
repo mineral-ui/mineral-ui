@@ -42,7 +42,7 @@ export default class PageJumper extends PureComponent<PageJumperProps> {
     );
   }
 
-  handlePageJump = (event: SyntheticKeyboardEvent<HTMLInputElement>) => {
+  handlePageJump = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const { key, currentTarget: input, type } = event;
 
     if (type === 'blur' || (type === 'keydown' && key === 'Enter')) {

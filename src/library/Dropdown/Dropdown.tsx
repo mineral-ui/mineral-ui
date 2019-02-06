@@ -238,14 +238,14 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     return this.getControllableValue('highlightedIndex') != undefined;
   };
 
-  onTriggerKeyUp = (event: SyntheticKeyboardEvent<>) => {
+  onTriggerKeyUp = (event: React.KeyboardEvent) => {
     // Prevent Firefox from triggering Popover's onClick handler when
     // space key is used to activate trigger.
     // See: https://bugzilla.mozilla.org/show_bug.cgi?id=501496
     event.key === ' ' && event.preventDefault();
   };
 
-  onTriggerKeyDown = (event: SyntheticKeyboardEvent<>) => {
+  onTriggerKeyDown = (event: React.KeyboardEvent) => {
     const { key } = event;
     const isOpen = this.getControllableValue('isOpen');
 

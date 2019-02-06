@@ -5,7 +5,7 @@ import { CardRoot as Root } from './styled';
 import { cardPropTypes } from './propTypes';
 import { CardProps } from './types';
 
-const onKeyDown = (props: CardProps, event: SyntheticKeyboardEvent<>) => {
+const onKeyDown = (props: CardProps, event: React.KeyboardEvent) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
     props.onClick && props.onClick(event);

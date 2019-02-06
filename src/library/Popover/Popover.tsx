@@ -275,7 +275,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     }
   };
 
-  handleDocumentKeydown = (event: SyntheticKeyboardEvent<>) => {
+  handleDocumentKeydown = (event: React.KeyboardEvent) => {
     if (event.key.indexOf('Esc') === 0) {
       event.preventDefault();
       this.close(event);
@@ -283,7 +283,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
   };
 
   isEventOutsideComponent = (
-    event: React.SyntheticEvent | SyntheticFocusEvent<>
+    event: React.SyntheticEvent | React.FocusEvent
   ) => {
     /* eslint-disable react/no-find-dom-node */
     const { usePortal } = this.props;
