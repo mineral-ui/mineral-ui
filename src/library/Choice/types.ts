@@ -46,7 +46,7 @@ export type ChoiceGroupProps = {
   input?: React.ComponentType,
   invalid?: boolean,
   name: string,
-  onChange?: (event: SyntheticEvent<>) => void,
+  onChange?: (event: React.SyntheticEvent) => void,
   required?: boolean,
   role?: string,
   rootProps?: Object,

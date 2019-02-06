@@ -23,8 +23,8 @@ export type DropdownProps = {
   itemKey?: string,
   menu?: DropdownRenderFn,
   modifiers?: Object,
-  onClose?: (event: SyntheticEvent<>) => void,
-  onOpen?: (event: SyntheticEvent<>) => void,
+  onClose?: (event: React.SyntheticEvent) => void,
+  onOpen?: (event: React.SyntheticEvent) => void,
   placement?: Placement,
   positionFixed?: boolean,
   usePortal?: boolean,
@@ -42,9 +42,9 @@ export type DropdownState = {
 };
 
 type DropdownHelpers = {
-  close: (event: SyntheticEvent<>) => void,
+  close: (event: React.SyntheticEvent) => void,
   focusTrigger: () => void,
-  open: (event: SyntheticEvent<>) => void
+  open: (event: React.SyntheticEvent) => void
 };
 
 export type DropdownStateAndHelpers = {

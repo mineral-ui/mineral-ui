@@ -21,7 +21,7 @@ export type TabsProps = {
   maxTabWidth?: number | string,
   onChange?: (
     selectedTabIndex: number,
-    event: SyntheticEvent<HTMLAnchorElement>
+    event: React.SyntheticEvent<HTMLAnchorElement>
   ) => void,
   position?: Position,
   selectedTabIndex?: number,
@@ -71,7 +71,7 @@ export type TabListProps = {
   'aria-label'?: string,
   children?: React.ReactNode,
   height?: number | string,
-  onIncrement?: (direction: string, event: SyntheticEvent<*>) => void,
+  onIncrement?: (direction: string, event: React.SyntheticEvent<*>) => void,
   position?: Position,
   role?: string,
   vertical?: boolean

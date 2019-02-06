@@ -75,7 +75,7 @@ export default class CardFooter extends Component<
     );
   }
 
-  close = (event: SyntheticEvent<>) => {
+  close = (event: React.SyntheticEvent) => {
     if (this.isControlled('isOpen')) {
       this.closeActions(event);
     } else {
@@ -88,11 +88,11 @@ export default class CardFooter extends Component<
     }
   };
 
-  closeActions = (event: SyntheticEvent<>) => {
+  closeActions = (event: React.SyntheticEvent) => {
     this.props.onClose && this.props.onClose(event);
   };
 
-  open = (event: SyntheticEvent<>) => {
+  open = (event: React.SyntheticEvent) => {
     if (this.isControlled('isOpen')) {
       this.openActions(event);
     } else {
@@ -105,11 +105,11 @@ export default class CardFooter extends Component<
     }
   };
 
-  openActions = (event: SyntheticEvent<>) => {
+  openActions = (event: React.SyntheticEvent) => {
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  toggleOpen = (event: SyntheticEvent<>) => {
+  toggleOpen = (event: React.SyntheticEvent) => {
     const isOpen = this.getControllableValue('isOpen');
     if (isOpen) {
       this.close(event);

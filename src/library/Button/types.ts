@@ -19,7 +19,7 @@ export type ButtonProps = {
   iconEnd?: React.ReactElement<any>,
   iconStart?: React.ReactElement<any>,
   minimal?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
+  onClick?: (event: React.SyntheticEvent) => void,
   primary?: boolean,
   size?: Size,
   type?: string,

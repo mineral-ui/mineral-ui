@@ -12,7 +12,7 @@ type Variant = keyof typeof VARIANT;
 
 export type CardProps = {
   children: React.ReactNode,
-  onClick?: (event: SyntheticEvent<>) => void
+  onClick?: (event: React.SyntheticEvent) => void
 };
 
 export type CardActionsProps = {
@@ -30,8 +30,8 @@ export type CardFooterProps = {
   defaultIsOpen?: boolean,
   expandable?: boolean,
   isOpen?: boolean,
-  onClose?: (event: SyntheticEvent<>) => void,
-  onOpen?: (event: SyntheticEvent<>) => void,
+  onClose?: (event: React.SyntheticEvent) => void,
+  onOpen?: (event: React.SyntheticEvent) => void,
   title?: string | React.ReactElement<any>,
   triggerTitle?: (isOpen: boolean) => string,
   variant?: Variant

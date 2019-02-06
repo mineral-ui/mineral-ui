@@ -224,14 +224,14 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     );
   };
 
-  onBlur = (event: SyntheticEvent<>) => {
+  onBlur = (event: React.SyntheticEvent) => {
     const isOpen = this.getControllableValue('isOpen');
     if (isOpen && this.isEventOutsideComponent(event)) {
       this.close(event);
     }
   };
 
-  close = (event: SyntheticEvent<>) => {
+  close = (event: React.SyntheticEvent) => {
     if (this.isControlled('isOpen')) {
       this.closeActions(event);
     } else {
@@ -244,7 +244,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     }
   };
 
-  closeActions = (event: SyntheticEvent<>) => {
+  closeActions = (event: React.SyntheticEvent) => {
     const { focusTriggerOnClose, onClose } = this.props;
     onClose && onClose(event);
     const isOpen = this.getControllableValue('isOpen');
@@ -269,7 +269,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     element && element.focus();
   };
 
-  handleDocumentClick = (event: SyntheticEvent<>) => {
+  handleDocumentClick = (event: React.SyntheticEvent) => {
     if (this.isEventOutsideComponent(event)) {
       this.close(event);
     }
@@ -283,7 +283,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
   };
 
   isEventOutsideComponent = (
-    event: SyntheticEvent<> | SyntheticFocusEvent<>
+    event: React.SyntheticEvent | SyntheticFocusEvent<>
   ) => {
     /* eslint-disable react/no-find-dom-node */
     const { usePortal } = this.props;
@@ -318,7 +318,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     }
   };
 
-  open = (event: SyntheticEvent<>) => {
+  open = (event: React.SyntheticEvent) => {
     if (this.isControlled('isOpen')) {
       this.openActions(event);
     } else {
@@ -331,12 +331,12 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     }
   };
 
-  openActions = (event: SyntheticEvent<>) => {
+  openActions = (event: React.SyntheticEvent) => {
     this.focusTrigger();
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  toggleOpen = (event: SyntheticEvent<>) => {
+  toggleOpen = (event: React.SyntheticEvent) => {
     const isOpen = this.getControllableValue('isOpen');
     if (isOpen) {
       this.close(event);

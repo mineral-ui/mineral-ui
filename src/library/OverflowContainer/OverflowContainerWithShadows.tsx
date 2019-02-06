@@ -58,7 +58,7 @@ export default class OverflowContainerWithShadows extends Component<
     );
   }
 
-  handleScroll = (event: SyntheticEvent<HTMLElement>) => {
+  handleScroll = (event: React.SyntheticEvent<HTMLElement>) => {
     this.applyShadows(event.currentTarget);
   };
 

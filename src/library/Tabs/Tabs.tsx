@@ -142,7 +142,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     this.root = node;
   };
 
-  handleClick = (event: SyntheticEvent<HTMLAnchorElement>) => {
+  handleClick = (event: React.SyntheticEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     event.persist();
     const { currentTarget: target } = event;
@@ -181,7 +181,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     }
   };
 
-  handleIncrement = (direction: string, event: SyntheticEvent<*>) => {
+  handleIncrement = (direction: string, event: React.SyntheticEvent<*>) => {
     const selectedTabIndex = this.getControllableValue('selectedTabIndex');
     const nextIndex =
       direction === 'ArrowRight' || direction === 'ArrowDown'
@@ -204,7 +204,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
 
   setSelectedTabIndex = (
     selectedTabIndex: number,
-    event: SyntheticEvent<HTMLAnchorElement>
+    event: React.SyntheticEvent<HTMLAnchorElement>
   ) => {
     if (selectedTabIndex !== this.state.selectedTabIndex) {
       this.setState(
@@ -226,7 +226,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
 
   changeActions = (
     selectedTabIndex: number,
-    event: SyntheticEvent<HTMLAnchorElement>
+    event: React.SyntheticEvent<HTMLAnchorElement>
   ) => {
     const { onChange } = this.props;
     onChange && onChange(selectedTabIndex, event);

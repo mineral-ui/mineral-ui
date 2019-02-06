@@ -111,7 +111,7 @@ export default class TextArea extends Component<TextAreaProps> {
     return <Root {...rootProps} />;
   }
 
-  handleInput = (event: SyntheticEvent<>) => {
+  handleInput = (event: React.SyntheticEvent) => {
     const { autoSize, onInput } = this.props;
 
     autoSize && this.autoSize();

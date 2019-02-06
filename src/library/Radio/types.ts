@@ -41,7 +41,7 @@ export type RadioGroupProps = {
   defaultChecked?: string,
   inline?: boolean,
   name: string,
-  onChange?: (event: SyntheticEvent<>) => void,
+  onChange?: (event: React.SyntheticEvent) => void,
   rootProps?: Object
 };
 

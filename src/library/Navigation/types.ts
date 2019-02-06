@@ -22,7 +22,7 @@ type BaseNavigationProps = {
   messages?: Messages,
   onChange?: (
     selectedIndex: number,
-    event: SyntheticEvent<HTMLAnchorElement>
+    event: React.SyntheticEvent<HTMLAnchorElement>
   ) => void,
   overflowAtIndex?: number,
   selectedIndex?: number
@@ -38,7 +38,7 @@ type Prefix = $Values<typeof FROZEN_PREFIX>; // [1]
 export type PrefixAndType = { prefix: Prefix, type: InternalType };
 type Type = keyof typeof TYPE;
 
-export type AnchorEvent = SyntheticEvent<HTMLAnchorElement>;
+export type AnchorEvent = React.SyntheticEvent<HTMLAnchorElement>;
 
 export type GetDropdownData = ({
   data: NavigationItems,

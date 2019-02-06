@@ -21,7 +21,7 @@ export type TextInputProps = {
   inputRef?: (node: React.Component | null | undefined) => void,
   rootProps?: Object,
   invalid?: boolean,
-  onChange?: (event: SyntheticEvent<>) => void,
+  onChange?: (event: React.SyntheticEvent) => void,
   prefix?: string | React.ReactElement<any>,
   readOnly?: boolean,
   required?: boolean,

@@ -27,10 +27,10 @@ export type SelectProps = {
   menu?: SelectRenderFn,
   modifiers?: Object,
   name?: string,
-  onChange?: (item: MenuItemType, event: SyntheticEvent<>) => void,
-  onClose?: (event: SyntheticEvent<>) => void,
-  onOpen?: (event: SyntheticEvent<>) => void,
-  onSelect?: (item: MenuItemType, event: SyntheticEvent<>) => void,
+  onChange?: (item: MenuItemType, event: React.SyntheticEvent) => void,
+  onClose?: (event: React.SyntheticEvent) => void,
+  onOpen?: (event: React.SyntheticEvent) => void,
+  onSelect?: (item: MenuItemType, event: React.SyntheticEvent) => void,
   placeholder?: string,
   placement?: Placement,
   positionFixed?: boolean,
@@ -58,9 +58,9 @@ export type SelectState = {
 };
 
 type SelectHelpers = {
-  close: (event: SyntheticEvent<>) => void,
+  close: (event: React.SyntheticEvent) => void,
   focusTrigger: () => void,
-  open: (event: SyntheticEvent<>) => void
+  open: (event: React.SyntheticEvent) => void
 };
 
 export type SelectStateAndHelpers = {

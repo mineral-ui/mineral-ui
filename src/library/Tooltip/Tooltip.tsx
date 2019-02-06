@@ -112,7 +112,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     return <PopoverContent {...this.getContentProps(props)} />;
   };
 
-  handleDelayedOpen = (event: SyntheticEvent<>) => {
+  handleDelayedOpen = (event: React.SyntheticEvent) => {
     this.clearOpenTimer();
     const isOpen = this.getControllableValue('isOpen');
     if (!isOpen) {
@@ -127,7 +127,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     this.openTimer = null;
   };
 
-  open = (event: SyntheticEvent<>) => {
+  open = (event: React.SyntheticEvent) => {
     if (this.isControlled('isOpen')) {
       this.openActions(event);
     } else {
@@ -137,11 +137,11 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     }
   };
 
-  openActions = (event: SyntheticEvent<>) => {
+  openActions = (event: React.SyntheticEvent) => {
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  close = (event: SyntheticEvent<>) => {
+  close = (event: React.SyntheticEvent) => {
     this.clearOpenTimer();
     if (this.isControlled('isOpen')) {
       this.closeActions(event);
@@ -152,7 +152,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     }
   };
 
-  closeActions = (event: SyntheticEvent<>) => {
+  closeActions = (event: React.SyntheticEvent) => {
     this.props.onClose && this.props.onClose(event);
   };
 

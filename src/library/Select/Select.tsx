@@ -389,7 +389,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     highlightedItemNode && highlightedItemNode.click();
   };
 
-  onSelect = (item: MenuItemType, event: SyntheticEvent<>) => {
+  onSelect = (item: MenuItemType, event: React.SyntheticEvent) => {
     const prevSelectedItem = this.getControllableValue('selectedItem');
 
     let stateToSet;
@@ -417,7 +417,7 @@ export default class Select extends Component<SelectProps, SelectState> {
   onSelectActions = (
     item: MenuItemType,
     prevSelectedItem: MenuItemType,
-    event: SyntheticEvent<>
+    event: React.SyntheticEvent
   ) => {
     this.props.onSelect && this.props.onSelect(item, event);
 
@@ -429,7 +429,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     this.focusTrigger();
   };
 
-  onChange = (item: MenuItemType, event: SyntheticEvent<>) => {
+  onChange = (item: MenuItemType, event: React.SyntheticEvent) => {
     this.props.onChange && this.props.onChange(item, event);
   };
 
@@ -438,7 +438,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     node && node.focus();
   };
 
-  open = (event: SyntheticEvent<>) => {
+  open = (event: React.SyntheticEvent) => {
     this.highlightDefaultItem();
 
     if (this.isControlled('isOpen')) {
@@ -453,11 +453,11 @@ export default class Select extends Component<SelectProps, SelectState> {
     }
   };
 
-  openActions = (event: SyntheticEvent<>) => {
+  openActions = (event: React.SyntheticEvent) => {
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  close = (event: SyntheticEvent<>) => {
+  close = (event: React.SyntheticEvent) => {
     if (!this.isControlled('highlightedIndex')) {
       this.setState({ highlightedIndex: null });
     }
@@ -474,7 +474,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     }
   };
 
-  closeActions = (event: SyntheticEvent<>) => {
+  closeActions = (event: React.SyntheticEvent) => {
     this.props.onClose && this.props.onClose(event);
   };
 

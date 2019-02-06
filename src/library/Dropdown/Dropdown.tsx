@@ -344,7 +344,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     highlightedItemNode && highlightedItemNode.click();
   };
 
-  open = (event: SyntheticEvent<>) => {
+  open = (event: React.SyntheticEvent) => {
     if (this.isControlled('isOpen')) {
       this.openActions(event);
     } else {
@@ -357,12 +357,12 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     }
   };
 
-  openActions = (event: SyntheticEvent<>) => {
+  openActions = (event: React.SyntheticEvent) => {
     this.scrollHighlightedItemIntoViewIfNeeded();
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  close = (event: SyntheticEvent<>) => {
+  close = (event: React.SyntheticEvent) => {
     if (!this.isControlled('highlightedIndex')) {
       this.setState({ highlightedIndex: null });
     }
@@ -379,11 +379,11 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     }
   };
 
-  closeActions = (event: SyntheticEvent<>) => {
+  closeActions = (event: React.SyntheticEvent) => {
     this.props.onClose && this.props.onClose(event);
   };
 
-  onItemClick = (event: SyntheticEvent<>) => {
+  onItemClick = (event: React.SyntheticEvent) => {
     this.close(event);
     this.focusTrigger();
   };

@@ -15,8 +15,8 @@ export type ButtonGroupProps = {
   disabled?: boolean,
   fullWidth?: boolean,
   mode?: keyof typeof MODE,
-  onChange?: (event: SyntheticEvent<HTMLButtonElement>) => void,
-  onClick?: (event: SyntheticEvent<HTMLButtonElement>) => void,
+  onChange?: (event: React.SyntheticEvent<HTMLButtonElement>) => void,
+  onClick?: (event: React.SyntheticEvent<HTMLButtonElement>) => void,
   size?: keyof typeof SIZE,
   variant?: keyof typeof VARIANT
 };

@@ -13,7 +13,7 @@ export type MenuItemType = {
   disabled?: boolean,
   divider?: boolean,
   group?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
+  onClick?: (event: React.SyntheticEvent) => void,
   render?: MenuRenderFn,
   secondaryText?: React.ReactNode,
   text?: React.ReactNode,
@@ -54,7 +54,7 @@ export type MenuItemProps = {
   index?: number,
   isHighlighted?: boolean,
   item?: MenuItemType,
-  onClick?: (event: SyntheticEvent<>) => void,
+  onClick?: (event: React.SyntheticEvent) => void,
   render?: MenuItemRenderFn,
   secondaryText?: React.ReactNode,
   variant?: keyof typeof VARIANT

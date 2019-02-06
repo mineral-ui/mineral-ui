@@ -22,8 +22,8 @@ export type PopoverProps = {
   id?: string,
   isOpen?: boolean,
   modifiers?: Object,
-  onClose?: (event: SyntheticEvent<>) => void,
-  onOpen?: (event: SyntheticEvent<>) => void,
+  onClose?: (event: React.SyntheticEvent) => void,
+  onOpen?: (event: React.SyntheticEvent) => void,
   placement?: Placement,
   positionFixed?: boolean,
   subtitle?: React.ReactNode,
@@ -43,9 +43,9 @@ export type PopoverState = {
 };
 
 type PopoverHelpers = {
-  close: (event: SyntheticEvent<>) => void,
+  close: (event: React.SyntheticEvent) => void,
   focusTrigger: () => void,
-  open: (event: SyntheticEvent<>) => void
+  open: (event: React.SyntheticEvent) => void
 };
 
 export type PopoverStateAndHelpers = {
