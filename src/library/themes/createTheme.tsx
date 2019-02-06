@@ -4,13 +4,12 @@ import createColorRamp from './createColorRamp';
 import fontSize_base from './fontSizeBase';
 import colorAliases from './generated/colorAliases';
 import rampTokens from './generated/groupedByRampJsTokens';
-import palette, { type Color } from './generated/palette';
-import themeFromTokens, {
-  themeFromColorTokens,
-  type Ramp
-} from './themeFromTokens';
+import palette from './generated/palette';
+import themeFromTokens, { themeFromColorTokens } from './themeFromTokens';
 import { PRIMARY_COLOR } from './constants';
 
+import { Color } from './generated/palette';
+import { Ramp } from './themeFromTokens';
 import { ThemeObj } from './types';
 
 type PrimaryColor = keyof typeof PRIMARY_COLOR;
