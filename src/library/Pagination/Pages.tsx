@@ -98,7 +98,7 @@ const IncrementButton = forwardRef<IncrementButtonProps, HTMLButtonElement>(
       totalPages,
       ...restProps
     }: IncrementButtonProps,
-    ref: React$Ref<*>
+    ref: React.Ref<any>
   ) => {
     const next = direction === 'next';
     const incrementIcon = next ? <IconChevronRight /> : <IconChevronLeft />;

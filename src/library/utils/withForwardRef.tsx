@@ -6,7 +6,7 @@ import hoistNonReactStatics from 'hoist-non-react-statics';
 export default function withForwardRef<Config, Instance>(
   WrappedComponent: React$AbstractComponent<Config, Instance>
 ): React$AbstractComponent<Config, Instance> {
-  const Wrapper = forwardRef<Config, Instance>((props, ref: React$Ref<*>) => (
+  const Wrapper = forwardRef<Config, Instance>((props, ref: React.Ref<any>) => (
     <WrappedComponent {...props} forwardedRef={ref} />
   ));
 

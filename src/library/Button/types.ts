@@ -14,7 +14,7 @@ export type ButtonProps = {
   children?: React.ReactNode,
   circular?: boolean,
   disabled?: boolean,
-  forwardedRef?: React$Ref<*>,
+  forwardedRef?: React.Ref<any>,
   fullWidth?: boolean,
   iconEnd?: React.ReactElement<any>,
   iconStart?: React.ReactElement<any>,
