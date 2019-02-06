@@ -6,24 +6,27 @@
     "node": true
   },
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:flowtype/recommended",
     "prettier",
-    "prettier/flowtype",
-    "prettier/react"
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "project": "./tsconfig.json",
+    "sourceType": "module"
   },
   "plugins": [
+    "@typescript-eslint",
     "emotion",
-    "flowtype",
     "jsx-a11y",
     "prettier",
     "react"
@@ -42,15 +45,23 @@
       "allow": ["warn", "error"]
     }],
     "no-unused-vars": ["error", { "vars": "all", "varsIgnorePattern": "[Ii]gnore" }],
-    "prettier/prettier": "error",
-    "react/display-name": ["error", { "ignoreTranspilerName": true }]
+    "react/display-name": ["error", { "ignoreTranspilerName": true }],
+
+    "@typescript-eslint/array-type": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "varsIgnorePattern": "[Ii]gnore" }],
+    "@typescript-eslint/no-var-requires": "off"
   },
   "settings": {
     "react": {
       "createClass": "createReactClass",
       "pragma": "React",
-      "version": "16.6.3",
-      "flowVersion": "0.89"
+      "version": "16.6.3"
     }
   }
 }

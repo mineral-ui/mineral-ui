@@ -28,8 +28,8 @@ const config = {
           debug: Boolean(DEBUG)
         }
       ],
-      '@babel/preset-react',
-      '@babel/preset-flow'
+      '@babel/typescript',
+      '@babel/preset-react'
     ];
 
     if (!isTest && !isHappo) {
@@ -78,7 +78,6 @@ const config = {
     if (isProduction) {
       plugins.push(
         '@babel/plugin-transform-react-constant-elements',
-        '@babel/plugin-transform-flow-strip-types',
         [
           'transform-react-remove-prop-types',
           {

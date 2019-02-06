@@ -1,0 +1,22 @@
+/* @flow */
+import React, { PureComponent } from 'react';
+import TableContext from './TableContext';
+import { TableHeaderRoot as Root } from './styled';
+
+import { TableHeaderProps } from './types';
+
+export default class TableHeader extends PureComponent<TableHeaderProps> {
+  static displayName = 'TableHeader';
+
+  render() {
+    return (
+      <TableContext.Consumer>
+        {({ highContrast }) => {
+          const { children, ...restProps } = this.props;
+          const rootProps = { highContrast, ...restProps };
+          return <Root {...rootProps}>{children}</Root>;
+        }}
+      </TableContext.Consumer>
+    );
+  }
+}

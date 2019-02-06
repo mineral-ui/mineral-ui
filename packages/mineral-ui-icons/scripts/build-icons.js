@@ -237,7 +237,7 @@ function generateComponentInfo(svgFilePath) {
   if (isMaterialSvg) {
     const svgName = fileName.replace(REGEX_MATERIAL_ICONS_SVG_NAME, '$1');
     const componentName = `Icon${upperFirst(camelCase(svgName))}`;
-    const componentFileName = `${componentName}.js`;
+    const componentFileName = `${componentName}.tsx`;
     const componentCategory =
       filePathArray[filePathArray.indexOf('material-design-icons') + 1];
 
@@ -255,7 +255,7 @@ function generateComponentInfo(svgFilePath) {
   } else {
     const svgName = fileName.replace(REGEX_MINERAL_ICONS_SVG_NAME, '$1');
     const componentName = `Icon${upperFirst(camelCase(svgName))}`;
-    const componentFileName = `${componentName}.js`;
+    const componentFileName = `${componentName}.tsx`;
     const componentCategory = filePathArray[filePathArray.length - 2];
     const componentFilePath = svgFilePath
       .replace(MINERAL_ICONS_SVG_DIR, COMPONENTS_DIR)
@@ -275,7 +275,7 @@ async function generateIndex(components) {
   Mustache.parse(template);
 
   const content = Mustache.render(template, { components });
-  const filePath = path.join(COMPONENTS_DIR, 'index.js');
+  const filePath = path.join(COMPONENTS_DIR, 'index.ts');
 
   return fs.writeFile(filePath, content);
 }

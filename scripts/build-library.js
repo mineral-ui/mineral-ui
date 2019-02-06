@@ -15,13 +15,19 @@ const ignored = './src/**/*.spec.js,./src/**/*.template.js';
 
 // components es modules
 console.log('\n\nBuilding ES modules...');
-exec(`babel ./src/library --out-dir ./dist/es --ignore ${ignored}`, {
-  NODE_ENV
-});
+exec(
+  `babel ./src/library --out-dir ./dist/es --extensions '.ts,.tsx' --ignore ${ignored}`,
+  {
+    NODE_ENV
+  }
+);
 
 // components cjs modules
 console.log('\n\nBuilding CommonJS modules...');
-exec(`babel ./src/library --out-dir ./dist --ignore ${ignored}`, {
-  BABEL_ENV: 'cjs',
-  NODE_ENV
-});
+exec(
+  `babel ./src/library --out-dir ./dist --extensions '.ts,.tsx' --ignore ${ignored}`,
+  {
+    BABEL_ENV: 'cjs',
+    NODE_ENV
+  }
+);

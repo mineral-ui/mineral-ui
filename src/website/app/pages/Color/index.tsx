@@ -1,0 +1,48 @@
+/* @flow */
+import React from 'react';
+import styled from '@emotion/styled';
+import Markdown from '../../Markdown';
+import ColorRamp from './ColorRamp';
+import RampLegend from './RampLegend';
+import Variants from './Variants';
+import content from './color.md';
+
+import { Color as ColorType } from '../../../../library/themes/generated/palette';
+
+type Props = {};
+
+// Not generated from palette because of the opinionated order.
+const baseColors: Array<ColorType | 'black'> = [
+  'red',
+  'magenta',
+  'purple',
+  'indigo',
+  'blue',
+  'sky',
+  'teal',
+  'green',
+  'bronze',
+  'slate',
+  'dusk',
+  'gray',
+  'black'
+];
+
+const RampHolder = styled('div')({
+  display: 'flex',
+  flexWrap: 'wrap'
+});
+
+export default function Color(props: Props) {
+  return (
+    <div {...props}>
+      <Markdown scope={{ Variants }}>{content}</Markdown>
+      <RampLegend />
+      <RampHolder>
+        {baseColors.map((baseColor) => (
+          <ColorRamp key={baseColor} baseColor={baseColor} />
+        ))}
+      </RampHolder>
+    </div>
+  );
+}

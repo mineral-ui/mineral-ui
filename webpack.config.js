@@ -44,6 +44,7 @@ module.exports = {
     ]
   },
   resolve: {
+    extensions: ['ts', 'tsx'],
     mainFields: ['browser', 'module', 'main']
   },
   devServer: {

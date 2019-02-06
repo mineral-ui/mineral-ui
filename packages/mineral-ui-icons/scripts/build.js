@@ -13,10 +13,12 @@ const exec = (command, env) =>
     env: { ...process.env, ...env }
   });
 
+const ignored = './src/**/*.spec.js,./src/**/*.template.js';
+
 // components es modules
 console.log('\n\nBuilding ES modules...');
 exec(
-  'babel ./src --out-dir ./dist/es --ignore *.spec.js,*.template.js --root-mode upward',
+  `babel ./src --out-dir ./dist/es --extensions '.ts,.tsx' --ignore ${ignored} --root-mode upward`,
   {
     NODE_ENV
   }
@@ -25,7 +27,7 @@ exec(
 // components cjs modules
 console.log('\n\nBuilding CommonJS modules...');
 exec(
-  'babel ./src --out-dir ./dist --ignore *.spec.js,*.template.js --root-mode upward',
+  `babel ./src --out-dir ./dist --extensions '.ts,.tsx' --ignore ${ignored} --root-mode upward`,
   {
     BABEL_ENV: 'cjs',
     NODE_ENV
