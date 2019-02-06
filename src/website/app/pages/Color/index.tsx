@@ -1,12 +1,13 @@
 /* @flow */
 import React from 'react';
 import styled from '@emotion/styled';
-import { type Color as ColorType } from '../../../../library/themes/generated/palette';
 import Markdown from '../../Markdown';
 import ColorRamp from './ColorRamp';
 import RampLegend from './RampLegend';
 import Variants from './Variants';
 import content from './color.md';
+
+import { Color as ColorType } from '../../../../library/themes/generated/palette';
 
 type Props = {};
 
