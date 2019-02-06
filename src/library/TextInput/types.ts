@@ -18,7 +18,7 @@ export type TextInputProps = {
   htmlSize?: number | string,
   iconStart?: React.ReactElement<any>,
   iconEnd?: React.ReactElement<any>,
-  inputRef?: (node: ?React$Component<*, *>) => void,
+  inputRef?: (node: React.Component | null | undefined) => void,
   rootProps?: Object,
   invalid?: boolean,
   onChange?: (event: SyntheticEvent<>) => void,
