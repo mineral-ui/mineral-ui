@@ -15,9 +15,9 @@ export type MenuItemType = {
   group?: boolean,
   onClick?: (event: SyntheticEvent<>) => void,
   render?: MenuRenderFn,
-  secondaryText?: React$Node,
-  text?: React$Node,
-  title?: React$Node,
+  secondaryText?: React.ReactNode,
+  text?: React.ReactNode,
+  title?: React.ReactNode,
   value?: string,
   variant?: $Keys<typeof VARIANT>
 };
@@ -25,14 +25,14 @@ export type MenuItems = Array<MenuItemType>;
 
 export type MenuPropGetter = (props?: Object) => Object;
 
-export type MenuRenderFn = (props?: MenuRenderProps) => React$Node;
+export type MenuRenderFn = (props?: MenuRenderProps) => React.ReactNode;
 
 type MenuRenderProps = {
   props: Object
 };
 
 export type MenuProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   data?: MenuItems,
   highlightedIndex?: number,
   item?: MenuRenderFn,
@@ -42,12 +42,12 @@ export type MenuProps = {
 export type MenuDividerProps = Object;
 
 export type MenuGroupProps = {
-  children?: React$Node,
-  title?: React$Node
+  children?: React.ReactNode,
+  title?: React.ReactNode
 };
 
 export type MenuItemProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   disabled?: boolean,
   iconEnd?: React$Element<*>,
   iconStart?: React$Element<*>,
@@ -56,13 +56,13 @@ export type MenuItemProps = {
   item?: MenuItemType,
   onClick?: (event: SyntheticEvent<>) => void,
   render?: MenuItemRenderFn,
-  secondaryText?: React$Node,
+  secondaryText?: React.ReactNode,
   variant?: $Keys<typeof VARIANT>
 };
 
 export type MenuItemPropGetter = (props?: Object) => Object;
 
-export type MenuItemRenderFn = (props?: MenuItemRenderProps) => React$Node;
+export type MenuItemRenderFn = (props?: MenuItemRenderProps) => React.ReactNode;
 
 export type MenuItemRenderProps = {
   props: Object

@@ -1,6 +1,6 @@
 /* @flow */
 export type ThemeProviderProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   theme?: Theme<>
 };
 

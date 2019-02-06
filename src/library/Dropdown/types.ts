@@ -11,7 +11,7 @@ import {
 type Placement = $Keys<typeof PLACEMENT>;
 
 export type DropdownProps = {
-  children: React$Node | DropdownRenderFn,
+  children: React.ReactNode | DropdownRenderFn,
   data: MenuItems,
   defaultHighlightedIndex?: number,
   defaultIsOpen?: boolean,
@@ -54,14 +54,14 @@ export type DropdownStateAndHelpers = {
 
 export type DropdownPropGetter = (props?: Object) => Object;
 
-export type DropdownRenderFn = (props?: DropdownRenderProps) => React$Node;
+export type DropdownRenderFn = (props?: DropdownRenderProps) => React.ReactNode;
 
 type DropdownRenderProps = {
   props: Object
 } & DropdownStateAndHelpers;
 
 export type DropdownContentProps = {
-  children: React$Node,
+  children: React.ReactNode,
   forwardedRef?: (node: ?HTMLElement) => void,
   id: string,
   modifiers?: Object,

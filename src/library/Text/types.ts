@@ -15,7 +15,7 @@ type FontWeight = $Keys<typeof FONT_WEIGHT> | number;
 export type TextProps = {
   align?: Align,
   appearance?: Appearance,
-  children: React$Node,
+  children: React.ReactNode,
   color?: string,
   as?: string,
   fontWeight?: FontWeight,
@@ -40,7 +40,7 @@ export type ElementContextType = string | void;
 export type TextWithThemeOverrides = ({
   appearance?: string,
   as?: string,
-  children: React$Node,
+  children: React.ReactNode,
   displayName: string,
   textComponent: React$ComponentType<*>,
   theme: ThemeObj

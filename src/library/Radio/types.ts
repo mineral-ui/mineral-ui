@@ -36,7 +36,7 @@ export type RadioDefaultProps = {
 
 export type RadioGroupProps = {
   checked?: string,
-  children?: React$Node,
+  children?: React.ReactNode,
   data?: Array<{ label: string | React$Element<*>, value: string }>,
   defaultChecked?: string,
   inline?: boolean,

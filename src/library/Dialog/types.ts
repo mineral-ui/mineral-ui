@@ -22,7 +22,7 @@ export type DialogProps = {
   }>,
   appSelector?: string,
   'aria-label'?: string,
-  children?: React$Node,
+  children?: React.ReactNode,
   closeButtonLabel?: string,
   closeOnClickOutside?: boolean,
   closeOnEscape?: boolean,
@@ -61,27 +61,27 @@ export type DialogActionsProps = {
 };
 
 export type DialogBodyProps = {
-  children?: React$Node
+  children?: React.ReactNode
 };
 
 export type DialogFooterProps = {
-  children?: React$Node
+  children?: React.ReactNode
 };
 
 export type DialogHeaderProps = {
-  children?: React$Node,
-  closeButton?: React$Node,
+  children?: React.ReactNode,
+  closeButton?: React.ReactNode,
   titleProps?: Object
 };
 
 export type DialogRowProps = {
-  children?: React$Node
+  children?: React.ReactNode
 };
 
 export type DialogTitleProps = {
   appearance?: Appearance,
   as?: Element,
-  children: React$Node,
+  children: React.ReactNode,
   id?: string,
   theme: Object,
   variant?: Variant

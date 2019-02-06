@@ -9,7 +9,7 @@ import {
 
 export type FormFieldProps = {
   caption?: string | React$Element<*>,
-  children?: React$Node,
+  children?: React.ReactNode,
   className?: string,
   hideLabel?: boolean,
   id?: string,
@@ -29,7 +29,7 @@ export type FormFieldDefaultProps = {
 export type FormFieldDividerProps = Object;
 
 export type FormFieldsetProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   disabled?: boolean,
   legend?: string | React$Element<*>
 };

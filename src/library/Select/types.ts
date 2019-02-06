@@ -69,7 +69,7 @@ export type SelectStateAndHelpers = {
 };
 
 export type SelectPropGetter = (props?: Object) => Object;
-export type SelectRenderFn = (props?: SelectRenderProps) => React$Node;
+export type SelectRenderFn = (props?: SelectRenderProps) => React.ReactNode;
 type SelectRenderProps = {
   props: Object
 } & SelectStateAndHelpers;

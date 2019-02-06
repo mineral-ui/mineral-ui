@@ -8,7 +8,7 @@ import {
 } from '../themes/types';
 
 export type LinkProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   href?: string,
   variant?: $Keys<typeof VARIANT>
 };

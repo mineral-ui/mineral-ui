@@ -39,7 +39,7 @@ export type CheckboxDefaultProps = {
 
 export type CheckboxGroupProps = {
   checked?: Array<string>,
-  children?: React$Node,
+  children?: React.ReactNode,
   data?: Array<{ label: string | React$Element<*>, value: string }>,
   defaultChecked?: Array<string>,
   inline?: boolean,

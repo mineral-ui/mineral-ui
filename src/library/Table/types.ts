@@ -32,7 +32,7 @@ export type TableProps = {
   sortable?: boolean,
   sortComparator?: (a: Object, b: Object, key: string) => -1 | 0 | 1,
   striped?: boolean,
-  title: React$Node,
+  title: React.ReactNode,
   titleAppearance?: TitleElement,
   titleAs?: TitleElement
 };
@@ -61,7 +61,7 @@ export type TableBaseProps = {
   scrollable?: boolean,
   selectable?: SelectableType,
   sortable?: SortableType,
-  title: React$Node,
+  title: React.ReactNode,
   titleAppearance?: TitleElement,
   titleAs?: TitleElement
 } & TableContextType;
@@ -84,7 +84,7 @@ export type TableContextType = {
 
 export type Column = {
   cell?: RenderFn,
-  content: React$Node,
+  content: React.ReactNode,
   headerCell?: RenderFn,
   key: string,
   label?: string,
@@ -113,7 +113,7 @@ export type Row = Object;
 
 export type Rows = Array<Row>;
 
-export type RenderFn = (props: RenderProps) => React$Node;
+export type RenderFn = (props: RenderProps) => React.ReactNode;
 
 export type RenderProps = {
   props: Object,
@@ -126,7 +126,7 @@ export type SortComparator = (a: Object, b: Object, key: string) => -1 | 0 | 1;
 export type Comparators = { [string]: SortComparator };
 
 export type SelectableProps = {
-  children: (props: Object) => React$Node,
+  children: (props: Object) => React.ReactNode,
   data: SelectableData,
   defaultSelected?: SelectableData,
   onToggle?: (item: SelectableItem, selected: boolean) => void,
@@ -157,7 +157,7 @@ export type SelectableToggle = (item: SelectableItem) => void;
 export type SelectableToggleAll = () => void;
 
 export type SortableProps = {
-  children: (props: Object) => React$Node,
+  children: (props: Object) => React.ReactNode,
   comparators?: Comparators,
   data: SortableData,
   defaultSort?: Sort,
@@ -193,7 +193,7 @@ type TableThemeKeys = {|
 
 export type TableCellProps = {
   as?: string,
-  children?: React$Node,
+  children?: React.ReactNode,
   columnKey?: string,
   noPadding?: boolean,
   primary?: boolean,
@@ -224,7 +224,7 @@ export type TableDataRowProps = {
 };
 
 export type TableHeaderProps = {
-  children: React$Node,
+  children: React.ReactNode,
   hide?: boolean
 };
 
@@ -238,7 +238,7 @@ type TableHeaderThemeKeys = {|
 |};
 
 export type TableHeaderCellProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   label?: string,
   minWidth?: number | string,
   maxWidth?: number | string,
@@ -276,7 +276,7 @@ export type TableHeaderRowProps = {
 };
 
 export type TableRowProps = {
-  children: React$Node,
+  children: React.ReactNode,
   isSelected?: boolean,
   isSelectable?: boolean,
   render?: RenderFn,
@@ -306,7 +306,7 @@ export type TableSelectableCellProps = {
 };
 
 export type TableSortableHeaderCellProps = {
-  children: React$Node,
+  children: React.ReactNode,
   label?: string,
   messages: Messages,
   name: string,
@@ -326,7 +326,7 @@ type TableSortableHeaderCellThemeKeys = {|
 export type TableTitleProps = {
   appearance?: TitleElement,
   as?: TitleElement,
-  children: React$Node,
+  children: React.ReactNode,
   hide?: boolean,
   id: string,
   theme: Object

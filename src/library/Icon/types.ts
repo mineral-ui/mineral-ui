@@ -10,7 +10,7 @@ import {
 type Size = $Keys<typeof SIZE> | number | string;
 
 export type IconProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   color?: string,
   rtl?: boolean,
   size?: Size,

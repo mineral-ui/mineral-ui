@@ -29,7 +29,7 @@ export default class Menu extends PureComponent<MenuProps> {
     );
   }
 
-  renderFromData = (data: MenuItems): Array<React$Node> => {
+  renderFromData = (data: MenuItems): Array<React.ReactNode> => {
     const { highlightedIndex } = this.props;
 
     let index = 0;

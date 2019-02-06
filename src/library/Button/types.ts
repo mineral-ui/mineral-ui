@@ -11,7 +11,7 @@ type Size = $Keys<typeof SIZE>;
 type Variant = $Keys<typeof VARIANT>;
 
 export type ButtonProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   circular?: boolean,
   disabled?: boolean,
   forwardedRef?: React$Ref<*>,

@@ -62,7 +62,7 @@ export default class Navigation extends Component<NavigationProps> {
     );
   }
 
-  renderItems = (prefixAndType: PrefixAndType): ?Array<React$Node> => {
+  renderItems = (prefixAndType: PrefixAndType): ?Array<React.ReactNode> => {
     const {
       children,
       itemAs,

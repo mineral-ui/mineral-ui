@@ -12,7 +12,7 @@ import {
 type Placement = $Keys<typeof PLACEMENT>;
 
 export type PopoverProps = {
-  children: React$Node | PopoverRenderFn,
+  children: React.ReactNode | PopoverRenderFn,
   content: $FlowFixMe | PopoverRenderFn, // TODO: Why not same as children?
   cursor?: string,
   defaultIsOpen?: boolean,
@@ -26,8 +26,8 @@ export type PopoverProps = {
   onOpen?: (event: SyntheticEvent<>) => void,
   placement?: Placement,
   positionFixed?: boolean,
-  subtitle?: React$Node,
-  title?: React$Node,
+  subtitle?: React.ReactNode,
+  title?: React.ReactNode,
   triggerRef?: (node: ?HTMLElement) => void,
   usePortal?: boolean
 };
@@ -53,9 +53,9 @@ export type PopoverStateAndHelpers = {
   helpers: PopoverHelpers
 };
 
-export type PopoverRenderMethod = (props: Object) => React$Node;
+export type PopoverRenderMethod = (props: Object) => React.ReactNode;
 export type PopoverPropGetter = (props?: Object) => Object;
-export type PopoverRenderFn = (props?: PopoverRenderProps) => React$Node;
+export type PopoverRenderFn = (props?: PopoverRenderProps) => React.ReactNode;
 type PopoverRenderProps = {
   props: Object
 } & PopoverStateAndHelpers;
@@ -66,18 +66,18 @@ export type PopoverArrowProps = {
 };
 
 export type PopoverContentProps = {
-  children: React$Node,
+  children: React.ReactNode,
   forwardedRef?: (node: ?HTMLElement) => void,
   modifiers?: Object,
   hasArrow?: boolean,
   placement?: Placement,
   positionFixed?: boolean,
-  subtitle?: React$Node,
-  title?: React$Node
+  subtitle?: React.ReactNode,
+  title?: React.ReactNode
 };
 
 export type PopoverTriggerProps = {
-  children: React$Node,
+  children: React.ReactNode,
   cursor?: string,
   forwardedRef: (node: ?HTMLElement) => void
 };

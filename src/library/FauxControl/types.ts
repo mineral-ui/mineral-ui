@@ -8,19 +8,19 @@ import {
 } from '../themes/types';
 
 export type FauxControlProps = {
-  afterItems?: React$Node,
-  beforeItems?: React$Node,
-  children?: React$Node,
+  afterItems?: React.ReactNode,
+  beforeItems?: React.ReactNode,
+  children?: React.ReactNode,
   control: React$ComponentType<*>,
   controlProps?: Object,
   disabled?: boolean,
   fauxControlRef?: (node: ?React$Component<*, *>) => void,
   iconStart?: React$Element<*>,
   iconEnd?: React$Element<*>,
-  prefix?: React$Node,
+  prefix?: React.ReactNode,
   readOnly?: boolean,
   size?: $Keys<typeof SIZE>,
-  suffix?: React$Node,
+  suffix?: React.ReactNode,
   variant?: $Keys<typeof VARIANT>
 };
 

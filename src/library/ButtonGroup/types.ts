@@ -10,7 +10,7 @@ import {
 export type ButtonGroupProps = {
   'aria-label': string,
   checked?: number | Array<number>,
-  children: React$Node,
+  children: React.ReactNode,
   defaultChecked?: number | Array<number>,
   disabled?: boolean,
   fullWidth?: boolean,

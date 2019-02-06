@@ -1,7 +1,7 @@
 /* @flow */
 
 export type TruncateProps = {
-  children?: React$Node
+  children?: React.ReactNode
 };
 
 export type TruncateState = {

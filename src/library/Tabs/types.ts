@@ -13,7 +13,7 @@ type Position = $Keys<typeof POSITION>;
 export type TabsProps = {
   align?: Align,
   'aria-labelledby'?: string,
-  children?: React$Node,
+  children?: React.ReactNode,
   defaultSelectedTabIndex?: number,
   id?: string,
   label: string,
@@ -43,7 +43,7 @@ export type TabsTheme = ComponentTheme<TabsThemeKeys>;
 type TabsThemeKeys = TabListThemeKeys & TabPanelThemeKeys;
 
 export type TabProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   disabled?: boolean,
   icon?: React$Element<*>,
   id?: string,
@@ -51,7 +51,7 @@ export type TabProps = {
   maxWidth?: number | string,
   panelId?: string,
   selected?: boolean,
-  title: React$Node
+  title: React.ReactNode
 };
 
 export type TabThemeFn = ComponentThemeFn<TabTheme>;
@@ -69,7 +69,7 @@ type TabThemeKeys = {|
 export type TabListProps = {
   align?: Align,
   'aria-label'?: string,
-  children?: React$Node,
+  children?: React.ReactNode,
   height?: number | string,
   onIncrement?: (direction: string, event: SyntheticEvent<*>) => void,
   position?: Position,
@@ -96,7 +96,7 @@ type TabListThemeKeys = {|
 |};
 
 export type TabPanelProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   id?: string,
   tabId?: string
 };

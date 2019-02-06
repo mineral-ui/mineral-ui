@@ -10,7 +10,7 @@ import {
 type Placement = $Keys<typeof PLACEMENT>;
 
 export type TooltipProps = {
-  children: React$Node,
+  children: React.ReactNode,
   cursor?: string,
   content: string,
   defaultIsOpen?: boolean,
@@ -38,7 +38,7 @@ export type TooltipState = {
 };
 
 export type TooltipPropGetter = (props?: Object) => Object;
-export type TooltipRenderFn = (props?: TooltipRenderProps) => React$Node;
+export type TooltipRenderFn = (props?: TooltipRenderProps) => React.ReactNode;
 type TooltipRenderProps = {
   props: Object
 };

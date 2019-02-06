@@ -13,7 +13,7 @@ type Size = $Keys<typeof SIZE>;
 export type AvatarProps = {
   abbr?: string,
   background?: string,
-  children: React$Node,
+  children: React.ReactNode,
   color?: string,
   shape?: Shape,
   size?: Size

@@ -6,7 +6,7 @@ import {
 } from '../themes/types';
 
 export type OverflowContainerProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   containerRef?: (node: ?HTMLElement) => void,
   hideScrollbars?: boolean,
   scrollX?: boolean,
@@ -19,7 +19,7 @@ export type OverflowContainerState = {
 };
 
 export type OverflowContainerWithShadowsProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   hideScrollbars?: boolean,
   scrollX?: boolean,
   scrollY?: boolean

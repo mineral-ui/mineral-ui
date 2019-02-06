@@ -1,5 +1,5 @@
 /* @flow */
 
 export type PortalProps = {
-  children: React$Node
+  children: React.ReactNode
 };

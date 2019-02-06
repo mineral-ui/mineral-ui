@@ -15,7 +15,7 @@ const FROZEN_PREFIX = Object.freeze(PREFIX);
 type Align = $Keys<typeof ALIGN>;
 type BaseNavigationProps = {
   align?: Align,
-  children?: React$Node,
+  children?: React.ReactNode,
   itemAs?: ItemElement,
   items?: NavigationItems,
   maxItemWidth?: number | string,
@@ -59,7 +59,7 @@ export type NavigationItem = MenuItemType & {
 };
 
 export type NavItemProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   disabled?: boolean,
   icon?: React$Element<*>,
   index?: number,

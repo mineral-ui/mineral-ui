@@ -11,22 +11,22 @@ import {
 type Variant = $Keys<typeof VARIANT>;
 
 export type CardProps = {
-  children: React$Node,
+  children: React.ReactNode,
   onClick?: (event: SyntheticEvent<>) => void
 };
 
 export type CardActionsProps = {
-  children: React$Node
+  children: React.ReactNode
 };
 
 export type CardBlockProps = {
-  children: React$Node
+  children: React.ReactNode
 };
 
 export type CardDividerProps = {};
 
 export type CardFooterProps = {
-  children?: React$Node,
+  children?: React.ReactNode,
   defaultIsOpen?: boolean,
   expandable?: boolean,
   isOpen?: boolean,
@@ -53,11 +53,11 @@ export type CardStatusProps = {
 };
 
 export type CardTitleProps = {
-  actions?: React$Node,
+  actions?: React.ReactNode,
   avatar?: string | React$Element<*>,
-  children: React$Node,
+  children: React.ReactNode,
   secondaryText?: string | React$Element<*>,
-  subtitle?: React$Node,
+  subtitle?: React.ReactNode,
   variant?: Variant
 };
 
