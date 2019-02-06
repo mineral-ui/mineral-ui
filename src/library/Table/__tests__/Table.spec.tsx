@@ -478,7 +478,7 @@ describe('Table', () => {
 
   describe('memoization', () => {
     let wrapper;
-    let mocks: { [string]: JestMockFn<any, any> };
+    let mocks: { [fn: string]: JestMockFn<any, any> };
 
     beforeEach(() => {
       mocks = {

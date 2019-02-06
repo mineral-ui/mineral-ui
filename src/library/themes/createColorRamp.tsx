@@ -24,7 +24,7 @@ export default function createColorRamp(
   colors: { [number]: string }, // The palette of colors
   outKey: string // The key of the color in the returned object, excluding the index
 ): {
-  [string]: string
+  [color: string]: string
 } {
   return Object.keys(colors).reduce((acc, key) => {
     acc[`${outKey}${key}`] = colors[parseInt(key)];

@@ -123,7 +123,7 @@ export type RenderProps = {
 
 export type SortComparator = (a: Object, b: Object, key: string) => -1 | 0 | 1;
 
-export type Comparators = { [string]: SortComparator };
+export type Comparators = { [column: string]: SortComparator };
 
 export type SelectableProps = {
   children: (props: Object) => React.ReactNode,

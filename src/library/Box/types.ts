@@ -32,7 +32,7 @@ export type BoxProps = {
 };
 
 export type SpacingStyles = {
-  [string]: Array<SpacingValue> | SpacingValue
+  [property: string]: Array<SpacingValue> | SpacingValue
 };
 
 export type SpacingValue = StyleValue | SpacingSize;

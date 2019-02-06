@@ -2,7 +2,7 @@
 import pxToEm from '../styles/pxToEm';
 import colorAliases from './generated/colorAliases';
 
-type Aliases = { [string]: string };
+type Aliases = { [color: string]: string };
 type ColorOptions = {
   aliases?: Aliases,
   color: Ramp | string,
@@ -11,10 +11,10 @@ type ColorOptions = {
   tokens: ColorTokens
 };
 type ColorTheme = ColorTokens;
-type ColorTokens = { [string]: string };
-export type Ramp = { [number]: string };
+type ColorTokens = { [color: string]: string };
+export type Ramp = { [rampKey: number]: string };
 type Theme = Tokens;
-type Tokens = { [string]: number | string };
+type Tokens = { [token: string]: number | string };
 
 const contains = (string: string, subString: string) =>
   string.indexOf(subString) !== -1;
