@@ -8,8 +8,8 @@ import {
 } from '../themes/types';
 
 export type MenuItemType = {
-  iconEnd?: React$Element<*>,
-  iconStart?: React$Element<*>,
+  iconEnd?: React.ReactElement<any>,
+  iconStart?: React.ReactElement<any>,
   disabled?: boolean,
   divider?: boolean,
   group?: boolean,
@@ -49,8 +49,8 @@ export type MenuGroupProps = {
 export type MenuItemProps = {
   children?: React.ReactNode,
   disabled?: boolean,
-  iconEnd?: React$Element<*>,
-  iconStart?: React$Element<*>,
+  iconEnd?: React.ReactElement<any>,
+  iconStart?: React.ReactElement<any>,
   index?: number,
   isHighlighted?: boolean,
   item?: MenuItemType,

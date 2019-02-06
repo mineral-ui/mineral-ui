@@ -32,7 +32,7 @@ export type CardFooterProps = {
   isOpen?: boolean,
   onClose?: (event: SyntheticEvent<>) => void,
   onOpen?: (event: SyntheticEvent<>) => void,
-  title?: string | React$Element<*>,
+  title?: string | React.ReactElement<any>,
   triggerTitle?: (isOpen: boolean) => string,
   variant?: Variant
 };
@@ -54,9 +54,9 @@ export type CardStatusProps = {
 
 export type CardTitleProps = {
   actions?: React.ReactNode,
-  avatar?: string | React$Element<*>,
+  avatar?: string | React.ReactElement<any>,
   children: React.ReactNode,
-  secondaryText?: string | React$Element<*>,
+  secondaryText?: string | React.ReactElement<any>,
   subtitle?: React.ReactNode,
   variant?: Variant
 };

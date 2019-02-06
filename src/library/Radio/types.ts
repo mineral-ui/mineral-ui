@@ -19,7 +19,7 @@ export type RadioProps = {
   inputRef?: (node: ?HTMLInputElement) => void,
   invalid?: boolean,
   justify?: boolean,
-  label: string | React$Element<*>,
+  label: string | React.ReactElement<any>,
   labelPosition?: LabelPosition,
   name?: string,
   onChange?: (event: SyntheticInputEvent<>) => void,
@@ -37,7 +37,7 @@ export type RadioDefaultProps = {
 export type RadioGroupProps = {
   checked?: string,
   children?: React.ReactNode,
-  data?: Array<{ label: string | React$Element<*>, value: string }>,
+  data?: Array<{ label: string | React.ReactElement<any>, value: string }>,
   defaultChecked?: string,
   inline?: boolean,
   name: string,

@@ -157,7 +157,7 @@ const ThemedRoot = withTheme(
   }
 );
 
-const Flex = (props: FlexProps): React$Element<*> => <ThemedRoot {...props} />;
+const Flex = (props: FlexProps): React.ReactElement<any> => <ThemedRoot {...props} />;
 
 Flex.displayName = 'Flex';
 const defaultProps: FlexDefaultProps = {

@@ -21,7 +21,7 @@ export type CheckboxProps = {
   inputRef?: (node: ?HTMLInputElement) => void,
   invalid?: boolean,
   justify?: boolean,
-  label: string | React$Element<*>,
+  label: string | React.ReactElement<any>,
   labelPosition?: LabelPosition,
   name?: string,
   onChange?: (event: SyntheticInputEvent<>) => void,
@@ -40,7 +40,7 @@ export type CheckboxDefaultProps = {
 export type CheckboxGroupProps = {
   checked?: Array<string>,
   children?: React.ReactNode,
-  data?: Array<{ label: string | React$Element<*>, value: string }>,
+  data?: Array<{ label: string | React.ReactElement<any>, value: string }>,
   defaultChecked?: Array<string>,
   inline?: boolean,
   name: string,

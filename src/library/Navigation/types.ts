@@ -28,7 +28,7 @@ type BaseNavigationProps = {
   selectedIndex?: number
 };
 type InternalType = $Values<typeof FROZEN_INTERNAL_TYPE>; // [1]
-type ItemElement = React$Element<*> | string;
+type ItemElement = React.ReactElement<any> | string;
 export type NavigationItems = Array<NavigationItem>;
 type Messages = {
   moreLabel: string,
@@ -50,9 +50,9 @@ export type GetDropdownData = ({
 export type GetDropdownItem = (itemAs: ItemElement) => MenuItemRenderFn;
 
 export type NavigationItem = MenuItemType & {
-  as?: React$Element<*>,
-  child?: React$Element<*>,
-  icon?: React$Element<*>,
+  as?: React.ReactElement<any>,
+  child?: React.ReactElement<any>,
+  icon?: React.ReactElement<any>,
   index?: number,
   maxWidth?: number | string,
   selected?: boolean
@@ -61,7 +61,7 @@ export type NavigationItem = MenuItemType & {
 export type NavItemProps = {
   children?: React.ReactNode,
   disabled?: boolean,
-  icon?: React$Element<*>,
+  icon?: React.ReactElement<any>,
   index?: number,
   maxWidth?: number | string,
   minimal?: boolean,

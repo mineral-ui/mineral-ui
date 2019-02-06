@@ -8,22 +8,22 @@ import {
 } from '../themes/types';
 
 export type FormFieldProps = {
-  caption?: string | React$Element<*>,
+  caption?: string | React.ReactElement<any>,
   children?: React.ReactNode,
   className?: string,
   hideLabel?: boolean,
   id?: string,
   input?: React$ComponentType<*>,
   rootProps?: Object,
-  label: string | React$Element<*>,
+  label: string | React.ReactElement<any>,
   required?: boolean,
-  requiredText?: string | React$Element<*>,
-  secondaryText?: string | React$Element<*>,
+  requiredText?: string | React.ReactElement<any>,
+  secondaryText?: string | React.ReactElement<any>,
   variant?: keyof typeof VARIANT
 };
 
 export type FormFieldDefaultProps = {
-  requiredText: string | React$Element<*>
+  requiredText: string | React.ReactElement<any>
 };
 
 export type FormFieldDividerProps = Object;
@@ -31,7 +31,7 @@ export type FormFieldDividerProps = Object;
 export type FormFieldsetProps = {
   children?: React.ReactNode,
   disabled?: boolean,
-  legend?: string | React$Element<*>
+  legend?: string | React.ReactElement<any>
 };
 
 export type FormFieldThemeFn = ComponentThemeFn<FormFieldTheme>;

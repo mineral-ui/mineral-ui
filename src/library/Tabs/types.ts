@@ -45,7 +45,7 @@ type TabsThemeKeys = TabListThemeKeys & TabPanelThemeKeys;
 export type TabProps = {
   children?: React.ReactNode,
   disabled?: boolean,
-  icon?: React$Element<*>,
+  icon?: React.ReactElement<any>,
   id?: string,
   index?: number,
   maxWidth?: number | string,

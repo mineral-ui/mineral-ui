@@ -15,7 +15,7 @@ import { ButtonGroupProps, ButtonGroupState } from './types';
 // NOTE: We can rely on displayName, without fear of it being mangled, even in
 // production, as long as it is set statically on each component
 // https://github.com/facebook/react/issues/4915#issuecomment-335803765
-const isButtonComponent = (element: React$Element<*>) => {
+const isButtonComponent = (element: React.ReactElement<any>) => {
   return element.type && /Button/.test(element.type.displayName);
 };
 

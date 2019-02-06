@@ -15,8 +15,8 @@ export type FauxControlProps = {
   controlProps?: Object,
   disabled?: boolean,
   fauxControlRef?: (node: ?React$Component<*, *>) => void,
-  iconStart?: React$Element<*>,
-  iconEnd?: React$Element<*>,
+  iconStart?: React.ReactElement<any>,
+  iconEnd?: React.ReactElement<any>,
   prefix?: React.ReactNode,
   readOnly?: boolean,
   size?: keyof typeof SIZE,
@@ -25,7 +25,7 @@ export type FauxControlProps = {
 };
 
 export type VariantIcons = {
-  [key: keyof typeof VARIANT]: React$Element<*>
+  [key: keyof typeof VARIANT]: React.ReactElement<any>
 };
 
 export type FauxControlThemeFn = ComponentThemeFn<FauxControlTheme>;

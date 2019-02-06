@@ -37,7 +37,7 @@ export type DialogProps = {
   preventCloseButtonClose?: boolean,
   showCloseButton?: boolean,
   size?: Size,
-  title?: string | React$Element<*>,
+  title?: string | React.ReactElement<any>,
   usePortal?: boolean,
   variant?: Variant
 };
@@ -56,7 +56,7 @@ export type DialogState = {
 };
 
 export type DialogActionsProps = {
-  children?: React$Element<*> | Array<React$Element<*>>,
+  children?: React.ReactElement<any> | Array<React.ReactElement<any>>,
   variant?: Variant
 };
 
