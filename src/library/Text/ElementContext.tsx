@@ -3,6 +3,6 @@ import { createContext } from 'react';
 
 import { ElementContextType } from './types';
 
-const ElementContext: React$Context<ElementContextType> = createContext();
+const ElementContext = createContext<ElementContextType>(null);
 
 export default ElementContext;

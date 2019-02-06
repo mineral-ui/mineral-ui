@@ -3,6 +3,6 @@ import { createContext } from 'react';
 
 import { ModifiersContextType } from './types';
 
-const ModifiersContext: React$Context<ModifiersContextType> = createContext();
+const ModifiersContext = createContext<ModifiersContextType>(undefined);
 
 export default ModifiersContext;

@@ -35,7 +35,7 @@ export type TextProviderDefaultProps = TextDefaultProps & {
   as: string
 };
 
-export type ElementContextType = string | void;
+export type ElementContextType = string | null;
 
 export type TextWithThemeOverrides = ({
   appearance?: string,
