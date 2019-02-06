@@ -110,7 +110,7 @@ type PageSizerMessages = {|
 
 export type PaginationThemeFn = ComponentThemeFn<PaginationTheme>;
 export type PaginationTheme = ComponentTheme<PaginationThemeKeys>;
-type PaginationThemeKeys = {|
+type PaginationThemeKeys = {
   PaginationPageJumper_width: ThemeValue,
   Pagination_gutterWidth: ThemeValue
-|};
+};

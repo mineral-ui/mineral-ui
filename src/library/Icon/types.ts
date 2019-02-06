@@ -23,9 +23,9 @@ export type IconDefaultProps = {
 
 export type IconThemeFn = ComponentThemeFn<IconTheme>;
 export type IconTheme = ComponentTheme<IconThemeKeys>;
-type IconThemeKeys = {|
+type IconThemeKeys = {
   Icon_fill: ThemeValue,
   Icon_size_small: ThemeValue,
   Icon_size_medium: ThemeValue,
   Icon_size_large: ThemeValue
-|};
+};

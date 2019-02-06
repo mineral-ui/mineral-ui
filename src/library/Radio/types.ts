@@ -47,7 +47,7 @@ export type RadioGroupProps = {
 
 export type RadioThemeFn = ComponentThemeFn<RadioTheme>;
 export type RadioTheme = ComponentTheme<RadioThemeKeys>;
-type RadioThemeKeys = {|
+type RadioThemeKeys = {
   RadioControl_backgroundColor: ThemeValue,
   RadioControl_backgroundColor_checked: ThemeValue,
   RadioControl_backgroundColor_checkedHover: ThemeValue,
@@ -63,12 +63,12 @@ type RadioThemeKeys = {|
   RadioText_fontSize: ThemeValue,
   RadioText_fontSize_small: ThemeValue,
   RadioText_marginHorizontal: ThemeValue
-|};
+};
 
 export type RadioGroupThemeFn = ComponentThemeFn<RadioGroupTheme>;
 export type RadioGroupTheme = ComponentTheme<RadioGroupThemeKeys>;
-type RadioGroupThemeKeys = {|
+type RadioGroupThemeKeys = {
   RadioGroupControl_marginHorizontal_inline: ThemeValue,
   RadioGroupControl_marginVertical_stacked: ThemeValue,
   RadioGroupControl_marginVertical_stackedJumbo: ThemeValue
-|};
+};

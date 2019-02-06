@@ -30,7 +30,7 @@ export type VariantIcons = {
 
 export type FauxControlThemeFn = ComponentThemeFn<FauxControlTheme>;
 export type FauxControlTheme = ComponentTheme<FauxControlThemeKeys>;
-type FauxControlThemeKeys = {|
+type FauxControlThemeKeys = {
   FauxControl_backgroundColor: ThemeValue,
   FauxControl_borderColor: ThemeValue,
   FauxControl_borderColor_active: ThemeValue,
@@ -48,4 +48,4 @@ type FauxControlThemeKeys = {|
   FauxControl_paddingHorizontal: ThemeValue,
   FauxControl_paddingHorizontal_small: ThemeValue,
   FauxControlIcon_marginHorizontal: ThemeValue
-|};
+};

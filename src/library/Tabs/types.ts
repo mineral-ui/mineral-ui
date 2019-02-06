@@ -56,7 +56,7 @@ export type TabProps = {
 
 export type TabThemeFn = ComponentThemeFn<TabTheme>;
 export type TabTheme = ComponentTheme<TabThemeKeys>;
-type TabThemeKeys = {|
+type TabThemeKeys = {
   Tab_backgroundColor_selected: ThemeValue,
   Tab_borderColor_focus: ThemeValue,
   Tab_borderWidth_focus: ThemeValue,
@@ -64,7 +64,7 @@ type TabThemeKeys = {|
   Tab_color_selected: ThemeValue,
   Tab_color_selectedHover: ThemeValue,
   TabIndicator_thickness: ThemeValue
-|};
+};
 
 export type TabListProps = {
   align?: Align,
@@ -87,13 +87,13 @@ export type TabListState = {
 
 export type TabListThemeFn = ComponentThemeFn<TabListTheme>;
 export type TabListTheme = ComponentTheme<TabListThemeKeys>;
-type TabListThemeKeys = {|
+type TabListThemeKeys = {
   TabList_gutterHorizontal: ThemeValue,
   TabList_gutterVertical: ThemeValue,
   TabListArrow_color: ThemeValue,
   TabListArrow_color_hover: ThemeValue,
   TabListOverflowContainer_boxShadowColor: ThemeValue
-|};
+};
 
 export type TabPanelProps = {
   children?: React.ReactNode,
@@ -103,7 +103,7 @@ export type TabPanelProps = {
 
 export type TabPanelThemeFn = ComponentThemeFn<TabPanelTheme>;
 export type TabPanelTheme = ComponentTheme<TabPanelThemeKeys>;
-type TabPanelThemeKeys = {|
+type TabPanelThemeKeys = {
   TabList_border: ThemeValue,
   TabPanel_gap: ThemeValue
-|};
+};

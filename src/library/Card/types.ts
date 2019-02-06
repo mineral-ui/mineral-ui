@@ -72,7 +72,7 @@ export type CardTitleMenuDefaultProps = {
 
 export type CardThemeFn = ComponentThemeFn<CardTheme>;
 export type CardTheme = ComponentTheme<CardThemeKeys>;
-type CardThemeKeys = {|
+type CardThemeKeys = {
   Card_backgroundColor: ThemeValue,
   Card_borderColor: ThemeValue,
   Card_borderRadius: ThemeValue,
@@ -81,31 +81,31 @@ type CardThemeKeys = {|
   CardRow_marginVertical: ThemeValue,
   CardRow_marginVerticalLast: ThemeValue,
   CardRow_paddingHorizontal: ThemeValue
-|};
+};
 
 export type CardActionsThemeFn = ComponentThemeFn<CardActionsTheme>;
 export type CardActionsTheme = ComponentTheme<CardActionsThemeKeys>;
-type CardActionsThemeKeys = {|
+type CardActionsThemeKeys = {
   CardActionsAction_spaceInline: ThemeValue
-|};
+};
 
 export type CardBlockThemeFn = ComponentThemeFn<CardBlockTheme>;
 export type CardBlockTheme = ComponentTheme<CardBlockThemeKeys>;
-type CardBlockThemeKeys = {|
+type CardBlockThemeKeys = {
   CardBlock_fontSize: ThemeValue,
   CardBlock_lineHeight: ThemeValue
-|};
+};
 
 export type CardDividerThemeFn = ComponentThemeFn<CardDividerTheme>;
 export type CardDividerTheme = ComponentTheme<CardDividerThemeKeys>;
-type CardDividerThemeKeys = {|
+type CardDividerThemeKeys = {
   CardDivider_borderColor: ThemeValue,
   CardDivider_borderWidth: ThemeValue
-|};
+};
 
 export type CardFooterThemeFn = ComponentThemeFn<CardFooterTheme>;
 export type CardFooterTheme = ComponentTheme<CardFooterThemeKeys>;
-type CardFooterThemeKeys = {|
+type CardFooterThemeKeys = {
   CardFooter_backgroundColor: ThemeValue,
   CardFooter_borderColor: ThemeValue,
   CardFooterRow_marginVertical: ThemeValue,
@@ -113,20 +113,20 @@ type CardFooterThemeKeys = {|
   CardFooterTitle_color: ThemeValue,
   CardFooterTitle_fontSize: ThemeValue,
   CardFooterTitle_fontWeight: ThemeValue
-|};
+};
 
 export type CardStatusThemeFn = ComponentThemeFn<CardStatusTheme>;
 export type CardStatusTheme = ComponentTheme<CardStatusThemeKeys>;
-type CardStatusThemeKeys = {|
+type CardStatusThemeKeys = {
   CardStatus_fontSize: ThemeValue,
   CardStatus_fontWeight: ThemeValue,
   CardStatusIcon_margin: ThemeValue,
   CardStatusIcon_size: ThemeValue
-|};
+};
 
 export type CardTitleThemeFn = ComponentThemeFn<CardTitleTheme>;
 export type CardTitleTheme = ComponentTheme<CardTitleThemeKeys>;
-type CardTitleThemeKeys = {|
+type CardTitleThemeKeys = {
   CardTitle_color: ThemeValue,
   CardTitle_fontSize: ThemeValue,
   CardTitle_fontWeight: ThemeValue,
@@ -141,4 +141,4 @@ type CardTitleThemeKeys = {|
   CardSubtitle_fontSize: ThemeValue,
   CardSubtitle_fontWeight: ThemeValue,
   CardSubtitle_marginTop: ThemeValue
-|};
+};

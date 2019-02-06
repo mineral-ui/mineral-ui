@@ -48,7 +48,7 @@ export type TextWithThemeOverrides = ({
 
 export type TextThemeFn = ComponentThemeFn<TextTheme>;
 export type TextTheme = ComponentTheme<TextThemeKeys>;
-type TextThemeKeys = {|
+type TextThemeKeys = {
   Text_color: ThemeValue,
   Text_color_h1: ThemeValue,
   Text_color_h2: ThemeValue,
@@ -77,4 +77,4 @@ type TextThemeKeys = {|
   Text_lineHeight_headingSmall: ThemeValue,
   Text_marginBottom: ThemeValue,
   Text_marginBottom_heading: ThemeValue
-|};
+};

@@ -89,18 +89,18 @@ export type SelectTriggerProps = {
 
 export type SelectThemeFn = ComponentThemeFn<SelectTheme>;
 export type SelectTheme = ComponentTheme<SelectThemeKeys>;
-type SelectThemeKeys = {|
+type SelectThemeKeys = {
   SelectContent_backgroundColor: ThemeValue,
   SelectContent_borderColor: ThemeValue,
   SelectContent_borderRadius: ThemeValue,
   SelectContent_boxShadow: ThemeValue,
   SelectContent_margin: ThemeValue,
   SelectContent_zIndex: ThemeValue
-|} & SelectTriggerThemeKeys;
+} & SelectTriggerThemeKeys;
 
 export type SelectTriggerThemeFn = ComponentThemeFn<SelectTriggerTheme>;
 export type SelectTriggerTheme = ComponentTheme<SelectTriggerThemeKeys>;
-type SelectTriggerThemeKeys = {|
+type SelectTriggerThemeKeys = {
   Select_backgroundColor: ThemeValue,
   Select_borderColor: ThemeValue,
   Select_borderColor_active: ThemeValue,
@@ -123,4 +123,4 @@ type SelectTriggerThemeKeys = {|
   Select_paddingHorizontal_small: ThemeValue,
   SelectIcon_color: ThemeValue,
   SelectIcon_marginHorizontal: ThemeValue
-|};
+};

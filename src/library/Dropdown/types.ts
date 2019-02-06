@@ -76,11 +76,11 @@ type DropdownThemeKeys = DropdownContentThemeKeys;
 
 export type DropdownContentThemeFn = ComponentThemeFn<DropdownContentTheme>;
 export type DropdownContentTheme = ComponentTheme<DropdownContentThemeKeys>;
-type DropdownContentThemeKeys = {|
+type DropdownContentThemeKeys = {
   DropdownContent_backgroundColor: ThemeValue,
   DropdownContent_borderColor: ThemeValue,
   DropdownContent_borderRadius: ThemeValue,
   DropdownContent_boxShadow: ThemeValue,
   DropdownContent_margin: ThemeValue,
   DropdownContent_zIndex: ThemeValue
-|};
+};

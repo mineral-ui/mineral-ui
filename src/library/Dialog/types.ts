@@ -93,7 +93,7 @@ export type DialogTitleDefaultProps = {
 
 export type DialogThemeFn = ComponentThemeFn<DialogTheme>;
 export type DialogTheme = ComponentTheme<DialogThemeKeys>;
-type DialogThemeKeys = {|
+type DialogThemeKeys = {
   Dialog_transitionDuration: ThemeValue,
   Dialog_zIndex: ThemeValue,
   DialogCloseButton_margin: ThemeValue,
@@ -117,38 +117,38 @@ type DialogThemeKeys = {|
   DialogRow_fontSize: ThemeValue,
   DialogRow_paddingHorizontal: ThemeValue,
   DialogRow_marginVertical: ThemeValue
-|};
+};
 
 export type DialogActionsThemeFn = ComponentThemeFn<DialogActionsTheme>;
 export type DialogActionsTheme = ComponentTheme<DialogActionsThemeKeys>;
-type DialogActionsThemeKeys = {|
+type DialogActionsThemeKeys = {
   DialogActionsItem_margin: ThemeValue
-|};
+};
 
 export type DialogBodyThemeFn = ComponentThemeFn<DialogBodyTheme>;
 export type DialogBodyTheme = ComponentTheme<DialogBodyThemeKeys>;
-type DialogBodyThemeKeys = {|
+type DialogBodyThemeKeys = {
   DialogBody_outline_focus: ThemeValue,
   DialogBody_boxShadowBottom: ThemeValue,
   DialogBody_boxShadowLeft: ThemeValue,
   DialogBody_boxShadowRight: ThemeValue,
   DialogBody_boxShadowTop: ThemeValue
-|};
+};
 
 export type DialogRowThemeFn = ComponentThemeFn<DialogRowTheme>;
 export type DialogRowTheme = ComponentTheme<DialogRowThemeKeys>;
-type DialogRowThemeKeys = {|
+type DialogRowThemeKeys = {
   DialogRow_fontSize: ThemeValue,
   DialogRow_paddingHorizontal: ThemeValue,
   DialogRow_marginVertical: ThemeValue
-|};
+};
 
 export type DialogTitleThemeFn = ComponentThemeFn<DialogTitleTheme>;
 export type DialogTitleTheme = ComponentTheme<DialogTitleThemeKeys>;
-type DialogTitleThemeKeys = {|
+type DialogTitleThemeKeys = {
   DialogTitle_color: ThemeValue,
   DialogTitle_fontSize: ThemeValue,
   DialogTitle_fontWeight: ThemeValue,
   DialogTitleIcon_margin: ThemeValue,
   DialogTitleIcon_size: ThemeValue
-|};
+};

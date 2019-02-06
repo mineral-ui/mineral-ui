@@ -89,14 +89,14 @@ export type RtlPopperProps = PopperProps & {
 
 export type PopoverArrowThemeFn = ComponentThemeFn<PopoverArrowTheme>;
 export type PopoverArrowTheme = ComponentTheme<PopoverArrowThemeKeys>;
-type PopoverArrowThemeKeys = {|
+type PopoverArrowThemeKeys = {
   PopoverArrow_backgroundColor: ThemeValue,
   PopoverArrow_borderColor: ThemeValue
-|};
+};
 
 export type PopoverContentThemeFn = ComponentThemeFn<PopoverContentTheme>;
 export type PopoverContentTheme = ComponentTheme<PopoverContentThemeKeys>;
-type PopoverContentThemeKeys = {|
+type PopoverContentThemeKeys = {
   PopoverContent_backgroundColor: ThemeValue,
   PopoverContent_borderColor: ThemeValue,
   PopoverContent_borderRadius: ThemeValue,
@@ -107,7 +107,7 @@ type PopoverContentThemeKeys = {|
   PopoverContent_zIndex: ThemeValue,
   PopoverContentBlock_marginVertical: ThemeValue,
   PopoverContentBlock_paddingHorizontal: ThemeValue
-|};
+};
 
 export type PopoverThemeFn = ComponentThemeFn<PopoverTheme>;
 export type PopoverTheme = ComponentTheme<PopoverThemeKeys>;

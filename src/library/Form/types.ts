@@ -36,7 +36,7 @@ export type FormFieldsetProps = {
 
 export type FormFieldThemeFn = ComponentThemeFn<FormFieldTheme>;
 export type FormFieldTheme = ComponentTheme<FormFieldThemeKeys>;
-type FormFieldThemeKeys = {|
+type FormFieldThemeKeys = {
   FormFieldCaption_color: ThemeValue,
   FormFieldCaption_fontSize: ThemeValue,
   FormFieldCaption_marginTop: ThemeValue,
@@ -49,21 +49,21 @@ type FormFieldThemeKeys = {|
   FormFieldSecondaryText_color: ThemeValue,
   FormFieldSecondaryText_color_required: ThemeValue,
   FormFieldSecondaryText_fontWeight: ThemeValue
-|};
+};
 
 export type FormFieldDividerThemeFn = ComponentThemeFn<FormFieldDividerTheme>;
 export type FormFieldDividerTheme = ComponentTheme<FormFieldDividerThemeKeys>;
-type FormFieldDividerThemeKeys = {|
+type FormFieldDividerThemeKeys = {
   FormFieldDivider_borderColor: ThemeValue,
   FormFieldDivider_borderWidth: ThemeValue,
   FormFieldDivider_margin: ThemeValue
-|};
+};
 
 export type FormFieldsetThemeFn = ComponentThemeFn<FormFieldsetTheme>;
 export type FormFieldsetTheme = ComponentTheme<FormFieldsetThemeKeys>;
-type FormFieldsetThemeKeys = {|
+type FormFieldsetThemeKeys = {
   FormFieldset_borderColor: ThemeValue,
   FormFieldsetLegend_color: ThemeValue,
   FormFieldsetLegend_fontSize: ThemeValue,
   FormFieldsetLegend_fontWeight: ThemeValue
-|};
+};

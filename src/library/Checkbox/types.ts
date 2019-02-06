@@ -50,7 +50,7 @@ export type CheckboxGroupProps = {
 
 export type CheckboxThemeFn = ComponentThemeFn<CheckboxTheme>;
 export type CheckboxTheme = ComponentTheme<CheckboxThemeKeys>;
-type CheckboxThemeKeys = {|
+type CheckboxThemeKeys = {
   CheckboxControl_backgroundColor: ThemeValue,
   CheckboxControl_backgroundColor_checked: ThemeValue,
   CheckboxControl_backgroundColor_checkedHover: ThemeValue,
@@ -66,12 +66,12 @@ type CheckboxThemeKeys = {|
   CheckboxText_fontSize: ThemeValue,
   CheckboxText_fontSize_small: ThemeValue,
   CheckboxText_marginHorizontal: ThemeValue
-|};
+};
 
 export type CheckboxGroupThemeFn = ComponentThemeFn<CheckboxGroupTheme>;
 export type CheckboxGroupTheme = ComponentTheme<CheckboxGroupThemeKeys>;
-type CheckboxGroupThemeKeys = {|
+type CheckboxGroupThemeKeys = {
   CheckboxGroupControl_marginHorizontal_inline: ThemeValue,
   CheckboxGroupControl_marginVertical_stacked: ThemeValue,
   CheckboxGroupControl_marginVertical_stackedJumbo: ThemeValue
-|};
+};

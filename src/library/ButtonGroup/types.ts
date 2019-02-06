@@ -27,7 +27,7 @@ export type ButtonGroupState = {
 
 export type ButtonGroupThemeFn = ComponentThemeFn<ButtonGroupTheme>;
 export type ButtonGroupTheme = ComponentTheme<ButtonGroupThemeKeys>;
-type ButtonGroupThemeKeys = {|
+type ButtonGroupThemeKeys = {
   ButtonGroupButton_backgroundColor_checkedDisabled: ThemeValue,
   ButtonGroupButton_border_disabled: ThemeValue,
   ButtonGroupButton_borderColor_active: ThemeValue,
@@ -35,4 +35,4 @@ type ButtonGroupThemeKeys = {|
   ButtonGroupButton_borderStartColor: ThemeValue,
   ButtonGroupButton_borderStartColor_checked: ThemeValue,
   ButtonGroupButton_color_checkedDisabled: ThemeValue
-|};
+};

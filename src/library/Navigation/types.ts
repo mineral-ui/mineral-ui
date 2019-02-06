@@ -115,7 +115,7 @@ export type SecondaryNavDefaultProps = NavigationDefaultProps & {
 
 export type PrimaryNavItemThemeFn = ComponentThemeFn<PrimaryNavItemTheme>;
 export type PrimaryNavItemTheme = ComponentTheme<PrimaryNavItemThemeKeys>;
-type PrimaryNavItemThemeKeys = {|
+type PrimaryNavItemThemeKeys = {
   PrimaryNavItem_paddingHorizontal: ThemeValue,
   PrimaryNavItemIcon_color: ThemeValue,
   PrimaryNavItem_backgroundColor: ThemeValue,
@@ -145,11 +145,11 @@ type PrimaryNavItemThemeKeys = {|
   PrimaryNavItem_color_minimal: ThemeValue,
   PrimaryNavItem_color_minimal_hover: ThemeValue,
   PrimaryNavItem_color_minimal_selected: ThemeValue
-|};
+};
 
 export type SecondaryNavItemThemeFn = ComponentThemeFn<SecondaryNavItemTheme>;
 export type SecondaryNavItemTheme = ComponentTheme<SecondaryNavItemThemeKeys>;
-type SecondaryNavItemThemeKeys = {|
+type SecondaryNavItemThemeKeys = {
   SecondaryNavItem_paddingHorizontal: ThemeValue,
   SecondaryNavItemIcon_color: ThemeValue,
   SecondaryNavItem_backgroundColor_pills: ThemeValue,
@@ -178,7 +178,7 @@ type SecondaryNavItemThemeKeys = {|
   SecondaryNavItem_color_tabs: ThemeValue,
   SecondaryNavItem_color_tabs_hover: ThemeValue,
   SecondaryNavItem_color_tabs_selected: ThemeValue
-|};
+};
 
 export type NavItemThemeFn = ComponentThemeFn<NavItemTheme>;
 export type NavItemTheme = ComponentTheme<NavItemThemeKeys>;
@@ -186,24 +186,24 @@ type NavItemThemeKeys = PrimaryNavItemThemeKeys & SecondaryNavItemThemeKeys;
 
 export type PrimaryNavThemeFn = ComponentThemeFn<PrimaryNavTheme>;
 export type PrimaryNavTheme = ComponentTheme<PrimaryNavThemeKeys>;
-type PrimaryNavThemeKeys = {|
+type PrimaryNavThemeKeys = {
   PrimaryNav_backgroundColor: ThemeValue,
   PrimaryNav_backgroundColor_minimal: ThemeValue,
   PrimaryNav_gutter: ThemeValue,
   PrimaryNav_paddingHorizontal: ThemeValue,
   PrimaryNav_paddingVertical: ThemeValue
-|};
+};
 
 export type SecondaryNavThemeFn = ComponentThemeFn<SecondaryNavTheme>;
 export type SecondaryNavTheme = ComponentTheme<SecondaryNavThemeKeys>;
-type SecondaryNavThemeKeys = {|
+type SecondaryNavThemeKeys = {
   SecondaryNav_backgroundColor_pills: ThemeValue,
   SecondaryNav_backgroundColor_tabs: ThemeValue,
   SecondaryNav_border: ThemeValue,
   SecondaryNav_gutter: ThemeValue,
   SecondaryNav_paddingHorizontal: ThemeValue,
   SecondaryNav_paddingVertical: ThemeValue
-|};
+};
 
 export type NavigationThemeFn = ComponentThemeFn<NavigationTheme>;
 export type NavigationTheme = ComponentTheme<NavigationThemeKeys>;

@@ -45,7 +45,7 @@ type TooltipRenderProps = {
 
 export type TooltipThemeFn = ComponentThemeFn<TooltipTheme>;
 export type TooltipTheme = ComponentTheme<TooltipThemeKeys>;
-type TooltipThemeKeys = {|
+type TooltipThemeKeys = {
   TooltipArrow_backgroundColor: ThemeValue,
   TooltipArrow_borderColor: ThemeValue,
   TooltipContent_backgroundColor: ThemeValue,
@@ -61,4 +61,4 @@ type TooltipThemeKeys = {|
   TooltipTriggerText_borderStyle: ThemeValue,
   TooltipTriggerText_borderColor: ThemeValue,
   TooltipTriggerText_borderWidth: ThemeValue
-|};
+};

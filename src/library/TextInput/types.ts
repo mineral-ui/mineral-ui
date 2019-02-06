@@ -39,7 +39,7 @@ export type TextInputDefaultProps = {
 
 export type TextInputThemeFn = ComponentThemeFn<TextInputTheme>;
 export type TextInputTheme = ComponentTheme<TextInputThemeKeys>;
-type TextInputThemeKeys = {|
+type TextInputThemeKeys = {
   TextInput_backgroundColor: ThemeValue,
   TextInput_borderColor: ThemeValue,
   TextInput_borderColor_active: ThemeValue,
@@ -62,4 +62,4 @@ type TextInputThemeKeys = {|
   TextInput_paddingHorizontal_small: ThemeValue,
   TextInputIcon_color: ThemeValue,
   TextInputIcon_marginHorizontal: ThemeValue
-|};
+};

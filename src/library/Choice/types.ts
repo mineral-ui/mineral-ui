@@ -61,7 +61,7 @@ export type ChoiceGroupDefaultProps = {
 
 export type ChoiceThemeFn = ComponentThemeFn<ChoiceTheme>;
 export type ChoiceTheme = ComponentTheme<ChoiceThemeKeys>;
-type ChoiceThemeKeys = {|
+type ChoiceThemeKeys = {
   ChoiceControl_backgroundColor: ThemeValue,
   ChoiceControl_backgroundColor_checked: ThemeValue,
   ChoiceControl_backgroundColor_checkedHover: ThemeValue,
@@ -77,12 +77,12 @@ type ChoiceThemeKeys = {|
   ChoiceText_fontSize: ThemeValue,
   ChoiceText_fontSize_small: ThemeValue,
   ChoiceText_marginHorizontal: ThemeValue
-|};
+};
 
 export type ChoiceGroupThemeFn = ComponentThemeFn<ChoiceGroupTheme>;
 export type ChoiceGroupTheme = ComponentTheme<ChoiceGroupThemeKeys>;
-type ChoiceGroupThemeKeys = {|
+type ChoiceGroupThemeKeys = {
   ChoiceGroupControl_marginHorizontal_inline: ThemeValue,
   ChoiceGroupControl_marginVertical_stacked: ThemeValue,
   ChoiceGroupControl_marginVertical_stackedJumbo: ThemeValue
-|};
+};

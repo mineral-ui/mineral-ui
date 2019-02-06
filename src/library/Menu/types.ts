@@ -70,25 +70,25 @@ export type MenuItemRenderProps = {
 
 export type MenuDividerThemeFn = ComponentThemeFn<MenuDividerTheme>;
 export type MenuDividerTheme = ComponentTheme<MenuDividerThemeKeys>;
-type MenuDividerThemeKeys = {|
+type MenuDividerThemeKeys = {
   MenuDivider_borderColor: ThemeValue,
   MenuDivider_borderWidth: ThemeValue,
   MenuDivider_margin: ThemeValue
-|};
+};
 
 export type MenuGroupThemeFn = ComponentThemeFn<MenuGroupTheme>;
 export type MenuGroupTheme = ComponentTheme<MenuGroupThemeKeys>;
-type MenuGroupThemeKeys = {|
+type MenuGroupThemeKeys = {
   MenuGroupTitle_fontSize: ThemeValue,
   MenuGroupTitle_fontWeight: ThemeValue,
   MenuGroupTitle_marginTop: ThemeValue,
   MenuGroupTitle_paddingTop: ThemeValue,
   MenuGroupTitle_paddingBottom: ThemeValue
-|};
+};
 
 export type MenuItemThemeFn = ComponentThemeFn<MenuItemTheme>;
 export type MenuItemTheme = ComponentTheme<MenuItemThemeKeys>;
-type MenuItemThemeKeys = {|
+type MenuItemThemeKeys = {
   MenuItem_backgroundColor_active: ThemeValue,
   MenuItem_backgroundColor_focus: ThemeValue,
   MenuItem_backgroundColor_hover: ThemeValue,
@@ -105,4 +105,4 @@ type MenuItemThemeKeys = {|
   MenuItemIcon_margin: ThemeValue,
   MenuItemSecondaryText_color: ThemeValue,
   MenuItemSecondaryText_fontSize: ThemeValue
-|};
+};

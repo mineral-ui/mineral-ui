@@ -32,7 +32,7 @@ export type ButtonDefaultProps = {
 
 export type ButtonThemeFn = ComponentThemeFn<ButtonTheme>;
 export type ButtonTheme = ComponentTheme<ButtonThemeKeys>;
-type ButtonThemeKeys = {|
+type ButtonThemeKeys = {
   Button_backgroundColor: ThemeValue,
   Button_backgroundColor_active: ThemeValue,
   Button_backgroundColor_focus: ThemeValue,
@@ -67,4 +67,4 @@ type ButtonThemeKeys = {|
   ButtonContent_fontSize_small: ThemeValue,
   ButtonIcon_color: ThemeValue,
   ButtonIcon_margin: ThemeValue
-|};
+};

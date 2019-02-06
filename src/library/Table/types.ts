@@ -187,9 +187,9 @@ export type SortableType = {
 
 export type TableThemeFn = ComponentThemeFn<TableTheme>;
 export type TableTheme = ComponentTheme<TableThemeKeys>;
-type TableThemeKeys = {|
+type TableThemeKeys = {
   Table_outline_focus: ThemeValue
-|};
+};
 
 export type TableCellProps = {
   as?: string,
@@ -204,7 +204,7 @@ export type TableCellProps = {
 
 export type TableCellThemeFn = ComponentThemeFn<TableCellTheme>;
 export type TableCellTheme = ComponentTheme<TableCellThemeKeys>;
-type TableCellThemeKeys = {|
+type TableCellThemeKeys = {
   TableCell_borderVertical: ThemeValue,
   TableCell_borderVertical_highContrast: ThemeValue,
   TableCell_fontSize: ThemeValue,
@@ -212,7 +212,7 @@ type TableCellThemeKeys = {|
   TableCell_paddingVertical: ThemeValue,
   TableCell_paddingVertical_spacious: ThemeValue,
   TableCell_verticalAlign: ThemeValue
-|};
+};
 
 export type TableDataRowProps = {
   checked?: boolean,
@@ -230,12 +230,12 @@ export type TableHeaderProps = {
 
 export type TableHeaderThemeFn = ComponentThemeFn<TableHeaderTheme>;
 export type TableHeaderTheme = ComponentTheme<TableHeaderThemeKeys>;
-type TableHeaderThemeKeys = {|
+type TableHeaderThemeKeys = {
   TableHeader_borderBottom: ThemeValue,
   TableHeader_borderBottom_highContrast: ThemeValue,
   TableHeader_borderTop: ThemeValue,
   TableHeader_borderTop_highContrast: ThemeValue
-|};
+};
 
 export type TableHeaderCellProps = {
   children?: React.ReactNode,
@@ -253,7 +253,7 @@ export type TableHeaderCellDefaultProps = {
 
 export type TableHeaderCellThemeFn = ComponentThemeFn<TableHeaderCellTheme>;
 export type TableHeaderCellTheme = ComponentTheme<TableHeaderCellThemeKeys>;
-type TableHeaderCellThemeKeys = {|
+type TableHeaderCellThemeKeys = {
   TableHeaderCell_fontSize: ThemeValue,
   TableHeaderCell_verticalAlign: ThemeValue,
   TableHeaderCell_borderVertical: ThemeValue,
@@ -263,7 +263,7 @@ type TableHeaderCellThemeKeys = {|
   TableHeaderCell_paddingVertical: ThemeValue,
   TableHeaderCell_paddingVertical_spacious: ThemeValue,
   TableHeaderCell_verticalAlign: ThemeValue
-|};
+};
 
 export type TableHeaderRowProps = {
   checked?: boolean,
@@ -285,7 +285,7 @@ export type TableRowProps = {
 
 export type TableRowThemeFn = ComponentThemeFn<TableRowTheme>;
 export type TableRowTheme = ComponentTheme<TableRowThemeKeys>;
-type TableRowThemeKeys = {|
+type TableRowThemeKeys = {
   TableRow_backgroundColor_highContrast_selected: ThemeValue,
   TableRow_backgroundColor_highContrast_selectedHover: ThemeValue,
   TableRow_backgroundColor_hover: ThemeValue,
@@ -294,7 +294,7 @@ type TableRowThemeKeys = {|
   TableRow_backgroundColor_striped: ThemeValue,
   TableRow_borderHorizontal: ThemeValue,
   TableRow_borderHorizontal_highContrast: ThemeValue
-|};
+};
 
 export type TableSelectableCellProps = {
   checked?: boolean,
@@ -316,12 +316,12 @@ export type TableSortableHeaderCellProps = {
 
 export type TableSortableHeaderCellThemeFn = ComponentThemeFn<TableSortableHeaderCellTheme>;
 export type TableSortableHeaderCellTheme = ComponentTheme<TableSortableHeaderCellThemeKeys>;
-type TableSortableHeaderCellThemeKeys = {|
+type TableSortableHeaderCellThemeKeys = {
   TableSortableHeaderCell_border_focus: ThemeValue,
   TableSortableHeaderCell_color_focus: ThemeValue,
   TableSortableHeaderCell_color_hover: ThemeValue,
   TableSortableHeaderCellIcon_size: ThemeValue
-|};
+};
 
 export type TableTitleProps = {
   appearance?: TitleElement,
@@ -334,9 +334,9 @@ export type TableTitleProps = {
 
 export type TableTitleThemeFn = ComponentThemeFn<TableTitleTheme>;
 export type TableTitleTheme = ComponentTheme<TableTitleThemeKeys>;
-type TableTitleThemeKeys = {|
+type TableTitleThemeKeys = {
   TableTitle_color: ThemeValue,
   TableTitle_fontSize: ThemeValue,
   TableTitle_fontWeight: ThemeValue,
   TableTitle_marginBottom: ThemeValue
-|};
+};

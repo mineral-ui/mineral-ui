@@ -34,7 +34,7 @@ export type TextAreaDefaultProps = {
 
 export type TextAreaThemeFn = ComponentThemeFn<TextAreaTheme>;
 export type TextAreaTheme = ComponentTheme<TextAreaThemeKeys>;
-type TextAreaThemeKeys = {|
+type TextAreaThemeKeys = {
   TextArea_backgroundColor: ThemeValue,
   TextArea_borderColor: ThemeValue,
   TextArea_borderColor_active: ThemeValue,
@@ -56,4 +56,4 @@ type TextAreaThemeKeys = {|
   TextArea_paddingVertical_medium: ThemeValue,
   TextArea_paddingVertical_small: ThemeValue,
   TextAreaIcon_marginHorizontal: ThemeValue
-|};
+};
