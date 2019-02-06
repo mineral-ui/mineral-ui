@@ -17,7 +17,7 @@ export default class Selectable extends Component<
   static getDerivedStateFromProps(
     nextProps: SelectableProps,
     prevState: SelectableState
-  ): $Shape<SelectableState> | null {
+  ): Partial<SelectableState> | null {
     if (
       nextProps.selected !== undefined &&
       !deepEqual(nextProps.selected, prevState.selected)
