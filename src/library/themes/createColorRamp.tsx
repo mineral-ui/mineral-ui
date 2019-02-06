@@ -21,7 +21,7 @@
  *      }
  */
 export default function createColorRamp(
-  colors: { [number]: string }, // The palette of colors
+  colors: { [rampKey: number]: string }, // The palette of colors
   outKey: string // The key of the color in the returned object, excluding the index
 ): {
   [color: string]: string

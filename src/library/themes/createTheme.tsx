@@ -14,7 +14,7 @@ import { ThemeObj } from './types';
 
 type PrimaryColor = keyof typeof PRIMARY_COLOR;
 type PrimaryColors = Array<PrimaryColor>;
-type ColorRampWithInflection = { [number]: string, inflection?: number };
+type ColorRampWithInflection = { [rampKey: number]: string, inflection?: number };
 type Colors = {
   black?: string,
   danger?: Color | ColorRampWithInflection,

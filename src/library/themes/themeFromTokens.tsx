@@ -7,7 +7,7 @@ type ColorOptions = {
   aliases?: Aliases,
   color: Ramp | string,
   colorName: string,
-  newKey?: (string) => string,
+  newKey?: (key: string) => string,
   tokens: ColorTokens
 };
 type ColorTheme = ColorTokens;
