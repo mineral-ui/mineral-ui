@@ -8,7 +8,7 @@ import ThemeProvider from './ThemeProvider';
 import { Theme } from './types';
 
 // Usage: themed(component)(theme)
-const themed = (WrappedComponent: React$ComponentType<*>) => (
+const themed = (WrappedComponent: React.ComponentType) => (
   theme: Theme<>
 ) => {
   const Wrapper = (props, context) => {

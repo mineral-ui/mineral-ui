@@ -20,7 +20,7 @@ export const findDeep = (
 
 export function findByType(
   children: ?React.ReactNode,
-  type: React$ComponentType<*>
+  type: React.ComponentType
 ): ?React.ReactElement<any> {
   let match;
 
@@ -35,7 +35,7 @@ export function findByType(
 
 export function findAllByType(
   children: ?React.ReactNode,
-  type: React$ComponentType<*>
+  type: React.ComponentType
 ): ?Array<React.ReactElement<any>> {
   return Children.map(children, (child) => {
     if (child && child.type === type) {
@@ -46,7 +46,7 @@ export function findAllByType(
 
 export function excludeByType(
   children: ?React.ReactNode,
-  type: React$ComponentType<*> | Array<React$ComponentType<*>>
+  type: React.ComponentType | Array<React.ComponentType>
 ): ?Array<React.ReactElement<any>> {
   const types = toArray(type);
   return Children.map(children, (child) => {

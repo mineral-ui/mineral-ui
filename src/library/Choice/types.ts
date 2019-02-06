@@ -43,7 +43,7 @@ export type ChoiceGroupProps = {
   data?: Array<{ label: string | React.ReactElement<any>, value: string }>,
   defaultChecked?: string | Array<string>,
   inline?: boolean,
-  input?: React$ComponentType<*>,
+  input?: React.ComponentType,
   invalid?: boolean,
   name: string,
   onChange?: (event: SyntheticEvent<>) => void,

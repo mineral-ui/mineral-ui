@@ -42,7 +42,7 @@ export type TextWithThemeOverrides = ({
   as?: string,
   children: React.ReactNode,
   displayName: string,
-  textComponent: React$ComponentType<*>,
+  textComponent: React.ComponentType,
   theme: ThemeObj
 }) => React.ReactElement<any>;
 

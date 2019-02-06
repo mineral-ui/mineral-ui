@@ -13,7 +13,7 @@ export type FormFieldProps = {
   className?: string,
   hideLabel?: boolean,
   id?: string,
-  input?: React$ComponentType<*>,
+  input?: React.ComponentType,
   rootProps?: Object,
   label: string | React.ReactElement<any>,
   required?: boolean,

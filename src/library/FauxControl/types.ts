@@ -11,7 +11,7 @@ export type FauxControlProps = {
   afterItems?: React.ReactNode,
   beforeItems?: React.ReactNode,
   children?: React.ReactNode,
-  control: React$ComponentType<*>,
+  control: React.ComponentType,
   controlProps?: Object,
   disabled?: boolean,
   fauxControlRef?: (node: ?React$Component<*, *>) => void,
