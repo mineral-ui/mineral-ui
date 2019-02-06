@@ -1,6 +1,6 @@
 /* @flow */
-export const VARIANT = {
-  danger: 'danger',
-  success: 'success',
-  warning: 'warning'
+export enum VARIANT {
+  danger = 'danger',
+  success = 'success',
+  warning = 'warning'
 };

@@ -1,17 +1,17 @@
 /* @flow */
-export const LABEL_POSITION = {
-  start: 'start',
-  end: 'end'
+export enum LABEL_POSITION {
+  start = 'start',
+  end = 'end'
 };
 
-export const SIZE = {
-  small: 'small',
-  medium: 'medium',
-  large: 'large',
-  jumbo: 'jumbo'
+export enum SIZE {
+  small = 'small',
+  medium = 'medium',
+  large = 'large',
+  jumbo = 'jumbo'
 };
 
-export const TYPE = {
-  checkbox: 'checkbox',
-  radio: 'radio'
+export enum TYPE {
+  checkbox = 'checkbox',
+  radio = 'radio'
 };

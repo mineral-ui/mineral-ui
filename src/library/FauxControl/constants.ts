@@ -8,15 +8,15 @@ export const ICON_SIZE = {
   jumbo: pxToEm(24)
 };
 
-export const SIZE = {
-  small: 'small',
-  medium: 'medium',
-  large: 'large',
-  jumbo: 'jumbo'
+export enum SIZE {
+  small = 'small',
+  medium = 'medium',
+  large = 'large',
+  jumbo = 'jumbo'
 };
 
-export const VARIANT = {
-  danger: 'danger',
-  success: 'success',
-  warning: 'warning'
+export enum VARIANT {
+  danger = 'danger',
+  success = 'success',
+  warning = 'warning'
 };

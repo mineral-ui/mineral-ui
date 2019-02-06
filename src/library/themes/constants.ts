@@ -1,7 +1,7 @@
 /* @flow */
-export const PRIMARY_COLOR = {
-  theme: 'theme',
-  danger: 'danger',
-  success: 'success',
-  warning: 'warning'
+export enum PRIMARY_COLOR {
+  theme = 'theme',
+  danger = 'danger',
+  success = 'success',
+  warning = 'warning'
 };

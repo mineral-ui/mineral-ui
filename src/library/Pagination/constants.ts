@@ -1,7 +1,7 @@
 /* @flow */
-export const SIZE = {
-  small: 'small',
-  medium: 'medium',
-  large: 'large',
-  jumbo: 'jumbo'
+export enum SIZE {
+  small = 'small',
+  medium = 'medium',
+  large = 'large',
+  jumbo = 'jumbo'
 };

@@ -1,9 +1,18 @@
 /* @flow */
-import PopperJs from 'popper.js';
 
 export const DELAY_OPEN = 250; // ms
 
-export const PLACEMENT = PopperJs.placements.sort().reduce((acc, placement) => {
-  acc[placement] = placement;
-  return acc;
-}, {});
+export enum PLACEMENT {
+  bottom = 'bottom',
+  'bottom-end' = 'bottom-end',
+  'bottom-start' = 'bottom-start',
+  left = 'left',
+  'left-end' = 'left-end',
+  'left-start' = 'left-start',
+  right = 'right',
+  'right-end' = 'right-end',
+  'right-start' = 'right-start',
+  top = 'top',
+  'top-end' = 'top-end',
+  'top-start' = 'top-start'
+}
