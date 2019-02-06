@@ -27,9 +27,9 @@ export default class TabList extends Component<TabListProps, TabListState> {
     scrollable: false
   };
 
-  list: ?HTMLElement;
+  list: HTMLElement | null | undefined;
 
-  root: ?HTMLElement;
+  root: HTMLElement | null | undefined;
 
   componentDidMount() {
     this.updateScrollable();
@@ -113,11 +113,11 @@ export default class TabList extends Component<TabListProps, TabListState> {
     );
   }
 
-  setListRef = (node: ?HTMLElement) => {
+  setListRef = (node: HTMLElement | null | undefined) => {
     this.list = node;
   };
 
-  setRootRef = (node: ?HTMLElement) => {
+  setRootRef = (node: HTMLElement | null | undefined) => {
     this.root = node;
   };
 

@@ -18,7 +18,7 @@ export type CheckboxProps = {
   disabled?: boolean,
   hideLabel?: boolean,
   indeterminate?: boolean,
-  inputRef?: (node: ?HTMLInputElement) => void,
+  inputRef?: (node: HTMLInputElement | null | undefined) => void,
   invalid?: boolean,
   justify?: boolean,
   label: string | React.ReactElement<any>,

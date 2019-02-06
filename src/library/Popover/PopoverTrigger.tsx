@@ -17,7 +17,7 @@ class PopoverTrigger extends Component<PopoverTriggerProps> {
         {({ ref: popperRef }) => {
           const popoverTriggerWrapperProps = {
             cursor,
-            ref: (node: ?HTMLElement) => {
+            ref: (node: HTMLElement | null | undefined) => {
               if (node !== null) {
                 popperRef(node);
                 forwardedRef && forwardedRef(node);

@@ -19,7 +19,7 @@ export type ChoiceProps = {
   disabled?: boolean,
   justify?: boolean,
   iconChecked: React.ReactElement<any>,
-  inputRef?: (node: ?HTMLInputElement) => void,
+  inputRef?: (node: HTMLInputElement | null | undefined) => void,
   rootProps?: Object,
   hideLabel?: boolean,
   invalid?: boolean,

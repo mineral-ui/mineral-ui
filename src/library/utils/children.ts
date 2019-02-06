@@ -11,7 +11,7 @@ const hasComplexChildren = (child: React.ReactElement<any>): boolean =>
 export const findDeep = (
   children: React.ReactNode,
   finder: (element: React.ReactElement<any>) => boolean
-): ?React.ReactElement<any> =>
+): React.ReactElement<any> | null | undefined =>
   Children.toArray(children).find((child) =>
     hasComplexChildren(child)
       ? findDeep(child.props.children, finder)
@@ -19,9 +19,9 @@ export const findDeep = (
   );
 
 export function findByType(
-  children: ?React.ReactNode,
+  children: React.ReactNode | null | undefined,
   type: React.ComponentType
-): ?React.ReactElement<any> {
+): React.ReactElement<any> | null | undefined {
   let match;
 
   Children.forEach(children, (child) => {
@@ -34,9 +34,9 @@ export function findByType(
 }
 
 export function findAllByType(
-  children: ?React.ReactNode,
+  children: React.ReactNode | null | undefined,
   type: React.ComponentType
-): ?Array<React.ReactElement<any>> {
+): Array<React.ReactElement<any>> | null | undefined {
   return Children.map(children, (child) => {
     if (child && child.type === type) {
       return child;
@@ -45,9 +45,9 @@ export function findAllByType(
 }
 
 export function excludeByType(
-  children: ?React.ReactNode,
+  children: React.ReactNode | null | undefined,
   type: React.ComponentType | Array<React.ComponentType>
-): ?Array<React.ReactElement<any>> {
+): Array<React.ReactElement<any>> | null | undefined {
   const types = toArray(type);
   return Children.map(children, (child) => {
     if (types.indexOf(child.type) === -1) {

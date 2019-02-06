@@ -49,7 +49,7 @@ export default class Select extends Component<SelectProps, SelectState> {
 
   getItems = memoizeOne(getItems, deepEqual);
 
-  selectTrigger: ?HTMLElement;
+  selectTrigger: HTMLElement | null | undefined;
 
   render() {
     return (
@@ -115,7 +115,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     };
   };
 
-  setTriggerRef = (node: ?HTMLElement) => {
+  setTriggerRef = (node: HTMLElement | null | undefined) => {
     const { triggerRef } = this.props;
 
     this.selectTrigger = node;

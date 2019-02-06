@@ -16,7 +16,7 @@ export default class Truncate extends PureComponent<
     showTooltip: false
   };
 
-  root: ?HTMLElement;
+  root: HTMLElement | null | undefined;
 
   componentDidMount() {
     this.toggleTooltip();
@@ -57,7 +57,7 @@ export default class Truncate extends PureComponent<
     );
   }
 
-  setRootRef = (node: ?HTMLElement) => {
+  setRootRef = (node: HTMLElement | null | undefined) => {
     this.root = node;
   };
 

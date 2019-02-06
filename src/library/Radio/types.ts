@@ -16,7 +16,7 @@ export type RadioProps = {
   defaultChecked?: boolean,
   disabled?: boolean,
   hideLabel?: boolean,
-  inputRef?: (node: ?HTMLInputElement) => void,
+  inputRef?: (node: HTMLInputElement | null | undefined) => void,
   invalid?: boolean,
   justify?: boolean,
   label: string | React.ReactElement<any>,

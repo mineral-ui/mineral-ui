@@ -37,9 +37,9 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     isOpen: Boolean(this.props.defaultIsOpen)
   };
 
-  dropdownTrigger: ?HTMLElement;
+  dropdownTrigger: HTMLElement | null | undefined;
 
-  highlightedItemId: ?string;
+  highlightedItemId: string | null | undefined;
 
   id: string = this.props.id || `dropdown-${generateId()}`;
 
@@ -92,7 +92,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     };
   };
 
-  setTriggerRef = (node: ?HTMLElement) => {
+  setTriggerRef = (node: HTMLElement | null | undefined) => {
     this.dropdownTrigger = node;
   };
 

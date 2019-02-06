@@ -30,7 +30,7 @@ class DropdownContent extends Component<DropdownContentProps> {
           const dropdownContentWrapperProps = {
             'data-placement': placement,
             'data-out-of-boundaries': outOfBoundaries || undefined,
-            ref: (node: ?HTMLElement) => {
+            ref: (node: HTMLElement | null | undefined) => {
               forwardedRef && forwardedRef(node);
               popperRef(node);
             },

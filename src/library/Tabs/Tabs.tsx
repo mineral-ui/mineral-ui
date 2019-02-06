@@ -32,7 +32,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
 
   lastIndex: number;
 
-  root: ?HTMLElement;
+  root: HTMLElement | null | undefined;
 
   vertical: boolean =
     this.props.position === POSITION.start ||
@@ -138,7 +138,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     return `${this.id}-tab-${index}`;
   };
 
-  setRootRef = (node: ?HTMLElement) => {
+  setRootRef = (node: HTMLElement | null | undefined) => {
     this.root = node;
   };
 
@@ -196,7 +196,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
 
   getNonDisabledIndex = (
     index: number,
-    { decrease }: { decrease: ?boolean } = {}
+    { decrease }: { decrease: boolean | null | undefined } = {}
   ) =>
     this.disabledTabIndexes.has(index)
       ? this.getNonDisabledIndex(decrease ? index - 1 : index + 1, { decrease })

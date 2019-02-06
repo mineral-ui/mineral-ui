@@ -7,7 +7,7 @@ import {
 
 export type OverflowContainerProps = {
   children?: React.ReactNode,
-  containerRef?: (node: ?HTMLElement) => void,
+  containerRef?: (node: HTMLElement | null | undefined) => void,
   hideScrollbars?: boolean,
   scrollX?: boolean,
   scrollY?: boolean,

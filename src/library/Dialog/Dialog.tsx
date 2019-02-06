@@ -60,15 +60,15 @@ export default class Dialog extends Component<DialogProps, DialogState> {
     isExiting: false
   };
 
-  appNodes: ?Array<HTMLElement>;
+  appNodes: Array<HTMLElement> | null | undefined;
 
   id: string = this.props.id || `dialog-${generateId()}`;
 
-  dialogRoot: ?HTMLElement;
+  dialogRoot: HTMLElement | null | undefined;
 
-  dialogContent: ?HTMLElement;
+  dialogContent: HTMLElement | null | undefined;
 
-  lastFocusedElement: ?HTMLElement;
+  lastFocusedElement: HTMLElement | null | undefined;
 
   componentDidUpdate(prevProps: DialogProps) {
     if (!prevProps.isOpen && this.props.isOpen) {
@@ -295,11 +295,11 @@ export default class Dialog extends Component<DialogProps, DialogState> {
     return `${this.id}-content`;
   };
 
-  setContentRef = (node: ?HTMLElement) => {
+  setContentRef = (node: HTMLElement | null | undefined) => {
     this.dialogContent = node;
   };
 
-  setRootRef = (node: ?HTMLElement) => {
+  setRootRef = (node: HTMLElement | null | undefined) => {
     this.dialogRoot = node;
   };
 
@@ -386,7 +386,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
     );
   };
 
-  isEventOutsideNode = (event: React.SyntheticEvent<Node>, node: ?HTMLElement) => {
+  isEventOutsideNode = (event: React.SyntheticEvent<Node>, node: HTMLElement | null | undefined) => {
     const { target } = event;
     return node && target instanceof Node && !node.contains(target);
   };

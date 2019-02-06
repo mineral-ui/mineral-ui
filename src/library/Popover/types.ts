@@ -28,7 +28,7 @@ export type PopoverProps = {
   positionFixed?: boolean,
   subtitle?: React.ReactNode,
   title?: React.ReactNode,
-  triggerRef?: (node: ?HTMLElement) => void,
+  triggerRef?: (node: HTMLElement | null | undefined) => void,
   usePortal?: boolean
 };
 
@@ -67,7 +67,7 @@ export type PopoverArrowProps = {
 
 export type PopoverContentProps = {
   children: React.ReactNode,
-  forwardedRef?: (node: ?HTMLElement) => void,
+  forwardedRef?: (node: HTMLElement | null | undefined) => void,
   modifiers?: Object,
   hasArrow?: boolean,
   placement?: Placement,
@@ -79,7 +79,7 @@ export type PopoverContentProps = {
 export type PopoverTriggerProps = {
   children: React.ReactNode,
   cursor?: string,
-  forwardedRef: (node: ?HTMLElement) => void
+  forwardedRef: (node: HTMLElement | null | undefined) => void
 };
 
 export type RtlPopperProps = PopperProps & {

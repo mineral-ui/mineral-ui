@@ -8,7 +8,7 @@ import { PortalProps } from './types';
 export default class Portal extends Component<PortalProps> {
   static displayName = 'Portal';
 
-  node: ?HTMLElement;
+  node: HTMLElement | null | undefined;
 
   constructor(props: PortalProps) {
     super(props);

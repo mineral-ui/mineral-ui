@@ -16,7 +16,7 @@ export default class OverflowContainer extends Component<
     scrollable: false
   };
 
-  container: ?HTMLElement;
+  container: HTMLElement | null | undefined;
 
   componentDidMount() {
     this.updateScrollable();
@@ -26,7 +26,7 @@ export default class OverflowContainer extends Component<
     this.updateScrollable();
   }
 
-  setContainerRef = (node: ?HTMLElement) => {
+  setContainerRef = (node: HTMLElement | null | undefined) => {
     const { containerRef } = this.props;
 
     this.container = node;

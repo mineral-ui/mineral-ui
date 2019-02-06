@@ -17,7 +17,7 @@ export default class TextArea extends Component<TextAreaProps> {
 
   static propTypes = textAreaPropTypes;
 
-  textArea: ?HTMLTextAreaElement;
+  textArea: HTMLTextAreaElement | null | undefined;
 
   componentDidMount() {
     this.autoSize();

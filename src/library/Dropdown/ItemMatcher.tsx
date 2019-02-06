@@ -10,7 +10,7 @@ export default class ItemMatcher {
 
   findMatchingItem = (
     items: MenuItems,
-    highlightedIndex: ?number,
+    highlightedIndex: number | null | undefined,
     key: string
   ) => {
     if (!this.isMatchableCharacter(key)) {

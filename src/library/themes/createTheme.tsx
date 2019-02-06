@@ -27,7 +27,7 @@ type Colors = {
 
 const primaryColors: PrimaryColors = Object.keys(PRIMARY_COLOR);
 
-export const nonTokenVariables = (colors: ?Colors) => ({
+export const nonTokenVariables = (colors: Colors | null | undefined) => ({
   boxShadow_focusInner: (colors && colors.white) || palette.white,
   direction: 'ltr',
   fontSize_base

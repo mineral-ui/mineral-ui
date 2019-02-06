@@ -62,7 +62,7 @@ export default class Navigation extends Component<NavigationProps> {
     );
   }
 
-  renderItems = (prefixAndType: PrefixAndType): ?Array<React.ReactNode> => {
+  renderItems = (prefixAndType: PrefixAndType): Array<React.ReactNode> | null | undefined => {
     const {
       children,
       itemAs,
@@ -76,7 +76,7 @@ export default class Navigation extends Component<NavigationProps> {
       ...restProps
     } = this.props;
 
-    const items: ?NavigationItems = children
+    const items: NavigationItems | null | undefined = children
       ? Children.map(children, (child) => {
           const { children, ...rest } = child.props;
           return {

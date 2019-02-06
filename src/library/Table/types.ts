@@ -167,7 +167,7 @@ export type SortableProps = {
 };
 
 export type SortableState = {
-  sort: ?Sort
+  sort: Sort | null | undefined
 };
 
 export type SortableData = Array<Object>;
@@ -181,7 +181,7 @@ export type SortFn = (Sort) => void;
 
 export type SortableType = {
   data: SortableData,
-  sort: ?Sort,
+  sort: Sort | null | undefined,
   sortFn: SortFn
 };
 

@@ -30,7 +30,7 @@ const getDropdownData: GetDropdownData = ({ data, onClick, startingIndex }) =>
 
 // eslint-disable-next-line react/display-name
 const getDropdownItem: GetDropdownItem = (itemAs) => (
-  props: ?MenuItemRenderProps
+  props: MenuItemRenderProps | null | undefined
 ) => {
   const common = {
     /*

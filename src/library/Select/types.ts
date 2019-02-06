@@ -39,7 +39,7 @@ export type SelectProps = {
   selectedItem?: MenuItemType,
   size?: Size,
   trigger?: SelectRenderFn,
-  triggerRef?: (node: ?HTMLElement) => void,
+  triggerRef?: (node: HTMLElement | null | undefined) => void,
   usePortal?: boolean,
   variant?: Variant
 };
@@ -52,9 +52,9 @@ export type SelectDefaultProps = {
 };
 
 export type SelectState = {
-  highlightedIndex: ?number,
+  highlightedIndex: number | null | undefined,
   isOpen: boolean,
-  selectedItem: ?MenuItemType
+  selectedItem: MenuItemType | null | undefined
 };
 
 type SelectHelpers = {
@@ -83,7 +83,7 @@ export type SelectTriggerProps = {
   required?: boolean,
   item?: MenuItemType,
   size?: Size,
-  triggerRef?: (node: ?HTMLElement) => void,
+  triggerRef?: (node: HTMLElement | null | undefined) => void,
   variant?: Variant
 };
 

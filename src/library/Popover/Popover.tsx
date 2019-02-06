@@ -38,9 +38,9 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
 
   id: string = this.props.id || `popover-${generateId()}`;
 
-  popoverContent: ?HTMLElement;
+  popoverContent: HTMLElement | null | undefined;
 
-  popoverTrigger: ?HTMLElement;
+  popoverTrigger: HTMLElement | null | undefined;
 
   render() {
     return (
@@ -107,14 +107,14 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     };
   };
 
-  setTriggerRef = (node: ?HTMLElement) => {
+  setTriggerRef = (node: HTMLElement | null | undefined) => {
     const { triggerRef } = this.props;
 
     this.popoverTrigger = node;
     triggerRef && triggerRef(node);
   };
 
-  setContentRef = (node: ?HTMLElement) => {
+  setContentRef = (node: HTMLElement | null | undefined) => {
     this.popoverContent = node;
   };
 

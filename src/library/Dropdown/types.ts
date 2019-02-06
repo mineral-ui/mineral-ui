@@ -37,7 +37,7 @@ export type DropdownDefaultProps = {
 };
 
 export type DropdownState = {
-  highlightedIndex: ?number,
+  highlightedIndex: number | null | undefined,
   isOpen: boolean
 };
 
@@ -62,7 +62,7 @@ type DropdownRenderProps = {
 
 export type DropdownContentProps = {
   children: React.ReactNode,
-  forwardedRef?: (node: ?HTMLElement) => void,
+  forwardedRef?: (node: HTMLElement | null | undefined) => void,
   id: string,
   modifiers?: Object,
   placement?: Placement,

@@ -30,7 +30,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
 
   id: string = this.props.id || `tooltip-${generateId()}`;
 
-  openTimer: ?number;
+  openTimer: number | null | undefined;
 
   componentWillUnmount() {
     this.clearOpenTimer();

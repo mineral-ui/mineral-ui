@@ -15,7 +15,7 @@ export default class OverflowContainerWithShadows extends Component<
 > {
   static displayName = 'OverflowContainerWithShadows';
 
-  container: ?HTMLElement;
+  container: HTMLElement | null | undefined;
 
   setContainerRef = (node: HTMLElement) => {
     this.container = node;

@@ -45,7 +45,7 @@ export class Pagination extends PureComponent<PaginationProps> {
     visibleRange: 5
   };
 
-  pageJumperInput: ?HTMLInputElement;
+  pageJumperInput: HTMLInputElement | null | undefined;
 
   render() {
     const {
@@ -140,7 +140,7 @@ export class Pagination extends PureComponent<PaginationProps> {
     );
   }
 
-  setPageJumperRef = (node: ?HTMLInputElement) => {
+  setPageJumperRef = (node: HTMLInputElement | null | undefined) => {
     this.pageJumperInput = node;
   };
 

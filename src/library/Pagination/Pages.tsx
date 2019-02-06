@@ -133,9 +133,9 @@ IncrementButton.displayName = 'IncrementButton';
 export default class Pages extends PureComponent<PagesProps> {
   static displayName = 'Pages';
 
-  previousButton: ?HTMLButtonElement;
+  previousButton: HTMLButtonElement | null | undefined;
 
-  nextButton: ?HTMLButtonElement;
+  nextButton: HTMLButtonElement | null | undefined;
 
   render() {
     const { size, showPageNumbers, ...restProps } = this.props;
@@ -161,11 +161,11 @@ export default class Pages extends PureComponent<PagesProps> {
     );
   }
 
-  setPreviousButtonRef = (node: ?HTMLButtonElement) => {
+  setPreviousButtonRef = (node: HTMLButtonElement | null | undefined) => {
     this.previousButton = node;
   };
 
-  setNextButtonRef = (node: ?HTMLButtonElement) => {
+  setNextButtonRef = (node: HTMLButtonElement | null | undefined) => {
     this.nextButton = node;
   };
 }

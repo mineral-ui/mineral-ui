@@ -43,7 +43,7 @@ export default class Checkbox extends PureComponent<CheckboxProps> {
 
   static propTypes = checkboxPropTypes;
 
-  input: ?HTMLInputElement;
+  input: HTMLInputElement | null | undefined;
 
   indeterminate: boolean;
 
