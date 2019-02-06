@@ -7,9 +7,9 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Size = $Keys<typeof SIZE>;
-type Type = $Keys<typeof TYPE>;
-type Variant = $Keys<typeof VARIANT>;
+type Size = keyof typeof SIZE;
+type Type = keyof typeof TYPE;
+type Variant = keyof typeof VARIANT;
 
 export type TextInputProps = {
   className?: string,

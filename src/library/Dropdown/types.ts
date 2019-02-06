@@ -8,7 +8,7 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Placement = $Keys<typeof PLACEMENT>;
+type Placement = keyof typeof PLACEMENT;
 
 export type DropdownProps = {
   children: React.ReactNode | DropdownRenderFn,

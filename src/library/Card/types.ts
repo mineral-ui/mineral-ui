@@ -8,7 +8,7 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Variant = $Keys<typeof VARIANT>;
+type Variant = keyof typeof VARIANT;
 
 export type CardProps = {
   children: React.ReactNode,

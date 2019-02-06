@@ -7,8 +7,8 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Size = $Keys<typeof SIZE>;
-type Variant = $Keys<typeof VARIANT>;
+type Size = keyof typeof SIZE;
+type Variant = keyof typeof VARIANT;
 
 export type ButtonProps = {
   children?: React.ReactNode,

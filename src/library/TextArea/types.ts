@@ -7,7 +7,7 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Size = $Keys<typeof SIZE>;
+type Size = keyof typeof SIZE;
 
 export type TextAreaProps = {
   autoSize?: boolean,
@@ -25,7 +25,7 @@ export type TextAreaProps = {
   rows?: number,
   size?: Size,
   value?: string,
-  variant?: $Keys<typeof VARIANT>
+  variant?: keyof typeof VARIANT
 };
 
 export type TextAreaDefaultProps = {

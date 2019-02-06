@@ -7,7 +7,7 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Size = $Keys<typeof SIZE>;
+type Size = keyof typeof SIZE;
 
 export type PaginationProps = {
   currentPage: number,

@@ -8,9 +8,9 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Placement = $Keys<typeof PLACEMENT>;
-type Size = $Keys<typeof SIZE>;
-type Variant = $Keys<typeof VARIANT>;
+type Placement = keyof typeof PLACEMENT;
+type Size = keyof typeof SIZE;
+type Variant = keyof typeof VARIANT;
 
 export type SelectProps = {
   data: MenuItems,

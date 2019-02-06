@@ -13,7 +13,7 @@ import { PRIMARY_COLOR } from './constants';
 
 import { ThemeObj } from './types';
 
-type PrimaryColor = $Keys<typeof PRIMARY_COLOR>;
+type PrimaryColor = keyof typeof PRIMARY_COLOR;
 type PrimaryColors = Array<PrimaryColor>;
 type ColorRampWithInflection = { [number]: string, inflection?: number };
 type Colors = {

@@ -4,7 +4,7 @@ import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 type StringOrArrayOfStrings = $Keys<T> | Array<$Keys<T> | null>;
 
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
-type GutterWidth = $Keys<typeof GUTTER_WIDTH> | number | string;
+type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 
 export type GridProps = {
   alignItems?: AlignItems;

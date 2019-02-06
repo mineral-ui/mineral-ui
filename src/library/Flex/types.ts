@@ -13,7 +13,7 @@ type StringOrArrayOfStrings = $Keys<T> | Array<$Keys<T> | null>;
 
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
 type Direction = StringOrArrayOfStrings<typeof DIRECTION>;
-type GutterWidth = $Keys<typeof GUTTER_WIDTH> | number | string;
+type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
 
 export type FlexProps = {

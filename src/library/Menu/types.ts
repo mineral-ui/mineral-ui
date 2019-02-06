@@ -19,7 +19,7 @@ export type MenuItemType = {
   text?: React.ReactNode,
   title?: React.ReactNode,
   value?: string,
-  variant?: $Keys<typeof VARIANT>
+  variant?: keyof typeof VARIANT
 };
 export type MenuItems = Array<MenuItemType>;
 
@@ -57,7 +57,7 @@ export type MenuItemProps = {
   onClick?: (event: SyntheticEvent<>) => void,
   render?: MenuItemRenderFn,
   secondaryText?: React.ReactNode,
-  variant?: $Keys<typeof VARIANT>
+  variant?: keyof typeof VARIANT
 };
 
 export type MenuItemPropGetter = (props?: Object) => Object;

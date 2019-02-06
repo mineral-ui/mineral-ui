@@ -7,8 +7,8 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Align = $Keys<typeof ALIGN>;
-type Position = $Keys<typeof POSITION>;
+type Align = keyof typeof ALIGN;
+type Position = keyof typeof POSITION;
 
 export type TabsProps = {
   align?: Align,

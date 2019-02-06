@@ -3,8 +3,8 @@ import { SPACING_SIZE, INSET_SPACING_SIZE } from './constants';
 
 import { StyleValue } from '../styles/types';
 
-type SpacingSize = $Keys<typeof SPACING_SIZE>;
-type InsetSpacingSize = $Keys<typeof INSET_SPACING_SIZE>;
+type SpacingSize = keyof typeof SPACING_SIZE;
+type InsetSpacingSize = keyof typeof INSET_SPACING_SIZE;
 
 export type BoxProps = {
   breakpoints?: Array<number | string>,

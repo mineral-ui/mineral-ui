@@ -14,11 +14,11 @@ export type ButtonGroupProps = {
   defaultChecked?: number | Array<number>,
   disabled?: boolean,
   fullWidth?: boolean,
-  mode?: $Keys<typeof MODE>,
+  mode?: keyof typeof MODE,
   onChange?: (event: SyntheticEvent<HTMLButtonElement>) => void,
   onClick?: (event: SyntheticEvent<HTMLButtonElement>) => void,
-  size?: $Keys<typeof SIZE>,
-  variant?: $Keys<typeof VARIANT>
+  size?: keyof typeof SIZE,
+  variant?: keyof typeof VARIANT
 };
 
 export type ButtonGroupState = {

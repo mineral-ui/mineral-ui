@@ -7,11 +7,11 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type ActionsSize = $Keys<typeof ACTIONS_SIZE>;
-type Appearance = $Keys<typeof APPEARANCE>;
-type Element = $Keys<typeof ELEMENT>;
-type Size = $Keys<typeof SIZE>;
-type Variant = $Keys<typeof VARIANT>;
+type ActionsSize = keyof typeof ACTIONS_SIZE;
+type Appearance = keyof typeof APPEARANCE;
+type Element = keyof typeof ELEMENT;
+type Size = keyof typeof SIZE;
+type Variant = keyof typeof VARIANT;
 
 export type ModifiersContextType = Object | typeof undefined;
 

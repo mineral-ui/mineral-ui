@@ -7,8 +7,8 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type LabelPosition = $Keys<typeof LABEL_POSITION>;
-type Size = $Keys<typeof SIZE>;
+type LabelPosition = keyof typeof LABEL_POSITION;
+type Size = keyof typeof SIZE;
 
 export type RadioProps = {
   checked?: boolean,

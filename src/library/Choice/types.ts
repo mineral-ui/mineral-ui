@@ -7,9 +7,9 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type LabelPosition = $Keys<typeof LABEL_POSITION>;
-type Size = $Keys<typeof SIZE>;
-type Type = $Keys<typeof TYPE>;
+type LabelPosition = keyof typeof LABEL_POSITION;
+type Size = keyof typeof SIZE;
+type Type = keyof typeof TYPE;
 
 export type ChoiceProps = {
   checked?: boolean,

@@ -7,8 +7,8 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Shape = $Keys<typeof SHAPE>;
-type Size = $Keys<typeof SIZE>;
+type Shape = keyof typeof SHAPE;
+type Size = keyof typeof SIZE;
 
 export type AvatarProps = {
   abbr?: string,

@@ -12,7 +12,7 @@ const FROZEN_INTERNAL_TYPE = Object.freeze(INTERNAL_TYPE);
 const FROZEN_PREFIX = Object.freeze(PREFIX);
 
 // [1] These purposefully reference $Values instead of $Keys
-type Align = $Keys<typeof ALIGN>;
+type Align = keyof typeof ALIGN;
 type BaseNavigationProps = {
   align?: Align,
   children?: React.ReactNode,
@@ -36,7 +36,7 @@ type Messages = {
 };
 type Prefix = $Values<typeof FROZEN_PREFIX>; // [1]
 export type PrefixAndType = { prefix: Prefix, type: InternalType };
-type Type = $Keys<typeof TYPE>;
+type Type = keyof typeof TYPE;
 
 export type AnchorEvent = SyntheticEvent<HTMLAnchorElement>;
 

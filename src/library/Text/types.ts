@@ -8,9 +8,9 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Align = $Keys<typeof ALIGN>;
-type Appearance = $Keys<typeof APPEARANCE>;
-type FontWeight = $Keys<typeof FONT_WEIGHT> | number;
+type Align = keyof typeof ALIGN;
+type Appearance = keyof typeof APPEARANCE;
+type FontWeight = keyof typeof FONT_WEIGHT | number;
 
 export type TextProps = {
   align?: Align,

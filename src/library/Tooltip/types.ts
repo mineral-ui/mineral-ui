@@ -7,7 +7,7 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type Placement = $Keys<typeof PLACEMENT>;
+type Placement = keyof typeof PLACEMENT;
 
 export type TooltipProps = {
   children: React.ReactNode,

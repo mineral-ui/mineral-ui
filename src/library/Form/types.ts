@@ -19,7 +19,7 @@ export type FormFieldProps = {
   required?: boolean,
   requiredText?: string | React$Element<*>,
   secondaryText?: string | React$Element<*>,
-  variant?: $Keys<typeof VARIANT>
+  variant?: keyof typeof VARIANT
 };
 
 export type FormFieldDefaultProps = {

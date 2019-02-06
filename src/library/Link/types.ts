@@ -10,7 +10,7 @@ import {
 export type LinkProps = {
   children?: React.ReactNode,
   href?: string,
-  variant?: $Keys<typeof VARIANT>
+  variant?: keyof typeof VARIANT
 };
 
 export type LinkThemeFn = ComponentThemeFn<LinkTheme>;

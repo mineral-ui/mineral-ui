@@ -7,9 +7,9 @@ import {
   ThemeValue
 } from '../themes/types';
 
-type ColumnAlign = $Keys<typeof COLUMN_ALIGN>;
-type Density = $Keys<typeof DENSITY>;
-type TitleElement = $Keys<typeof TITLE_ELEMENT>;
+type ColumnAlign = keyof typeof COLUMN_ALIGN;
+type Density = keyof typeof DENSITY;
+type TitleElement = keyof typeof TITLE_ELEMENT;
 
 export type TableProps = {
   columns?: Columns,
