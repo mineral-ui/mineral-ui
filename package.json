@@ -38,7 +38,8 @@
     "release": "npm run build && npm run build:package && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
     "start": "webpack-dev-server --progress",
-    "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage --maxWorkers=2"
+    "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage --maxWorkers=2",
+    "typecheck": "tsc"
   },
   "config": {
     "commitizen": {
@@ -74,15 +75,19 @@
     "@babel/preset-env": "7.1.6",
     "@babel/preset-flow": "7.0.0",
     "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.1.0",
     "@emotion/babel-preset-css-prop": "10.0.7",
     "@emotion/core": "10.0.7",
     "@emotion/is-prop-valid": "0.7.3",
     "@emotion/styled": "10.0.7",
+    "@types/react": "16.8.1",
+    "@types/react-dom": "16.0.11",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
     "babel-plugin-dynamic-import-node": "2.2.0",
+    "babel-plugin-flow-to-typescript": "steelbrain/babel-plugin-flow-to-typescript",
     "babel-plugin-module-resolver": "3.1.1",
     "babel-plugin-polished": "1.1.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.20",
@@ -145,6 +150,7 @@
     "rimraf": "2.6.2",
     "style-loader": "0.23.1",
     "svgo": "1.1.1",
+    "typescript": "3.3.1",
     "validate-commit-msg": "2.14.0",
     "webpack": "4.26.1",
     "webpack-bundle-analyzer": "3.0.3",

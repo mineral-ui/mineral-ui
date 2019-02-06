@@ -28,8 +28,8 @@ const config = {
           debug: Boolean(DEBUG)
         }
       ],
-      '@babel/preset-react',
-      '@babel/preset-flow'
+      '@babel/typescript',
+      '@babel/preset-react'
     ];
 
     if (!isTest && !isHappo) {
