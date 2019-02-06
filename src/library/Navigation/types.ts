@@ -8,10 +8,7 @@ import {
 } from '../themes/types';
 import { MenuItemRenderFn, MenuItemType } from '../Menu/types';
 
-const FROZEN_INTERNAL_TYPE = Object.freeze(INTERNAL_TYPE);
-const FROZEN_PREFIX = Object.freeze(PREFIX);
-
-// [1] These purposefully reference $Values instead of $Keys
+// [1] These purposefully reference enum values instead of keys
 type Align = keyof typeof ALIGN;
 type BaseNavigationProps = {
   align?: Align,
@@ -27,14 +24,14 @@ type BaseNavigationProps = {
   overflowAtIndex?: number,
   selectedIndex?: number
 };
-type InternalType = $Values<typeof FROZEN_INTERNAL_TYPE>; // [1]
+type InternalType = INTERNAL_TYPE[keyof INTERNAL_TYPE]; // [1]
 type ItemElement = React.ReactElement<any> | string;
 export type NavigationItems = Array<NavigationItem>;
 type Messages = {
   moreLabel: string,
   moreText: string
 };
-type Prefix = $Values<typeof FROZEN_PREFIX>; // [1]
+type Prefix = PREFIX[keyof PREFIX]; // [1]
 export type PrefixAndType = { prefix: Prefix, type: InternalType };
 type Type = keyof typeof TYPE;
 
