@@ -3,12 +3,12 @@ import { ThemeObj } from '../themes/types';
 import { StyleObj, StyleValue } from './types';
 
 type Breakpoints = Array<number | string>;
-type MapValueToProperty = (string, StyleValue) => StyleValue;
+type MapValueToProperty = (property: string, value: StyleValue) => StyleValue;
 type MaybeArrayStyles = {
-  [string]: Array<StyleValue> | StyleValue
+  [property: string]: Array<StyleValue> | StyleValue
 };
 
-type GetResponsiveStyles = ({
+type GetResponsiveStyles = ({}: { // FIXME: Is this idiomatic typescript?
   breakpoints?: Breakpoints,
   mapValueToProperty?: MapValueToProperty,
   styles: MaybeArrayStyles,

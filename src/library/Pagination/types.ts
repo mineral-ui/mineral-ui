@@ -49,13 +49,13 @@ export type PagesProps = {
 
 export type IncrementButtonProps = PagesProps & {
   direction: string,
-  focusedNodeWhenDisabled: ?HTMLButtonElement
+  focusedNodeWhenDisabled: HTMLButtonElement | null | undefined
 };
 
 export type PageJumperProps = {
   'aria-label'?: string,
   currentPage: number,
-  inputRef: (node: ?HTMLInputElement) => void,
+  inputRef: (node: HTMLInputElement | null | undefined) => void,
   messages: PageJumperMessages,
   onPageChange: (currentPage: number) => void,
   size?: Size,
@@ -74,15 +74,15 @@ export type PageSizerProps = {
   totalPages: number
 };
 
-export type PaginationMessages = {|
+export type PaginationMessages = {
   category?: string,
   label: string,
   pages?: PagesMessages,
   pageJumper?: PageJumperMessages,
-  pageSizer?: $Diff<PageSizerMessages, { category: string }>
-|};
+  pageSizer?: PageSizerMessagesWithoutCategory
+};
 
-type PagesMessages = {|
+type PagesMessages = {
   pageLabel: (
     isCurrentPage: boolean,
     isLastPage: boolean,
@@ -90,15 +90,14 @@ type PagesMessages = {|
   ) => string,
   next: string,
   previous: string
-|};
+};
 
-type PageJumperMessages = {|
+type PageJumperMessages = {
   label: string,
   placeholder: string
-|};
+};
 
-type PageSizerMessages = {|
-  category: string,
+type PageSizerMessagesWithoutCategory = {
   status: (
     category: string,
     first: number,
@@ -106,7 +105,9 @@ type PageSizerMessages = {|
     total: number
   ) => string,
   itemText: (pageSize: number) => string
-|};
+};
+
+type PageSizerMessages = PageSizerMessagesWithoutCategory & { category: string };
 
 export type PaginationThemeFn = ComponentThemeFn<PaginationTheme>;
 export type PaginationTheme = ComponentTheme<PaginationThemeKeys>;

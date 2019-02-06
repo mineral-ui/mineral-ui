@@ -15,32 +15,25 @@ type GetCommonStyles = (
   truncate: boolean | number | string
 ) => StyleObj;
 
-const getCommonStyles: GetCommonStyles = (as, theme, truncate) => {
-  let styles = {
-    marginBottom: 0,
-    marginTop: 0
-  };
+const getCommonStyles: GetCommonStyles = (as, theme, truncate) => ({
+  marginBottom: 0,
+  marginTop: 0,
+  
+  ...(truncate ? {
+    // These styles from polished's ellipsis, which we cannot use here
+    // because the dynamic width means the output can't be extracted at
+    // build time.
+    maxWidth: truncate === true ? '100%' : truncate,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    wordWrap: 'normal'
+  } : undefined),
 
-  if (truncate) {
-    styles = {
-      ...styles,
-      // These styles from polished's ellipsis, which we cannot use here
-      // because the dynamic width means the output can't be extracted at
-      // build time.
-      maxWidth: truncate === true ? '100%' : truncate,
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      whiteSpace: 'nowrap',
-      wordWrap: 'normal'
-    };
-  }
-
-  if (MONOSPACE_ELEMENTS.indexOf(as) !== -1) {
-    (styles: Object).fontFamily = theme.fontFamily_monospace;
-  }
-
-  return styles;
-};
+  ...(MONOSPACE_ELEMENTS.indexOf(as) !== -1 ? {
+    fontFamily: theme.fontFamily_monospace
+  } : undefined)
+});
 
 export const TextRoot = styled('p', {
   shouldForwardProp: (prop) =>

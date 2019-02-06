@@ -37,7 +37,7 @@ export type TextProviderDefaultProps = TextDefaultProps & {
 
 export type ElementContextType = string | null;
 
-export type TextWithThemeOverrides = ({
+export type TextWithThemeOverrides = ({}: { // FIXME: idiomatic?
   appearance?: string,
   as?: string,
   children: React.ReactNode,
