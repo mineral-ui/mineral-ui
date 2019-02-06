@@ -1,7 +1,7 @@
 /* @flow */
 import { MODE, SIZE, VARIANT } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react';
 import { LABEL_POSITION, SIZE } from './constants';
 import { ChoiceRoot as Root, Control, Input, Text } from './styled';
 
-import type { ChoiceDefaultProps, ChoiceProps } from './types';
+import { ChoiceDefaultProps, ChoiceProps } from './types';
 
 export default class Choice extends PureComponent<ChoiceProps> {
   static displayName = 'Choice';

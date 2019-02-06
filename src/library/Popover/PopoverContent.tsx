@@ -6,7 +6,7 @@ import Popper from './RtlPopper';
 import { PopoverContentWrapper, PopoverBlock, PopoverTitle } from './styled';
 import { ARROW_SIZE } from './constants';
 
-import type { PopoverContentProps } from './types';
+import { PopoverContentProps } from './types';
 
 class PopoverContent extends Component<PopoverContentProps> {
   static displayName = 'PopoverContent';

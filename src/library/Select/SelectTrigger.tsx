@@ -11,7 +11,7 @@ import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import { SelectTriggerRoot as Root, Trigger, TriggerContent } from './styled';
 import { SIZE } from './constants';
 
-import type { SelectTriggerProps } from './types';
+import { SelectTriggerProps } from './types';
 
 const variantIcons = {
   danger: <IconDanger />,

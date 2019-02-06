@@ -4,7 +4,7 @@ import withForwardRef from '../utils/withForwardRef';
 import Popper from '../Popover/RtlPopper';
 import { DropdownContentWrapper } from './styled';
 
-import type { DropdownContentProps } from './types';
+import { DropdownContentProps } from './types';
 
 class DropdownContent extends Component<DropdownContentProps> {
   static displayName = 'DropdownContent';

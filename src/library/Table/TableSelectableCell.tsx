@@ -5,7 +5,7 @@ import TableHeaderCell from './TableHeaderCell';
 import TableContext from './TableContext';
 import { PaddedCheckbox } from './styled';
 
-import type { TableSelectableCellProps } from './types';
+import { TableSelectableCellProps } from './types';
 
 export default class TableSelectableCell extends Component<TableSelectableCellProps> {
   static displayName = 'TableSelectableCell';

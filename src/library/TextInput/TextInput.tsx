@@ -4,7 +4,7 @@ import { TextInputRoot as Root, Input } from './styled';
 import { SIZE, TYPE } from './constants';
 
 import { textInputPropTypes } from './propTypes';
-import type { TextInputDefaultProps, TextInputProps } from './types';
+import { TextInputDefaultProps, TextInputProps } from './types';
 
 const TextInput = (props: TextInputProps) => {
   const {

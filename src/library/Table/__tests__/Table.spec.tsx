@@ -17,7 +17,7 @@ import TableSortableHeaderCell from '../TableSortableHeaderCell';
 import examples from '../../../website/app/demos/Table/Table/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
-import type { RenderFn } from '../types';
+import { RenderFn } from '../types';
 
 const defaultProps = {
   data: [

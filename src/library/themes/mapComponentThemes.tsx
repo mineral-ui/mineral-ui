@@ -1,5 +1,5 @@
 /* @flow */
-import type { ThemeObj } from '../themes/types';
+import { ThemeObj } from '../themes/types';
 /**
  * Generates a new component theme based on the theme of another component.
  *

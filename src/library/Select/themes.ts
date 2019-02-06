@@ -3,7 +3,7 @@ import { mapComponentThemes } from '../themes';
 import { dropdownTheme } from '../Dropdown';
 import { textInputTheme } from '../TextInput';
 
-import type { SelectThemeFn, SelectTriggerThemeFn } from './types';
+import { SelectThemeFn, SelectTriggerThemeFn } from './types';
 
 // $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const selectTheme: SelectThemeFn = (baseTheme) =>

@@ -5,7 +5,7 @@ import { findAllByType } from '../utils/children';
 import { DialogActionsRoot as Root } from './styled';
 
 import { dialogActionsPropTypes } from './propTypes';
-import type { DialogActionsProps } from './types';
+import { DialogActionsProps } from './types';
 
 const DialogActions = (props: DialogActionsProps) => {
   const { children, variant, ...rootProps } = props;

@@ -13,8 +13,8 @@ import { PLACEMENT, SIZE } from './constants';
 import { SelectRoot as Root, contentWidthModifier } from './styled';
 
 import { selectPropTypes } from './propTypes';
-import type { MenuItemType, MenuItems } from '../Menu/types';
-import type {
+import { MenuItemType, MenuItems } from '../Menu/types';
+import {
   SelectDefaultProps,
   SelectProps,
   SelectPropGetter,

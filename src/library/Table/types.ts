@@ -1,7 +1,7 @@
 /* @flow */
 import { COLUMN_ALIGN, DENSITY, TITLE_ELEMENT } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

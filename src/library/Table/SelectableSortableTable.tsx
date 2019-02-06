@@ -3,7 +3,7 @@ import React from 'react';
 import Selectable from './Selectable';
 import SortableTable from './SortableTable';
 
-import type { SelectableSortableTableProps } from './types';
+import { SelectableSortableTableProps } from './types';
 
 const SelectableSortableTable = (props: SelectableSortableTableProps) => {
   const { data, selectableRows } = props;

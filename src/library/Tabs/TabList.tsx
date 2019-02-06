@@ -14,7 +14,7 @@ import {
 } from './styled';
 import { POSITION } from './constants';
 
-import type { TabListDefaultProps, TabListProps, TabListState } from './types';
+import { TabListDefaultProps, TabListProps, TabListState } from './types';
 
 export default class TabList extends Component<TabListProps, TabListState> {
   static displayName = 'TabList';

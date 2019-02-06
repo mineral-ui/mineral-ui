@@ -4,7 +4,7 @@ import { FlexItem } from '../Flex';
 import { FormField } from '../Form';
 import Select from '../Select';
 
-import type { PageSizerProps } from './types';
+import { PageSizerProps } from './types';
 
 export default class PageSizer extends PureComponent<PageSizerProps> {
   static displayName = 'PageSizer';

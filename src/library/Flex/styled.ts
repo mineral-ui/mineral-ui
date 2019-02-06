@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { getResponsiveStyles } from '../styles';
 import Box from '../Box';
 
-import type { StyleValue } from '../styles/types';
+import { StyleValue } from '../styles/types';
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;

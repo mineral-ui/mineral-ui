@@ -2,7 +2,7 @@
 import React, { forwardRef } from 'react';
 import { PopoverArrowRoot as Root } from './styled';
 
-import type { PopoverArrowProps } from './types';
+import { PopoverArrowProps } from './types';
 
 const PopoverArrow = forwardRef<PopoverArrowProps, HTMLElement>(
   (props: PopoverArrowProps, ref: React$Ref<*>) => {

@@ -1,5 +1,5 @@
 /* @flow */
-import type { Rows, TableProps } from './types';
+import { Rows, TableProps } from './types';
 
 export const getColumns = ({ columns, data }: TableProps) => {
   return (

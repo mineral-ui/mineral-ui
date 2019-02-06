@@ -4,7 +4,7 @@ import { AvatarRoot as Root } from './styled';
 import { ICON_SIZE, SHAPE, SIZE } from './constants';
 
 import { avatarPropTypes } from './propTypes';
-import type { AvatarDefaultProps, AvatarProps } from './types';
+import { AvatarDefaultProps, AvatarProps } from './types';
 
 export default class Avatar extends Component<AvatarProps> {
   static displayName = 'Avatar';

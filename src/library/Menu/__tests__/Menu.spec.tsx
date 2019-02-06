@@ -6,7 +6,7 @@ import Menu from '../Menu';
 import examples from '../../../website/app/demos/Menu/Menu/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
-import type { MenuItems } from '../types';
+import { MenuItems } from '../types';
 
 const data: MenuItems = [{ text: 'Item 1' }, { text: 'Item 2' }];
 

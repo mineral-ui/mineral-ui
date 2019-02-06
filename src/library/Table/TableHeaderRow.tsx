@@ -6,7 +6,7 @@ import TableHeaderCell from './TableHeaderCell';
 import TableSortableHeaderCell from './TableSortableHeaderCell';
 import TableRow from './TableRow';
 
-import type { TableHeaderRowProps } from './types';
+import { TableHeaderRowProps } from './types';
 
 export default class TableHeaderRow extends Component<TableHeaderRowProps> {
   static displayName = 'TableHeaderRow';

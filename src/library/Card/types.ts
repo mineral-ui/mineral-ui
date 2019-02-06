@@ -1,8 +1,8 @@
 /* @flow */
 import { VARIANT } from './constants';
 
-import type { MenuItems } from '../Menu/types';
-import type {
+import { MenuItems } from '../Menu/types';
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

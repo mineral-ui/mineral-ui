@@ -3,7 +3,7 @@ import React from 'react';
 import { CardBlockRoot as Root, CardBlockInner as Inner } from './styled';
 
 import { cardBlockPropTypes } from './propTypes';
-import type { CardBlockProps } from './types';
+import { CardBlockProps } from './types';
 
 export default function CardBlock(props: CardBlockProps) {
   const { children, ...restProps } = props;

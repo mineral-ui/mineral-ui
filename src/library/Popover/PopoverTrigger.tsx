@@ -4,7 +4,7 @@ import { Reference } from 'react-popper';
 import withForwardRef from '../utils/withForwardRef';
 import { PopoverTriggerWrapper } from './styled';
 
-import type { PopoverTriggerProps } from './types';
+import { PopoverTriggerProps } from './types';
 
 class PopoverTrigger extends Component<PopoverTriggerProps> {
   static displayName = 'PopoverTrigger';

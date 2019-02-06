@@ -1,5 +1,5 @@
 /* @flow */
-import type { ThemeObj } from '../themes/types';
+import { ThemeObj } from '../themes/types';
 
 export type Styles = StyleObj | StyleArray | StyleFn;
 export type StyleArray = Array<StyleObj>;

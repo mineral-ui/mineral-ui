@@ -1,8 +1,8 @@
 /* @flow */
 import { PLACEMENT, SIZE, VARIANT } from './constants';
 
-import type { MenuItemType, MenuItems } from '../Menu/types';
-import type {
+import { MenuItemType, MenuItems } from '../Menu/types';
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

@@ -1,7 +1,7 @@
 /* @flow */
 import { ALIGN, POSITION } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

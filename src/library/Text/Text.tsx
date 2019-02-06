@@ -5,7 +5,7 @@ import TextProvider from './TextProvider';
 import { APPEARANCE } from './constants';
 
 import { textPropTypes } from './propTypes';
-import type { TextDefaultProps, TextProps } from './types';
+import { TextDefaultProps, TextProps } from './types';
 
 export default class Text extends Component<TextProps> {
   static displayName = 'Text';

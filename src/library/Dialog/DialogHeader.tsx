@@ -5,7 +5,7 @@ import { DialogHeaderRoot as Root } from './styled';
 import DialogTitle from './DialogTitle';
 
 import { dialogHeaderPropTypes } from './propTypes';
-import type { DialogHeaderProps } from './types';
+import { DialogHeaderProps } from './types';
 
 const DialogHeader = (props: DialogHeaderProps) => {
   const { children, closeButton, titleProps, ...rootProps } = props;

@@ -3,7 +3,7 @@ import React from 'react';
 import { Popper } from 'react-popper';
 import { withTheme } from 'emotion-theming';
 
-import type { RtlPopperProps } from './types';
+import { RtlPopperProps } from './types';
 
 const getRtlPlacement = (placement: string) => {
   const rtlPlacementMap = {

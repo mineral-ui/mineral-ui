@@ -5,7 +5,7 @@ import { SIZE } from '../Button/constants';
 import { CardAction as Action, CardActionsRoot as Root } from './styled';
 
 import { cardActionsPropTypes } from './propTypes';
-import type { CardActionsProps } from './types';
+import { CardActionsProps } from './types';
 
 export default function CardActions(props: CardActionsProps) {
   const { children, ...restProps } = props;

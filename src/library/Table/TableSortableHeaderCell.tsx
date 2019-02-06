@@ -12,7 +12,7 @@ import {
 } from './styled';
 import { SORT } from './constants';
 
-import type { TableSortableHeaderCellProps } from './types';
+import { TableSortableHeaderCellProps } from './types';
 
 const iconProps = {
   'aria-hidden': true,

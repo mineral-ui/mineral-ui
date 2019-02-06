@@ -3,7 +3,7 @@ import React from 'react';
 import { FormFieldDividerRoot as Root } from './styled';
 
 import { formFieldDividerPropTypes } from './propTypes';
-import type { FormFieldDividerProps } from './types';
+import { FormFieldDividerProps } from './types';
 
 const FormFieldDivider = (props: FormFieldDividerProps) => (
   <Root {...props} role="separator" />

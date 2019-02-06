@@ -6,7 +6,7 @@ import {
   PageJumperNumberInput as NumberInput
 } from './styled';
 
-import type { PageJumperProps } from './types';
+import { PageJumperProps } from './types';
 
 export default class PageJumper extends PureComponent<PageJumperProps> {
   static displayName = 'PageJumper';

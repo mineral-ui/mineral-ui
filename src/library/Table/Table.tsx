@@ -15,7 +15,7 @@ import {
 import { DENSITY, TITLE_ELEMENT } from './constants';
 
 import { tablePropTypes } from './propTypes';
-import type {
+import {
   Columns,
   Comparators,
   Rows,

@@ -5,7 +5,7 @@ import TableContext from './TableContext';
 import { TableHeaderCellRoot as Root } from './styled';
 import { COLUMN_ALIGN } from './constants';
 
-import type {
+import {
   TableHeaderCellDefaultProps,
   TableHeaderCellProps
 } from './types';

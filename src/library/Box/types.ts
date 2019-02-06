@@ -1,7 +1,7 @@
 /* @flow */
 import { SPACING_SIZE, INSET_SPACING_SIZE } from './constants';
 
-import type { StyleValue } from '../styles/types';
+import { StyleValue } from '../styles/types';
 
 type SpacingSize = $Keys<typeof SPACING_SIZE>;
 type InsetSpacingSize = $Keys<typeof INSET_SPACING_SIZE>;

@@ -1,5 +1,5 @@
 /* @flow */
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

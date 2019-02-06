@@ -5,7 +5,7 @@ import { IconRoot as Root } from './styled';
 import { SIZE } from './constants';
 
 import { iconPropTypes } from './propTypes';
-import type { IconDefaultProps, IconProps } from './types';
+import { IconDefaultProps, IconProps } from './types';
 
 export default class Icon extends Component<IconProps> {
   static displayName = 'Icon';

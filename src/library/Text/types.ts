@@ -1,7 +1,7 @@
 /* @flow */
 import { ALIGN, APPEARANCE, FONT_WEIGHT } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeObj,

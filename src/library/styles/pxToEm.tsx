@@ -1,5 +1,5 @@
 /* @flow */
-import type { PxToEm } from './types';
+import { PxToEm } from './types';
 
 /**
  * Helper to convert a px value to ems, relative to the base font size

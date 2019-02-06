@@ -9,7 +9,7 @@ import {
 } from './styled';
 
 import { formFieldPropTypes } from './propTypes';
-import type { FormFieldDefaultProps, FormFieldProps } from './types';
+import { FormFieldDefaultProps, FormFieldProps } from './types';
 
 const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
 

@@ -2,7 +2,7 @@
 import { Component } from 'react';
 import deepEqual from 'react-fast-compare';
 
-import type { SelectableItem, SelectableProps, SelectableState } from './types';
+import { SelectableItem, SelectableProps, SelectableState } from './types';
 
 export default class Selectable extends Component<
   SelectableProps,

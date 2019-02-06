@@ -4,7 +4,7 @@ import { GridRoot as Root } from './styled';
 import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
 import { gridPropTypes } from './propTypes';
-import type { GridDefaultProps, GridProps } from './types';
+import { GridDefaultProps, GridProps } from './types';
 
 const getGridItems = ({ breakpoints, children, columns, gutterWidth }) =>
   Children.map(children, (child) =>

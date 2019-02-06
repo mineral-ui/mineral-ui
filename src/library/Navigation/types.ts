@@ -1,12 +1,12 @@
 /* @flow */
 import { ALIGN, INTERNAL_TYPE, PREFIX, TYPE } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue
 } from '../themes/types';
-import type { MenuItemRenderFn, MenuItemType } from '../Menu/types';
+import { MenuItemRenderFn, MenuItemType } from '../Menu/types';
 
 const FROZEN_INTERNAL_TYPE = Object.freeze(INTERNAL_TYPE);
 const FROZEN_PREFIX = Object.freeze(PREFIX);

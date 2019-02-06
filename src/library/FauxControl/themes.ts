@@ -1,7 +1,7 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
-import type { FauxControlThemeFn } from './types';
+import { FauxControlThemeFn } from './types';
 
 // prettier-ignore
 export const fauxControlTheme: FauxControlThemeFn = (baseTheme) => ({

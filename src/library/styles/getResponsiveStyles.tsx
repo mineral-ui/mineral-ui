@@ -1,6 +1,6 @@
 /* @flow */
-import type { ThemeObj } from '../themes/types';
-import type { StyleObj, StyleValue } from './types';
+import { ThemeObj } from '../themes/types';
+import { StyleObj, StyleValue } from './types';
 
 type Breakpoints = Array<number | string>;
 type MapValueToProperty = (string, StyleValue) => StyleValue;

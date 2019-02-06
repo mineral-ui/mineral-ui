@@ -3,7 +3,7 @@ import React, { Children } from 'react';
 import Flex, { FlexItem } from '../Flex';
 import { JUSTIFY_CONTENT } from '../Flex/constants';
 
-import type { StartEndProps } from './types';
+import { StartEndProps } from './types';
 
 export default function StartEnd(props: StartEndProps) {
   const {

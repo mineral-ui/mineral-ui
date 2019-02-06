@@ -3,7 +3,7 @@ import React, { Children, cloneElement, createElement } from 'react';
 import { ChoiceGroupRoot as Root } from './styled';
 import { SIZE, TYPE } from './constants';
 
-import type { ChoiceGroupDefaultProps, ChoiceGroupProps } from './types';
+import { ChoiceGroupDefaultProps, ChoiceGroupProps } from './types';
 
 const isChecked = (checked: string | Array<string>, value) => {
   return Array.isArray(checked)

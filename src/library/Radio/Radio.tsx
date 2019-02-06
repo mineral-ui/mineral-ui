@@ -5,7 +5,7 @@ import { RadioRoot as Root } from './styled';
 import { LABEL_POSITION, SIZE } from './constants';
 
 import { radioPropTypes } from './propTypes';
-import type { RadioDefaultProps, RadioProps } from './types';
+import { RadioDefaultProps, RadioProps } from './types';
 
 export default class Radio extends PureComponent<RadioProps> {
   static displayName = 'Radio';

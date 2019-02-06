@@ -9,7 +9,7 @@ import {
   PagesEllipsisButton as EllipsisButton
 } from './styled';
 
-import type { IncrementButtonProps, PagesProps } from './types';
+import { IncrementButtonProps, PagesProps } from './types';
 
 const firstPage = (current) => current === 1;
 const lastPage = (current, total) => current === total;

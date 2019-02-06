@@ -1,7 +1,7 @@
 /* @flow */
 import { SIZE, LABEL_POSITION } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

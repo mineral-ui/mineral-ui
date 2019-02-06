@@ -1,7 +1,7 @@
 /* @flow */
 import mineralTheme from './mineralTheme';
 
-import type { ThemeObj, Theme } from './types';
+import { ThemeObj, Theme } from './types';
 
 const filterKeys = (source: ThemeObj, exclusions: Array<string>) => {
   return exclusions.length

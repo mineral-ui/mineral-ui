@@ -6,7 +6,7 @@ import { TextAreaRoot as Root, Input } from './styled';
 import { SIZE, SIZE_TO_ROWS } from './constants';
 
 import { textAreaPropTypes } from './propTypes';
-import type { TextAreaDefaultProps, TextAreaProps } from './types';
+import { TextAreaDefaultProps, TextAreaProps } from './types';
 
 export default class TextArea extends Component<TextAreaProps> {
   static displayName = 'TextArea';

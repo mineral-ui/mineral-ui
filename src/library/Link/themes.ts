@@ -1,5 +1,5 @@
 /* @flow */
-import type { LinkThemeFn } from './types';
+import { LinkThemeFn } from './types';
 
 export const linkTheme: LinkThemeFn = (baseTheme) => ({
   Link_borderColor_focus: baseTheme.borderColor_theme_focus,

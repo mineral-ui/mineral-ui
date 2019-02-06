@@ -1,7 +1,7 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
-import type {
+import {
   CardThemeFn,
   CardActionsThemeFn,
   CardBlockThemeFn,

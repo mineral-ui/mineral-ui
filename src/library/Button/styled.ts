@@ -6,7 +6,7 @@ import { componentStyleReset, getNormalizedValue } from '../styles';
 import { SIZE } from './constants';
 import { buttonTheme } from './themes';
 
-import type { ButtonProps } from './types';
+import { ButtonProps } from './types';
 
 const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
   if (disabled) {

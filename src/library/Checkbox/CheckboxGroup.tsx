@@ -4,7 +4,7 @@ import Checkbox from './Checkbox';
 import { CheckboxGroupRoot as Root } from './styled';
 
 import { checkboxGroupPropTypes } from './propTypes';
-import type { CheckboxGroupProps } from './types';
+import { CheckboxGroupProps } from './types';
 
 const CheckboxGroup = (props: CheckboxGroupProps) => {
   const { rootProps: otherRootProps, ...restProps } = props;

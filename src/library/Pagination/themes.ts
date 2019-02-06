@@ -1,5 +1,5 @@
 /* @flow */
-import type { PaginationThemeFn } from './types';
+import { PaginationThemeFn } from './types';
 
 export const paginationTheme: PaginationThemeFn = (baseTheme) => ({
   PaginationPageJumper_width: '4.65em',

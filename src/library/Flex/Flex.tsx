@@ -12,7 +12,7 @@ import {
 import { FlexRoot as Root } from './styled';
 
 import { flexPropTypes } from './propTypes';
-import type { FlexDefaultProps, FlexProps } from './types';
+import { FlexDefaultProps, FlexProps } from './types';
 
 const getGutterSize = (
   theme: Object,

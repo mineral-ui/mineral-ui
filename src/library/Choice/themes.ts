@@ -1,7 +1,7 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
-import type { ChoiceThemeFn, ChoiceGroupThemeFn } from './types';
+import { ChoiceThemeFn, ChoiceGroupThemeFn } from './types';
 
 export const choiceTheme: ChoiceThemeFn = (baseTheme) => {
   const colors = {

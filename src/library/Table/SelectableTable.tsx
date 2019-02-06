@@ -3,7 +3,7 @@ import React from 'react';
 import Selectable from './Selectable';
 import TableBase from './TableBase';
 
-import type { SelectableTableProps } from './types';
+import { SelectableTableProps } from './types';
 
 const SelectableTable = (props: SelectableTableProps) => {
   const { data, selectableRows } = props;

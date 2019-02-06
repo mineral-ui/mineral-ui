@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { createPortal } from 'react-dom';
 import { canUseDOM } from 'exenv';
 
-import type { PortalProps } from './types';
+import { PortalProps } from './types';
 
 export default class Portal extends Component<PortalProps> {
   static displayName = 'Portal';

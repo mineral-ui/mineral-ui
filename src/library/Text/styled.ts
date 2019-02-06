@@ -6,8 +6,8 @@ import { componentStyleReset } from '../styles';
 import { textTheme } from './themes';
 import { APPEARANCE, HEADING_ELEMENTS, MONOSPACE_ELEMENTS } from './constants';
 
-import type { StyleObj } from '../styles/types';
-import type { TextTheme } from './types';
+import { StyleObj } from '../styles/types';
+import { TextTheme } from './types';
 
 type GetCommonStyles = (
   as: string,

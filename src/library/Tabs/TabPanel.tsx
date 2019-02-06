@@ -5,7 +5,7 @@ import {
   TabPanelOverflowContainer as OverflowContainer
 } from './styled';
 
-import type { TabPanelProps } from './types';
+import { TabPanelProps } from './types';
 
 export default class TabPanel extends Component<TabPanelProps> {
   static displayName = 'TabPanel';

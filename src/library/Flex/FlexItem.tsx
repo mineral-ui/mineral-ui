@@ -4,7 +4,7 @@ import { FlexItemRoot as Root } from './styled';
 import Flex from './Flex';
 
 import { flexItemPropTypes } from './propTypes';
-import type { FlexItemDefaultProps, FlexItemProps } from './types';
+import { FlexItemDefaultProps, FlexItemProps } from './types';
 
 export default function FlexItem({ flex, ...restProps }: FlexItemProps) {
   const rootProps = {

@@ -1,6 +1,6 @@
 /* @flow */
 
-import type { DropdownThemeFn, DropdownContentThemeFn } from './types';
+import { DropdownThemeFn, DropdownContentThemeFn } from './types';
 
 export const dropdownTheme: DropdownThemeFn = (baseTheme) => ({
   ...dropdownContentTheme(baseTheme),

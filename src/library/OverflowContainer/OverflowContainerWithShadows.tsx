@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 import { OverflowContainerWithShadowsRoot as Root } from './styled';
 import Scroller from './Scroller';
 
-import type {
+import {
   OverflowContainerWithShadowsProps,
   OverflowContainerWithShadowsState
 } from './types';

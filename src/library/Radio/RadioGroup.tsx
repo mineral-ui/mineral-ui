@@ -4,7 +4,7 @@ import Radio from './Radio';
 import { RadioGroupRoot as Root } from './styled';
 
 import { radioGroupPropTypes } from './propTypes';
-import type { RadioGroupProps } from './types';
+import { RadioGroupProps } from './types';
 
 const RadioGroup = (props: RadioGroupProps) => {
   const { rootProps: otherRootProps, ...restProps } = props;

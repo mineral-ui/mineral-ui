@@ -1,5 +1,5 @@
 /* @flow */
-import type { AvatarThemeFn } from './types';
+import { AvatarThemeFn } from './types';
 
 export const avatarTheme: AvatarThemeFn = (baseTheme) => ({
   Avatar_fontSize_small: baseTheme.fontSize_mouse,

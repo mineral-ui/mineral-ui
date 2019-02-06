@@ -27,7 +27,7 @@ import DialogHeader from './DialogHeader';
 import DialogTitle from './DialogTitle';
 
 import { dialogPropTypes } from './propTypes';
-import type { DialogDefaultProps, DialogProps, DialogState } from './types';
+import { DialogDefaultProps, DialogProps, DialogState } from './types';
 
 const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
   return (

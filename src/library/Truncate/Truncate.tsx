@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
 import { TruncateRoot as Root, Tooltip } from './styled';
 
-import type { TruncateProps, TruncateState } from './types';
+import { TruncateProps, TruncateState } from './types';
 
 export default class Truncate extends PureComponent<
   TruncateProps,

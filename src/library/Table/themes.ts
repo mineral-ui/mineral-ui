@@ -3,7 +3,7 @@ import { mapComponentThemes } from '../themes';
 import { pxToEm } from '../styles';
 import { overflowContainerTheme } from '../OverflowContainer/themes';
 
-import type {
+import {
   TableCellThemeFn,
   TableHeaderThemeFn,
   TableHeaderCellThemeFn,

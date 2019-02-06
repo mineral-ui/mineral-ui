@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { componentStyleReset, getResponsiveStyles } from '../styles';
 import { SPACING_TYPES } from './constants';
 
-import type { SpacingStyles, SpacingValue } from './types';
+import { SpacingStyles, SpacingValue } from './types';
 
 const getMeasurement = (value: number | string) =>
   typeof value === 'number' && value < 1 && value !== 0

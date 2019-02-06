@@ -4,7 +4,7 @@ import withProps from 'recompose/withProps';
 import { getResponsiveStyles } from '../styles';
 import Flex, { FlexItem } from '../Flex';
 
-import type { StyleValue } from '../styles/types';
+import { StyleValue } from '../styles/types';
 
 export const GridRoot = withProps({ wrap: true })(
   styled(Flex, {

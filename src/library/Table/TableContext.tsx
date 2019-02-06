@@ -1,7 +1,7 @@
 /* @flow */
 import { createContext } from 'react';
 
-import type { TableContextType } from './types';
+import { TableContextType } from './types';
 
 const TableContext: React$Context<TableContextType> = createContext({});
 

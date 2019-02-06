@@ -12,7 +12,7 @@ import { PopoverRoot as Root } from './styled';
 import { PLACEMENT } from './constants';
 
 import { popoverPropTypes } from './propTypes';
-import type {
+import {
   PopoverDefaultProps,
   PopoverProps,
   PopoverPropGetter,

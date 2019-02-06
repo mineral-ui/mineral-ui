@@ -4,7 +4,7 @@ import { withTheme } from 'emotion-theming';
 import Text, { textWithThemeOverrides } from '../Text';
 import { TableTitleRoot as Root } from './styled';
 
-import type { TableTitleProps } from './types';
+import { TableTitleProps } from './types';
 
 const TableTitle = ({ as, hide, id, theme, ...restProps }: TableTitleProps) => {
   const rootProps = {

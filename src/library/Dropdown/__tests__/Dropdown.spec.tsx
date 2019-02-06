@@ -9,8 +9,8 @@ import { MenuItem } from '../../Menu';
 import examples from '../../../website/app/demos/Dropdown/Dropdown/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
-import type { MenuItems } from '../../Menu/types';
-import type { DropdownRenderFn } from '../types';
+import { MenuItems } from '../../Menu/types';
+import { DropdownRenderFn } from '../types';
 
 const data: MenuItems = [
   {

@@ -9,7 +9,7 @@ import SelectTrigger from '../../Select/SelectTrigger';
 import examples from '../../../website/app/demos/Select/Select/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
-import type { MenuItems } from '../../Menu/types';
+import { MenuItems } from '../../Menu/types';
 
 const data: MenuItems = [
   {

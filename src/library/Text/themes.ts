@@ -1,5 +1,5 @@
 /* @flow */
-import type { TextThemeFn } from './types';
+import { TextThemeFn } from './types';
 
 export const textTheme: TextThemeFn = (baseTheme) => ({
   Text_color: baseTheme.color,

@@ -10,7 +10,7 @@ import { paginationTheme } from './themes';
 import { SIZE } from './constants';
 
 import { paginationPropTypes } from './propTypes';
-import type { PaginationDefaultProps, PaginationProps } from './types';
+import { PaginationDefaultProps, PaginationProps } from './types';
 
 export class Pagination extends PureComponent<PaginationProps> {
   static displayName = 'Pagination';

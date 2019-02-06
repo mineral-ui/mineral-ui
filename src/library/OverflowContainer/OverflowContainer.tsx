@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
 import { OverflowContainerRoot as Root } from './styled';
 
-import type { OverflowContainerProps, OverflowContainerState } from './types';
+import { OverflowContainerProps, OverflowContainerState } from './types';
 
 export default class OverflowContainer extends Component<
   OverflowContainerProps,

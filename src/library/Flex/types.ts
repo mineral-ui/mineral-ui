@@ -7,7 +7,7 @@ import {
   JUSTIFY_CONTENT
 } from './constants';
 
-import type { HeightOrWidthProp } from '../Box/types';
+import { HeightOrWidthProp } from '../Box/types';
 
 type StringOrArrayOfStrings<T> = $Keys<T> | Array<$Keys<T> | null>;
 

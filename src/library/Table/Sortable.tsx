@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
 
-import type {
+import {
   Sort,
   SortableData,
   SortableProps,

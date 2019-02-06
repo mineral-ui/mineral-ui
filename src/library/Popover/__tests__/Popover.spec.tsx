@@ -9,7 +9,7 @@ import PopoverTrigger from '../PopoverTrigger';
 import examples from '../../../website/app/demos/Popover/Popover/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
-import type { PopoverRenderFn } from '../types';
+import { PopoverRenderFn } from '../types';
 
 const defaultProps = {
   children: <button>trigger</button>,

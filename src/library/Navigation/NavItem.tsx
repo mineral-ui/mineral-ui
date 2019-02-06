@@ -5,7 +5,7 @@ import Truncate from '../Truncate';
 import { INTERNAL_TYPE } from './constants';
 import { NavItemRoot } from './styled';
 
-import type { NavItemProps } from './types';
+import { NavItemProps } from './types';
 
 const NavItem = (props: NavItemProps) => {
   const {

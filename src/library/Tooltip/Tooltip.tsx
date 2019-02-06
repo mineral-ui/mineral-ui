@@ -6,7 +6,7 @@ import { TooltipRoot as Root, TriggerText } from './styled';
 import { DELAY_OPEN, PLACEMENT } from './constants';
 
 import { tooltipPropTypes } from './propTypes';
-import type {
+import {
   TooltipDefaultProps,
   TooltipProps,
   TooltipState,

@@ -2,7 +2,7 @@
 import { mapComponentThemes } from '../themes';
 import { popoverTheme } from '../Popover/themes';
 
-import type { TooltipThemeFn } from './types';
+import { TooltipThemeFn } from './types';
 
 // $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const tooltipTheme: TooltipThemeFn = (baseTheme) =>

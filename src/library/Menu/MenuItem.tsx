@@ -13,7 +13,7 @@ import {
 } from './styled';
 
 import { menuItemPropTypes } from './propTypes';
-import type { MenuItemPropGetter, MenuItemProps } from './types';
+import { MenuItemPropGetter, MenuItemProps } from './types';
 
 const variantIcons = {
   danger: <IconDanger size={pxToEm(24)} />,

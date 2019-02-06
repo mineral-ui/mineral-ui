@@ -11,7 +11,7 @@ import {
 } from './styled';
 
 import { cardFooterPropTypes } from './propTypes';
-import type {
+import {
   CardFooterDefaultProps,
   CardFooterProps,
   CardFooterState

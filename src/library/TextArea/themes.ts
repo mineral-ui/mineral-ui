@@ -3,7 +3,7 @@ import { pxToEm } from '../styles';
 import { mapComponentThemes } from '../themes';
 import { fauxControlTheme } from '../FauxControl';
 
-import type { TextAreaThemeFn } from './types';
+import { TextAreaThemeFn } from './types';
 
 // $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const textAreaTheme: TextAreaThemeFn = (baseTheme) =>

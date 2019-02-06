@@ -8,7 +8,7 @@ import { CheckboxRoot as Root } from './styled';
 import { LABEL_POSITION, SIZE } from './constants';
 
 import { checkboxPropTypes } from './propTypes';
-import type { CheckboxDefaultProps, CheckboxProps } from './types';
+import { CheckboxDefaultProps, CheckboxProps } from './types';
 
 // Detect if browser triggers change event when click indeterminate checkbox
 // IE/Edge/other? do not

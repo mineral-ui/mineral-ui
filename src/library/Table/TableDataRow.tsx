@@ -5,7 +5,7 @@ import TableSelectableCell from './TableSelectableCell';
 import TableCell from './TableCell';
 import TableRow from './TableRow';
 
-import type { TableDataRowProps } from './types';
+import { TableDataRowProps } from './types';
 
 export default class TableDataRow extends Component<TableDataRowProps> {
   static displayName = 'TableDataRow';

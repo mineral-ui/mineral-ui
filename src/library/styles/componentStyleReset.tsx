@@ -1,5 +1,5 @@
 /* @flow */
-import type { ComponentStyleReset } from './types';
+import { ComponentStyleReset } from './types';
 
 const componentStyleReset: ComponentStyleReset = (theme) => ({
   boxSizing: 'border-box',

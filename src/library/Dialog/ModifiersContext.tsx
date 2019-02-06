@@ -1,7 +1,7 @@
 /* @flow */
 import { createContext } from 'react';
 
-import type { ModifiersContextType } from './types';
+import { ModifiersContextType } from './types';
 
 const ModifiersContext: React$Context<ModifiersContextType> = createContext();
 

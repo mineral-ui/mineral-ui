@@ -11,9 +11,9 @@ import { PLACEMENT } from './constants';
 import DropdownContent from './DropdownContent';
 import ItemMatcher from './ItemMatcher';
 
-import type { MenuItems } from '../Menu/types';
+import { MenuItems } from '../Menu/types';
 import { dropdownPropTypes } from './propTypes';
-import type {
+import {
   DropdownDefaultProps,
   DropdownPropGetter,
   DropdownProps,

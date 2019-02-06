@@ -2,7 +2,7 @@
 import React from 'react';
 import { ThemeProvider } from '../themes';
 
-import type { TextWithThemeOverrides } from './types';
+import { TextWithThemeOverrides } from './types';
 
 const textWithThemeOverrides: TextWithThemeOverrides = ({
   appearance,

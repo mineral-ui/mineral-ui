@@ -6,7 +6,7 @@ import IconWarningSimple from '../Icon/IconWarningSimple';
 import { CardStatusRoot as Root } from './styled';
 
 import { cardStatusPropTypes } from './propTypes';
-import type { CardStatusProps } from './types';
+import { CardStatusProps } from './types';
 
 const statusIcons = {
   danger: <IconDangerSimple />,

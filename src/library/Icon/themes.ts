@@ -1,7 +1,7 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
-import type { IconThemeFn } from './types';
+import { IconThemeFn } from './types';
 
 export const iconTheme: IconThemeFn = (baseTheme) => ({
   Icon_fill: 'currentcolor',

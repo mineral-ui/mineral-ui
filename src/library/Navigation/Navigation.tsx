@@ -6,7 +6,7 @@ import { NavigationRoot } from './styled';
 import NavItem from './NavItem';
 import NavOverflowMenu from './NavOverflowMenu';
 
-import type {
+import {
   AnchorEvent,
   NavigationDefaultProps,
   NavigationItems,

@@ -3,7 +3,7 @@ import React from 'react';
 import { MenuGroupTitle } from './styled';
 
 import { menuGroupPropTypes } from './propTypes';
-import type { MenuGroupProps } from './types';
+import { MenuGroupProps } from './types';
 
 const MenuGroup = (props: MenuGroupProps) => {
   const { children, title, ...restProps } = props;

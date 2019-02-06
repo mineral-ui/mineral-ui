@@ -6,7 +6,7 @@ import IconMoreHoriz from '../Icon/IconMoreHoriz';
 import { CardTitleMenuButton as MenuButton } from './styled';
 
 import { cardTitleMenuPropTypes } from './propTypes';
-import type { CardTitleMenuDefaultProps, CardTitleMenuProps } from './types';
+import { CardTitleMenuDefaultProps, CardTitleMenuProps } from './types';
 
 const CardTitleMenu = (props: CardTitleMenuProps) => {
   const { triggerTitle, ...restProps } = props;

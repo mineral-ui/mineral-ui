@@ -3,7 +3,7 @@ import React from 'react';
 import Sortable from './Sortable';
 import TableBase from './TableBase';
 
-import type { SortableTableProps } from './types';
+import { SortableTableProps } from './types';
 
 const SortableTable = (props: SortableTableProps) => (
   <Sortable {...props} isSortable={props.sortable}>

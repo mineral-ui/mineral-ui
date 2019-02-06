@@ -6,7 +6,7 @@ import MenuGroup from './MenuGroup';
 import MenuItem from './MenuItem';
 
 import { menuPropTypes } from './propTypes';
-import type {
+import {
   MenuItems,
   MenuPropGetter,
   MenuProps,

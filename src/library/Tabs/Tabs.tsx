@@ -9,7 +9,7 @@ import { TabsRoot as Root } from './styled';
 import { ALIGN, POSITION } from './constants';
 
 import { tabsPropTypes } from './propTypes';
-import type { TabsDefaultProps, TabsProps, TabsState } from './types';
+import { TabsDefaultProps, TabsProps, TabsState } from './types';
 
 export class Tabs extends Component<TabsProps, TabsState> {
   static displayName = 'Tabs';

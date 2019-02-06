@@ -5,7 +5,7 @@ import wrapDisplayName from 'recompose/wrapDisplayName';
 import { withTheme } from 'emotion-theming';
 import ThemeProvider from './ThemeProvider';
 
-import type { Theme } from './types';
+import { Theme } from './types';
 
 // Usage: themed(component)(theme)
 const themed = (WrappedComponent: React$ComponentType<*>) => (

@@ -4,7 +4,7 @@ import { isRenderProp } from '../utils';
 import TableContext from './TableContext';
 import { TableCellRoot as Root } from './styled';
 
-import type { TableCellProps } from './types';
+import { TableCellProps } from './types';
 
 export default class TableCell extends PureComponent<TableCellProps> {
   static displayName = 'TableCell';

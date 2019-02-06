@@ -3,7 +3,7 @@ import { pxToEm } from '../styles';
 import { mapComponentThemes } from '../themes';
 import { overflowContainerWithShadowsTheme } from '../OverflowContainer/themes';
 
-import type {
+import {
   DialogThemeFn,
   DialogActionsThemeFn,
   DialogBodyThemeFn,

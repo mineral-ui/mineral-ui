@@ -1,7 +1,7 @@
 /* @flow */
 import { mapComponentThemes } from '../themes';
 
-import type {
+import {
   OverflowContainerThemeFn,
   OverflowContainerWithShadowsThemeFn
 } from './types';

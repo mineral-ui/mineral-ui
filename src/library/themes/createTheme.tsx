@@ -11,7 +11,7 @@ import themeFromTokens, {
 } from './themeFromTokens';
 import { PRIMARY_COLOR } from './constants';
 
-import type { ThemeObj } from './types';
+import { ThemeObj } from './types';
 
 type PrimaryColor = $Keys<typeof PRIMARY_COLOR>;
 type PrimaryColors = Array<PrimaryColor>;

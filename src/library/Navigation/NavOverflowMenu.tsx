@@ -6,8 +6,8 @@ import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import { MenuItem } from '../Menu';
 import NavItem from './NavItem';
 
-import type { MenuItemRenderProps } from '../Menu/types';
-import type {
+import { MenuItemRenderProps } from '../Menu/types';
+import {
   GetDropdownData,
   GetDropdownItem,
   NavOverflowMenuDefaultProps,

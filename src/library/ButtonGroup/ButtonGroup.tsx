@@ -7,7 +7,7 @@ import { MODE } from './constants';
 import { ButtonGroupRoot as Root } from './styled';
 
 import { buttonGroupPropTypes } from './propTypes';
-import type { ButtonGroupProps, ButtonGroupState } from './types';
+import { ButtonGroupProps, ButtonGroupState } from './types';
 
 // This check is intentionally loose. We cannot do a direct type comparison as
 // we want to allow for styled buttons, themed buttons, and buttons inside of

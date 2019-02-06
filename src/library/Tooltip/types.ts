@@ -1,7 +1,7 @@
 /* @flow */
 import { PLACEMENT } from './constants';
 
-import type {
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue

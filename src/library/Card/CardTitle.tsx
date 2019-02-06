@@ -14,7 +14,7 @@ import {
 } from './styled';
 
 import { cardTitlePropTypes } from './propTypes';
-import type { CardTitleProps } from './types';
+import { CardTitleProps } from './types';
 
 const variantIcons = {
   danger: <IconDanger size="medium" />,

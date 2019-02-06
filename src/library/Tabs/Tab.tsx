@@ -4,7 +4,7 @@ import Truncate from '../Truncate';
 import { TabAnchor as Anchor } from './styled';
 
 import { tabPropTypes } from './propTypes';
-import type { TabProps } from './types';
+import { TabProps } from './types';
 
 export default class Tab extends Component<TabProps> {
   static displayName = 'Tab';

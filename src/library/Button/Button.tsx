@@ -5,7 +5,7 @@ import { Button as Root, Content, Inner } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
 
 import { buttonPropTypes } from './propTypes';
-import type { ButtonDefaultProps, ButtonProps } from './types';
+import { ButtonDefaultProps, ButtonProps } from './types';
 
 class Button extends Component<ButtonProps> {
   static displayName = 'Button';

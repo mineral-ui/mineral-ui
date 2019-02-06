@@ -3,7 +3,7 @@ import React from 'react';
 import { CardRoot as Root } from './styled';
 
 import { cardPropTypes } from './propTypes';
-import type { CardProps } from './types';
+import { CardProps } from './types';
 
 const onKeyDown = (props: CardProps, event: SyntheticKeyboardEvent<>) => {
   if (event.key === 'Enter' || event.key === ' ') {

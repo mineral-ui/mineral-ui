@@ -13,7 +13,7 @@ import {
 } from './styled';
 import { DENSITY, TITLE_ELEMENT } from './constants';
 
-import type {
+import {
   TableBaseDefaultProps,
   TableBaseProps,
   TableBaseState

@@ -1,8 +1,8 @@
 /* @flow */
 import { PLACEMENT } from './constants';
 
-import type { PopperProps } from 'react-popper/lib/cjs/Popper';
-import type {
+import { PopperProps } from 'react-popper/lib/cjs/Popper';
+import {
   ComponentTheme,
   ComponentThemeFn,
   ThemeObj,

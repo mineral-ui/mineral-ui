@@ -12,7 +12,7 @@ import {
 } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
 
-import type { FauxControlProps, VariantIcons } from './types';
+import { FauxControlProps, VariantIcons } from './types';
 
 const variantIcons: VariantIcons = {
   danger: <IconDanger />,

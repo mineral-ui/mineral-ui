@@ -4,7 +4,7 @@ import { TextRoot as Root } from './styled';
 import ElementContext from './ElementContext';
 import { APPEARANCE } from './constants';
 
-import type { TextProviderDefaultProps, TextProviderProps } from './types';
+import { TextProviderDefaultProps, TextProviderProps } from './types';
 
 export default class TextProvider extends Component<TextProviderProps> {
   static displayName = 'TextProvider';

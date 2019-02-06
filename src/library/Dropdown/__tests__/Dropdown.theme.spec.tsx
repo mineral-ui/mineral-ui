@@ -7,7 +7,7 @@ import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 import Dropdown, { dropdownTheme } from '../index';
 
-import type { MenuItems } from '../../Menu/types';
+import { MenuItems } from '../../Menu/types';
 
 const data: MenuItems = [
   { text: 'item 1' },

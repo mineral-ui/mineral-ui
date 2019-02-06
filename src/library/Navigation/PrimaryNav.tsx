@@ -2,7 +2,7 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-import type { PrimaryNavDefaultProps, PrimaryNavProps } from './types';
+import { PrimaryNavDefaultProps, PrimaryNavProps } from './types';
 
 const PrimaryNav = (props: PrimaryNavProps) => <Navigation {...props} />;
 

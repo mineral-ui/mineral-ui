@@ -10,7 +10,7 @@ import { DialogTitleRoot as Root, DialogTitleTitle } from './styled';
 import { dialogTitleTheme } from './themes';
 
 import { dialogTitlePropTypes } from './propTypes';
-import type { DialogTitleDefaultProps, DialogTitleProps } from './types';
+import { DialogTitleDefaultProps, DialogTitleProps } from './types';
 
 const variantIcons = {
   danger: IconDanger,
