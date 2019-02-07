@@ -9,9 +9,9 @@ import { Theme } from './types';
 
 // Usage: themed(component)(theme)
 const themed = (WrappedComponent: React.ComponentType) => (
-  theme: Theme<>
+  theme: Theme
 ) => {
-  const Wrapper = (props, context) => {
+  const Wrapper = (props: object, context?: object) => {
     const outTheme =
       typeof theme === 'function' ? theme(props, context) : theme;
     const { theme: ignore, ...outProps } = props;

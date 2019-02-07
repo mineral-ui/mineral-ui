@@ -15,8 +15,8 @@ const filterKeys = (source: ThemeObj, exclusions: Array<string>) => {
 };
 
 export const getProcessedComponentThemeKeys = (
-  componentTheme: Theme<>,
-  options?: {
+  componentTheme: Theme,
+  options: {
     baseTheme?: ThemeObj,
     excludeKeys?: Array<string>,
     includeBaseTheme?: boolean
@@ -26,8 +26,8 @@ export const getProcessedComponentThemeKeys = (
 };
 
 export default function processComponentTheme(
-  componentThemeIn: Theme<>,
-  options?: {
+  componentThemeIn: Theme,
+  options: {
     baseTheme?: ThemeObj,
     excludeKeys?: Array<string>,
     includeBaseTheme?: boolean

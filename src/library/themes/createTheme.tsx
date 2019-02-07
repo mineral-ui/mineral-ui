@@ -97,7 +97,7 @@ const getWhiteOrBlackTextColor = (color, colors, override) => {
     : white;
 };
 
-const primaryColorsByVariation = (colors?: Colors = {}) => {
+const primaryColorsByVariation = (colors: Colors = {}) => {
   return primaryColors.reduce((acc, color) => {
     const override = colors[color];
     acc[`color_${color}Primary`] = getWhiteOrBlackTextColor(
