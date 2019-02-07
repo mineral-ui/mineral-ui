@@ -50,11 +50,11 @@ export default class ItemMatcher {
 
   resetKeysAfterDelay = () => {
     if (this.keysTimer) {
-      global.clearTimeout(this.keysTimer);
+      clearTimeout(this.keysTimer);
       this.keysTimer = null;
     }
 
-    this.keysTimer = global.setTimeout(() => {
+    this.keysTimer = setTimeout(() => {
       this.keys = '';
       this.keysTimer = null;
     }, 500);

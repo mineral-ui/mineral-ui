@@ -328,9 +328,9 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
   };
 
   scrollHighlightedItemIntoViewIfNeeded = () => {
-    const boundary = global.document.getElementById(this.getContentId());
+    const boundary = document.getElementById(this.getContentId());
     const highlightedItemNode =
-      boundary && global.document.getElementById(this.getHighlightedItemId());
+      boundary && document.getElementById(this.getHighlightedItemId());
 
     if (highlightedItemNode) {
       scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
@@ -338,7 +338,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
   };
 
   clickHighlightedItem = () => {
-    const highlightedItemNode = global.document.getElementById(
+    const highlightedItemNode = document.getElementById(
       this.getHighlightedItemId()
     );
     highlightedItemNode && highlightedItemNode.click();

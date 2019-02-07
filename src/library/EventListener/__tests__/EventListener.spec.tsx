@@ -19,7 +19,7 @@ function runTargetAssertions(target: string) {
     eventListener = shallowEventListener({
       listeners: [{ target, event: 'click', handler: onClick }]
     });
-    targetNode = global[target] || global.document.querySelector(target);
+    targetNode = window[target] || document.querySelector(target);
   });
 
   it('adds listeners to target', () => {

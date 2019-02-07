@@ -75,8 +75,8 @@ describe('Dialog', () => {
     let onClose = jest.fn();
 
     beforeEach(() => {
-      trigger = global.document.createElement('button');
-      global.document.body.appendChild(trigger);
+      trigger = document.createElement('button');
+      document.body.appendChild(trigger);
       trigger.focus();
 
       wrapper = mountInWrapper(
@@ -88,7 +88,7 @@ describe('Dialog', () => {
 
     afterEach(() => {
       onClose.mockReset();
-      global.document.body.removeChild(trigger);
+      document.body.removeChild(trigger);
     });
 
     it('when pressing Escape', () => {

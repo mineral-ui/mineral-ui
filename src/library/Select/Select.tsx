@@ -372,9 +372,9 @@ export default class Select extends Component<SelectProps, SelectState> {
   };
 
   scrollHighlightedItemIntoViewIfNeeded = () => {
-    const boundary = global.document.getElementById(this.getContentId());
+    const boundary = document.getElementById(this.getContentId());
     const highlightedItemNode =
-      boundary && global.document.getElementById(this.getHighlightedItemId());
+      boundary && document.getElementById(this.getHighlightedItemId());
 
     if (highlightedItemNode) {
       scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
@@ -382,7 +382,7 @@ export default class Select extends Component<SelectProps, SelectState> {
   };
 
   clickHighlightedItem = () => {
-    const highlightedItemNode = global.document.getElementById(
+    const highlightedItemNode = document.getElementById(
       this.getHighlightedItemId()
     );
     highlightedItemNode && highlightedItemNode.click();

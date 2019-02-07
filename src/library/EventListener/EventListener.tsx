@@ -26,7 +26,7 @@ export default class EventListener extends Component<EventListenerProps> {
 
   getTargetNode(target: string) {
     if (canUseDOM) {
-      return global[target] || global.document.querySelector(target);
+      return window[target] || document.querySelector(target);
     }
   }
 

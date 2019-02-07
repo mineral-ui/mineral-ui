@@ -305,7 +305,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
 
   setLastFocusedElement = () => {
     if (canUseDOM) {
-      const { activeElement, body } = global.document;
+      const { activeElement, body } = document;
       this.lastFocusedElement =
         activeElement && activeElement.focus ? activeElement : body;
     }

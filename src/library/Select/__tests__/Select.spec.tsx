@@ -45,7 +45,7 @@ const mountSelect = (props = {}) => {
   };
 
   // NOTE: Attach Select to a DOM node as it uses some document methods
-  // internally, e.g. global.document.getElementById, which necessitate it
+  // internally, e.g. document.getElementById, which necessitate it
   // being attached to an actual DOM node.
   return mountInThemeProvider(<Select {...selectProps} />, {
     attachToDom: true
