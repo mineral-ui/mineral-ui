@@ -4,7 +4,7 @@ import { MenuItemType, MenuItems } from '../Menu/types';
 export default class ItemMatcher {
   keys: string = '';
 
-  keysTimer: any;
+  keysTimer: number | null | undefined;
 
   searchIndex: number;
 
@@ -54,7 +54,7 @@ export default class ItemMatcher {
       this.keysTimer = null;
     }
 
-    this.keysTimer = setTimeout(() => {
+    this.keysTimer = window.setTimeout(() => {
       this.keys = '';
       this.keysTimer = null;
     }, 500);

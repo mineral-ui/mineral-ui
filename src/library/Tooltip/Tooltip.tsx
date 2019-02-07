@@ -116,7 +116,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     this.clearOpenTimer();
     const isOpen = this.getControllableValue('isOpen');
     if (!isOpen) {
-      this.openTimer = setTimeout(() => {
+      this.openTimer = window.setTimeout(() => {
         this.open(event);
       }, DELAY_OPEN);
     }
