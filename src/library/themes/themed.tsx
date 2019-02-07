@@ -11,7 +11,7 @@ import { Theme } from './types';
 const themed = (WrappedComponent: React.ComponentType) => (
   theme: Theme
 ) => {
-  const Wrapper = (props: object, context?: object) => {
+  const Wrapper = (props: { theme: Theme }, context?: object) => {
     const outTheme =
       typeof theme === 'function' ? theme(props, context) : theme;
     const { theme: ignore, ...outProps } = props;
@@ -23,7 +23,6 @@ const themed = (WrappedComponent: React.ComponentType) => (
     );
   };
 
-  // $FlowFixMe - `WrappedComponent.propTypes` missing in `React.AbstractComponentStatics`
   Wrapper.propTypes = WrappedComponent.propTypes;
   Wrapper.displayName = wrapDisplayName(WrappedComponent, 'Themed');
 
