@@ -37,7 +37,7 @@ type Type = keyof typeof TYPE;
 
 export type AnchorEvent = React.SyntheticEvent<HTMLAnchorElement>;
 
-export type GetDropdownData = ({}: { // FIXME: identify idiomatic typescript
+export type GetDropdownData = (props: {
   data: NavigationItems,
   disabled?: boolean,
   onClick: (event: AnchorEvent, selectedIndex: number) => void,

@@ -8,7 +8,7 @@ type MaybeArrayStyles = {
   [property: string]: Array<StyleValue> | StyleValue
 };
 
-type GetResponsiveStyles = ({}: { // FIXME: Is this idiomatic typescript?
+type GetResponsiveStyles = (props: {
   breakpoints?: Breakpoints,
   mapValueToProperty?: MapValueToProperty,
   styles: MaybeArrayStyles,
