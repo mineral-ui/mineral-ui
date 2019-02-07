@@ -1,5 +1,5 @@
 /* @flow */
-export default (obj: Object, quoteStringValues?: boolean): string =>
+export default (obj: object, quoteStringValues?: boolean): string =>
   JSON.stringify(
     obj,
     (key, value) => {

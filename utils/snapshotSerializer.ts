@@ -2,7 +2,7 @@
 const REGEX_COMPONENT = new RegExp('^[A-Z]');
 
 module.exports = {
-  test: (val: Object) => {
+  test: (val: object) => {
     return (
       val &&
       val.type &&
@@ -13,7 +13,7 @@ module.exports = {
     );
   },
 
-  print: (val: Object, serialize: Function) => {
+  print: (val: object, serialize: Function) => {
     if (['ThemeProvider', 'LiveProvider'].includes(val.type)) {
       delete val.props;
     } else {
