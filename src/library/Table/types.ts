@@ -255,7 +255,6 @@ export type TableHeaderCellThemeFn = ComponentThemeFn<TableHeaderCellTheme>;
 export type TableHeaderCellTheme = ComponentTheme<TableHeaderCellThemeKeys>;
 type TableHeaderCellThemeKeys = {
   TableHeaderCell_fontSize: ThemeValue,
-  TableHeaderCell_verticalAlign: ThemeValue,
   TableHeaderCell_borderVertical: ThemeValue,
   TableHeaderCell_borderVertical_highContrast: ThemeValue,
   TableHeaderCell_fontWeight: ThemeValue,
