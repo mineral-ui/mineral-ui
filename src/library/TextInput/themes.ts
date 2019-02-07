@@ -4,7 +4,6 @@ import { fauxControlTheme } from '../FauxControl';
 
 import { TextInputThemeFn } from './types';
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const textInputTheme: TextInputThemeFn = (baseTheme) =>
   mapComponentThemes(
     {

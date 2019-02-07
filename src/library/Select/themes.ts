@@ -5,7 +5,6 @@ import { textInputTheme } from '../TextInput';
 
 import { SelectThemeFn, SelectTriggerThemeFn } from './types';
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const selectTheme: SelectThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
@@ -22,7 +21,6 @@ export const selectTheme: SelectThemeFn = (baseTheme) =>
     }
   );
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const selectTriggerTheme: SelectTriggerThemeFn = (baseTheme) =>
   mapComponentThemes(
     {

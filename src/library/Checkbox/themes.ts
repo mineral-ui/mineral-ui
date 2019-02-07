@@ -2,9 +2,8 @@
 import { mapComponentThemes } from '../themes';
 import { choiceTheme, choiceGroupTheme } from '../Choice';
 
-import { CheckboxThemeFn, CheckboxGroupThemeFn } from './types';
+import { CheckboxGroupThemeFn, CheckboxThemeFn } from './types';
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const checkboxTheme: CheckboxThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
@@ -18,7 +17,6 @@ export const checkboxTheme: CheckboxThemeFn = (baseTheme) =>
     baseTheme
   );
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const checkboxGroupTheme: CheckboxGroupThemeFn = (baseTheme) =>
   mapComponentThemes(
     {

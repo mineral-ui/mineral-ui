@@ -19,12 +19,12 @@ import { ThemeObj } from '../themes/types';
  *     Provide array of theme variable keys used in style properties applied by
  *     source component and not by override component
  */
-export default function mapComponentThemes(
+export default function mapComponentThemes<T>(
   source: { name: string, theme: ThemeObj },
   override: { name: string, theme: ThemeObj },
   baseTheme: ThemeObj,
   preserveKeys?: Array<string>
-): ThemeObj {
+): T {
   const REGEXP_SOURCE_NAME = new RegExp(`^${source.name}`);
   const sourceThemeWithRenamedKeys = Object.keys(source.theme).reduce(
     (acc, sourceKey) => {
@@ -47,6 +47,7 @@ export default function mapComponentThemes(
       return acc;
     }, {});
 
+  // @ts-ignore
   return {
     ...sourceThemeWithRenamedKeys,
     ...override.theme,

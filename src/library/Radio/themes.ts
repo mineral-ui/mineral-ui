@@ -2,7 +2,8 @@
 import { mapComponentThemes } from '../themes';
 import { choiceTheme, choiceGroupTheme } from '../Choice';
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
+import {RadioThemeFn, RadioGroupThemeFn} from './types'
+
 export const radioTheme: RadioThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
@@ -18,7 +19,6 @@ export const radioTheme: RadioThemeFn = (baseTheme) =>
     baseTheme
   );
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const radioGroupTheme: RadioGroupThemeFn = (baseTheme) =>
   mapComponentThemes(
     {

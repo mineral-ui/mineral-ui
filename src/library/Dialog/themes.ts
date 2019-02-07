@@ -46,7 +46,6 @@ export const dialogActionsTheme: DialogActionsThemeFn = (baseTheme) => ({
   ...baseTheme
 });
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const dialogBodyTheme: DialogBodyThemeFn = (baseTheme) =>
   mapComponentThemes(
     {

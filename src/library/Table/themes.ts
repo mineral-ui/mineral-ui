@@ -13,7 +13,6 @@ import {
   TableTitleThemeFn
 } from './types';
 
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const tableTheme: TableThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
@@ -48,7 +47,6 @@ export const tableHeaderTheme: TableHeaderThemeFn = (baseTheme) => ({
 });
 
 // prettier-ignore
-// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const tableHeaderCellTheme: TableHeaderCellThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
