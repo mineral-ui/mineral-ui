@@ -6,24 +6,25 @@
     "node": true
   },
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:flowtype/recommended",
     "prettier",
-    "prettier/flowtype",
-    "prettier/react"
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
   ],
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "project": "./tsconfig.json"
   },
   "plugins": [
+    "@typescript-eslint",
     "emotion",
-    "flowtype",
     "jsx-a11y",
     "prettier",
     "react"
@@ -49,8 +50,7 @@
     "react": {
       "createClass": "createReactClass",
       "pragma": "React",
-      "version": "16.6.3",
-      "flowVersion": "0.89"
+      "version": "16.6.3"
     }
   }
 }

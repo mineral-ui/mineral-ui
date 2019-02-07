@@ -78,7 +78,6 @@ const config = {
     if (isProduction) {
       plugins.push(
         '@babel/plugin-transform-react-constant-elements',
-        '@babel/plugin-transform-flow-strip-types',
         [
           'transform-react-remove-prop-types',
           {
