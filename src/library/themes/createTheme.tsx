@@ -110,10 +110,10 @@ const primaryColorsByVariation = (colors?: Colors = {}) => {
 };
 
 export default function createTheme(
-  options: ?{
+  options: {
     colors?: Colors,
     overrides?: ThemeObj
-  }
+  } | null | undefined
 ): ThemeObj {
   const colors = options && options.colors;
 
