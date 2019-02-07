@@ -135,8 +135,8 @@ export const DialogBodyOverflowContainerWithShadows = withProps({
   )
 );
 
-const DialogThemedButton = themed(Button)(({ theme }) => ({
-  ButtonIcon_color: theme.color
+const DialogThemedButton = themed(Button)((props) => ({
+  ButtonIcon_color: props['theme']
 }));
 
 export const DialogCloseButton = withProps({

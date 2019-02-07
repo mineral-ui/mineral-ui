@@ -9,17 +9,17 @@ import Dropdown from '../Dropdown/Dropdown';
 import { selectTheme, selectTriggerTheme } from './themes';
 import { SIZE } from './constants';
 
-const ThemedDropdown = themed(Dropdown)(({ theme: baseTheme }) =>
+const ThemedDropdown = themed(Dropdown)((props) =>
   mapComponentThemes(
     {
       name: 'Select',
-      theme: selectTheme(baseTheme)
+      theme: selectTheme(props['theme'])
     },
     {
       name: 'Dropdown',
       theme: {}
     },
-    baseTheme
+    props['theme']
   )
 );
 
@@ -40,17 +40,17 @@ export const contentWidthModifier = {
   }
 };
 
-const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
+const ThemedFauxControl = themed(FauxControl)((props) =>
   mapComponentThemes(
     {
       name: 'Select',
-      theme: selectTriggerTheme(baseTheme)
+      theme: selectTriggerTheme(props['theme'])
     },
     {
       name: 'FauxControl',
       theme: {}
     },
-    baseTheme
+    props['theme']
   )
 );
 

@@ -31,8 +31,8 @@ export const TabsRoot = styled('div', {
   };
 });
 
-const TabThemedButton = themed(Button)(({ theme: baseTheme }) => {
-  const theme = tabTheme(baseTheme);
+const TabThemedButton = themed(Button)((props) => {
+  const theme = tabTheme(props['theme']);
   return {
     Button_backgroundColor_minimal_active: null,
     Button_backgroundColor_minimal_hover: null,
@@ -111,8 +111,8 @@ export const TabAnchor = withProps({
   })
 );
 
-const TabListThemedButton = themed(Button)(({ theme: baseTheme }) => {
-  const theme = tabListTheme(baseTheme);
+const TabListThemedButton = themed(Button)((props) => {
+  const theme = tabListTheme(props['theme']);
   return {
     Button_backgroundColor_minimal_active: null,
     Button_backgroundColor_minimal_hover: null,
@@ -128,8 +128,8 @@ const TabListThemedButton = themed(Button)(({ theme: baseTheme }) => {
 
 const TabListThemedOverflowContainerWithShadows = themed(
   OverflowContainerWithShadows
-)(({ theme: baseTheme }) => {
-  const theme = tabListTheme(baseTheme);
+)((props) => {
+  const theme = tabListTheme(props['theme']);
   // prettier-ignore
   return {
       OverflowContainerWithShadows_boxShadowBottom:

@@ -6,17 +6,17 @@ import { themed, mapComponentThemes } from '../themes';
 import FauxControl from '../FauxControl';
 import { textAreaTheme } from './themes';
 
-const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
+const ThemedFauxControl = themed(FauxControl)((props) =>
   mapComponentThemes(
     {
       name: 'TextArea',
-      theme: textAreaTheme(baseTheme)
+      theme: textAreaTheme(props['theme'])
     },
     {
       name: 'FauxControl',
       theme: {}
     },
-    baseTheme
+    props['theme']
   )
 );
 
