@@ -10,7 +10,7 @@ import {
   NavItemThemeFn
 } from './types';
 
-export const primaryNavTheme: PrimaryNavThemeFn = (baseTheme: object) => ({
+export const primaryNavTheme: PrimaryNavThemeFn = (baseTheme) => ({
   PrimaryNav_backgroundColor: baseTheme.backgroundColor_themePrimary,
   PrimaryNav_backgroundColor_minimal: baseTheme.backgroundColor,
   PrimaryNav_gutter: baseTheme.space_inline_xs,
@@ -18,7 +18,7 @@ export const primaryNavTheme: PrimaryNavThemeFn = (baseTheme: object) => ({
   PrimaryNav_paddingVertical: baseTheme.space_stack_sm
 });
 
-export const secondaryNavTheme: SecondaryNavThemeFn = (baseTheme: object) => ({
+export const secondaryNavTheme: SecondaryNavThemeFn = (baseTheme) => ({
   SecondaryNav_backgroundColor_pills: baseTheme.backgroundColor,
   SecondaryNav_backgroundColor_tabs: baseTheme.color_gray_20,
   SecondaryNav_border: `1px solid ${baseTheme.color_gray_30}`,
@@ -27,16 +27,14 @@ export const secondaryNavTheme: SecondaryNavThemeFn = (baseTheme: object) => ({
   SecondaryNav_paddingVertical: baseTheme.space_stack_sm
 });
 
-export const navigationTheme: NavigationThemeFn = (baseTheme: object) => ({
+export const navigationTheme: NavigationThemeFn = (baseTheme) => ({
   ...primaryNavTheme(baseTheme),
   ...secondaryNavTheme(baseTheme),
 
   ...baseTheme
 });
 
-export const primaryNavItemTheme: PrimaryNavItemThemeFn = (
-  baseTheme: object
-) => ({
+export const primaryNavItemTheme: PrimaryNavItemThemeFn = (baseTheme) => ({
   PrimaryNavItem_backgroundColor: 'transparent',
   PrimaryNavItem_backgroundColor_active: baseTheme.color_theme_80,
   PrimaryNavItem_backgroundColor_focus: 'transparent',
@@ -69,9 +67,7 @@ export const primaryNavItemTheme: PrimaryNavItemThemeFn = (
   PrimaryNavItemIcon_color: 'inherit'
 });
 
-export const secondaryNavItemTheme: SecondaryNavItemThemeFn = (
-  baseTheme: object
-) => ({
+export const secondaryNavItemTheme: SecondaryNavItemThemeFn = (baseTheme) => ({
   SecondaryNavItem_backgroundColor_pills: 'transparent',
   SecondaryNavItem_backgroundColor_pills_active: baseTheme.color_gray_10,
   SecondaryNavItem_backgroundColor_pills_focus: 'transparent',
@@ -105,7 +101,7 @@ export const secondaryNavItemTheme: SecondaryNavItemThemeFn = (
   SecondaryNavItemIcon_color: 'inherit'
 });
 
-export const navItemTheme: NavItemThemeFn = (baseTheme: object) => ({
+export const navItemTheme: NavItemThemeFn = (baseTheme) => ({
   ...primaryNavItemTheme(baseTheme),
   ...secondaryNavItemTheme(baseTheme),
 
