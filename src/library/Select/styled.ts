@@ -33,7 +33,7 @@ export const SelectRoot = styled(ThemedDropdown)({
 
 export const contentWidthModifier = {
   enabled: true,
-  fn: (data: Object) => {
+  fn: (data: object) => {
     data.styles.minWidth = pxToEm(224);
     data.styles.width = pxToEm(data.offsets.reference.width);
     return data;

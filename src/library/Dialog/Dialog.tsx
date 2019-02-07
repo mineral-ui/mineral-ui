@@ -29,7 +29,7 @@ import DialogTitle from './DialogTitle';
 import { dialogPropTypes } from './propTypes';
 import { DialogDefaultProps, DialogProps, DialogState } from './types';
 
-const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
+const Animation = withTheme(({ children, theme, ...restProps }: object) => {
   return (
     <Transition
       appear

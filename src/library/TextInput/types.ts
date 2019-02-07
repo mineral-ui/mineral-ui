@@ -19,7 +19,7 @@ export type TextInputProps = {
   iconStart?: React.ReactElement<any>,
   iconEnd?: React.ReactElement<any>,
   inputRef?: (node: React.Component | null | undefined) => void,
-  rootProps?: Object,
+  rootProps?: object,
   invalid?: boolean,
   onChange?: (event: React.SyntheticEvent) => void,
   prefix?: string | React.ReactElement<any>,

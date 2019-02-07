@@ -25,7 +25,7 @@ export type TabsProps = {
   ) => void,
   position?: Position,
   selectedTabIndex?: number,
-  theme: Object
+  theme: object
 };
 
 export type TabsDefaultProps = {

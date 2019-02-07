@@ -7,8 +7,8 @@ export type ThemeProviderProps = {
 export type Theme<T> = T | ThemeFn<T>;
 export type ThemeObj = { [key: string]: ThemeValue };
 export type ThemeFn<T> = (
-  props: Object,
-  context?: Object
+  props: object,
+  context?: object
 ) => T;
 export type ThemeValue = any; // TODO: string | number | null;
 

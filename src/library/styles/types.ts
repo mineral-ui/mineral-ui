@@ -5,8 +5,8 @@ export type Styles = StyleObj | StyleArray | StyleFn;
 export type StyleArray = Array<StyleObj>;
 export type StyleObj = { [key: string]: StyleValue };
 export type StyleFn = (
-  props: Object,
-  context?: Object
+  props: object,
+  context?: object
 ) => StyleObj | StyleArray;
 export type StyleValue = null | boolean | number | string | StyleObj;
 

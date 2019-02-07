@@ -21,7 +21,7 @@ export type PopoverProps = {
   hasArrow?: boolean,
   id?: string,
   isOpen?: boolean,
-  modifiers?: Object,
+  modifiers?: object,
   onClose?: (event: React.SyntheticEvent) => void,
   onOpen?: (event: React.SyntheticEvent) => void,
   placement?: Placement,
@@ -53,11 +53,11 @@ export type PopoverStateAndHelpers = {
   helpers: PopoverHelpers
 };
 
-export type PopoverRenderMethod = (props: Object) => React.ReactNode;
-export type PopoverPropGetter = (props?: Object) => Object;
+export type PopoverRenderMethod = (props: object) => React.ReactNode;
+export type PopoverPropGetter = (props?: object) => object;
 export type PopoverRenderFn = (props?: PopoverRenderProps) => React.ReactNode;
 type PopoverRenderProps = {
-  props: Object
+  props: object
 } & PopoverStateAndHelpers;
 
 export type PopoverArrowProps = {
@@ -68,7 +68,7 @@ export type PopoverArrowProps = {
 export type PopoverContentProps = {
   children: React.ReactNode,
   forwardedRef?: (node: HTMLElement | null | undefined) => void,
-  modifiers?: Object,
+  modifiers?: object,
   hasArrow?: boolean,
   placement?: Placement,
   positionFixed?: boolean,

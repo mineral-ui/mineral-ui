@@ -27,7 +27,7 @@ export type CheckboxProps = {
   onChange?: (event: SyntheticInputEvent<>) => void,
   onClick?: (event: SyntheticInputEvent<>) => void,
   required?: boolean,
-  rootProps?: Object,
+  rootProps?: object,
   size?: Size,
   value?: string
 };
@@ -45,7 +45,7 @@ export type CheckboxGroupProps = {
   inline?: boolean,
   name: string,
   onChange?: (event: React.SyntheticEvent) => void,
-  rootProps?: Object
+  rootProps?: object
 };
 
 export type CheckboxThemeFn = ComponentThemeFn<CheckboxTheme>;

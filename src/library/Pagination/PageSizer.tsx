@@ -66,7 +66,7 @@ export default class PageSizer extends PureComponent<PageSizerProps> {
     );
   }
 
-  handleSelect = (item: Object) => {
+  handleSelect = (item: object) => {
     const pageSize = parseInt(item.value);
     this.props.onPageSizeChange(pageSize);
   };

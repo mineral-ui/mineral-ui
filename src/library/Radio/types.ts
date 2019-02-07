@@ -24,7 +24,7 @@ export type RadioProps = {
   name?: string,
   onChange?: (event: SyntheticInputEvent<>) => void,
   required?: boolean,
-  rootProps?: Object,
+  rootProps?: object,
   size?: Size,
   value?: string
 };
@@ -42,7 +42,7 @@ export type RadioGroupProps = {
   inline?: boolean,
   name: string,
   onChange?: (event: React.SyntheticEvent) => void,
-  rootProps?: Object
+  rootProps?: object
 };
 
 export type RadioThemeFn = ComponentThemeFn<RadioTheme>;

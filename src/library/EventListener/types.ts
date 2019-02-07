@@ -13,5 +13,5 @@ export type Listener = {
   /** Function called when the event is triggered */
   handler: Function,
   /** Options passed to addEventListener/removeEventListener */
-  options?: boolean | Object
+  options?: boolean | object
 };

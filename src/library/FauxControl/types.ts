@@ -12,7 +12,7 @@ export type FauxControlProps = {
   beforeItems?: React.ReactNode,
   children?: React.ReactNode,
   control: React.ComponentType,
-  controlProps?: Object,
+  controlProps?: object,
   disabled?: boolean,
   fauxControlRef?: (node: React.Component | null | undefined) => void,
   iconStart?: React.ReactElement<any>,

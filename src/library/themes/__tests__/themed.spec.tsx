@@ -7,7 +7,7 @@ import Sample from '../../../website/app/demos/ThemeProvider/common/Sample';
 
 // Allow full theme values in snapshots for ThemeProvider
 import snapshotSerializer from '../../../../utils/snapshotSerializer';
-snapshotSerializer.print = (val: Object, serialize: Function) => {
+snapshotSerializer.print = (val: object, serialize: Function) => {
   val.processed = true;
   return serialize(val);
 };

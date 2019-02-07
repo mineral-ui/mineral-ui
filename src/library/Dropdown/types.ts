@@ -22,7 +22,7 @@ export type DropdownProps = {
   item?: DropdownRenderFn,
   itemKey?: string,
   menu?: DropdownRenderFn,
-  modifiers?: Object,
+  modifiers?: object,
   onClose?: (event: React.SyntheticEvent) => void,
   onOpen?: (event: React.SyntheticEvent) => void,
   placement?: Placement,
@@ -52,19 +52,19 @@ export type DropdownStateAndHelpers = {
   helpers: DropdownHelpers
 };
 
-export type DropdownPropGetter = (props?: Object) => Object;
+export type DropdownPropGetter = (props?: object) => object;
 
 export type DropdownRenderFn = (props?: DropdownRenderProps) => React.ReactNode;
 
 type DropdownRenderProps = {
-  props: Object
+  props: object
 } & DropdownStateAndHelpers;
 
 export type DropdownContentProps = {
   children: React.ReactNode,
   forwardedRef?: (node: HTMLElement | null | undefined) => void,
   id: string,
-  modifiers?: Object,
+  modifiers?: object,
   placement?: Placement,
   positionFixed?: boolean,
   wide?: boolean

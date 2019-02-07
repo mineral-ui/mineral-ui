@@ -13,7 +13,7 @@ type Element = keyof typeof ELEMENT;
 type Size = keyof typeof SIZE;
 type Variant = keyof typeof VARIANT;
 
-export type ModifiersContextType = Object | typeof undefined;
+export type ModifiersContextType = object | typeof undefined;
 
 export type DialogProps = {
   actions?: Array<{
@@ -71,7 +71,7 @@ export type DialogFooterProps = {
 export type DialogHeaderProps = {
   children?: React.ReactNode,
   closeButton?: React.ReactNode,
-  titleProps?: Object
+  titleProps?: object
 };
 
 export type DialogRowProps = {
@@ -83,7 +83,7 @@ export type DialogTitleProps = {
   as?: Element,
   children: React.ReactNode,
   id?: string,
-  theme: Object,
+  theme: object,
   variant?: Variant
 };
 

@@ -20,7 +20,7 @@ export type ChoiceProps = {
   justify?: boolean,
   iconChecked: React.ReactElement<any>,
   inputRef?: (node: HTMLInputElement | null | undefined) => void,
-  rootProps?: Object,
+  rootProps?: object,
   hideLabel?: boolean,
   invalid?: boolean,
   label: string | React.ReactElement<any>,
@@ -49,7 +49,7 @@ export type ChoiceGroupProps = {
   onChange?: (event: React.SyntheticEvent) => void,
   required?: boolean,
   role?: string,
-  rootProps?: Object,
+  rootProps?: object,
   size?: Size,
   type: Type
 };

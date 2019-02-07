@@ -23,12 +23,12 @@ export type MenuItemType = {
 };
 export type MenuItems = Array<MenuItemType>;
 
-export type MenuPropGetter = (props?: Object) => Object;
+export type MenuPropGetter = (props?: object) => object;
 
 export type MenuRenderFn = (props?: MenuRenderProps) => React.ReactNode;
 
 type MenuRenderProps = {
-  props: Object
+  props: object
 };
 
 export type MenuProps = {
@@ -39,7 +39,7 @@ export type MenuProps = {
   itemKey?: string
 };
 
-export type MenuDividerProps = Object;
+export type MenuDividerProps = object;
 
 export type MenuGroupProps = {
   children?: React.ReactNode,
@@ -60,12 +60,12 @@ export type MenuItemProps = {
   variant?: keyof typeof VARIANT
 };
 
-export type MenuItemPropGetter = (props?: Object) => Object;
+export type MenuItemPropGetter = (props?: object) => object;
 
 export type MenuItemRenderFn = (props?: MenuItemRenderProps) => React.ReactNode;
 
 export type MenuItemRenderProps = {
-  props: Object
+  props: object
 };
 
 export type MenuDividerThemeFn = ComponentThemeFn<MenuDividerTheme>;

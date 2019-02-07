@@ -15,7 +15,7 @@ export type TextAreaProps = {
   defaultValue?: string,
   disabled?: boolean,
   inputRef?: (node: React.Component | null | undefined) => void,
-  rootProps?: Object,
+  rootProps?: object,
   invalid?: boolean,
   onInput?: (event: React.SyntheticEvent) => void,
   onChange?: (event: React.SyntheticEvent) => void,

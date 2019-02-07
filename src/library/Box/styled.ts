@@ -13,14 +13,14 @@ const getMeasurement = (value: number | string) =>
 
 const getSpaceValue = (
   property: string,
-  theme: Object,
+  theme: object,
   value: number | string
 ) =>
   theme[`space_${SPACING_TYPES[property]}_${value}`] || getMeasurement(value);
 
 const getSpacingStyles = (
   property: string,
-  restProps: Object,
+  restProps: object,
   rtl: boolean
 ): SpacingStyles => {
   // prettier-ignore

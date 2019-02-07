@@ -18,7 +18,7 @@ export type TooltipProps = {
   hasArrow?: boolean,
   id?: string,
   isOpen?: boolean,
-  modifiers?: Object,
+  modifiers?: object,
   onClose?: (event: React.SyntheticEvent) => void,
   onOpen?: (event: React.SyntheticEvent) => void,
   placement?: Placement,
@@ -37,10 +37,10 @@ export type TooltipState = {
   isOpen: boolean
 };
 
-export type TooltipPropGetter = (props?: Object) => Object;
+export type TooltipPropGetter = (props?: object) => object;
 export type TooltipRenderFn = (props?: TooltipRenderProps) => React.ReactNode;
 type TooltipRenderProps = {
-  props: Object
+  props: object
 };
 
 export type TooltipThemeFn = ComponentThemeFn<TooltipTheme>;

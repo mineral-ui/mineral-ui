@@ -25,7 +25,7 @@ export type SelectProps = {
   item?: SelectRenderFn,
   itemKey?: string,
   menu?: SelectRenderFn,
-  modifiers?: Object,
+  modifiers?: object,
   name?: string,
   onChange?: (item: MenuItemType, event: React.SyntheticEvent) => void,
   onClose?: (event: React.SyntheticEvent) => void,
@@ -68,10 +68,10 @@ export type SelectStateAndHelpers = {
   helpers: SelectHelpers
 };
 
-export type SelectPropGetter = (props?: Object) => Object;
+export type SelectPropGetter = (props?: object) => object;
 export type SelectRenderFn = (props?: SelectRenderProps) => React.ReactNode;
 type SelectRenderProps = {
-  props: Object
+  props: object
 } & SelectStateAndHelpers;
 
 export type SelectTriggerProps = {

@@ -20,7 +20,7 @@ export type PaginationProps = {
   showPageNumbers?: boolean,
   showPageSizer?: boolean,
   size?: Size,
-  theme: Object,
+  theme: object,
   totalCount: number,
   visibleRange?: number
 };

@@ -30,7 +30,7 @@ export type TableProps = {
   selectedRows?: Rows,
   sort?: Sort,
   sortable?: boolean,
-  sortComparator?: (a: Object, b: Object, key: string) => -1 | 0 | 1,
+  sortComparator?: (a: object, b: object, key: string) => -1 | 0 | 1,
   striped?: boolean,
   title: React.ReactNode,
   titleAppearance?: TitleElement,
@@ -109,24 +109,24 @@ export type Messages = {
   sortColumnDescending: string
 };
 
-export type Row = Object;
+export type Row = object;
 
 export type Rows = Array<Row>;
 
 export type RenderFn = (props: RenderProps) => React.ReactNode;
 
 export type RenderProps = {
-  props: Object,
-  state?: Object,
-  helpers?: Object
+  props: object,
+  state?: object,
+  helpers?: object
 };
 
-export type SortComparator = (a: Object, b: Object, key: string) => -1 | 0 | 1;
+export type SortComparator = (a: object, b: object, key: string) => -1 | 0 | 1;
 
 export type Comparators = { [column: string]: SortComparator };
 
 export type SelectableProps = {
-  children: (props: Object) => React.ReactNode,
+  children: (props: object) => React.ReactNode,
   data: SelectableData,
   defaultSelected?: SelectableData,
   onToggle?: (item: SelectableItem, selected: boolean) => void,
@@ -157,7 +157,7 @@ export type SelectableToggle = (item: SelectableItem) => void;
 export type SelectableToggleAll = () => void;
 
 export type SortableProps = {
-  children: (props: Object) => React.ReactNode,
+  children: (props: object) => React.ReactNode,
   comparators?: Comparators,
   data: SortableData,
   defaultSort?: Sort,
@@ -170,7 +170,7 @@ export type SortableState = {
   sort: Sort | null | undefined
 };
 
-export type SortableData = Array<Object>;
+export type SortableData = Array<object>;
 
 export type Sort = {
   key: string,
@@ -329,7 +329,7 @@ export type TableTitleProps = {
   children: React.ReactNode,
   hide?: boolean,
   id: string,
-  theme: Object
+  theme: object
 };
 
 export type TableTitleThemeFn = ComponentThemeFn<TableTitleTheme>;

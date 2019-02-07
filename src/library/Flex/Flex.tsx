@@ -15,7 +15,7 @@ import { flexPropTypes } from './propTypes';
 import { FlexDefaultProps, FlexProps } from './types';
 
 const getGutterSize = (
-  theme: Object,
+  theme: object,
   value: number | string
 ): number | string =>
   typeof value === 'number' && value !== 0
