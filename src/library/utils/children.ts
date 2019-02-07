@@ -12,12 +12,14 @@ export const findDeep = (
   children: React.ReactNode,
   finder: (element: React.ReactElement<any>) => boolean
 ): React.ReactElement<any> | null | undefined =>
-  Children.toArray(children).filter(isValidElement).find((child) =>
-      // @ts-ignore FIXME - issue in recursive findDeep call
+  Children.toArray(children)
+    .filter(isValidElement)
+    .find((child) =>
+      // @ts-ignore
       hasComplexChildren(child)
-        ? findDeep(child.props['children'], finder)
+        ? findDeep(child.props.children, finder)
         : finder(child)
-  );
+    );
 
 export function findByType(
   children: React.ReactNode,
