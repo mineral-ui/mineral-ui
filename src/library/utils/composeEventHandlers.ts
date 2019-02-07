@@ -7,12 +7,12 @@ export default function composeEventHandlers(...handlers: Array<any>) {
   } else if (fns.length === 1) {
     return fns[0];
   } else {
-    return (event: object, ...args: Array<any>) => {
+    return (event: React.SyntheticEvent, ...args: Array<any>) => {
       let prevented = false;
       return fns.forEach((fn) => {
         if (!prevented) {
           fn(event, ...args);
-          prevented = event.nativeEvent.preventMineralDefault;
+          prevented = event.nativeEvent['preventMineralDefault'];
         }
       });
     };

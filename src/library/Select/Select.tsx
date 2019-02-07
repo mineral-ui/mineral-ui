@@ -266,8 +266,7 @@ export default class Select extends Component<SelectProps, SelectState> {
   };
 
   onTriggerKeyDown = (event: React.KeyboardEvent) => {
-    // $FlowFixMe
-    event.nativeEvent.preventMineralDefault = true;
+    event.nativeEvent['preventMineralDefault'] = true;
 
     const { key } = event;
     const isOpen = this.getControllableValue('isOpen');
