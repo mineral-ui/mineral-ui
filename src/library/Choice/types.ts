@@ -25,7 +25,7 @@ export type ChoiceProps = {
   invalid?: boolean,
   label: string | React.ReactElement<any>,
   name?: string,
-  onChange?: (event: SyntheticInputEvent<>) => void,
+  onChange?: (event: React.SyntheticEvent) => void,
   required?: boolean,
   size?: Size,
   type: Type,

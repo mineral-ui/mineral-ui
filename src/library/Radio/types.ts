@@ -22,7 +22,7 @@ export type RadioProps = {
   label: string | React.ReactElement<any>,
   labelPosition?: LabelPosition,
   name?: string,
-  onChange?: (event: SyntheticInputEvent<>) => void,
+  onChange?: (event: React.SyntheticEvent) => void,
   required?: boolean,
   rootProps?: object,
   size?: Size,

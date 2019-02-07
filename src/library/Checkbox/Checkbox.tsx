@@ -118,7 +118,7 @@ export default class Checkbox extends PureComponent<CheckboxProps> {
     }
   };
 
-  handleClick = (event: SyntheticInputEvent<HTMLInputElement>) => {
+  handleClick = (event: React.SyntheticEvent<HTMLInputElement>) => {
     const { defaultIndeterminate, indeterminate, onChange } = this.props;
 
     if (defaultIndeterminate || indeterminate) {
