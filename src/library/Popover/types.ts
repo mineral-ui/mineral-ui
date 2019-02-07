@@ -13,7 +13,7 @@ type Placement = keyof typeof PLACEMENT;
 
 export type PopoverProps = {
   children: React.ReactNode | PopoverRenderFn,
-  content: $FlowFixMe | PopoverRenderFn, // TODO: Why not same as children?
+  content: React.ReactNode | PopoverRenderFn,
   cursor?: string,
   defaultIsOpen?: boolean,
   disabled?: boolean,
