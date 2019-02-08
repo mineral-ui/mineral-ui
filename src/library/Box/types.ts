@@ -6,34 +6,34 @@ import { StyleValue } from '../styles/types';
 type SpacingSize = keyof typeof SPACING_SIZE;
 type InsetSpacingSize = keyof typeof INSET_SPACING_SIZE;
 
-export type BoxProps = {
-  breakpoints?: Array<number | string>,
-  height?: HeightOrWidthProp,
-  inline?: boolean | Array<boolean | null>,
-  margin?: SpacingProp,
-  marginBottom?: SpacingProp,
-  marginEnd?: SpacingProp,
-  marginHorizontal?: SpacingProp,
-  marginLeft?: SpacingProp,
-  marginRight?: SpacingProp,
-  marginStart?: SpacingProp,
-  marginTop?: SpacingProp,
-  marginVertical?: SpacingProp,
-  padding?: InsetSpacingProp,
-  paddingBottom?: SpacingProp,
-  padddingEnd?: SpacingProp,
-  paddingHorizontal?: SpacingProp,
-  paddingLeft?: SpacingProp,
-  paddingRight?: SpacingProp,
-  padddingStart?: SpacingProp,
-  paddingTop?: SpacingProp,
-  paddingVertical?: SpacingProp,
-  width?: HeightOrWidthProp
-};
+export interface BoxProps {
+  breakpoints?: Array<number | string>;
+  height?: HeightOrWidthProp;
+  inline?: boolean | Array<boolean | null>;
+  margin?: SpacingProp;
+  marginBottom?: SpacingProp;
+  marginEnd?: SpacingProp;
+  marginHorizontal?: SpacingProp;
+  marginLeft?: SpacingProp;
+  marginRight?: SpacingProp;
+  marginStart?: SpacingProp;
+  marginTop?: SpacingProp;
+  marginVertical?: SpacingProp;
+  padding?: InsetSpacingProp;
+  paddingBottom?: SpacingProp;
+  padddingEnd?: SpacingProp;
+  paddingHorizontal?: SpacingProp;
+  paddingLeft?: SpacingProp;
+  paddingRight?: SpacingProp;
+  padddingStart?: SpacingProp;
+  paddingTop?: SpacingProp;
+  paddingVertical?: SpacingProp;
+  width?: HeightOrWidthProp;
+}
 
-export type SpacingStyles = {
-  [property: string]: Array<SpacingValue> | SpacingValue
-};
+export interface SpacingStyles {
+  [property: string]: Array<SpacingValue> | SpacingValue;
+}
 
 export type SpacingValue = StyleValue | SpacingSize;
 

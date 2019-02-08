@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { componentStyleReset, getResponsiveStyles } from '../styles';
 import { SPACING_TYPES } from './constants';
 
-import { SpacingStyles, SpacingValue } from './types';
+import { SpacingStyles, SpacingValue, BoxProps } from './types';
 
 const getMeasurement = (value: number | string) =>
   typeof value === 'number' && value < 1 && value !== 0
@@ -59,7 +59,7 @@ const getSpacingStyles = (
 export const BoxRoot = styled('div', {
   shouldForwardProp: (prop) =>
     ['height', 'width'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ breakpoints, height, inline, theme, width, ...restProps }) => {
+})<BoxProps>(({ breakpoints, height, inline, theme, width, ...restProps }) => {
   const rtl = theme.direction === 'rtl';
 
   const mapValueToProperty = (
