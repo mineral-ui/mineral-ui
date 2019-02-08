@@ -11,6 +11,7 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
+    "prettier/react",
     "plugin:prettier/recommended",
     "prettier/@typescript-eslint"
   ],
@@ -20,7 +21,8 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "sourceType": "module"
   },
   "plugins": [
     "@typescript-eslint",
@@ -44,7 +46,16 @@
     }],
     "no-unused-vars": ["error", { "vars": "all", "varsIgnorePattern": "[Ii]gnore" }],
     "prettier/prettier": "error",
-    "react/display-name": ["error", { "ignoreTranspilerName": true }]
+    "react/display-name": ["error", { "ignoreTranspilerName": true }],
+
+    "@typescript-eslint/array-type": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-var-requires": "off"
   },
   "settings": {
     "react": {
