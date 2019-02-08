@@ -31,11 +31,11 @@ class Button extends Component<ButtonProps> {
     // [1] Necessary when rendering an `a` element, which doesn't use `disabled`
     const rootProps = {
       'aria-disabled': disabled, // [1]
+      children,
       disabled,
       ref: forwardedRef,
       size,
       tabIndex: disabled ? -1 : undefined, // [1]
-      text: children,
       variant,
       ...restProps
     };

@@ -22,7 +22,7 @@ const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
 
 export const Content = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ size, theme: baseTheme }) => {
+})<ButtonProps>(({ size, theme: baseTheme }) => {
   const theme = buttonTheme(baseTheme);
   const rtl = theme.direction === 'rtl';
   const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
@@ -72,15 +72,15 @@ export const Inner = styled('span')({
 
 export const Button = styled('button', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(
+})<ButtonProps>(
   ({
+    children,
     circular,
     disabled,
     fullWidth,
     minimal,
     primary,
     size,
-    text,
     theme: baseTheme,
     variant
   }) => {
@@ -143,7 +143,7 @@ export const Button = styled('button', {
       // (really just pertinent on icon-only buttons)
       minWidth: theme[`Button_height_${size}`],
       padding:
-        text === undefined
+        children === undefined
           ? theme[`Button_paddingIconOnly_${size}`]
           : `0 ${theme.Button_paddingHorizontal}`,
       textDecoration: 'none',
