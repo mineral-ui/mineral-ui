@@ -1,9 +1,9 @@
 /* @flow */
 
-export type TruncateProps = {
-  children?: React.ReactNode
-};
+export interface TruncateProps {
+  children?: React.ReactNode;
+}
 
-export type TruncateState = {
-  showTooltip: boolean
-};
+export interface TruncateState {
+  showTooltip: boolean;
+}

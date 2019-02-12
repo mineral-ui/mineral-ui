@@ -16,35 +16,35 @@ type Direction = StringOrArrayOfStrings<typeof DIRECTION>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
 
-export type FlexProps = {
+export interface FlexProps {
   alignItems?: AlignItems;
   breakpoints?: Array<number | string>;
-  children?: React$Node;
+  children?: React.ReactNode;
   direction?: Direction;
   gutterWidth?: GutterWidth;
   justifyContent?: JustifyContent;
   wrap?: boolean | Array<boolean | null>;
-};
+}
 
-export type FlexDefaultProps = {
+export interface FlexDefaultProps {
   alignItems: AlignItems;
   direction: Direction;
   gutterWidth: GutterWidth;
   justifyContent: JustifyContent;
-};
+}
 
 type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
-export type FlexItemProps = {
+export interface FlexItemProps {
   alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>;
   breakpoints?: Array<number | string>;
   flex?: boolean;
   grow?: GrowOrShrink;
   minWidth?: HeightOrWidthProp;
   shrink?: GrowOrShrink;
-};
+}
 
-export type FlexItemDefaultProps = {
+export interface FlexItemDefaultProps {
   grow: GrowOrShrink;
   shrink: GrowOrShrink;
-};
+}

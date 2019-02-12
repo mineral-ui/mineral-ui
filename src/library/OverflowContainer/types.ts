@@ -1,49 +1,49 @@
 /* @flow */
-import {
-  ComponentTheme,
-  ComponentThemeFn,
-  ThemeValue
-} from '../themes/types';
+import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 
-export type OverflowContainerProps = {
-  children?: React.ReactNode,
-  containerRef?: (node: HTMLElement | null | undefined) => void,
-  hideScrollbars?: boolean,
-  scrollX?: boolean,
-  scrollY?: boolean,
-  tabIndex?: number | string
-};
+export interface OverflowContainerProps {
+  children?: React.ReactNode;
+  containerRef?: (node: HTMLElement | null | undefined) => void;
+  hideScrollbars?: boolean;
+  scrollX?: boolean;
+  scrollY?: boolean;
+  tabIndex?: number | string;
+}
 
-export type OverflowContainerState = {
-  scrollable: boolean
-};
+export interface OverflowContainerState {
+  scrollable: boolean;
+}
 
-export type OverflowContainerWithShadowsProps = {
-  children?: React.ReactNode,
-  hideScrollbars?: boolean,
-  scrollX?: boolean,
-  scrollY?: boolean
-};
+export interface OverflowContainerWithShadowsProps {
+  children?: React.ReactNode;
+  hideScrollbars?: boolean;
+  scrollX?: boolean;
+  scrollY?: boolean;
+}
 
-export type OverflowContainerWithShadowsState = {
-  hasShadowBottom: boolean,
-  hasShadowLeft: boolean,
-  hasShadowRight: boolean,
-  hasShadowTop: boolean
-};
+export interface OverflowContainerWithShadowsState {
+  hasShadowBottom: boolean;
+  hasShadowLeft: boolean;
+  hasShadowRight: boolean;
+  hasShadowTop: boolean;
+}
 
 export type OverflowContainerThemeFn = ComponentThemeFn<OverflowContainerTheme>;
 export type OverflowContainerTheme = ComponentTheme<OverflowContainerThemeKeys>;
-type OverflowContainerThemeKeys = {
-  OverflowContainer_outline_focus: ThemeValue
-};
+interface OverflowContainerThemeKeys {
+  OverflowContainer_outline_focus: ThemeValue;
+}
 
-export type OverflowContainerWithShadowsThemeFn = ComponentThemeFn<OverflowContainerWithShadowsTheme>;
-export type OverflowContainerWithShadowsTheme = ComponentTheme<OverflowContainerWithShadowsThemeKeys>;
-type OverflowContainerWithShadowsThemeKeys = {
-  OverflowContainerWithShadows_outline_focus: ThemeValue,
-  OverflowContainerWithShadows_boxShadowBottom: ThemeValue,
-  OverflowContainerWithShadows_boxShadowLeft: ThemeValue,
-  OverflowContainerWithShadows_boxShadowRight: ThemeValue,
-  OverflowContainerWithShadows_boxShadowTop: ThemeValue
-};
+export type OverflowContainerWithShadowsThemeFn = ComponentThemeFn<
+  OverflowContainerWithShadowsTheme
+>;
+export type OverflowContainerWithShadowsTheme = ComponentTheme<
+  OverflowContainerWithShadowsThemeKeys
+>;
+interface OverflowContainerWithShadowsThemeKeys {
+  OverflowContainerWithShadows_outline_focus: ThemeValue;
+  OverflowContainerWithShadows_boxShadowBottom: ThemeValue;
+  OverflowContainerWithShadows_boxShadowLeft: ThemeValue;
+  OverflowContainerWithShadows_boxShadowRight: ThemeValue;
+  OverflowContainerWithShadows_boxShadowTop: ThemeValue;
+}

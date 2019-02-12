@@ -1,5 +1,5 @@
 /* @flow */
 
-export type PortalProps = {
-  children: React.ReactNode
-};
+export interface PortalProps {
+  children: React.ReactNode;
+}

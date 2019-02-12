@@ -6,20 +6,20 @@ type StringOrArrayOfStrings = $Keys<T> | Array<$Keys<T> | null>;
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 
-export type GridProps = {
+export interface GridProps {
   alignItems?: AlignItems;
   breakpoints?: Array<number | string>;
-  children?: React$Node;
+  children?: React.ReactNode;
   columns?: number;
   gutterWidth?: GutterWidth;
-};
+}
 
-export type GridDefaultProps = {
+export interface GridDefaultProps {
   alignItems: AlignItems;
   columns: number;
   gutterWidth: GutterWidth;
-};
+}
 
-export type GridItemProps = {
+export interface GridItemProps {
   span?: number | Array<number | null>;
-};
+}
