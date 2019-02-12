@@ -22,7 +22,6 @@ export type FlexProps = {
   children: React$Node,
   direction?: Direction,
   gutterWidth?: GutterWidth,
-  minWidth?: HeightOrWidthProp,
   justifyContent?: JustifyContent,
   wrap?: boolean | Array<boolean | null>
 };
@@ -41,6 +40,7 @@ export type FlexItemProps = {
   breakpoints?: Array<number | string>,
   flex?: boolean,
   grow?: GrowOrShrink,
+  minWidth?: HeightOrWidthProp,
   shrink?: GrowOrShrink
 };
 
