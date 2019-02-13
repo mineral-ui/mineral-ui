@@ -5,7 +5,12 @@ import { hideVisually } from 'polished';
 import { componentStyleReset, getNormalizedValue } from '../styles';
 import { choiceTheme, choiceGroupTheme } from './themes';
 
-import { ChoiceProps, ChoiceGroupStyleProps } from './types';
+import {
+  ChoiceProps,
+  ChoiceGroupStyleProps,
+  ChoiceTextStyleProps,
+  ChoiceControlStyleProps
+} from './types';
 
 export const ChoiceRoot = styled('label', {
   shouldForwardProp: (prop) =>
@@ -89,7 +94,7 @@ export const Input = styled('input')(({ theme: baseTheme }) => {
 export const Text = styled('span', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})<ChoiceProps>(
+})<ChoiceTextStyleProps>(
   ({ disabled, hideLabel, justify, labelPosition, size, theme: baseTheme }) => {
     const theme = choiceTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -122,7 +127,7 @@ export const Text = styled('span', {
 export const Control = styled('span', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})<ChoiceProps>(({ disabled, size, theme: baseTheme }) => {
+})<ChoiceControlStyleProps>(({ disabled, size, theme: baseTheme }) => {
   const theme = choiceTheme(baseTheme);
   const backgroundColor = disabled
     ? theme.input_backgroundColor_disabled

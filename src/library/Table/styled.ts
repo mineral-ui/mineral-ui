@@ -27,7 +27,7 @@ import {
   TableRowProps,
   TableSelectableCellProps,
   TableSortableHeaderCellStyleProps,
-  TableTitleProps
+  TableTitleStyleProps
 } from './types';
 
 const REGEX_IS_EM_VALUE = /\d+em$/;
@@ -361,7 +361,7 @@ export const TableSortableHeaderCellIconHolder = styled('span', {
   }
 );
 
-export const TableTitleRoot = styled('caption')<TableTitleProps>(
+export const TableTitleRoot = styled('caption')<TableTitleStyleProps>(
   ({ hide, theme: baseTheme }) => {
     const theme = tableTitleTheme(baseTheme);
 

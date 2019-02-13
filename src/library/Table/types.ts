@@ -338,6 +338,8 @@ export interface TableTitleProps {
   theme: object;
 }
 
+export type TableTitleStyleProps = Pick<TableTitleProps, 'hide'>;
+
 export type TableTitleThemeFn = ComponentThemeFn<TableTitleTheme>;
 export type TableTitleTheme = ComponentTheme<TableTitleThemeKeys>;
 interface TableTitleThemeKeys {

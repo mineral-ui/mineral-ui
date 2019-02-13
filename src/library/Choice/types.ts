@@ -33,6 +33,13 @@ export interface ChoiceDefaultProps {
   size: Size;
 }
 
+export type ChoiceControlStyleProps = Pick<ChoiceProps, 'disabled' | 'size'>;
+
+export type ChoiceTextStyleProps = Pick<
+  ChoiceProps,
+  'disabled' | 'hideLabel' | 'justify' | 'labelPosition' | 'size'
+>;
+
 export interface ChoiceGroupProps {
   checked?: string | Array<string>;
   children?: React.ReactNode;
