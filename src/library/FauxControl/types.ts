@@ -20,10 +20,39 @@ export interface FauxControlProps {
   variant?: keyof typeof VARIANT;
 }
 
-export type FauxControlStyleProps = Partial<FauxControlProps> & {
-  controlPropsIn: object,
-  controlSize: keyof typeof SIZE,
-  hasPlaceholder: boolean,
+export type FauxControlStyleProps = Pick<
+  FauxControlProps,
+  'disabled' | 'variant'
+>;
+
+export type FauxControlPrefixStyleProps = Pick<
+  FauxControlProps,
+  'iconStart' | 'size'
+>;
+
+export type FauxControlSuffixStyleProps = Pick<
+  FauxControlProps,
+  'iconEnd' | 'size' | 'variant'
+>;
+
+export type FauxControlUnderlayStyleProps = Pick<
+  FauxControlProps,
+  'disabled' | 'readOnly' | 'variant'
+>;
+
+export type FauxControlControlStyleProps = Pick<
+  FauxControlProps,
+  | 'disabled'
+  | 'iconEnd'
+  | 'iconStart'
+  | 'readOnly'
+  | 'size'
+  | 'suffix'
+  | 'variant'
+> & {
+  controlPropsIn?: object,
+  controlSize?: keyof typeof SIZE,
+  hasPlaceholder?: boolean,
   prefix?: string
 };
 

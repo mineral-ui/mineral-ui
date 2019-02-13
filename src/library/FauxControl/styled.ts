@@ -6,7 +6,13 @@ import { componentStyleReset, getNormalizedValue } from '../styles';
 
 import { fauxControlTheme } from './themes';
 
-import { FauxControlStyleProps } from './types';
+import {
+  FauxControlStyleProps,
+  FauxControlPrefixStyleProps,
+  FauxControlSuffixStyleProps,
+  FauxControlUnderlayStyleProps,
+  FauxControlControlStyleProps
+} from './types';
 
 export const FauxControlRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
@@ -52,7 +58,7 @@ export const FauxControlRoot = styled('div', {
 
 export const Prefix = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})<FauxControlStyleProps>(({ iconStart, size, theme: baseTheme }) => {
+})<FauxControlPrefixStyleProps>(({ iconStart, size, theme: baseTheme }) => {
   const theme = fauxControlTheme(baseTheme);
   const rtl = theme.direction === 'rtl';
 
@@ -81,45 +87,47 @@ export const Prefix = styled('span', {
 
 export const Suffix = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})<FauxControlStyleProps>(({ iconEnd, size, theme: baseTheme, variant }) => {
-  const theme = fauxControlTheme(baseTheme);
-  const rtl = theme.direction === 'rtl';
+})<FauxControlSuffixStyleProps>(
+  ({ iconEnd, size, theme: baseTheme, variant }) => {
+    const theme = fauxControlTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
 
-  const fontSize =
-    size === 'small'
-      ? theme.FauxControl_fontSize_small
-      : theme.FauxControl_fontSize;
-  const marginWithIcon = getNormalizedValue(
-    theme.FauxControl_paddingHorizontal,
-    fontSize
-  );
-  const marginWithoutIcon = getNormalizedValue(
-    `${parseFloat(theme.FauxControlIcon_marginHorizontal) / 2}em`,
-    fontSize
-  );
+    const fontSize =
+      size === 'small'
+        ? theme.FauxControl_fontSize_small
+        : theme.FauxControl_fontSize;
+    const marginWithIcon = getNormalizedValue(
+      theme.FauxControl_paddingHorizontal,
+      fontSize
+    );
+    const marginWithoutIcon = getNormalizedValue(
+      `${parseFloat(theme.FauxControlIcon_marginHorizontal) / 2}em`,
+      fontSize
+    );
 
-  return {
-    flex: '0 0 auto',
-    fontSize,
-    marginLeft: rtl
-      ? iconEnd || variant
+    return {
+      flex: '0 0 auto',
+      fontSize,
+      marginLeft: rtl
+        ? iconEnd || variant
+          ? 0
+          : marginWithIcon
+        : marginWithoutIcon,
+      marginRight: rtl
+        ? marginWithoutIcon
+        : iconEnd || variant
         ? 0
-        : marginWithIcon
-      : marginWithoutIcon,
-    marginRight: rtl
-      ? marginWithoutIcon
-      : iconEnd || variant
-      ? 0
-      : marginWithIcon,
-    whiteSpace: 'nowrap',
-    ...ellipsis('8em')
-  };
-});
+        : marginWithIcon,
+      whiteSpace: 'nowrap',
+      ...ellipsis('8em')
+    };
+  }
+);
 
 export const Underlay = styled('div', {
   shouldForwardProp: (prop) =>
     ['disabled', 'readOnly'].indexOf(prop) === -1 && isPropValid(prop)
-})<FauxControlStyleProps>(
+})<FauxControlUnderlayStyleProps>(
   ({ disabled, readOnly, theme: baseTheme, variant }) => {
     const theme = fauxControlTheme(baseTheme);
 
@@ -147,7 +155,7 @@ export const Underlay = styled('div', {
 
 export const Control = styled('input', {
   shouldForwardProp: (prop) => ['as', 'prefix'].indexOf(prop) === -1
-})<FauxControlStyleProps>(
+})<FauxControlControlStyleProps>(
   ({
     controlPropsIn,
     controlSize,

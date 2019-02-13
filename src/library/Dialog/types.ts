@@ -38,9 +38,7 @@ export interface DialogProps {
   variant?: Variant;
 }
 
-export type DialogStyleProps = Partial<DialogProps> & {
-  title?: string
-}
+export type DialogStyleProps = Pick<DialogProps, 'size'>
 
 export interface DialogDefaultProps {
   closeButtonLabel: string;
