@@ -15,13 +15,13 @@ const exec = (command, env) =>
 
 // components es modules
 console.log('\n\nBuilding ES modules...');
-exec('babel ./src --out-dir ./dist/es', {
+exec('babel ./src --out-dir ./dist/es --root-mode upward', {
   NODE_ENV
 });
 
 // components cjs modules
 console.log('\n\nBuilding CommonJS modules...');
-exec('babel ./src --out-dir ./dist', {
+exec('babel ./src --out-dir ./dist --root-mode upward', {
   BABEL_ENV: 'cjs',
   NODE_ENV
 });
