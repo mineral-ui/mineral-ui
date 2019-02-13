@@ -39,8 +39,7 @@ const propDocs: ComponentPropDocs = {
   },
   children: {
     description: 'Must be [FlexItem(s)](./flex-item)',
-    type: 'React$Node',
-    required: true
+    type: 'React$Node'
   },
   direction: {
     description:

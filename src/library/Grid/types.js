@@ -9,7 +9,7 @@ type GutterWidth = $Keys<typeof GUTTER_WIDTH> | number | string;
 export type GridProps = {
   alignItems?: AlignItems,
   breakpoints?: Array<number | string>,
-  children: React$Node,
+  children?: React$Node,
   columns?: number,
   gutterWidth?: GutterWidth
 };

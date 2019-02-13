@@ -38,8 +38,7 @@ const propDocs: ComponentPropDocs = {
   },
   children: {
     description: 'Must be [GridItem(s)](./grid-item)',
-    type: 'React$Node',
-    required: true
+    type: 'React$Node'
   },
   columns: {
     description:

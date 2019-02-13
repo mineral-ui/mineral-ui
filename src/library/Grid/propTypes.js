@@ -10,7 +10,7 @@ const stringOrArrayOfStringsPropType = (constant) => {
 export const gridPropTypes = {
   alignItems: stringOrArrayOfStringsPropType(ALIGN_ITEMS),
   breakpoints: arrayOf(oneOfType([number, string])),
-  children: node.isRequired,
+  children: node,
   columns: number,
   gutterWidth: oneOfType([number, string])
 };

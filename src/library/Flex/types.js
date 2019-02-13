@@ -19,7 +19,7 @@ type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
 export type FlexProps = {
   alignItems?: AlignItems,
   breakpoints?: Array<number | string>,
-  children: React$Node,
+  children?: React$Node,
   direction?: Direction,
   gutterWidth?: GutterWidth,
   justifyContent?: JustifyContent,

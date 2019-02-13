@@ -24,7 +24,7 @@ const stringOrArrayOfStringsPropType = (constant) => {
 export const flexPropTypes = {
   alignItems: stringOrArrayOfStringsPropType(ALIGN_ITEMS),
   breakpoints: arrayOf(oneOfType([number, string])),
-  children: node.isRequired,
+  children: node,
   direction: stringOrArrayOfStringsPropType(DIRECTION),
   gutterWidth: oneOfType([number, string]),
   minWidth: spacingPropType,
