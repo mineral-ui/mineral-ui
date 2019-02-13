@@ -50,7 +50,7 @@ export interface ChoiceGroupProps {
   type: Type;
 }
 
-export type ChoiceGroupStyleProps = Pick<ChoiceGroupProps, 'inline' | 'size'>
+export type ChoiceGroupStyleProps = Pick<ChoiceGroupProps, 'inline' | 'size'>;
 
 export interface ChoiceGroupDefaultProps {
   role: string;

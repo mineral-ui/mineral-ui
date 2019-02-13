@@ -24,9 +24,7 @@ export interface TabsProps {
   theme: object;
 }
 
-export type TabsStyleProps = Partial<TabsProps> & {
-  onChange?: (event: React.FormEvent<HTMLElement>) => void
-}
+export type TabsStyleProps = Pick<TabsProps, 'height' | 'position'>;
 
 export interface TabsDefaultProps {
   align: Align;
@@ -77,10 +75,6 @@ export interface TabListProps {
   vertical?: boolean;
 }
 
-export interface TabListStyleProps extends TabListProps {
-  count: number;
-}
-
 export interface TabListDefaultProps {
   position: Position;
 }
@@ -88,6 +82,20 @@ export interface TabListDefaultProps {
 export interface TabListState {
   scrollable: boolean;
 }
+
+export type TabListStyleProps = Pick<TabListProps, 'height' | 'vertical'>;
+
+export type TabListInnerStyleProps = Pick<
+  TabListProps,
+  'position' | 'vertical'
+> & {
+  hideScrollbars?: boolean;
+  tabIndex?: number;
+};
+
+export type TabListListStyleProps = Pick<TabListProps, 'align' | 'vertical'> & {
+  count: number;
+};
 
 export type TabListThemeFn = ComponentThemeFn<TabListTheme>;
 export type TabListTheme = ComponentTheme<TabListThemeKeys>;
@@ -103,6 +111,11 @@ export interface TabPanelProps {
   children?: React.ReactNode;
   id?: string;
   tabId?: string;
+}
+
+export interface TabPanelStyleProps {
+  position: Position;
+  role: string;
 }
 
 export type TabPanelThemeFn = ComponentThemeFn<TabPanelTheme>;

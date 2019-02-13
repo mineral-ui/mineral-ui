@@ -5,12 +5,12 @@ import { componentStyleReset } from '../styles';
 import { SHAPE } from './constants';
 import { avatarTheme } from './themes';
 
-import { AvatarStyledProps } from './types';
+import { AvatarStyleProps } from './types';
 
 export const AvatarRoot = styled('span', {
   shouldForwardProp: (prop) =>
     ['color', 'shape', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})<AvatarStyledProps>(
+})<AvatarStyleProps>(
   ({
     background,
     color: propColor,

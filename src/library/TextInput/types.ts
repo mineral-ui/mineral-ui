@@ -28,14 +28,16 @@ export interface TextInputProps {
   variant?: Variant;
 }
 
-export type TextInputStyleProps = Partial<TextInputProps> & {
-  controlSize?: Size,
-  size?: number
-};
-
 export interface TextInputDefaultProps {
   size: Size;
   type: Type;
+}
+
+export type TextInputStyleProps = Pick<TextInputProps, 'variant'>;
+
+export interface TextInputInputStyleProps {
+  controlSize?: Size;
+  size?: number; // Overwrite (from TextInputProps) to match DOM expectation
 }
 
 export type TextInputThemeFn = ComponentThemeFn<TextInputTheme>;

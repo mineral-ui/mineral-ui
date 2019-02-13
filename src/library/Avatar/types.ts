@@ -20,9 +20,12 @@ export interface AvatarDefaultProps {
   size: Size;
 }
 
-export interface AvatarStyledProps extends AvatarProps {
-  icon: React.ReactElement<any>;
-  noBackground: boolean;
+export type AvatarStyleProps = Pick<
+  AvatarProps,
+  'background' | 'color' | 'shape' | 'size'
+> & {
+  icon?: React.ReactNode;
+  noBackground?: boolean;
 };
 
 export type AvatarThemeFn = ComponentThemeFn<AvatarTheme>;

@@ -56,61 +56,59 @@ const ThemedFauxControl = themed(FauxControl)((props) =>
   )
 );
 
-export const SelectTriggerRoot = styled(
-  ThemedFauxControl
-)<SelectTriggerStyleProps>(
-  ({ disabled, readOnly, selectedItemVariant, theme: baseTheme, variant }) => {
-    const theme = selectTriggerTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+export const SelectTriggerRoot = styled(ThemedFauxControl)<
+  SelectTriggerStyleProps
+>(({ disabled, readOnly, selectedItemVariant, theme: baseTheme, variant }) => {
+  const theme = selectTriggerTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
 
-    return {
-      alignItems: 'center',
-      display: 'flex',
-      width: '100%',
+  return {
+    alignItems: 'center',
+    display: 'flex',
+    width: '100%',
 
-      // all icons
-      '& [role="img"]': {
-        display: 'block',
-        color: theme.SelectIcon_color,
-        flex: '0 0 auto',
+    // all icons
+    '& [role="img"]': {
+      display: 'block',
+      color: theme.SelectIcon_color,
+      flex: '0 0 auto',
 
-        '&:first-child': {
-          color:
-            disabled || readOnly
-              ? theme.color_disabled
-              : selectedItemVariant
-              ? theme[`color_${selectedItemVariant}`]
-              : theme.SelectIcon_color,
-          margin: `0 ${theme.SelectIcon_marginHorizontal}`
-        }
-      },
-
-      // the arrow icon
-      '& :not([role="img"]) ~ [role="img"]': {
+      '&:first-child': {
         color:
           disabled || readOnly
             ? theme.color_disabled
-            : variant
-            ? theme[`icon_color_${variant}`]
-            : theme.SelectIcon_color
-      },
-
-      // the variant icon
-      '& :not([role="img"]) + [role="img"]:not(:last-of-type)': {
-        color:
-          disabled || readOnly
-            ? theme.color_disabled
-            : variant
-            ? theme[`color_${variant}`]
             : selectedItemVariant
             ? theme[`color_${selectedItemVariant}`]
             : theme.SelectIcon_color,
-        marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
-        marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
+        margin: `0 ${theme.SelectIcon_marginHorizontal}`
       }
-    };
-  }
-);
+    },
+
+    // the arrow icon
+    '& :not([role="img"]) ~ [role="img"]': {
+      color:
+        disabled || readOnly
+          ? theme.color_disabled
+          : variant
+          ? theme[`icon_color_${variant}`]
+          : theme.SelectIcon_color
+    },
+
+    // the variant icon
+    '& :not([role="img"]) + [role="img"]:not(:last-of-type)': {
+      color:
+        disabled || readOnly
+          ? theme.color_disabled
+          : variant
+          ? theme[`color_${variant}`]
+          : selectedItemVariant
+          ? theme[`color_${selectedItemVariant}`]
+          : theme.SelectIcon_color,
+      marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
+      marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
+    }
+  };
+});
 
 export const Trigger = styled('div', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)

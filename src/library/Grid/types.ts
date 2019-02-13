@@ -28,6 +28,9 @@ export interface GridItemProps extends FlexItemProps {
 
 export interface GridCombinedProps extends GridProps, GridItemProps {}
 
-export type GridItemStyleProps = Partial<GridCombinedProps> & {
-  shrink?: number
-}
+export type GridItemStyleProps = Pick<
+  GridCombinedProps,
+  'breakpoints' | 'columns' | 'gutterWidth' | 'span'
+> & {
+  shrink?: number; // TODO: Maybe this should be excluded entirely from GridItemProps?
+};

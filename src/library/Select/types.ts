@@ -83,9 +83,12 @@ export interface SelectTriggerProps {
   variant?: Variant;
 }
 
-export interface SelectTriggerStyleProps extends SelectTriggerProps {
+export type SelectTriggerStyleProps = Pick<
+  SelectTriggerProps,
+  'disabled' | 'readOnly' | 'size' | 'variant' // size: Doesn't match DOM expection, but no error thrown :shrug:
+> & {
   selectedItemVariant: string;
-}
+};
 
 export type SelectThemeFn = ComponentThemeFn<SelectTheme>;
 export type SelectTheme = ComponentTheme<SelectThemeKeys>;

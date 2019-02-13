@@ -18,13 +18,13 @@ export interface FormFieldProps {
   variant?: keyof typeof VARIANT;
 }
 
-export interface FormFieldStyleProps extends FormFieldProps {
-  isGroup: boolean;
-}
-
 export interface FormFieldDefaultProps {
   requiredText: string | React.ReactElement<any>;
 }
+
+export type FormFieldStyleProps = Pick<FormFieldProps, 'variant'> & {
+  isGroup: boolean;
+};
 
 export type FormFieldDividerProps = object;
 
@@ -32,6 +32,15 @@ export interface FormFieldsetProps {
   children?: React.ReactNode;
   disabled?: boolean;
   legend?: string | React.ReactElement<any>;
+}
+
+export type FormFieldSecondaryTextStyleProps = Pick<
+  FormFieldProps,
+  'secondaryText'
+>;
+
+export interface FormFieldTextWrapperStyleProps {
+  hideLabel?: boolean;
 }
 
 export type FormFieldThemeFn = ComponentThemeFn<FormFieldTheme>;

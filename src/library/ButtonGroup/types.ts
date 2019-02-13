@@ -17,7 +17,10 @@ export interface ButtonGroupProps {
   variant?: keyof typeof VARIANT;
 }
 
-export type ButtonGroupStyledProps = Pick<ButtonGroupProps, 'fullWidth' | 'variant'>;
+export type ButtonGroupStyledProps = Pick<
+  ButtonGroupProps,
+  'fullWidth' | 'variant'
+>;
 
 export interface ButtonGroupState {
   checked: Set<number>;

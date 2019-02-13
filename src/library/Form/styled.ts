@@ -8,7 +8,11 @@ import {
   formFieldsetTheme
 } from './themes';
 
-import { FormFieldStyleProps } from './types';
+import {
+  FormFieldStyleProps,
+  FormFieldSecondaryTextStyleProps,
+  FormFieldTextWrapperStyleProps
+} from './types';
 
 export const FormFieldRoot = styled('div')(({ theme }) =>
   componentStyleReset(theme)
@@ -47,19 +51,19 @@ export const FormFieldDividerRoot = styled('div')(({ theme: baseTheme }) => {
   };
 });
 
-export const FormFieldSecondaryText = styled('span')<FormFieldStyleProps>(
-  ({ secondaryText, theme: baseTheme }) => {
-    const theme = formFieldTheme(baseTheme);
+export const FormFieldSecondaryText = styled('span')<
+  FormFieldSecondaryTextStyleProps
+>(({ secondaryText, theme: baseTheme }) => {
+  const theme = formFieldTheme(baseTheme);
 
-    return {
-      color: secondaryText
-        ? theme.FormFieldSecondaryText_color
-        : theme.FormFieldSecondaryText_color_required,
-      fontSize: theme.FormFieldSecondaryText_fontSize,
-      fontWeight: theme.FormFieldSecondaryText_fontWeight
-    };
-  }
-);
+  return {
+    color: secondaryText
+      ? theme.FormFieldSecondaryText_color
+      : theme.FormFieldSecondaryText_color_required,
+    fontSize: theme.FormFieldSecondaryText_fontSize,
+    fontWeight: theme.FormFieldSecondaryText_fontWeight
+  };
+});
 
 export const FormFieldsetRoot = styled('fieldset')(
   ({ disabled, theme: baseTheme }) => {
@@ -85,22 +89,22 @@ export const FormFieldsetRoot = styled('fieldset')(
   }
 );
 
-export const FormFieldTextWrapper = styled('div')<FormFieldStyleProps>(
-  ({ hideLabel, theme: baseTheme }) => {
-    const theme = formFieldTheme(baseTheme);
+export const FormFieldTextWrapper = styled('div')<
+  FormFieldTextWrapperStyleProps
+>(({ hideLabel, theme: baseTheme }) => {
+  const theme = formFieldTheme(baseTheme);
 
-    return {
-      color: theme.FormFieldLabel_color,
-      display: 'flex',
-      fontSize: theme.FormFieldLabel_fontSize,
-      fontWeight: theme.FormFieldLabel_fontWeight,
-      justifyContent: 'space-between',
-      marginBottom: theme.FormFieldLabel_marginBottom,
-      ...(hideLabel ? hideVisually() : {}),
-      '& > *': {
-        alignSelf: 'flex-end',
-        display: 'inline-block'
-      }
-    };
-  }
-);
+  return {
+    color: theme.FormFieldLabel_color,
+    display: 'flex',
+    fontSize: theme.FormFieldLabel_fontSize,
+    fontWeight: theme.FormFieldLabel_fontWeight,
+    justifyContent: 'space-between',
+    marginBottom: theme.FormFieldLabel_marginBottom,
+    ...(hideLabel ? hideVisually() : {}),
+    '& > *': {
+      alignSelf: 'flex-end',
+      display: 'inline-block'
+    }
+  };
+});

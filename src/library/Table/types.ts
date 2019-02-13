@@ -311,7 +311,7 @@ export interface TableSortableHeaderCellProps extends TableContextType {
   sortable: SortableType;
 }
 
-export interface TableSortableHeaderCellStyleProps extends TableSortableHeaderCellProps {
+export interface TableSortableHeaderCellStyleProps {
   direction: string;
   isSorted: boolean;
 }

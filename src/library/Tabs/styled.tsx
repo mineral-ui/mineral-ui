@@ -12,7 +12,13 @@ import OverflowContainer, {
 } from '../OverflowContainer';
 import { tabTheme, tabListTheme, tabPanelTheme } from './themes';
 
-import { TabsStyleProps, TabListStyleProps } from './types';
+import {
+  TabsStyleProps,
+  TabListStyleProps,
+  TabListInnerStyleProps,
+  TabListListStyleProps,
+  TabPanelStyleProps
+} from './types';
 
 export const TabsRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
@@ -171,7 +177,7 @@ export const TabListInner = withProps({
   // null tabIndex is to prevent an extraneous tab stop
   tabIndex: null
 })(
-  styled(TabListThemedOverflowContainerWithShadows)(
+  styled(TabListThemedOverflowContainerWithShadows)<TabListInnerStyleProps>(
     ({ position, theme: baseTheme, vertical }) => {
       const theme = {
         ...tabListTheme(baseTheme),
@@ -205,7 +211,7 @@ export const TabListInner = withProps({
   )
 );
 
-export const TabListList = styled('ul')<TabListStyleProps>(
+export const TabListList = styled('ul')<TabListListStyleProps>(
   ({ align, count, theme: baseTheme, vertical }) => {
     const theme = tabListTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -280,7 +286,7 @@ export const TabListIncrementButton = ({
   icon,
   ...restProps
 }: {
-  icon: React.ReactElement<any>
+  icon: React.ReactElement<any>;
 }) => (
   <TabListArrowButton
     aria-hidden
@@ -313,7 +319,7 @@ export const TabPanelOverflowContainer = withProps({
 export const TabPanelRoot = withProps({
   role: 'tabpanel'
 })(
-  styled('div')(({ position, theme: baseTheme }) => {
+  styled('div')<TabPanelStyleProps>(({ position, theme: baseTheme }) => {
     const theme = tabPanelTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
 

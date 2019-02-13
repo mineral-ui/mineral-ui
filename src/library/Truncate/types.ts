@@ -4,7 +4,7 @@ export interface TruncateProps {
   children?: React.ReactNode;
 }
 
-export interface TruncateStyleProps extends TruncateProps {
+export interface TruncateStyleProps {
   showTooltip: boolean;
 }
 

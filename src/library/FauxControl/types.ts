@@ -46,14 +46,14 @@ export type FauxControlControlStyleProps = Pick<
   | 'iconEnd'
   | 'iconStart'
   | 'readOnly'
-  | 'size'
+  | 'size' // Doesn't match DOM expectation, but no error thrown :shrug:
   | 'suffix'
   | 'variant'
 > & {
-  controlPropsIn?: object,
-  controlSize?: keyof typeof SIZE,
-  hasPlaceholder?: boolean,
-  prefix?: string
+  controlPropsIn?: object;
+  controlSize?: keyof typeof SIZE;
+  hasPlaceholder?: boolean;
+  prefix?: string; // Overwrite FauxControlProps to match DOM expectation
 };
 
 export interface VariantIcons {
