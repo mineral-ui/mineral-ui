@@ -131,7 +131,10 @@ export default class ButtonGroup extends Component<
     return <Root {...rootProps}>{buttons}</Root>;
   }
 
-  handleClick = (index: number, event: React.SyntheticEvent<HTMLButtonElement>) => {
+  handleClick = (
+    index: number,
+    event: React.SyntheticEvent<HTMLButtonElement>
+  ) => {
     const { mode } = this.props;
 
     if (!mode) {

@@ -17,9 +17,7 @@ export interface ButtonGroupProps {
   variant?: keyof typeof VARIANT;
 }
 
-export type ButtonGroupStyleProps = Partial<ButtonGroupProps> & {
-  defaultChecked?: boolean
-}
+export type ButtonGroupStyledProps = Pick<ButtonGroupProps, 'fullWidth' | 'variant'>;
 
 export interface ButtonGroupState {
   checked: Set<number>;
