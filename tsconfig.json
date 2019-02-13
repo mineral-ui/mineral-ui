@@ -14,10 +14,16 @@
     "isolatedModules": true,
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "mineral-ui/*": ["src/library/*"],
+      "mineral-ui-icons/*": ["packages/mineral-ui-icons/src/*"]
+    }
   },
-  "exclude": ["src/website", "**/__tests__"],
+  "exclude": ["src/website", "**/__tests__", "**/*.template.js"],
   "include": [
-    "src"
+    "src",
+    "packages/mineral-ui-icons"
   ]
 }

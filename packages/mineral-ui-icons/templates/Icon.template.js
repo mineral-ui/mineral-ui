@@ -1,8 +1,7 @@
-/* @flow */
 import React from 'react';
 import Icon from 'mineral-ui/Icon';
 
-import type { IconProps } from 'mineral-ui/Icon/types';
+import { IconProps } from 'mineral-ui/Icon/types';
 
 /* eslint-disable prettier/prettier */
 export default function {{componentName}}(props: IconProps) {
