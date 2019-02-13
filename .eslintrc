@@ -12,8 +12,8 @@
     "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/react",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -45,7 +45,6 @@
       "allow": ["warn", "error"]
     }],
     "no-unused-vars": ["error", { "vars": "all", "varsIgnorePattern": "[Ii]gnore" }],
-    "prettier/prettier": "error",
     "react/display-name": ["error", { "ignoreTranspilerName": true }],
 
     "@typescript-eslint/array-type": "off",
