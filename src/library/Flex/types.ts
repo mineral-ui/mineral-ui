@@ -9,7 +9,7 @@ import {
 
 import { BoxProps, HeightOrWidthProp } from '../Box/types';
 
-type StringOrArrayOfStrings<T> = $Keys<T> | Array<$Keys<T> | null>;
+type StringOrArrayOfStrings<T> = keyof T | Array<keyof T | null>;
 
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
 type Direction = StringOrArrayOfStrings<typeof DIRECTION>;

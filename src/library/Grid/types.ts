@@ -3,7 +3,7 @@ import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
 import { FlexProps, FlexItemProps } from '../Flex/types';
 
-type StringOrArrayOfStrings<T> = $Keys<T> | Array<$Keys<T> | null>;
+type StringOrArrayOfStrings<T> = keyof T | Array<keyof T | null>;
 
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
