@@ -15,16 +15,22 @@ const exec = (command, env) =>
 
 // components es modules
 console.log('\n\nBuilding ES modules...');
-exec('babel ./src --out-dir ./dist/es --ignore *.spec.js,*.template.js', {
-  NODE_ENV
-});
+exec(
+  'babel ./src --out-dir ./dist/es --ignore *.spec.js,*.template.js --root-mode upward',
+  {
+    NODE_ENV
+  }
+);
 
 // components cjs modules
 console.log('\n\nBuilding CommonJS modules...');
-exec('babel ./src --out-dir ./dist --ignore *.spec.js,*.template.js', {
-  BABEL_ENV: 'cjs',
-  NODE_ENV
-});
+exec(
+  'babel ./src --out-dir ./dist --ignore *.spec.js,*.template.js --root-mode upward',
+  {
+    BABEL_ENV: 'cjs',
+    NODE_ENV
+  }
+);
 
 // Prepare flat package
 const packageJsonFile = path.resolve(__dirname, '../package.json');
