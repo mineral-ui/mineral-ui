@@ -4,7 +4,9 @@ import { ellipsis } from 'polished';
 import { ie10Plus } from '../utils/cssSelectors';
 import _Tooltip from '../Tooltip';
 
-export const TruncateRoot = styled('span')(
+import { TruncateStyleProps } from './types';
+
+export const TruncateRoot = styled('span')<TruncateStyleProps>(
   ({ showTooltip, theme: baseTheme }) => ({
     ...(showTooltip ? { pointerEvents: 'all' } : undefined), // Necessary because of Button Inner's pointerEvents: none
     ...ellipsis('100%'),

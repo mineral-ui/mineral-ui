@@ -38,6 +38,10 @@ export interface DialogProps {
   variant?: Variant;
 }
 
+export type DialogStyleProps = Partial<DialogProps> & {
+  title?: string
+}
+
 export interface DialogDefaultProps {
   closeButtonLabel: string;
   closeOnClickOutside: boolean;
@@ -54,6 +58,10 @@ export interface DialogState {
 export interface DialogActionsProps {
   children?: React.ReactElement<any> | Array<React.ReactElement<any>>;
   variant?: Variant;
+}
+
+export interface DialogAnimateStyleProps {
+  state?: string;
 }
 
 export interface DialogBodyProps {

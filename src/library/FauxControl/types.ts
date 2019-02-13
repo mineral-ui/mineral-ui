@@ -20,6 +20,13 @@ export interface FauxControlProps {
   variant?: keyof typeof VARIANT;
 }
 
+export type FauxControlStyleProps = Partial<FauxControlProps> & {
+  controlPropsIn: object,
+  controlSize: keyof typeof SIZE,
+  hasPlaceholder: boolean,
+  prefix?: string
+};
+
 export interface VariantIcons {
   [key: keyof typeof VARIANT]: React.ReactElement<any>;
 }

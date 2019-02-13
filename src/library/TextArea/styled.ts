@@ -6,6 +6,8 @@ import { themed, mapComponentThemes } from '../themes';
 import FauxControl from '../FauxControl';
 import { textAreaTheme } from './themes';
 
+import { TextAreaProps } from './types';
+
 const ThemedFauxControl = themed(FauxControl)((props) =>
   mapComponentThemes(
     {
@@ -29,7 +31,7 @@ export const TextAreaRoot = styled(ThemedFauxControl)({
 
 export const Input = styled('textarea', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ resizeable, size, theme: baseTheme }) => {
+})<TextAreaProps>(({ resizeable, size, theme: baseTheme }) => {
   const theme = textAreaTheme(baseTheme);
 
   const fontSize =

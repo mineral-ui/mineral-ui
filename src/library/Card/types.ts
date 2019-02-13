@@ -33,6 +33,10 @@ export interface CardFooterProps {
   variant?: Variant;
 }
 
+export type CardFooterStyleProps = Partial<CardFooterProps> & {
+  title?: string
+};
+
 export interface CardFooterDefaultProps {
   triggerTitle: (isOpen: boolean) => string;
 }

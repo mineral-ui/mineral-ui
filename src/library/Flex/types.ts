@@ -7,7 +7,7 @@ import {
   JUSTIFY_CONTENT
 } from './constants';
 
-import { HeightOrWidthProp } from '../Box/types';
+import { BoxProps, HeightOrWidthProp } from '../Box/types';
 
 type StringOrArrayOfStrings = $Keys<T> | Array<$Keys<T> | null>;
 
@@ -16,7 +16,7 @@ type Direction = StringOrArrayOfStrings<typeof DIRECTION>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
 
-export interface FlexProps {
+export interface FlexProps extends BoxProps {
   alignItems?: AlignItems;
   breakpoints?: Array<number | string>;
   children?: React.ReactNode;
@@ -35,7 +35,7 @@ export interface FlexDefaultProps {
 
 type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
-export interface FlexItemProps {
+export interface FlexItemProps extends FlexProps {
   alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>;
   breakpoints?: Array<number | string>;
   flex?: boolean;

@@ -189,7 +189,7 @@ interface TableThemeKeys {
   Table_outline_focus: ThemeValue;
 }
 
-export interface TableCellProps {
+export interface TableCellProps extends TableContextType {
   as?: string;
   children?: React.ReactNode;
   columnKey?: string;
@@ -221,7 +221,7 @@ export interface TableDataRowProps {
   toggle?: SelectableToggle;
 }
 
-export interface TableHeaderProps {
+export interface TableHeaderProps extends TableContextType {
   children: React.ReactNode;
   hide?: boolean;
 }
@@ -235,7 +235,7 @@ interface TableHeaderThemeKeys {
   TableHeader_borderTop_highContrast: ThemeValue;
 }
 
-export interface TableHeaderCellProps {
+export interface TableHeaderCellProps extends TableCellProps {
   children?: React.ReactNode;
   label?: string;
   minWidth?: number | string;
@@ -272,7 +272,7 @@ export interface TableHeaderRowProps {
   toggle?: SelectableToggleAll;
 }
 
-export interface TableRowProps {
+export interface TableRowProps extends TableContextType {
   children: React.ReactNode;
   isSelected?: boolean;
   isSelectable?: boolean;
@@ -293,7 +293,7 @@ interface TableRowThemeKeys {
   TableRow_borderHorizontal_highContrast: ThemeValue;
 }
 
-export interface TableSelectableCellProps {
+export interface TableSelectableCellProps extends TableContextType {
   checked?: boolean;
   disabled?: boolean;
   indeterminate?: boolean;
@@ -302,13 +302,18 @@ export interface TableSelectableCellProps {
   onChange: () => void;
 }
 
-export interface TableSortableHeaderCellProps {
+export interface TableSortableHeaderCellProps extends TableContextType {
   children: React.ReactNode;
   label?: string;
   messages: Messages;
   name: string;
   render?: RenderFn;
   sortable: SortableType;
+}
+
+export interface TableSortableHeaderCellStyleProps extends TableSortableHeaderCellProps {
+  direction: string;
+  isSorted: boolean;
 }
 
 export type TableSortableHeaderCellThemeFn = ComponentThemeFn<

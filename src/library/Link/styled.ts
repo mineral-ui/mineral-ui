@@ -3,9 +3,11 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { linkTheme } from './themes';
 
+import { LinkProps } from './types';
+
 export const Link = styled('a', {
   shouldForwardProp: (prop) => isPropValid(prop)
-})(({ variant, theme: baseTheme }) => {
+})<LinkProps>(({ variant, theme: baseTheme }) => {
   let theme = linkTheme(baseTheme);
 
   if (variant) {

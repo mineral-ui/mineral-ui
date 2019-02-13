@@ -4,6 +4,7 @@ import { getResponsiveStyles } from '../styles';
 import Box from '../Box';
 
 import { StyleValue } from '../styles/types';
+import { FlexProps, FlexItemProps } from './types';
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;
@@ -37,7 +38,7 @@ const flexMapValueToProperty = (
 export const FlexRoot = styled(Box, {
   shouldForwardProp: (prop) =>
     ['direction', 'inline', 'wrap'].indexOf(prop) === -1
-})(
+})<FlexProps>(
   ({
     breakpoints,
     alignItems,
@@ -80,17 +81,18 @@ const flexItemMapValueToProperty = (
 export const FlexItemRoot = styled(Box, {
   shouldForwardProp: (prop) =>
     ['inline', 'minWidth', 'width'].indexOf(prop) === -1
-})(({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
-  getResponsiveStyles({
-    breakpoints,
-    mapValueToProperty: flexItemMapValueToProperty,
-    styles: {
-      alignSelf,
-      flexBasis: width || 'auto',
-      flexGrow: grow,
-      flexShrink: shrink,
-      minWidth
-    },
-    theme
-  })
+})<FlexItemProps>(
+  ({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
+    getResponsiveStyles({
+      breakpoints,
+      mapValueToProperty: flexItemMapValueToProperty,
+      styles: {
+        alignSelf,
+        flexBasis: width || 'auto',
+        flexGrow: grow,
+        flexShrink: shrink,
+        minWidth
+      },
+      theme
+    })
 );

@@ -18,6 +18,10 @@ export interface FormFieldProps {
   variant?: keyof typeof VARIANT;
 }
 
+export interface FormFieldStyleProps extends FormFieldProps {
+  isGroup: boolean;
+}
+
 export interface FormFieldDefaultProps {
   requiredText: string | React.ReactElement<any>;
 }

@@ -18,19 +18,29 @@ import {
 } from './themes';
 import DialogRow from './DialogRow';
 
-export const DialogRoot = styled('div')(({ modeless, theme }) => ({
-  ...componentStyleReset(theme),
+import { ButtonProps } from '../Button/types';
+import { OverflowContainerWithShadowsProps } from '../OverflowContainer/types';
+import {
+  DialogStyleProps,
+  DialogAnimateStyleProps,
+  DialogTitleProps
+} from './types';
 
-  alignItems: 'center',
-  bottom: 0,
-  display: 'flex',
-  justifyContent: 'center',
-  left: 0,
-  position: 'fixed',
-  pointerEvents: modeless ? 'none' : undefined,
-  right: 0,
-  top: 0
-}));
+export const DialogRoot = styled('div')<DialogStyleProps>(
+  ({ modeless, theme }) => ({
+    ...componentStyleReset(theme),
+
+    alignItems: 'center',
+    bottom: 0,
+    display: 'flex',
+    justifyContent: 'center',
+    left: 0,
+    position: 'fixed',
+    pointerEvents: modeless ? 'none' : undefined,
+    right: 0,
+    top: 0
+  })
+);
 
 export const DialogActionsRoot = styled('div')(({ theme: baseTheme }) => {
   const theme = dialogActionsTheme(baseTheme);
@@ -48,16 +58,18 @@ export const DialogActionsRoot = styled('div')(({ theme: baseTheme }) => {
   };
 });
 
-export const DialogAnimate = styled('div')(({ state, theme: baseTheme }) => {
-  const theme = dialogTheme(baseTheme);
-  return {
-    opacity: state === 'entered' ? 1 : 0,
-    position: 'relative',
-    transition: `opacity ${theme.Dialog_transitionDuration} ease`,
-    willChange: 'opacity',
-    zIndex: theme.Dialog_zIndex
-  };
-});
+export const DialogAnimate = styled('div')<DialogAnimateStyleProps>(
+  ({ state, theme: baseTheme }) => {
+    const theme = dialogTheme(baseTheme);
+    return {
+      opacity: state === 'entered' ? 1 : 0,
+      position: 'relative',
+      transition: `opacity ${theme.Dialog_transitionDuration} ease`,
+      willChange: 'opacity',
+      zIndex: theme.Dialog_zIndex
+    };
+  }
+);
 
 export const DialogBodyRoot = styled(DialogRow)(({ theme: baseTheme }) => {
   const theme = dialogRowTheme(baseTheme);
@@ -104,35 +116,35 @@ const DialogBodyThemedOverflowContainerWithShadows = themed(
 export const DialogBodyOverflowContainerWithShadows = withProps({
   scrollY: true
 })(
-  styled(DialogBodyThemedOverflowContainerWithShadows)(
-    ({ theme: baseTheme }) => {
-      const theme = dialogRowTheme(baseTheme);
-      const fontSize = theme.DialogRow_fontSize;
-      const paddingHorizontal = `${getNormalizedValue(
-        theme.DialogRow_paddingHorizontal,
-        fontSize
-      )}`;
+  styled(
+    DialogBodyThemedOverflowContainerWithShadows
+  )<OverflowContainerWithShadowsProps>(({ theme: baseTheme }) => {
+    const theme = dialogRowTheme(baseTheme);
+    const fontSize = theme.DialogRow_fontSize;
+    const paddingHorizontal = `${getNormalizedValue(
+      theme.DialogRow_paddingHorizontal,
+      fontSize
+    )}`;
 
-      return {
-        display: 'flex',
-        flex: '1 1 auto',
-        width: '100%',
+    return {
+      display: 'flex',
+      flex: '1 1 auto',
+      width: '100%',
 
-        // OverflowContainerWithShadows > Scroller
-        '& > div': {
-          paddingLeft: paddingHorizontal,
-          paddingRight: paddingHorizontal,
+      // OverflowContainerWithShadows > Scroller
+      '& > div': {
+        paddingLeft: paddingHorizontal,
+        paddingRight: paddingHorizontal,
 
-          '& > :first-child': {
-            marginTop: 0
-          },
-          '& > :last-child': {
-            marginBottom: 0
-          }
+        '& > :first-child': {
+          marginTop: 0
+        },
+        '& > :last-child': {
+          marginBottom: 0
         }
-      };
-    }
-  )
+      }
+    };
+  })
 );
 
 const DialogThemedButton = themed(Button)((props) => ({
@@ -145,7 +157,7 @@ export const DialogCloseButton = withProps({
   size: 'small',
   type: 'button'
 })(
-  styled(DialogThemedButton)(({ theme: baseTheme }) => {
+  styled(DialogThemedButton)<ButtonProps>(({ theme: baseTheme }) => {
     const theme = dialogTheme(baseTheme);
     const marginProperty =
       theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
@@ -158,7 +170,7 @@ export const DialogCloseButton = withProps({
 
 export const DialogContent = styled('div', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ size, theme: baseTheme }) => {
+})<DialogStyleProps>(({ size, theme: baseTheme }) => {
   const theme = dialogTheme(baseTheme);
 
   const getSizeStyles = (size: string) => {
@@ -245,7 +257,7 @@ export const DialogRowRoot = styled('div')(({ theme: baseTheme }) => {
   };
 });
 
-export const DialogTitleRoot = styled('div')(
+export const DialogTitleRoot = styled('div')<DialogTitleProps>(
   ({ theme: baseTheme, variant }) => {
     const theme = dialogTitleTheme(baseTheme);
     const marginProperty =

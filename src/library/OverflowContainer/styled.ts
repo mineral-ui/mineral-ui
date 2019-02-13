@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 import { overflowContainerTheme } from './themes';
 import { overflowContainerWithShadowsTheme } from './themes';
 
-export const OverflowContainerRoot = styled('div')(
+import { OverflowContainerStyleProps } from './types';
+
+export const OverflowContainerRoot = styled('div')<OverflowContainerStyleProps>(
   ({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
     const theme = overflowContainerTheme(baseTheme);
 

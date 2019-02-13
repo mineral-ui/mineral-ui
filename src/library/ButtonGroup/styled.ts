@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 import { componentStyleReset } from '../styles';
 import { buttonGroupTheme } from './themes';
 
-export const ButtonGroupRoot = styled('div')(
+import { ButtonGroupStyleProps } from './types';
+
+export const ButtonGroupRoot = styled('div')<ButtonGroupStyleProps>(
   ({ fullWidth, theme: baseTheme, variant }) => {
     let theme = buttonGroupTheme(baseTheme);
     if (variant) {

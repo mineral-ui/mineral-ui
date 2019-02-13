@@ -5,6 +5,7 @@ import { getResponsiveStyles } from '../styles';
 import Flex, { FlexItem } from '../Flex';
 
 import { StyleValue } from '../styles/types';
+import { GridItemStyleProps } from './types';
 
 export const GridRoot = withProps({ wrap: true })(
   styled(Flex, {
@@ -27,41 +28,43 @@ export const GridItemRoot = withProps({ shrink: 0 })(
   styled(FlexItem, {
     shouldForwardProp: (prop) =>
       ['alignSelf', 'grow', 'inline', 'span', 'width'].indexOf(prop) === -1
-  })(({ breakpoints, columns, gutterWidth, span, theme }) => {
-    const gutter =
-      typeof gutterWidth === 'number'
-        ? `${gutterWidth}px`
-        : theme[`space_inline_${gutterWidth}`] || gutterWidth;
+  })<GridItemStyleProps>(
+    ({ breakpoints, columns, gutterWidth, span, theme }) => {
+      const gutter =
+        typeof gutterWidth === 'number'
+          ? `${gutterWidth}px`
+          : theme[`space_inline_${gutterWidth}`] || gutterWidth;
 
-    const mapValueToProperty = (
-      property: string,
-      value: StyleValue
-    ): number | string => {
-      const map = {
-        flexGrow: getFlexGrow,
-        width: (value) => getWidth(value, columns, gutter)
+      const mapValueToProperty = (
+        property: string,
+        value: StyleValue
+      ): number | string => {
+        const map = {
+          flexGrow: getFlexGrow,
+          width: (value) => getWidth(value, columns, gutter)
+        };
+
+        return map[property](value);
       };
 
-      return map[property](value);
-    };
+      /*
+       * [1] IE11 doesn't use the correct box-sizing model with the flex-basis
+       *     property. The workaround is to set flex-basis to 'auto' and use 'width'
+       *     instead.
+       */
+      return {
+        flexBasis: 'auto', // [1]
 
-    /*
-     * [1] IE11 doesn't use the correct box-sizing model with the flex-basis
-     *     property. The workaround is to set flex-basis to 'auto' and use 'width'
-     *     instead.
-     */
-    return {
-      flexBasis: 'auto', // [1]
-
-      ...getResponsiveStyles({
-        breakpoints,
-        mapValueToProperty,
-        styles: {
-          flexGrow: span,
-          width: span // [1]
-        },
-        theme
-      })
-    };
-  })
+        ...getResponsiveStyles({
+          breakpoints,
+          mapValueToProperty,
+          styles: {
+            flexGrow: span,
+            width: span // [1]
+          },
+          theme
+        })
+      };
+    }
+  )
 );

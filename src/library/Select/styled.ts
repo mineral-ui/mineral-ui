@@ -9,6 +9,8 @@ import Dropdown from '../Dropdown/Dropdown';
 import { selectTheme, selectTriggerTheme } from './themes';
 import { SIZE } from './constants';
 
+import { SelectTriggerStyleProps } from './types';
+
 const ThemedDropdown = themed(Dropdown)((props) =>
   mapComponentThemes(
     {
@@ -34,8 +36,8 @@ export const SelectRoot = styled(ThemedDropdown)({
 export const contentWidthModifier = {
   enabled: true,
   fn: (data: object) => {
-    data.styles.minWidth = pxToEm(224);
-    data.styles.width = pxToEm(data.offsets.reference.width);
+    data['styles'].minWidth = pxToEm(224);
+    data['styles'].width = pxToEm(data['offsets'].reference.width);
     return data;
   }
 };
@@ -54,7 +56,9 @@ const ThemedFauxControl = themed(FauxControl)((props) =>
   )
 );
 
-export const SelectTriggerRoot = styled(ThemedFauxControl)(
+export const SelectTriggerRoot = styled(
+  ThemedFauxControl
+)<SelectTriggerStyleProps>(
   ({ disabled, readOnly, selectedItemVariant, theme: baseTheme, variant }) => {
     const theme = selectTriggerTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -110,7 +114,7 @@ export const SelectTriggerRoot = styled(ThemedFauxControl)(
 
 export const Trigger = styled('div', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ size, theme: baseTheme }) => {
+})<SelectTriggerStyleProps>(({ size, theme: baseTheme }) => {
   const theme = selectTriggerTheme(baseTheme);
 
   const fontSize =

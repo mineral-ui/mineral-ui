@@ -6,6 +6,8 @@ import FauxControl from '../FauxControl';
 import { SIZE } from './constants';
 import { textInputTheme } from './themes';
 
+import { TextInputStyleProps } from './types';
+
 const ThemedFauxControl = themed(FauxControl)((props) =>
   mapComponentThemes(
     {
@@ -20,7 +22,7 @@ const ThemedFauxControl = themed(FauxControl)((props) =>
   )
 );
 
-export const TextInputRoot = styled(ThemedFauxControl)(
+export const TextInputRoot = styled(ThemedFauxControl)<TextInputStyleProps>(
   ({ theme: baseTheme, variant }) => {
     let theme = textInputTheme(baseTheme);
 
@@ -51,7 +53,7 @@ export const TextInputRoot = styled(ThemedFauxControl)(
   }
 );
 
-export const Input = styled('input')(
+export const Input = styled('input')<TextInputStyleProps>(
   ({ controlSize, size: nonHtmlSize, theme: baseTheme }) => {
     const theme = textInputTheme(baseTheme);
 

@@ -10,6 +10,10 @@ export interface OverflowContainerProps {
   tabIndex?: number | string;
 }
 
+export type OverflowContainerStyleProps = Partial<OverflowContainerProps> & {
+  tabIndex?: number
+};
+
 export interface OverflowContainerState {
   scrollable: boolean;
 }
@@ -34,12 +38,8 @@ interface OverflowContainerThemeKeys {
   OverflowContainer_outline_focus: ThemeValue;
 }
 
-export type OverflowContainerWithShadowsThemeFn = ComponentThemeFn<
-  OverflowContainerWithShadowsTheme
->;
-export type OverflowContainerWithShadowsTheme = ComponentTheme<
-  OverflowContainerWithShadowsThemeKeys
->;
+export type OverflowContainerWithShadowsThemeFn = ComponentThemeFn<OverflowContainerWithShadowsTheme>;
+export type OverflowContainerWithShadowsTheme = ComponentTheme<OverflowContainerWithShadowsThemeKeys>;
 interface OverflowContainerWithShadowsThemeKeys {
   OverflowContainerWithShadows_outline_focus: ThemeValue;
   OverflowContainerWithShadows_boxShadowBottom: ThemeValue;

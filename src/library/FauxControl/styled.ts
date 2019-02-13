@@ -6,9 +6,11 @@ import { componentStyleReset, getNormalizedValue } from '../styles';
 
 import { fauxControlTheme } from './themes';
 
+import { FauxControlStyleProps } from './types';
+
 export const FauxControlRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
-})(({ disabled, theme: baseTheme, variant }) => {
+})<FauxControlStyleProps>(({ disabled, theme: baseTheme, variant }) => {
   let theme = fauxControlTheme(baseTheme);
   if (variant) {
     // prettier-ignore
@@ -50,7 +52,7 @@ export const FauxControlRoot = styled('div', {
 
 export const Prefix = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ iconStart, size, theme: baseTheme }) => {
+})<FauxControlStyleProps>(({ iconStart, size, theme: baseTheme }) => {
   const theme = fauxControlTheme(baseTheme);
   const rtl = theme.direction === 'rtl';
 
@@ -79,7 +81,7 @@ export const Prefix = styled('span', {
 
 export const Suffix = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ iconEnd, size, theme: baseTheme, variant }) => {
+})<FauxControlStyleProps>(({ iconEnd, size, theme: baseTheme, variant }) => {
   const theme = fauxControlTheme(baseTheme);
   const rtl = theme.direction === 'rtl';
 
@@ -117,33 +119,35 @@ export const Suffix = styled('span', {
 export const Underlay = styled('div', {
   shouldForwardProp: (prop) =>
     ['disabled', 'readOnly'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ disabled, readOnly, theme: baseTheme, variant }) => {
-  const theme = fauxControlTheme(baseTheme);
+})<FauxControlStyleProps>(
+  ({ disabled, readOnly, theme: baseTheme, variant }) => {
+    const theme = fauxControlTheme(baseTheme);
 
-  return {
-    backgroundColor:
-      disabled || readOnly
-        ? theme.input_backgroundColor_disabled
-        : theme.FauxControl_backgroundColor,
-    borderColor:
-      variant && !disabled && !readOnly
-        ? theme[`borderColor_${variant}`]
-        : theme.FauxControl_borderColor,
-    borderRadius: theme.FauxControl_borderRadius,
-    borderStyle: 'solid',
-    borderWidth: theme.FauxControl_borderWidth,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-    right: 0,
-    top: 0,
-    zIndex: -1
-  };
-});
+    return {
+      backgroundColor:
+        disabled || readOnly
+          ? theme.input_backgroundColor_disabled
+          : theme.FauxControl_backgroundColor,
+      borderColor:
+        variant && !disabled && !readOnly
+          ? theme[`borderColor_${variant}`]
+          : theme.FauxControl_borderColor,
+      borderRadius: theme.FauxControl_borderRadius,
+      borderStyle: 'solid',
+      borderWidth: theme.FauxControl_borderWidth,
+      bottom: 0,
+      left: 0,
+      position: 'absolute',
+      right: 0,
+      top: 0,
+      zIndex: -1
+    };
+  }
+);
 
 export const Control = styled('input', {
   shouldForwardProp: (prop) => ['as', 'prefix'].indexOf(prop) === -1
-})(
+})<FauxControlStyleProps>(
   ({
     controlPropsIn,
     controlSize,
@@ -170,11 +174,11 @@ export const Control = styled('input', {
     };
     }
 
-    if (controlPropsIn.variant) {
+    if (controlPropsIn['variant']) {
       // prettier-ignore
       theme = {
       ...theme,
-      FauxControl_color: theme[`color_${controlPropsIn.variant}`]
+      FauxControl_color: theme[`color_${controlPropsIn['variant']}`]
     };
     }
 

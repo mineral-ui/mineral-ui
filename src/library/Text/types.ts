@@ -25,6 +25,10 @@ export interface TextProps {
   truncate?: boolean | number | string;
 }
 
+export interface TextStyleProps extends TextProps {
+  defaultAppearance: string;
+}
+
 export interface TextDefaultProps {
   appearance: Appearance;
 }

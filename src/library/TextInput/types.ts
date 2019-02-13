@@ -28,6 +28,11 @@ export interface TextInputProps {
   variant?: Variant;
 }
 
+export type TextInputStyleProps = Partial<TextInputProps> & {
+  controlSize?: Size,
+  size?: number
+};
+
 export interface TextInputDefaultProps {
   size: Size;
   type: Type;

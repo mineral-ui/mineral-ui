@@ -24,6 +24,10 @@ export interface TabsProps {
   theme: object;
 }
 
+export type TabsStyleProps = Partial<TabsProps> & {
+  onChange?: (event: React.FormEvent<HTMLElement>) => void
+}
+
 export interface TabsDefaultProps {
   align: Align;
   maxTabWidth: number | string;
@@ -71,6 +75,10 @@ export interface TabListProps {
   position?: Position;
   role?: string;
   vertical?: boolean;
+}
+
+export interface TabListStyleProps extends TabListProps {
+  count: number;
 }
 
 export interface TabListDefaultProps {

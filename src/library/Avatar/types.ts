@@ -20,7 +20,7 @@ export interface AvatarDefaultProps {
   size: Size;
 }
 
-export type AvatarStyledProps = Partial<AvatarProps> & {
+export interface AvatarStyledProps extends AvatarProps {
   icon: React.ReactElement<any>;
   noBackground: boolean;
 };

@@ -7,7 +7,7 @@ import { textTheme } from './themes';
 import { APPEARANCE, HEADING_ELEMENTS, MONOSPACE_ELEMENTS } from './constants';
 
 import { StyleObj } from '../styles/types';
-import { TextTheme } from './types';
+import { TextStyleProps, TextTheme } from './types';
 
 type GetCommonStyles = (
   as: string,
@@ -18,27 +18,31 @@ type GetCommonStyles = (
 const getCommonStyles: GetCommonStyles = (as, theme, truncate) => ({
   marginBottom: 0,
   marginTop: 0,
-  
-  ...(truncate ? {
-    // These styles from polished's ellipsis, which we cannot use here
-    // because the dynamic width means the output can't be extracted at
-    // build time.
-    maxWidth: truncate === true ? '100%' : truncate,
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-    wordWrap: 'normal'
-  } : undefined),
 
-  ...(MONOSPACE_ELEMENTS.indexOf(as) !== -1 ? {
-    fontFamily: theme.fontFamily_monospace
-  } : undefined)
+  ...(truncate
+    ? {
+        // These styles from polished's ellipsis, which we cannot use here
+        // because the dynamic width means the output can't be extracted at
+        // build time.
+        maxWidth: truncate === true ? '100%' : truncate,
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap',
+        wordWrap: 'normal'
+      }
+    : undefined),
+
+  ...(MONOSPACE_ELEMENTS.indexOf(as) !== -1
+    ? {
+        fontFamily: theme.fontFamily_monospace
+      }
+    : undefined)
 });
 
 export const TextRoot = styled('p', {
   shouldForwardProp: (prop) =>
     ['color', 'fontWeight'].indexOf(prop) === -1 && isPropValid(prop)
-})(
+})<TextStyleProps>(
   ({
     align,
     appearance: propAppearance,

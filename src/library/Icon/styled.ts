@@ -3,10 +3,12 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { iconTheme } from './themes';
 
+import { IconProps } from './types';
+
 export const IconRoot = styled('svg', {
   shouldForwardProp: (prop) =>
     ['color', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ color, rtl, size, theme: baseTheme }) => {
+})<IconProps>(({ color, rtl, size, theme: baseTheme }) => {
   let theme = iconTheme(baseTheme);
 
   return {

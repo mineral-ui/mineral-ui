@@ -17,6 +17,9 @@ import {
   cardTheme
 } from './themes';
 
+import { ButtonProps } from '../Button/types';
+import { CardFooterStyleProps, CardStatusProps, CardTitleProps } from './types';
+
 export const CardRoot = styled('div')((props) => {
   const theme = cardTheme(props.theme);
 
@@ -119,31 +122,33 @@ export const CardDividerRoot = styled('div')((props) => {
   };
 });
 
-export const CardFooterRoot = styled('div')(({ variant, theme: baseTheme }) => {
-  let theme = {
-    ...cardFooterTheme(baseTheme),
-    ...cardTheme(baseTheme)
-  };
+export const CardFooterRoot = styled('div')<CardFooterStyleProps>(
+  ({ variant, theme: baseTheme }) => {
+    let theme = {
+      ...cardFooterTheme(baseTheme),
+      ...cardTheme(baseTheme)
+    };
 
-  if (variant) {
-    theme = {
-      ...theme,
-      CardFooter_backgroundColor: theme[`well_backgroundColor_${variant}`],
-      CardFooter_borderColor: theme[`well_borderColor_${variant}`]
+    if (variant) {
+      theme = {
+        ...theme,
+        CardFooter_backgroundColor: theme[`well_backgroundColor_${variant}`],
+        CardFooter_borderColor: theme[`well_borderColor_${variant}`]
+      };
+    }
+
+    // [1] Making the footer overlap the Card border. The `calc` bit accounts
+    //     for the paddingBottom on Card to prevent margin collapse.
+    return {
+      backgroundColor: theme.CardFooter_backgroundColor,
+      border: `1px solid ${theme.CardFooter_borderColor}`,
+      borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
+      margin: '0 -1px calc(-1px - 0.01em) -1px', // [1]
+      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
+      paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
     };
   }
-
-  // [1] Making the footer overlap the Card border. The `calc` bit accounts
-  //     for the paddingBottom on Card to prevent margin collapse.
-  return {
-    backgroundColor: theme.CardFooter_backgroundColor,
-    border: `1px solid ${theme.CardFooter_borderColor}`,
-    borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
-    margin: '0 -1px calc(-1px - 0.01em) -1px', // [1]
-    paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-    paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
-  };
-});
+);
 
 /*
  * CardFooter can have children like CardBlock and CardActions. When those
@@ -196,7 +201,7 @@ export const CardFooterTitleContent = styled('h4')((props) => {
 });
 
 export const CardFooterToggleButton = withProps({ type: 'button' })(
-  styled(Button)(
+  styled(Button)<ButtonProps>(
     /*
      * A large Button, even with zero'd padding, is still a bit too large in this
      * context. These styles allow the Button to shrink, but the Icon remains the
@@ -253,7 +258,7 @@ export const CardImageRoot = styled('img')((props) => {
   };
 });
 
-export const CardStatusRoot = styled(CardRow)(
+export const CardStatusRoot = styled(CardRow)<CardStatusProps>(
   ({ theme: baseTheme, variant }) => {
     const theme = cardStatusTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -279,7 +284,7 @@ export const CardTitleRoot = styled(CardRow)({
   display: 'flex'
 });
 
-export const CardTitleAvatar = styled('span')(
+export const CardTitleAvatar = styled('span')<CardTitleProps>(
   ({ subtitle, theme: baseTheme }) => {
     const theme = cardTitleTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -319,7 +324,7 @@ export const CardTitleSecondaryText = styled('span')((props) => {
   };
 });
 
-export const CardTitleSubtitle = styled('h4')(
+export const CardTitleSubtitle = styled('h4')<CardTitleProps>(
   ({ avatar, theme: baseTheme }) => {
     const theme = cardTitleTheme(baseTheme);
     const fontSize = theme.CardSubtitle_fontSize;
@@ -336,26 +341,28 @@ export const CardTitleSubtitle = styled('h4')(
   }
 );
 
-export const CardTitleTitle = styled('div')(({ theme: baseTheme, variant }) => {
-  const theme = cardTitleTheme(baseTheme);
-  const rtl = theme.direction === 'rtl';
+export const CardTitleTitle = styled('div')<CardTitleProps>(
+  ({ theme: baseTheme, variant }) => {
+    const theme = cardTitleTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
 
-  return {
-    alignItems: 'flex-start',
-    display: 'flex',
+    return {
+      alignItems: 'flex-start',
+      display: 'flex',
 
-    '& > [role="img"]': {
-      color: variant ? theme[`icon_color_${variant}`] : null,
-      flex: '0 0 auto',
-      marginLeft: rtl ? theme.CardTitleIcon_margin : null,
-      marginRight: rtl ? null : theme.CardTitleIcon_margin,
-      position: 'relative',
-      top: pxToEm(4) // optical alignment
-    }
-  };
-});
+      '& > [role="img"]': {
+        color: variant ? theme[`icon_color_${variant}`] : null,
+        flex: '0 0 auto',
+        marginLeft: rtl ? theme.CardTitleIcon_margin : null,
+        marginRight: rtl ? null : theme.CardTitleIcon_margin,
+        position: 'relative',
+        top: pxToEm(4) // optical alignment
+      }
+    };
+  }
+);
 
-export const CardTitleTitleContent = styled('h3')(
+export const CardTitleTitleContent = styled('h3')<CardTitleProps>(
   ({ actions, theme: baseTheme }) => {
     const theme = cardTitleTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -378,7 +385,7 @@ export const CardTitleTitleContent = styled('h3')(
 );
 
 export const CardTitleMenuButton = withProps({ type: 'button' })(
-  styled(Button)(
+  styled(Button)<ButtonProps>(
     /*
      * A large Button, even with zero'd padding, is still a bit too large in this
      * context. These styles allow the Button to shrink, but the Icon remains the

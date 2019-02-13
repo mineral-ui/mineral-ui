@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 import { componentStyleReset, pxToEm } from '../styles';
 import { dropdownContentTheme } from './themes';
 
-export const DropdownContentWrapper = styled('div')(
+import { DropdownContentProps } from './types';
+
+export const DropdownContentWrapper = styled('div')<DropdownContentProps>(
   ({ theme: baseTheme, wide }) => {
     const theme = dropdownContentTheme(baseTheme);
 

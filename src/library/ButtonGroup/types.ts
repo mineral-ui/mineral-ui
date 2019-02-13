@@ -17,6 +17,10 @@ export interface ButtonGroupProps {
   variant?: keyof typeof VARIANT;
 }
 
+export type ButtonGroupStyleProps = Partial<ButtonGroupProps> & {
+  defaultChecked?: boolean
+}
+
 export interface ButtonGroupState {
   checked: Set<number>;
 }

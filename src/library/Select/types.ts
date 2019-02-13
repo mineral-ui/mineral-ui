@@ -83,6 +83,10 @@ export interface SelectTriggerProps {
   variant?: Variant;
 }
 
+export interface SelectTriggerStyleProps extends SelectTriggerProps {
+  selectedItemVariant: string;
+}
+
 export type SelectThemeFn = ComponentThemeFn<SelectTheme>;
 export type SelectTheme = ComponentTheme<SelectThemeKeys>;
 type SelectThemeKeys = {

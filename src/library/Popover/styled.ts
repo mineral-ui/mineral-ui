@@ -8,6 +8,8 @@ import CardTitle from '../Card/CardTitle';
 import { popoverArrowTheme, popoverContentTheme } from './themes';
 import { ARROW_SIZE } from './constants';
 
+import { PopoverArrowProps, PopoverTriggerProps } from './types';
+
 export const PopoverRoot = styled('span')({
   color: null,
   display: 'inline-block'
@@ -61,7 +63,7 @@ export const PopoverTitle = themed(CardTitle)(cardOverrides);
 
 export const PopoverArrowRoot = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ placement, size, theme: baseTheme }) => {
+})<PopoverArrowProps>(({ placement, size, theme: baseTheme }) => {
   const theme = popoverArrowTheme(baseTheme);
   let arrowShadow = ', 0 3px 1px rgba(0, 0, 0, 0.3)';
   const horizontalOffset = `-${parseFloat(size) - 4}px`;
@@ -127,7 +129,7 @@ export const PopoverArrowRoot = styled('span', {
 
 export const PopoverTriggerWrapper = styled('span', {
   shouldForwardProp: (prop) => prop !== 'cursor' && isPropValid(prop)
-})(({ cursor }) => ({
+})<PopoverTriggerProps>(({ cursor }) => ({
   cursor,
   display: 'inline-block'
 }));

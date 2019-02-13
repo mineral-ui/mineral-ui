@@ -12,9 +12,11 @@ import OverflowContainer, {
 } from '../OverflowContainer';
 import { tabTheme, tabListTheme, tabPanelTheme } from './themes';
 
+import { TabsStyleProps, TabListStyleProps } from './types';
+
 export const TabsRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
-})(({ height, position, theme }) => {
+})<TabsStyleProps>(({ height, position, theme }) => {
   const flexDirection = {
     bottom: 'column-reverse',
     end: 'row-reverse',
@@ -203,7 +205,7 @@ export const TabListInner = withProps({
   )
 );
 
-export const TabListList = styled('ul')(
+export const TabListList = styled('ul')<TabListStyleProps>(
   ({ align, count, theme: baseTheme, vertical }) => {
     const theme = tabListTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -257,7 +259,7 @@ export const TabListList = styled('ul')(
 
 export const TabListRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
-})(({ height, vertical }) => ({
+})<TabListStyleProps>(({ height, vertical }) => ({
   display: 'flex',
   flex: '0 0 auto',
   flexDirection: vertical ? 'column' : undefined,

@@ -50,6 +50,10 @@ export interface ChoiceGroupProps {
   type: Type;
 }
 
+export type ChoiceGroupStyleProps = Partial<ChoiceGroupProps> & {
+  defaultChecked?: boolean
+};
+
 export interface ChoiceGroupDefaultProps {
   role: string;
   size: Size;

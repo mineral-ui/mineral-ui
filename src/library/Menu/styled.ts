@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
 import { menuDividerTheme, menuGroupTheme, menuItemTheme } from './themes';
 
+import { MenuItemProps } from './types';
+
 export const MenuRoot = styled('div')(({ theme }) =>
   componentStyleReset(theme)
 );
@@ -59,7 +61,7 @@ export const MenuGroupTitle = styled('h3')((props) => {
 
 export const MenuItemRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
-})(
+})<MenuItemProps>(
   // These styles are based off of Button, with significant changes
   ({ disabled, isHighlighted, theme: baseTheme, variant }) => {
     let theme = menuItemTheme(baseTheme);

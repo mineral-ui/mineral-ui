@@ -8,11 +8,13 @@ import {
   formFieldsetTheme
 } from './themes';
 
+import { FormFieldStyleProps } from './types';
+
 export const FormFieldRoot = styled('div')(({ theme }) =>
   componentStyleReset(theme)
 );
 
-export const FormFieldCaption = styled('div')(
+export const FormFieldCaption = styled('div')<FormFieldStyleProps>(
   ({ isGroup, theme: baseTheme, variant }) => {
     let theme = formFieldTheme(baseTheme);
     if (variant) {
@@ -45,7 +47,7 @@ export const FormFieldDividerRoot = styled('div')(({ theme: baseTheme }) => {
   };
 });
 
-export const FormFieldSecondaryText = styled('span')(
+export const FormFieldSecondaryText = styled('span')<FormFieldStyleProps>(
   ({ secondaryText, theme: baseTheme }) => {
     const theme = formFieldTheme(baseTheme);
 
@@ -83,7 +85,7 @@ export const FormFieldsetRoot = styled('fieldset')(
   }
 );
 
-export const FormFieldTextWrapper = styled('div')(
+export const FormFieldTextWrapper = styled('div')<FormFieldStyleProps>(
   ({ hideLabel, theme: baseTheme }) => {
     const theme = formFieldTheme(baseTheme);
 

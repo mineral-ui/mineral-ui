@@ -5,10 +5,12 @@ import { hideVisually } from 'polished';
 import { componentStyleReset, getNormalizedValue } from '../styles';
 import { choiceTheme, choiceGroupTheme } from './themes';
 
+import { ChoiceProps, ChoiceGroupStyleProps } from './types';
+
 export const ChoiceRoot = styled('label', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})(
+})<ChoiceProps>(
   ({ disabled, justify, hideLabel, labelPosition, size, theme: baseTheme }) => {
     const theme = choiceTheme(baseTheme);
     const labelPositionStart = labelPosition === 'start';
@@ -87,7 +89,7 @@ export const Input = styled('input')(({ theme: baseTheme }) => {
 export const Text = styled('span', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})(
+})<ChoiceProps>(
   ({ disabled, hideLabel, justify, labelPosition, size, theme: baseTheme }) => {
     const theme = choiceTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -120,7 +122,7 @@ export const Text = styled('span', {
 export const Control = styled('span', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ disabled, size, theme: baseTheme }) => {
+})<ChoiceProps>(({ disabled, size, theme: baseTheme }) => {
   const theme = choiceTheme(baseTheme);
   const backgroundColor = disabled
     ? theme.input_backgroundColor_disabled
@@ -155,7 +157,7 @@ export const Control = styled('span', {
 
 export const ChoiceGroupRoot = styled('div', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ inline, size, theme: baseTheme }) => {
+})<ChoiceGroupStyleProps>(({ inline, size, theme: baseTheme }) => {
   const theme = choiceGroupTheme(baseTheme);
 
   return {

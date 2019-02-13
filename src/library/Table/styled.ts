@@ -20,6 +20,16 @@ import {
 import TableHeaderCell from './TableHeaderCell';
 import { SORT } from './constants';
 
+import {
+  TableCellProps,
+  TableHeaderProps,
+  TableHeaderCellProps,
+  TableRowProps,
+  TableSelectableCellProps,
+  TableSortableHeaderCellStyleProps,
+  TableTitleProps
+} from './types';
+
 const REGEX_IS_EM_VALUE = /\d+em$/;
 
 const tableCellStyles = ({
@@ -85,9 +95,9 @@ export const TableRoot = styled('table')(({ theme }) => ({
 
 export const TableBody = styled('tbody')();
 
-export const TableCellRoot = styled('td')(tableCellStyles);
+export const TableCellRoot = styled('td')<TableCellProps>(tableCellStyles);
 
-export const TableHeaderRoot = styled('thead')(
+export const TableHeaderRoot = styled('thead')<TableHeaderProps>(
   ({ hide, highContrast, theme: baseTheme }) => {
     const theme = tableHeaderTheme(baseTheme);
 
@@ -106,7 +116,7 @@ export const TableHeaderRoot = styled('thead')(
 
 export const TableHeaderCellRoot = styled('th', {
   shouldForwardProp: (prop) => prop !== 'width' && isPropValid(prop)
-})([
+})<TableHeaderCellProps>([
   ({ theme: baseTheme, ...props }) => {
     const theme = mapComponentThemes(
       {
@@ -171,7 +181,7 @@ export const TableHeaderCellRoot = styled('th', {
   }
 ]);
 
-export const TableRowRoot = styled('tr')(
+export const TableRowRoot = styled('tr')<TableRowProps>(
   ({ highContrast, isSelected, theme: baseTheme, striped }) => {
     const theme = tableRowTheme(baseTheme);
 
@@ -235,20 +245,24 @@ export const TableRowRoot = styled('tr')(
 );
 
 export const PaddedCheckbox = withProps({ hideLabel: true })(
-  styled(Checkbox)(({ density, isHeader, theme: baseTheme }) => {
-    const theme = isHeader
-      ? tableHeaderCellTheme(baseTheme)
-      : tableCellTheme(baseTheme);
-    const themePrefix = isHeader ? 'TableHeaderCell' : 'TableCell';
-    const paddingVertical =
-      density === 'spacious'
-        ? theme[`${themePrefix}_paddingVertical_spacious`]
-        : theme[`${themePrefix}_paddingVertical`];
+  styled(Checkbox)<TableSelectableCellProps>(
+    ({ density, isHeader, theme: baseTheme }) => {
+      const theme = isHeader
+        ? tableHeaderCellTheme(baseTheme)
+        : tableCellTheme(baseTheme);
+      const themePrefix = isHeader ? 'TableHeaderCell' : 'TableCell';
+      const paddingVertical =
+        density === 'spacious'
+          ? theme[`${themePrefix}_paddingVertical_spacious`]
+          : theme[`${themePrefix}_paddingVertical`];
 
-    return {
-      padding: `${paddingVertical} ${theme[`${themePrefix}_paddingHorizontal`]}`
-    };
-  })
+      return {
+        padding: `${paddingVertical} ${
+          theme[`${themePrefix}_paddingHorizontal`]
+        }`
+      };
+    }
+  )
 );
 
 const tableSortableHeaderCellFocusStyles = (theme) => ({
@@ -318,34 +332,36 @@ export const TableSortableHeaderCellContent = styled('span')({
 
 export const TableSortableHeaderCellIconHolder = styled('span', {
   shouldForwardProp: (prop) => prop !== 'direction' && isPropValid(prop)
-})(({ isSorted, direction, theme: baseTheme }) => {
-  const theme = tableSortableHeaderCellTheme(baseTheme);
-  const iconAdjustment = pxToEm(2);
-  const marginProperty =
-    theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
+})<TableSortableHeaderCellStyleProps>(
+  ({ isSorted, direction, theme: baseTheme }) => {
+    const theme = tableSortableHeaderCellTheme(baseTheme);
+    const iconAdjustment = pxToEm(2);
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
-  return {
-    color: theme.icon_color,
-    display: 'inline-block',
-    height: theme.TableSortableHeaderCellIcon_size,
-    [marginProperty]: `${parseFloat(theme.space_inline_xxs) +
-      parseFloat(iconAdjustment)}em`,
-    opacity: isSorted ? null : 0,
-    position: 'relative',
-    top: direction === SORT.ascending ? 2 : 1,
-    width: theme.TableSortableHeaderCellIcon_size,
+    return {
+      color: theme.icon_color,
+      display: 'inline-block',
+      height: theme.TableSortableHeaderCellIcon_size,
+      [marginProperty]: `${parseFloat(theme.space_inline_xxs) +
+        parseFloat(iconAdjustment)}em`,
+      opacity: isSorted ? null : 0,
+      position: 'relative',
+      top: direction === SORT.ascending ? 2 : 1,
+      width: theme.TableSortableHeaderCellIcon_size,
 
-    '& > [role="img"]': {
-      margin: `-${iconAdjustment}`
-    },
+      '& > [role="img"]': {
+        margin: `-${iconAdjustment}`
+      },
 
-    '*:hover > button > &, button:focus > &': {
-      color: 'inherit'
-    }
-  };
-});
+      '*:hover > button > &, button:focus > &': {
+        color: 'inherit'
+      }
+    };
+  }
+);
 
-export const TableTitleRoot = styled('caption')(
+export const TableTitleRoot = styled('caption')<TableTitleProps>(
   ({ hide, theme: baseTheme }) => {
     const theme = tableTitleTheme(baseTheme);
 
