@@ -1,5 +1,11 @@
 /* @flow */
-import React, { Children, cloneElement, createElement, Component } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  createElement,
+  Component,
+  isValidElement
+} from 'react';
 import { generateId } from '../utils';
 import {
   FormFieldRoot as Root,
@@ -89,7 +95,9 @@ export default class FormField extends Component<FormFieldProps> {
       control = createElement(input, controlProps());
     } else if (children) {
       const child = Children.only(children);
-      control = cloneElement(child, controlProps(child.props));
+      control = isValidElement(child)
+        ? cloneElement(child, controlProps(child.props))
+        : null;
     }
 
     return (
@@ -120,7 +128,7 @@ export default class FormField extends Component<FormFieldProps> {
       controlName = input.displayName;
     } else if (children) {
       const child = Children.only(children);
-      if (child.type && child.type.displayName) {
+      if (isValidElement(child) && child.type.displayName) {
         controlName = child.type.displayName;
       }
     }
