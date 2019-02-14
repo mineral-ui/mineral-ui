@@ -9,13 +9,12 @@ import Button from '../Button';
 
 import { paginationTheme } from './themes';
 
-import { FlexProps, FlexItemProps } from '../Flex/types';
 import { PaginationProps, PageJumperProps } from './types';
 
 export const PaginationRoot = withProps({
   as: 'nav',
   justifyContent: 'end'
-})<PaginationProps & FlexProps>(
+})<PaginationProps>(
   styled(Flex)(({ theme: baseTheme }) => {
     const theme = paginationTheme(baseTheme);
 
@@ -71,7 +70,7 @@ export const PageJumperNumberInput = styled(TextInput)({
   }
 });
 
-export const PageJumperRoot = styled(FlexItem)<PageJumperProps & FlexItemProps>(
+export const PageJumperRoot = styled(FlexItem)<PageJumperProps>(
   ({ width }) => ({
     width
   })

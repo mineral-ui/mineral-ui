@@ -2,10 +2,11 @@
 import { SIZE } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { FlexProps, FlexItemProps } from '../Flex/types';
 
 type Size = keyof typeof SIZE;
 
-export interface PaginationProps {
+export interface PaginationProps extends FlexProps {
   currentPage: number;
   messages?: PaginationMessages;
   onPageChange: (currentPage: number) => void;
@@ -48,7 +49,7 @@ export type IncrementButtonProps = PagesProps & {
   focusedNodeWhenDisabled: HTMLButtonElement | null | undefined;
 };
 
-export interface PageJumperProps {
+export interface PageJumperProps extends FlexItemProps {
   'aria-label'?: string;
   currentPage: number;
   inputRef: (node: HTMLInputElement | null | undefined) => void;
