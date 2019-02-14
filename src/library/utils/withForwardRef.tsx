@@ -3,7 +3,9 @@ import React, { forwardRef } from 'react';
 import wrapDisplayName from 'recompose/wrapDisplayName';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 
-export default function withForwardRef<P extends object>(WrappedComponent: React.ComponentType<P>) {
+export default function withForwardRef<P extends object>(
+  WrappedComponent: React.ComponentType<P>
+) {
   const Wrapper = forwardRef((props: P, ref: React.Ref<any>) => (
     <WrappedComponent {...props} forwardedRef={ref} />
   ));
