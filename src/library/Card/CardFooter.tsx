@@ -61,6 +61,7 @@ export default class CardFooter extends Component<
           <Title>
             <TitleContent>{title}</TitleContent>
             {expandable && (
+              // @ts-ignore - iconStart
               <ToggleButton
                 iconStart={<ExpandCollapseIcon title={triggerTitle(isOpen)} />}
                 minimal
