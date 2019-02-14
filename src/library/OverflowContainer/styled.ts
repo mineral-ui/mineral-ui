@@ -73,8 +73,8 @@ export const getScrollerStyles = ({
   scrollX,
   scrollY
 }: {
-  scrollX: boolean,
-  scrollY: boolean
+  scrollX: boolean;
+  scrollY: boolean;
 }) => ({
   flex: '1 1 auto',
 

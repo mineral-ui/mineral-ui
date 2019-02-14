@@ -1,27 +1,14 @@
 /* @flow */
 import { PLACEMENT } from './constants';
 
+import { PopoverProps } from '../Popover/types';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 
 type Placement = keyof typeof PLACEMENT;
 
-export interface TooltipProps {
+export interface TooltipProps extends PopoverProps {
   children: React.ReactNode;
-  cursor?: string;
   content: string;
-  defaultIsOpen?: boolean;
-  disabled?: boolean;
-  hasArrow?: boolean;
-  id?: string;
-  isOpen?: boolean;
-  modifiers?: object;
-  onClose?: (event: React.SyntheticEvent) => void;
-  onOpen?: (event: React.SyntheticEvent) => void;
-  placement?: Placement;
-  positionFixed?: boolean;
-  subtitle?: any;
-  title?: any;
-  usePortal?: boolean;
 }
 
 export interface TooltipDefaultProps {

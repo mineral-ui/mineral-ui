@@ -2,43 +2,21 @@
 import { LABEL_POSITION, SIZE } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { ChoiceProps, ChoiceGroupProps } from '../Choice/types';
 
 type LabelPosition = keyof typeof LABEL_POSITION;
 type Size = keyof typeof SIZE;
 
-export interface RadioProps {
-  checked?: boolean;
-  className?: string;
-  defaultChecked?: boolean;
-  disabled?: boolean;
-  hideLabel?: boolean;
-  inputRef?: (node: HTMLInputElement | null | undefined) => void;
-  invalid?: boolean;
-  justify?: boolean;
-  label: string | React.ReactElement<any>;
-  labelPosition?: LabelPosition;
-  name?: string;
-  onChange?: (event: React.SyntheticEvent) => void;
-  required?: boolean;
-  rootProps?: object;
-  size?: Size;
-  value?: string;
-}
+export interface RadioProps extends ChoiceProps {}
 
 export interface RadioDefaultProps {
   labelPosition: LabelPosition;
   size: Size;
 }
 
-export interface RadioGroupProps {
+export interface RadioGroupProps extends ChoiceGroupProps {
   checked?: string;
-  children?: React.ReactNode;
-  data?: Array<{ label: string | React.ReactElement<any>; value: string }>;
   defaultChecked?: string;
-  inline?: boolean;
-  name: string;
-  onChange?: (event: React.SyntheticEvent) => void;
-  rootProps?: object;
 }
 
 export type RadioThemeFn = ComponentThemeFn<RadioTheme>;

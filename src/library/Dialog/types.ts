@@ -62,13 +62,9 @@ export interface DialogAnimateStyleProps {
   state?: string;
 }
 
-export interface DialogBodyProps {
-  children?: React.ReactNode;
-}
+export interface DialogBodyProps extends DialogRowProps {}
 
-export interface DialogFooterProps {
-  children?: React.ReactNode;
-}
+export interface DialogFooterProps extends DialogRowProps {}
 
 export interface DialogHeaderProps {
   children?: React.ReactNode;

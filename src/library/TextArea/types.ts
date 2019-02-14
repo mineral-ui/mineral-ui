@@ -1,32 +1,34 @@
 /* @flow */
-import { SIZE, VARIANT } from './constants';
+import { SIZE } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { FauxControlProps } from '../FauxControl/types';
 
 type Size = keyof typeof SIZE;
 
-export interface TextAreaProps {
+export interface TextAreaProps extends FauxControlProps {
   autoSize?: boolean;
   className?: string;
   defaultValue?: string;
-  disabled?: boolean;
   inputRef?: (node: React.Component | null | undefined) => void;
   rootProps?: object;
   invalid?: boolean;
   onInput?: (event: React.SyntheticEvent) => void;
   onChange?: (event: React.SyntheticEvent) => void;
-  readOnly?: boolean;
   required?: boolean;
   resizeable?: boolean;
   rows?: number;
-  size?: Size;
   value?: string;
-  variant?: keyof typeof VARIANT;
 }
 
 export interface TextAreaDefaultProps {
   size: Size;
 }
+
+export type TextAreaInputStyleProps = Pick<
+  TextAreaProps,
+  'resizeable' | 'size'
+>;
 
 export type TextAreaThemeFn = ComponentThemeFn<TextAreaTheme>;
 export type TextAreaTheme = ComponentTheme<TextAreaThemeKeys>;

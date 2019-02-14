@@ -1,16 +1,15 @@
 /* @flow */
-import { SIZE, TYPE, VARIANT } from './constants';
+import { SIZE, TYPE } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { FauxControlProps } from '../FauxControl/types';
 
 type Size = keyof typeof SIZE;
 type Type = keyof typeof TYPE;
-type Variant = keyof typeof VARIANT;
 
-export interface TextInputProps {
+export interface TextInputProps extends FauxControlProps {
   className?: string;
   defaultValue?: string;
-  disabled?: boolean;
   htmlSize?: number | string;
   iconStart?: React.ReactElement<any>;
   iconEnd?: React.ReactElement<any>;
@@ -18,14 +17,9 @@ export interface TextInputProps {
   rootProps?: object;
   invalid?: boolean;
   onChange?: (event: React.SyntheticEvent) => void;
-  prefix?: string | React.ReactElement<any>;
-  readOnly?: boolean;
   required?: boolean;
-  size?: Size;
-  suffix?: string | React.ReactElement<any>;
   type?: Type;
   value?: string;
-  variant?: Variant;
 }
 
 export interface TextInputDefaultProps {

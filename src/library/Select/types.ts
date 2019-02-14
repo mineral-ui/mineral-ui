@@ -1,42 +1,31 @@
 /* @flow */
 import { PLACEMENT, SIZE, VARIANT } from './constants';
 
-import { MenuItemType, MenuItems } from '../Menu/types';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { DropdownProps } from '../Dropdown/types';
+import { FauxControlProps } from '../FauxControl/types';
+import { MenuItemType } from '../Menu/types';
 
 type Placement = keyof typeof PLACEMENT;
 type Size = keyof typeof SIZE;
 type Variant = keyof typeof VARIANT;
 
-export interface SelectProps {
-  data: MenuItems;
-  defaultHighlightedIndex?: number;
-  defaultIsOpen?: boolean;
+export interface SelectProps extends DropdownProps {
   defaultSelectedItem?: MenuItemType;
-  disabled?: boolean;
-  highlightedIndex?: number;
-  id?: string;
   invalid?: boolean;
-  isOpen?: boolean;
   item?: SelectRenderFn;
-  itemKey?: string;
   menu?: SelectRenderFn;
-  modifiers?: object;
   name?: string;
   onChange?: (item: MenuItemType, event: React.SyntheticEvent) => void;
-  onClose?: (event: React.SyntheticEvent) => void;
-  onOpen?: (event: React.SyntheticEvent) => void;
   onSelect?: (item: MenuItemType, event: React.SyntheticEvent) => void;
   placeholder?: string;
   placement?: Placement;
-  positionFixed?: boolean;
   readOnly?: boolean;
   required?: boolean;
   selectedItem?: MenuItemType;
   size?: Size;
   trigger?: SelectRenderFn;
   triggerRef?: (node: HTMLElement | null | undefined) => void;
-  usePortal?: boolean;
   variant?: Variant;
 }
 
@@ -70,17 +59,13 @@ type SelectRenderProps = {
   props: object;
 } & SelectStateAndHelpers;
 
-export interface SelectTriggerProps {
-  disabled?: boolean;
+export interface SelectTriggerProps extends FauxControlProps {
   isOpen?: boolean;
   name?: string;
   placeholder?: string;
-  readOnly?: boolean;
   required?: boolean;
   item?: MenuItemType;
-  size?: Size;
   triggerRef?: (node: HTMLElement | null | undefined) => void;
-  variant?: Variant;
 }
 
 export type SelectTriggerStyleProps = Pick<

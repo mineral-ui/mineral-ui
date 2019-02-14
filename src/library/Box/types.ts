@@ -8,6 +8,7 @@ type InsetSpacingSize = keyof typeof INSET_SPACING_SIZE;
 
 export interface BoxProps {
   breakpoints?: Array<number | string>;
+  children?: React.ReactNode;
   height?: HeightOrWidthProp;
   inline?: boolean | Array<boolean | null>;
   margin?: SpacingProp;

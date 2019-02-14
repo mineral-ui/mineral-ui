@@ -59,7 +59,7 @@ export interface PageJumperProps extends FlexItemProps {
   totalPages: number;
 }
 
-export interface PageSizerProps {
+export interface PageSizerProps extends FlexItemProps {
   'aria-label'?: string;
   currentPage: number;
   messages: PageSizerMessages;

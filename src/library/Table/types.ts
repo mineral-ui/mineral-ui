@@ -2,6 +2,7 @@
 import { COLUMN_ALIGN, DENSITY, TITLE_ELEMENT } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { TextProps } from '../Text/types';
 
 type ColumnAlign = keyof typeof COLUMN_ALIGN;
 type Density = keyof typeof DENSITY;
@@ -293,7 +294,7 @@ interface TableRowThemeKeys {
   TableRow_borderHorizontal_highContrast: ThemeValue;
 }
 
-export interface TableSelectableCellProps extends TableContextType {
+export interface TableSelectableCellProps extends TableCellProps {
   checked?: boolean;
   disabled?: boolean;
   indeterminate?: boolean;
@@ -302,12 +303,10 @@ export interface TableSelectableCellProps extends TableContextType {
   onChange: () => void;
 }
 
-export interface TableSortableHeaderCellProps extends TableContextType {
+export interface TableSortableHeaderCellProps extends TableHeaderCellProps {
   children: React.ReactNode;
-  label?: string;
   messages: Messages;
   name: string;
-  render?: RenderFn;
   sortable: SortableType;
 }
 
@@ -329,10 +328,9 @@ interface TableSortableHeaderCellThemeKeys {
   TableSortableHeaderCellIcon_size: ThemeValue;
 }
 
-export interface TableTitleProps {
+export interface TableTitleProps extends TextProps {
   appearance?: TitleElement;
   as?: TitleElement;
-  children: React.ReactNode;
   hide?: boolean;
   id: string;
   theme: object;

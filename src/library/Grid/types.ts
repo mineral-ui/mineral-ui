@@ -8,12 +8,9 @@ type StringOrArrayOfStrings<T> = keyof T | Array<keyof T | null>;
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 
+// TODO: This should probably exclude a few FlexProps properties
 export interface GridProps extends FlexProps {
-  alignItems?: AlignItems;
-  breakpoints?: Array<number | string>;
-  children?: React.ReactNode;
   columns?: number;
-  gutterWidth?: GutterWidth;
 }
 
 export interface GridDefaultProps {
@@ -22,6 +19,7 @@ export interface GridDefaultProps {
   gutterWidth: GutterWidth;
 }
 
+// TODO: This should probably exclude a few FlexItemProps properties
 export interface GridItemProps extends FlexItemProps {
   span?: number | Array<number | null>;
 }

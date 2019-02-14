@@ -1,8 +1,8 @@
 /* @flow */
 import { VARIANT } from './constants';
 
-import { MenuItems } from '../Menu/types';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { DropdownProps } from '../Dropdown/types';
 
 type Variant = keyof typeof VARIANT;
 
@@ -11,13 +11,13 @@ export interface CardProps {
   onClick?: (event: React.SyntheticEvent) => void;
 }
 
-export interface CardActionsProps {
+export interface CardRowProps {
   children: React.ReactNode;
 }
 
-export interface CardBlockProps {
-  children: React.ReactNode;
-}
+export interface CardActionsProps extends CardRowProps {}
+
+export interface CardBlockProps extends CardRowProps {}
 
 export interface CardDividerProps {}
 
@@ -45,22 +45,20 @@ export interface CardFooterState {
 
 export interface CardImageProps {}
 
-export interface CardStatusProps {
+export interface CardStatusProps extends CardRowProps {
   children: string;
   variant: Variant;
 }
 
-export interface CardTitleProps {
+export interface CardTitleProps extends CardRowProps {
   actions?: React.ReactNode;
   avatar?: string | React.ReactElement<any>;
-  children: React.ReactNode;
   secondaryText?: string | React.ReactElement<any>;
   subtitle?: React.ReactNode;
   variant?: Variant;
 }
 
-export interface CardTitleMenuProps {
-  data: MenuItems;
+export interface CardTitleMenuProps extends DropdownProps {
   triggerTitle?: string;
 }
 

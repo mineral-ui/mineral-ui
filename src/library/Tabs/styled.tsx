@@ -171,7 +171,7 @@ const TabListArrowButton = withProps({ type: 'button' })(
   })
 );
 
-export const TabListInner = withProps({
+export const TabListInner = withProps<TabListInnerStyleProps, {}>({
   hideScrollbars: true,
   // We handle our own "scroll with the keyboard" interaction in Tabs, so
   // null tabIndex is to prevent an extraneous tab stop

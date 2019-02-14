@@ -18,8 +18,6 @@ type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
 
 export interface FlexProps extends BoxProps {
   alignItems?: AlignItems;
-  breakpoints?: Array<number | string>;
-  children?: React.ReactNode;
   direction?: Direction;
   gutterWidth?: GutterWidth;
   justifyContent?: JustifyContent;
@@ -35,9 +33,9 @@ export interface FlexDefaultProps {
 
 type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
+// TODO: This should probably exclude a few FlexProps properties
 export interface FlexItemProps extends FlexProps {
   alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>;
-  breakpoints?: Array<number | string>;
   flex?: boolean;
   grow?: GrowOrShrink;
   minWidth?: HeightOrWidthProp;

@@ -2,6 +2,7 @@
 import { ALIGN, POSITION } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { OverflowContainerWithShadowsProps } from '../OverflowContainer/types';
 
 type Align = keyof typeof ALIGN;
 type Position = keyof typeof POSITION;
@@ -85,13 +86,8 @@ export interface TabListState {
 
 export type TabListStyleProps = Pick<TabListProps, 'height' | 'vertical'>;
 
-export type TabListInnerStyleProps = Pick<
-  TabListProps,
-  'position' | 'vertical'
-> & {
-  hideScrollbars?: boolean;
-  tabIndex?: number;
-};
+export type TabListInnerStyleProps = OverflowContainerWithShadowsProps &
+  Pick<TabListProps, 'position' | 'vertical'>;
 
 export type TabListListStyleProps = Pick<TabListProps, 'align' | 'vertical'> & {
   count: number;

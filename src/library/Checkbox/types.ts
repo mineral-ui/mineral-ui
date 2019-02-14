@@ -2,30 +2,15 @@
 import { SIZE, LABEL_POSITION } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { ChoiceProps, ChoiceGroupProps } from '../Choice/types';
 
 type LabelPosition = keyof typeof LABEL_POSITION;
 type Size = keyof typeof SIZE;
 
-export interface CheckboxProps {
-  checked?: boolean;
-  className?: string;
-  defaultChecked?: boolean;
+export interface CheckboxProps extends ChoiceProps {
   defaultIndeterminate?: boolean;
-  disabled?: boolean;
-  hideLabel?: boolean;
   indeterminate?: boolean;
-  inputRef?: (node: HTMLInputElement | null | undefined) => void;
-  invalid?: boolean;
-  justify?: boolean;
-  label: string | React.ReactElement<any>;
-  labelPosition?: LabelPosition;
-  name?: string;
-  onChange?: (event: React.SyntheticEvent) => void;
   onClick?: (event: React.SyntheticEvent) => void;
-  required?: boolean;
-  rootProps?: object;
-  size?: Size;
-  value?: string;
 }
 
 export interface CheckboxDefaultProps {
@@ -33,15 +18,9 @@ export interface CheckboxDefaultProps {
   size: Size;
 }
 
-export interface CheckboxGroupProps {
+export interface CheckboxGroupProps extends ChoiceGroupProps {
   checked?: Array<string>;
-  children?: React.ReactNode;
-  data?: Array<{ label: string | React.ReactElement<any>; value: string }>;
   defaultChecked?: Array<string>;
-  inline?: boolean;
-  name: string;
-  onChange?: (event: React.SyntheticEvent) => void;
-  rootProps?: object;
 }
 
 export type CheckboxThemeFn = ComponentThemeFn<CheckboxTheme>;

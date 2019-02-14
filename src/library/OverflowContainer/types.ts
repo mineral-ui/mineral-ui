@@ -7,26 +7,20 @@ export interface OverflowContainerProps {
   hideScrollbars?: boolean;
   scrollX?: boolean;
   scrollY?: boolean;
-  tabIndex?: number | string;
+  tabIndex?: number;
 }
 
 export type OverflowContainerStyleProps = Pick<
   OverflowContainerProps,
-  'hideScrollbars' | 'scrollX' | 'scrollY'
-> & {
-  tabIndex?: number;
-};
+  'hideScrollbars' | 'scrollX' | 'scrollY' | 'tabIndex'
+>;
 
 export interface OverflowContainerState {
   scrollable: boolean;
 }
 
-export interface OverflowContainerWithShadowsProps {
-  children?: React.ReactNode;
-  hideScrollbars?: boolean;
-  scrollX?: boolean;
-  scrollY?: boolean;
-}
+export interface OverflowContainerWithShadowsProps
+  extends OverflowContainerProps {}
 
 export interface OverflowContainerWithShadowsState {
   hasShadowBottom: boolean;

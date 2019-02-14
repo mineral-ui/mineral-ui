@@ -1,29 +1,21 @@
 /* @flow */
 import { PLACEMENT } from './constants';
 
-import { MenuItems } from '../Menu/types';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { MenuItems } from '../Menu/types';
+import { PopoverProps } from '../Popover/types';
 
 type Placement = keyof typeof PLACEMENT;
 
-export interface DropdownProps {
+export interface DropdownProps extends PopoverProps {
   children: React.ReactNode | DropdownRenderFn;
   data: MenuItems;
   defaultHighlightedIndex?: number;
-  defaultIsOpen?: boolean;
-  disabled?: boolean;
   highlightedIndex?: number;
-  id?: string;
-  isOpen?: boolean;
   item?: DropdownRenderFn;
   itemKey?: string;
   menu?: DropdownRenderFn;
-  modifiers?: object;
-  onClose?: (event: React.SyntheticEvent) => void;
-  onOpen?: (event: React.SyntheticEvent) => void;
   placement?: Placement;
-  positionFixed?: boolean;
-  usePortal?: boolean;
   wide?: boolean;
 }
 
