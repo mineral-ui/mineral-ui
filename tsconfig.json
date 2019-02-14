@@ -21,7 +21,7 @@
       "mineral-ui-icons/*": ["packages/mineral-ui-icons/src/*"]
     }
   },
-  "exclude": ["src/website", "**/__tests__", "**/*.template.js"],
+  "exclude": ["src/website", "**/__tests__", "**/*.template.js", "**/dist", "**/scripts", "**/reports", "**/docs"],
   "include": [
     "src",
     "packages/mineral-ui-icons"
