@@ -4,30 +4,30 @@ import ChoiceGroup from '../Choice/ChoiceGroup';
 import { themed, mapComponentThemes } from '../themes';
 import { checkboxTheme, checkboxGroupTheme } from './themes';
 
-export const CheckboxRoot = themed(Choice)((props) =>
+export const CheckboxRoot = themed(Choice)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'Checkbox',
-      theme: checkboxTheme(props['theme'])
+      theme: checkboxTheme(baseTheme)
     },
     {
       name: 'Choice',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );
 
-export const CheckboxGroupRoot = themed(ChoiceGroup)((props) =>
+export const CheckboxGroupRoot = themed(ChoiceGroup)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'CheckboxGroup',
-      theme: checkboxGroupTheme(props['theme'])
+      theme: checkboxGroupTheme(baseTheme)
     },
     {
       name: 'ChoiceGroup',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );

@@ -4,17 +4,17 @@ import { themed, mapComponentThemes } from '../themes';
 import Popover from '../Popover';
 import { tooltipTheme } from './themes';
 
-export const TooltipRoot = themed(Popover)((props) =>
+export const TooltipRoot = themed(Popover)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'Tooltip',
-      theme: tooltipTheme(props['theme'])
+      theme: tooltipTheme(baseTheme)
     },
     {
       name: 'Popover',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );
 

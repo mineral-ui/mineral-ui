@@ -5,15 +5,15 @@ import wrapDisplayName from 'recompose/wrapDisplayName';
 import { withTheme } from 'emotion-theming';
 import ThemeProvider from './ThemeProvider';
 
-import { Theme } from './types';
+import { Theme, ThemeFn } from './types';
+
+const isThemeFn = (theme: Theme): theme is ThemeFn =>
+  typeof theme === 'function';
 
 // Usage: themed(component)(theme)
-const themed = (WrappedComponent: React.ComponentType) => (
-  theme: Theme
-) => {
+const themed = (WrappedComponent: React.ComponentType) => (theme: Theme) => {
   const Wrapper = (props: { theme: Theme }, context?: object) => {
-    const outTheme =
-      typeof theme === 'function' ? theme(props, context) : theme;
+    const outTheme = isThemeFn(theme) ? theme(props, context) : theme;
     const { theme: ignore, ...outProps } = props;
 
     return (

@@ -8,7 +8,10 @@ export type Theme = ThemeObj | ThemeFn;
 export interface ThemeObj {
   [key: string]: ThemeValue;
 }
-export type ThemeFn = (props: object, context?: object) => ThemeObj;
+export type ThemeFn = (
+  props: { theme: ThemeObj },
+  context?: object
+) => ThemeObj;
 export type ThemeValue = any; // TODO: string | number | null;
 
 export type ComponentTheme<T> = T & BaseTheme;

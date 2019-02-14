@@ -11,17 +11,17 @@ import { SIZE } from './constants';
 
 import { SelectTriggerStyleProps } from './types';
 
-const ThemedDropdown = themed(Dropdown)((props) =>
+const ThemedDropdown = themed(Dropdown)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'Select',
-      theme: selectTheme(props['theme'])
+      theme: selectTheme(baseTheme)
     },
     {
       name: 'Dropdown',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );
 
@@ -42,17 +42,17 @@ export const contentWidthModifier = {
   }
 };
 
-const ThemedFauxControl = themed(FauxControl)((props) =>
+const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'Select',
-      theme: selectTriggerTheme(props['theme'])
+      theme: selectTriggerTheme(baseTheme)
     },
     {
       name: 'FauxControl',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );
 

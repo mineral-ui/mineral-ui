@@ -45,8 +45,8 @@ export const PagesRoot = styled(FlexItem)(({ theme: baseTheme }) => {
   };
 });
 
-const ThemedButton = themed(Button)((props) => ({
-  color_disabled: props['theme'].color_theme
+const ThemedButton = themed(Button)(({ theme: baseTheme }) => ({
+  color_disabled: baseTheme.color_theme
 }));
 
 export const PagesEllipsisButton = withProps({

@@ -116,9 +116,9 @@ const DialogBodyThemedOverflowContainerWithShadows = themed(
 export const DialogBodyOverflowContainerWithShadows = withProps({
   scrollY: true
 })(
-  styled(
-    DialogBodyThemedOverflowContainerWithShadows
-  )<OverflowContainerWithShadowsProps>(({ theme: baseTheme }) => {
+  styled(DialogBodyThemedOverflowContainerWithShadows)<
+    OverflowContainerWithShadowsProps
+  >(({ theme: baseTheme }) => {
     const theme = dialogRowTheme(baseTheme);
     const fontSize = theme.DialogRow_fontSize;
     const paddingHorizontal = `${getNormalizedValue(
@@ -147,8 +147,8 @@ export const DialogBodyOverflowContainerWithShadows = withProps({
   })
 );
 
-const DialogThemedButton = themed(Button)((props) => ({
-  ButtonIcon_color: props['theme']
+const DialogThemedButton = themed(Button)(({ theme: baseTheme }) => ({
+  ButtonIcon_color: baseTheme.color
 }));
 
 export const DialogCloseButton = withProps({

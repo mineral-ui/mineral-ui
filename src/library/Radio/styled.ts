@@ -3,30 +3,30 @@ import { themed, mapComponentThemes } from '../themes';
 import Choice, { ChoiceGroup } from '../Choice';
 import { radioTheme, radioGroupTheme } from './themes';
 
-export const RadioRoot = themed(Choice)((props) =>
+export const RadioRoot = themed(Choice)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'Radio',
-      theme: radioTheme(props['theme'])
+      theme: radioTheme(baseTheme)
     },
     {
       name: 'Choice',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );
 
-export const RadioGroupRoot = themed(ChoiceGroup)((props) =>
+export const RadioGroupRoot = themed(ChoiceGroup)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'RadioGroup',
-      theme: radioGroupTheme(props['theme'])
+      theme: radioGroupTheme(baseTheme)
     },
     {
       name: 'ChoiceGroup',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );

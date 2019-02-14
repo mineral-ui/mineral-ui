@@ -8,17 +8,17 @@ import { textInputTheme } from './themes';
 
 import { TextInputStyleProps, TextInputInputStyleProps } from './types';
 
-const ThemedFauxControl = themed(FauxControl)((props) =>
+const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   mapComponentThemes(
     {
       name: 'TextInput',
-      theme: textInputTheme(props['theme'])
+      theme: textInputTheme(baseTheme)
     },
     {
       name: 'FauxControl',
       theme: {}
     },
-    props['theme']
+    baseTheme
   )
 );
 
