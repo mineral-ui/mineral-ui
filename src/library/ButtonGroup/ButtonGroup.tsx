@@ -1,5 +1,10 @@
 /* @flow */
-import React, { Children, Component, cloneElement } from 'react';
+import React, {
+  Children,
+  Component,
+  cloneElement,
+  isValidElement
+} from 'react';
 import { setFromArray, toArray } from '../utils/collections';
 import { findDeep } from '../utils/children';
 import composeEventHandlers from '../utils/composeEventHandlers';
@@ -15,17 +20,19 @@ import { ButtonGroupProps, ButtonGroupState } from './types';
 // NOTE: We can rely on displayName, without fear of it being mangled, even in
 // production, as long as it is set statically on each component
 // https://github.com/facebook/react/issues/4915#issuecomment-335803765
-const isButtonComponent = (element: React.ReactElement<any>) => {
+const isButtonComponent = (element: any): element is React.ComponentType => {
   return element.type && /Button/.test(element.type.displayName);
 };
+
+const isSet = (a: any): a is Set<any> => a instanceof Set;
 
 const isItemAtIndexChecked = (
   checked: number | Array<number> | Set<number>,
   index
 ) => {
-  const isSet = checked instanceof Set;
-  const checkedSet = isSet ? checked : setFromArray(toArray(checked));
-  // $FlowFixMe - Refinement to Set not working
+  const checkedSet: Set<number> = isSet(checked)
+    ? checked
+    : setFromArray(toArray(checked));
   return checkedSet.has(index);
 };
 
@@ -44,12 +51,12 @@ const getDefaultCheckedState = (props: ButtonGroupProps) => {
 
   children.forEach((child, index) => {
     if (mode === MODE.checkbox) {
-      if (child.props.defaultChecked) {
+      if (isValidElement(child) && child.props['defaultChecked']) {
         checked.add(index);
       }
     } else if (mode === MODE.radio) {
-      const selectedChild = children.find(
-        (child) => child.props.defaultChecked
+      const selectedChild = children.find((child) =>
+        isValidElement(child) ? child.props['defaultChecked'] : undefined
       );
       const index = children.indexOf(selectedChild);
       if (index !== -1) {
@@ -77,10 +84,12 @@ export default class ButtonGroup extends Component<
     const {
       checked: ignoreChecked,
       children,
+      defaultChecked: ignoreDefaultChecked,
       disabled,
       fullWidth,
       mode,
       onClick: ignoreOnClick,
+      onChange: ignoreOnChange,
       size,
       variant,
       ...restProps
@@ -96,36 +105,42 @@ export default class ButtonGroup extends Component<
       const isToggleable = Boolean(mode);
       const isChecked = isItemAtIndexChecked(checked, index);
       const isButton = isButtonComponent(child);
-      const nestedButton = isButton
-        ? undefined
-        : // Must be able to find styled/themed buttons inside of triggers
-          findDeep(child.props.children, isButtonComponent);
+      if (isValidElement(child)) {
+        const nestedButton = isButton
+          ? undefined
+          : // Must be able to find styled/themed buttons inside of triggers
+            findDeep(child.props['children'], isButtonComponent);
 
-      return cloneElement(child, {
-        ...(isToggleable ? { 'aria-checked': isChecked } : undefined),
-        ...(nestedButton
-          ? {
-              children: cloneElement(nestedButton, {
-                'data-variant': nestedButton.props.variant,
-                variant: nestedButton.props.variant || variant
-              })
-            }
-          : undefined),
-        'data-index': index,
-        ...(isButton ? { 'data-variant': child.props.variant } : undefined),
-        disabled: disabled || child.props.disabled,
-        key: index,
-        ...(isToggleable && isChecked ? { primary: true } : undefined),
-        onClick: composeEventHandlers(
-          child.props.onClick,
-          this.handleClick.bind(null, index)
-        ),
-        ...(isToggleable ? { role: mode } : undefined),
-        size,
-        ...(variant && isButton
-          ? { variant: child.props.variant || variant }
-          : undefined)
-      });
+        return cloneElement<any>(child, {
+          ...(isToggleable ? { 'aria-checked': isChecked } : undefined),
+          ...(nestedButton
+            ? {
+                children: cloneElement(nestedButton, {
+                  'data-variant': nestedButton.props.variant,
+                  variant: nestedButton.props.variant || variant
+                })
+              }
+            : undefined),
+          'data-index': index,
+          ...(isButton
+            ? { 'data-variant': child.props['variant'] }
+            : undefined),
+          disabled: disabled || child.props['disabled'],
+          key: index,
+          ...(isToggleable && isChecked ? { primary: true } : undefined),
+          onClick: composeEventHandlers(
+            child.props['onClick'],
+            this.handleClick.bind(null, index)
+          ),
+          ...(isToggleable ? { role: mode } : undefined),
+          size,
+          ...(variant && isButton
+            ? { variant: child.props['variant'] || variant }
+            : undefined)
+        });
+      } else {
+        return null;
+      }
     });
 
     return <Root {...rootProps}>{buttons}</Root>;
