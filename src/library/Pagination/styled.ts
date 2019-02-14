@@ -14,8 +14,8 @@ import { PaginationProps, PageJumperProps } from './types';
 export const PaginationRoot = withProps({
   as: 'nav',
   justifyContent: 'end'
-})<PaginationProps>(
-  styled(Flex)(({ theme: baseTheme }) => {
+})(
+  styled(Flex)<PaginationProps>(({ theme: baseTheme }) => {
     const theme = paginationTheme(baseTheme);
 
     return {
