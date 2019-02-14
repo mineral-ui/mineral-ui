@@ -68,7 +68,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
 
   dialogContent: HTMLElement | null | undefined;
 
-  lastFocusedElement: HTMLElement | null | undefined;
+  lastFocusedElement: Element | null | undefined;
 
   componentDidUpdate(prevProps: DialogProps) {
     if (!prevProps.isOpen && this.props.isOpen) {
@@ -307,12 +307,15 @@ export default class Dialog extends Component<DialogProps, DialogState> {
     if (canUseDOM) {
       const { activeElement, body } = document;
       this.lastFocusedElement =
-        activeElement && activeElement.focus ? activeElement : body;
+        activeElement instanceof HTMLElement && activeElement.focus
+          ? activeElement
+          : body;
     }
   };
 
   restoreFocus = () => {
-    this.lastFocusedElement && this.lastFocusedElement.focus();
+    this.lastFocusedElement instanceof HTMLElement &&
+      this.lastFocusedElement.focus();
   };
 
   setInitialFocus = () => {
@@ -386,7 +389,10 @@ export default class Dialog extends Component<DialogProps, DialogState> {
     );
   };
 
-  isEventOutsideNode = (event: React.SyntheticEvent<Node>, node: HTMLElement | null | undefined) => {
+  isEventOutsideNode = (
+    event: React.SyntheticEvent<Node>,
+    node: HTMLElement | null | undefined
+  ) => {
     const { target } = event;
     return node && target instanceof Node && !node.contains(target);
   };
