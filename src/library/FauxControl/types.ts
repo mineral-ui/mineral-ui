@@ -3,6 +3,9 @@ import { SIZE, VARIANT } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 
+type Size = keyof typeof SIZE;
+type Variant = keyof typeof VARIANT;
+
 export interface FauxControlProps {
   afterItems?: React.ReactNode;
   beforeItems?: React.ReactNode;
@@ -15,9 +18,9 @@ export interface FauxControlProps {
   iconEnd?: React.ReactElement<any>;
   prefix?: React.ReactNode;
   readOnly?: boolean;
-  size?: keyof typeof SIZE;
+  size?: Size;
   suffix?: React.ReactNode;
-  variant?: keyof typeof VARIANT;
+  variant?: Variant;
 }
 
 export type FauxControlStyleProps = Pick<
@@ -51,14 +54,12 @@ export type FauxControlControlStyleProps = Pick<
   | 'variant'
 > & {
   controlPropsIn?: object;
-  controlSize?: keyof typeof SIZE;
+  controlSize?: Size;
   hasPlaceholder?: boolean;
   prefix?: string; // Overwrite FauxControlProps to match DOM expectation
 };
 
-export interface VariantIcons {
-  [key: keyof typeof VARIANT]: React.ReactElement<any>;
-}
+export type VariantIcons = { [K in Variant]: React.ReactElement<any> };
 
 export type FauxControlThemeFn = ComponentThemeFn<FauxControlTheme>;
 export type FauxControlTheme = ComponentTheme<FauxControlThemeKeys>;
