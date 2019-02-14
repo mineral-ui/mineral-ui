@@ -6,13 +6,7 @@ import { JUSTIFY_CONTENT } from '../Flex/constants';
 import { StartEndProps } from './types';
 
 export default function StartEnd(props: StartEndProps) {
-  const {
-    children,
-    justifyContent: ignoreJustifyContent,
-    priority,
-    wrap: ignoreWrap,
-    ...restProps
-  } = props;
+  const { children, priority, ...restProps } = props;
   const rootProps = {
     justifyContent: JUSTIFY_CONTENT.between,
     ...restProps

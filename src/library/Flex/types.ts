@@ -33,7 +33,7 @@ export interface FlexDefaultProps {
 
 type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
-// TODO: This should probably exclude a few FlexProps properties
+// TODO: This should extend FlexProps when flex is true; otherwise extend BoxProps
 export interface FlexItemProps extends FlexProps {
   alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>;
   flex?: boolean;

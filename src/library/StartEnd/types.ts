@@ -3,13 +3,13 @@ import { DIRECTION, PRIORITY } from './constants';
 
 import { FlexProps } from '../Flex/types';
 
+type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 type StringOrArrayOfStrings<T> = keyof T | Array<keyof T | null>;
+
 type Direction = StringOrArrayOfStrings<typeof DIRECTION>;
 
-// TODO: How to exclude justifyContent and wrap from this interface?
-export interface StartEndProps extends FlexProps {
+export interface StartEndProps
+  extends Omit<FlexProps, 'justifyContent' | 'wrap'> {
   direction?: Direction;
-  justifyContent?: any;
   priority?: keyof typeof PRIORITY;
-  wrap?: any;
 }
