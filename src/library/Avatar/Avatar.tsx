@@ -1,5 +1,10 @@
 /* @flow */
-import React, { Children, cloneElement, Component } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  Component,
+  isValidElement
+} from 'react';
 import { AvatarRoot as Root } from './styled';
 import { ICON_SIZE, SHAPE, SIZE } from './constants';
 
@@ -18,7 +23,9 @@ export default class Avatar extends Component<AvatarProps> {
 
   render() {
     const { abbr, children, size, ...restProps } = this.props;
-    let icon, noBackground, text;
+    let icon: React.ReactElement<any> | undefined;
+    let noBackground: boolean;
+    let text: React.ReactElement<any> | undefined;
 
     Children.map(children, (child) => {
       if (typeof child === 'string') {
@@ -29,11 +36,11 @@ export default class Avatar extends Component<AvatarProps> {
             <span>{child}</span>
           );
       } else if (
-        child.type &&
+        isValidElement(child) &&
         child.type.displayName &&
         child.type.displayName.indexOf('Icon') !== -1
       ) {
-        icon = cloneElement(child, {
+        icon = cloneElement<any>(child, {
           size: ICON_SIZE[size || Avatar.defaultProps.size]
         });
       } else {
