@@ -13,7 +13,12 @@ import {
 import { FlexRoot as Root } from './styled';
 
 import { flexPropTypes } from './propTypes';
-import { FlexDefaultProps, FlexProps } from './types';
+import {
+  FlexDefaultProps,
+  FlexProps,
+  PushMarginProps,
+  GetMarginOrGutter
+} from './types';
 
 const getGutterSize = (
   theme: object,
@@ -28,7 +33,7 @@ const getIndexedValue = (property, index) =>
     ? property[index]
     : property;
 
-const getMarginOrGutter = ({
+const getMarginOrGutter: GetMarginOrGutter = ({
   gutterWidth,
   index,
   margin,
@@ -55,16 +60,16 @@ const getMarginProps = ({ direction, gutterWidth, theme, ...restProps }) => {
         if (value === DIRECTION.row || value === DIRECTION['row-reverse']) {
           pushMarginProps({
             direction: value,
-            index,
             gutterWidth,
+            index,
             props: acc,
             theme,
             ...restProps
           });
         } else {
           pushMarginProps({
-            index,
             gutterWidth: 0,
+            index,
             props: acc,
             theme,
             ...restProps
@@ -92,10 +97,10 @@ const getMarginProps = ({ direction, gutterWidth, theme, ...restProps }) => {
   }
 };
 
-const pushMarginProps = ({
+const pushMarginProps: PushMarginProps = ({
   direction,
-  index,
   gutterWidth,
+  index,
   props,
   theme,
   ...restProps
@@ -157,7 +162,9 @@ const ThemedRoot = withTheme(
   }
 );
 
-const Flex = (props: FlexProps): React.ReactElement<any> => <ThemedRoot {...props} />;
+const Flex = (props: FlexProps): React.ReactElement<any> => (
+  <ThemedRoot {...props} />
+);
 
 Flex.displayName = 'Flex';
 const defaultProps: FlexDefaultProps = {
