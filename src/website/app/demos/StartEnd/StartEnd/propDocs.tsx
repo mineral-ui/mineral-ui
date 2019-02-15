@@ -1,16 +1,8 @@
 /* @flow */
 import { DIRECTION, PRIORITY } from '../../../../../library/StartEnd/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted, stringOrStringArray } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
-
-const stringOrArrayOfStringsType = (constant) => {
-  const strings = joinQuoted(Object.values(constant));
-  return {
-    name: 'union',
-    value: `${strings} | Array<${strings} | null>`
-  };
-};
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
   breakpoints: {
@@ -25,7 +17,7 @@ const propDocs: ComponentPropDocs = {
   direction: {
     description:
       'Direction of flow of items along the main axis [[Responsive-capable]](#responsive)',
-    type: stringOrArrayOfStringsType(DIRECTION)
+    type: stringOrStringArray(DIRECTION)
   },
   priority: {
     description: 'Determines which side stretches to fill the available width',

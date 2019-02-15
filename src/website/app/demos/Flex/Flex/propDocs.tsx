@@ -6,17 +6,13 @@ import {
   GUTTER_WIDTH,
   JUSTIFY_CONTENT
 } from '../../../../../library/Flex/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import {
+  joinQuoted,
+  stringOrStringArray,
+  thingOrThingArray
+} from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
-
-const stringOrArrayOfStringsType = (constant) => {
-  const strings = joinQuoted(Object.values(constant));
-  return {
-    name: 'union',
-    value: `${strings} | Array<${strings} | null>`
-  };
-};
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const getDefaultValue = (prop) => {
   const value = Flex.defaultProps[prop];
@@ -29,7 +25,7 @@ const propDocs: ComponentPropDocs = {
   alignItems: {
     description:
       'Align items along the cross axis [[Responsive-capable]](#responsive)',
-    type: stringOrArrayOfStringsType(ALIGN_ITEMS),
+    type: stringOrStringArray(ALIGN_ITEMS),
     defaultValue: getDefaultValue('alignItems')
   },
   breakpoints: {
@@ -44,7 +40,7 @@ const propDocs: ComponentPropDocs = {
   direction: {
     description:
       'Direction of flow of items along the main axis [[Responsive-capable]](#responsive)',
-    type: stringOrArrayOfStringsType(DIRECTION),
+    type: stringOrStringArray(DIRECTION),
     defaultValue: getDefaultValue('direction')
   },
   gutterWidth: {
@@ -58,16 +54,13 @@ const propDocs: ComponentPropDocs = {
   justifyContent: {
     description:
       'Align items along the main axis [[Responsive-capable]](#responsive)',
-    type: stringOrArrayOfStringsType(JUSTIFY_CONTENT),
+    type: stringOrStringArray(JUSTIFY_CONTENT),
     defaultValue: getDefaultValue('justifyContent')
   },
   wrap: {
     description:
       'Determines if items can wrap along main axis [[Responsive-capable]](#responsive)',
-    type: {
-      name: 'union',
-      value: 'boolean | Array<boolean | null>'
-    }
+    type: thingOrThingArray('boolean')
   }
 };
 

@@ -1,9 +1,9 @@
 /* @flow */
 import Icon from '../../../../../library/Icon';
 import { SIZE } from '../../../../../library/Icon/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
   //   /** Available sizes, including custom - e.g. '5em' or '20px' */

@@ -1,6 +1,6 @@
 /* @flow */
 import { COLUMN_ALIGN } from '../../../../../library/Table/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 
 import type { AdditionalPropDocs } from '../../../pages/ComponentDoc/types';
 

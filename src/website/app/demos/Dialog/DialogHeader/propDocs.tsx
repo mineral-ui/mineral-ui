@@ -1,5 +1,5 @@
 /* @flow */
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
   children: {

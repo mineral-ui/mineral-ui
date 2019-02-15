@@ -1,11 +1,12 @@
 /* @flow */
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { thingOrThingArray } from '../../../utils/propDocs';
 
 const propDocs: ComponentPropDocs = {
   span: {
     description:
       'Number of columns spanned [[Responsive-capable]](#responsive)',
-    type: 'number | Array<number | null>'
+    type: thingOrThingArray('number')
   }
 };
 

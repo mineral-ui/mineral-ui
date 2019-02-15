@@ -3,9 +3,9 @@ import {
   SPACING_SIZE,
   INSET_SPACING_SIZE
 } from '../../../../../library/Box/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted, thingOrThingArray } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const spacingSizes = joinQuoted(Object.values(SPACING_SIZE));
 const spacingType = {
@@ -35,10 +35,7 @@ const propDocs: ComponentPropDocs = {
   inline: {
     description:
       'Renders Box as an inline-block [[Responsive-capable]](#responsive)',
-    type: {
-      name: 'union',
-      value: 'boolean | Array<boolean | null>'
-    }
+    type: thingOrThingArray('boolean')
   },
   margin: {
     description:

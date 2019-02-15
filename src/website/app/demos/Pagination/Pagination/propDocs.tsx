@@ -1,10 +1,10 @@
 /* @flow */
 import { Pagination } from '../../../../../library/Pagination/Pagination';
 import { SIZE } from '../../../../../library/Pagination/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 import formatObject from '../../../utils/formatObject';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const messagesObjectType = {
   'category?': 'string',

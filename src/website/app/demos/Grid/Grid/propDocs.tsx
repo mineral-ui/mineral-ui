@@ -4,17 +4,9 @@ import {
   ALIGN_ITEMS,
   GUTTER_WIDTH
 } from '../../../../../library/Grid/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted, stringOrStringArray } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
-
-const stringOrArrayOfStringsType = (constant) => {
-  const strings = joinQuoted(Object.values(constant));
-  return {
-    name: 'union',
-    value: `${strings} | Array<${strings} | null>`
-  };
-};
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const getDefaultValue = (prop) => {
   const value = Grid.defaultProps[prop];
@@ -28,7 +20,7 @@ const propDocs: ComponentPropDocs = {
   alignItems: {
     description:
       'Align grid items vertically [[Responsive-capable]](#responsive)',
-    type: stringOrArrayOfStringsType(ALIGN_ITEMS),
+    type: stringOrStringArray(ALIGN_ITEMS),
     defaultValue: getDefaultValue('alignItems')
   },
   breakpoints: {

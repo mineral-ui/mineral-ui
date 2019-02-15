@@ -1,10 +1,10 @@
 /* @flow */
 import Table from '../../../../../library/Table';
 import { DENSITY, TITLE_ELEMENT } from '../../../../../library/Table/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 import formatObject from '../../../utils/formatObject';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const sortObjectType = {
   key: 'string',

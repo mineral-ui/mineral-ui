@@ -1,9 +1,9 @@
 /* @flow */
 import { FormField } from '../../../../../library/Form';
 import { VARIANT } from '../../../../../library/Form/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const getDefaultTextValue = (prop) => {
   const value = FormField.defaultProps[prop];

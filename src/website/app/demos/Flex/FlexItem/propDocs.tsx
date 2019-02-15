@@ -1,17 +1,9 @@
 /* @flow */
 import { FlexItem } from '../../../../../library/Flex';
 import { ALIGN_SELF } from '../../../../../library/Flex/constants';
-import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
-
-const stringOrArrayOfStringsType = (constant) => {
-  const strings = joinQuoted(Object.values(constant));
-  return {
-    name: 'union',
-    value: `${strings} | Array<${strings} | null>`
-  };
-};
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { stringOrStringArray, thingOrThingArray } from '../../../utils/propDocs';
 
 const getDefaultValue = (prop) => {
   const value = FlexItem.defaultProps[prop];
@@ -25,7 +17,7 @@ const propDocs: ComponentPropDocs = {
   alignSelf: {
     description:
       'Align item along the cross axis [[Responsive-capable]](#responsive)',
-    type: stringOrArrayOfStringsType(ALIGN_SELF)
+    type: stringOrStringArray(ALIGN_SELF)
   },
   breakpoints: {
     description:
@@ -40,10 +32,7 @@ const propDocs: ComponentPropDocs = {
   grow: {
     description:
       'Grow factor along the main axis ([see example](#grow)) [[Responsive-capable]](#responsive)',
-    type: {
-      name: 'union',
-      value: 'number | Array<number | null>'
-    },
+    type: thingOrThingArray('number'),
     defaultValue: getDefaultValue('grow')
   },
   minWidth: {
@@ -54,10 +43,7 @@ const propDocs: ComponentPropDocs = {
   shrink: {
     description:
       'Shrink factor along the main axis ([see example](#shrink)) [[Responsive-capable]](#responsive)',
-    type: {
-      name: 'union',
-      value: 'number | Array<number | null>'
-    },
+    type: thingOrThingArray('number'),
     defaultValue: getDefaultValue('shrink')
   }
 };

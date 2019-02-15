@@ -1,10 +1,10 @@
 /* @flow */
 import { SecondaryNav } from '../../../../../library/Navigation';
 import { TYPE } from '../../../../../library/Navigation/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 import navPropDocs from '../common/navPropDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
   ...navPropDocs(SecondaryNav, 'SecondaryNav'),

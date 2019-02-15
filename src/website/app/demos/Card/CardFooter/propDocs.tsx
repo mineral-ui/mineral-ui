@@ -1,9 +1,9 @@
 /* @flow */
 import CardFooter from '../../../../../library/Card/CardFooter';
 import { VARIANT } from '../../../../../library/Card/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
   children: {

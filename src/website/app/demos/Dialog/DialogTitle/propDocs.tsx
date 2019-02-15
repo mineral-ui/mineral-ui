@@ -1,8 +1,8 @@
 /* @flow */
 import { APPEARANCE, VARIANT } from '../../../../../library/Dialog/constants';
-import joinQuoted from '../../../utils/joinQuoted';
+import { joinQuoted } from '../../../utils/propDocs';
 
-import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
+import { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const propDocs: ComponentPropDocs = {
   appearance: {
