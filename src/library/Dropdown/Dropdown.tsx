@@ -1,5 +1,10 @@
 /* @flow */
-import React, { Children, Component, cloneElement } from 'react';
+import React, {
+  Children,
+  Component,
+  cloneElement,
+  isValidElement
+} from 'react';
 import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
@@ -100,6 +105,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     delete props['subtitle'];
     delete props['title'];
     delete props['tabIndex'];
+
     const { modifiers, placement, positionFixed, wide } = this.props;
 
     return {
@@ -158,6 +164,8 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     const { children } = this.props;
 
     if (isRenderProp(children)) {
+      // TODO: Can fix by refining `children` to DropdownRenderFn,
+      // but need a generic type for the generic util
       return children({
         ...this.getStateAndHelpers(),
         props: this.getTriggerProps(props)
@@ -165,7 +173,9 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     }
 
     const child = Children.only(children);
-    return cloneElement(child, this.getTriggerProps(child.props));
+    return isValidElement(child)
+      ? cloneElement(child, this.getTriggerProps(child.props))
+      : child;
   };
 
   getMenuProps: DropdownPropGetter = (props = {}) => {

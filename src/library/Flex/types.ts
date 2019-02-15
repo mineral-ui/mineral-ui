@@ -9,12 +9,35 @@ import {
 
 import { BoxProps, HeightOrWidthProp } from '../Box/types';
 
-type StringOrArrayOfStrings<T> = keyof T | Array<keyof T | null>;
+type ThingOrThingArray<T> = T | Array<T | null>;
+type StringOrStringArray<T> = ThingOrThingArray<keyof T>;
 
-type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
-type Direction = StringOrArrayOfStrings<typeof DIRECTION>;
+type AlignItems = StringOrStringArray<typeof ALIGN_ITEMS>;
+type Direction = StringOrStringArray<typeof DIRECTION>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
-type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
+type JustifyContent = StringOrStringArray<typeof JUSTIFY_CONTENT>;
+
+export type GetMarginOrGutter = (a: {
+  gutterWidth: GutterWidth;
+  index?: number;
+  margin?: ThingOrThingArray<number | string>;
+  marginEnd?: ThingOrThingArray<number | string>;
+  marginHorizontal?: ThingOrThingArray<number | string>;
+  marginStart?: ThingOrThingArray<number | string>;
+  start?: boolean;
+  theme: object;
+}) => number | string | undefined;
+
+export type PushMarginProps = (a: {
+  direction?: Direction;
+  gutterWidth: GutterWidth;
+  index: number;
+  props: {
+    marginEnd: Array<number | string>;
+    marginStart: Array<number | string>;
+  };
+  theme: object;
+}) => void;
 
 export interface FlexProps extends BoxProps {
   alignItems?: AlignItems;
@@ -35,7 +58,7 @@ type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
 // TODO: This should extend FlexProps when flex is true; otherwise extend BoxProps
 export interface FlexItemProps extends FlexProps {
-  alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>;
+  alignSelf?: StringOrStringArray<typeof ALIGN_SELF>;
   flex?: boolean;
   grow?: GrowOrShrink;
   minWidth?: HeightOrWidthProp;

@@ -1,5 +1,10 @@
 /* @flow */
-import React, { Children, cloneElement, createElement } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  createElement,
+  isValidElement
+} from 'react';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -38,7 +43,7 @@ export default function CardTitle(props: CardTitleProps) {
 
   const secondaryComponent = actions ? (
     Children.map(actions, (action, index) =>
-      cloneElement(action, { key: index })
+      isValidElement(action) ? cloneElement(action, { key: index }) : action
     )
   ) : secondaryText ? (
     <SecondaryText>{secondaryText}</SecondaryText>

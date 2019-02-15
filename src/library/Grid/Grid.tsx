@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
+import { hasDisplayName } from '../utils';
 import { GridRoot as Root } from './styled';
 import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
@@ -8,7 +9,9 @@ import { GridDefaultProps, GridProps } from './types';
 
 const getGridItems = ({ breakpoints, children, columns, gutterWidth }) =>
   Children.map(children, (child) =>
-    cloneElement(child, { breakpoints, columns, gutterWidth })
+    hasDisplayName(child, /GridItem/)
+      ? cloneElement(child, { breakpoints, columns, gutterWidth })
+      : child
   );
 
 const Grid = (props: GridProps) => (

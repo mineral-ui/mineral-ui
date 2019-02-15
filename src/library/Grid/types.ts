@@ -10,6 +10,13 @@ type StringOrArrayOfStrings<T> = keyof T | Array<keyof T | null>;
 type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
 type GutterWidth = keyof typeof GUTTER_WIDTH | number | string;
 
+export type GetGridItems = (a: {
+  breakpoints?: Array<number | string | null>;
+  children?: React.ReactNode;
+  columns?: number;
+  gutterWidth?: GutterWidth;
+}) => React.ReactNode;
+
 export interface GridProps
   extends Omit<FlexProps, 'direction' | 'inline' | 'justifyContent' | 'wrap'> {
   columns?: number;

@@ -1,5 +1,10 @@
 /* @flow */
-import React, { Children, cloneElement, createElement } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  createElement,
+  isValidElement
+} from 'react';
 import { ChoiceGroupRoot as Root } from './styled';
 import { SIZE, TYPE } from './constants';
 
@@ -59,9 +64,11 @@ const ChoiceGroup = (props: ChoiceGroupProps) => {
       );
     });
   } else if (children) {
-    inputs = Children.map(children, (child, index) => {
-      return cloneElement(child, inputProps(child.props.value, index));
-    });
+    inputs = Children.map(children, (child, index) =>
+      isValidElement(child)
+        ? cloneElement(child, inputProps(child.props['value'], index))
+        : child
+    );
   }
 
   return <Root {...rootProps}>{inputs}</Root>;

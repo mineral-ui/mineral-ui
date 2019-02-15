@@ -2,6 +2,7 @@
 import React, { Children, cloneElement } from 'react';
 import { pxToEm } from '../styles';
 import { getPrevNonNull } from '../styles/getResponsiveStyles';
+import { hasDisplayName } from '../utils';
 import { withTheme } from 'emotion-theming';
 import {
   ALIGN_ITEMS,
@@ -130,22 +131,21 @@ const ThemedRoot = withTheme(
 
     let flexItems;
     flexItems = Children.map(children, (child, index) => {
-      if (child && child.props) {
-        const { breakpoints: propBreakpoints, ...restChildProps } = child.props;
+      if (hasDisplayName(child, /FlexItem/)) {
         let props = {
-          breakpoints: propBreakpoints || breakpoints
+          breakpoints: child.props['breakpoints'] || breakpoints
         };
 
         const flexItemsCount = Children.count(children);
         if (gutterWidth && index < flexItemsCount - 1) {
           props = {
-            ...props,
             ...getMarginProps({
               direction,
               gutterWidth,
               theme,
-              ...restChildProps
-            })
+              ...child.props
+            }),
+            ...props
           };
         }
         return cloneElement(child, props);
