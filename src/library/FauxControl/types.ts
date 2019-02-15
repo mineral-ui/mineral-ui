@@ -11,7 +11,10 @@ export interface FauxControlProps {
   beforeItems?: React.ReactNode;
   children?: React.ReactNode;
   control: React.ComponentType;
-  controlProps?: object;
+  controlProps?: {
+    controlRef?: (node: React.Component | null | undefined) => void;
+    htmlSize?: number;
+  };
   disabled?: boolean;
   fauxControlRef?: (node: React.Component | null | undefined) => void;
   iconStart?: React.ReactElement<any>;
@@ -46,7 +49,7 @@ export interface FauxControlControlStyleProps
     | 'suffix'
     | 'variant'
   > {
-  // Doesn't match DOM expectation, but no error thrown :shrug:
+  // size: Doesn't match DOM expectation, but no error thrown :shrug:
   controlPropsIn?: object;
   controlSize?: Size;
   hasPlaceholder?: boolean;

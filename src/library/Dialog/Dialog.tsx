@@ -126,7 +126,7 @@ export default class Dialog extends Component<DialogProps, DialogState> {
       ref: this.setRootRef,
       modeless,
       role: 'dialog',
-      tabIndex: '-1',
+      tabIndex: -1,
       ...(closeOnClickOutside && !modeless
         ? { onClick: this.handleClick }
         : undefined),

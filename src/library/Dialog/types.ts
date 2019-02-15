@@ -82,7 +82,7 @@ export interface DialogTitleProps {
   as?: Element;
   children: React.ReactNode;
   id?: string;
-  theme: object;
+  theme?: object;
   variant?: Variant;
 }
 

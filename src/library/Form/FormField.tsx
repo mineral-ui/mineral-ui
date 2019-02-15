@@ -81,9 +81,9 @@ export default class FormField extends Component<FormFieldProps> {
           ? {
               'aria-labelledby': labelTextProps.id,
               'aria-describedby': caption && captionProps.id,
-              ...props.rootProps
+              ...props['rootProps']
             }
-          : props.rootProps,
+          : props['rootProps'],
         variant,
         // Note: Props are spread to input rather than Root
         ...restProps
