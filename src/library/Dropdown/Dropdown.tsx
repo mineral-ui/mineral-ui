@@ -97,16 +97,13 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
   };
 
   getContentProps: DropdownPropGetter = (props = {}) => {
-    const {
-      subtitle: ignoreSubtitle,
-      title: ignoreTitle,
-      tabIndex: ignoreTabIndex,
-      ...restProps
-    } = props;
+    delete props['subtitle'];
+    delete props['title'];
+    delete props['tabIndex'];
     const { modifiers, placement, positionFixed, wide } = this.props;
 
     return {
-      ...restProps,
+      ...props,
       children: this.renderMenu(),
       id: this.getContentId(),
       modifiers,

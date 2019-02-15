@@ -7,10 +7,15 @@ import { StartEndProps } from './types';
 
 export default function StartEnd(props: StartEndProps) {
   const { children, priority, ...restProps } = props;
+
+  delete restProps['justifyContent'];
+  delete restProps['wrap'];
+
   const rootProps = {
     justifyContent: JUSTIFY_CONTENT.between,
     ...restProps
   };
+
   let flexItems;
   if (Children.count(children) === 2) {
     const growFactors = {
