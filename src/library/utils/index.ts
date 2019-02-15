@@ -2,6 +2,7 @@
 export { setFromArray, toArray } from './collections';
 export { default as composeEventHandlers } from './composeEventHandlers';
 export * from './generateId';
+export { default as hasDisplayName } from './hasDisplayName';
 export { default as isRenderProp } from './isRenderProp';
 export { component } from './propTypes';
 export { default as rtlTextAlign } from './rtlTextAlign';

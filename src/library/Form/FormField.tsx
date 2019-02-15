@@ -6,7 +6,7 @@ import React, {
   Component,
   isValidElement
 } from 'react';
-import { generateId } from '../utils';
+import { generateId, hasDisplayName } from '../utils';
 import {
   FormFieldRoot as Root,
   FormFieldCaption,
@@ -128,8 +128,8 @@ export default class FormField extends Component<FormFieldProps> {
       controlName = input.displayName;
     } else if (children) {
       const child = Children.only(children);
-      if (isValidElement(child) && child.type.displayName) {
-        controlName = child.type.displayName;
+      if (hasDisplayName(child)) {
+        controlName = child.type['displayName'];
       }
     }
 

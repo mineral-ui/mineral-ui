@@ -1,10 +1,6 @@
 /* @flow */
-import React, {
-  Children,
-  cloneElement,
-  Component,
-  isValidElement
-} from 'react';
+import React, { Children, cloneElement, Component } from 'react';
+import { hasDisplayName } from '../utils';
 import { AvatarRoot as Root } from './styled';
 import { ICON_SIZE, SHAPE, SIZE } from './constants';
 
@@ -35,11 +31,7 @@ export default class Avatar extends Component<AvatarProps> {
           ) : (
             <span>{child}</span>
           );
-      } else if (
-        isValidElement(child) &&
-        child.type.displayName &&
-        child.type.displayName.indexOf('Icon') !== -1
-      ) {
+      } else if (hasDisplayName(child, /Icon/)) {
         icon = cloneElement<any>(child, {
           size: ICON_SIZE[size || Avatar.defaultProps.size]
         });
