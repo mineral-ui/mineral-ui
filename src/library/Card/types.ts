@@ -33,7 +33,8 @@ export interface CardFooterProps {
   variant?: Variant;
 }
 
-export type CardFooterStyleProps = Pick<CardFooterProps, 'variant'>;
+export interface CardFooterStyleProps
+  extends Pick<CardFooterProps, 'variant'> {}
 
 export interface CardFooterDefaultProps {
   triggerTitle: (isOpen: boolean) => string;

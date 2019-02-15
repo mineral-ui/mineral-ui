@@ -68,12 +68,14 @@ export interface SelectTriggerProps extends FauxControlProps {
   triggerRef?: (node: HTMLElement | null | undefined) => void;
 }
 
-export type SelectTriggerStyleProps = Pick<
-  SelectTriggerProps,
-  'disabled' | 'readOnly' | 'size' | 'variant' // size: Doesn't match DOM expection, but no error thrown :shrug:
-> & {
+export interface SelectTriggerStyleProps
+  extends Pick<
+    SelectTriggerProps,
+    'disabled' | 'readOnly' | 'size' | 'variant'
+  > {
+  // size: Doesn't match DOM expection, but no error thrown :shrug:
   selectedItemVariant: string;
-};
+}
 
 export type SelectThemeFn = ComponentThemeFn<SelectTheme>;
 export type SelectTheme = ComponentTheme<SelectThemeKeys>;

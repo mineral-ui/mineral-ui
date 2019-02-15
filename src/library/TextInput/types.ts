@@ -27,7 +27,7 @@ export interface TextInputDefaultProps {
   type: Type;
 }
 
-export type TextInputStyleProps = Pick<TextInputProps, 'variant'>;
+export interface TextInputStyleProps extends Pick<TextInputProps, 'variant'> {}
 
 export interface TextInputInputStyleProps {
   controlSize?: Size;

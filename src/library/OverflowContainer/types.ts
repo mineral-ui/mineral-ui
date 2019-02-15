@@ -10,10 +10,11 @@ export interface OverflowContainerProps {
   tabIndex?: number;
 }
 
-export type OverflowContainerStyleProps = Pick<
-  OverflowContainerProps,
-  'hideScrollbars' | 'scrollX' | 'scrollY' | 'tabIndex'
->;
+export interface OverflowContainerStyleProps
+  extends Pick<
+    OverflowContainerProps,
+    'hideScrollbars' | 'scrollX' | 'scrollY' | 'tabIndex'
+  > {}
 
 export interface OverflowContainerState {
   scrollable: boolean;

@@ -22,9 +22,9 @@ export interface FormFieldDefaultProps {
   requiredText: string | React.ReactElement<any>;
 }
 
-export type FormFieldStyleProps = Pick<FormFieldProps, 'variant'> & {
+export interface FormFieldStyleProps extends Pick<FormFieldProps, 'variant'> {
   isGroup: boolean;
-};
+}
 
 export type FormFieldDividerProps = object;
 
@@ -34,10 +34,8 @@ export interface FormFieldsetProps {
   legend?: string | React.ReactElement<any>;
 }
 
-export type FormFieldSecondaryTextStyleProps = Pick<
-  FormFieldProps,
-  'secondaryText'
->;
+export interface FormFieldSecondaryTextStyleProps
+  extends Pick<FormFieldProps, 'secondaryText'> {}
 
 export interface FormFieldTextWrapperStyleProps {
   hideLabel?: boolean;

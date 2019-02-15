@@ -28,9 +28,10 @@ export interface GridItemProps extends Omit<BoxProps, 'inline' | 'width'> {
 
 export interface GridCombinedProps extends GridProps, GridItemProps {}
 
-export type GridItemStyleProps = Pick<
-  GridCombinedProps,
-  'breakpoints' | 'columns' | 'gutterWidth' | 'span'
-> & {
+export interface GridItemStyleProps
+  extends Pick<
+    GridCombinedProps,
+    'breakpoints' | 'columns' | 'gutterWidth' | 'span'
+  > {
   shrink?: number; // TODO: Maybe this should be excluded entirely from GridItemProps?
-};
+}

@@ -33,12 +33,14 @@ export interface ChoiceDefaultProps {
   size: Size;
 }
 
-export type ChoiceControlStyleProps = Pick<ChoiceProps, 'disabled' | 'size'>;
+export interface ChoiceControlStyleProps
+  extends Pick<ChoiceProps, 'disabled' | 'size'> {}
 
-export type ChoiceTextStyleProps = Pick<
-  ChoiceProps,
-  'disabled' | 'hideLabel' | 'justify' | 'labelPosition' | 'size'
->;
+export interface ChoiceTextStyleProps
+  extends Pick<
+    ChoiceProps,
+    'disabled' | 'hideLabel' | 'justify' | 'labelPosition' | 'size'
+  > {}
 
 export interface ChoiceGroupProps {
   checked?: string | Array<string>;
@@ -57,7 +59,8 @@ export interface ChoiceGroupProps {
   type: Type;
 }
 
-export type ChoiceGroupStyleProps = Pick<ChoiceGroupProps, 'inline' | 'size'>;
+export interface ChoiceGroupStyleProps
+  extends Pick<ChoiceGroupProps, 'inline' | 'size'> {}
 
 export interface ChoiceGroupDefaultProps {
   role: string;

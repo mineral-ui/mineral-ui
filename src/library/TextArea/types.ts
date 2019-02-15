@@ -25,10 +25,8 @@ export interface TextAreaDefaultProps {
   size: Size;
 }
 
-export type TextAreaInputStyleProps = Pick<
-  TextAreaProps,
-  'resizeable' | 'size'
->;
+export interface TextAreaInputStyleProps
+  extends Pick<TextAreaProps, 'resizeable' | 'size'> {}
 
 export type TextAreaThemeFn = ComponentThemeFn<TextAreaTheme>;
 export type TextAreaTheme = ComponentTheme<TextAreaThemeKeys>;

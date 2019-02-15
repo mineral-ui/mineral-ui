@@ -25,19 +25,20 @@ export interface TextProps {
   truncate?: boolean | number | string;
 }
 
-export type TextStyleProps = Pick<
-  TextProps,
-  | 'align'
-  | 'appearance'
-  | 'as'
-  | 'color'
-  | 'fontWeight'
-  | 'inherit'
-  | 'noMargins'
-  | 'truncate'
-> & {
+export interface TextStyleProps
+  extends Pick<
+    TextProps,
+    | 'align'
+    | 'appearance'
+    | 'as'
+    | 'color'
+    | 'fontWeight'
+    | 'inherit'
+    | 'noMargins'
+    | 'truncate'
+  > {
   defaultAppearance: string;
-};
+}
 
 export interface TextDefaultProps {
   appearance: Appearance;

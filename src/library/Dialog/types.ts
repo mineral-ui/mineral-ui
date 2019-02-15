@@ -38,7 +38,8 @@ export interface DialogProps {
   variant?: Variant;
 }
 
-export type DialogStyleProps = Pick<DialogProps, 'modeless' | 'size'>;
+export interface DialogStyleProps
+  extends Pick<DialogProps, 'modeless' | 'size'> {}
 
 export interface DialogDefaultProps {
   closeButtonLabel: string;

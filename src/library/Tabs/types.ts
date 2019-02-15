@@ -25,7 +25,8 @@ export interface TabsProps {
   theme: object;
 }
 
-export type TabsStyleProps = Pick<TabsProps, 'height' | 'position'>;
+export interface TabsStyleProps
+  extends Pick<TabsProps, 'height' | 'position'> {}
 
 export interface TabsDefaultProps {
   align: Align;
@@ -84,14 +85,17 @@ export interface TabListState {
   scrollable: boolean;
 }
 
-export type TabListStyleProps = Pick<TabListProps, 'height' | 'vertical'>;
+export interface TabListStyleProps
+  extends Pick<TabListProps, 'height' | 'vertical'> {}
 
-export type TabListInnerStyleProps = OverflowContainerWithShadowsProps &
-  Pick<TabListProps, 'position' | 'vertical'>;
+export interface TabListInnerStyleProps
+  extends OverflowContainerWithShadowsProps,
+    Pick<TabListProps, 'position' | 'vertical'> {}
 
-export type TabListListStyleProps = Pick<TabListProps, 'align' | 'vertical'> & {
+export interface TabListListStyleProps
+  extends Pick<TabListProps, 'align' | 'vertical'> {
   count: number;
-};
+}
 
 export type TabListThemeFn = ComponentThemeFn<TabListTheme>;
 export type TabListTheme = ComponentTheme<TabListThemeKeys>;

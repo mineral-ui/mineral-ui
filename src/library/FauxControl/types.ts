@@ -23,41 +23,35 @@ export interface FauxControlProps {
   variant?: Variant;
 }
 
-export type FauxControlStyleProps = Pick<
-  FauxControlProps,
-  'disabled' | 'variant'
->;
+export interface FauxControlStyleProps
+  extends Pick<FauxControlProps, 'disabled' | 'variant'> {}
 
-export type FauxControlPrefixStyleProps = Pick<
-  FauxControlProps,
-  'iconStart' | 'size'
->;
+export interface FauxControlPrefixStyleProps
+  extends Pick<FauxControlProps, 'iconStart' | 'size'> {}
 
-export type FauxControlSuffixStyleProps = Pick<
-  FauxControlProps,
-  'iconEnd' | 'size' | 'variant'
->;
+export interface FauxControlSuffixStyleProps
+  extends Pick<FauxControlProps, 'iconEnd' | 'size' | 'variant'> {}
 
-export type FauxControlUnderlayStyleProps = Pick<
-  FauxControlProps,
-  'disabled' | 'readOnly' | 'variant'
->;
+export interface FauxControlUnderlayStyleProps
+  extends Pick<FauxControlProps, 'disabled' | 'readOnly' | 'variant'> {}
 
-export type FauxControlControlStyleProps = Pick<
-  FauxControlProps,
-  | 'disabled'
-  | 'iconEnd'
-  | 'iconStart'
-  | 'readOnly'
-  | 'size' // Doesn't match DOM expectation, but no error thrown :shrug:
-  | 'suffix'
-  | 'variant'
-> & {
+export interface FauxControlControlStyleProps
+  extends Pick<
+    FauxControlProps,
+    | 'disabled'
+    | 'iconEnd'
+    | 'iconStart'
+    | 'readOnly'
+    | 'size'
+    | 'suffix'
+    | 'variant'
+  > {
+  // Doesn't match DOM expectation, but no error thrown :shrug:
   controlPropsIn?: object;
   controlSize?: Size;
   hasPlaceholder?: boolean;
   prefix?: string; // Overwrite FauxControlProps to match DOM expectation
-};
+}
 
 export type VariantIcons = { [K in Variant]: React.ReactElement<any> };
 
