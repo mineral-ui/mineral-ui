@@ -10,9 +10,10 @@ import {
   shape,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { VARIANT } from './constants';
 
-const variant = oneOf(Object.keys(VARIANT));
+const variant = oneOf(enumToArray(VARIANT));
 
 export const menuItemPropType = shape({
   iconEnd: element,

@@ -4,4 +4,4 @@ export enum PRIMARY_COLOR {
   danger = 'danger',
   success = 'success',
   warning = 'warning'
-};
+}

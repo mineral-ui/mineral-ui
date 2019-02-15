@@ -1,5 +1,6 @@
 /* @flow */
 import { bool, func, number, object, oneOf, string } from 'prop-types';
+import { enumToArray } from '../utils';
 import { SIZE, VARIANT } from './constants';
 
 export const textAreaPropTypes = {
@@ -16,7 +17,7 @@ export const textAreaPropTypes = {
   required: bool,
   resizeable: bool,
   rows: number,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   value: string,
-  variant: oneOf(Object.keys(VARIANT))
+  variant: oneOf(enumToArray(VARIANT))
 };

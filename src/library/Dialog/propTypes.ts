@@ -10,15 +10,17 @@ import {
   shape,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
+import { thingOrThingArray } from '../utils/propTypes';
 import { ACTIONS_SIZE, APPEARANCE, ELEMENT, SIZE, VARIANT } from './constants';
 
-const variant = oneOf(Object.keys(VARIANT));
+const variant = oneOf(enumToArray(VARIANT));
 
 export const dialogPropTypes = {
   actions: arrayOf(
     shape({
       text: string.isRequired,
-      size: oneOf(Object.keys(ACTIONS_SIZE))
+      size: oneOf(enumToArray(ACTIONS_SIZE))
     })
   ),
   appSelector: string,
@@ -37,14 +39,14 @@ export const dialogPropTypes = {
   onOpen: func,
   preventCloseButtonClose: bool,
   showCloseButton: bool,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   title: oneOfType([string, element]),
   usePortal: bool,
   variant
 };
 
 export const dialogActionsPropTypes = {
-  children: oneOfType([element, arrayOf(element)]),
+  children: thingOrThingArray(element),
   variant
 };
 
@@ -62,8 +64,8 @@ export const dialogHeaderPropTypes = {
 };
 
 export const dialogTitlePropTypes = {
-  appearance: oneOf(Object.keys(APPEARANCE)),
-  as: oneOf(Object.keys(ELEMENT)),
+  appearance: oneOf(enumToArray(APPEARANCE)),
+  as: oneOf(enumToArray(ELEMENT)),
   children: node.isRequired,
   id: string,
   variant

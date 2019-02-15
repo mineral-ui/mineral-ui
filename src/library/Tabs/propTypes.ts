@@ -10,10 +10,11 @@ import {
   oneOfType,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { ALIGN, POSITION } from './constants';
 
 export const tabsPropTypes = {
-  align: oneOf(Object.keys(ALIGN)),
+  align: oneOf(enumToArray(ALIGN)),
   'aria-labelledby': string,
   children: node,
   defaultSelectedTabIndex: number,
@@ -22,7 +23,7 @@ export const tabsPropTypes = {
   height: oneOfType([number, string]),
   maxTabWidth: oneOfType([number, string]),
   onChange: func,
-  position: oneOf(Object.keys(POSITION)),
+  position: oneOf(enumToArray(POSITION)),
   selectedTabIndex: number,
   theme: object
 };

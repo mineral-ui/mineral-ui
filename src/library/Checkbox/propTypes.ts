@@ -11,6 +11,7 @@ import {
   shape,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { LABEL_POSITION, SIZE } from './constants';
 
 export const checkboxPropTypes = {
@@ -25,13 +26,13 @@ export const checkboxPropTypes = {
   invalid: bool,
   justify: bool,
   label: oneOfType([string, element]).isRequired,
-  labelPosition: oneOf(Object.keys(LABEL_POSITION)),
+  labelPosition: oneOf(enumToArray(LABEL_POSITION)),
   name: string,
   onChange: func,
   onClick: func,
   required: bool,
   rootProps: object,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   value: string
 };
 

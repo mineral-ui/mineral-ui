@@ -9,6 +9,7 @@ import {
   oneOfType,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { menuItemsPropType } from '../Menu/propTypes';
 import { PLACEMENT, SIZE, VARIANT } from './constants';
 
@@ -32,14 +33,14 @@ export const selectPropTypes = {
   onOpen: func,
   onSelect: func,
   placeholder: string,
-  placement: oneOf(Object.keys(PLACEMENT)),
+  placement: oneOf(enumToArray(PLACEMENT)),
   positionFixed: bool,
   readOnly: bool,
   required: bool,
   selectedItem: object,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   trigger: oneOfType([node, func]),
   triggerRef: func,
   usePortal: bool,
-  variant: oneOf(Object.keys(VARIANT))
+  variant: oneOf(enumToArray(VARIANT))
 };

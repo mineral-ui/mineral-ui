@@ -1,5 +1,6 @@
 /* @flow */
 import { bool, element, func, node, oneOf, string } from 'prop-types';
+import { enumToArray } from '../utils';
 import { SIZE, VARIANT } from './constants';
 
 export const buttonPropTypes = {
@@ -12,7 +13,7 @@ export const buttonPropTypes = {
   minimal: bool,
   onClick: func,
   primary: bool,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   type: string,
-  variant: oneOf(Object.keys(VARIANT))
+  variant: oneOf(enumToArray(VARIANT))
 };

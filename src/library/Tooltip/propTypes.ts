@@ -1,5 +1,6 @@
 /* @flow */
 import { any, bool, func, node, object, oneOf, string } from 'prop-types';
+import { enumToArray } from '../utils';
 import { PLACEMENT } from './constants';
 
 export const tooltipPropTypes = {
@@ -14,7 +15,7 @@ export const tooltipPropTypes = {
   modifiers: object,
   onClose: func,
   onOpen: func,
-  placement: oneOf(Object.keys(PLACEMENT)),
+  placement: oneOf(enumToArray(PLACEMENT)),
   positionFixed: bool,
   subtitle: any,
   title: any,

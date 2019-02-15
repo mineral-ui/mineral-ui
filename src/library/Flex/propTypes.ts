@@ -1,13 +1,6 @@
 /* @flow */
-import {
-  arrayOf,
-  bool,
-  node,
-  number,
-  oneOf,
-  oneOfType,
-  string
-} from 'prop-types';
+import { arrayOf, bool, node, number, oneOfType, string } from 'prop-types';
+import { stringOrStringArray, thingOrThingArray } from '../utils/propTypes';
 import { spacingPropType } from '../Box/propTypes';
 import {
   ALIGN_ITEMS,
@@ -16,26 +9,21 @@ import {
   JUSTIFY_CONTENT
 } from './constants';
 
-const stringOrArrayOfStringsPropType = (constant) => {
-  const strings = Object.keys(constant);
-  return oneOfType([oneOf(strings), arrayOf(oneOf(strings))]);
-};
-
 export const flexPropTypes = {
-  alignItems: stringOrArrayOfStringsPropType(ALIGN_ITEMS),
+  alignItems: stringOrStringArray(ALIGN_ITEMS),
   breakpoints: arrayOf(oneOfType([number, string])),
   children: node,
-  direction: stringOrArrayOfStringsPropType(DIRECTION),
+  direction: stringOrStringArray(DIRECTION),
   gutterWidth: oneOfType([number, string]),
   minWidth: spacingPropType,
-  justifyContent: stringOrArrayOfStringsPropType(JUSTIFY_CONTENT),
-  wrap: oneOfType([bool, arrayOf(oneOfType([bool]))])
+  justifyContent: stringOrStringArray(JUSTIFY_CONTENT),
+  wrap: thingOrThingArray(bool)
 };
 
 export const flexItemPropTypes = {
-  alignSelf: stringOrArrayOfStringsPropType(ALIGN_SELF),
+  alignSelf: stringOrStringArray(ALIGN_SELF),
   breakpoints: arrayOf(oneOfType([number, string])),
   flex: bool,
-  grow: oneOfType([number, arrayOf(number)]),
-  shrink: oneOfType([number, arrayOf(number)])
+  grow: thingOrThingArray(number),
+  shrink: thingOrThingArray(number)
 };

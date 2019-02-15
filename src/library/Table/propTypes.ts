@@ -11,6 +11,7 @@ import {
   shape,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { COLUMN_ALIGN, DENSITY, TITLE_ELEMENT } from './constants';
 
 const sort = shape({
@@ -30,7 +31,7 @@ const columns = arrayOf(
     primary: bool,
     sortable: bool,
     sortComparator: func,
-    textAlign: oneOf(Object.keys(COLUMN_ALIGN)),
+    textAlign: oneOf(enumToArray(COLUMN_ALIGN)),
     width: oneOfType([number, string])
   })
 );
@@ -52,7 +53,7 @@ export const tablePropTypes = {
   data: rows.isRequired,
   defaultSelectedRows: rows,
   defaultSort: sort,
-  density: oneOf(Object.keys(DENSITY)),
+  density: oneOf(enumToArray(DENSITY)),
   hideHeader: bool,
   hideTitle: bool,
   highContrast: bool,
@@ -69,6 +70,6 @@ export const tablePropTypes = {
   sortComparator: func,
   striped: bool,
   title: node.isRequired,
-  titleAppearance: oneOf(Object.keys(TITLE_ELEMENT)),
-  titleAs: oneOf(Object.keys(TITLE_ELEMENT))
+  titleAppearance: oneOf(enumToArray(TITLE_ELEMENT)),
+  titleAs: oneOf(enumToArray(TITLE_ELEMENT))
 };

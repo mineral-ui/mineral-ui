@@ -1,16 +1,13 @@
 /* @flow */
 import { arrayOf, bool, number, oneOfType, string } from 'prop-types';
+import { thingOrThingArray } from '../utils/propTypes';
 
-export const spacingPropType = oneOfType([
-  number,
-  string,
-  arrayOf(oneOfType([number, string]))
-]);
+export const spacingPropType = thingOrThingArray(oneOfType([number, string]));
 
 export const boxPropTypes = {
   breakpoints: arrayOf(oneOfType([number, string])),
   height: spacingPropType,
-  inline: oneOfType([bool, arrayOf(bool)]),
+  inline: thingOrThingArray(bool),
   margin: spacingPropType,
   marginBottom: spacingPropType,
   marginEnd: spacingPropType,

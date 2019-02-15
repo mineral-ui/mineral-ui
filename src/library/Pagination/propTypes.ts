@@ -1,5 +1,6 @@
 /* @flow */
 import { arrayOf, bool, func, number, object, oneOf } from 'prop-types';
+import { enumToArray } from '../utils';
 import { SIZE } from './constants';
 
 export const paginationPropTypes = {
@@ -12,7 +13,7 @@ export const paginationPropTypes = {
   showPageJumper: bool,
   showPageNumbers: bool,
   showPageSizer: bool,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   totalCount: number.isRequired,
   visibleRange: number
 };

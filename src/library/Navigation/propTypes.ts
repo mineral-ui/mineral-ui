@@ -11,11 +11,12 @@ import {
   shape,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { ALIGN, TYPE } from './constants';
 
 import { menuItemPropType } from '../Menu/propTypes';
 
-const alignPropType = oneOf(Object.keys(ALIGN));
+const alignPropType = oneOf(enumToArray(ALIGN));
 const itemElementPropType = oneOfType([element, string]);
 const maxWidthPropType = oneOfType([number, string]);
 const navigationItemPropType = shape({
@@ -56,5 +57,5 @@ export const primaryNavPropTypes = {
 
 export const secondaryNavPropTypes = {
   ...baseNavPropTypes,
-  type: oneOf(Object.keys(TYPE))
+  type: oneOf(enumToArray(TYPE))
 };

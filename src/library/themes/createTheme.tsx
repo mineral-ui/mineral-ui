@@ -1,5 +1,6 @@
 /* @flow */
 import tokens from 'mineral-ui-tokens';
+import { enumToArray } from '../utils';
 import createColorRamp from './createColorRamp';
 import fontSize_base from './fontSizeBase';
 import colorAliases from './generated/colorAliases';
@@ -14,8 +15,8 @@ import { ThemeObj } from './types';
 
 type PrimaryColor = keyof typeof PRIMARY_COLOR;
 type PrimaryColors = Array<PrimaryColor>;
-type ColorRampWithInflection = { [rampKey: number]: string, inflection?: number };
-type Colors = {
+interface ColorRampWithInflection { [rampKey: number]: string, inflection?: number }
+interface Colors {
   black?: string,
   danger?: Color | ColorRampWithInflection,
   gray?: ColorRampWithInflection,
@@ -23,9 +24,9 @@ type Colors = {
   theme?: Color | ColorRampWithInflection,
   warning?: Color | ColorRampWithInflection,
   white?: string
-};
+}
 
-const primaryColors: PrimaryColors = Object.keys(PRIMARY_COLOR);
+const primaryColors: PrimaryColors = enumToArray(PRIMARY_COLOR);
 
 export const nonTokenVariables = (colors: Colors | null | undefined) => ({
   boxShadow_focusInner: (colors && colors.white) || palette.white,
@@ -110,10 +111,13 @@ const primaryColorsByVariation = (colors: Colors = {}) => {
 };
 
 export default function createTheme(
-  options: {
-    colors?: Colors,
-    overrides?: ThemeObj
-  } | null | undefined
+  options:
+    | {
+        colors?: Colors;
+        overrides?: ThemeObj;
+      }
+    | null
+    | undefined
 ): ThemeObj {
   const colors = options && options.colors;
 

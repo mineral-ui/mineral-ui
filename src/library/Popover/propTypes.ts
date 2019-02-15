@@ -1,5 +1,6 @@
 /* @flow */
 import { bool, func, node, object, oneOf, oneOfType, string } from 'prop-types';
+import { enumToArray } from '../utils';
 import { PLACEMENT } from './constants';
 
 export const popoverPropTypes = {
@@ -15,7 +16,7 @@ export const popoverPropTypes = {
   modifiers: object,
   onClose: func,
   onOpen: func,
-  placement: oneOf(Object.keys(PLACEMENT)),
+  placement: oneOf(enumToArray(PLACEMENT)),
   positionFixed: bool,
   subtitle: node,
   title: node,

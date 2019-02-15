@@ -1,5 +1,6 @@
 /* @flow */
 import { node, oneOf, string } from 'prop-types';
+import { enumToArray } from '../utils';
 import { SHAPE, SIZE } from './constants';
 
 export const avatarPropTypes = {
@@ -7,6 +8,6 @@ export const avatarPropTypes = {
   background: string,
   children: node.isRequired,
   color: string,
-  shape: oneOf(Object.keys(SHAPE)),
-  size: oneOf(Object.keys(SIZE))
+  shape: oneOf(enumToArray(SHAPE)),
+  size: oneOf(enumToArray(SIZE))
 };

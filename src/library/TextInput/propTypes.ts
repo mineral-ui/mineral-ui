@@ -9,6 +9,7 @@ import {
   oneOfType,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { SIZE, TYPE, VARIANT } from './constants';
 
 export const textInputPropTypes = {
@@ -25,9 +26,9 @@ export const textInputPropTypes = {
   prefix: oneOfType([string, element]),
   readOnly: bool,
   required: bool,
-  size: oneOf(Object.keys(SIZE)),
+  size: oneOf(enumToArray(SIZE)),
   suffix: oneOfType([string, element]),
-  type: oneOf(Object.keys(TYPE)),
+  type: oneOf(enumToArray(TYPE)),
   value: string,
-  variant: oneOf(Object.keys(VARIANT))
+  variant: oneOf(enumToArray(VARIANT))
 };

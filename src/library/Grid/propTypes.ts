@@ -1,14 +1,10 @@
 /* @flow */
-import { arrayOf, node, number, oneOf, oneOfType, string } from 'prop-types';
+import { arrayOf, node, number, oneOfType, string } from 'prop-types';
+import { stringOrStringArray, thingOrThingArray } from '../utils/propTypes';
 import { ALIGN_ITEMS } from './constants';
 
-const stringOrArrayOfStringsPropType = (constant) => {
-  const strings = Object.keys(constant);
-  return oneOfType([oneOf(strings), arrayOf(oneOf(strings))]);
-};
-
 export const gridPropTypes = {
-  alignItems: stringOrArrayOfStringsPropType(ALIGN_ITEMS),
+  alignItems: stringOrStringArray(ALIGN_ITEMS),
   breakpoints: arrayOf(oneOfType([number, string])),
   children: node,
   columns: number,
@@ -16,5 +12,5 @@ export const gridPropTypes = {
 };
 
 export const gridItemPropTypes = {
-  span: oneOfType([number, arrayOf(number)])
+  span: thingOrThingArray(number)
 };

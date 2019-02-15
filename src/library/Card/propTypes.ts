@@ -8,10 +8,11 @@ import {
   oneOfType,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { menuItemsPropType } from '../Menu/propTypes';
 import { VARIANT } from './constants';
 
-const variant = oneOf(Object.keys(VARIANT));
+const variant = oneOf(enumToArray(VARIANT));
 
 export const cardPropTypes = {
   children: node.isRequired,

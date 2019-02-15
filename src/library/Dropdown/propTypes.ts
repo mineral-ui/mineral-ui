@@ -9,6 +9,7 @@ import {
   oneOfType,
   string
 } from 'prop-types';
+import { enumToArray } from '../utils';
 import { menuItemsPropType } from '../Menu/propTypes';
 import { PLACEMENT } from './constants';
 
@@ -27,7 +28,7 @@ export const dropdownPropTypes = {
   modifiers: object,
   onClose: func,
   onOpen: func,
-  placement: oneOf(Object.keys(PLACEMENT)),
+  placement: oneOf(enumToArray(PLACEMENT)),
   positionFixed: bool,
   usePortal: bool,
   wide: bool
