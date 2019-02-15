@@ -53,8 +53,6 @@ export interface FauxControlControlStyleProps
   prefix?: string; // Overwrite FauxControlProps to match DOM expectation
 }
 
-export type VariantIcons = { [K in Variant]: React.ReactElement<any> };
-
 export type FauxControlThemeFn = ComponentThemeFn<FauxControlTheme>;
 export type FauxControlTheme = ComponentTheme<FauxControlThemeKeys>;
 interface FauxControlThemeKeys {

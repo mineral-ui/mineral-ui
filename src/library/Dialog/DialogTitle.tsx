@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { createElement } from 'react';
 import { withTheme } from 'emotion-theming';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
@@ -41,14 +41,12 @@ const DialogTitle = ({
     ...restProps
   });
 
-  let Icon = () => null;
-  if (variant) {
-    Icon = variantIcons[variant];
-  }
-
   return (
     <Root {...rootProps}>
-      {variant && <Icon size={dialogTitleTheme(theme).DialogTitleIcon_size} />}
+      {variant &&
+        createElement(variantIcons[variant], {
+          size: dialogTitleTheme(theme).DialogTitleIcon_size
+        })}
       {title}
     </Root>
   );

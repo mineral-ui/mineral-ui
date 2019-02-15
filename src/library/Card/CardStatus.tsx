@@ -8,10 +8,10 @@ import { CardStatusRoot as Root } from './styled';
 import { cardStatusPropTypes } from './propTypes';
 import { CardStatusProps } from './types';
 
-const statusIcons = {
-  danger: <IconDangerSimple />,
-  success: <IconSuccessSimple />,
-  warning: <IconWarningSimple />
+const variantIcons = {
+  danger: IconDangerSimple,
+  success: IconSuccessSimple,
+  warning: IconWarningSimple
 };
 
 export default function CardStatus(props: CardStatusProps) {
@@ -20,11 +20,11 @@ export default function CardStatus(props: CardStatusProps) {
     variant,
     ...restProps
   };
-  const icon = statusIcons[variant];
+  const VariantIcon = variantIcons[variant];
 
   return (
     <Root {...rootProps}>
-      {icon}
+      <VariantIcon />
       {children}
     </Root>
   );

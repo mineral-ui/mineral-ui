@@ -1,5 +1,5 @@
 /* @flow */
-import React, { cloneElement, PureComponent } from 'react';
+import React, { cloneElement, createElement, PureComponent } from 'react';
 import { pxToEm } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
@@ -16,9 +16,9 @@ import { menuItemPropTypes } from './propTypes';
 import { MenuItemPropGetter, MenuItemProps } from './types';
 
 const variantIcons = {
-  danger: <IconDanger size={pxToEm(24)} />,
-  success: <IconSuccess size={pxToEm(24)} />,
-  warning: <IconWarning size={pxToEm(24)} />
+  danger: IconDanger,
+  success: IconSuccess,
+  warning: IconWarning
 };
 
 export default class MenuItem extends PureComponent<MenuItemProps> {
@@ -44,12 +44,16 @@ export default class MenuItem extends PureComponent<MenuItemProps> {
 
     const rootProps = this.getItemProps(this.props);
 
-    let startIcon = variant !== undefined && variant && variantIcons[variant];
+    const startIconProps = {
+      size: pxToEm(24),
+      key: 'iconStart'
+    };
+    let startIcon;
+    if (variant) {
+      startIcon = createElement(variantIcons[variant], startIconProps);
+    }
     if (iconStart) {
-      startIcon = cloneElement(iconStart, {
-        size: pxToEm(24),
-        key: 'iconStart'
-      });
+      startIcon = cloneElement(iconStart, startIconProps);
     }
     const endIcon =
       iconEnd && cloneElement(iconEnd, { size: pxToEm(24), key: 'iconEnd' });

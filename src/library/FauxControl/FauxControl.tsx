@@ -1,5 +1,5 @@
 /* @flow */
-import React, { cloneElement } from 'react';
+import React, { cloneElement, createElement } from 'react';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -12,12 +12,12 @@ import {
 } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
 
-import { FauxControlProps, VariantIcons } from './types';
+import { FauxControlProps } from './types';
 
-const variantIcons: VariantIcons = {
-  danger: <IconDanger />,
-  success: <IconSuccess />,
-  warning: <IconWarning />
+const variantIcons = {
+  danger: IconDanger,
+  success: IconSuccess,
+  warning: IconWarning
 };
 
 const getIcons = ({
@@ -43,7 +43,7 @@ const getIcons = ({
 
   const endIconSource =
     iconEnd !== null && variant
-      ? variantIcons[variant]
+      ? createElement(variantIcons[variant])
       : iconEnd
       ? iconEnd
       : null;

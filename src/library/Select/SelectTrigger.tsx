@@ -1,7 +1,7 @@
 /* @flow */
 import styled from '@emotion/styled';
 import withProps from 'recompose/withProps';
-import React, { Component } from 'react';
+import React, { Component, createElement } from 'react';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -14,9 +14,9 @@ import { SIZE } from './constants';
 import { SelectTriggerProps } from './types';
 
 const variantIcons = {
-  danger: <IconDanger />,
-  success: <IconSuccess />,
-  warning: <IconWarning />
+  danger: IconDanger,
+  success: IconSuccess,
+  warning: IconWarning
 };
 
 const iconMarginMap = {
@@ -26,7 +26,8 @@ const iconMarginMap = {
   jumbo: 14
 };
 
-const stopPropagation = (event: React.SyntheticEvent) => event.stopPropagation();
+const stopPropagation = (event: React.SyntheticEvent) =>
+  event.stopPropagation();
 
 export default class SelectTrigger extends Component<SelectTriggerProps> {
   static displayName = 'SelectTrigger';
@@ -67,7 +68,7 @@ export default class SelectTrigger extends Component<SelectTriggerProps> {
       value: item ? item.value : ''
     };
 
-    let rootProps = {
+    const rootProps = {
       afterItems: [
         <Arrow key="arrow" />,
         <input {...inputProps} key="input" />
@@ -80,19 +81,18 @@ export default class SelectTrigger extends Component<SelectTriggerProps> {
       selectedItemVariant: item && item.variant,
       size,
       variant,
+      ...(item
+        ? {
+            iconEnd: item.iconEnd,
+            iconStart: item.variant
+              ? createElement(variantIcons[item.variant])
+              : item.iconStart,
+            item,
+            variant: this.props.variant
+          }
+        : undefined),
       ...restProps
     };
-
-    if (item) {
-      const { iconEnd, iconStart, variant } = item;
-      rootProps = {
-        ...rootProps,
-        iconEnd,
-        iconStart: variant ? variantIcons[variant] : iconStart,
-        item,
-        variant: this.props.variant
-      };
-    }
 
     return (
       <Root {...rootProps}>

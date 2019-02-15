@@ -47,7 +47,6 @@ export interface CardFooterState {
 export interface CardImageProps {}
 
 export interface CardStatusProps extends CardRowProps {
-  children: string;
   variant: Variant;
 }
 

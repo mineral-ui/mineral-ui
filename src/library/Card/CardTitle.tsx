@@ -1,5 +1,5 @@
 /* @flow */
-import React, { Children, cloneElement } from 'react';
+import React, { Children, cloneElement, createElement } from 'react';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -17,9 +17,9 @@ import { cardTitlePropTypes } from './propTypes';
 import { CardTitleProps } from './types';
 
 const variantIcons = {
-  danger: <IconDanger size="medium" />,
-  success: <IconSuccess size="medium" />,
-  warning: <IconWarning size="medium" />
+  danger: IconDanger,
+  success: IconSuccess,
+  warning: IconWarning
 };
 
 export default function CardTitle(props: CardTitleProps) {
@@ -49,7 +49,7 @@ export default function CardTitle(props: CardTitleProps) {
       {avatar && <Avatar subtitle={subtitle}>{avatar}</Avatar>}
       <Inner>
         <Title variant={variant}>
-          {variant && variantIcons[variant]}
+          {variant && createElement(variantIcons[variant], { size: 'medium' })}
           <TitleContent actions={actions}>{children}</TitleContent>
           {secondaryComponent}
         </Title>
