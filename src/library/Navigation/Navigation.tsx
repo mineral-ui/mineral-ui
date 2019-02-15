@@ -41,7 +41,7 @@ export default class Navigation extends Component<NavigationProps> {
       ...restProps
     } = this.props;
 
-    const prefix = secondary ? PREFIX.secondary : PREFIX.primary;
+    const prefix = secondary ? PREFIX.Secondary : PREFIX.Primary;
     const type = typeProp
       ? `_${typeProp}`
       : minimal
@@ -62,7 +62,9 @@ export default class Navigation extends Component<NavigationProps> {
     );
   }
 
-  renderItems = (prefixAndType: PrefixAndType): Array<React.ReactNode> | null | undefined => {
+  renderItems = (
+    prefixAndType: PrefixAndType
+  ): Array<React.ReactNode> | null | undefined => {
     const {
       children,
       itemAs,

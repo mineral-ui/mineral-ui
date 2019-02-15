@@ -7,10 +7,12 @@ import Button from '../Button';
 import { ALIGN, INTERNAL_TYPE } from './constants';
 import { navigationTheme, navItemTheme } from './themes';
 
+import { NavigationStyleProps, NavItemStyleProps } from './types';
+
 export const NavigationRoot = styled('nav', {
   shouldForwardProp: (prop) =>
     ['prefix', 'type'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ align, prefix, theme: baseTheme, type }) => {
+})<NavigationStyleProps>(({ align, prefix, theme: baseTheme, type }) => {
   const theme = navigationTheme(baseTheme);
 
   const aligns = {
@@ -47,7 +49,7 @@ export const NavigationRoot = styled('nav', {
 const NavItemButton = styled(Button, {
   shouldForwardProp: (prop) =>
     prop === 'as' || ['prefix', 'selected', 'type'].indexOf(prop) === -1
-})(
+})<NavItemStyleProps>(
   ({ align, disabled, maxWidth, prefix, selected, theme: baseTheme, type }) => {
     const theme = navItemTheme(baseTheme);
 
@@ -126,7 +128,7 @@ const NavItemButton = styled(Button, {
  * usually do) because we need to filter some props, which breaks the usual
  * pattern.
  */
-export const NavItemRoot = themed(NavItemButton)(
+export const NavItemRoot = themed<NavItemStyleProps>(NavItemButton)(
   ({ prefix, theme: baseTheme, type }) => {
     const theme = {
       ...navItemTheme(baseTheme),

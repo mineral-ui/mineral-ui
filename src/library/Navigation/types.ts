@@ -27,7 +27,7 @@ interface Messages {
   moreLabel: string;
   moreText: string;
 }
-type Prefix = PREFIX[keyof PREFIX]; // [1]
+type Prefix = keyof typeof PREFIX;
 export interface PrefixAndType {
   prefix: Prefix;
   type: InternalType;
@@ -66,6 +66,13 @@ export interface NavItemProps {
   type?: InternalType;
 }
 
+export interface NavItemStyleProps
+  extends Pick<
+      NavItemProps,
+      'disabled' | 'maxWidth' | 'prefix' | 'selected' | 'type'
+    >,
+    Pick<BaseNavigationProps, 'align'> {}
+
 export interface NavOverflowMenuProps {
   data: NavigationItems;
   onClick: (event: AnchorEvent, selectedIndex: number) => void;
@@ -80,11 +87,11 @@ export interface NavOverflowMenuDefaultProps {
   itemAs: string;
 }
 
-export type NavigationProps = BaseNavigationProps & {
+export interface NavigationProps extends BaseNavigationProps {
   minimal?: boolean;
   secondary?: boolean;
   type?: Type;
-};
+}
 
 export interface NavigationDefaultProps {
   itemAs: string;
@@ -92,22 +99,26 @@ export interface NavigationDefaultProps {
   messages: Messages;
 }
 
-export type PrimaryNavProps = BaseNavigationProps & {
+export interface NavigationStyleProps
+  extends Pick<BaseNavigationProps, 'align'>,
+    PrefixAndType {}
+
+export interface PrimaryNavProps extends BaseNavigationProps {
   minimal?: boolean;
-};
+}
 
-export type PrimaryNavDefaultProps = NavigationDefaultProps & {
+export interface PrimaryNavDefaultProps extends NavigationDefaultProps {
   align: Align;
-};
+}
 
-export type SecondaryNavProps = BaseNavigationProps & {
+export interface SecondaryNavProps extends BaseNavigationProps {
   type?: Type;
-};
+}
 
-export type SecondaryNavDefaultProps = NavigationDefaultProps & {
+export interface SecondaryNavDefaultProps extends NavigationDefaultProps {
   align: Align;
   type: Type;
-};
+}
 
 export type PrimaryNavItemThemeFn = ComponentThemeFn<PrimaryNavItemTheme>;
 export type PrimaryNavItemTheme = ComponentTheme<PrimaryNavItemThemeKeys>;

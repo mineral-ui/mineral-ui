@@ -4,21 +4,21 @@ export enum ALIGN {
   center = 'center',
   end = 'end',
   justify = 'justify'
-};
+}
 
 export enum INTERNAL_TYPE {
   minimal = '_minimal',
   none = '',
   pills = '_pills',
   tabs = '_tabs'
-};
+}
 
 export enum PREFIX {
-  secondary = 'Secondary',
-  primary = 'Primary'
-};
+  Secondary = 'Secondary',
+  Primary = 'Primary'
+}
 
 export enum TYPE {
   pills = 'pills',
   tabs = 'tabs'
-};
+}
