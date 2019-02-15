@@ -71,4 +71,4 @@ class PopoverContent extends Component<PopoverContentProps> {
   }
 }
 
-export default withForwardRef<PopoverContentProps>(PopoverContent);
+export default withForwardRef<HTMLElement, PopoverContentProps>(PopoverContent);

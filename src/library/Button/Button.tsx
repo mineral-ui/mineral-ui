@@ -60,4 +60,4 @@ class Button extends Component<ButtonProps> {
 }
 
 // @ts-ignore - Types of property 'propTypes' are incompatible
-export default withForwardRef<ButtonProps>(Button);
+export default withForwardRef<HTMLElement, ButtonProps>(Button);

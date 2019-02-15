@@ -36,4 +36,4 @@ class PopoverTrigger extends Component<PopoverTriggerProps> {
   }
 }
 
-export default withForwardRef<PopoverTriggerProps>(PopoverTrigger);
+export default withForwardRef<HTMLElement, PopoverTriggerProps>(PopoverTrigger);

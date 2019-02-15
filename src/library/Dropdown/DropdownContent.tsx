@@ -49,4 +49,6 @@ class DropdownContent extends Component<DropdownContentProps> {
   }
 }
 
-export default withForwardRef<DropdownContentProps>(DropdownContent);
+export default withForwardRef<HTMLElement, DropdownContentProps>(
+  DropdownContent
+);
