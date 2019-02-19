@@ -3,7 +3,7 @@ import React, { cloneElement, Component } from 'react';
 import { canUseDOM } from 'exenv';
 import FocusTrap from 'focus-trap-react';
 import noScroll from 'no-scroll';
-import Transition from 'react-transition-group/Transition';
+import Transition, { TransitionProps } from 'react-transition-group/Transition';
 import { withTheme } from 'emotion-theming';
 import { generateId } from '../utils';
 import { excludeByType, findByType } from '../utils/children';
@@ -29,18 +29,20 @@ import DialogTitle from './DialogTitle';
 import { dialogPropTypes } from './propTypes';
 import { DialogDefaultProps, DialogProps, DialogState } from './types';
 
-const Animation = withTheme(({ children, theme, ...restProps }: object) => {
-  return (
-    <Transition
-      appear
-      mountOnEnter
-      timeout={parseFloat(dialogTheme(theme).Dialog_transitionDuration)}
-      unmountOnExit
-      {...restProps}>
-      {(state) => <DialogAnimate state={state}>{children}</DialogAnimate>}
-    </Transition>
-  );
-});
+const Animation = withTheme(
+  ({ children, theme, ...restProps }: TransitionProps) => {
+    return (
+      <Transition
+        appear
+        mountOnEnter
+        timeout={parseFloat(dialogTheme(theme).Dialog_transitionDuration)}
+        unmountOnExit
+        {...restProps}>
+        {(state) => <DialogAnimate state={state}>{children}</DialogAnimate>}
+      </Transition>
+    );
+  }
+);
 
 export default class Dialog extends Component<DialogProps, DialogState> {
   static displayName = 'Dialog';
@@ -140,11 +142,12 @@ export default class Dialog extends Component<DialogProps, DialogState> {
       size
     };
 
-    const animationProps = {
+    const animationProps: TransitionProps = {
       in: isOpen && !isExiting,
       onExiting: this.handleExiting,
       onExited: this.handleExited,
-      onEntered: this.handleEntered
+      onEntered: this.handleEntered,
+      timeout: 300
     };
 
     const focusTrapProps = {
