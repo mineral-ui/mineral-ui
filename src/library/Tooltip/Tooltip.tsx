@@ -1,11 +1,17 @@
 /* @flow */
-import React, { Children, cloneElement, Component } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  Component,
+  isValidElement
+} from 'react';
 import { composeEventHandlers, generateId } from '../utils';
 import PopoverContent from '../Popover/PopoverContent';
 import { TooltipRoot as Root, TriggerText } from './styled';
 import { DELAY_OPEN, PLACEMENT } from './constants';
 
 import { tooltipPropTypes } from './propTypes';
+import { PopoverContentProps } from '../Popover/types';
 import {
   TooltipDefaultProps,
   TooltipProps,
@@ -66,17 +72,17 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     return <Root {...popoverProps} />;
   }
 
-  getTriggerProps: TooltipPropGetter = (props = {}) => {
+  getTriggerProps: TooltipPropGetter = (props) => {
     return {
       ...props,
       'aria-expanded': undefined,
-      onBlur: composeEventHandlers(props.onBlur, this.close),
-      onFocus: composeEventHandlers(props.onFocus, this.handleDelayedOpen),
+      onBlur: composeEventHandlers(props['onBlur'], this.close),
+      onFocus: composeEventHandlers(props['onFocus'], this.handleDelayedOpen),
       onMouseEnter: composeEventHandlers(
-        props.onMouseEnter,
+        props['onMouseEnter'],
         this.handleDelayedOpen
       ),
-      onMouseLeave: composeEventHandlers(props.onMouseLeave, this.close),
+      onMouseLeave: composeEventHandlers(props['onMouseLeave'], this.close),
       tabIndex: 0
     };
   };
@@ -93,22 +99,24 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
 
     const child = Children.only(trigger);
 
-    return cloneElement(child, this.getTriggerProps(child.props));
+    return isValidElement(child)
+      ? cloneElement(child, this.getTriggerProps(child.props))
+      : child;
   };
 
-  getContentProps: TooltipPropGetter = (props = {}) => {
+  getContentProps: TooltipPropGetter<PopoverContentProps> = (props) => {
     const { content } = this.props;
-    const { tabIndex: ignoreTabIndex, ...restProps } = props;
+    delete props['tabIndex'];
 
     return {
-      ...restProps,
+      ...props,
       'aria-live': 'polite',
       children: content,
       role: 'tooltip'
     };
   };
 
-  renderContent: TooltipRenderFn = ({ props } = {}) => {
+  renderContent: TooltipRenderFn = ({ props }) => {
     return <PopoverContent {...this.getContentProps(props)} />;
   };
 

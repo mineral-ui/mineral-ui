@@ -20,7 +20,9 @@ export interface TooltipState {
   isOpen: boolean;
 }
 
-export type TooltipPropGetter = (props?: object) => object;
+export type TooltipPropGetter<T = {}> = (
+  props?: object | null | undefined
+) => T;
 export type TooltipRenderFn = (props?: TooltipRenderProps) => React.ReactNode;
 interface TooltipRenderProps {
   props: object;
