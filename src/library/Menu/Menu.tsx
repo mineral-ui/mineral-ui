@@ -8,9 +8,10 @@ import MenuItem from './MenuItem';
 import { menuPropTypes } from './propTypes';
 import {
   MenuItems,
-  MenuPropGetter,
   MenuProps,
-  MenuRenderFn
+  MenuItemPropGetter,
+  MenuItemProps,
+  MenuItemRenderFn
 } from './types';
 
 export const getItems = (data: MenuItems): MenuItems =>
@@ -44,8 +45,8 @@ export default class Menu extends PureComponent<MenuProps> {
     );
   };
 
-  getItemProps: MenuPropGetter = (props = {}) => {
-    const { props: itemProps } = props;
+  getItemProps: MenuItemPropGetter<MenuItemProps> = (props) => {
+    const itemProps = props['props'];
     const { index, item } = itemProps;
     const { item: render, itemKey } = this.props;
 
@@ -58,15 +59,17 @@ export default class Menu extends PureComponent<MenuProps> {
     };
   };
 
-  renderItem: MenuRenderFn = (props = {}) => {
-    const { props: itemProps } = props;
-    const { index, item } = itemProps;
+  renderItem: MenuItemRenderFn = (props) => {
+    const itemProps = props['props'];
 
-    if (item.group) {
-      return <MenuGroup key={index} title={item.title} />;
-    } else if (item.divider) {
-      return <MenuDivider key={index} />;
+    if (itemProps['item'].group) {
+      return (
+        <MenuGroup key={itemProps['index']} title={itemProps['item'].title} />
+      );
+    } else if (itemProps['item'].divider) {
+      return <MenuDivider key={itemProps['index']} />;
     } else {
+      // FIXME: Revisit once website builds
       return <MenuItem {...this.getItemProps(props)} />;
     }
   };

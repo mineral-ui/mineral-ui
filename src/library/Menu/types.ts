@@ -20,7 +20,9 @@ export interface MenuItemType {
 }
 export type MenuItems = Array<MenuItemType>;
 
-export type MenuPropGetter = (props?: object) => object;
+export type MenuPropGetter<T = {}> = (
+  props?: (Partial<T> & HTMLAttributes<any>) | null | undefined
+) => T;
 
 export type MenuRenderFn = (props?: MenuRenderProps) => React.ReactNode;
 
