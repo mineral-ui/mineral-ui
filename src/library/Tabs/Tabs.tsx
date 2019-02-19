@@ -162,7 +162,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     event.persist();
     if (['ArrowLeft', 'ArrowRight'].indexOf(event.key) !== -1) {
       event.preventDefault();
-      const rtl = this.props.theme.direction === 'rtl';
+      const rtl = this.props.theme['direction'] === 'rtl';
       const flippedDirections = {
         ArrowLeft: 'ArrowRight',
         ArrowRight: 'ArrowLeft'
