@@ -128,7 +128,7 @@ const NavItemButton = styled(Button, {
  * usually do) because we need to filter some props, which breaks the usual
  * pattern.
  */
-export const NavItemRoot = themed<NavItemStyleProps>(NavItemButton)(
+export const NavItemRoot = themed(NavItemButton)(
   ({ prefix, theme: baseTheme, type }) => {
     const theme = {
       ...navItemTheme(baseTheme),
