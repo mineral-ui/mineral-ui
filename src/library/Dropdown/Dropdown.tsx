@@ -24,7 +24,8 @@ import {
   DropdownProps,
   DropdownRenderFn,
   DropdownStateAndHelpers,
-  DropdownState
+  DropdownState,
+  DropdownContentProps
 } from './types';
 
 export default class Dropdown extends Component<DropdownProps, DropdownState> {
@@ -101,7 +102,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     this.dropdownTrigger = node;
   };
 
-  getContentProps: DropdownPropGetter = (props = {}) => {
+  getContentProps: DropdownPropGetter<DropdownContentProps> = (props) => {
     delete props['subtitle'];
     delete props['title'];
     delete props['tabIndex'];
@@ -119,7 +120,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     };
   };
 
-  renderContent: DropdownRenderFn = ({ props } = {}) => {
+  renderContent: DropdownRenderFn = ({ props }) => {
     return <DropdownContent {...this.getContentProps(props)} />;
   };
 
@@ -135,7 +136,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     return `${this.id}-item-${index}`;
   };
 
-  getTriggerProps: DropdownPropGetter = (props = {}) => {
+  getTriggerProps: DropdownPropGetter = (props) => {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
     const { children } = this.props;
@@ -160,12 +161,10 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     };
   };
 
-  renderTrigger: DropdownRenderFn = ({ props } = {}) => {
+  renderTrigger: DropdownRenderFn = ({ props }) => {
     const { children } = this.props;
 
     if (isRenderProp(children)) {
-      // TODO: Can fix by refining `children` to DropdownRenderFn,
-      // but need a generic type for the generic util
       return children({
         ...this.getStateAndHelpers(),
         props: this.getTriggerProps(props)
@@ -178,7 +177,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
       : child;
   };
 
-  getMenuProps: DropdownPropGetter = (props = {}) => {
+  getMenuProps: DropdownPropGetter = (props) => {
     const { data, itemKey } = this.props;
 
     return {
@@ -192,7 +191,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     };
   };
 
-  renderMenu: DropdownRenderFn = ({ props } = {}) => {
+  renderMenu: DropdownRenderFn = ({ props }) => {
     const { menu } = this.props;
 
     if (isRenderProp(menu)) {
@@ -205,9 +204,9 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     return <Menu {...this.getMenuProps(props)} />;
   };
 
-  getItemProps: DropdownPropGetter = (props = {}) => {
+  getItemProps: DropdownPropGetter = (props) => {
     const highlightedIndex = this.getControllableValue('highlightedIndex');
-    const { props: itemProps } = props;
+    const itemProps = props['props'];
     const { index, item } = itemProps;
 
     return {
@@ -223,7 +222,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     };
   };
 
-  renderItem: DropdownRenderFn = (props = {}) => {
+  renderItem: DropdownRenderFn = (props) => {
     const { item } = this.props;
 
     if (isRenderProp(item)) {

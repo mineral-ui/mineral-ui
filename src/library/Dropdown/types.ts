@@ -40,7 +40,9 @@ export interface DropdownStateAndHelpers {
   helpers: DropdownHelpers;
 }
 
-export type DropdownPropGetter = (props?: object) => object;
+export type DropdownPropGetter<T = {}> = (
+  props?: object | null | undefined
+) => T;
 
 export type DropdownRenderFn = (props?: DropdownRenderProps) => React.ReactNode;
 
