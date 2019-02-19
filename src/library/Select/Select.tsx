@@ -20,7 +20,8 @@ import {
   SelectPropGetter,
   SelectRenderFn,
   SelectState,
-  SelectStateAndHelpers
+  SelectStateAndHelpers,
+  SelectTriggerProps
 } from './types';
 
 export default class Select extends Component<SelectProps, SelectState> {
@@ -130,7 +131,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     return `${this.id}-item-${index}`;
   };
 
-  getTriggerProps: SelectPropGetter = (props = {}) => {
+  getTriggerProps: SelectPropGetter<SelectTriggerProps> = (props) => {
     const isOpen = this.getControllableValue('isOpen');
     const selectedItem = this.getControllableValue('selectedItem');
     const {
@@ -168,7 +169,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     };
   };
 
-  renderTrigger: SelectRenderFn = ({ props } = {}) => {
+  renderTrigger: SelectRenderFn = ({ props }) => {
     const { trigger } = this.props;
 
     if (isRenderProp(trigger)) {
@@ -181,7 +182,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     return <SelectTrigger {...this.getTriggerProps(props)} />;
   };
 
-  getMenuProps: SelectPropGetter = (props = {}) => {
+  getMenuProps: SelectPropGetter = (props) => {
     const { itemKey } = this.props;
 
     return {
@@ -192,7 +193,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     };
   };
 
-  renderMenu: SelectRenderFn = ({ props } = {}) => {
+  renderMenu: SelectRenderFn = ({ props }) => {
     const { menu } = this.props;
 
     if (isRenderProp(menu)) {
@@ -205,10 +206,10 @@ export default class Select extends Component<SelectProps, SelectState> {
     return <Menu {...this.getMenuProps(props)} />;
   };
 
-  getItemProps: SelectPropGetter = (props = {}) => {
+  getItemProps: SelectPropGetter = (props) => {
     const highlightedIndex = this.getControllableValue('highlightedIndex');
     const selectedItem = this.getControllableValue('selectedItem');
-    const { props: itemProps } = props;
+    const itemProps = props['props'];
     const { index, item } = itemProps;
 
     return {
@@ -228,7 +229,7 @@ export default class Select extends Component<SelectProps, SelectState> {
     };
   };
 
-  renderItem: SelectRenderFn = (props = {}) => {
+  renderItem: SelectRenderFn = (props) => {
     const { item } = this.props;
 
     if (isRenderProp(item)) {

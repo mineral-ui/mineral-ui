@@ -53,20 +53,20 @@ export interface SelectStateAndHelpers {
   helpers: SelectHelpers;
 }
 
-export type SelectPropGetter = (props?: object) => object;
+export type SelectPropGetter<T = {}> = (props?: object | null | undefined) => T;
 export type SelectRenderFn = (props?: SelectRenderProps) => React.ReactNode;
 type SelectRenderProps = {
   props: object;
 } & SelectStateAndHelpers;
 
-export interface SelectTriggerProps extends FauxControlProps {
+export type SelectTriggerProps = Partial<FauxControlProps> & {
   isOpen?: boolean;
   name?: string;
   placeholder?: string;
   required?: boolean;
   item?: MenuItemType;
   triggerRef?: (node: HTMLElement | null | undefined) => void;
-}
+};
 
 export interface SelectTriggerStyleProps
   extends Pick<
