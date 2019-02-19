@@ -3,6 +3,7 @@ import { PLACEMENT } from './constants';
 
 import { PopoverProps } from '../Popover/types';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { HTMLAttributes } from 'react';
 
 type Placement = keyof typeof PLACEMENT;
 
@@ -21,7 +22,7 @@ export interface TooltipState {
 }
 
 export type TooltipPropGetter<T = {}> = (
-  props?: object | null | undefined
+  props?: (Partial<T> & HTMLAttributes<any>) | null | undefined
 ) => T;
 export type TooltipRenderFn = (props?: TooltipRenderProps) => React.ReactNode;
 interface TooltipRenderProps {

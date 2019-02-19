@@ -5,6 +5,7 @@ import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 import { DropdownProps } from '../Dropdown/types';
 import { FauxControlProps } from '../FauxControl/types';
 import { MenuItemType } from '../Menu/types';
+import { HTMLAttributes } from 'react';
 
 type Placement = keyof typeof PLACEMENT;
 type Size = keyof typeof SIZE;
@@ -53,7 +54,9 @@ export interface SelectStateAndHelpers {
   helpers: SelectHelpers;
 }
 
-export type SelectPropGetter<T = {}> = (props?: object | null | undefined) => T;
+export type SelectPropGetter<T = {}> = (
+  props?: (Partial<T> & HTMLAttributes<any>) | null | undefined
+) => T;
 export type SelectRenderFn = (props?: SelectRenderProps) => React.ReactNode;
 type SelectRenderProps = {
   props: object;

@@ -8,6 +8,7 @@ import {
   ThemeObj,
   ThemeValue
 } from '../themes/types';
+import { HTMLAttributes } from 'react';
 
 type Placement = keyof typeof PLACEMENT;
 
@@ -56,7 +57,7 @@ export interface PopoverStateAndHelpers {
 
 export type PopoverRenderMethod = (props: object) => React.ReactNode;
 export type PopoverPropGetter<T = {}> = (
-  props?: object | null | undefined
+  props?: (Partial<T> & HTMLAttributes<any>) | null | undefined
 ) => T;
 export type PopoverRenderFn = (props?: PopoverRenderProps) => React.ReactNode;
 type PopoverRenderProps = {

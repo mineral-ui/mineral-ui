@@ -4,6 +4,7 @@ import { PLACEMENT } from './constants';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 import { MenuItems } from '../Menu/types';
 import { PopoverProps } from '../Popover/types';
+import { HTMLAttributes } from 'react';
 
 type Placement = keyof typeof PLACEMENT;
 
@@ -41,7 +42,7 @@ export interface DropdownStateAndHelpers {
 }
 
 export type DropdownPropGetter<T = {}> = (
-  props?: object | null | undefined
+  props?: (Partial<T> & HTMLAttributes<any>) | null | undefined
 ) => T;
 
 export type DropdownRenderFn = (props?: DropdownRenderProps) => React.ReactNode;
