@@ -2,6 +2,7 @@
 import { VARIANT } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import { HTMLAttributes } from 'react';
 
 export interface MenuItemType {
   iconEnd?: React.ReactElement<any>;
@@ -56,7 +57,9 @@ export interface MenuItemProps {
   variant?: keyof typeof VARIANT;
 }
 
-export type MenuItemPropGetter = (props?: object) => object;
+export type MenuItemPropGetter<T = {}> = (
+  props?: (Partial<T> & HTMLAttributes<any>) | null | undefined
+) => T;
 
 export type MenuItemRenderFn = (props?: MenuItemRenderProps) => React.ReactNode;
 

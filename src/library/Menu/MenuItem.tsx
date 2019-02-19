@@ -76,7 +76,7 @@ export default class MenuItem extends PureComponent<MenuItemProps> {
     );
   }
 
-  getItemProps: MenuItemPropGetter = (props = {}) => {
+  getItemProps: MenuItemPropGetter<MenuItemProps> = (props) => {
     const { disabled, onClick, render, tabIndex, ...restProps } = props;
 
     return {
