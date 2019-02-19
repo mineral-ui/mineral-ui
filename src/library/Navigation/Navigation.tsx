@@ -36,6 +36,7 @@ export default class Navigation extends Component<NavigationProps> {
       align,
       items: ignoreItems,
       minimal,
+      onChange: ignoreOnChange,
       secondary,
       type: typeProp,
       ...restProps
@@ -79,7 +80,7 @@ export default class Navigation extends Component<NavigationProps> {
     } = this.props;
 
     const items: NavigationItems | null | undefined = children
-      ? Children.map(children, (child) => {
+      ? Children.map<object, React.ReactElement<any>>(children, (child) => {
           const { children, ...rest } = child.props;
           return {
             child,

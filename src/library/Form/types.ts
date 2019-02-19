@@ -5,7 +5,7 @@ import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 
 export interface FormFieldProps {
   caption?: string | React.ReactElement<any>;
-  children?: React.ReactNode;
+  children?: React.ReactElement<any>;
   className?: string;
   hideLabel?: boolean;
   id?: string;

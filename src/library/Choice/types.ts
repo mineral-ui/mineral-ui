@@ -44,7 +44,7 @@ export interface ChoiceTextStyleProps
 
 export interface ChoiceGroupProps {
   checked?: string | Array<string>;
-  children?: React.ReactNode;
+  children?: React.ReactElement<any> | React.ReactElement<any>[];
   data?: Array<{ label: string | React.ReactElement<any>; value: string }>;
   defaultChecked?: string | Array<string>;
   inline?: boolean;

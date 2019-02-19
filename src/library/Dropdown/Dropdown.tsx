@@ -1,10 +1,5 @@
 /* @flow */
-import React, {
-  Children,
-  Component,
-  cloneElement,
-  isValidElement
-} from 'react';
+import React, { Children, Component, cloneElement } from 'react';
 import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
@@ -172,9 +167,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
     }
 
     const child = Children.only(children);
-    return isValidElement(child)
-      ? cloneElement(child, this.getTriggerProps(child.props))
-      : child;
+    return cloneElement(child, this.getTriggerProps(child.props));
   };
 
   getMenuProps: DropdownPropGetter = (props) => {

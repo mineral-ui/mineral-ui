@@ -15,7 +15,9 @@ export interface CardRowProps {
   children: React.ReactNode;
 }
 
-export interface CardActionsProps extends CardRowProps {}
+export interface CardActionsProps extends CardRowProps {
+  children: React.ReactElement<any> | React.ReactElement<any>[];
+}
 
 export interface CardBlockProps extends CardRowProps {}
 
@@ -51,7 +53,7 @@ export interface CardStatusProps extends CardRowProps {
 }
 
 export interface CardTitleProps extends CardRowProps {
-  actions?: React.ReactNode;
+  actions?: React.ReactElement<any> | React.ReactElement<any>[];
   avatar?: string | React.ReactElement<any>;
   secondaryText?: string | React.ReactElement<any>;
   subtitle?: React.ReactNode;

@@ -1,11 +1,5 @@
 /* @flow */
-import React, {
-  Children,
-  cloneElement,
-  createElement,
-  Component,
-  isValidElement
-} from 'react';
+import React, { Children, cloneElement, createElement, Component } from 'react';
 import { generateId, hasDisplayName } from '../utils';
 import {
   FormFieldRoot as Root,
@@ -95,9 +89,7 @@ export default class FormField extends Component<FormFieldProps> {
       control = createElement(input, controlProps());
     } else if (children) {
       const child = Children.only(children);
-      control = isValidElement(child)
-        ? cloneElement(child, controlProps(child.props))
-        : null;
+      control = cloneElement(child, controlProps(child.props));
     }
 
     return (

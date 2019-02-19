@@ -8,7 +8,7 @@ import { MenuItemRenderFn, MenuItemType } from '../Menu/types';
 type Align = keyof typeof ALIGN;
 interface BaseNavigationProps {
   align?: Align;
-  children?: React.ReactNode;
+  children?: React.ReactElement<any> | React.ReactElement<any>[];
   itemAs?: ItemElement;
   items?: NavigationItems;
   maxItemWidth?: number | string;

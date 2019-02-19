@@ -1,10 +1,5 @@
 /* @flow */
-import React, {
-  Children,
-  cloneElement,
-  Component,
-  isValidElement
-} from 'react';
+import React, { cloneElement, Component, isValidElement } from 'react';
 import { composeEventHandlers, generateId } from '../utils';
 import PopoverContent from '../Popover/PopoverContent';
 import { TooltipRoot as Root, TriggerText } from './styled';
@@ -90,18 +85,13 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
   renderTrigger = () => {
     const { children } = this.props;
 
-    const trigger =
-      typeof children === 'string' ? (
-        <TriggerText>{children}</TriggerText>
-      ) : (
-        children
-      );
+    const trigger = isValidElement(children) ? (
+      children
+    ) : (
+      <TriggerText>{children}</TriggerText>
+    );
 
-    const child = Children.only(trigger);
-
-    return isValidElement(child)
-      ? cloneElement(child, this.getTriggerProps(child.props))
-      : child;
+    return cloneElement(trigger, this.getTriggerProps(trigger.props));
   };
 
   getContentProps: TooltipPropGetter<PopoverContentProps> = (props) => {

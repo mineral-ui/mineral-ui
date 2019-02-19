@@ -6,7 +6,7 @@ import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 export interface ButtonGroupProps {
   'aria-label': string;
   checked?: number | Array<number>;
-  children: React.ReactNode;
+  children: React.ReactElement<any> | React.ReactElement<any>[];
   defaultChecked?: number | Array<number>;
   disabled?: boolean;
   fullWidth?: boolean;

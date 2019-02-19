@@ -9,7 +9,7 @@ import { HTMLAttributes } from 'react';
 type Placement = keyof typeof PLACEMENT;
 
 export interface DropdownProps extends PopoverProps {
-  children: React.ReactNode | DropdownRenderFn;
+  children: React.ReactElement<any> | DropdownRenderFn;
   data: MenuItems;
   defaultHighlightedIndex?: number;
   highlightedIndex?: number;
