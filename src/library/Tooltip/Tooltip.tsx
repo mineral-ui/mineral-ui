@@ -106,10 +106,10 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
 
   getContentProps: TooltipPropGetter<PopoverContentProps> = (props) => {
     const { content } = this.props;
-    delete props['tabIndex'];
+    const { tabIndex: ignoreTabIndex, ...restProps } = props;
 
     return {
-      ...props,
+      ...restProps,
       'aria-live': 'polite',
       children: content,
       role: 'tooltip'
