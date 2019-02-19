@@ -1,5 +1,5 @@
 /* @flow */
-import React, { Children, Component } from 'react';
+import React, { Children, Component, isValidElement } from 'react';
 import { Manager } from 'react-popper';
 import { findDOMNode } from 'react-dom';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
@@ -18,7 +18,8 @@ import {
   PopoverPropGetter,
   PopoverRenderMethod,
   PopoverState,
-  PopoverStateAndHelpers
+  PopoverStateAndHelpers,
+  PopoverTriggerProps
 } from './types';
 
 export default class Popover extends Component<PopoverProps, PopoverState> {
@@ -65,7 +66,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
           return (
             <Manager>
               <Root {...rootProps}>
-                {this.renderTrigger()}
+                {this.renderTrigger({})}
                 {isOpen && this.renderContent(contentProps)}
                 {isOpen && (
                   <EventListener
@@ -118,7 +119,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     this.popoverContent = node;
   };
 
-  getContentProps: PopoverPropGetter = (props = {}) => {
+  getContentProps: PopoverPropGetter = (props) => {
     const contentId = this.getContentId();
     const {
       content,
@@ -142,13 +143,13 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
       tabIndex: 0,
       title,
       onBlur: composeEventHandlers(
-        content && content.props && content.props.onBlur,
+        isValidElement(content) && content.props['onBlur'],
         this.onBlur
       )
     };
   };
 
-  renderContent: PopoverRenderMethod = (props = {}) => {
+  renderContent: PopoverRenderMethod = (props) => {
     const { content, usePortal } = this.props;
     let popoverContent;
 
@@ -176,7 +177,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     return `${this.id}-content`;
   };
 
-  getTriggerProps: PopoverPropGetter = (props = {}) => {
+  getTriggerProps: PopoverPropGetter<PopoverTriggerProps> = (props) => {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
     const { children, cursor, disabled } = this.props;
@@ -199,14 +200,14 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
       ref: this.setTriggerRef,
       role: 'button',
       ...(!isRenderProp(children) ? props : {}),
-      onBlur: composeEventHandlers(props.onBlur, this.onBlur),
+      onBlur: composeEventHandlers(props['onBlur'], this.onBlur),
       onClick: !disabled
-        ? composeEventHandlers(props.onClick, this.toggleOpen)
+        ? composeEventHandlers(props['onClick'], this.toggleOpen)
         : undefined
     };
   };
 
-  renderTrigger: PopoverRenderMethod = (props = {}) => {
+  renderTrigger: PopoverRenderMethod = (props) => {
     const { children } = this.props;
 
     if (isRenderProp(children)) {
@@ -217,9 +218,10 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     }
 
     const child = Children.only(children);
+    const childProps = isValidElement(child) ? child.props : undefined;
     return (
       <PopoverTrigger
-        {...this.getTriggerProps({ ...child.props, children: child })}
+        {...this.getTriggerProps({ ...childProps, children: child })}
       />
     );
   };

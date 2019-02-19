@@ -46,6 +46,7 @@ interface PopoverHelpers {
   close: (event: React.SyntheticEvent) => void;
   focusTrigger: () => void;
   open: (event: React.SyntheticEvent) => void;
+  toggleOpen: (event: React.SyntheticEvent) => void;
 }
 
 export interface PopoverStateAndHelpers {
@@ -54,7 +55,9 @@ export interface PopoverStateAndHelpers {
 }
 
 export type PopoverRenderMethod = (props: object) => React.ReactNode;
-export type PopoverPropGetter = (props?: object) => object;
+export type PopoverPropGetter<T = {}> = (
+  props?: object | null | undefined
+) => T;
 export type PopoverRenderFn = (props?: PopoverRenderProps) => React.ReactNode;
 type PopoverRenderProps = {
   props: object;
@@ -79,7 +82,7 @@ export interface PopoverContentProps {
 export interface PopoverTriggerProps {
   children: React.ReactNode;
   cursor?: string;
-  forwardedRef: (node: HTMLElement | null | undefined) => void;
+  forwardedRef?: (node: HTMLElement | null | undefined) => void;
 }
 
 export type RtlPopperProps = PopperProps & {

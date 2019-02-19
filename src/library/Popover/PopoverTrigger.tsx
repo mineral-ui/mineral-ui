@@ -1,5 +1,10 @@
 /* @flow */
-import React, { Children, cloneElement, Component } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  Component,
+  isValidElement
+} from 'react';
 import { Reference } from 'react-popper';
 import withForwardRef from '../utils/withForwardRef';
 import { PopoverTriggerWrapper } from './styled';
@@ -24,10 +29,11 @@ class PopoverTrigger extends Component<PopoverTriggerProps> {
               }
             }
           };
+          const child = Children.only(children);
 
           return (
             <PopoverTriggerWrapper {...popoverTriggerWrapperProps}>
-              {cloneElement(Children.only(children), restProps)}
+              {isValidElement(child) ? cloneElement(child, restProps) : child}
             </PopoverTriggerWrapper>
           );
         }}
