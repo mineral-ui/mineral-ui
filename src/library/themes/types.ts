@@ -21,3 +21,7 @@ export type BaseTheme = ThemeObj; // TODO: Enumerate keys
 
 export const isThemeFn = (theme: Theme): theme is ThemeFn =>
   typeof theme === 'function';
+
+export const isComponentThemeFn = (
+  theme: Theme
+): theme is ComponentThemeFn<{}> => typeof theme === 'function';

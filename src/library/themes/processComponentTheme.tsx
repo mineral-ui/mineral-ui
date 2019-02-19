@@ -1,7 +1,12 @@
 /* @flow */
 import mineralTheme from './mineralTheme';
 
-import { isThemeFn, ThemeObj, Theme } from './types';
+import {
+  ThemeObj,
+  ComponentTheme,
+  ComponentThemeFn,
+  isComponentThemeFn
+} from './types';
 
 const filterKeys = (source: ThemeObj, exclusions: Array<string>) => {
   return exclusions.length
@@ -15,7 +20,7 @@ const filterKeys = (source: ThemeObj, exclusions: Array<string>) => {
 };
 
 export const getProcessedComponentThemeKeys = (
-  componentTheme: Theme,
+  componentTheme: ComponentTheme<{}> | ComponentThemeFn<{}>,
   options: {
     baseTheme?: ThemeObj;
     excludeKeys?: Array<string>;
@@ -26,7 +31,7 @@ export const getProcessedComponentThemeKeys = (
 };
 
 export default function processComponentTheme(
-  componentThemeIn: Theme,
+  componentThemeIn: ComponentTheme<{}> | ComponentThemeFn<{}>,
   options: {
     baseTheme?: ThemeObj;
     excludeKeys?: Array<string>;
@@ -38,8 +43,8 @@ export default function processComponentTheme(
     excludeKeys = [],
     includeBaseTheme
   } = options;
-  const componentTheme = isThemeFn(componentThemeIn)
-    ? componentThemeIn({ theme: baseTheme })
+  const componentTheme = isComponentThemeFn(componentThemeIn)
+    ? componentThemeIn(baseTheme)
     : componentThemeIn;
   const filteredComponentTheme = filterKeys(componentTheme, excludeKeys);
   const filteredBaseTheme = filterKeys(baseTheme, excludeKeys);
