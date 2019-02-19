@@ -6,9 +6,11 @@ import { MenuItems } from '../Menu/types';
 import { PopoverProps } from '../Popover/types';
 import { HTMLAttributes } from 'react';
 
+type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
+
 type Placement = keyof typeof PLACEMENT;
 
-export interface DropdownProps extends PopoverProps {
+export interface DropdownProps extends Omit<PopoverProps, 'content'> {
   children: React.ReactElement<any> | DropdownRenderFn;
   data: MenuItems;
   defaultHighlightedIndex?: number;

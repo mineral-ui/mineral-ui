@@ -42,7 +42,7 @@ const getDropdownItem: GetDropdownItem = (itemAs) => (
       itemAs === NavOverflowMenu.defaultProps.itemAs &&
       props &&
       props.props &&
-      props.props.disabled
+      props.props['disabled']
         ? 'span'
         : itemAs,
     role: null,

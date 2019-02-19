@@ -22,6 +22,11 @@ export interface PaginationProps extends FlexProps {
   visibleRange?: number;
 }
 
+export interface PaginationStyleProps
+  extends Pick<PaginationProps, 'justifyContent'> {
+  as?: React.ComponentType | string;
+}
+
 export interface PaginationDefaultProps {
   messages: PaginationMessages;
   showPageNumbers: boolean;
@@ -41,7 +46,7 @@ export interface PagesProps {
   messages: PagesMessages;
   size?: Size;
   totalPages: number;
-  visibleRange: number;
+  visibleRange?: number;
 }
 
 export type IncrementButtonProps = PagesProps & {
@@ -58,6 +63,8 @@ export interface PageJumperProps extends FlexItemProps {
   size?: Size;
   totalPages: number;
 }
+
+export interface PageJumperStyleProps extends Pick<PageJumperProps, 'width'> {}
 
 export interface PageSizerProps extends FlexItemProps {
   'aria-label'?: string;

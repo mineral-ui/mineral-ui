@@ -294,9 +294,9 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
 
     const target =
       event.type === 'blur' &&
-      event.relatedTarget &&
+      event['relatedTarget'] &&
       popoverContentNode === event.target
-        ? event.relatedTarget
+        ? event['relatedTarget']
         : event.target;
 
     if (usePortal) {

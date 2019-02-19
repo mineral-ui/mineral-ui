@@ -5,7 +5,12 @@ import { GridRoot as Root } from './styled';
 import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
 import { gridPropTypes } from './propTypes';
-import { GridDefaultProps, GridProps, GetGridItems } from './types';
+import {
+  GridDefaultProps,
+  GridProps,
+  GetGridItems,
+  GridItemStyleProps
+} from './types';
 
 const getGridItems: GetGridItems = ({
   breakpoints,
@@ -15,7 +20,11 @@ const getGridItems: GetGridItems = ({
 }) =>
   Children.map(children, (child) =>
     hasDisplayName(child, /GridItem/)
-      ? cloneElement(child, { breakpoints, columns, gutterWidth })
+      ? cloneElement<GridItemStyleProps>(child, {
+          breakpoints,
+          columns,
+          gutterWidth
+        })
       : child
   );
 

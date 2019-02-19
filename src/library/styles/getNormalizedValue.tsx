@@ -7,6 +7,8 @@ import { GetNormalizedValue } from './types';
 const getNormalizedValue: GetNormalizedValue = (
   value: string | number | null,
   base: string | number | null
-) => `${parseFloat(value) / parseFloat(base)}em`;
+) =>
+  `${(typeof value === 'string' ? parseFloat(value) : value) /
+    (typeof base === 'string' ? parseFloat(base) : base)}em`;
 
 export default getNormalizedValue;
