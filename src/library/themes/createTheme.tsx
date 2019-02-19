@@ -15,15 +15,18 @@ import { ThemeObj } from './types';
 
 type PrimaryColor = keyof typeof PRIMARY_COLOR;
 type PrimaryColors = Array<PrimaryColor>;
-interface ColorRampWithInflection { [rampKey: number]: string, inflection?: number }
+interface ColorRampWithInflection {
+  [rampKey: number]: string;
+  inflection?: number;
+}
 interface Colors {
-  black?: string,
-  danger?: Color | ColorRampWithInflection,
-  gray?: ColorRampWithInflection,
-  success?: Color | ColorRampWithInflection,
-  theme?: Color | ColorRampWithInflection,
-  warning?: Color | ColorRampWithInflection,
-  white?: string
+  black?: string;
+  danger?: Color | ColorRampWithInflection;
+  gray?: ColorRampWithInflection;
+  success?: Color | ColorRampWithInflection;
+  theme?: Color | ColorRampWithInflection;
+  warning?: Color | ColorRampWithInflection;
+  white?: string;
 }
 
 const primaryColors: PrimaryColors = enumToArray(PRIMARY_COLOR);
@@ -111,7 +114,7 @@ const primaryColorsByVariation = (colors: Colors = {}) => {
 };
 
 export default function createTheme(
-  options:
+  options?:
     | {
         colors?: Colors;
         overrides?: ThemeObj;
