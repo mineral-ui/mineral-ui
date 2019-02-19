@@ -1,7 +1,7 @@
 /* @flow */
 import mineralTheme from './mineralTheme';
 
-import { ThemeObj, Theme } from './types';
+import { isThemeFn, ThemeObj, Theme } from './types';
 
 const filterKeys = (source: ThemeObj, exclusions: Array<string>) => {
   return exclusions.length
@@ -17,9 +17,9 @@ const filterKeys = (source: ThemeObj, exclusions: Array<string>) => {
 export const getProcessedComponentThemeKeys = (
   componentTheme: Theme,
   options: {
-    baseTheme?: ThemeObj,
-    excludeKeys?: Array<string>,
-    includeBaseTheme?: boolean
+    baseTheme?: ThemeObj;
+    excludeKeys?: Array<string>;
+    includeBaseTheme?: boolean;
   } = {}
 ): Array<string> => {
   return Object.keys(processComponentTheme(componentTheme, options));
@@ -28,9 +28,9 @@ export const getProcessedComponentThemeKeys = (
 export default function processComponentTheme(
   componentThemeIn: Theme,
   options: {
-    baseTheme?: ThemeObj,
-    excludeKeys?: Array<string>,
-    includeBaseTheme?: boolean
+    baseTheme?: ThemeObj;
+    excludeKeys?: Array<string>;
+    includeBaseTheme?: boolean;
   } = {}
 ) {
   const {
@@ -38,10 +38,9 @@ export default function processComponentTheme(
     excludeKeys = [],
     includeBaseTheme
   } = options;
-  const componentTheme =
-    typeof componentThemeIn === 'function'
-      ? componentThemeIn(baseTheme)
-      : componentThemeIn;
+  const componentTheme = isThemeFn(componentThemeIn)
+    ? componentThemeIn({ theme: baseTheme })
+    : componentThemeIn;
   const filteredComponentTheme = filterKeys(componentTheme, excludeKeys);
   const filteredBaseTheme = filterKeys(baseTheme, excludeKeys);
   const filteredBaseThemeKeys = Object.keys(filteredBaseTheme);
