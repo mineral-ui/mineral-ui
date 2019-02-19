@@ -17,7 +17,7 @@ export const findDeep = (
     .find((child) =>
       // @ts-ignore
       hasComplexChildren(child)
-        ? findDeep(child.props.children, finder)
+        ? findDeep(child.props['children'], finder)
         : finder(child)
     );
 
