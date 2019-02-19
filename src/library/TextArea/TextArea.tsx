@@ -127,18 +127,11 @@ export default class TextArea extends Component<TextAreaProps> {
 
     const { maxHeight, minHeight } = window.getComputedStyle(this.textArea);
 
-    /** $FlowFixMe */
     this.textArea.style.height = 'auto';
-    /** $FlowFixMe */
     this.textArea.style.overflowY = 'hidden';
-    /** $FlowFixMe */
     this.textArea.style.height = `${Math.max(
       parseFloat(minHeight),
-      Math.min(
-        /** $FlowFixMe */
-        parseFloat(this.textArea.scrollHeight),
-        parseFloat(maxHeight) || window.Infinity
-      )
+      Math.min(this.textArea.scrollHeight, parseFloat(maxHeight) || Infinity)
     )}px`;
   };
 
