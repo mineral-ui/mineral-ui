@@ -67,11 +67,10 @@ export interface NavItemProps {
 }
 
 export interface NavItemStyleProps
-  extends Pick<
-      NavItemProps,
-      'disabled' | 'maxWidth' | 'prefix' | 'selected' | 'type'
-    >,
-    Pick<BaseNavigationProps, 'align'> {}
+  extends Pick<NavItemProps, 'disabled' | 'maxWidth' | 'prefix' | 'selected'>,
+    Pick<BaseNavigationProps, 'align'> {
+  styleType?: InternalType;
+}
 
 export interface NavOverflowMenuProps {
   data: NavigationItems;

@@ -118,12 +118,12 @@ export default function FauxControl({
     disabled,
     iconEnd,
     iconStart,
-    prefix: prefixIn,
+    stylePrefix: Boolean(prefix),
     ref: controlPropsIn && controlPropsIn.controlRef,
     readOnly,
     ...(controlPropsIn && controlPropsIn.htmlSize
       ? { controlSize: size, size: controlPropsIn.htmlSize }
-      : { size }),
+      : { styleSize: size }),
     suffix: suffixIn,
     variant
   };
@@ -135,7 +135,7 @@ export default function FauxControl({
       {beforeItems}
       {startIcon}
       {prefix}
-      {<Control {...controlProps} key="control" />}
+      <Control {...controlProps} key="control" />
       {suffix}
       {endIcon}
       {afterItems}

@@ -163,16 +163,16 @@ export const Control = styled('input', {
     hasPlaceholder,
     iconEnd,
     iconStart,
-    prefix,
     readOnly,
-    size: nonHtmlSize,
+    stylePrefix,
+    styleSize,
     suffix,
     theme: baseTheme,
     variant
   }) => {
     let theme = fauxControlTheme(baseTheme);
 
-    const size = controlSize || nonHtmlSize;
+    const size = controlSize || styleSize;
 
     if (variant) {
       // prettier-ignore
@@ -230,13 +230,13 @@ export const Control = styled('input', {
       fontStyle: hasPlaceholder ? 'italic' : null,
       outline: 0,
       paddingLeft:
-        ((iconStart || prefix) && !rtl) ||
+        ((iconStart || stylePrefix) && !rtl) ||
         ((iconEnd || variant || suffix) && rtl)
           ? 0
           : paddingWithoutIcon,
       paddingRight:
         ((iconEnd || variant || suffix) && !rtl) ||
-        ((iconStart || prefix) && rtl)
+        ((iconStart || stylePrefix) && rtl)
           ? 0
           : paddingWithoutIcon,
 

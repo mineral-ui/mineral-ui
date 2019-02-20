@@ -50,7 +50,15 @@ const NavItemButton = styled(Button, {
   shouldForwardProp: (prop) =>
     prop === 'as' || ['prefix', 'selected', 'type'].indexOf(prop) === -1
 })<NavItemStyleProps>(
-  ({ align, disabled, maxWidth, prefix, selected, theme: baseTheme, type }) => {
+  ({
+    align,
+    disabled,
+    maxWidth,
+    prefix,
+    selected,
+    theme: baseTheme,
+    styleType
+  }) => {
     const theme = navItemTheme(baseTheme);
 
     return {
@@ -58,21 +66,21 @@ const NavItemButton = styled(Button, {
       display: 'block',
 
       '&:hover': {
-        color: !disabled && theme[`${prefix}NavItem_color${type}_hover`]
+        color: !disabled && theme[`${prefix}NavItem_color${styleType}_hover`]
       },
 
       ...(align === ALIGN.justify ? { flexGrow: 1 } : { maxWidth }),
 
       ...(selected
         ? {
-            ...(type === INTERNAL_TYPE.tabs
+            ...(styleType === INTERNAL_TYPE.tabs
               ? {
                   position: 'relative',
 
                   '&::before': {
                     // prettier-ignore
                     backgroundColor:
-                      theme[`${prefix}NavItem_borderColor${type}_selected`],
+                      theme[`${prefix}NavItem_borderColor${styleType}_selected`],
                     bottom: -2,
                     content: '""',
                     left: -1,
@@ -83,23 +91,23 @@ const NavItemButton = styled(Button, {
                 }
               : {
                   borderColor:
-                    theme[`${prefix}NavItem_borderColor${type}_selected`]
+                    theme[`${prefix}NavItem_borderColor${styleType}_selected`]
                 }),
 
             '&:hover': {
               backgroundColor:
-                theme[`${prefix}NavItem_backgroundColor${type}_selected`],
+                theme[`${prefix}NavItem_backgroundColor${styleType}_selected`],
               borderColor:
-                type !== '_tabs'
-                  ? theme[`${prefix}NavItem_borderColor${type}_selected`]
+                styleType !== '_tabs'
+                  ? theme[`${prefix}NavItem_borderColor${styleType}_selected`]
                   : undefined,
-              color: theme[`${prefix}NavItem_color${type}_selected`]
+              color: theme[`${prefix}NavItem_color${styleType}_selected`]
             },
 
             '&, &:focus': {
               backgroundColor:
-                theme[`${prefix}NavItem_backgroundColor${type}_selected`],
-              color: theme[`${prefix}NavItem_color${type}_selected`]
+                theme[`${prefix}NavItem_backgroundColor${styleType}_selected`],
+              color: theme[`${prefix}NavItem_color${styleType}_selected`]
             }
           }
         : undefined),
@@ -129,7 +137,7 @@ const NavItemButton = styled(Button, {
  * pattern.
  */
 export const NavItemRoot = themed(NavItemButton)(
-  ({ prefix, theme: baseTheme, type }) => {
+  ({ prefix, theme: baseTheme, styleType }) => {
     const theme = {
       ...navItemTheme(baseTheme),
       ...navigationTheme(baseTheme)
@@ -137,30 +145,30 @@ export const NavItemRoot = themed(NavItemButton)(
 
     // prettier-ignore
     return {
-      borderColor_theme_focus: theme[`${prefix}NavItem_borderColor${type}_focus`],
-      boxShadow_focusInner: theme[`${prefix}Nav_backgroundColor${type}`],
+      borderColor_theme_focus: theme[`${prefix}NavItem_borderColor${styleType}_focus`],
+      boxShadow_focusInner: theme[`${prefix}Nav_backgroundColor${styleType}`],
 
-      Button_backgroundColor: theme[`${prefix}NavItem_backgroundColor${type}`],
-      Button_backgroundColor_active: theme[`${prefix}NavItem_backgroundColor${type}_active`],
-      Button_backgroundColor_focus: theme[`${prefix}NavItem_backgroundColor${type}_focus`],
-      Button_backgroundColor_hover: theme[`${prefix}NavItem_backgroundColor${type}_hover`],
-      Button_borderColor: theme[`${prefix}NavItem_borderColor${type}`],
-      Button_borderColor_active: theme[`${prefix}NavItem_borderColor${type}_active`],
-      Button_borderColor_focus: theme[`${prefix}NavItem_borderColor${type}_focus`],
-      Button_borderColor_hover: theme[`${prefix}NavItem_borderColor${type}_hover`],
-      Button_color: theme[`${prefix}NavItem_color${type}`],
+      Button_backgroundColor: theme[`${prefix}NavItem_backgroundColor${styleType}`],
+      Button_backgroundColor_active: theme[`${prefix}NavItem_backgroundColor${styleType}_active`],
+      Button_backgroundColor_focus: theme[`${prefix}NavItem_backgroundColor${styleType}_focus`],
+      Button_backgroundColor_hover: theme[`${prefix}NavItem_backgroundColor${styleType}_hover`],
+      Button_borderColor: theme[`${prefix}NavItem_borderColor${styleType}`],
+      Button_borderColor_active: theme[`${prefix}NavItem_borderColor${styleType}_active`],
+      Button_borderColor_focus: theme[`${prefix}NavItem_borderColor${styleType}_focus`],
+      Button_borderColor_hover: theme[`${prefix}NavItem_borderColor${styleType}_hover`],
+      Button_color: theme[`${prefix}NavItem_color${styleType}`],
       Button_paddingHorizontal: theme[`${prefix}NavItem_paddingHorizontal`],
 
       ButtonContent_fontSize_small: theme.fontSize_ui,
 
       ButtonIcon_color: theme[`${prefix}NavItemIcon_color`],
 
-      ...(type === INTERNAL_TYPE.none
-        ? { color_disabled: theme[`${prefix}NavItem_color${type}_disabled`] }
+      ...(styleType === INTERNAL_TYPE.none
+        ? { color_disabled: theme[`${prefix}NavItem_color${styleType}_disabled`] }
         : undefined
       ),
 
-      ...(type === INTERNAL_TYPE.tabs
+      ...(styleType === INTERNAL_TYPE.tabs
         ? { Button_borderRadius: `${theme.borderRadius_1} ${theme.borderRadius_1} 0 0` }
         : undefined
       )

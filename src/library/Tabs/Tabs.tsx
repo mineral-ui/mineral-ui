@@ -45,6 +45,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
       label,
       height,
       maxTabWidth,
+      onChange: ignoreOnChange,
       position,
       ...restProps
     } = this.props;
@@ -54,7 +55,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     let tabPanelProps;
     let tabItems = [];
 
-    Children.forEach(children, (tab, index) => {
+    Children.forEach<React.ReactElement<any>>(children, (tab, index) => {
       const { children, disabled, icon, id, maxWidth, title } = tab.props;
       if (id && ids.indexOf(id) === -1) {
         ids.push(id);
@@ -196,7 +197,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
 
   getNonDisabledIndex = (
     index: number,
-    { decrease }: { decrease: boolean | null | undefined } = {}
+    { decrease }: { decrease?: boolean | null | undefined } = {}
   ) =>
     this.disabledTabIndexes.has(index)
       ? this.getNonDisabledIndex(decrease ? index - 1 : index + 1, { decrease })
@@ -204,7 +205,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
 
   setSelectedTabIndex = (
     selectedTabIndex: number,
-    event: React.SyntheticEvent<HTMLAnchorElement>
+    event: React.SyntheticEvent
   ) => {
     if (selectedTabIndex !== this.state.selectedTabIndex) {
       this.setState(
@@ -216,7 +217,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
             const nextTab =
               this.root &&
               this.root.querySelector(`[data-index="${selectedTabIndex}"]`);
-            nextTab && nextTab.focus();
+            nextTab && nextTab instanceof HTMLElement && nextTab.focus();
           }
           this.changeActions(selectedTabIndex, event);
         }
@@ -224,10 +225,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
     }
   };
 
-  changeActions = (
-    selectedTabIndex: number,
-    event: React.SyntheticEvent<HTMLAnchorElement>
-  ) => {
+  changeActions = (selectedTabIndex: number, event: React.SyntheticEvent) => {
     const { onChange } = this.props;
     onChange && onChange(selectedTabIndex, event);
   };

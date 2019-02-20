@@ -11,16 +11,13 @@ type TabsPosition = keyof typeof POSITION;
 export interface TabsProps {
   align?: Align;
   'aria-labelledby'?: string;
-  children?: React.ReactNode;
+  children?: React.ReactElement<any> | React.ReactElement<any>[];
   defaultSelectedTabIndex?: number;
   id?: string;
   label: string;
   height?: number | string;
   maxTabWidth?: number | string;
-  onChange?: (
-    selectedTabIndex: number,
-    event: React.SyntheticEvent<HTMLAnchorElement>
-  ) => void;
+  onChange?: (selectedTabIndex: number, event: React.SyntheticEvent) => void;
   position?: TabsPosition;
   selectedTabIndex?: number;
   theme: object;
@@ -124,7 +121,7 @@ export interface TabPanelProps {
 }
 
 export interface TabPanelStyleProps {
-  position: TabsPosition;
+  position?: TabsPosition;
   role: string;
 }
 

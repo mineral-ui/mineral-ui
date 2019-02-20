@@ -41,19 +41,13 @@ export interface FauxControlUnderlayStyleProps
 export interface FauxControlControlStyleProps
   extends Pick<
     FauxControlProps,
-    | 'disabled'
-    | 'iconEnd'
-    | 'iconStart'
-    | 'readOnly'
-    | 'size'
-    | 'suffix'
-    | 'variant'
+    'disabled' | 'iconEnd' | 'iconStart' | 'readOnly' | 'suffix' | 'variant'
   > {
-  // size: Doesn't match DOM expectation, but no error thrown :shrug:
   controlPropsIn?: object;
   controlSize?: Size;
   hasPlaceholder?: boolean;
-  prefix?: string; // Overwrite FauxControlProps to match DOM expectation
+  stylePrefix?: boolean;
+  styleSize?: Size;
 }
 
 export type FauxControlThemeFn = ComponentThemeFn<FauxControlTheme>;
