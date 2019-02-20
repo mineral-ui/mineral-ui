@@ -13,7 +13,7 @@ export interface TextInputProps extends FauxControlProps {
   htmlSize?: number | string;
   iconStart?: React.ReactElement<any>;
   iconEnd?: React.ReactElement<any>;
-  inputRef?: (node: React.Component | null | undefined) => void;
+  inputRef?: (node: HTMLElement | null | undefined) => void;
   rootProps?: object;
   invalid?: boolean;
   onChange?: (event: React.SyntheticEvent) => void;

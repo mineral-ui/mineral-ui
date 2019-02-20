@@ -12,11 +12,11 @@ export interface FauxControlProps {
   children?: React.ReactNode;
   control: React.ComponentType;
   controlProps?: {
-    controlRef?: (node: React.Component | null | undefined) => void;
+    controlRef?: (node: HTMLElement | null | undefined) => void;
     htmlSize?: number;
   };
   disabled?: boolean;
-  fauxControlRef?: (node: React.Component | null | undefined) => void;
+  fauxControlRef?: (node: HTMLElement | null | undefined) => void;
   iconStart?: React.ReactElement<any>;
   iconEnd?: React.ReactElement<any>;
   prefix?: React.ReactNode;
