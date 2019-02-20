@@ -68,32 +68,3 @@ const getBoxShadows = ({ theme: baseTheme, ...restProps }) => {
     }, []);
   return boxShadows.length ? boxShadows.join(',') : undefined;
 };
-
-export const getScrollerStyles = ({
-  scrollX,
-  scrollY
-}: {
-  scrollX: boolean;
-  scrollY: boolean;
-}) => ({
-  flex: '1 1 auto',
-
-  // [1] - 1px to avoid unwanted scrollbar,
-  //       1px in to avoid potentially cutting off of focus ring of
-  //       subcomponents in body
-  ...(scrollX
-    ? {
-        overflowY: 'hidden',
-        paddingLeft: 2, // [1]
-        paddingRight: 2 // [1]
-      }
-    : undefined),
-
-  ...(scrollY
-    ? {
-        overflowX: 'hidden',
-        paddingBottom: 2, // [1]
-        paddingTop: 2 // [1]
-      }
-    : undefined)
-});
