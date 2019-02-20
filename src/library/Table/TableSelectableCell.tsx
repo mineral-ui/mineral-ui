@@ -7,7 +7,9 @@ import { PaddedCheckbox } from './styled';
 
 import { TableSelectableCellProps } from './types';
 
-export default class TableSelectableCell extends Component<TableSelectableCellProps> {
+export default class TableSelectableCell extends Component<
+  TableSelectableCellProps
+> {
   static displayName = 'TableSelectableCell';
 
   shouldComponentUpdate(nextProps: TableSelectableCellProps) {
@@ -41,7 +43,6 @@ export default class TableSelectableCell extends Component<TableSelectableCellPr
             checked,
             disabled,
             density,
-            hideLabel: true,
             indeterminate,
             isHeader,
             label,
