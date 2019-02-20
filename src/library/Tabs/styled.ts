@@ -1,5 +1,3 @@
-/* @flow */
-import React from 'react';
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import withProps from 'recompose/withProps';
@@ -162,7 +160,9 @@ const TabListThemedOverflowContainerWithShadows = themed(
     };
 });
 
-const TabListArrowButton = withProps({ type: 'button' })(
+export const TabListArrowButton = withProps<TabListArrowButtonStyleProps, {}>({
+  type: 'button'
+})(
   styled(TabListThemedButton)<TabListArrowButtonStyleProps>(
     ({ theme: baseTheme }) => {
       const theme = tabListTheme(baseTheme);
@@ -292,24 +292,6 @@ export const TabListRoot = styled('div', {
       }
     : undefined)
 }));
-
-// TODO: Can we just use withProps here instead of JSX?
-// eslint-disable-next-line react/display-name
-export const TabListIncrementButton = ({
-  icon,
-  ...restProps
-}: {
-  icon: React.ReactElement<any>;
-}) => (
-  <TabListArrowButton
-    aria-hidden
-    iconStart={icon}
-    minimal
-    size="medium"
-    tabIndex={-1}
-    {...restProps}
-  />
-);
 
 export const TabPanelOverflowContainer = withProps({
   scrollY: true,

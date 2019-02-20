@@ -1,5 +1,5 @@
 /* @flow */
-import React, { Children, Component } from 'react';
+import React, { Children, Component, Fragment } from 'react';
 import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
 import IconChevronLeft from '../Icon/IconChevronLeft';
@@ -8,7 +8,7 @@ import IconExpandLess from '../Icon/IconExpandLess';
 import IconExpandMore from '../Icon/IconExpandMore';
 import {
   TabListRoot as Root,
-  TabListIncrementButton as IncrementButton,
+  TabListArrowButton as ArrowButton,
   TabListInner as Inner,
   TabListList as List
 } from './styled';
@@ -70,31 +70,37 @@ export default class TabList extends Component<TabListProps, TabListState> {
 
     let content = <List {...listProps}>{children}</List>;
     if (scrollable) {
+      const arrowButtonProps = {
+        'aria-hidden': true,
+        minimal: true,
+        size: 'medium',
+        tabIndex: -1
+      };
       const innerProps = {
         position,
         scrollX: !vertical,
         scrollY: vertical,
         vertical
       };
-      content = [
-        <IncrementButton
-          key="start"
-          icon={vertical ? <IconExpandLess /> : <IconChevronLeft />}
-          onClick={(event) => {
-            onIncrement && onIncrement('ArrowLeft', event);
-          }}
-        />,
-        <Inner key="inner" {...innerProps}>
-          {content}
-        </Inner>,
-        <IncrementButton
-          key="end"
-          icon={vertical ? <IconExpandMore /> : <IconChevronRight />}
-          onClick={(event) => {
-            onIncrement && onIncrement('ArrowRight', event);
-          }}
-        />
-      ];
+      content = (
+        <Fragment>
+          <ArrowButton
+            {...arrowButtonProps}
+            iconStart={vertical ? <IconExpandLess /> : <IconChevronLeft />}
+            onClick={(event) => {
+              onIncrement && onIncrement('ArrowLeft', event);
+            }}
+          />
+          <Inner {...innerProps}>{content}</Inner>
+          <ArrowButton
+            {...arrowButtonProps}
+            iconStart={vertical ? <IconExpandMore /> : <IconChevronRight />}
+            onClick={(event) => {
+              onIncrement && onIncrement('ArrowRight', event);
+            }}
+          />
+        </Fragment>
+      );
     }
 
     return (
