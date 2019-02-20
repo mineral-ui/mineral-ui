@@ -4,7 +4,7 @@ export enum ALIGN {
   end = 'end',
   center = 'center',
   justify = 'justify'
-};
+}
 
 export enum APPEARANCE {
   h1 = 'h1',
@@ -16,14 +16,14 @@ export enum APPEARANCE {
   mouse = 'mouse',
   p = 'p',
   prose = 'prose'
-};
+}
 
 export enum FONT_WEIGHT {
   regular = 'regular',
   semiBold = 'semiBold',
   bold = 'bold',
   extraBold = 'extraBold'
-};
+}
 
 export const HEADING_ELEMENTS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 

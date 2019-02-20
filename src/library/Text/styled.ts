@@ -4,7 +4,12 @@ import styled from '@emotion/styled';
 import { rtlTextAlign } from '../utils';
 import { componentStyleReset } from '../styles';
 import { textTheme } from './themes';
-import { APPEARANCE, HEADING_ELEMENTS, MONOSPACE_ELEMENTS } from './constants';
+import {
+  ALIGN,
+  APPEARANCE,
+  HEADING_ELEMENTS,
+  MONOSPACE_ELEMENTS
+} from './constants';
 
 import { StyleObj } from '../styles/types';
 import { TextStyleProps, TextTheme } from './types';
@@ -114,7 +119,7 @@ export const TextRoot = styled('p', {
         }
       })(),
       lineHeight: theme.Text_lineHeight,
-      textAlign: rtlTextAlign(align, theme.direction),
+      textAlign: ALIGN[rtlTextAlign(align, theme.direction)],
       ...getCommonStyles(as, theme, truncate),
       // 1 - Not normalized because we actually want `##em` as applied value
       // 2 - Must come after commonStyles

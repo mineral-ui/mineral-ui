@@ -1,5 +1,3 @@
-/* @flow */
-
 export default function rtlTextAlign(align?: string, direction?: string) {
   const rtl = direction === 'rtl';
   if ((rtl && align === 'start') || (!rtl && align === 'end')) {
