@@ -4,10 +4,12 @@ import { LABEL_POSITION, SIZE } from './constants';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 import { ChoiceProps, ChoiceGroupProps } from '../Choice/types';
 
+type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
+
 type LabelPosition = keyof typeof LABEL_POSITION;
 type Size = keyof typeof SIZE;
 
-export interface RadioProps extends ChoiceProps {}
+export interface RadioProps extends Omit<ChoiceProps, 'iconChecked' | 'type'> {}
 
 export interface RadioDefaultProps {
   labelPosition: LabelPosition;

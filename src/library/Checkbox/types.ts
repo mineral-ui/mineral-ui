@@ -4,10 +4,13 @@ import { SIZE, LABEL_POSITION } from './constants';
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 import { ChoiceProps, ChoiceGroupProps } from '../Choice/types';
 
+type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
+
 type LabelPosition = keyof typeof LABEL_POSITION;
 type Size = keyof typeof SIZE;
 
-export interface CheckboxProps extends ChoiceProps {
+export interface CheckboxProps
+  extends Omit<ChoiceProps, 'iconChecked' | 'type'> {
   defaultIndeterminate?: boolean;
   indeterminate?: boolean;
   onClick?: (event: React.SyntheticEvent) => void;
