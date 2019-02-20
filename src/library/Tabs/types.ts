@@ -5,7 +5,7 @@ import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 import { OverflowContainerWithShadowsProps } from '../OverflowContainer/types';
 
 type Align = keyof typeof ALIGN;
-type Position = keyof typeof POSITION;
+type TabsPosition = keyof typeof POSITION;
 
 export interface TabsProps {
   align?: Align;
@@ -20,18 +20,19 @@ export interface TabsProps {
     selectedTabIndex: number,
     event: React.SyntheticEvent<HTMLAnchorElement>
   ) => void;
-  position?: Position;
+  position?: TabsPosition;
   selectedTabIndex?: number;
   theme: object;
 }
 
-export interface TabsStyleProps
-  extends Pick<TabsProps, 'height' | 'position'> {}
+export interface TabsStyleProps extends Pick<TabsProps, 'height'> {
+  position?: string;
+}
 
 export interface TabsDefaultProps {
   align: Align;
   maxTabWidth: number | string;
-  position: Position;
+  position: TabsPosition;
 }
 
 export interface TabsState {
@@ -72,13 +73,13 @@ export interface TabListProps {
   children?: React.ReactNode;
   height?: number | string;
   onIncrement?: (direction: string, event: React.SyntheticEvent) => void;
-  position?: Position;
+  position?: TabsPosition;
   role?: string;
   vertical?: boolean;
 }
 
 export interface TabListDefaultProps {
-  position: Position;
+  position: TabsPosition;
 }
 
 export interface TabListState {
@@ -114,7 +115,7 @@ export interface TabPanelProps {
 }
 
 export interface TabPanelStyleProps {
-  position: Position;
+  position: TabsPosition;
   role: string;
 }
 
