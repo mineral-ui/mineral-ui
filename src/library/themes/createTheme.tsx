@@ -84,15 +84,14 @@ const getWhiteOrBlackTextColor = (color, colors, override) => {
   const black = colors.black || palette.black;
   const white = colors.white || palette.white;
 
-  const inflectionPoints: { [PrimaryColor]: number } = primaryColors.reduce(
-    (acc, color) => {
-      acc[color] = colorAliases[
-        `backgroundColor_${color === 'theme' ? 'brand' : color}Primary`
-      ].split('_')[1];
-      return acc;
-    },
-    {}
-  );
+  const inflectionPoints = primaryColors.reduce<{
+    [PrimaryColor: string]: number;
+  }>((acc, color) => {
+    acc[color] = colorAliases[
+      `backgroundColor_${color === 'theme' ? 'brand' : color}Primary`
+    ].split('_')[1];
+    return acc;
+  }, {});
 
   return override && typeof override.inflection === 'number'
     ? override.inflection > inflectionPoints[color]
