@@ -10,80 +10,11 @@ import {
 import { TextProps } from '../Text/types';
 import { CheckboxProps } from 'mineral-ui/Checkbox/types';
 
+type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
+
 type ColumnAlign = keyof typeof COLUMN_ALIGN;
 type Density = keyof typeof DENSITY;
 type TitleElement = keyof typeof TITLE_ELEMENT;
-
-export interface TableProps {
-  columns?: Columns;
-  data: Rows;
-  defaultSelectedRows?: Rows;
-  defaultSort?: Sort;
-  density?: Density;
-  hideHeader?: boolean;
-  hideTitle?: boolean;
-  highContrast?: boolean;
-  messages?: Messages;
-  onSort?: (sort: Sort) => void;
-  onToggleAllRows?: (rows: Rows, selected: boolean) => void;
-  onToggleRow?: (row: Row, selected: boolean) => void;
-  rowKey?: string;
-  scrollable?: boolean;
-  selectable?: boolean;
-  selectedRows?: Rows;
-  sort?: Sort;
-  sortable?: boolean;
-  sortComparator?: (a: object, b: object, key: string) => -1 | 0 | 1;
-  striped?: boolean;
-  title: React.ReactNode;
-  titleAppearance?: TitleElement;
-  titleAs?: TitleElement;
-}
-
-export interface TableDefaultProps {
-  density: Density;
-  messages: Messages;
-  titleAs: TitleElement;
-}
-
-export type SelectableTableProps = any; // TODO
-
-export type SortableTableProps = any; // TODO
-
-export type SelectableSortableTableProps = any; // TODO
-
-export type TableBaseProps = {
-  columns: Columns;
-  data: Rows;
-  hideHeader?: boolean;
-  hideTitle?: boolean;
-  id?: string;
-  isSortable?: boolean;
-  messages: Messages;
-  rowKey?: string;
-  scrollable?: boolean;
-  selectable?: SelectableType;
-  sortable?: SortableType;
-  title: React.ReactNode;
-  titleAppearance?: TitleElement;
-  titleAs?: TitleElement;
-} & TableContextType;
-
-export interface TableBaseDefaultProps {
-  density: Density;
-  scrollable: boolean;
-  titleAs: TitleElement;
-}
-
-export interface TableBaseState {
-  scrollable: boolean;
-}
-
-export interface TableContextType {
-  density?: Density;
-  highContrast?: boolean;
-  striped?: boolean;
-}
 
 export interface Column {
   cell?: RenderFn;
@@ -124,14 +55,68 @@ export interface RenderProps {
   helpers?: object;
 }
 
-export type SortComparator = (a: object, b: object, key: string) => -1 | 0 | 1;
+export interface TableContextType {
+  density?: Density;
+  highContrast?: boolean;
+  striped?: boolean;
+}
 
-export interface Comparators {
-  [column: string]: SortComparator;
+interface BaseTableProps extends TableContextType {
+  columns?: Columns;
+  data: Rows;
+  density?: Density;
+  hideHeader?: boolean;
+  hideTitle?: boolean;
+  highContrast?: boolean;
+  messages?: Messages;
+  rowKey?: string;
+  scrollable?: boolean;
+  striped?: boolean;
+  title?: React.ReactNode;
+  titleAppearance?: TitleElement;
+  titleAs?: TitleElement;
+}
+
+export interface TableProps extends BaseTableProps {
+  defaultSelectedRows?: Rows;
+  defaultSort?: Sort;
+  onSort?: OnSort;
+  onToggleAllRows?: OnToggleAllRows;
+  onToggleRow?: OnToggleRow;
+  selectable?: boolean;
+  selectedRows?: Rows;
+  sort?: Sort;
+  sortable?: boolean;
+  sortComparator?: SortComparator;
+  title: React.ReactNode;
+}
+
+export interface TableDefaultProps {
+  density: Density;
+  messages: Messages;
+  titleAs: TitleElement;
+}
+
+export interface SelectableItem {
+  disabled?: boolean;
+}
+
+type SelectableData = Array<SelectableItem>;
+
+export type SelectableToggle = (item: SelectableItem) => void;
+
+export type SelectableToggleAll = () => void;
+
+export interface SelectableType {
+  all: boolean;
+  some: boolean;
+  isSelected: (item: SelectableItem) => boolean;
+  toggle: SelectableToggle;
+  toggleAll: SelectableToggleAll;
 }
 
 export interface SelectableProps {
-  children: (props: object) => React.ReactNode;
+  children: (props: { selectable: SelectableType }) => React.ReactNode;
   data: SelectableData;
   defaultSelected?: SelectableData;
   onToggle?: (item: SelectableItem, selected: boolean) => void;
@@ -143,51 +128,86 @@ export interface SelectableState {
   selected: SelectableData;
 }
 
-type SelectableData = Array<SelectableItem>;
+type OnToggleRow = (row: Row, selected: boolean) => void;
 
-export interface SelectableItem {
-  disabled?: boolean;
+type OnToggleAllRows = (rows: Row, selected: boolean) => void;
+
+export interface SelectableTableProps
+  extends Omit<BaseTableProps, 'data'>,
+    Omit<SelectableProps, 'children'> {
+  onToggle?: OnToggleRow;
+  onToggleAll?: OnToggleAllRows;
+  selectableRows?: SelectableData;
 }
-
-export interface SelectableType {
-  all: boolean;
-  some: boolean;
-  isSelected: (item: SelectableItem) => boolean;
-  toggle: SelectableToggle;
-  toggleAll: SelectableToggleAll;
-}
-
-export type SelectableToggle = (item: SelectableItem) => void;
-
-export type SelectableToggleAll = () => void;
-
-export interface SortableProps {
-  children: (props: object) => React.ReactNode;
-  comparators?: Comparators;
-  data: SortableData;
-  defaultSort?: Sort;
-  onSort?: (sort: Sort) => void;
-  sort?: Sort;
-  sortComparator: SortComparator;
-}
-
-export interface SortableState {
-  sort: Sort | null | undefined;
-}
-
-export type SortableData = Array<object>;
 
 export interface Sort {
   key: string;
   descending?: boolean;
 }
 
-export type SortFn = (Sort) => void;
+export type OnSort = (sort: Sort) => void;
+
+export type SortFn = OnSort;
+
+export type SortableData = Array<object>;
 
 export interface SortableType {
   data: SortableData;
   sort: Sort | null | undefined;
-  sortFn: SortFn;
+  sortFn: OnSort;
+}
+
+export type SortComparator = (a: object, b: object, key: string) => -1 | 0 | 1;
+
+export interface Comparators {
+  [column: string]: SortComparator;
+}
+
+export interface SortableProps {
+  children: (props: {
+    onSort?: OnSort;
+    sortable: SortableType;
+  }) => React.ReactNode;
+  comparators?: Comparators;
+  data: SortableData;
+  defaultSort?: Sort;
+  isSortable?: boolean;
+  onSort?: OnSort;
+  sort?: Sort;
+  sortComparator?: SortComparator;
+}
+
+export interface SortableTableProps
+  extends Omit<BaseTableProps, 'data'>,
+    Omit<SortableProps, 'children'> {
+  data: SortableData;
+  sortable?: boolean;
+}
+
+export interface SortableState {
+  sort: Sort | null | undefined;
+}
+
+export interface SelectableSortableTableProps
+  extends Omit<SelectableTableProps, 'data'>,
+    Omit<SortableTableProps, 'data'>,
+    Pick<TableProps, 'data'> {}
+
+export interface TableBaseProps extends BaseTableProps {
+  id?: string;
+  isSortable?: boolean;
+  selectable?: SelectableType;
+  sortable?: SortableType;
+}
+
+export interface TableBaseDefaultProps {
+  density: Density;
+  scrollable: boolean;
+  titleAs: TitleElement;
+}
+
+export interface TableBaseState {
+  scrollable: boolean;
 }
 
 export type TableThemeFn = ComponentThemeFn<TableTheme>;

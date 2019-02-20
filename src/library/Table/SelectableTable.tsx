@@ -9,14 +9,7 @@ const SelectableTable = (props: SelectableTableProps) => {
   const { data, selectableRows } = props;
   return (
     <Selectable {...props} data={selectableRows}>
-      {(props) => {
-        const {
-          onToggle: ignoreOnToggle,
-          onToggleAll: ignoreOnToggleAll,
-          ...restProps
-        } = props;
-        return <TableBase {...restProps} data={data} />;
-      }}
+      {(props) => <TableBase {...props} data={data} />}
     </Selectable>
   );
 };

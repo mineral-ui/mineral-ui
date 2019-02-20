@@ -13,11 +13,7 @@ import {
 } from './styled';
 import { DENSITY, TITLE_ELEMENT } from './constants';
 
-import {
-  TableBaseDefaultProps,
-  TableBaseProps,
-  TableBaseState
-} from './types';
+import { TableBaseDefaultProps, TableBaseProps, TableBaseState } from './types';
 
 export default class TableBase extends Component<
   TableBaseProps,
