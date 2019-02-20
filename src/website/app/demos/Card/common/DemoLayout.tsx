@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 import clearFix from 'polished/lib/mixins/clearFix';
 import styled from '@emotion/styled';
 
-type DemoLayoutProps = {};
+interface DemoLayoutProps {}
 
 const Root = styled('div')(({ theme }) => {
   const rtl = theme.direction === 'rtl';
@@ -31,9 +31,9 @@ const Root = styled('div')(({ theme }) => {
   };
 });
 
-const DemoLayout = forwardRef<DemoLayoutProps, HTMLElement>(
-  (props: DemoLayoutProps, ref: React$Ref<*>) => <Root {...props} ref={ref} />
-);
+const DemoLayout = forwardRef<HTMLDivElement, DemoLayoutProps>((props, ref) => (
+  <Root {...props} ref={ref} />
+));
 
 DemoLayout.displayName = 'DemoLayout';
 

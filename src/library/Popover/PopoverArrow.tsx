@@ -4,8 +4,8 @@ import { PopoverArrowRoot as Root } from './styled';
 
 import { PopoverArrowProps } from './types';
 
-const PopoverArrow = forwardRef<PopoverArrowProps, HTMLElement>(
-  (props: PopoverArrowProps, ref: React.Ref<any>) => {
+const PopoverArrow = forwardRef<HTMLElement, PopoverArrowProps>(
+  (props, ref) => {
     return (
       <Root {...props} aria-hidden ref={ref}>
         ▼

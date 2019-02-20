@@ -6,7 +6,7 @@ import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
 import data from '../../../Menu/common/menuData';
 
-type DemoLayoutProps = {};
+interface DemoLayoutProps {}
 
 const Root = styled('div')({
   display: 'flex',
@@ -14,9 +14,9 @@ const Root = styled('div')({
   justifyContent: 'space-between'
 });
 
-const DemoLayout = forwardRef<DemoLayoutProps, HTMLElement>(
-  (props: DemoLayoutProps, ref: React$Ref<*>) => <Root {...props} ref={ref} />
-);
+const DemoLayout = forwardRef<HTMLDivElement, DemoLayoutProps>((props, ref) => (
+  <Root {...props} ref={ref} />
+));
 
 DemoLayout.displayName = 'DemoLayout';
 

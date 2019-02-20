@@ -86,7 +86,7 @@ const getPageButtons = ({
 };
 
 // eslint-disable-next-line react/display-name
-const IncrementButton = forwardRef<IncrementButtonProps, HTMLButtonElement>(
+const IncrementButton = forwardRef<HTMLButtonElement, IncrementButtonProps>(
   (
     {
       currentPage,
