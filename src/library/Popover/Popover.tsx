@@ -292,6 +292,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
     const node = findDOMNode(this);
     const popoverContentNode = this.popoverContent;
 
+    // TODO: typecheck refinement using FocusEvent, which includes relatedTarget
     const target =
       event.type === 'blur' &&
       event['relatedTarget'] &&
