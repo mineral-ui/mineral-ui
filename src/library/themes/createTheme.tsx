@@ -85,7 +85,7 @@ const getWhiteOrBlackTextColor = (color, colors, override) => {
   const white = colors.white || palette.white;
 
   const inflectionPoints = primaryColors.reduce<{
-    [PrimaryColor: string]: number;
+    [primaryColor: string]: number;
   }>((acc, color) => {
     acc[color] = colorAliases[
       `backgroundColor_${color === 'theme' ? 'brand' : color}Primary`
