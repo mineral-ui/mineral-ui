@@ -3,6 +3,7 @@ import { ALIGN, POSITION } from './constants';
 
 import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
 import { OverflowContainerWithShadowsProps } from '../OverflowContainer/types';
+import { ButtonProps } from 'mineral-ui/Button/types';
 
 type Align = keyof typeof ALIGN;
 type TabsPosition = keyof typeof POSITION;
@@ -55,6 +56,12 @@ export interface TabProps {
   title: React.ReactNode;
 }
 
+export interface TabStyleProps
+  extends ButtonProps,
+    Pick<TabProps, 'disabled' | 'maxWidth' | 'selected'> {
+  position?: string;
+}
+
 export type TabThemeFn = ComponentThemeFn<TabTheme>;
 export type TabTheme = ComponentTheme<TabThemeKeys>;
 interface TabThemeKeys {
@@ -88,6 +95,8 @@ export interface TabListState {
 
 export interface TabListStyleProps
   extends Pick<TabListProps, 'height' | 'vertical'> {}
+
+export interface TabListArrowButtonStyleProps extends ButtonProps {}
 
 export interface TabListInnerStyleProps
   extends OverflowContainerWithShadowsProps,

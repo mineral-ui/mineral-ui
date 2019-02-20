@@ -1,8 +1,14 @@
 /* @flow */
 import { COLUMN_ALIGN, DENSITY, TITLE_ELEMENT } from './constants';
 
-import { ComponentTheme, ComponentThemeFn, ThemeValue } from '../themes/types';
+import {
+  ComponentTheme,
+  ComponentThemeFn,
+  ThemeValue,
+  ThemeObj
+} from '../themes/types';
 import { TextProps } from '../Text/types';
+import { CheckboxProps } from 'mineral-ui/Checkbox/types';
 
 type ColumnAlign = keyof typeof COLUMN_ALIGN;
 type Density = keyof typeof DENSITY;
@@ -201,6 +207,12 @@ export interface TableCellProps extends TableContextType {
   textAlign?: ColumnAlign;
 }
 
+export type TableCellStyles = (
+  a: TableCellProps & {
+    theme: ThemeObj;
+  }
+) => object;
+
 export type TableCellThemeFn = ComponentThemeFn<TableCellTheme>;
 export type TableCellTheme = ComponentTheme<TableCellThemeKeys>;
 interface TableCellThemeKeys {
@@ -302,6 +314,10 @@ export interface TableSelectableCellProps extends TableCellProps {
   label: string;
   onChange: () => void;
 }
+
+export interface TableSelectableCellStyleProps
+  extends Pick<CheckboxProps, 'hideLabel'>,
+    Pick<TableSelectableCellProps, 'density' | 'isHeader'> {}
 
 export interface TableSortableHeaderCellProps extends TableHeaderCellProps {
   children: React.ReactNode;

@@ -11,13 +11,16 @@ import OverflowContainer, {
   OverflowContainerWithShadows
 } from '../OverflowContainer';
 import { tabTheme, tabListTheme, tabPanelTheme } from './themes';
+import { POSITION } from './constants';
 
 import {
   TabsStyleProps,
   TabListStyleProps,
   TabListInnerStyleProps,
   TabListListStyleProps,
-  TabPanelStyleProps
+  TabPanelStyleProps,
+  TabStyleProps,
+  TabListArrowButtonStyleProps
 } from './types';
 
 export const TabsRoot = styled('div', {
@@ -59,64 +62,72 @@ export const TabAnchor = withProps({
 })(
   styled(TabThemedButton, {
     shouldForwardProp: (prop) => ['selected', 'title'].indexOf(prop) === -1
-  })(({ disabled, maxWidth, position = 'top', selected, theme: baseTheme }) => {
-    const theme = tabTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-
-    const justifyContent = {
-      end: 'flex-start',
-      start: 'flex-end',
-      top: undefined
-    };
-    const boxShadow = (borderWidth) => ({
-      top: `0 ${-borderWidth}px`,
-      start: rtl ? `${borderWidth}px 0` : `${-borderWidth}px 0`,
-      bottom: `0 ${borderWidth}px`,
-      end: rtl ? `${-borderWidth}px 0` : `${borderWidth}px 0`
-    });
-
-    return {
+  })<TabStyleProps>(
+    ({
+      disabled,
       maxWidth,
+      position = POSITION.top,
+      selected,
+      theme: baseTheme
+    }) => {
+      const theme = tabTheme(baseTheme);
+      const rtl = theme.direction === 'rtl';
 
-      '&:hover': {
-        color: !disabled && theme.Tab_color_selectedHover
-      },
+      const justifyContent = {
+        end: 'flex-start',
+        start: 'flex-end',
+        top: undefined
+      };
+      const boxShadow = (borderWidth) => ({
+        top: `0 ${-borderWidth}px`,
+        start: rtl ? `${borderWidth}px 0` : `${-borderWidth}px 0`,
+        bottom: `0 ${borderWidth}px`,
+        end: rtl ? `${-borderWidth}px 0` : `${borderWidth}px 0`
+      });
 
-      // Truncate
-      '&:active > span > span > span > span > span:focus': {
-        outline: 'none'
-      },
+      return {
+        maxWidth,
 
-      ...(selected && {
-        backgroundColor: theme.Tab_backgroundColor_selected,
-        color: theme.Tab_color_selected,
-        // prettier-ignore
-        boxShadow:
+        '&:hover': {
+          color: !disabled && theme.Tab_color_selectedHover
+        },
+
+        // Truncate
+        '&:active > span > span > span > span > span:focus': {
+          outline: 'none'
+        },
+
+        ...(selected && {
+          backgroundColor: theme.Tab_backgroundColor_selected,
+          color: theme.Tab_color_selected,
+          // prettier-ignore
+          boxShadow:
         `inset ${boxShadow(theme.TabIndicator_thickness)[position]} ${theme.Tab_borderColor_focus}`,
 
-        '&:focus, &:active': {
-          color: theme.Tab_color_selected,
-          outline: `${theme.Tab_borderWidth_focus}px solid ${
-            theme.Tab_borderColor_focus
-          }`,
-          outlineOffset: `-${theme.Tab_borderWidth_focus}px`
-        }
-      }),
+          '&:focus, &:active': {
+            color: theme.Tab_color_selected,
+            outline: `${theme.Tab_borderWidth_focus}px solid ${
+              theme.Tab_borderColor_focus
+            }`,
+            outlineOffset: `-${theme.Tab_borderWidth_focus}px`
+          }
+        }),
 
-      // Button's Inner
-      '& > span': {
-        justifyContent: justifyContent[position],
-
-        // Content
+        // Button's Inner
         '& > span': {
-          // Tooltip & TooltipTrigger & Truncate
-          '& > span, & > span > span, & > span > span > span': {
-            display: 'block'
+          justifyContent: justifyContent[position],
+
+          // Content
+          '& > span': {
+            // Tooltip & TooltipTrigger & Truncate
+            '& > span, & > span > span, & > span > span > span': {
+              display: 'block'
+            }
           }
         }
-      }
-    };
-  })
+      };
+    }
+  )
 );
 
 const TabListThemedButton = themed(Button)(({ theme: baseTheme }) => {
@@ -152,23 +163,25 @@ const TabListThemedOverflowContainerWithShadows = themed(
 });
 
 const TabListArrowButton = withProps({ type: 'button' })(
-  styled(TabListThemedButton)(({ theme: baseTheme }) => {
-    const theme = tabListTheme(baseTheme);
+  styled(TabListThemedButton)<TabListArrowButtonStyleProps>(
+    ({ theme: baseTheme }) => {
+      const theme = tabListTheme(baseTheme);
 
-    return {
-      flexShrink: 0,
+      return {
+        flexShrink: 0,
 
-      '&:hover': {
-        '& [role="img"]': {
-          color: theme.TabListArrow_color_hover
+        '&:hover': {
+          '& [role="img"]': {
+            color: theme.TabListArrow_color_hover
+          }
+        },
+
+        '& > span': {
+          height: '100%'
         }
-      },
-
-      '& > span': {
-        height: '100%'
-      }
-    };
-  })
+      };
+    }
+  )
 );
 
 export const TabListInner = withProps<TabListInnerStyleProps, {}>({

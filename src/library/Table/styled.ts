@@ -18,21 +18,22 @@ import {
   tableTitleTheme
 } from './themes';
 import TableHeaderCell from './TableHeaderCell';
-import { SORT } from './constants';
+import { SORT, COLUMN_ALIGN } from './constants';
 
 import {
   TableCellProps,
+  TableCellStyles,
   TableHeaderProps,
   TableHeaderCellProps,
   TableRowProps,
-  TableSelectableCellProps,
+  TableSelectableCellStyleProps,
   TableSortableHeaderCellStyleProps,
   TableTitleStyleProps
 } from './types';
 
 const REGEX_IS_EM_VALUE = /\d+em$/;
 
-const tableCellStyles = ({
+const tableCellStyles: TableCellStyles = ({
   density,
   highContrast,
   noPadding,
@@ -61,7 +62,8 @@ const tableCellStyles = ({
     fontSize,
     fontWeight: 'inherit',
     padding: noPadding ? 0 : `${paddingVertical} ${paddingHorizontal}`,
-    textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
+    textAlign:
+      COLUMN_ALIGN[rtlTextAlign(textAlign || 'start', theme.direction)],
     verticalAlign: theme.TableCell_verticalAlign,
 
     '&:not(:first-child)': {
@@ -116,7 +118,7 @@ export const TableHeaderRoot = styled('thead')<TableHeaderProps>(
 
 export const TableHeaderCellRoot = styled('th', {
   shouldForwardProp: (prop) => prop !== 'width' && isPropValid(prop)
-})<TableHeaderCellProps>([
+})<TableHeaderCellProps>(
   ({ theme: baseTheme, ...props }) => {
     const theme = mapComponentThemes(
       {
@@ -179,7 +181,7 @@ export const TableHeaderCellRoot = styled('th', {
       }
     };
   }
-]);
+);
 
 export const TableRowRoot = styled('tr')<TableRowProps>(
   ({ highContrast, isSelected, theme: baseTheme, striped }) => {
@@ -244,8 +246,10 @@ export const TableRowRoot = styled('tr')<TableRowProps>(
   }
 );
 
-export const PaddedCheckbox = withProps({ hideLabel: true })(
-  styled(Checkbox)<TableSelectableCellProps>(
+export const PaddedCheckbox = withProps<TableSelectableCellStyleProps, {}>({
+  hideLabel: true
+})(
+  styled(Checkbox)<TableSelectableCellStyleProps>(
     ({ density, isHeader, theme: baseTheme }) => {
       const theme = isHeader
         ? tableHeaderCellTheme(baseTheme)
@@ -272,7 +276,7 @@ const tableSortableHeaderCellFocusStyles = (theme) => ({
 });
 
 export const TableSortableHeaderCellRoot = withProps({ noPadding: true })(
-  styled(TableHeaderCell)(({ theme: baseTheme }) => {
+  styled(TableHeaderCell)<TableHeaderCellProps>(({ theme: baseTheme }) => {
     const theme = tableSortableHeaderCellTheme(baseTheme);
 
     return {
@@ -288,7 +292,7 @@ export const TableSortableHeaderCellRoot = withProps({ noPadding: true })(
 );
 
 export const TableSortableHeaderCellButton = withProps({ as: 'button' })(
-  styled(TableHeaderCell)(({ theme: baseTheme }) => {
+  styled(TableHeaderCell)<TableHeaderCellProps>(({ theme: baseTheme }) => {
     const theme = tableSortableHeaderCellTheme(baseTheme);
 
     return {
