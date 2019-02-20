@@ -7,7 +7,7 @@ import { choiceTheme, choiceGroupTheme } from './themes';
 import { LABEL_POSITION } from './constants';
 
 import {
-  ChoiceProps,
+  ChoiceStyleProps,
   ChoiceGroupStyleProps,
   ChoiceTextStyleProps,
   ChoiceControlStyleProps
@@ -16,7 +16,7 @@ import {
 export const ChoiceRoot = styled('label', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})<ChoiceProps>(
+})<ChoiceStyleProps>(
   ({ disabled, justify, hideLabel, labelPosition, size, theme: baseTheme }) => {
     const theme = choiceTheme(baseTheme);
     const labelPositionStart = labelPosition === LABEL_POSITION.start;

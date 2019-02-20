@@ -33,6 +33,12 @@ export interface ChoiceDefaultProps {
   size: Size;
 }
 
+export interface ChoiceStyleProps
+  extends Pick<
+    ChoiceProps,
+    'disabled' | 'justify' | 'hideLabel' | 'labelPosition' | 'size'
+  > {}
+
 export interface ChoiceControlStyleProps
   extends Pick<ChoiceProps, 'disabled' | 'size'> {}
 
