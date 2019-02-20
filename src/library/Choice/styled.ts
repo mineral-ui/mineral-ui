@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import { hideVisually } from 'polished';
 import { componentStyleReset, getNormalizedValue } from '../styles';
 import { choiceTheme, choiceGroupTheme } from './themes';
+import { LABEL_POSITION } from './constants';
 
 import {
   ChoiceProps,
@@ -18,7 +19,7 @@ export const ChoiceRoot = styled('label', {
 })<ChoiceProps>(
   ({ disabled, justify, hideLabel, labelPosition, size, theme: baseTheme }) => {
     const theme = choiceTheme(baseTheme);
-    const labelPositionStart = labelPosition === 'start';
+    const labelPositionStart = labelPosition === LABEL_POSITION.start;
 
     return {
       ...componentStyleReset(baseTheme),
@@ -27,7 +28,7 @@ export const ChoiceRoot = styled('label', {
       cursor: !disabled && 'pointer',
       display: 'flex',
       position: 'relative',
-      flexDirection: labelPositionStart && 'row-reverse',
+      ...(labelPositionStart ? { flexDirection: 'row-reverse' } : undefined),
       justifyContent:
         !justify && (labelPositionStart ? 'flex-end' : 'flex-start'),
 
