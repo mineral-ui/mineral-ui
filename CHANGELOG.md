@@ -1,3 +1,23 @@
+# [0.57.0](https://github.com/mineral-ui/mineral-ui/compare/v0.56.0...v0.57.0) (2019-03-14)
+
+
+### Bug Fixes
+
+* **flex:** Incorrectly typed Flex & FlexItem props ([9035c47](https://github.com/mineral-ui/mineral-ui/commit/9035c47))
+* **flex,grid,start-end:** `children` is no longer required ([a906746](https://github.com/mineral-ui/mineral-ui/commit/a906746))
+
+
+### Features
+
+* **all:** Emotion 10 update and other API changes ([76b39d3](https://github.com/mineral-ui/mineral-ui/commit/76b39d3))
+
+
+### BREAKING CHANGES
+
+* **all:** See our migration guide for details. https://github.com/mineral-ui/mineral-ui/blob/master/docs/v0-57-migration.md
+
+
+
 # [0.56.0](https://github.com/mineral-ui/mineral-ui/compare/v0.55.0...v0.56.0) (2019-01-21)
 
 
