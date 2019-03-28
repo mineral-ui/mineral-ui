@@ -64,16 +64,18 @@ export default class Navigation extends Component<NavigationProps> {
 
   renderItems = (prefixAndType: PrefixAndType): ?Array<React$Node> => {
     const {
+      align,
       children,
       itemAs,
       items: itemsProp,
       maxItemWidth,
       messages,
+      minimal,
       onChange: ignoreOnChange,
       overflowAtIndex,
+      secondary,
       selectedIndex,
-      type: ignoreType,
-      ...restProps
+      type: ignoreType
     } = this.props;
 
     const items: ?NavigationItems = children
@@ -125,20 +127,22 @@ export default class Navigation extends Component<NavigationProps> {
             }
           } else {
             const navItemProps = {
+              align,
               children: text,
               disabled,
               as: as || itemAs || 'a',
               index,
               maxWidth: maxWidth || maxItemWidth,
+              minimal,
               onClick: !disabled
                 ? composeEventHandlers(onClick, (event) => {
                     this.handleClick(event, index);
                   })
                 : preventDefaultEventFn,
+              secondary,
               selected: selected || index === selectedIndex,
               ...prefixAndType,
-              ...restItem,
-              ...restProps
+              ...restItem
             };
 
             return child ? (
