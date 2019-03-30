@@ -1,3 +1,18 @@
+# [0.58.0](https://github.com/mineral-ui/mineral-ui/compare/v0.57.0...v0.58.0) (2019-03-30)
+
+
+### Bug Fixes
+
+* **navigation:** Prevent spread of Navigation props onto NavItem ([15e6fb5](https://github.com/mineral-ui/mineral-ui/commit/15e6fb5)), closes [#827](https://github.com/mineral-ui/mineral-ui/issues/827)
+
+
+### BREAKING CHANGES
+
+* **navigation:** PrimaryNav & SecondaryNav no longer passes along 
+undocumented props to NavItem
+
+
+
 # [0.57.0](https://github.com/mineral-ui/mineral-ui/compare/v0.56.0...v0.57.0) (2019-03-14)
 
 
