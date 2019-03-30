@@ -27,7 +27,11 @@ export default function(tokens: Tokens): Theme {
   return Object.keys(tokens).reduce((acc, key) => {
     let value = tokens[key];
     if (typeof value === 'string') {
-      if (value.split('px').length === 2 && !contains(key, 'breakpoint')) {
+      if (
+        value.split('px').length === 2 &&
+        !contains(key, 'breakpoint') &&
+        !contains(key, 'fontSize_base')
+      ) {
         value = pxToEm(value);
       } else if (contains(key, 'fontSize')) {
         value = remToEm(value);
