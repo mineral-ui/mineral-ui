@@ -1,7 +1,6 @@
 
 [![build status](https://travis-ci.com/mineral-ui/mineral-ui.svg?branch=master)](https://travis-ci.com/mineral-ui/mineral-ui)
 [![dependency status](https://david-dm.org/mineral-ui/mineral-ui.svg)](https://david-dm.org/mineral-ui/mineral-ui)
-[![managed with Waffle](https://img.shields.io/badge/managed_with-Waffle-72b2e4.svg)](https://waffle.io/mineral-ui/mineral-ui)
 [![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat)](https://github.com/commitizen/cz-cli)
 [![code style Prettier](https://img.shields.io/badge/code_style-Prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 

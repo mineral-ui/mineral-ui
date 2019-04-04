@@ -1,7 +1,7 @@
 Check back here anytime to see current component status information.
 If you have a suggestion for a new component not listed here, [create an issue on GitHub](https://github.com/mineral-ui/mineral-ui/issues) to let us know!
 
-See more detailed progress on our [Waffle.io board](https://waffle.io/mineral-ui/mineral-ui).
+See more detailed progress on our [project board](https://github.com/orgs/mineral-ui/projects/1).
 
 <Legend />
 
@@ -33,7 +33,7 @@ Statuses:
 | [Icon](/components/icon)                    | [available]      |
 | [Link](/components/link)                    | [available]      |
 | [Menu](/components/menu)                    | [available]      |
-| [Navigation](/components/navigation) ~ new  | [available]      |
+| [Navigation](/components/navigation)        | [available]      |
 | [Pagination](/components/pagination)        | [available]      |
 | [Popover](/components/popover)              | [available]      |
 | [Radio](/components/radio)                  | [available]      |
@@ -46,7 +46,6 @@ Statuses:
 | [TextInput](/components/text-input)         | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
 | [Tooltip](/components/tooltip)              | [available]      |
-| PageHeader                                  | [in development] |
 | Alert                                       |                  |
 | Badge                                       |                  |
 | BreadCrumbs                                 |                  |
@@ -64,6 +63,7 @@ Statuses:
 | Maps                                        |                  |
 | Notification                                |                  |
 | NumberInput                                 |                  |
+| PageHeader                                  |                  |
 | PageTemplate                                |                  |
 | Progress                                    |                  |
 | Scrollable                                  |                  |
