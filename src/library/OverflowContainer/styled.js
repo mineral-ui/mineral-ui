@@ -4,7 +4,7 @@ import { overflowContainerTheme } from './themes';
 import { overflowContainerWithShadowsTheme } from './themes';
 
 export const OverflowContainerRoot = styled('div')(
-  ({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
+  ({ border, borderRadius, hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
     const theme = overflowContainerTheme(baseTheme);
 
     return {
@@ -27,7 +27,11 @@ export const OverflowContainerRoot = styled('div')(
               display: 'none'
             }
           }
-        : undefined)
+        : undefined),
+
+      /* TargetX Custom Styles */
+      ...(border && { border }),
+      ...(borderRadius && { borderRadius })
     };
   }
 );

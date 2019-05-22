@@ -3,7 +3,7 @@ import { pxToEm } from '../styles';
 
 export const ICON_SIZE = {
   small: 'medium',
-  medium: 'medium',
+  medium: pxToEm(20), // TargetX Custom Style
   large: pxToEm(24),
   jumbo: pxToEm(24)
 };
@@ -16,6 +16,8 @@ export const SIZE = {
 };
 
 export const VARIANT = {
+  grayscale: 'grayscale', // TargetX Custom Variant
+
   danger: 'danger',
   success: 'success',
   warning: 'warning'

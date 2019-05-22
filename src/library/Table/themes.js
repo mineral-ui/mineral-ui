@@ -40,10 +40,10 @@ export const tableCellTheme: TableCellThemeFn = (baseTheme) => ({
 });
 
 export const tableHeaderTheme: TableHeaderThemeFn = (baseTheme) => ({
-  TableHeader_borderBottom: `2px solid ${baseTheme.borderColor}`,
-  TableHeader_borderBottom_highContrast: `2px solid ${baseTheme.color_gray_80}`,
-  TableHeader_borderTop: `1px solid ${baseTheme.borderColor}`,
-  TableHeader_borderTop_highContrast: `1px solid ${baseTheme.color_gray_80}`,
+  TableHeader_borderBottom: `1px solid ${baseTheme.borderColor}`,
+  TableHeader_borderBottom_highContrast: `1px solid ${baseTheme.color_gray_80}`,
+  TableHeader_borderTop: `0px solid ${baseTheme.borderColor}`,
+  TableHeader_borderTop_highContrast: `0px solid ${baseTheme.color_gray_80}`,
   ...baseTheme
 });
 

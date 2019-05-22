@@ -37,6 +37,9 @@ export default class TableBase extends Component<
 
   render() {
     const {
+      border,
+      borderRadius,
+      
       columns,
       data,
       density,
@@ -104,6 +107,8 @@ export default class TableBase extends Component<
 
     if (scrollable) {
       const containerProps = {
+        border,
+        borderRadius,
         'aria-labelledby': this.titleId,
         role: 'group',
         scrollX: true

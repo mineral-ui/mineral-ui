@@ -1,5 +1,5 @@
 /* @flow */
-import tokens from 'mineral-ui-tokens';
+import tokens from '@targetx/mineral-ui-tokens';
 import createColorRamp from './createColorRamp';
 import fontSize_base from './fontSizeBase';
 import colorAliases from './generated/colorAliases';

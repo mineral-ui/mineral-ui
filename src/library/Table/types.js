@@ -50,6 +50,9 @@ export type SortableTableProps = any; // TODO
 export type SelectableSortableTableProps = any; // TODO
 
 export type TableBaseProps = {
+  border?: string,
+  borderRadius?: string,
+
   columns: Columns,
   data: Rows,
   hideHeader?: boolean,

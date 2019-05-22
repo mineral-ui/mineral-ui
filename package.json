@@ -1,16 +1,16 @@
 {
-  "name": "mineral-ui",
+  "name": "@targetx/mineral-ui",
   "author": "CA Technologies",
   "description": "Mineral UI component library",
-  "version": "0.58.0",
+  "version": "0.58.0-targetx.3",
   "license": "Apache-2.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/mineral-ui/mineral-ui.git"
+    "url": "https://github.com/targetx/fork-mineral-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/mineral-ui/mineral-ui/issues"
+    "url": "https://github.com/targetx/fork-mineral-ui/issues"
   },
   "homepage": "http://mineral-ui.com",
   "main": "./dist/index.js",
@@ -46,6 +46,7 @@
     }
   },
   "dependencies": {
+    "@targetx/mineral-ui-tokens": "0.4.0-targetx.1",
     "exenv": "1.2.2",
     "focus-trap-react": "3.1.2",
     "fontfaceobserver": "2.0.13",
@@ -53,7 +54,6 @@
     "lodash.debounce": "4.0.8",
     "lodash.range": "3.2.0",
     "memoize-one": "4.0.3",
-    "mineral-ui-tokens": "0.4.0",
     "no-scroll": "2.1.1",
     "prop-types": "^15.5.7",
     "react-fast-compare": "2.0.4",

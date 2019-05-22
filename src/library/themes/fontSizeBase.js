@@ -1,5 +1,5 @@
 /* @flow */
-import { fontSize_base } from 'mineral-ui-tokens';
+import { fontSize_base } from '@targetx/mineral-ui-tokens';
 
 // Token has rem units, but our theme variable needs to be in "px"
 // Components are built on an 8px grid
