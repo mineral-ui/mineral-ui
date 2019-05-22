@@ -59,7 +59,7 @@ const getSpacingStyles = (
 export const BoxRoot = styled('div', {
   shouldForwardProp: (prop) =>
     ['height', 'width'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ breakpoints, height, inline, theme, width, ...restProps }) => {
+})(({ backgroundColor, borderRadius, overflow, position, scrollable, breakpoints, height, inline, theme, width, ...restProps }) => {
   const rtl = theme.direction === 'rtl';
 
   const mapValueToProperty = (
@@ -67,6 +67,7 @@ export const BoxRoot = styled('div', {
     value: SpacingValue
   ): number | string => {
     const map = {
+      borderRadius: borderRadius => borderRadius,
       display: (value) => (value ? 'inline-block' : undefined),
       height: getMeasurement,
       width: getMeasurement,
@@ -84,11 +85,16 @@ export const BoxRoot = styled('div', {
   };
 
   return {
+    ...(backgroundColor && { backgroundColor }),
+    ...(overflow && { overflow }),
+    ...(position && { position }),
+    ...(scrollable && { overflow: 'scroll' }),
     ...componentStyleReset(theme),
     ...getResponsiveStyles({
       breakpoints,
       mapValueToProperty,
       styles: {
+        borderRadius,
         display: inline,
         height,
         ...getSpacingStyles('margin', restProps, rtl),
