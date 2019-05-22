@@ -136,7 +136,7 @@ export const Control = styled('span', {
     borderColor: theme.ChoiceControl_borderColor,
     borderRadius: theme.ChoiceControl_borderRadius,
     borderStyle: 'solid',
-    borderWidth: '1px',
+    borderWidth: theme.ChoiceControl_borderWidth,
     color: backgroundColor,
     content: '""',
     display: 'flex',

@@ -33,6 +33,10 @@ export const flexPropTypes = {
 };
 
 export const flexItemPropTypes = {
+  /* TargetX Custom Props */
+  flexBasis: oneOfType([number, string]),
+
+  /* Built-In Props */
   alignSelf: stringOrArrayOfStringsPropType(ALIGN_SELF),
   breakpoints: arrayOf(oneOfType([number, string])),
   flex: bool,

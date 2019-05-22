@@ -21,7 +21,7 @@ const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
 );
 
 export const TextInputRoot = styled(ThemedFauxControl)(
-  ({ theme: baseTheme, variant }) => {
+  ({ disabled, theme: baseTheme, variant }) => {
     let theme = textInputTheme(baseTheme);
 
     if (variant) {
@@ -33,19 +33,15 @@ export const TextInputRoot = styled(ThemedFauxControl)(
 
     return {
       alignItems: 'center',
-      cursor: 'text',
+      ...(!disabled && { cursor: 'text' }),
       display: 'flex',
       width: '100%',
 
       '& [role="img"]': {
-        color: theme.TextInputIcon_color,
+        ...(variant ? { color: theme.TextInputIcon_color } : {}),
         display: 'block',
         flex: '0 0 auto',
-        margin: `0 ${theme.TextInputIcon_marginHorizontal}`,
-
-        '&:last-of-type': {
-          color: theme.TextInputIcon_color
-        }
+        margin: `0 ${theme.TextInputIcon_marginHorizontal}`
       }
     };
   }

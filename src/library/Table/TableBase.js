@@ -37,6 +37,12 @@ export default class TableBase extends Component<
 
   render() {
     const {
+      border,
+      borderRadius,
+      fullWidth,
+      hoverable,
+      width,
+
       columns,
       data,
       density,
@@ -55,9 +61,11 @@ export default class TableBase extends Component<
       titleAs,
       ...rootProps
     } = this.props;
+
     const appearanceProps = {
       density,
       highContrast,
+      hoverable,
       striped
     };
     const tableHeaderRowProps = {
@@ -104,6 +112,10 @@ export default class TableBase extends Component<
 
     if (scrollable) {
       const containerProps = {
+        border,
+        borderRadius,
+        fullWidth,
+        width,
         'aria-labelledby': this.titleId,
         role: 'group',
         scrollX: true

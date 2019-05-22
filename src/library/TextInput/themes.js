@@ -14,10 +14,10 @@ export const textInputTheme: TextInputThemeFn = (baseTheme) =>
     {
       name: 'TextInput',
       theme: {
-        TextInput_height_small: baseTheme.size_small,
-        TextInput_height_medium: baseTheme.size_medium,
-        TextInput_height_large: baseTheme.size_large,
-        TextInput_height_jumbo: baseTheme.size_jumbo,
+        TextInput_height_small: baseTheme.input_size_small,
+        TextInput_height_medium: baseTheme.input_size_medium,
+        TextInput_height_large: baseTheme.input_size_large,
+        TextInput_height_jumbo: baseTheme.input_size_jumbo,
 
         TextInputIcon_color: baseTheme.color_gray_40
       }

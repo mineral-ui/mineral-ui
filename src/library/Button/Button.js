@@ -18,6 +18,8 @@ class Button extends Component<ButtonProps> {
 
   render() {
     const {
+      justifyContent,
+
       children,
       disabled,
       forwardedRef,
@@ -49,7 +51,7 @@ class Button extends Component<ButtonProps> {
 
     return (
       <Root {...rootProps}>
-        <Inner>
+        <Inner justifyContent={justifyContent}>
           {startIcon}
           {children && <Content size={size}>{children}</Content>}
           {endIcon}

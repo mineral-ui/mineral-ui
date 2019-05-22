@@ -12,6 +12,12 @@ import {
 import { MODE, SIZE, VARIANT } from './constants';
 
 export const buttonGroupPropTypes = {
+  /* TargetX Custom Props */
+  margin: oneOfType([number, string]),
+  marginHorizontal: oneOfType([number, string]),
+  marginVertical: oneOfType([number, string]),
+
+  /* Built-In Props */
   'aria-label': string.isRequired,
   checked: oneOfType([number, arrayOf(number)]),
   children: node.isRequired,

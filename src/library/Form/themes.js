@@ -14,7 +14,7 @@ export const formFieldTheme: FormFieldThemeFn = (baseTheme) => ({
   FormFieldCaption_marginTop: baseTheme.space_stack_xxs,
   FormFieldCaption_marginTop_isGroup: baseTheme.space_stack_sm,
 
-  FormFieldLabel_color: baseTheme.h6_color,
+  FormFieldLabel_color: baseTheme.h5_color,
   FormFieldLabel_fontSize: baseTheme.h6_fontSize,
   FormFieldLabel_fontWeight: baseTheme.fontWeight_semiBold, // [1]
   FormFieldLabel_marginBottom: baseTheme.space_stack_sm,
@@ -36,7 +36,7 @@ export const formFieldDividerTheme: FormFieldDividerThemeFn = (baseTheme) => ({
 });
 
 export const formFieldsetTheme: FormFieldsetThemeFn = (baseTheme) => ({
-  FormFieldset_borderColor: baseTheme.borderColor,
+  FormFieldset_borderColor: baseTheme.borderColor_transparent,
 
   FormFieldsetLegend_color: baseTheme.h5_color,
   FormFieldsetLegend_fontSize: baseTheme.h5_fontSize,

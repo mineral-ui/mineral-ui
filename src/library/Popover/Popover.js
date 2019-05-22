@@ -193,6 +193,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
       'aria-disabled': disabled,
       'aria-expanded': isOpen,
       'aria-owns': contentId,
+      id: contentId,
       children: child,
       cursor,
       disabled: child && childDisabled ? childDisabled : disabled,

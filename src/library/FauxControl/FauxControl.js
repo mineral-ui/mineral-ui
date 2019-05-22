@@ -21,18 +21,13 @@ const variantIcons: VariantIcons = {
 };
 
 const getIcons = ({
-  disabled,
   iconStart,
   iconEnd,
-  readOnly,
+  // readOnly,
   size,
   variant,
   variantIcons
 }) => {
-  if (disabled || readOnly) {
-    return [];
-  }
-
   const iconSize = size || SIZE.large;
   const startIcon =
     iconStart &&
@@ -59,6 +54,9 @@ const getIcons = ({
 };
 
 export default function FauxControl({
+  /* TargetX Custom Props */
+  borderRadius,
+
   afterItems,
   beforeItems,
   children,
@@ -128,7 +126,7 @@ export default function FauxControl({
     variant
   };
 
-  const underlayProps = { disabled, readOnly, variant };
+  const underlayProps = { borderRadius, disabled, readOnly, variant };
 
   return (
     <Root {...rootProps}>

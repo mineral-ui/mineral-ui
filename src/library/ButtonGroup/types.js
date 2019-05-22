@@ -8,6 +8,12 @@ import type {
 } from '../themes/types';
 
 export type ButtonGroupProps = {
+  /* TargetX Custom Props */
+  margin?: number | string,
+  marginHorizontal?: number | string,
+  marginVertical?: number | string,
+
+  /* Built-In Props */
   'aria-label': string,
   checked?: number | Array<number>,
   children: React$Node,

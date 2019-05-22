@@ -5,7 +5,7 @@ import { ignoreSsrWarning } from '../utils/emotion';
 import { buttonGroupTheme } from './themes';
 
 export const ButtonGroupRoot = styled('div')(
-  ({ fullWidth, theme: baseTheme, variant }) => {
+  ({ margin, marginHorizontal, marginVertical, fullWidth, theme: baseTheme, variant }) => {
     let theme = buttonGroupTheme(baseTheme);
     if (variant) {
       // prettier-ignore
@@ -137,7 +137,18 @@ export const ButtonGroupRoot = styled('div')(
       '& > [aria-checked=true] + [aria-checked=true]:not(:focus)': {
         [borderStartColorProperty]:
           theme.ButtonGroupButton_borderStartColor_checked
-      }
+      },
+
+      /* TargetX Custom Styles */
+     ...(margin && { margin }),
+     ...(marginHorizontal && {
+       marginLeft: marginHorizontal,
+       marginRight: marginHorizontal
+     }),
+     ...(marginVertical && {
+       marginBottom: marginVertical,
+       marginTop: marginVertical
+     })
     };
   }
 );

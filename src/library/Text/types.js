@@ -13,6 +13,20 @@ type Appearance = $Keys<typeof APPEARANCE>;
 type FontWeight = $Keys<typeof FONT_WEIGHT> | number;
 
 export type TextProps = {
+  /* TargetX Custom Props */
+  bold?: boolean,
+  fontFamily?: string,
+  fontSize?: string,
+  lineHeight?: number | string,
+  margin?: number | string,
+  marginBottom?: number | string,
+  marginHorizontal?: number | string,
+  marginLeft?: number | string,
+  marginRight?: number | string,
+  marginTop?: number | string,
+  marginVertical?: number | string,
+
+  /* Built-In Props */
   align?: Align,
   appearance?: Appearance,
   children: React$Node,

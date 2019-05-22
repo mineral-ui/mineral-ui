@@ -36,6 +36,10 @@ export type FlexDefaultProps = {
 type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
 export type FlexItemProps = {
+  /* TargetX Custom Props */
+  flexBasis?: number | string,
+  
+  /* Built-In Props */
   alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>,
   breakpoints?: Array<number | string>,
   flex?: boolean,

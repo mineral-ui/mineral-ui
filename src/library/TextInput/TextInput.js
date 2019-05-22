@@ -8,6 +8,9 @@ import type { TextInputDefaultProps, TextInputProps } from './types';
 
 const TextInput = (props: TextInputProps) => {
   const {
+    /* TargetX Custom props */
+    borderRadius,
+
     className,
     disabled,
     iconEnd,
@@ -34,6 +37,9 @@ const TextInput = (props: TextInputProps) => {
   };
 
   const rootProps = {
+    /* TargetX Custom props */
+    borderRadius,
+    
     className,
     control: Input,
     controlProps: inputProps,

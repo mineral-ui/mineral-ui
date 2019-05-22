@@ -12,6 +12,9 @@ type Type = $Keys<typeof TYPE>;
 type Variant = $Keys<typeof VARIANT>;
 
 export type TextInputProps = {
+  /* TargetX Custom props */
+  borderRadius?: number | string,
+
   className?: string,
   defaultValue?: string,
   disabled?: boolean,

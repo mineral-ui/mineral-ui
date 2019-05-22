@@ -8,6 +8,14 @@ import type {
 } from '../themes/types';
 
 export type FormFieldProps = {
+  /* TargetX Custom Props */
+  labelFor?: string,
+  marginBottom?: number | string,
+  marginTop?: number | string,
+  marginVertical?: number | string,
+  width?: number | string,
+
+  /* Built-in Props */
   caption?: string | React$Element<*>,
   children?: React$Node,
   className?: string,

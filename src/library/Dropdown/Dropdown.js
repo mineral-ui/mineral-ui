@@ -148,6 +148,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
       'aria-describedby': contentId,
       'aria-haspopup': true,
       'aria-owns': contentId,
+      id: contentId,
       ...(!isRenderProp(children) ? props : {}),
       onKeyDown: composeEventHandlers(props.onKeyDown, this.onTriggerKeyDown),
       onKeyUp: composeEventHandlers(props.onKeyUp, this.onTriggerKeyUp)

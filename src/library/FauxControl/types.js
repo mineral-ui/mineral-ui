@@ -8,6 +8,9 @@ import type {
 } from '../themes/types';
 
 export type FauxControlProps = {
+  /* TargetX Custom Props */
+  borderRadius?: number | string,
+
   afterItems?: React$Node,
   beforeItems?: React$Node,
   children?: React$Node,

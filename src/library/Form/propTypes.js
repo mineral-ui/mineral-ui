@@ -4,6 +4,7 @@ import {
   element,
   string,
   node,
+  number,
   object,
   oneOf,
   oneOfType
@@ -12,6 +13,14 @@ import { component } from '../utils/propTypes';
 import { VARIANT } from './constants';
 
 export const formFieldPropTypes = {
+  /* TargetX Custom Props */
+  labelFor: string,
+  marginBottom: oneOfType([number, string]),
+  marginTop: oneOfType([number, string]),
+  marginVertical: oneOfType([number, string]),
+  width: oneOfType([number, string]),
+
+  /* Built-In Props */
   caption: oneOfType([string, element]),
   children: node,
   hideLabel: bool,

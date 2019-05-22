@@ -9,16 +9,12 @@ import {
 } from './styled';
 
 import { formFieldPropTypes } from './propTypes';
-import type { FormFieldDefaultProps, FormFieldProps } from './types';
+import type { FormFieldProps } from './types';
 
 const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
 
 export default class FormField extends Component<FormFieldProps> {
   static displayName = 'FormField';
-
-  static defaultProps: FormFieldDefaultProps = {
-    requiredText: 'Required'
-  };
 
   static propTypes = formFieldPropTypes;
 
@@ -26,6 +22,12 @@ export default class FormField extends Component<FormFieldProps> {
 
   render() {
     const {
+      labelFor,
+      marginBottom,
+      marginTop,
+      marginVertical,
+      width,
+
       caption,
       children,
       className,
@@ -41,6 +43,11 @@ export default class FormField extends Component<FormFieldProps> {
     } = this.props;
 
     const rootProps = {
+      marginBottom,
+      marginTop,
+      marginVertical,
+      width,
+
       className,
       ...otherRootProps
     };
@@ -50,6 +57,8 @@ export default class FormField extends Component<FormFieldProps> {
     const isGroup = this.isGroup();
     const Label = isGroup ? 'div' : 'label';
 
+    const labelProps = Label === 'label' && labelFor ? { htmlFor: labelFor } : {};
+    
     const textWrapperProps = {
       hideLabel,
       key: `${this.id}-textWrapper`
@@ -94,12 +103,12 @@ export default class FormField extends Component<FormFieldProps> {
 
     return (
       <Root {...rootProps}>
-        <Label>
+        <Label {...labelProps}>
           <FormFieldTextWrapper {...textWrapperProps}>
             <span {...labelTextProps}>{label}</span>
             {(required || secondaryText) && (
               <FormFieldSecondaryText secondaryText={secondaryText}>
-                {secondaryText ? secondaryText : requiredText}
+                {secondaryText || requiredText || null}
               </FormFieldSecondaryText>
             )}
           </FormFieldTextWrapper>

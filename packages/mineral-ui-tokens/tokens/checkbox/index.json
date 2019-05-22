@@ -1,0 +1,18 @@
+{   
+  "imports": [
+    "../aliases.json",
+  ], 
+  "global": {
+    "type": "checkbox",
+    "category": "checkbox"
+  },
+  "props": [
+    { "name": "checkbox_backgroundColor_checked",      "value": "{!green_60}" },
+    { "name": "checkbox_backgroundColor_checkedHover", "value": "{!green_40}" },
+    { "name": "checkbox_borderColor",                  "value": "{!gray_60}" },
+    { "name": "checkbox_borderColor_checked",          "value": "{!green_60}" },
+    { "name": "checkbox_borderColor_checkedHover",     "value": "{!green_40}" },
+    { "name": "checkbox_borderColor_hover",            "value": "{!gray_50}" },
+    { "name": "checkbox_borderWidth",                  "value": "{!borderWidth_lg}" }
+  ]
+}

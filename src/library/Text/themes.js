@@ -28,7 +28,7 @@ export const textTheme: TextThemeFn = (baseTheme) => ({
   Text_lineHeight: baseTheme.lineHeight_prose,
   Text_lineHeight_heading: baseTheme.lineHeight_heading,
   Text_lineHeight_headingSmall: baseTheme.lineHeight_headingSmall,
-  Text_marginBottom: baseTheme.space_stack_md,
+  Text_marginBottom: baseTheme.space_none,
   Text_marginBottom_heading: baseTheme.space_stack_sm,
 
   ...baseTheme

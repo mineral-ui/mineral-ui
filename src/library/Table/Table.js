@@ -27,6 +27,10 @@ class Table extends Component<TableProps> {
   static displayName = 'Table';
 
   static defaultProps: TableDefaultProps = {
+    /* TargetX Custom DefaultProps  */
+    hideTitle: true,
+
+    /* Built-In DefaultProps  */
     density: DENSITY.compact,
     messages: {
       deselectAllRows: 'Deselect all rows',

@@ -47,6 +47,20 @@ export const TextRoot = styled('p', {
     ['color', 'fontWeight'].indexOf(prop) === -1 && isPropValid(prop)
 })(
   ({
+    /* TargetX Custom Styles */
+    bold,
+    fontFamily,
+    fontSize,
+    lineHeight,
+    margin,
+    marginBottom,
+    marginHorizontal,
+    marginLeft,
+    marginRight,
+    marginTop,
+    marginVertical,
+
+    /* Built-In Styles */
     align,
     appearance: propAppearance,
     as,
@@ -54,7 +68,7 @@ export const TextRoot = styled('p', {
     defaultAppearance,
     fontWeight,
     inherit,
-    noMargins,
+    noMargins = true,
     theme: baseTheme,
     truncate
   }) => {
@@ -121,7 +135,26 @@ export const TextRoot = styled('p', {
       ...getCommonStyles(as, theme, truncate),
       // 1 - Not normalized because we actually want `##em` as applied value
       // 2 - Must come after commonStyles
-      marginBottom: noMargins ? 0 : theme.Text_marginBottom
+      marginBottom: noMargins ? 0 : theme.Text_marginBottom,
+
+      /* TargetX Custom Styles */
+      ...(bold && { fontWeight: 'bold' }),
+      ...(fontFamily && { fontFamily }),
+      ...(fontSize && { fontSize }),
+      ...(lineHeight && { lineHeight }),
+      ...(margin && { margin }),
+      ...(marginBottom && { marginBottom }),
+      ...(marginHorizontal && {
+        marginLeft: marginHorizontal,
+        marginRight: marginHorizontal
+      }),
+      ...(marginLeft && { marginLeft }),
+      ...(marginRight && { marginRight }),
+      ...(marginTop && { marginTop }),
+      ...(marginVertical && {
+        marginBottom: marginVertical,
+        marginTop: marginVertical
+      })
     };
   }
 );

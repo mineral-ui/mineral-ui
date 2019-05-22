@@ -16,7 +16,7 @@ export type AvatarProps = {
   children: React$Node,
   color?: string,
   shape?: Shape,
-  size?: Size
+  size?: number | Size
 };
 
 export type AvatarDefaultProps = {

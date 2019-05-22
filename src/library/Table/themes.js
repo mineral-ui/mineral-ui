@@ -40,10 +40,10 @@ export const tableCellTheme: TableCellThemeFn = (baseTheme) => ({
 });
 
 export const tableHeaderTheme: TableHeaderThemeFn = (baseTheme) => ({
-  TableHeader_borderBottom: `2px solid ${baseTheme.borderColor}`,
-  TableHeader_borderBottom_highContrast: `2px solid ${baseTheme.color_gray_80}`,
-  TableHeader_borderTop: `1px solid ${baseTheme.borderColor}`,
-  TableHeader_borderTop_highContrast: `1px solid ${baseTheme.color_gray_80}`,
+  TableHeader_borderBottom: `1px solid ${baseTheme.borderColor}`,
+  TableHeader_borderBottom_highContrast: `1px solid ${baseTheme.color_gray_80}`,
+  TableHeader_borderTop: `0px solid ${baseTheme.borderColor}`,
+  TableHeader_borderTop_highContrast: `0px solid ${baseTheme.color_gray_80}`,
   ...baseTheme
 });
 
@@ -60,9 +60,10 @@ export const tableHeaderCellTheme: TableHeaderCellThemeFn = (baseTheme) =>
       theme: {
         TableHeaderCell_borderVertical: `1px dotted ${baseTheme.borderColor}`,
         TableHeaderCell_borderVertical_highContrast: `1px dotted ${baseTheme.color_gray_80}`,
-        TableHeaderCell_fontWeight: baseTheme.fontWeight_bold,
+        TableHeaderCell_fontSize: baseTheme.fontSize_ui_sm,
+        TableHeaderCell_fontWeight: baseTheme.fontWeight_semiBold,
         TableHeaderCell_paddingHorizontal: baseTheme.space_inline_md,
-        TableHeaderCell_paddingVertical: pxToEm(12),
+        TableHeaderCell_paddingVertical: pxToEm(14),
         TableHeaderCell_paddingVertical_spacious: baseTheme.space_stack_md,
         TableHeaderCell_verticalAlign: 'bottom'
       }

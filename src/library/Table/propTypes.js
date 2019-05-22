@@ -48,6 +48,14 @@ const messages = shape({
 });
 
 export const tablePropTypes = {
+  /* TargetX Custom Props */
+  backgroundColor: string,
+  border: string,
+  borderRadius: string,
+  fullWidth: bool,
+  width: string,
+
+  /* Built-In Props */
   columns,
   data: rows.isRequired,
   defaultSelectedRows: rows,

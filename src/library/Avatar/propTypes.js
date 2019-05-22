@@ -1,5 +1,5 @@
 /* @flow */
-import { node, oneOf, string } from 'prop-types';
+import { node, number, oneOf, oneOfType, string } from 'prop-types';
 import { SHAPE, SIZE } from './constants';
 
 export const avatarPropTypes = {
@@ -8,5 +8,5 @@ export const avatarPropTypes = {
   children: node.isRequired,
   color: string,
   shape: oneOf(Object.keys(SHAPE)),
-  size: oneOf(Object.keys(SIZE))
+  size: oneOfType([number, oneOf(Object.keys(SIZE))])
 };

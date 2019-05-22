@@ -12,6 +12,9 @@ import {
 import { SIZE, TYPE, VARIANT } from './constants';
 
 export const textInputPropTypes = {
+  /* TargetX Custom props */
+  borderRadius: oneOfType([number, string]),
+
   className: string,
   defaultValue: string,
   disabled: bool,

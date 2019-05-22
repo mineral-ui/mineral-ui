@@ -58,8 +58,8 @@ const getSpacingStyles = (
 
 export const BoxRoot = styled('div', {
   shouldForwardProp: (prop) =>
-    ['height', 'width'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ breakpoints, height, inline, theme, width, ...restProps }) => {
+    ['filter', 'height', 'width'].indexOf(prop) === -1 && isPropValid(prop)
+})(({ background, backgroundColor, blur, border, borderBottom, borderLeft, borderRadius, borderRight, borderTop, boxShadow, cursor, filter, maxHeight, maxWidth, minHeight, minWidth, overflow, position, scrollable, zIndex, breakpoints, height, inline, theme, width, ...restProps }) => {
   const rtl = theme.direction === 'rtl';
 
   const mapValueToProperty = (
@@ -67,6 +67,7 @@ export const BoxRoot = styled('div', {
     value: SpacingValue
   ): number | string => {
     const map = {
+      borderRadius: borderRadius => borderRadius,
       display: (value) => (value ? 'inline-block' : undefined),
       height: getMeasurement,
       width: getMeasurement,
@@ -89,6 +90,7 @@ export const BoxRoot = styled('div', {
       breakpoints,
       mapValueToProperty,
       styles: {
+        borderRadius,
         display: inline,
         height,
         ...getSpacingStyles('margin', restProps, rtl),
@@ -96,6 +98,27 @@ export const BoxRoot = styled('div', {
         width
       },
       theme
-    })
+    }),
+
+    /* TargetX Custom Styles */
+    ...(background && { background }),
+    ...(backgroundColor && { backgroundColor }),
+    ...(blur && { filter: `blur(${blur}px)` }),
+    ...(border && { border }),
+    ...(borderBottom && { borderBottom }),
+    ...(borderLeft && { borderLeft }),
+    ...(borderRight && { borderRight }),
+    ...(borderTop && { borderTop }),
+    ...(boxShadow && { boxShadow }),
+    ...(cursor && { cursor }),
+    ...(filter && { filter }),
+    ...(maxHeight && { maxHeight: getMeasurement(maxHeight) }),
+    ...(maxWidth && { maxWidth: getMeasurement(maxWidth) }),
+    ...(minHeight && { minHeight: getMeasurement(minHeight) }),
+    ...(minWidth && { minWidth: getMeasurement(minWidth) }),
+    ...(overflow && { overflow }),
+    ...(position && { position }),
+    ...(scrollable && { overflow: 'scroll' }),
+    ...(zIndex && { zIndex })
   };
 });

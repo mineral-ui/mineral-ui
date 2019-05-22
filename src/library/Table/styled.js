@@ -24,6 +24,11 @@ import { SORT } from './constants';
 const REGEX_IS_EM_VALUE = /\d+em$/;
 
 const tableCellStyles = ({
+  clickable,
+  color,
+  cursor,
+  verticalAlign,
+
   density,
   highContrast,
   noPadding,
@@ -53,7 +58,11 @@ const tableCellStyles = ({
     fontWeight: 'inherit',
     padding: noPadding ? 0 : `${paddingVertical} ${paddingHorizontal}`,
     textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
-    verticalAlign: theme.TableCell_verticalAlign,
+
+    ...(clickable ? { cursor: 'pointer' } : {}),
+    ...(color ? { color } : {}),
+    ...(cursor ? { cursor } : {}),
+    verticalAlign: verticalAlign || theme.TableCell_verticalAlign,
 
     ['&:not(:first-child)' + ignoreSsrWarning]: {
       [borderProperty]: borderVertical
@@ -76,9 +85,10 @@ export const TableOverflowContainer = themed(OverflowContainer)(
     )
 );
 
-export const TableRoot = styled('table')(({ theme }) => ({
+export const TableRoot = styled('table')(({ backgroundColor, theme }) => ({
   ...componentStyleReset(theme),
 
+  backgroundColor: backgroundColor ? backgroundColor : 'white',
   borderCollapse: 'collapse',
   borderSpacing: 0,
   width: '100%'
@@ -130,7 +140,9 @@ export const TableHeaderCellRoot = styled('th', {
 
     return tableCellStyles({ theme, ...props });
   },
-  ({ highContrast, maxWidth, minWidth, theme: baseTheme, width }) => {
+  ({ border, borderless, highContrast, maxWidth, minWidth, theme: baseTheme, width }) => {
+    border = borderless ? 'none' : border;
+
     const theme = tableHeaderCellTheme(baseTheme);
     const fontSize = theme.TableHeaderCell_fontSize;
     const rtl = theme.direction === 'rtl';
@@ -158,7 +170,7 @@ export const TableHeaderCellRoot = styled('th', {
         [borderProperty]: 0,
 
         '&::before': {
-          [borderProperty]: borderVertical,
+          [borderProperty]: border ? border : borderVertical,
           bottom: 0,
           content: '""',
           [positionProperty]: 0,
@@ -173,10 +185,12 @@ export const TableHeaderCellRoot = styled('th', {
 );
 
 export const TableRowRoot = styled('tr')(
-  ({ highContrast, isSelected, theme: baseTheme, striped }) => {
+  ({ clickable, cursor, highContrast, hoverable, isSelected, theme: baseTheme, striped }) => {
     const theme = tableRowTheme(baseTheme);
 
     return {
+      ...(clickable ? { cursor: 'pointer' } : {}),
+      ...(cursor ? { cursor } : {}),
       backgroundColor: (() => {
         if (isSelected) {
           if (highContrast) {
@@ -198,19 +212,25 @@ export const TableRowRoot = styled('tr')(
 
       '*:not(thead) > &:hover': {
         backgroundColor: (() => {
-          if (isSelected) {
-            if (highContrast) {
-              return theme.TableRow_backgroundColor_highContrast_selectedHover;
+          if (hoverable) {
+            if (isSelected) {
+              if (highContrast) {
+                return theme.TableRow_backgroundColor_highContrast_selectedHover;
+              }
+              return theme.TableRow_backgroundColor_selectedHover;
             }
-            return theme.TableRow_backgroundColor_selectedHover;
+            return theme.TableRow_backgroundColor_hover;
           }
-          return theme.TableRow_backgroundColor_hover;
         })()
       },
 
       ['&:nth-child(even):not(:hover)' + ignoreSsrWarning]: {
         backgroundColor:
           !isSelected && striped ? theme.TableRow_backgroundColor_striped : null
+      },
+
+      ['&:nth-child(even):hover']: {
+        backgroundColor: !hoverable ? theme.TableRow_backgroundColor_striped : null
       },
 
       ...(isSelected
