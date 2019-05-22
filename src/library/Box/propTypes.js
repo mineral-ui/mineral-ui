@@ -10,7 +10,9 @@ export const spacingPropType = oneOfType([
 export const boxPropTypes = {
   /* TargetX Custom Props */
   backgroundColor: string,
+  borderBottom: string,
   borderRadius: oneOfType([string, arrayOf(string)]),
+  borderTop: string,
   overflow: string,
   position: string,
   scrollable: bool,
