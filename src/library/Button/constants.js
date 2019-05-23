@@ -16,6 +16,9 @@ export const SIZE = {
 };
 
 export const VARIANT = {
+  /* TargetX Custom Variant */
+  grayscale: 'grayscale',
+
   danger: 'danger',
   success: 'success',
   warning: 'warning'
