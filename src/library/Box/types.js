@@ -9,7 +9,9 @@ type InsetSpacingSize = $Keys<typeof INSET_SPACING_SIZE>;
 export type BoxProps = {
   /* TargetX Custom Props */
   backgroundColor?: string,
+  borderBottom?: string,
   borderRadius?: string | Array<string>,
+  borderTop?: string,
   overflow?: string,
   position?: string,
   scrollable?: boolean,
