@@ -98,7 +98,10 @@ export const FormFieldTextWrapper = styled('div')(
       '& > *': {
         alignSelf: 'flex-end',
         display: 'inline-block'
-      }
+      },
+
+      /* TargetX Custom Styles */
+      fontFamily: theme.FormFieldLabel_fontFamily
     };
   }
 );

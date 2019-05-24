@@ -24,12 +24,12 @@ const getIcons = ({
   disabled,
   iconStart,
   iconEnd,
-  readOnly,
+  // readOnly,
   size,
   variant,
   variantIcons
 }) => {
-  if (disabled || readOnly) {
+  if (disabled) {
     return [];
   }
 
