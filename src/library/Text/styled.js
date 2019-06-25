@@ -48,7 +48,6 @@ export const TextRoot = styled('p', {
 })(
   ({
     /* TargetX Custom Styles */
-    altFont,
     bold,
     fontFamily,
     fontSize,

@@ -214,12 +214,11 @@ export default {
     color_grayscale_active: '#717171',
     color_grayscale_focus: '#8c8c8c',
     color_grayscale_hover: '#999999',
-    fontFamily: '"Proxima Nova"',
+    fontFamily: '"proxima-nova"',
     fontFamily_system:
       '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     fontFamily_monospace:
       '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
-    fontFamily_alt: '"Proxima Nova Semi Bold"',
     fontSize_base: '1rem',
     fontSize_mouse: '0.6875rem',
     fontSize_prose: '1rem',

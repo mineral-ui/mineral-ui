@@ -124,12 +124,11 @@ export const color_grayscalePrimary = '#3c3c3c';
 export const color_grayscale_active = '#717171';
 export const color_grayscale_focus = '#8c8c8c';
 export const color_grayscale_hover = '#999999';
-export const fontFamily = '"Proxima Nova"';
+export const fontFamily = '"proxima-nova"';
 export const fontFamily_system =
   '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
 export const fontFamily_monospace =
   '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace';
-export const fontFamily_alt = '"Proxima Nova Semi Bold"';
 export const fontSize_base = '1rem';
 export const fontSize_mouse = '0.6875rem';
 export const fontSize_prose = '1rem';
