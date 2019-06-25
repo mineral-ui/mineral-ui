@@ -71,7 +71,11 @@ const flexItemMapValueToProperty = (
     flexBasis: getWidthValue,
     flexGrow: (value) => value,
     flexShrink: (value) => value,
-    minWidth: getWidthValue
+    minWidth: getWidthValue,
+
+    alignItems: getAlignment,
+    flexDirection: value => value,
+    justifyContent: getJustification
   };
 
   return map[property](value);
@@ -80,7 +84,7 @@ const flexItemMapValueToProperty = (
 export const FlexItemRoot = styled(Box, {
   shouldForwardProp: (prop) =>
     ['inline', 'minWidth', 'width'].indexOf(prop) === -1
-})(({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
+})(({ alignItems, direction, justifyContent, alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
   getResponsiveStyles({
     breakpoints,
     mapValueToProperty: flexItemMapValueToProperty,
@@ -89,7 +93,11 @@ export const FlexItemRoot = styled(Box, {
       flexBasis: width || 'auto',
       flexGrow: grow,
       flexShrink: shrink,
-      minWidth
+      minWidth,
+      
+      alignItems,
+      flexDirection: direction,
+      justifyContent
     },
     theme
   })
