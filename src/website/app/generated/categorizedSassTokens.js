@@ -217,12 +217,11 @@ export default {
     '$mnrl-color-grayscale-active': '#717171',
     '$mnrl-color-grayscale-focus': '#8c8c8c',
     '$mnrl-color-grayscale-hover': '#999999',
-    '$mnrl-fontFamily': '"Proxima Nova"',
+    '$mnrl-fontFamily': '"proxima-nova"',
     '$mnrl-fontFamily-system':
       '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     '$mnrl-fontFamily-monospace':
       '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
-    '$mnrl-fontFamily-alt': '"Proxima Nova Semi Bold"',
     '$mnrl-fontSize-base': '1rem',
     '$mnrl-fontSize-mouse': '0.6875rem',
     '$mnrl-fontSize-prose': '1rem',

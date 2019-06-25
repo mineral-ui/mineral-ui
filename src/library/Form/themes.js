@@ -15,7 +15,6 @@ export const formFieldTheme: FormFieldThemeFn = (baseTheme) => ({
   FormFieldCaption_marginTop_isGroup: baseTheme.space_stack_sm,
 
   FormFieldLabel_color: baseTheme.h5_color,
-  FormFieldLabel_fontFamily: baseTheme.fontFamily_alt,
   FormFieldLabel_fontSize: baseTheme.h6_fontSize,
   FormFieldLabel_fontWeight: baseTheme.fontWeight_semiBold, // [1]
   FormFieldLabel_marginBottom: baseTheme.space_stack_sm,

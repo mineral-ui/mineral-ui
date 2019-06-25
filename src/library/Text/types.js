@@ -14,7 +14,6 @@ type FontWeight = $Keys<typeof FONT_WEIGHT> | number;
 
 export type TextProps = {
   /* TargetX Custom Props */
-  altFont?: boolean,
   bold?: boolean,
   fontFamily?: string,
   fontSize?: string,
