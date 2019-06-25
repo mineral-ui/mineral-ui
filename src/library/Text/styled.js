@@ -52,7 +52,11 @@ export const TextRoot = styled('p', {
     fontFamily,
     fontSize,
     lineHeight,
+    margin,
     marginBottom,
+    marginHorizontal,
+    marginLeft,
+    marginRight,
     marginTop,
     marginVertical,
 
@@ -134,12 +138,18 @@ export const TextRoot = styled('p', {
       marginBottom: noMargins ? 0 : theme.Text_marginBottom,
 
       /* TargetX Custom Styles */
-      ...(altFont && { fontFamily: theme.fontFamily_alt }),
       ...(bold && { fontWeight: 'bold' }),
       ...(fontFamily && { fontFamily }),
       ...(fontSize && { fontSize }),
       ...(lineHeight && { lineHeight }),
+      ...(margin && { margin }),
       ...(marginBottom && { marginBottom }),
+      ...(marginHorizontal && {
+        marginLeft: marginHorizontal,
+        marginRight: marginHorizontal
+      }),
+      ...(marginLeft && { marginLeft }),
+      ...(marginRight && { marginRight }),
       ...(marginTop && { marginTop }),
       ...(marginVertical && {
         marginBottom: marginVertical,

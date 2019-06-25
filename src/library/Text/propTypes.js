@@ -8,7 +8,11 @@ export const textPropTypes = {
   fontFamily: string,
   fontSize: string,
   lineHeight: oneOfType([number, string]),
+  margin: oneOfType([number, string]),
   marginBottom: oneOfType([number, string]),
+  marginHorizontal: oneOfType([number, string]),
+  marginLeft: oneOfType([number, string]),
+  marginRight: oneOfType([number, string]),
   marginTop: oneOfType([number, string]),
   marginVertical: oneOfType([number, string]),
 

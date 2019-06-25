@@ -18,7 +18,11 @@ export type TextProps = {
   fontFamily?: string,
   fontSize?: string,
   lineHeight?: number | string,
+  margin?: number | string,
   marginBottom?: number | string,
+  marginHorizontal?: number | string,
+  marginLeft?: number | string,
+  marginRight?: number | string,
   marginTop?: number | string,
   marginVertical?: number | string,
 
