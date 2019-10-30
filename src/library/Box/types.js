@@ -27,6 +27,7 @@ export type BoxProps = {
   overflow?: string,
   position?: string,
   scrollable?: boolean,
+  top?: string,
   zIndex?: string | number,
 
   /* Built-In Props */

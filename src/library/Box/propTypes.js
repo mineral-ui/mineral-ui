@@ -28,6 +28,7 @@ export const boxPropTypes = {
   overflow: string,
   position: string,
   scrollable: bool,
+  top: string,
   zIndex: oneOfType([string, number]),
 
   /* Built-In Props */
