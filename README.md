@@ -8,6 +8,8 @@
 
 A design system and [React](https://reactjs.org/) component library for the web that lets you quickly build high-quality, accessible apps. Created by [CA Technologies](http://ca.com).
 
+> [ℹ️▶️ **Please read**: Important update regarding the status of this project](https://github.com/mineral-ui/mineral-ui/blob/master/docs/status-of-mineral-ui.md)
+
 ## Project Goals
 
 - Consistent, thoughtful design
