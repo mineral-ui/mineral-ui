@@ -12,7 +12,7 @@ const isProduction = NODE_ENV === 'production';
 const GOOGLE_TRACKING_ID = isProduction ? 'UA-107538931-1' : null;
 const licenseHeader = `/**!
  * Mineral UI
- * Copyright 2017 CA
+ * Copyright 2020 Mineral UI
  * License: Apache-2.0
  */`;
 

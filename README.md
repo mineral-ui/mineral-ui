@@ -4,11 +4,11 @@
 [![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat)](https://github.com/commitizen/cz-cli)
 [![code style Prettier](https://img.shields.io/badge/code_style-Prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-# [Mineral UI](https://mineral-ui.com/)
+# Mineral UI
 
-A design system and [React](https://reactjs.org/) component library for the web that lets you quickly build high-quality, accessible apps. Created by [CA Technologies](http://ca.com).
+[Mineral UI](https://mineral-ui.com/) is a design system and [React](https://reactjs.org/) component library for the web that lets you quickly build high-quality, accessible apps.
 
-> [ℹ️▶️ **Please read**: Important update regarding the status of this project](https://github.com/mineral-ui/mineral-ui/blob/master/docs/status-of-mineral-ui.md)
+> [ℹ️▶️ **Please read**: Important updates regarding the status of this project](./docs/status-of-mineral-ui.md)
 
 ## Project Goals
 

@@ -65,7 +65,7 @@ export default function Footer(props: Props) {
   return (
     <Root {...props}>
       <Markdown>
-        {`Copyright © 2017 CA Technologies
+        {`Copyright © 2020 Mineral UI
 
 We welcome feedback and contributions on [GitHub](https://github.com/mineral-ui/mineral-ui)`}
       </Markdown>

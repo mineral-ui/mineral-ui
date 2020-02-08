@@ -2,11 +2,11 @@
 
 This doc attempts to provide some context around our current public-facing site architecture.
 
-`tldr;` We recommend continuing development on the existing React dynamic site until at least after CA World.
+`tldr;` We recommend continuing development on the existing React dynamic site until bandwidth permits.
 
 ### Background
 
-A main stakeholder goal is that our public presentation should have the maximum polish attainable by CA World (our yearly company expo). Gatsby was proposed as an alternative to continuing to develop a dynamic React site as there were several key offerings that could enhance site creation in the long run.
+Gatsby was proposed as an alternative to continuing to develop a dynamic React site as there were several key offerings that could enhance site creation in the long run.
 
 ### [Gatsby](https://www.gatsbyjs.org) offerings
 
@@ -29,7 +29,7 @@ A main stakeholder goal is that our public presentation should have the maximum 
 
 #### Stakeholder requirements
 
-1. Mineral UI must project legitimacy by CA World (November 13)
+1. Mineral UI must project legitimacy as an open source UI component library
 2. Maintainable website
 3. Ease of contributions
 4. As much site content as possible

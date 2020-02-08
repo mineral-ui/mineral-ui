@@ -46,7 +46,7 @@ type State = {
 const pageMeta = {
   canonicalLink: 'https://mineral-ui.com',
   description:
-    'Use Mineral UI’s React component library to quickly build elegantly accessible apps. Created by CA Technologies.',
+    'Use Mineral UI’s React component library to quickly build elegantly accessible apps.',
   title: 'Mineral UI'
 };
 
