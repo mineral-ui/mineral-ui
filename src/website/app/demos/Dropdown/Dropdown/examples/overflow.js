@@ -1,10 +1,13 @@
 /* @flow */
-import Button from '../../../../../../library/Button';
 import styled from '@emotion/styled';
+import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
 import data from '../../../Menu/common/menuData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const OverflowContainer = styled('div')({
+const OverflowContainer: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)({
   backgroundColor: 'aliceblue',
   margin: '0 0 145px 0',
   overflow: 'hidden',

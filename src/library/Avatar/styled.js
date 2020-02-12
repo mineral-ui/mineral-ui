@@ -5,10 +5,15 @@ import { componentStyleReset } from '../styles';
 import { SHAPE } from './constants';
 import { avatarTheme } from './themes';
 
-export const AvatarRoot = styled('span', {
-  shouldForwardProp: (prop) =>
-    ['color', 'shape', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})(
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const AvatarRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'span',
+  {
+    shouldForwardProp: (prop) =>
+      ['color', 'shape', 'size'].indexOf(prop) === -1 && isPropValid(prop)
+  }
+)(
   ({
     background,
     color: propColor,

@@ -1,10 +1,10 @@
 /* @flow */
-import React, { Component, cloneElement } from 'react';
+import React, { cloneElement, Component } from 'react';
 import withForwardRef from '../utils/withForwardRef';
-import { Button as Root, Content, Inner } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
-
 import { buttonPropTypes } from './propTypes';
+import { Button as Root, Content, Inner } from './styled';
+
 import type { ButtonDefaultProps, ButtonProps } from './types';
 
 class Button extends Component<ButtonProps> {

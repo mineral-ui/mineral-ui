@@ -1,18 +1,19 @@
 /* @flow */
-import React, { createElement } from 'react';
 import styled from '@emotion/styled';
 import marksy from 'marksy/jsx';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
+import React, { createElement } from 'react';
 import { getNormalizedValue, pxToEm } from '../../library/styles';
-import { ignoreSsrWarning } from '../../library/utils/emotion';
 import Text from '../../library/Text';
+import { ignoreSsrWarning } from '../../library/utils/emotion';
+import _Label from './Label';
+import MarkdownTable from './MarkdownTable';
 import Heading from './SiteHeading';
 import Link from './SiteLink';
-import MarkdownTable from './MarkdownTable';
 import getCodeBlockStyles from './utils/getCodeBlockStyles';
 import prism from './utils/prism';
-import _Label from './Label';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const REGEX_LABEL_DELIMITER = /\s*~\s*/;
 
@@ -240,7 +241,9 @@ const CodeBlock = styled('div')(styles.codeBlock);
 const Image = styled('img')(styles.image);
 const Label = styled(_Label)(styles.label);
 const LI = styled('li')(styles.listItem);
-const Root = styled('div')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.root
+);
 
 function replaceHeading(
   level,

@@ -2,12 +2,15 @@
 import styled from '@emotion/styled';
 import Box from '../../common/DemoBox';
 import _DemoLayout from '../../common/DemoLayout';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const DemoLayout = styled(_DemoLayout)({
-  '& > *[class]': {
-    marginBottom: 0
+const DemoLayout: StyledComponent<{ [key: string]: any }> = styled(_DemoLayout)(
+  {
+    '& > *[class]': {
+      marginBottom: 0
+    }
   }
-});
+);
 
 export default {
   id: 'inline',

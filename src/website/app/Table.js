@@ -1,8 +1,9 @@
 /* @flow */
-import rgba from 'polished/lib/color/rgba';
 import styled from '@emotion/styled';
+import rgba from 'polished/lib/color/rgba';
 import { ignoreSsrWarning } from '../../library/utils/emotion';
 import siteColors from './siteColors';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const styles = {
   cell: ({ theme }) => ({
@@ -43,7 +44,15 @@ const styles = {
   })
 };
 
-export const Table = styled('table')(styles.table);
-export const TableCell = styled('td')(styles.cell);
-export const TableHeaderCell = styled('th')(styles.headerCell);
-export const TableRow = styled('tr')(styles.row);
+export const Table: StyledComponent<{ [key: string]: any }> = styled('table')(
+  styles.table
+);
+export const TableCell: StyledComponent<{ [key: string]: any }> = styled('td')(
+  styles.cell
+);
+export const TableHeaderCell: StyledComponent<{ [key: string]: any }> = styled(
+  'th'
+)(styles.headerCell);
+export const TableRow: StyledComponent<{ [key: string]: any }> = styled('tr')(
+  styles.row
+);

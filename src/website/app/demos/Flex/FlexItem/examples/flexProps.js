@@ -1,15 +1,18 @@
 /* @flow */
 import styled from '@emotion/styled';
-import _FlexItem from '../../common/DemoFlexItem';
 import Box from '../../../Box/common/DemoBox';
 import Flex from '../../common/DemoFlex';
+import _FlexItem from '../../common/DemoFlexItem';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 // Resetting some styles applied by _FlexItem's boxStyles
-const FlexItem = styled(_FlexItem)(({ alignItems, flex, justifyContent }) => ({
-  alignItems: alignItems || 'flex-start',
-  display: flex ? 'flex' : 'block',
-  justifyContent: justifyContent || 'flex-start'
-}));
+const FlexItem: StyledComponent<{ [key: string]: any }> = styled(_FlexItem)(
+  ({ alignItems, flex, justifyContent }) => ({
+    alignItems: alignItems || 'flex-start',
+    display: flex ? 'flex' : 'block',
+    justifyContent: justifyContent || 'flex-start'
+  })
+);
 
 export default {
   id: 'flex-props',

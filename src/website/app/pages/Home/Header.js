@@ -1,16 +1,17 @@
 /* @flow */
-import React, { Component } from 'react';
 import styled from '@emotion/styled';
+import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
+import React, { Component } from 'react';
 import Media from 'react-media';
+import Button from '../../../../library/Button';
+import _Popover from '../../../../library/Popover';
 import { pxToEm } from '../../../../library/styles';
 import { themed } from '../../../../library/themes';
 import { ignoreSsrWarning } from '../../../../library/utils/emotion';
-import Button from '../../../../library/Button';
-import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
-import _Popover from '../../../../library/Popover';
+import LogotypeHorizontal from '../../LogotypeHorizontal';
 import Heading from '../../SiteHeading';
 import _Link from '../../SiteLink';
-import LogotypeHorizontal from '../../LogotypeHorizontal';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   latestPost?: {
@@ -163,7 +164,9 @@ const Popover = themed(_Popover)({
   PopoverContent_paddingVertical: null
 });
 
-const Root = styled('div')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.root
+);
 const Link = styled(_Link)(styles.link);
 const Logotype = styled(Heading)(styles.logotype);
 const MenuButton = styled(ThemedMenuButton)(styles.menuButton);

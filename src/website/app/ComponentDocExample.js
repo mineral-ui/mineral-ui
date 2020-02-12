@@ -1,15 +1,16 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
+import React from 'react';
 import { pxToEm } from '../../library/styles';
 import { ignoreSsrWarning } from '../../library/utils/emotion';
-import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
-import SubHeading from './SiteSubHeading';
-import Link from './SiteLink';
 import LiveProvider from './LiveProvider';
 import Markdown from './Markdown';
 import PropTable from './PropTable';
+import Link from './SiteLink';
+import SubHeading from './SiteSubHeading';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   backgroundColor?: string,
@@ -58,7 +59,9 @@ const styles = {
   })
 };
 
-const Root = styled('div')(styles.componentDocExample);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.componentDocExample
+);
 const Description = styled(Markdown)(styles.description);
 const BackLink = styled(Link)(styles.backLink);
 

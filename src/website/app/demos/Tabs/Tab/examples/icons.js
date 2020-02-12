@@ -1,12 +1,13 @@
 /* @flow */
-import React, { Fragment } from 'react';
+import styled from '@emotion/styled';
 import IconCameraAlt from 'mineral-ui-icons/IconCameraAlt';
 import IconInfoOutline from 'mineral-ui-icons/IconInfoOutline';
 import IconMusicNote from 'mineral-ui-icons/IconMusicNote';
-import styled from '@emotion/styled';
-import Tabs, { Tab } from '../../../../../../library/Tabs';
+import React, { Fragment } from 'react';
 import Grid, { GridItem } from '../../../../../../library/Grid';
+import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Text from '../../../../../../library/Text';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const styles = {
   album: ({ theme }) => ({
@@ -30,7 +31,9 @@ const styles = {
 };
 
 const Album = styled('li')(styles.album);
-const Albums = styled('ol')(styles.albums);
+const Albums: StyledComponent<{ [key: string]: any }> = styled('ol')(
+  styles.albums
+);
 const Img = styled('img')(styles.img);
 
 const content = {

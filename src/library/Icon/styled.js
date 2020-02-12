@@ -3,7 +3,9 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { iconTheme } from './themes';
 
-export const IconRoot = styled('svg', {
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const IconRoot: StyledComponent<{ [key: string]: any }> = styled('svg', {
   shouldForwardProp: (prop) =>
     ['color', 'size'].indexOf(prop) === -1 && isPropValid(prop)
 })(({ color, rtl, size, theme: baseTheme }) => {

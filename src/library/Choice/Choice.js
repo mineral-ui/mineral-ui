@@ -29,6 +29,7 @@ export default class Choice extends PureComponent<ChoiceProps> {
       size,
       ...restProps
     } = this.props;
+
     const rootProps = {
       className,
       disabled,

@@ -1,14 +1,15 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import { componentStyleReset } from '../../../../../../library/styles';
+import React from 'react';
 import Button from '../../../../../../library/Button';
 import Popover from '../../../../../../library/Popover';
 import Popper from '../../../../../../library/Popover/RtlPopper';
-import DemoContent from '../../common/DemoContent';
+import { componentStyleReset } from '../../../../../../library/styles';
 import renderPropsDescription from '../../../common/renderPropsDescription';
+import DemoContent from '../../common/DemoContent';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const _DemoLayout = styled('div')({
+const _DemoLayout: StyledComponent<{ [key: string]: any }> = styled('div')({
   marginBottom: 140
 });
 

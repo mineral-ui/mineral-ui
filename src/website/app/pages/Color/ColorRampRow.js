@@ -1,9 +1,10 @@
 /* @flow */
-import React from 'react';
-import colorable from 'colorable';
-import readableColor from 'polished/lib/color/readableColor';
-import { palette } from 'mineral-ui-tokens';
 import styled from '@emotion/styled';
+import colorable from 'colorable';
+import { palette } from 'mineral-ui-tokens';
+import readableColor from 'polished/lib/color/readableColor';
+import React from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   name: string
@@ -43,7 +44,7 @@ const styles = {
   }
 };
 
-const Row = styled('div')(styles.row);
+const Row: StyledComponent<{ [key: string]: any }> = styled('div')(styles.row);
 const BlackOnBackground = styled('span')(styles.blackonBackground);
 const WhiteOnBackground = styled('span')(styles.whiteOnBackground);
 const ColorName = styled('span')(styles.colorName);

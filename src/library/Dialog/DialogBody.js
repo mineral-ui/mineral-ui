@@ -1,12 +1,12 @@
 /* @flow */
 import React, { Component } from 'react';
-import {
-  DialogBodyRoot as Root,
-  DialogBodyOverflowContainerWithShadows
-} from './styled';
 import ModifiersContext from './ModifiersContext';
-
 import { dialogBodyPropTypes } from './propTypes';
+import {
+  DialogBodyOverflowContainerWithShadows,
+  DialogBodyRoot as Root
+} from './styled';
+
 import type { DialogBodyProps } from './types';
 
 export default class DialogBody extends Component<DialogBodyProps> {

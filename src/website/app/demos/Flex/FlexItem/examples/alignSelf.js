@@ -1,12 +1,15 @@
 /* @flow */
 import styled from '@emotion/styled';
+import _Flex from '../../common/DemoFlex';
 import FlexItem from '../../common/DemoFlexItem';
 import DemoLayout from '../../common/DemoLayout';
-import _Flex from '../../common/DemoFlex';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Flex = styled(_Flex)(({ direction }) => ({
-  height: direction === 'column' ? null : '5rem'
-}));
+const Flex: StyledComponent<{ [key: string]: any }> = styled(_Flex)(
+  ({ direction }) => ({
+    height: direction === 'column' ? null : '5rem'
+  })
+);
 
 export default {
   id: 'align-self',

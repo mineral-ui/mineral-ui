@@ -1,10 +1,11 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {};
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   bottom: 0,
   left: 'calc(-50vw + 50%)',
   position: 'absolute',

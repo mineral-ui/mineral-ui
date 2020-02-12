@@ -3,7 +3,9 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { linkTheme } from './themes';
 
-export const Link = styled('a', {
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const Link: StyledComponent<{ [key: string]: any }> = styled('a', {
   shouldForwardProp: (prop) => isPropValid(prop)
 })(({ variant, theme: baseTheme }) => {
   let theme = linkTheme(baseTheme);

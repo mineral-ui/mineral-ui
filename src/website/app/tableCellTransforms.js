@@ -1,12 +1,13 @@
 /* @flow */
-import React from 'react';
-import { palette } from 'mineral-ui-tokens';
 import styled from '@emotion/styled';
-import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
+import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
 import IconWarning from 'mineral-ui-icons/IconWarning';
+import { palette } from 'mineral-ui-tokens';
+import React from 'react';
 import _Label from './Label';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 // a tilde surrounded by some spaces and "new"
 const REGEX_LABEL_NEW = /^\s+?~\s+?(new)/;
@@ -33,11 +34,21 @@ const styles = {
   }
 };
 
-const Label = styled(_Label)(styles.label);
-const Available = styled('span')(styles.icon);
-const InDevelopment = styled('span')(styles.icon);
-const Planned = styled('span')(styles.icon);
-const Deprecated = styled('span')(styles.icon);
+const Label: StyledComponent<{ [key: string]: any }> = styled(_Label)(
+  styles.label
+);
+const Available: StyledComponent<{ [key: string]: any }> = styled('span')(
+  styles.icon
+);
+const InDevelopment: StyledComponent<{ [key: string]: any }> = styled('span')(
+  styles.icon
+);
+const Planned: StyledComponent<{ [key: string]: any }> = styled('span')(
+  styles.icon
+);
+const Deprecated: StyledComponent<{ [key: string]: any }> = styled('span')(
+  styles.icon
+);
 
 export const isNew = (child: React$Node, index: number) => {
   if (typeof child !== 'string' || !child.match(REGEX_LABEL_NEW)) {

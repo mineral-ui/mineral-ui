@@ -3,88 +3,93 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { hideVisually } from 'polished';
 import { componentStyleReset, getNormalizedValue } from '../styles';
-import { choiceTheme, choiceGroupTheme } from './themes';
+import { choiceGroupTheme, choiceTheme } from './themes';
 
-export const ChoiceRoot = styled('label', {
-  shouldForwardProp: (prop) =>
-    ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
-})(
-  ({ disabled, justify, hideLabel, labelPosition, size, theme: baseTheme }) => {
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const ChoiceRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'label',
+  {
+    shouldForwardProp: (prop) =>
+      ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
+  }
+)(({ disabled, justify, hideLabel, labelPosition, size, theme: baseTheme }) => {
+  const theme = choiceTheme(baseTheme);
+  const labelPositionStart = labelPosition === 'start';
+
+  return {
+    ...componentStyleReset(baseTheme),
+
+    alignItems: 'center',
+    cursor: !disabled && 'pointer',
+    display: 'flex',
+    position: 'relative',
+    flexDirection: labelPositionStart && 'row-reverse',
+    justifyContent:
+      !justify && (labelPositionStart ? 'flex-end' : 'flex-start'),
+
+    '&:hover': {
+      '& span:first-of-type': {
+        borderColor: !disabled && theme.ChoiceControl_borderColor_hover
+      }
+    },
+
+    // Preserve layout when hideLabel
+    ...(hideLabel
+      ? {
+          '&::after': {
+            content: "'.'",
+            fontSize:
+              size === 'small'
+                ? theme.ChoiceText_fontSize_small
+                : theme.ChoiceText_fontSize,
+            visibility: 'hidden',
+            width: '0.1px'
+          }
+        }
+      : undefined)
+  };
+});
+
+export const Input: StyledComponent<{ [key: string]: any }> = styled('input')(
+  ({ theme: baseTheme }) => {
     const theme = choiceTheme(baseTheme);
-    const labelPositionStart = labelPosition === 'start';
 
     return {
-      ...componentStyleReset(baseTheme),
+      ...hideVisually(),
 
-      alignItems: 'center',
-      cursor: !disabled && 'pointer',
-      display: 'flex',
-      position: 'relative',
-      flexDirection: labelPositionStart && 'row-reverse',
-      justifyContent:
-        !justify && (labelPositionStart ? 'flex-end' : 'flex-start'),
-
-      '&:hover': {
-        '& span:first-of-type': {
-          borderColor: !disabled && theme.ChoiceControl_borderColor_hover
+      '&:focus': {
+        '& + span': {
+          boxShadow: theme.ChoiceControl_boxShadow_focus
         }
       },
 
-      // Preserve layout when hideLabel
-      ...(hideLabel
-        ? {
-            '&::after': {
-              content: "'.'",
-              fontSize:
-                size === 'small'
-                  ? theme.ChoiceText_fontSize_small
-                  : theme.ChoiceText_fontSize,
-              visibility: 'hidden',
-              width: '0.1px'
-            }
+      '&:checked,&[type="checkbox"]:indeterminate': {
+        '& + span': {
+          backgroundColor: theme.ChoiceControl_backgroundColor_checked,
+          borderColor: theme.ChoiceControl_borderColor_checked
+        },
+
+        '&:hover': {
+          '& + span': {
+            backgroundColor: theme.ChoiceControl_backgroundColor_checkedHover,
+            borderColor: theme.ChoiceControl_borderColor_checkedHover
           }
-        : undefined)
+        },
+
+        '&:disabled': {
+          '& + span': {
+            backgroundColor: theme.ChoiceControl_borderColor,
+            borderColor: theme.ChoiceControl_borderColor,
+            color: theme.ChoiceControl_backgroundColor
+          }
+        }
+      }
     };
   }
 );
 
-export const Input = styled('input')(({ theme: baseTheme }) => {
-  const theme = choiceTheme(baseTheme);
-
-  return {
-    ...hideVisually(),
-
-    '&:focus': {
-      '& + span': {
-        boxShadow: theme.ChoiceControl_boxShadow_focus
-      }
-    },
-
-    '&:checked,&[type="checkbox"]:indeterminate': {
-      '& + span': {
-        backgroundColor: theme.ChoiceControl_backgroundColor_checked,
-        borderColor: theme.ChoiceControl_borderColor_checked
-      },
-
-      '&:hover': {
-        '& + span': {
-          backgroundColor: theme.ChoiceControl_backgroundColor_checkedHover,
-          borderColor: theme.ChoiceControl_borderColor_checkedHover
-        }
-      },
-
-      '&:disabled': {
-        '& + span': {
-          backgroundColor: theme.ChoiceControl_borderColor,
-          borderColor: theme.ChoiceControl_borderColor,
-          color: theme.ChoiceControl_backgroundColor
-        }
-      }
-    }
-  };
-});
-
-export const Text = styled('span', {
+export const Text: StyledComponent<{ [key: string]: any }> = styled('span', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
 })(
@@ -117,7 +122,7 @@ export const Text = styled('span', {
   }
 );
 
-export const Control = styled('span', {
+export const Control: StyledComponent<{ [key: string]: any }> = styled('span', {
   shouldForwardProp: (prop) =>
     ['disabled', 'size'].indexOf(prop) === -1 && isPropValid(prop)
 })(({ disabled, size, theme: baseTheme }) => {
@@ -153,9 +158,10 @@ export const Control = styled('span', {
   };
 });
 
-export const ChoiceGroupRoot = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ inline, size, theme: baseTheme }) => {
+export const ChoiceGroupRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div',
+  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
+)(({ inline, size, theme: baseTheme }) => {
   const theme = choiceGroupTheme(baseTheme);
 
   return {

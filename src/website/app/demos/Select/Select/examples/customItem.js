@@ -1,11 +1,12 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import Select from '../../../../../../library/Select';
-import item from '../../../Menu/common/customItem';
 import renderPropsDescription from '../../../common/renderPropsDescription';
+import item from '../../../Menu/common/customItem';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const _DemoLayout = styled('div')({
+const _DemoLayout: StyledComponent<{ [key: string]: any }> = styled('div')({
   marginBottom: 160
 });
 

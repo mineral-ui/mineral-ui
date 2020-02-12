@@ -1,7 +1,8 @@
 /* @flow */
-import React, { Component, createRef } from 'react';
 import styled from '@emotion/styled';
+import React, { Component, createRef } from 'react';
 import Button from '../../../../../library/Button';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   children: React$Node,
@@ -10,7 +11,7 @@ type Props = {
   height?: number
 };
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   position: 'relative'
 });
 

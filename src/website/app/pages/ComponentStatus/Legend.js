@@ -1,10 +1,11 @@
 /* @flow */
-import React from 'react';
-import { palette } from 'mineral-ui-tokens';
 import styled from '@emotion/styled';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
+import { palette } from 'mineral-ui-tokens';
+import React from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const styles = {
   list: ({ theme }) => ({
@@ -29,7 +30,7 @@ const styles = {
 const Available = styled(IconCheck)(styles.icon);
 const InDevelopment = styled(IconSlowMotionVideo)(styles.icon);
 const Planned = styled(IconAssignment)(styles.icon);
-const List = styled('ul')(styles.list);
+const List: StyledComponent<{ [key: string]: any }> = styled('ul')(styles.list);
 
 export default function Legend() {
   return (

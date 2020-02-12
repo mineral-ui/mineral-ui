@@ -4,18 +4,21 @@ import Button from '../../../../../../library/Button';
 import TextArea from '../../../../../../library/TextArea';
 import TextInput from '../../../../../../library/TextInput/';
 import _DemoLayout from '../../../common/DemoLayout';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const DemoLayout = styled(_DemoLayout)({
-  '& > *': {
-    alignItems: 'flex-start',
-    display: 'flex',
+const DemoLayout: StyledComponent<{ [key: string]: any }> = styled(_DemoLayout)(
+  {
+    '& > *': {
+      alignItems: 'flex-start',
+      display: 'flex',
 
-    '& > div': {
-      flex: '0 0 8rem',
-      marginRight: '0.5rem'
+      '& > div': {
+        flex: '0 0 8rem',
+        marginRight: '0.5rem'
+      }
     }
   }
-});
+);
 
 export default {
   id: 'next-to-other-inputs',

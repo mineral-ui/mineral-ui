@@ -1,9 +1,10 @@
 /* @flow */
-import React from 'react';
 import { keyframes } from '@emotion/core';
-import lighten from 'polished/lib/color/lighten';
-import darken from 'polished/lib/color/darken';
 import styled from '@emotion/styled';
+import darken from 'polished/lib/color/darken';
+import lighten from 'polished/lib/color/lighten';
+import React from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   error?: string,
@@ -11,40 +12,42 @@ type Props = {
   timedOut: boolean
 };
 
-const Message = styled('div')(({ fancy, theme }) => {
-  const loading = keyframes({
-    '0%': { backgroundPosition: '0 0' },
-    '100%': { backgroundPosition: '100% 0' }
-  });
+const Message: StyledComponent<{ [key: string]: any }> = styled('div')(
+  ({ fancy, theme }) => {
+    const loading = keyframes({
+      '0%': { backgroundPosition: '0 0' },
+      '100%': { backgroundPosition: '100% 0' }
+    });
 
-  let styles = {
-    color: theme.color_theme,
-    fontSize: '1.5em',
-    margin: `${theme.baseline_2} auto`,
-    width: 'min-content'
-  };
+    let styles = {
+      color: theme.color_theme,
+      fontSize: '1.5em',
+      margin: `${theme.baseline_2} auto`,
+      width: 'min-content'
+    };
 
-  if (fancy) {
-    styles = {
-      ...styles,
-      animation: `${loading} 2s`,
-      animationIterationCount: 'infinite',
-      background: `linear-gradient(90deg,
+    if (fancy) {
+      styles = {
+        ...styles,
+        animation: `${loading} 2s`,
+        animationIterationCount: 'infinite',
+        background: `linear-gradient(90deg,
         ${lighten(0.1, theme.color_theme)},
         ${darken(0.2, theme.color_theme)},
         ${lighten(0.1, theme.color_theme)},
         ${darken(0.2, theme.color_theme)}
       )`,
-      backgroundPosition: '0 0',
-      backgroundSize: '300% 100%',
-      color: 'white',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent'
-    };
-  }
+        backgroundPosition: '0 0',
+        backgroundSize: '300% 100%',
+        color: 'white',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent'
+      };
+    }
 
-  return styles;
-});
+    return styles;
+  }
+);
 
 export default function Loading(props: Props) {
   const { error, pastDelay, timedOut } = props;

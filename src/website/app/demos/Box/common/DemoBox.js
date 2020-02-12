@@ -1,8 +1,9 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
 import { rgba } from 'polished';
+import React from 'react';
 import _Box from '../../../../../library/Box';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   inline?: boolean,
@@ -42,7 +43,7 @@ export const boxStyles = ({ inline, padding, theme }: Props) => {
   return styles;
 };
 
-const Root = styled(_Box)(boxStyles);
+const Root: StyledComponent<{ [key: string]: any }> = styled(_Box)(boxStyles);
 
 const DemoBox = (props: Object) => <Root {...props} />;
 

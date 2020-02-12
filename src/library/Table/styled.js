@@ -1,25 +1,27 @@
 /* @flow */
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
-import withProps from 'recompose/withProps';
 import { hideVisually } from 'polished';
-import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
-import { themed, mapComponentThemes } from '../themes';
-import { rtlTextAlign } from '../utils';
-import { ignoreSsrWarning } from '../utils/emotion';
+import withProps from 'recompose/withProps';
 import Checkbox from '../Checkbox';
 import OverflowContainer from '../OverflowContainer/OverflowContainer';
+import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
+import { mapComponentThemes, themed } from '../themes';
+import { rtlTextAlign } from '../utils';
+import { ignoreSsrWarning } from '../utils/emotion';
+import { SORT } from './constants';
+import TableHeaderCell from './TableHeaderCell';
 import {
   tableCellTheme,
-  tableTheme,
   tableHeaderCellTheme,
   tableHeaderTheme,
   tableRowTheme,
   tableSortableHeaderCellTheme,
+  tableTheme,
   tableTitleTheme
 } from './themes';
-import TableHeaderCell from './TableHeaderCell';
-import { SORT } from './constants';
+
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const REGEX_IS_EM_VALUE = /\d+em$/;
 
@@ -76,7 +78,9 @@ export const TableOverflowContainer = themed(OverflowContainer)(
     )
 );
 
-export const TableRoot = styled('table')(({ theme }) => ({
+export const TableRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'table'
+)(({ theme }) => ({
   ...componentStyleReset(theme),
 
   borderCollapse: 'collapse',
@@ -84,28 +88,34 @@ export const TableRoot = styled('table')(({ theme }) => ({
   width: '100%'
 }));
 
-export const TableBody = styled('tbody')();
+export const TableBody: StyledComponent<{ [key: string]: any }> = styled(
+  'tbody'
+)();
 
-export const TableCellRoot = styled('td')(tableCellStyles);
+export const TableCellRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'td'
+)(tableCellStyles);
 
-export const TableHeaderRoot = styled('thead')(
-  ({ hide, highContrast, theme: baseTheme }) => {
-    const theme = tableHeaderTheme(baseTheme);
+export const TableHeaderRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'thead'
+)(({ hide, highContrast, theme: baseTheme }) => {
+  const theme = tableHeaderTheme(baseTheme);
 
-    return hide
-      ? hideVisually()
-      : {
-          borderBottom: highContrast
-            ? theme.TableHeader_borderBottom_highContrast
-            : theme.TableHeader_borderBottom,
-          borderTop: highContrast
-            ? theme.TableHeader_borderTop_highContrast
-            : theme.TableHeader_borderTop
-        };
-  }
-);
+  return hide
+    ? hideVisually()
+    : {
+        borderBottom: highContrast
+          ? theme.TableHeader_borderBottom_highContrast
+          : theme.TableHeader_borderBottom,
+        borderTop: highContrast
+          ? theme.TableHeader_borderTop_highContrast
+          : theme.TableHeader_borderTop
+      };
+});
 
-export const TableHeaderCellRoot = styled('th', {
+export const TableHeaderCellRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('th', {
   shouldForwardProp: (prop) => prop !== 'width' && isPropValid(prop)
 })(
   ({ theme: baseTheme, ...props }) => {
@@ -172,68 +182,68 @@ export const TableHeaderCellRoot = styled('th', {
   }
 );
 
-export const TableRowRoot = styled('tr')(
-  ({ highContrast, isSelected, theme: baseTheme, striped }) => {
-    const theme = tableRowTheme(baseTheme);
+export const TableRowRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'tr'
+)(({ highContrast, isSelected, theme: baseTheme, striped }) => {
+  const theme = tableRowTheme(baseTheme);
 
-    return {
+  return {
+    backgroundColor: (() => {
+      if (isSelected) {
+        if (highContrast) {
+          return theme.TableRow_backgroundColor_highContrast_selected;
+        }
+        return theme.TableRow_backgroundColor_selected;
+      }
+    })(),
+
+    ...(highContrast
+      ? {
+          borderBottom: theme.TableRow_borderHorizontal_highContrast
+        }
+      : {
+          '&:not(:last-child)': {
+            borderBottom: theme.TableRow_borderHorizontal
+          }
+        }),
+
+    '*:not(thead) > &:hover': {
       backgroundColor: (() => {
         if (isSelected) {
           if (highContrast) {
-            return theme.TableRow_backgroundColor_highContrast_selected;
+            return theme.TableRow_backgroundColor_highContrast_selectedHover;
           }
-          return theme.TableRow_backgroundColor_selected;
+          return theme.TableRow_backgroundColor_selectedHover;
         }
-      })(),
+        return theme.TableRow_backgroundColor_hover;
+      })()
+    },
 
-      ...(highContrast
-        ? {
-            borderBottom: theme.TableRow_borderHorizontal_highContrast
-          }
-        : {
-            '&:not(:last-child)': {
-              borderBottom: theme.TableRow_borderHorizontal
-            }
-          }),
+    ['&:nth-child(even):not(:hover)' + ignoreSsrWarning]: {
+      backgroundColor:
+        !isSelected && striped ? theme.TableRow_backgroundColor_striped : null
+    },
 
-      '*:not(thead) > &:hover': {
-        backgroundColor: (() => {
-          if (isSelected) {
-            if (highContrast) {
-              return theme.TableRow_backgroundColor_highContrast_selectedHover;
-            }
-            return theme.TableRow_backgroundColor_selectedHover;
-          }
-          return theme.TableRow_backgroundColor_hover;
-        })()
-      },
+    ...(isSelected
+      ? {
+          ['& > td:first-child, & > th:first-child' + ignoreSsrWarning]: {
+            position: 'relative',
 
-      ['&:nth-child(even):not(:hover)' + ignoreSsrWarning]: {
-        backgroundColor:
-          !isSelected && striped ? theme.TableRow_backgroundColor_striped : null
-      },
-
-      ...(isSelected
-        ? {
-            ['& > td:first-child, & > th:first-child' + ignoreSsrWarning]: {
-              position: 'relative',
-
-              '&::before': {
-                backgroundColor: theme.color_theme_60,
-                bottom: 0,
-                content: '""',
-                left: theme.direction !== 'rtl' ? 0 : null,
-                right: theme.direction === 'rtl' ? 0 : null,
-                position: 'absolute',
-                top: 0,
-                width: '4px'
-              }
+            '&::before': {
+              backgroundColor: theme.color_theme_60,
+              bottom: 0,
+              content: '""',
+              left: theme.direction !== 'rtl' ? 0 : null,
+              right: theme.direction === 'rtl' ? 0 : null,
+              position: 'absolute',
+              top: 0,
+              width: '4px'
             }
           }
-        : undefined)
-    };
-  }
-);
+        }
+      : undefined)
+  };
+});
 
 export const PaddedCheckbox = withProps({ hideLabel: true })(
   styled(Checkbox)(({ density, isHeader, theme: baseTheme }) => {
@@ -312,12 +322,16 @@ export const TableSortableHeaderCellButton = withProps({ as: 'button' })(
   })
 );
 
-export const TableSortableHeaderCellContent = styled('span')({
+export const TableSortableHeaderCellContent: StyledComponent<{
+  [key: string]: any
+}> = styled('span')({
   position: 'relative',
   whiteSpace: 'normal'
 });
 
-export const TableSortableHeaderCellIconHolder = styled('span', {
+export const TableSortableHeaderCellIconHolder: StyledComponent<{
+  [key: string]: any
+}> = styled('span', {
   shouldForwardProp: (prop) => prop !== 'direction' && isPropValid(prop)
 })(({ isSorted, direction, theme: baseTheme }) => {
   const theme = tableSortableHeaderCellTheme(baseTheme);
@@ -346,15 +360,15 @@ export const TableSortableHeaderCellIconHolder = styled('span', {
   };
 });
 
-export const TableTitleRoot = styled('caption')(
-  ({ hide, theme: baseTheme }) => {
-    const theme = tableTitleTheme(baseTheme);
+export const TableTitleRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'caption'
+)(({ hide, theme: baseTheme }) => {
+  const theme = tableTitleTheme(baseTheme);
 
-    return {
-      marginBottom: theme.TableTitle_marginBottom,
-      ...(hide ? hideVisually() : undefined)
-    };
-  }
-);
+  return {
+    marginBottom: theme.TableTitle_marginBottom,
+    ...(hide ? hideVisually() : undefined)
+  };
+});
 
 // [1] Extends the clickable area of the Button to fill the entire cell

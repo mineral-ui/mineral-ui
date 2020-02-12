@@ -1,10 +1,13 @@
 /* @flow */
-import Button from '../../../../../../library/Button';
 import styled from '@emotion/styled';
-import DemoContent from '../../common/DemoContent';
+import Button from '../../../../../../library/Button';
 import Popover from '../../../../../../library/Popover';
+import DemoContent from '../../common/DemoContent';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const OverflowContainer = styled('div')({
+const OverflowContainer: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)({
   backgroundColor: 'aliceblue',
   overflow: 'hidden',
   padding: '25px'

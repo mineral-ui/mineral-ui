@@ -1,9 +1,10 @@
 /* @flow */
 import styled from '@emotion/styled';
-import { getResponsiveStyles } from '../styles';
 import Box from '../Box';
+import { getResponsiveStyles } from '../styles';
 
 import type { StyleValue } from '../styles/types';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;
@@ -34,7 +35,7 @@ const flexMapValueToProperty = (
   return map[property](value);
 };
 
-export const FlexRoot = styled(Box, {
+export const FlexRoot: StyledComponent<{ [key: string]: any }> = styled(Box, {
   shouldForwardProp: (prop) =>
     ['direction', 'inline', 'wrap'].indexOf(prop) === -1
 })(
@@ -77,10 +78,13 @@ const flexItemMapValueToProperty = (
   return map[property](value);
 };
 
-export const FlexItemRoot = styled(Box, {
-  shouldForwardProp: (prop) =>
-    ['inline', 'minWidth', 'width'].indexOf(prop) === -1
-})(({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
+export const FlexItemRoot: StyledComponent<{ [key: string]: any }> = styled(
+  Box,
+  {
+    shouldForwardProp: (prop) =>
+      ['inline', 'minWidth', 'width'].indexOf(prop) === -1
+  }
+)(({ alignSelf, breakpoints, grow, minWidth, shrink, theme, width }) =>
   getResponsiveStyles({
     breakpoints,
     mapValueToProperty: flexItemMapValueToProperty,

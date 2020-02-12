@@ -1,17 +1,18 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import Button from '../../../../../../library/Button/Button';
-import FormField from '../../../../../../library/Form/FormField';
 import IconSearch from 'mineral-ui-icons/IconSearch';
+import React from 'react';
+import Button from '../../../../../../library/Button/Button';
 import Dropdown from '../../../../../../library/Dropdown';
+import FormField from '../../../../../../library/Form/FormField';
 import Menu from '../../../../../../library/Menu';
-import TextInput from '../../../../../../library/TextInput';
 import Text from '../../../../../../library/Text';
-import data from '../../../Menu/common/menuData';
+import TextInput from '../../../../../../library/TextInput';
 import renderPropsDescription from '../../../common/renderPropsDescription';
+import data from '../../../Menu/common/menuData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const _DemoLayout = styled('div')({
+const _DemoLayout: StyledComponent<{ [key: string]: any }> = styled('div')({
   marginBottom: 240
 });
 

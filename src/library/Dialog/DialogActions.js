@@ -2,9 +2,9 @@
 import React, { cloneElement } from 'react';
 import Button from '../Button';
 import { findAllByType } from '../utils/children';
+import { dialogActionsPropTypes } from './propTypes';
 import { DialogActionsRoot as Root } from './styled';
 
-import { dialogActionsPropTypes } from './propTypes';
 import type { DialogActionsProps } from './types';
 
 const DialogActions = (props: DialogActionsProps) => {

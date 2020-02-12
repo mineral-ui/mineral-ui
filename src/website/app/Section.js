@@ -1,6 +1,7 @@
 /* @flow */
-import React, { Component } from 'react';
 import styled from '@emotion/styled';
+import React, { Component } from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   angles?: Array<number>,
@@ -102,7 +103,9 @@ const styles = {
 };
 
 const Inner = styled('div')(styles.inner);
-const Root = styled('section')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('section')(
+  styles.root
+);
 
 export default class Section extends Component<Props> {
   static defaultProps: DefaultProps = {

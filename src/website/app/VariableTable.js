@@ -1,9 +1,10 @@
 /* @flow */
-import React from 'react';
+import styled from '@emotion/styled';
 import colorable from 'colorable';
 import { darken, getLuminance } from 'polished';
-import styled from '@emotion/styled';
+import React from 'react';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   baseTheme?: Object,
@@ -12,10 +13,12 @@ type Props = {
   valueColor: (theme: Object, variable: string, baseTheme?: Object) => any
 };
 
-const Root = styled('div')(({ theme }) => ({
-  margin: `${theme.space_stack_xl} 0 0`,
-  overflowX: 'auto'
-}));
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  ({ theme }) => ({
+    margin: `${theme.space_stack_xl} 0 0`,
+    overflowX: 'auto'
+  })
+);
 const Name = styled('span')(({ theme }) => ({
   fontWeight: theme.fontWeight_semiBold
 }));

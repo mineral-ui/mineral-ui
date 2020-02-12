@@ -5,6 +5,7 @@ import { PopoverArrowRoot as Root } from './styled';
 import type { PopoverArrowProps } from './types';
 
 const PopoverArrow = forwardRef<PopoverArrowProps, HTMLElement>(
+  // $FlowFixMe
   (props: PopoverArrowProps, ref: React$Ref<*>) => {
     return (
       <Root {...props} aria-hidden ref={ref}>

@@ -1,44 +1,47 @@
 /* @flow */
 import styled from '@emotion/styled';
-import React from 'react';
 import { ellipsis } from 'polished';
+import React from 'react';
 import withProps from 'recompose/withProps';
-import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
-import { ignoreSsrWarning } from '../utils/emotion';
-import { themed } from '../themes';
 import Button from '../Button';
-
+import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
+import { themed } from '../themes';
+import { ignoreSsrWarning } from '../utils/emotion';
 import {
   cardActionsTheme,
   cardBlockTheme,
   cardDividerTheme,
   cardFooterTheme,
   cardStatusTheme,
-  cardTitleTheme,
-  cardTheme
+  cardTheme,
+  cardTitleTheme
 } from './themes';
 
-export const CardRoot = styled('div')((props) => {
-  const theme = cardTheme(props.theme);
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-  return {
-    ...componentStyleReset(props.theme),
+export const CardRoot: StyledComponent<{ [key: string]: any }> = styled('div')(
+  (props) => {
+    const theme = cardTheme(props.theme);
 
-    backgroundColor: theme.Card_backgroundColor,
-    border: `1px solid ${theme.Card_borderColor}`,
-    borderRadius: theme.Card_borderRadius,
-    boxShadow: theme.Card_boxShadow,
-    cursor: props.onClick && 'pointer',
-    paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-    paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
+    return {
+      ...componentStyleReset(props.theme),
 
-    '&:focus': {
-      boxShadow: theme.Card_boxShadow_focus
-    }
-  };
-});
+      backgroundColor: theme.Card_backgroundColor,
+      border: `1px solid ${theme.Card_borderColor}`,
+      borderRadius: theme.Card_borderRadius,
+      boxShadow: theme.Card_boxShadow,
+      cursor: props.onClick && 'pointer',
+      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
+      paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
 
-export const CardRow = styled('div')((props) => {
+      '&:focus': {
+        boxShadow: theme.Card_boxShadow_focus
+      }
+    };
+  }
+);
+
+export const CardRow: StyledComponent<{}> = styled('div')((props) => {
   const theme = cardTheme(props.theme);
 
   return {
@@ -49,7 +52,9 @@ export const CardRow = styled('div')((props) => {
   };
 }, {});
 
-export const CardActionsRoot = styled(CardRow)((props) => {
+export const CardActionsRoot: StyledComponent<{ [key: string]: any }> = styled(
+  CardRow
+)((props) => {
   const theme = {
     ...cardActionsTheme(props.theme),
     ...cardTheme(props.theme)
@@ -65,7 +70,9 @@ export const CardActionsRoot = styled(CardRow)((props) => {
   };
 });
 
-export const CardAction = styled('span')((props) => {
+export const CardAction: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)((props) => {
   const theme = {
     ...cardActionsTheme(props.theme),
     ...cardBlockTheme(props.theme)
@@ -88,7 +95,9 @@ export const CardAction = styled('span')((props) => {
   };
 });
 
-export const CardBlockRoot = styled(CardRow)((props) => {
+export const CardBlockRoot: StyledComponent<{ [key: string]: any }> = styled(
+  CardRow
+)((props) => {
   const theme = cardTheme(props.theme);
 
   return {
@@ -98,7 +107,9 @@ export const CardBlockRoot = styled(CardRow)((props) => {
   };
 });
 
-export const CardBlockInner = styled('div')((props) => {
+export const CardBlockInner: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)((props) => {
   const theme = cardBlockTheme(props.theme);
 
   return {
@@ -107,7 +118,9 @@ export const CardBlockInner = styled('div')((props) => {
   };
 });
 
-export const CardDividerRoot = styled('div')((props) => {
+export const CardDividerRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)((props) => {
   const theme = {
     ...cardDividerTheme(props.theme),
     ...cardTheme(props.theme)
@@ -120,7 +133,9 @@ export const CardDividerRoot = styled('div')((props) => {
   };
 });
 
-export const CardFooterRoot = styled('div')(({ variant, theme: baseTheme }) => {
+export const CardFooterRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)(({ variant, theme: baseTheme }) => {
   let theme = {
     ...cardFooterTheme(baseTheme),
     ...cardTheme(baseTheme)
@@ -169,7 +184,7 @@ export const CardFooterContent = themed((props) => <div {...props} />)(
   footerTheme
 );
 
-export const CardFooterTitle = styled('div')((props) => {
+export const CardFooterTitle: StyledComponent<{}> = styled('div')((props) => {
   const theme = {
     ...cardFooterTheme(props.theme),
     ...cardTheme(props.theme)
@@ -184,17 +199,19 @@ export const CardFooterTitle = styled('div')((props) => {
   };
 });
 
-export const CardFooterTitleContent = styled('h4')((props) => {
-  const theme = cardFooterTheme(props.theme);
+export const CardFooterTitleContent: StyledComponent<{}> = styled('h4')(
+  (props) => {
+    const theme = cardFooterTheme(props.theme);
 
-  return {
-    color: theme.CardFooterTitle_color,
-    flex: '1 1 auto',
-    fontSize: theme.CardFooterTitle_fontSize,
-    fontWeight: theme.CardFooterTitle_fontWeight,
-    margin: 0
-  };
-});
+    return {
+      color: theme.CardFooterTitle_color,
+      flex: '1 1 auto',
+      fontSize: theme.CardFooterTitle_fontSize,
+      fontWeight: theme.CardFooterTitle_fontWeight,
+      margin: 0
+    };
+  }
+);
 
 export const CardFooterToggleButton = withProps({ type: 'button' })(
   styled(Button)(
@@ -233,7 +250,9 @@ export const CardFooterToggleButton = withProps({ type: 'button' })(
   )
 );
 
-export const CardImageRoot = styled('img')((props) => {
+export const CardImageRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'img'
+)((props) => {
   const theme = cardTheme(props.theme);
 
   return {
@@ -254,90 +273,94 @@ export const CardImageRoot = styled('img')((props) => {
   };
 });
 
-export const CardStatusRoot = styled(CardRow)(
-  ({ theme: baseTheme, variant }) => {
-    const theme = cardStatusTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-
-    return {
-      alignItems: 'center',
-      color: theme[`color_${variant}`],
-      display: 'flex',
-      fontSize: theme.CardStatus_fontSize,
-      fontWeight: theme.CardStatus_fontWeight,
-
-      '& > [role="img"]': {
-        height: theme.CardStatusIcon_size,
-        marginRight: rtl ? null : theme.CardStatusIcon_margin,
-        marginLeft: rtl ? theme.CardStatusIcon_margin : null,
-        width: theme.CardStatusIcon_size
-      }
-    };
-  }
-);
-
-export const CardTitleRoot = styled(CardRow)({
-  display: 'flex'
-});
-
-export const CardTitleAvatar = styled('span')(
-  ({ subtitle, theme: baseTheme }) => {
-    const theme = cardTitleTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const width = subtitle
-      ? theme.CardTitleAvatarSize_large
-      : theme.CardTitleAvatarSize;
-
-    return {
-      flex: '0 0 auto',
-      marginLeft: rtl ? theme.CardTitleAvatar_margin : null,
-      marginRight: rtl ? null : theme.CardTitleAvatar_margin,
-      width,
-
-      '&[class] > *': {
-        height: 'auto',
-        width: '100%'
-      }
-    };
-  }
-);
-
-export const CardTitleInner = styled('div')({
-  flex: '1 1 auto'
-});
-
-export const CardTitleSecondaryText = styled('span')((props) => {
-  const theme = cardTitleTheme(props.theme);
-  const fontSize = theme.CardTitleSecondaryText_fontSize;
+export const CardStatusRoot: StyledComponent<{ [key: string]: any }> = styled(
+  CardRow
+)(({ theme: baseTheme, variant }) => {
+  const theme = cardStatusTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
 
   return {
-    color: theme.CardTitleSecondaryText_color,
-    flex: '0 0 auto',
-    fontSize,
-    fontWeight: theme.CardTitleSecondaryText_fontWeight,
-    transform: `translateY(${getNormalizedValue(pxToEm(5), fontSize)})`, // Optical alignment
-    ...ellipsis('33%')
+    alignItems: 'center',
+    color: theme[`color_${variant}`],
+    display: 'flex',
+    fontSize: theme.CardStatus_fontSize,
+    fontWeight: theme.CardStatus_fontWeight,
+
+    '& > [role="img"]': {
+      height: theme.CardStatusIcon_size,
+      marginRight: rtl ? null : theme.CardStatusIcon_margin,
+      marginLeft: rtl ? theme.CardStatusIcon_margin : null,
+      width: theme.CardStatusIcon_size
+    }
   };
 });
 
-export const CardTitleSubtitle = styled('h4')(
-  ({ avatar, theme: baseTheme }) => {
-    const theme = cardTitleTheme(baseTheme);
-    const fontSize = theme.CardSubtitle_fontSize;
+export const CardTitleRoot: StyledComponent<{ [key: string]: any }> = styled(
+  CardRow
+)({ display: 'flex' });
+
+export const CardTitleAvatar: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)(({ subtitle, theme: baseTheme }) => {
+  const theme = cardTitleTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
+  const width = subtitle
+    ? theme.CardTitleAvatarSize_large
+    : theme.CardTitleAvatarSize;
+
+  return {
+    flex: '0 0 auto',
+    marginLeft: rtl ? theme.CardTitleAvatar_margin : null,
+    marginRight: rtl ? null : theme.CardTitleAvatar_margin,
+    width,
+
+    '&[class] > *': {
+      height: 'auto',
+      width: '100%'
+    }
+  };
+});
+
+export const CardTitleInner: StyledComponent<{}> = styled('div')({
+  flex: '1 1 auto'
+});
+
+export const CardTitleSecondaryText: StyledComponent<{}> = styled('span')(
+  (props) => {
+    const theme = cardTitleTheme(props.theme);
+    const fontSize = theme.CardTitleSecondaryText_fontSize;
 
     return {
-      color: theme.CardSubtitle_color,
+      color: theme.CardTitleSecondaryText_color,
+      flex: '0 0 auto',
       fontSize,
-      fontWeight: theme.CardSubtitle_fontWeight,
-      margin: 0,
-      marginTop: avatar
-        ? null
-        : getNormalizedValue(theme.CardSubtitle_marginTop, fontSize)
+      fontWeight: theme.CardTitleSecondaryText_fontWeight,
+      transform: `translateY(${getNormalizedValue(pxToEm(5), fontSize)})`, // Optical alignment
+      ...ellipsis('33%')
     };
   }
 );
 
-export const CardTitleTitle = styled('div')(({ theme: baseTheme, variant }) => {
+export const CardTitleSubtitle: StyledComponent<{
+  [key: string]: any
+}> = styled('h4')(({ avatar, theme: baseTheme }) => {
+  const theme = cardTitleTheme(baseTheme);
+  const fontSize = theme.CardSubtitle_fontSize;
+
+  return {
+    color: theme.CardSubtitle_color,
+    fontSize,
+    fontWeight: theme.CardSubtitle_fontWeight,
+    margin: 0,
+    marginTop: avatar
+      ? null
+      : getNormalizedValue(theme.CardSubtitle_marginTop, fontSize)
+  };
+});
+
+export const CardTitleTitle: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)(({ theme: baseTheme, variant }) => {
   const theme = cardTitleTheme(baseTheme);
   const rtl = theme.direction === 'rtl';
 
@@ -356,27 +379,27 @@ export const CardTitleTitle = styled('div')(({ theme: baseTheme, variant }) => {
   };
 });
 
-export const CardTitleTitleContent = styled('h3')(
-  ({ actions, theme: baseTheme }) => {
-    const theme = cardTitleTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const fontSize = theme.CardTitle_fontSize;
-    const actionsMargin = getNormalizedValue(
-      theme.CardTitleIcon_margin,
-      fontSize
-    );
+export const CardTitleTitleContent: StyledComponent<{
+  [key: string]: any
+}> = styled('h3')(({ actions, theme: baseTheme }) => {
+  const theme = cardTitleTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
+  const fontSize = theme.CardTitle_fontSize;
+  const actionsMargin = getNormalizedValue(
+    theme.CardTitleIcon_margin,
+    fontSize
+  );
 
-    return {
-      color: theme.CardTitle_color,
-      flex: '1 1 auto',
-      fontSize,
-      fontWeight: theme.CardTitle_fontWeight,
-      margin: 0,
-      marginLeft: actions && rtl ? actionsMargin : null,
-      marginRight: actions && !rtl ? actionsMargin : null
-    };
-  }
-);
+  return {
+    color: theme.CardTitle_color,
+    flex: '1 1 auto',
+    fontSize,
+    fontWeight: theme.CardTitle_fontWeight,
+    margin: 0,
+    marginLeft: actions && rtl ? actionsMargin : null,
+    marginRight: actions && !rtl ? actionsMargin : null
+  };
+});
 
 export const CardTitleMenuButton = withProps({ type: 'button' })(
   styled(Button)(

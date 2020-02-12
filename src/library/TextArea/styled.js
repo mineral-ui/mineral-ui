@@ -1,10 +1,12 @@
 /* @flow */
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
-import { getNormalizedValue, pxToEm } from '../styles';
-import { themed, mapComponentThemes } from '../themes';
 import FauxControl from '../FauxControl';
+import { getNormalizedValue, pxToEm } from '../styles';
+import { mapComponentThemes, themed } from '../themes';
 import { textAreaTheme } from './themes';
+
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   mapComponentThemes(
@@ -20,16 +22,21 @@ const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   )
 );
 
-export const TextAreaRoot = styled(ThemedFauxControl)({
+export const TextAreaRoot: StyledComponent<{ [key: string]: any }> = styled(
+  ThemedFauxControl
+)({
   alignItems: 'center',
   cursor: 'text',
   display: 'flex',
   width: '100%'
 });
 
-export const Input = styled('textarea', {
-  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ resizeable, size, theme: baseTheme }) => {
+export const Input: StyledComponent<{ [key: string]: any }> = styled(
+  'textarea',
+  {
+    shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+  }
+)(({ resizeable, size, theme: baseTheme }) => {
   const theme = textAreaTheme(baseTheme);
 
   const fontSize =

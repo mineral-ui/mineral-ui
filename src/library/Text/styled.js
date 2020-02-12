@@ -1,13 +1,14 @@
 /* @flow */
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
-import { rtlTextAlign } from '../utils';
 import { componentStyleReset } from '../styles';
-import { textTheme } from './themes';
+import { rtlTextAlign } from '../utils';
 import { APPEARANCE, HEADING_ELEMENTS, MONOSPACE_ELEMENTS } from './constants';
+import { textTheme } from './themes';
 
 import type { StyleObj } from '../styles/types';
 import type { TextTheme } from './types';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type GetCommonStyles = (
   as: string,
@@ -42,7 +43,7 @@ const getCommonStyles: GetCommonStyles = (as, theme, truncate) => {
   return styles;
 };
 
-export const TextRoot = styled('p', {
+export const TextRoot: StyledComponent<{ [key: string]: any }> = styled('p', {
   shouldForwardProp: (prop) =>
     ['color', 'fontWeight'].indexOf(prop) === -1 && isPropValid(prop)
 })(

@@ -8,19 +8,22 @@ import Popover from '../../../../../../library/Popover';
 import Tooltip from '../../../../../../library/Tooltip';
 import data from '../../../Menu/common/menuData';
 import DemoContent from '../../../Popover/common/DemoContent';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const FixedWidthLayout = styled('div')({
-  '@media only screen and (max-width: 450px)': {
-    '& > * button': {
-      maxWidth: '5rem'
-    }
-  },
-  '@media only screen and (max-width: 380px)': {
-    '& > * button': {
-      maxWidth: '4rem'
+const FixedWidthLayout: StyledComponent<{ [key: string]: any }> = styled('div')(
+  {
+    '@media only screen and (max-width: 450px)': {
+      '& > * button': {
+        maxWidth: '5rem'
+      }
+    },
+    '@media only screen and (max-width: 380px)': {
+      '& > * button': {
+        maxWidth: '4rem'
+      }
     }
   }
-});
+);
 
 export default {
   id: 'composition',

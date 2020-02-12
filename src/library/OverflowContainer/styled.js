@@ -1,38 +1,44 @@
 /* @flow */
 import styled from '@emotion/styled';
-import { overflowContainerTheme } from './themes';
-import { overflowContainerWithShadowsTheme } from './themes';
+import {
+  overflowContainerTheme,
+  overflowContainerWithShadowsTheme
+} from './themes';
 
-export const OverflowContainerRoot = styled('div')(
-  ({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
-    const theme = overflowContainerTheme(baseTheme);
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-    return {
-      outline: 0,
-      overflowX: scrollX ? 'auto' : undefined,
-      overflowY: scrollY ? 'auto' : undefined,
-      // Prevent flash of focus style when interacting with children
-      transition: 'outline 0.1s 0.25s',
+export const OverflowContainerRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('div')(({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
+  const theme = overflowContainerTheme(baseTheme);
 
-      '&:focus': {
-        outline: theme.OverflowContainer_outline_focus
-      },
+  return {
+    outline: 0,
+    overflowX: scrollX ? 'auto' : undefined,
+    overflowY: scrollY ? 'auto' : undefined,
+    // Prevent flash of focus style when interacting with children
+    transition: 'outline 0.1s 0.25s',
 
-      ...(hideScrollbars
-        ? {
-            overflow: '-moz-scrollbars-none',
-            msOverflowStyle: 'none',
+    '&:focus': {
+      outline: theme.OverflowContainer_outline_focus
+    },
 
-            '&::-webkit-scrollbar': {
-              display: 'none'
-            }
+    ...(hideScrollbars
+      ? {
+          overflow: '-moz-scrollbars-none',
+          msOverflowStyle: 'none',
+
+          '&::-webkit-scrollbar': {
+            display: 'none'
           }
-        : undefined)
-    };
-  }
-);
+        }
+      : undefined)
+  };
+});
 
-export const OverflowContainerWithShadowsRoot = styled('div')((props) => {
+export const OverflowContainerWithShadowsRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('div')((props) => {
   const boxShadow = getBoxShadows(props);
   return boxShadow
     ? {

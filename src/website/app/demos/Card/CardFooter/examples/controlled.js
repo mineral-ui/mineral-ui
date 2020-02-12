@@ -1,29 +1,32 @@
 /* @flow */
-import { Component } from 'react';
 import styled from '@emotion/styled';
+import { Component } from 'react';
 import Button from '../../../../../../library/Button';
 import Card, { CardBlock, CardFooter } from '../../../../../../library/Card';
 import _DemoLayout from '../../common/DemoLayout';
 import loremIpsum from '../../common/loremIpsum';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const DemoLayout = styled(_DemoLayout)({
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'space-between',
+const DemoLayout: StyledComponent<{ [key: string]: any }> = styled(_DemoLayout)(
+  {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
 
-  '&[class]::before,&[class]::after': {
-    display: 'none'
-  },
+    '&[class]::before,&[class]::after': {
+      display: 'none'
+    },
 
-  '& > [class]': {
-    float: 'none',
-    margin: 0
-  },
+    '& > [class]': {
+      float: 'none',
+      margin: 0
+    },
 
-  '& > [class]:last-child': {
-    width: 'auto'
+    '& > [class]:last-child': {
+      width: 'auto'
+    }
   }
-});
+);
 
 export default {
   id: 'controlled',

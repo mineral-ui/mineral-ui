@@ -4,8 +4,9 @@ import Button from '../../../../../../library/Button';
 import Checkbox from '../../../../../../library/Checkbox';
 import TextInput from '../../../../../../library/TextInput';
 import _DemoForm from '../../../common/DemoForm';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const DemoForm = styled(_DemoForm)({
+const DemoForm: StyledComponent<{ [key: string]: any }> = styled(_DemoForm)({
   '& > *': {
     alignItems: 'center',
     display: 'flex',

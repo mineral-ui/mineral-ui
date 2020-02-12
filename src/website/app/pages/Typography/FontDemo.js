@@ -1,7 +1,8 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import Heading from '../../SiteHeading';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const styles = {
   root: ({ theme }) => ({
@@ -29,7 +30,9 @@ const styles = {
   })
 };
 
-const Root = styled('div')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.root
+);
 const OpenSans = styled('div')(styles.openSans);
 const SystemFont = styled('div')(styles.systemFont);
 

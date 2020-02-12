@@ -1,8 +1,9 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import ColorRampRow from './ColorRampRow';
+import React from 'react';
 import { pxToEm } from '../../../../library/styles';
+import ColorRampRow from './ColorRampRow';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const getBadges = () => {
   return [1, 2, 3, 4].map((num) => {
@@ -118,7 +119,9 @@ const styles = {
   })
 };
 
-const Root = styled('div')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.root
+);
 const Black = styled('p')(styles.black);
 const Column = styled('div')(styles.column);
 const CenterColumn = styled('div')(styles.centerColumn);

@@ -1,19 +1,25 @@
 /* @flow */
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
-import { componentStyleReset } from '../styles';
-import { themed } from '../themes';
 import CardBlock from '../Card/CardBlock';
 import CardTitle from '../Card/CardTitle';
-import { popoverArrowTheme, popoverContentTheme } from './themes';
+import { componentStyleReset } from '../styles';
+import { themed } from '../themes';
 import { ARROW_SIZE } from './constants';
+import { popoverArrowTheme, popoverContentTheme } from './themes';
 
-export const PopoverRoot = styled('span')({
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const PopoverRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)({
   color: null,
   display: 'inline-block'
 });
 
-export const PopoverContentWrapper = styled('div')(({ theme: baseTheme }) => {
+export const PopoverContentWrapper: StyledComponent<{
+  [key: string]: any
+}> = styled('div')(({ theme: baseTheme }) => {
   const theme = popoverContentTheme(baseTheme);
 
   return {
@@ -59,9 +65,10 @@ export const PopoverBlock = themed(CardBlock)(cardOverrides);
 
 export const PopoverTitle = themed(CardTitle)(cardOverrides);
 
-export const PopoverArrowRoot = styled('span', {
-  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ placement, size, theme: baseTheme }) => {
+export const PopoverArrowRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'span',
+  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
+)(({ placement, size, theme: baseTheme }) => {
   const theme = popoverArrowTheme(baseTheme);
   let arrowShadow = ', 0 3px 1px rgba(0, 0, 0, 0.3)';
   const horizontalOffset = `-${parseFloat(size) - 4}px`;
@@ -125,7 +132,9 @@ export const PopoverArrowRoot = styled('span', {
   };
 });
 
-export const PopoverTriggerWrapper = styled('span', {
+export const PopoverTriggerWrapper: StyledComponent<{
+  [key: string]: any
+}> = styled('span', {
   shouldForwardProp: (prop) => prop !== 'cursor' && isPropValid(prop)
 })(({ cursor }) => ({
   cursor,

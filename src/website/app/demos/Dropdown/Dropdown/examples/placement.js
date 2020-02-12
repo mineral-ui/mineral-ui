@@ -1,11 +1,12 @@
 /* @flow */
+import styled from '@emotion/styled';
 import React from 'react';
 import Button from '../../../../../../library/Button';
-import styled from '@emotion/styled';
 import Dropdown from '../../../../../../library/Dropdown';
 import data from '../../../Menu/common/menuData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   height: '400px',
   display: 'flex',
   alignItems: 'center',
