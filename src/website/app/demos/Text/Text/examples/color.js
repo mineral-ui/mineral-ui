@@ -1,13 +1,16 @@
 /* @flow */
-import { palette } from 'mineral-ui-tokens';
 import styled from '@emotion/styled';
-import { mineralTheme as theme } from '../../../../../../library/themes';
+import { palette } from 'mineral-ui-tokens';
 import Text from '../../../../../../library/Text';
+import { mineralTheme as theme } from '../../../../../../library/themes';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const DemoPanel = styled('div')(({ backgroundColor, theme }) => ({
-  backgroundColor,
-  padding: theme.space_inset_sm
-}));
+const DemoPanel: StyledComponent<{ [key: string]: any }> = styled('div')(
+  ({ backgroundColor, theme }) => ({
+    backgroundColor,
+    padding: theme.space_inset_sm
+  })
+);
 
 export default {
   id: 'color',

@@ -1,6 +1,5 @@
 /* @flow */
 import styled from '@emotion/styled';
-import { mineralTheme } from '../../../../../../library/themes';
 import Button from '../../../../../../library/Button';
 import Card, {
   CardActions,
@@ -9,14 +8,18 @@ import Card, {
   CardImage,
   CardTitle
 } from '../../../../../../library/Card';
+import { mineralTheme } from '../../../../../../library/themes';
 import _DemoLayout from '../../common/DemoLayout';
 import loremIpsum from '../../common/loremIpsum';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const DemoLayout = styled(_DemoLayout)({
-  '& img': {
-    width: '100%'
+const DemoLayout: StyledComponent<{ [key: string]: any }> = styled(_DemoLayout)(
+  {
+    '& img': {
+      width: '100%'
+    }
   }
-});
+);
 
 export default {
   id: 'order',

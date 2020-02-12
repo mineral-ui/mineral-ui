@@ -1,6 +1,7 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   /* rendered chilren */
@@ -21,18 +22,20 @@ const componentTheme = (baseTheme) => ({
   ...baseTheme
 });
 
-const Root = styled('p')(({ variant, theme: baseTheme }) => {
-  let theme = componentTheme(baseTheme);
+const Root: StyledComponent<{ [key: string]: any }> = styled('p')(
+  ({ variant, theme: baseTheme }) => {
+    let theme = componentTheme(baseTheme);
 
-  return {
-    color: theme.Paragraph_color,
-    fontSize: theme[`Paragraph_fontSize_${variant}`],
-    lineHeight:
-      variant === 'prose'
-        ? theme.Paragraph_lineHeight_prose
-        : theme.Paragraph_lineHeight_normal
-  };
-});
+    return {
+      color: theme.Paragraph_color,
+      fontSize: theme[`Paragraph_fontSize_${variant}`],
+      lineHeight:
+        variant === 'prose'
+          ? theme.Paragraph_lineHeight_prose
+          : theme.Paragraph_lineHeight_normal
+    };
+  }
+);
 
 const Paragraph = (props: Props) => {
   const { children, variant, ...restProps } = props;

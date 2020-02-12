@@ -1,11 +1,14 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import Tooltip from '../../../../../../library/Tooltip';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('div')(({ theme }) => ({
-  fontFamily: theme.fontFamily
-}));
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  ({ theme }) => ({
+    fontFamily: theme.fontFamily
+  })
+);
 
 const DemoLayout = (props: Object) => <Root {...props} />;
 

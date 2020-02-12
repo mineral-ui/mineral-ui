@@ -1,16 +1,17 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import FormField from '../../../../../../library/Form/FormField';
 import IconSearch from 'mineral-ui-icons/IconSearch';
-import Select from '../../../../../../library/Select';
+import React from 'react';
+import FormField from '../../../../../../library/Form/FormField';
 import Menu from '../../../../../../library/Menu';
-import TextInput from '../../../../../../library/TextInput';
+import Select from '../../../../../../library/Select';
 import Text from '../../../../../../library/Text';
-import { basicData as data } from '../../common/selectData';
+import TextInput from '../../../../../../library/TextInput';
 import renderPropsDescription from '../../../common/renderPropsDescription';
+import { basicData as data } from '../../common/selectData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const _DemoLayout = styled('div')({
+const _DemoLayout: StyledComponent<{ [key: string]: any }> = styled('div')({
   marginBottom: 200
 });
 

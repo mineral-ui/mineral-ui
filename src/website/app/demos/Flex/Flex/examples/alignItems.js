@@ -1,29 +1,32 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+import _Flex from '../../common/DemoFlex';
 import FlexItem from '../../common/DemoFlexItem';
 import _DemoLayout from '../../common/DemoLayout';
-import _Flex from '../../common/DemoFlex';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const DemoLayout = (props: Object) => (
   <_DemoLayout lastRowStartsAt={5} {...props} />
 );
 
-const Flex = styled(_Flex)(({ direction }) => {
-  return direction === 'column'
-    ? {
-        float: 'left',
-        height: '11rem',
-        width: '21%',
+const Flex: StyledComponent<{ [key: string]: any }> = styled(_Flex)(
+  ({ direction }) => {
+    return direction === 'column'
+      ? {
+          float: 'left',
+          height: '11rem',
+          width: '21%',
 
-        '&:not(:last-child)': {
-          marginRight: '5%'
+          '&:not(:last-child)': {
+            marginRight: '5%'
+          }
         }
-      }
-    : {
-        height: '5rem'
-      };
-});
+      : {
+          height: '5rem'
+        };
+  }
+);
 
 export default {
   id: 'align-items',

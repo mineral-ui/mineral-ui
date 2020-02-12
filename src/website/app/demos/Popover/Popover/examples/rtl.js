@@ -1,13 +1,14 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import { pxToEm } from '../../../../../../library/styles';
+import React from 'react';
 import Button from '../../../../../../library/Button';
-import DemoContent from '../../common/DemoContent';
 import Popover from '../../../../../../library/Popover';
+import { pxToEm } from '../../../../../../library/styles';
 import { ThemeProvider } from '../../../../../../library/themes';
+import DemoContent from '../../common/DemoContent';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   paddingBottom: pxToEm(130)
 });
 

@@ -1,10 +1,12 @@
 /* @flow */
 import styled from '@emotion/styled';
-import { getNormalizedValue } from '../styles';
-import { themed, mapComponentThemes } from '../themes';
 import FauxControl from '../FauxControl';
+import { getNormalizedValue } from '../styles';
+import { mapComponentThemes, themed } from '../themes';
 import { SIZE } from './constants';
 import { textInputTheme } from './themes';
+
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   mapComponentThemes(
@@ -20,38 +22,38 @@ const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   )
 );
 
-export const TextInputRoot = styled(ThemedFauxControl)(
-  ({ theme: baseTheme, variant }) => {
-    let theme = textInputTheme(baseTheme);
+export const TextInputRoot: StyledComponent<{ [key: string]: any }> = styled(
+  ThemedFauxControl
+)(({ theme: baseTheme, variant }) => {
+  let theme = textInputTheme(baseTheme);
 
-    if (variant) {
-      theme = {
-        ...theme,
-        TextInputIcon_color: theme[`icon_color_${variant}`]
-      };
-    }
-
-    return {
-      alignItems: 'center',
-      cursor: 'text',
-      display: 'flex',
-      width: '100%',
-
-      '& [role="img"]': {
-        color: theme.TextInputIcon_color,
-        display: 'block',
-        flex: '0 0 auto',
-        margin: `0 ${theme.TextInputIcon_marginHorizontal}`,
-
-        '&:last-of-type': {
-          color: theme.TextInputIcon_color
-        }
-      }
+  if (variant) {
+    theme = {
+      ...theme,
+      TextInputIcon_color: theme[`icon_color_${variant}`]
     };
   }
-);
 
-export const Input = styled('input')(
+  return {
+    alignItems: 'center',
+    cursor: 'text',
+    display: 'flex',
+    width: '100%',
+
+    '& [role="img"]': {
+      color: theme.TextInputIcon_color,
+      display: 'block',
+      flex: '0 0 auto',
+      margin: `0 ${theme.TextInputIcon_marginHorizontal}`,
+
+      '&:last-of-type': {
+        color: theme.TextInputIcon_color
+      }
+    }
+  };
+});
+
+export const Input: StyledComponent<{ [key: string]: any }> = styled('input')(
   ({ controlSize, size: nonHtmlSize, theme: baseTheme }) => {
     const theme = textInputTheme(baseTheme);
 

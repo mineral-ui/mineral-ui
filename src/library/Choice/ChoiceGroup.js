@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Children, cloneElement, createElement } from 'react';
-import { ChoiceGroupRoot as Root } from './styled';
 import { SIZE, TYPE } from './constants';
+import { ChoiceGroupRoot as Root } from './styled';
 
 import type { ChoiceGroupDefaultProps, ChoiceGroupProps } from './types';
 

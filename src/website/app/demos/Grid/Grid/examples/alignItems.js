@@ -1,15 +1,16 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+import _Grid from '../../common/DemoGrid';
 import GridItem from '../../common/DemoGridItem';
 import _DemoLayout from '../../common/DemoLayout';
-import _Grid from '../../common/DemoGrid';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const DemoLayout = (props: Object) => (
   <_DemoLayout lastRowStartsAt={5} {...props} />
 );
 
-const Grid = styled(_Grid)({
+const Grid: StyledComponent<{ [key: string]: any }> = styled(_Grid)({
   height: '5rem'
 });
 

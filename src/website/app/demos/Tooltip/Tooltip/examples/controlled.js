@@ -1,10 +1,11 @@
 /* @flow */
-import React, { Component } from 'react';
 import styled from '@emotion/styled';
+import React, { Component } from 'react';
 import Button from '../../../../../../library/Button';
 import Tooltip from '../../../../../../library/Tooltip';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between'

@@ -2,13 +2,15 @@
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { ellipsis } from 'polished';
-import { getNormalizedValue, pxToEm } from '../styles';
-import { themed, mapComponentThemes } from '../themes';
-import { ignoreSsrWarning } from '../utils/emotion';
-import FauxControl from '../FauxControl';
 import Dropdown from '../Dropdown/Dropdown';
-import { selectTheme, selectTriggerTheme } from './themes';
+import FauxControl from '../FauxControl';
+import { getNormalizedValue, pxToEm } from '../styles';
+import { mapComponentThemes, themed } from '../themes';
+import { ignoreSsrWarning } from '../utils/emotion';
 import { SIZE } from './constants';
+import { selectTheme, selectTriggerTheme } from './themes';
+
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const ThemedDropdown = themed(Dropdown)(({ theme: baseTheme }) =>
   mapComponentThemes(
@@ -24,7 +26,9 @@ const ThemedDropdown = themed(Dropdown)(({ theme: baseTheme }) =>
   )
 );
 
-export const SelectRoot = styled(ThemedDropdown)({
+export const SelectRoot: StyledComponent<{ [key: string]: any }> = styled(
+  ThemedDropdown
+)({
   width: '100%',
 
   '& > span': {
@@ -55,7 +59,9 @@ const ThemedFauxControl = themed(FauxControl)(({ theme: baseTheme }) =>
   )
 );
 
-export const SelectTriggerRoot = styled(ThemedFauxControl)(
+export const SelectTriggerRoot: StyledComponent<{
+  [key: string]: any
+}> = styled(ThemedFauxControl)(
   ({ disabled, readOnly, selectedItemVariant, theme: baseTheme, variant }) => {
     const theme = selectTriggerTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
@@ -109,7 +115,7 @@ export const SelectTriggerRoot = styled(ThemedFauxControl)(
   }
 );
 
-export const Trigger = styled('div', {
+export const Trigger: StyledComponent<{ [key: string]: any }> = styled('div', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
 })(({ size, theme: baseTheme }) => {
   const theme = selectTriggerTheme(baseTheme);
@@ -126,7 +132,9 @@ export const Trigger = styled('div', {
   };
 });
 
-export const TriggerContent = styled('span')({
+export const TriggerContent: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)({
   ...ellipsis(null),
   userSelect: 'none',
   width: '100%'

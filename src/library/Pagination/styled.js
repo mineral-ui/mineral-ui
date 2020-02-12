@@ -1,13 +1,14 @@
 /* @flow */
 import styled from '@emotion/styled';
 import withProps from 'recompose/withProps';
-import { componentStyleReset } from '../styles';
-import { themed } from '../themes';
-import Flex, { FlexItem } from '../Flex';
-import TextInput from '../TextInput';
 import Button from '../Button';
-
+import Flex, { FlexItem } from '../Flex';
+import { componentStyleReset } from '../styles';
+import TextInput from '../TextInput';
+import { themed } from '../themes';
 import { paginationTheme } from './themes';
+
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 export const PaginationRoot = withProps({
   as: 'nav',
@@ -29,7 +30,9 @@ export const PaginationRoot = withProps({
   })
 );
 
-export const PagesRoot = styled(FlexItem)(({ theme: baseTheme }) => {
+export const PagesRoot: StyledComponent<{ [key: string]: any }> = styled(
+  FlexItem
+)(({ theme: baseTheme }) => {
   const theme = paginationTheme(baseTheme);
   const rtl = theme.direction === 'rtl';
   const middleMargin = rtl ? 'marginLeft' : 'marginRight';
@@ -57,7 +60,9 @@ export const PagesEllipsisButton = withProps({
   })
 );
 
-export const PageJumperNumberInput = styled(TextInput)({
+export const PageJumperNumberInput: StyledComponent<{
+  [key: string]: any
+}> = styled(TextInput)({
   '& > input': {
     MozAppearance: 'textfield',
 
@@ -68,6 +73,6 @@ export const PageJumperNumberInput = styled(TextInput)({
   }
 });
 
-export const PageJumperRoot = styled(FlexItem)(({ width }) => ({
-  width
-}));
+export const PageJumperRoot: StyledComponent<{ [key: string]: any }> = styled(
+  FlexItem
+)(({ width }) => ({ width }));

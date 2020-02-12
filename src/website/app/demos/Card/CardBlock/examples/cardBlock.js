@@ -1,30 +1,33 @@
 /* @flow */
 import styled from '@emotion/styled';
-import { mineralTheme } from '../../../../../../library/themes';
 import Card, {
   CardBlock as _CardBlock,
   CardTitle
 } from '../../../../../../library/Card';
+import { mineralTheme } from '../../../../../../library/themes';
 import DemoLayout from '../../common/DemoLayout';
 import loremIpsum from '../../common/loremIpsum';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const CardBlock = styled(_CardBlock)(({ theme }) => ({
-  position: 'relative',
+const CardBlock: StyledComponent<{ [key: string]: any }> = styled(_CardBlock)(
+  ({ theme }) => ({
+    position: 'relative',
 
-  '&::before': {
-    borderColor: theme.color_theme_10,
-    borderStyle: 'solid',
-    borderWidth: `${theme.space_inset_md} ${theme.space_inset_md} ${
-      theme.space_inset_lg
-    }`,
-    bottom: `-${theme.space_inset_lg}`,
-    content: '""',
-    left: 0,
-    position: 'absolute',
-    right: 0,
-    top: `-${theme.space_inset_md}`
-  }
-}));
+    '&::before': {
+      borderColor: theme.color_theme_10,
+      borderStyle: 'solid',
+      borderWidth: `${theme.space_inset_md} ${theme.space_inset_md} ${
+        theme.space_inset_lg
+      }`,
+      bottom: `-${theme.space_inset_lg}`,
+      content: '""',
+      left: 0,
+      position: 'absolute',
+      right: 0,
+      top: `-${theme.space_inset_md}`
+    }
+  })
+);
 
 export default {
   id: 'consistent-spacing',

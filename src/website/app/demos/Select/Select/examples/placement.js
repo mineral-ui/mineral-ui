@@ -1,10 +1,11 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import Select from '../../../../../../library/Select';
 import { basicData as data } from '../../common/selectData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   height: '175px',
   display: 'flex',
   alignItems: 'flex-start',

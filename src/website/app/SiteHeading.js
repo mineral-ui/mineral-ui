@@ -1,9 +1,10 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import { themed } from '../../library/themes';
 import Heading from './Heading';
 import Link from './SiteLink';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type siteHeadingProps = {
   anchor?: boolean,
@@ -64,7 +65,9 @@ const SiteThemedHeading = themed(Heading)(({ theme }) => ({
   ...siteComponentTheme(theme)
 }));
 
-const SiteStyledHeading = styled(SiteThemedHeading)(siteHeadingStyles);
+const SiteStyledHeading: StyledComponent<{ [key: string]: any }> = styled(
+  SiteThemedHeading
+)(siteHeadingStyles);
 
 const Anchor = styled(Link)(({ theme }) => ({
   color: theme.color_mouse,

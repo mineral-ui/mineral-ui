@@ -1,19 +1,21 @@
 /* @flow */
-import React from 'react';
 import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
+import React from 'react';
 import withProps from 'recompose/withProps';
-import { componentStyleReset, pxToEm } from '../styles';
-import { themed } from '../themes';
-import { ie10Plus } from '../utils/cssSelectors';
-import { ignoreSsrWarning } from '../utils/emotion';
 import Button from '../Button';
 import OverflowContainer, {
   OverflowContainerWithShadows
 } from '../OverflowContainer';
-import { tabTheme, tabListTheme, tabPanelTheme } from './themes';
+import { componentStyleReset, pxToEm } from '../styles';
+import { themed } from '../themes';
+import { ie10Plus } from '../utils/cssSelectors';
+import { ignoreSsrWarning } from '../utils/emotion';
+import { tabListTheme, tabPanelTheme, tabTheme } from './themes';
 
-export const TabsRoot = styled('div', {
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const TabsRoot: StyledComponent<{ [key: string]: any }> = styled('div', {
   shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
 })(({ height, position, theme }) => {
   const flexDirection = {
@@ -204,61 +206,62 @@ export const TabListInner = withProps({
   )
 );
 
-export const TabListList = styled('ul')(
-  ({ align, count, theme: baseTheme, vertical }) => {
-    const theme = tabListTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+export const TabListList: StyledComponent<{ [key: string]: any }> = styled(
+  'ul'
+)(({ align, count, theme: baseTheme, vertical }) => {
+  const theme = tabListTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
 
-    const childMarginProperty = vertical
-      ? 'marginBottom'
-      : rtl
-      ? 'marginLeft'
-      : 'marginRight';
+  const childMarginProperty = vertical
+    ? 'marginBottom'
+    : rtl
+    ? 'marginLeft'
+    : 'marginRight';
 
-    return {
-      display: 'flex',
-      flexDirection: vertical ? 'column' : undefined,
-      flexGrow: 1,
-      justifyContent: align
-        ? align === 'center'
-          ? align
-          : `flex-${align}`
-        : undefined,
-      listStyle: 'none',
-      margin: 0,
-      padding: 0,
-      whiteSpace: 'nowrap',
+  return {
+    display: 'flex',
+    flexDirection: vertical ? 'column' : undefined,
+    flexGrow: 1,
+    justifyContent: align
+      ? align === 'center'
+        ? align
+        : `flex-${align}`
+      : undefined,
+    listStyle: 'none',
+    margin: 0,
+    padding: 0,
+    whiteSpace: 'nowrap',
 
-      // Tab
-      '& > *': {
-        ...(align === 'justify'
-          ? vertical
-            ? {
-                display: 'flex',
-                flexGrow: 1,
+    // Tab
+    '& > *': {
+      ...(align === 'justify'
+        ? vertical
+          ? {
+              display: 'flex',
+              flexGrow: 1,
 
-                // Anchor in Tab
-                '& > *': { display: 'flex', height: 'auto' }
-              }
-            : {
-                // prettier-ignore
-                width: `calc(${(1 / count) * 100}% - ${theme.TabList_gutterHorizontal})`
-              }
-          : undefined),
+              // Anchor in Tab
+              '& > *': { display: 'flex', height: 'auto' }
+            }
+          : {
+              // prettier-ignore
+              width: `calc(${(1 / count) * 100}% - ${theme.TabList_gutterHorizontal})`
+            }
+        : undefined),
 
-        '&:not(:last-child)': {
-          [childMarginProperty]: vertical
-            ? theme.TabList_gutterVertical
-            : theme.TabList_gutterHorizontal
-        }
+      '&:not(:last-child)': {
+        [childMarginProperty]: vertical
+          ? theme.TabList_gutterVertical
+          : theme.TabList_gutterHorizontal
       }
-    };
-  }
-);
+    }
+  };
+});
 
-export const TabListRoot = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
-})(({ height, vertical }) => ({
+export const TabListRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div',
+  { shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop) }
+)(({ height, vertical }) => ({
   display: 'flex',
   flex: '0 0 auto',
   flexDirection: vertical ? 'column' : undefined,

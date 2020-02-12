@@ -5,11 +5,15 @@ import { componentStyleReset, getNormalizedValue, pxToEm } from '../styles';
 import { ignoreSsrWarning } from '../utils/emotion';
 import { menuDividerTheme, menuGroupTheme, menuItemTheme } from './themes';
 
-export const MenuRoot = styled('div')(({ theme }) =>
-  componentStyleReset(theme)
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const MenuRoot: StyledComponent<{ [key: string]: any }> = styled('div')(
+  ({ theme }) => componentStyleReset(theme)
 );
 
-export const MenuDividerRoot = styled('div')((props) => {
+export const MenuDividerRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)((props) => {
   const theme = menuDividerTheme(props.theme);
 
   return {
@@ -19,7 +23,9 @@ export const MenuDividerRoot = styled('div')((props) => {
   };
 });
 
-export const MenuGroupTitle = styled('h3')((props) => {
+export const MenuGroupTitle: StyledComponent<{ [key: string]: any }> = styled(
+  'h3'
+)((props) => {
   const theme = {
     ...menuGroupTheme(props.theme),
     ...menuItemTheme(props.theme)
@@ -58,9 +64,10 @@ export const MenuGroupTitle = styled('h3')((props) => {
   };
 });
 
-export const MenuItemRoot = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
-})(
+export const MenuItemRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div',
+  { shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop) }
+)(
   // These styles are based off of Button, with significant changes
   ({ disabled, isHighlighted, theme: baseTheme, variant }) => {
     let theme = menuItemTheme(baseTheme);
@@ -137,7 +144,9 @@ export const MenuItemRoot = styled('div', {
   }
 );
 
-export const MenuItemContent = styled('span')({
+export const MenuItemContent: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)({
   display: 'flex',
   flex: '1 1 auto',
   flexWrap: 'wrap',
@@ -147,12 +156,16 @@ export const MenuItemContent = styled('span')({
   wordBreak: 'break-all'
 });
 
-export const MenuItemInner = styled('span')({
+export const MenuItemInner: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)({
   display: 'flex',
   justifyContent: 'space-between'
 });
 
-export const MenuItemSecondaryText = styled('span')((props) => {
+export const MenuItemSecondaryText: StyledComponent<{
+  [key: string]: any
+}> = styled('span')((props) => {
   let theme = menuItemTheme(props.theme);
 
   const fontSize = theme.MenuItemSecondaryText_fontSize;
@@ -167,7 +180,9 @@ export const MenuItemSecondaryText = styled('span')((props) => {
   };
 });
 
-export const MenuItemText = styled('span')((props) => {
+export const MenuItemText: StyledComponent<{ [key: string]: any }> = styled(
+  'span'
+)((props) => {
   let theme = menuItemTheme(props.theme);
 
   const fontSize = theme.MenuItemContent_fontSize;

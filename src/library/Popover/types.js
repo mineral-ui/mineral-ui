@@ -9,7 +9,7 @@ import type {
   ThemeValue
 } from '../themes/types';
 
-type Placement = $Keys<typeof PLACEMENT>;
+export type Placement = $Keys<typeof PLACEMENT>;
 
 export type PopoverProps = {
   children: React$Node | PopoverRenderFn,

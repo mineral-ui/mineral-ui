@@ -1,10 +1,13 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import Select from '../../../../../../library/Select';
 import { basicData as data } from '../../common/selectData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const _OverflowContainer = styled('div')({
+const _OverflowContainer: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)({
   backgroundColor: 'aliceblue',
   margin: '0 0 105px 0',
   overflow: 'hidden',

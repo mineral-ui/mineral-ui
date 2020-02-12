@@ -5,6 +5,7 @@ import { componentStyleReset, getResponsiveStyles } from '../styles';
 import { SPACING_TYPES } from './constants';
 
 import type { SpacingStyles, SpacingValue } from './types';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const getMeasurement = (value: number | string) =>
   typeof value === 'number' && value < 1 && value !== 0
@@ -56,7 +57,7 @@ const getSpacingStyles = (
   }, {});
 };
 
-export const BoxRoot = styled('div', {
+export const BoxRoot: StyledComponent<{ [key: string]: any }> = styled('div', {
   shouldForwardProp: (prop) =>
     ['height', 'width'].indexOf(prop) === -1 && isPropValid(prop)
 })(({ breakpoints, height, inline, theme, width, ...restProps }) => {

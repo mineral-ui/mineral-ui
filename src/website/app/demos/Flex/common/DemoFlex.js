@@ -1,7 +1,8 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import _Flex from '../../../../../library/Flex';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   gutterWidth?: number | string,
@@ -13,7 +14,9 @@ export const containerStyles = ({ theme }: Props) => ({
   outlineOffset: 4
 });
 
-const Root = styled(_Flex)((props) => containerStyles(props));
+const Root: StyledComponent<{ [key: string]: any }> = styled(_Flex)((props) =>
+  containerStyles(props)
+);
 
 const DemoFlex = (props: Props) => <Root {...props} />;
 

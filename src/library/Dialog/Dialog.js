@@ -1,32 +1,32 @@
 /* @flow */
-import React, { cloneElement, Component } from 'react';
+import { withTheme } from 'emotion-theming';
 import { canUseDOM } from 'exenv';
 import FocusTrap from 'focus-trap-react';
 import noScroll from 'no-scroll';
+import React, { cloneElement, Component } from 'react';
 import Transition from 'react-transition-group/Transition';
-import { withTheme } from 'emotion-theming';
+import Button from '../Button';
+import EventListener from '../EventListener';
+import Portal from '../Portal';
 import { generateId } from '../utils';
 import { excludeByType, findByType } from '../utils/children';
-import Button from '../Button';
-import Portal from '../Portal';
-import EventListener from '../EventListener';
 import { ACTIONS_SIZE, SIZE } from './constants';
-import {
-  DialogRoot as Root,
-  DialogAnimate,
-  DialogCloseButton,
-  DialogContent,
-  DialogIEWrapper,
-  DialogOverlay
-} from './styled';
-import { dialogTheme } from './themes';
 import DialogActions from './DialogActions';
 import DialogBody from './DialogBody';
 import DialogFooter from './DialogFooter';
 import DialogHeader from './DialogHeader';
 import DialogTitle from './DialogTitle';
-
 import { dialogPropTypes } from './propTypes';
+import {
+  DialogAnimate,
+  DialogCloseButton,
+  DialogContent,
+  DialogIEWrapper,
+  DialogOverlay,
+  DialogRoot as Root
+} from './styled';
+import { dialogTheme } from './themes';
+
 import type { DialogDefaultProps, DialogProps, DialogState } from './types';
 
 const Animation = withTheme(({ children, theme, ...restProps }: Object) => {

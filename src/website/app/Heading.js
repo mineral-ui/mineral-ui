@@ -1,7 +1,8 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 import { getNormalizedValue } from '../../library/styles';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   /** element used when rendering */
@@ -65,6 +66,8 @@ export default function Heading(props: Props) {
     ...restProps
   };
   const useAs = as ? as : `h${level}`;
-  const Root = styled(useAs)(headingStyles);
+  const Root: StyledComponent<{ [key: string]: any }> = styled(useAs)(
+    headingStyles
+  );
   return <Root {...rootProps}>{children}</Root>;
 }

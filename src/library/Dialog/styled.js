@@ -1,25 +1,29 @@
 /* @flow */
-import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
 import React from 'react';
 import withProps from 'recompose/withProps';
-import { componentStyleReset, getNormalizedValue } from '../styles';
-import { themed, mapComponentThemes } from '../themes';
-import { ignoreSsrWarning } from '../utils/emotion';
 import Button from '../Button';
-import Text from '../Text';
 import IconClose from '../Icon/IconClose';
 import _OverflowContainerWithShadows from '../OverflowContainer/OverflowContainerWithShadows';
+import { componentStyleReset, getNormalizedValue } from '../styles';
+import Text from '../Text';
+import { mapComponentThemes, themed } from '../themes';
+import { ignoreSsrWarning } from '../utils/emotion';
+import DialogRow from './DialogRow';
 import {
-  dialogTheme,
   dialogActionsTheme,
   dialogBodyTheme,
   dialogRowTheme,
+  dialogTheme,
   dialogTitleTheme
 } from './themes';
-import DialogRow from './DialogRow';
 
-export const DialogRoot = styled('div')(({ modeless, theme }) => ({
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const DialogRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)(({ modeless, theme }) => ({
   ...componentStyleReset(theme),
 
   alignItems: 'center',
@@ -33,23 +37,27 @@ export const DialogRoot = styled('div')(({ modeless, theme }) => ({
   top: 0
 }));
 
-export const DialogActionsRoot = styled('div')(({ theme: baseTheme }) => {
-  const theme = dialogActionsTheme(baseTheme);
-  const marginProperty =
-    theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
+export const DialogActionsRoot: StyledComponent<{}> = styled('div')(
+  ({ theme: baseTheme }) => {
+    const theme = dialogActionsTheme(baseTheme);
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
-  return {
-    alignItems: 'center',
-    display: 'flex',
-    justifyContent: 'flex-end',
+    return {
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'flex-end',
 
-    '& > *:not(:last-child)': {
-      [marginProperty]: theme.DialogActionsItem_margin
-    }
-  };
-});
+      '& > *:not(:last-child)': {
+        [marginProperty]: theme.DialogActionsItem_margin
+      }
+    };
+  }
+);
 
-export const DialogAnimate = styled('div')(({ state, theme: baseTheme }) => {
+export const DialogAnimate: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)(({ state, theme: baseTheme }) => {
   const theme = dialogTheme(baseTheme);
   return {
     opacity: state === 'entered' ? 1 : 0,
@@ -60,31 +68,33 @@ export const DialogAnimate = styled('div')(({ state, theme: baseTheme }) => {
   };
 });
 
-export const DialogBodyRoot = styled(DialogRow)(({ theme: baseTheme }) => {
-  const theme = dialogRowTheme(baseTheme);
-  const fontSize = theme.DialogRow_fontSize;
-  const marginVertical = `${getNormalizedValue(
-    theme.DialogRow_marginVertical,
-    fontSize
-  )}`;
+export const DialogBodyRoot: StyledComponent<{}> = styled(DialogRow)(
+  ({ theme: baseTheme }) => {
+    const theme = dialogRowTheme(baseTheme);
+    const fontSize = theme.DialogRow_fontSize;
+    const marginVertical = `${getNormalizedValue(
+      theme.DialogRow_marginVertical,
+      fontSize
+    )}`;
 
-  return {
-    display: 'flex',
-    flex: '1 1 auto',
-    fontSize,
-    margin: 0,
-    minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
-    padding: 0,
+    return {
+      display: 'flex',
+      flex: '1 1 auto',
+      fontSize,
+      margin: 0,
+      minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
+      padding: 0,
 
-    // Margins when no header or footer
-    ['&:first-child' + ignoreSsrWarning]: {
-      marginTop: marginVertical
-    },
-    '&:last-child': {
-      marginBottom: marginVertical
-    }
-  };
-});
+      // Margins when no header or footer
+      ['&:first-child' + ignoreSsrWarning]: {
+        marginTop: marginVertical
+      },
+      '&:last-child': {
+        marginBottom: marginVertical
+      }
+    };
+  }
+);
 
 const DialogBodyThemedOverflowContainerWithShadows = themed(
   _OverflowContainerWithShadows
@@ -158,9 +168,10 @@ export const DialogCloseButton = withProps({
   })
 );
 
-export const DialogContent = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(({ size, theme: baseTheme }) => {
+export const DialogContent: StyledComponent<{ [key: string]: any }> = styled(
+  'div',
+  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
+)(({ size, theme: baseTheme }) => {
   const theme = dialogTheme(baseTheme);
 
   const getSizeStyles = (size: string) => {
@@ -212,61 +223,70 @@ export const DialogHeaderRoot = withProps({ as: 'header' })(
   })
 );
 
-export const DialogIEWrapper = styled('div')({
+export const DialogIEWrapper: StyledComponent<{}> = styled('div')({
   display: 'flex'
 });
 
-export const DialogOverlay = styled('div')(({ theme: baseTheme }) => {
-  const theme = dialogTheme(baseTheme);
-
-  return {
-    backgroundColor: theme.DialogOverlay_backgroundColor,
-    bottom: 0,
-    left: 0,
-    overflow: 'hidden',
-    position: 'absolute',
-    right: 0,
-    top: 0
-  };
-});
-
-export const DialogRowRoot = styled('div')(({ theme: baseTheme }) => {
-  const theme = dialogRowTheme(baseTheme);
-  const fontSize = theme.DialogRow_fontSize;
-
-  return {
-    ...componentStyleReset(baseTheme),
-
-    fontSize,
-    margin: `${getNormalizedValue(theme.DialogRow_marginVertical, fontSize)} 0`,
-    outline: 0,
-    padding: `0 ${getNormalizedValue(
-      theme.DialogRow_paddingHorizontal,
-      fontSize
-    )}`
-  };
-});
-
-export const DialogTitleRoot = styled('div')(
-  ({ theme: baseTheme, variant }) => {
-    const theme = dialogTitleTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
+export const DialogOverlay: StyledComponent<{}> = styled('div')(
+  ({ theme: baseTheme }) => {
+    const theme = dialogTheme(baseTheme);
 
     return {
-      color: variant ? theme[`color_${variant}`] : theme.DialogTitle_color,
-      display: 'flex',
-
-      '& > [role="img"]': {
-        color: variant ? theme[`icon_color_${variant}`] : null,
-        flex: '0 0 auto',
-        [marginProperty]: theme.DialogTitleIcon_margin
-      }
+      backgroundColor: theme.DialogOverlay_backgroundColor,
+      bottom: 0,
+      left: 0,
+      overflow: 'hidden',
+      position: 'absolute',
+      right: 0,
+      top: 0
     };
   }
 );
 
-export const DialogTitleTitle = styled(Text)({
+export const DialogRowRoot: StyledComponent<{}> = styled('div')(
+  ({ theme: baseTheme }) => {
+    const theme = dialogRowTheme(baseTheme);
+    const fontSize = theme.DialogRow_fontSize;
+
+    return {
+      ...componentStyleReset(baseTheme),
+
+      fontSize,
+      margin: `${getNormalizedValue(
+        theme.DialogRow_marginVertical,
+        fontSize
+      )} 0`,
+      outline: 0,
+      padding: `0 ${getNormalizedValue(
+        theme.DialogRow_paddingHorizontal,
+        fontSize
+      )}`
+    };
+  }
+);
+
+export const DialogTitleRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)(({ theme: baseTheme, variant }) => {
+  const theme = dialogTitleTheme(baseTheme);
+  const marginProperty =
+    theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
+
+  return {
+    color: variant ? theme[`color_${variant}`] : theme.DialogTitle_color,
+    display: 'flex',
+
+    '& > [role="img"]': {
+      color: variant ? theme[`icon_color_${variant}`] : null,
+      flex: '0 0 auto',
+      [marginProperty]: theme.DialogTitleIcon_margin
+    }
+  };
+});
+
+export const DialogTitleTitle: StyledComponent<{ id: void | string }> = styled(
+  Text
+)({
   color: 'inherit',
   flex: '1 1 auto'
 });

@@ -1,12 +1,12 @@
 /* @flow */
-import React, { Children, Component, cloneElement } from 'react';
-import { setFromArray, toArray } from '../utils/collections';
+import React, { Children, cloneElement, Component } from 'react';
 import { findDeep } from '../utils/children';
+import { setFromArray, toArray } from '../utils/collections';
 import composeEventHandlers from '../utils/composeEventHandlers';
 import { MODE } from './constants';
+import { buttonGroupPropTypes } from './propTypes';
 import { ButtonGroupRoot as Root } from './styled';
 
-import { buttonGroupPropTypes } from './propTypes';
 import type { ButtonGroupProps, ButtonGroupState } from './types';
 
 // This check is intentionally loose. We cannot do a direct type comparison as

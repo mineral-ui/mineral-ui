@@ -1,6 +1,6 @@
 /* @flow */
-import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
 import { ellipsis } from 'polished';
 import { componentStyleReset, getNormalizedValue } from '../styles';
 import { ignoreSsrWarning } from '../utils/emotion';
@@ -8,6 +8,7 @@ import { SIZE } from './constants';
 import { buttonTheme } from './themes';
 
 import type { ButtonProps } from './types';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
   if (disabled) {
@@ -21,7 +22,7 @@ const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
   }
 };
 
-export const Content = styled('span', {
+export const Content: StyledComponent<{ [key: string]: any }> = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
 })(({ size, theme: baseTheme }) => {
   const theme = buttonTheme(baseTheme);
@@ -62,7 +63,7 @@ export const Content = styled('span', {
   };
 });
 
-export const Inner = styled('span')({
+export const Inner: StyledComponent<{ [key: string]: any }> = styled('span')({
   alignItems: 'center',
   display: 'inline-flex',
   justifyContent: 'center',
@@ -71,9 +72,10 @@ export const Inner = styled('span')({
   width: '100%'
 });
 
-export const Button = styled('button', {
-  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
-})(
+export const Button: StyledComponent<{ [key: string]: any }> = styled(
+  'button',
+  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
+)(
   ({
     circular,
     disabled,

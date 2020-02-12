@@ -1,13 +1,14 @@
 /* @flow */
 import styled from '@emotion/styled';
-import { themed } from '../../../../../../library/themes';
+import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
 import Button from '../../../../../../library/Button';
 import ButtonGroup from '../../../../../../library/ButtonGroup';
 import Dropdown from '../../../../../../library/Dropdown';
-import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
+import { themed } from '../../../../../../library/themes';
 import data from '../../../Menu/common/menuData';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const StyledButton = styled(Button)({
+const StyledButton: StyledComponent<{ [key: string]: any }> = styled(Button)({
   color: 'lime !important'
 });
 

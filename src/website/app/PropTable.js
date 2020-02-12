@@ -1,11 +1,12 @@
 /* @flow */
-import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import IconInfo from 'mineral-ui-icons/IconInfo';
+import React, { Component } from 'react';
 import Button from '../../library/Button';
 import Popover from '../../library/Popover';
 import Markdown from './Markdown';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 import type {
   ComponentPropDocs,
@@ -81,7 +82,9 @@ const styles = {
   })
 };
 
-const Root = styled('div')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.root
+);
 const CodeValue = styled('span')(styles.codeValue);
 const PropName = styled('span')(styles.propName);
 const PropP = styled(Markdown)(styles.propP);

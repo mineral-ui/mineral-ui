@@ -1,20 +1,21 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import withProps from 'recompose/withProps';
 import { palette } from 'mineral-ui-tokens';
+import React from 'react';
+import withProps from 'recompose/withProps';
+import { componentStyleReset } from '../../../../../../library/styles';
 import _Text from '../../../../../../library/Text';
 import { mineralTheme as theme } from '../../../../../../library/themes';
-import { componentStyleReset } from '../../../../../../library/styles';
 import _DemoLayout from '../../../common/DemoLayout';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const StyledDemoLayout = (props) => (
   <_DemoLayout includeLastChild marginBottom="1em" {...props} />
 );
 
-const DemoLayout = styled(StyledDemoLayout)(({ theme }) =>
-  componentStyleReset(theme)
-);
+const DemoLayout: StyledComponent<{ [key: string]: any }> = styled(
+  StyledDemoLayout
+)(({ theme }) => componentStyleReset(theme));
 
 const Text = withProps({ noMargins: true })(
   styled(_Text)(({ theme }) => ({

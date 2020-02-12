@@ -3,8 +3,9 @@ import styled from '@emotion/styled';
 import Box from '../../../Box/common/DemoBox';
 import DemoLayout from '../../common/DemoLayout';
 import _StartEnd from '../../common/DemoStartEnd';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const StartEnd = styled(_StartEnd)({
+const StartEnd: StyledComponent<{ [key: string]: any }> = styled(_StartEnd)({
   height: '5rem'
 });
 

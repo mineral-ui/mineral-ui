@@ -3,12 +3,14 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import { ellipsis } from 'polished';
 import { componentStyleReset, getNormalizedValue } from '../styles';
-
 import { fauxControlTheme } from './themes';
 
-export const FauxControlRoot = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
-})(({ disabled, theme: baseTheme, variant }) => {
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const FauxControlRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div',
+  { shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop) }
+)(({ disabled, theme: baseTheme, variant }) => {
   let theme = fauxControlTheme(baseTheme);
   if (variant) {
     // prettier-ignore
@@ -48,7 +50,7 @@ export const FauxControlRoot = styled('div', {
   };
 });
 
-export const Prefix = styled('span', {
+export const Prefix: StyledComponent<{ [key: string]: any }> = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
 })(({ iconStart, size, theme: baseTheme }) => {
   const theme = fauxControlTheme(baseTheme);
@@ -77,7 +79,7 @@ export const Prefix = styled('span', {
   };
 });
 
-export const Suffix = styled('span', {
+export const Suffix: StyledComponent<{ [key: string]: any }> = styled('span', {
   shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
 })(({ iconEnd, size, theme: baseTheme, variant }) => {
   const theme = fauxControlTheme(baseTheme);
@@ -114,7 +116,7 @@ export const Suffix = styled('span', {
   };
 });
 
-export const Underlay = styled('div', {
+export const Underlay: StyledComponent<{ [key: string]: any }> = styled('div', {
   shouldForwardProp: (prop) =>
     ['disabled', 'readOnly'].indexOf(prop) === -1 && isPropValid(prop)
 })(({ disabled, readOnly, theme: baseTheme, variant }) => {
@@ -141,9 +143,10 @@ export const Underlay = styled('div', {
   };
 });
 
-export const Control = styled('input', {
-  shouldForwardProp: (prop) => ['as', 'prefix'].indexOf(prop) === -1
-})(
+export const Control: StyledComponent<{ [key: string]: any }> = styled(
+  'input',
+  { shouldForwardProp: (prop) => ['as', 'prefix'].indexOf(prop) === -1 }
+)(
   ({
     controlPropsIn,
     controlSize,

@@ -1,11 +1,12 @@
 /* @flow */
+import styled from '@emotion/styled';
+import IconLaunch from 'mineral-ui-icons/IconLaunch';
+import rgba from 'polished/lib/color/rgba';
 import React from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
-import rgba from 'polished/lib/color/rgba';
-import styled from '@emotion/styled';
-import { themed } from '../../library/themes';
-import IconLaunch from 'mineral-ui-icons/IconLaunch';
 import Link from '../../library/Link';
+import { themed } from '../../library/themes';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type SiteLinkProps = {
   as?: $FlowFixMe,
@@ -29,47 +30,49 @@ const ThemedLink = themed(Link)(({ theme }) => ({
   ...siteLinkTheme(theme)
 }));
 
-const Root = styled(ThemedLink)(({ href, theme }) => {
-  let styles = {
-    fontWeight: theme.fontWeight_semiBold,
-    textDecoration: 'underline',
-    textDecorationColor: rgba(theme.color_theme, 0.5),
+const Root: StyledComponent<{ [key: string]: any }> = styled(ThemedLink)(
+  ({ href, theme }) => {
+    let styles = {
+      fontWeight: theme.fontWeight_semiBold,
+      textDecoration: 'underline',
+      textDecorationColor: rgba(theme.color_theme, 0.5),
 
-    '&:focus': {
-      textDecoration: 'none'
-    }
-  };
-
-  if (href) {
-    styles = {
-      ...styles,
-
-      '& > [role="img"]': {
-        borderBottom: `1px solid ${rgba(theme.color_theme, 0.5)}`,
-        boxSizing: 'content-box',
-        fill: 'currentColor',
-        paddingLeft: theme.space_inline_xs,
-        position: 'relative',
-        top: 2
-      },
-
-      '&:hover > [role="img"]': {
-        borderBottomColor: 'currentColor'
-      },
-
-      '&:focus > [role="img"]': {
-        borderBottomColor: 'transparent'
-      },
-
-      // Hiding the external link icon when the link looks like a button
-      '& > span ~ [role="img"]': {
-        display: 'none'
+      '&:focus': {
+        textDecoration: 'none'
       }
     };
-  }
 
-  return styles;
-});
+    if (href) {
+      styles = {
+        ...styles,
+
+        '& > [role="img"]': {
+          borderBottom: `1px solid ${rgba(theme.color_theme, 0.5)}`,
+          boxSizing: 'content-box',
+          fill: 'currentColor',
+          paddingLeft: theme.space_inline_xs,
+          position: 'relative',
+          top: 2
+        },
+
+        '&:hover > [role="img"]': {
+          borderBottomColor: 'currentColor'
+        },
+
+        '&:focus > [role="img"]': {
+          borderBottomColor: 'transparent'
+        },
+
+        // Hiding the external link icon when the link looks like a button
+        '& > span ~ [role="img"]': {
+          display: 'none'
+        }
+      };
+    }
+
+    return styles;
+  }
+);
 
 export default function SiteLink(props: SiteLinkProps) {
   const { children, as, href, to, ...restProps } = props;

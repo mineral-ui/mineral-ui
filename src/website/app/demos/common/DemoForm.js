@@ -1,8 +1,9 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('form')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('form')({
   '& > *:not(:last-child)': {
     marginBottom: '1rem'
   }

@@ -1,17 +1,22 @@
 /* @flow */
-import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
+import Button from '../Button';
 import { componentStyleReset } from '../styles';
 import { themed } from '../themes';
 import { ignoreSsrWarning } from '../utils/emotion';
-import Button from '../Button';
 import { ALIGN, INTERNAL_TYPE } from './constants';
 import { navigationTheme, navItemTheme } from './themes';
 
-export const NavigationRoot = styled('nav', {
-  shouldForwardProp: (prop) =>
-    ['prefix', 'type'].indexOf(prop) === -1 && isPropValid(prop)
-})(({ align, prefix, theme: baseTheme, type }) => {
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
+
+export const NavigationRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'nav',
+  {
+    shouldForwardProp: (prop) =>
+      ['prefix', 'type'].indexOf(prop) === -1 && isPropValid(prop)
+  }
+)(({ align, prefix, theme: baseTheme, type }) => {
   const theme = navigationTheme(baseTheme);
 
   const aligns = {

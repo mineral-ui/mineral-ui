@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { getNormalizedValue, pxToEm } from '../../../../library/styles';
 import { themed } from '../../../../library/themes';
 import Section from '../../Section';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 const ThemedSection = themed(Section)(({ theme }) => ({
   SectionPaddingHorizontal: 0,
@@ -11,7 +12,9 @@ const ThemedSection = themed(Section)(({ theme }) => ({
   SectionPaddingVerticalWide: theme.baseline_5
 }));
 
-export default styled(ThemedSection)(({ theme }) => ({
+const DocSection: StyledComponent<{ [key: string]: any }> = styled(
+  ThemedSection
+)(({ theme }) => ({
   // Inner
   '& > div': {
     margin: 0,
@@ -37,3 +40,5 @@ export default styled(ThemedSection)(({ theme }) => ({
     }
   }
 }));
+
+export default DocSection;

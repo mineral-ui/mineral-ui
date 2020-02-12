@@ -1,14 +1,15 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
+import IconCheck from 'mineral-ui-icons/IconCheck';
+import IconClose from 'mineral-ui-icons/IconClose';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
 import clearFix from 'polished/lib/mixins/clearFix';
+import React from 'react';
 import { pxToEm } from '../../../../library/styles';
 import { mineralTheme, ThemeProvider } from '../../../../library/themes';
-import IconCheck from 'mineral-ui-icons/IconCheck';
-import IconClose from 'mineral-ui-icons/IconClose';
 import Markdown from '../../Markdown';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
 type Props = {
   backgroundColor?: string,
@@ -106,7 +107,9 @@ const styles = {
   })
 };
 
-const Root = styled('div')(styles.root);
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')(
+  styles.root
+);
 const Example = styled('div')(styles.example);
 const Header = styled('div')(styles.header);
 

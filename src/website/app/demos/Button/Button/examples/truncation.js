@@ -3,8 +3,11 @@ import styled from '@emotion/styled';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Button from '../../../../../../library/Button';
 import _DemoLayout from '../../common/DemoLayout';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const FixedWidthLayout = styled(_DemoLayout)({
+const FixedWidthLayout: StyledComponent<{ [key: string]: any }> = styled(
+  _DemoLayout
+)({
   '&[class][class] > *': {
     width: '10rem'
   }

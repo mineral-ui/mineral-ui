@@ -1,11 +1,12 @@
 /* @flow */
+import styled from '@emotion/styled';
+import IconDelete from 'mineral-ui-icons/IconDelete';
 import React from 'react';
 import Button from '../../../../../../library/Button';
-import styled from '@emotion/styled';
 import Tooltip from '../../../../../../library/Tooltip';
-import IconDelete from 'mineral-ui-icons/IconDelete';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const Root = styled('div')({
+const Root: StyledComponent<{ [key: string]: any }> = styled('div')({
   height: '200px',
   display: 'flex',
   alignItems: 'center',

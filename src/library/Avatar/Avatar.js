@@ -1,9 +1,9 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
-import { AvatarRoot as Root } from './styled';
 import { ICON_SIZE, SHAPE, SIZE } from './constants';
-
 import { avatarPropTypes } from './propTypes';
+import { AvatarRoot as Root } from './styled';
+
 import type { AvatarDefaultProps, AvatarProps } from './types';
 
 export default class Avatar extends Component<AvatarProps> {

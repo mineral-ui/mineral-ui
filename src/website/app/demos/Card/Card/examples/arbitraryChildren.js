@@ -1,21 +1,24 @@
 /* @flow */
-import React from 'react';
 import styled from '@emotion/styled';
-import { mineralTheme } from '../../../../../../library/themes';
+import React from 'react';
 import Button from '../../../../../../library/Button';
 import Card, { CardTitle } from '../../../../../../library/Card';
+import { mineralTheme } from '../../../../../../library/themes';
 import DemoLayout from '../../common/DemoLayout';
+import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-const CustomContent = styled('div')(({ theme }) => ({
-  backgroundColor: theme.color_gray_20,
-  margin: `${theme.space_stack_md} 0`,
-  padding: theme.space_inset_md,
+const CustomContent: StyledComponent<{ [key: string]: any }> = styled('div')(
+  ({ theme }) => ({
+    backgroundColor: theme.color_gray_20,
+    margin: `${theme.space_stack_md} 0`,
+    padding: theme.space_inset_md,
 
-  '&:last-child': {
-    borderRadius: `0 0 ${theme.borderRadius_1} ${theme.borderRadius_1}`,
-    marginBottom: 0
-  }
-}));
+    '&:last-child': {
+      borderRadius: `0 0 ${theme.borderRadius_1} ${theme.borderRadius_1}`,
+      marginBottom: 0
+    }
+  })
+);
 
 const customContent = (
   <CustomContent>
