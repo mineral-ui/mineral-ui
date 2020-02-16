@@ -14,7 +14,7 @@ export default function IconRadioButtonCheck(props: IconProps) {
   return (
     <Icon {...iconProps}>
       <g>
-        <circle cx="12" cy="12" r="3.43"/>
+        <circle cx="12" cy="12" r="3.43" />
       </g>
     </Icon>
   );

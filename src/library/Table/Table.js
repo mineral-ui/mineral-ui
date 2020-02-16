@@ -54,7 +54,8 @@ class Table extends Component<TableProps> {
     getColumns,
     (nextProps: TableProps, prevProps: TableProps) =>
       deepEqual(prevProps.columns, nextProps.columns) &&
-      (!prevProps.columns && deepEqual(prevProps.data, nextProps.data))
+      !prevProps.columns &&
+      deepEqual(prevProps.data, nextProps.data)
   );
 
   getComparators = memoizeOne(

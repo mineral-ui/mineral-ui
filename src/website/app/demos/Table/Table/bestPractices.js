@@ -92,7 +92,10 @@ numbers in a column should have a consistent precision.`,
 repeating them in each data cell.`,
     example: (
       <Table
-        data={[{ name: 'Allison', age: '42' }, { name: 'Sam', age: '65' }]}
+        data={[
+          { name: 'Allison', age: '42' },
+          { name: 'Sam', age: '65' }
+        ]}
         columns={[
           { key: 'name', content: 'Name' },
           { key: 'age', content: 'Age (years)', textAlign: 'end' }

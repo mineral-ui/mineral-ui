@@ -1,11 +1,11 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
-import { composeEventHandlers, generateId } from '../utils';
 import PopoverContent from '../Popover/PopoverContent';
-import { TooltipRoot as Root, TriggerText } from './styled';
+import { composeEventHandlers, generateId } from '../utils';
 import { DELAY_OPEN, PLACEMENT } from './constants';
-
 import { tooltipPropTypes } from './propTypes';
+import { TooltipRoot as Root, TriggerText } from './styled';
+
 import type {
   TooltipDefaultProps,
   TooltipProps,
@@ -157,7 +157,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

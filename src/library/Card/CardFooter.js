@@ -2,15 +2,15 @@
 import React, { Component } from 'react';
 import IconExpandLess from '../Icon/IconExpandLess';
 import IconExpandMore from '../Icon/IconExpandMore';
+import { cardFooterPropTypes } from './propTypes';
 import {
-  CardFooterRoot as Root,
   CardFooterContent as Content,
+  CardFooterRoot as Root,
   CardFooterTitle as Title,
   CardFooterTitleContent as TitleContent,
   CardFooterToggleButton as ToggleButton
 } from './styled';
 
-import { cardFooterPropTypes } from './propTypes';
 import type {
   CardFooterDefaultProps,
   CardFooterProps,
@@ -119,7 +119,7 @@ export default class CardFooter extends Component<
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

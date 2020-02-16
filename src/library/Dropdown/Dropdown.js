@@ -1,18 +1,18 @@
 /* @flow */
-import React, { Children, Component, cloneElement } from 'react';
-import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
+import React, { Children, cloneElement, Component } from 'react';
+import deepEqual from 'react-fast-compare';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
-import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import Menu, { getItems } from '../Menu/Menu';
 import MenuItem from '../Menu/MenuItem';
 import Root from '../Popover';
+import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import { PLACEMENT } from './constants';
 import DropdownContent from './DropdownContent';
 import ItemMatcher from './ItemMatcher';
+import { dropdownPropTypes } from './propTypes';
 
 import type { MenuItems } from '../Menu/types';
-import { dropdownPropTypes } from './propTypes';
 import type {
   DropdownDefaultProps,
   DropdownPropGetter,
@@ -407,7 +407,7 @@ export default class Dropdown extends Component<DropdownProps, DropdownState> {
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

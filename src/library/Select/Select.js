@@ -1,18 +1,18 @@
 /* @flow */
+import memoizeOne from 'memoize-one';
 import React, { Component } from 'react';
 import deepEqual from 'react-fast-compare';
-import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
-import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
 import ItemMatcher from '../Dropdown/ItemMatcher';
 import Menu, { getItems } from '../Menu/Menu';
 import MenuItem from '../Menu/MenuItem';
-import SelectTrigger from './SelectTrigger';
+import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import { PLACEMENT, SIZE } from './constants';
-import { SelectRoot as Root, contentWidthModifier } from './styled';
-
 import { selectPropTypes } from './propTypes';
+import SelectTrigger from './SelectTrigger';
+import { contentWidthModifier, SelectRoot as Root } from './styled';
+
 import type { MenuItemType, MenuItems } from '../Menu/types';
 import type {
   SelectDefaultProps,
@@ -479,7 +479,7 @@ export default class Select extends Component<SelectProps, SelectState> {
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

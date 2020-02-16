@@ -1,13 +1,13 @@
 /* @flow */
-import React, { PureComponent } from 'react';
 import { canUseDOM } from 'exenv';
+import React, { PureComponent } from 'react';
 import IconChecked from '../Icon/IconCheckBoxCheck';
 import IconIndeterminate from '../Icon/IconCheckBoxIndeterminate';
 import { composeEventHandlers } from '../utils';
-import { CheckboxRoot as Root } from './styled';
 import { LABEL_POSITION, SIZE } from './constants';
-
 import { checkboxPropTypes } from './propTypes';
+import { CheckboxRoot as Root } from './styled';
+
 import type { CheckboxDefaultProps, CheckboxProps } from './types';
 
 // Detect if browser triggers change event when click indeterminate checkbox
@@ -135,7 +135,7 @@ export default class Checkbox extends PureComponent<CheckboxProps> {
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getIndeterminateValue = () => {

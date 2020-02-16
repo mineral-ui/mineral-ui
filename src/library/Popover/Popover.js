@@ -1,17 +1,17 @@
 /* @flow */
 import React, { Children, Component } from 'react';
-import { Manager } from 'react-popper';
 import { findDOMNode } from 'react-dom';
-import { composeEventHandlers, generateId, isRenderProp } from '../utils';
+import { Manager } from 'react-popper';
 import ModifiersContext from '../Dialog/ModifiersContext';
 import EventListener from '../EventListener';
 import Portal from '../Portal';
-import PopoverTrigger from './PopoverTrigger';
-import PopoverContent from './PopoverContent';
-import { PopoverRoot as Root } from './styled';
+import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import { PLACEMENT } from './constants';
-
+import PopoverContent from './PopoverContent';
+import PopoverTrigger from './PopoverTrigger';
 import { popoverPropTypes } from './propTypes';
+import { PopoverRoot as Root } from './styled';
+
 import type {
   PopoverDefaultProps,
   PopoverProps,
@@ -346,7 +346,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

@@ -14,7 +14,7 @@ export default function IconCheckBoxCheck(props: IconProps) {
   return (
     <Icon {...iconProps}>
       <g>
-        <path d="M8.8 14.8l-4.2-4.1L2.1 13l6.7 6.7 13-13-2.4-2.6L8.8 14.8z"/>
+        <path d="M8.8 14.8l-4.2-4.1L2.1 13l6.7 6.7 13-13-2.4-2.6L8.8 14.8z" />
       </g>
     </Icon>
   );

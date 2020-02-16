@@ -7,9 +7,9 @@ import { menuDividerTheme, menuGroupTheme, menuItemTheme } from './themes';
 
 import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-export const MenuRoot: StyledComponent<{ [key: string]: any }> = styled('div')(
-  ({ theme }) => componentStyleReset(theme)
-);
+export const MenuRoot: StyledComponent<{ [key: string]: any }> = styled(
+  'div'
+)(({ theme }) => componentStyleReset(theme));
 
 export const MenuDividerRoot: StyledComponent<{ [key: string]: any }> = styled(
   'div'
@@ -64,10 +64,11 @@ export const MenuGroupTitle: StyledComponent<{ [key: string]: any }> = styled(
   };
 });
 
-export const MenuItemRoot: StyledComponent<{ [key: string]: any }> = styled(
-  'div',
-  { shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop) }
-)(
+export const MenuItemRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
+})(
   // These styles are based off of Button, with significant changes
   ({ disabled, isHighlighted, theme: baseTheme, variant }) => {
     let theme = menuItemTheme(baseTheme);
@@ -90,9 +91,7 @@ export const MenuItemRoot: StyledComponent<{ [key: string]: any }> = styled(
       cursor: disabled ? 'default' : 'pointer',
       display: 'block',
       fontWeight: theme.MenuItem_fontWeight,
-      padding: `${theme.MenuItem_paddingVertical} ${
-        theme.MenuItem_paddingHorizontal
-      }`,
+      padding: `${theme.MenuItem_paddingVertical} ${theme.MenuItem_paddingHorizontal}`,
       textDecoration: 'none',
 
       '&:focus': {

@@ -14,7 +14,7 @@ export default function IconArrowDropdownDown(props: IconProps) {
   return (
     <Icon {...iconProps}>
       <g>
-        <path d="M12 17.5l-8-8h16z"/>
+        <path d="M12 17.5l-8-8h16z" />
       </g>
     </Icon>
   );

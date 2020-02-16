@@ -14,7 +14,7 @@ export default function IconCheckBoxIndeterminate(props: IconProps) {
   return (
     <Icon {...iconProps}>
       <g>
-        <path d="M4 10h16v4H4z"/>
+        <path d="M4 10h16v4H4z" />
       </g>
     </Icon>
   );
