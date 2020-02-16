@@ -158,10 +158,11 @@ export const Control: StyledComponent<{ [key: string]: any }> = styled('span', {
   };
 });
 
-export const ChoiceGroupRoot: StyledComponent<{ [key: string]: any }> = styled(
-  'div',
-  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
-)(({ inline, size, theme: baseTheme }) => {
+export const ChoiceGroupRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+})(({ inline, size, theme: baseTheme }) => {
   const theme = choiceGroupTheme(baseTheme);
 
   return {

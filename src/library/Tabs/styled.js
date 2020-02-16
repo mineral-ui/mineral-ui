@@ -91,9 +91,7 @@ export const TabAnchor = withProps({
 
         '&:focus, &:active': {
           color: theme.Tab_color_selected,
-          outline: `${theme.Tab_borderWidth_focus}px solid ${
-            theme.Tab_borderColor_focus
-          }`,
+          outline: `${theme.Tab_borderWidth_focus}px solid ${theme.Tab_borderColor_focus}`,
           outlineOffset: `-${theme.Tab_borderWidth_focus}px`
         }
       }),
@@ -258,10 +256,11 @@ export const TabListList: StyledComponent<{ [key: string]: any }> = styled(
   };
 });
 
-export const TabListRoot: StyledComponent<{ [key: string]: any }> = styled(
-  'div',
-  { shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop) }
-)(({ height, vertical }) => ({
+export const TabListRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'height' && isPropValid(prop)
+})(({ height, vertical }) => ({
   display: 'flex',
   flex: '0 0 auto',
   flexDirection: vertical ? 'column' : undefined,

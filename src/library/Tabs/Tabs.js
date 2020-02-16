@@ -1,14 +1,14 @@
 /* @flow */
-import React, { Children, cloneElement, Component } from 'react';
-import { canUseDOM } from 'exenv';
 import { withTheme } from 'emotion-theming';
+import { canUseDOM } from 'exenv';
+import React, { Children, cloneElement, Component } from 'react';
 import { generateId } from '../utils';
+import { ALIGN, POSITION } from './constants';
+import { tabsPropTypes } from './propTypes';
+import { TabsRoot as Root } from './styled';
 import TabList from './TabList';
 import TabPanel from './TabPanel';
-import { TabsRoot as Root } from './styled';
-import { ALIGN, POSITION } from './constants';
 
-import { tabsPropTypes } from './propTypes';
 import type { TabsDefaultProps, TabsProps, TabsState } from './types';
 
 export class Tabs extends Component<TabsProps, TabsState> {
@@ -233,7 +233,7 @@ export class Tabs extends Component<TabsProps, TabsState> {
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

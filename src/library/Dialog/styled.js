@@ -168,10 +168,11 @@ export const DialogCloseButton = withProps({
   })
 );
 
-export const DialogContent: StyledComponent<{ [key: string]: any }> = styled(
-  'div',
-  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
-)(({ size, theme: baseTheme }) => {
+export const DialogContent: StyledComponent<{
+  [key: string]: any
+}> = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+})(({ size, theme: baseTheme }) => {
   const theme = dialogTheme(baseTheme);
 
   const getSizeStyles = (size: string) => {

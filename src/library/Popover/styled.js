@@ -65,10 +65,11 @@ export const PopoverBlock = themed(CardBlock)(cardOverrides);
 
 export const PopoverTitle = themed(CardTitle)(cardOverrides);
 
-export const PopoverArrowRoot: StyledComponent<{ [key: string]: any }> = styled(
-  'span',
-  { shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop) }
-)(({ placement, size, theme: baseTheme }) => {
+export const PopoverArrowRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('span', {
+  shouldForwardProp: (prop) => prop !== 'size' && isPropValid(prop)
+})(({ placement, size, theme: baseTheme }) => {
   const theme = popoverArrowTheme(baseTheme);
   let arrowShadow = ', 0 3px 1px rgba(0, 0, 0, 0.3)';
   const horizontalOffset = `-${parseFloat(size) - 4}px`;

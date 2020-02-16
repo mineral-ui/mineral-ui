@@ -16,9 +16,7 @@ const CardBlock: StyledComponent<{ [key: string]: any }> = styled(_CardBlock)(
     '&::before': {
       borderColor: theme.color_theme_10,
       borderStyle: 'solid',
-      borderWidth: `${theme.space_inset_md} ${theme.space_inset_md} ${
-        theme.space_inset_lg
-      }`,
+      borderWidth: `${theme.space_inset_md} ${theme.space_inset_md} ${theme.space_inset_lg}`,
       bottom: `-${theme.space_inset_lg}`,
       content: '""',
       left: 0,

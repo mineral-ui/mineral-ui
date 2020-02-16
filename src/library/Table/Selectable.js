@@ -117,7 +117,7 @@ export default class Selectable extends Component<
   };
 
   isControlled = (prop: string) => {
-    return this.props.hasOwnProperty(prop);
+    return Object.prototype.hasOwnProperty.call(this.props, prop);
   };
 
   getControllableValue = (key: string) => {

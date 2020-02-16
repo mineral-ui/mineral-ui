@@ -80,9 +80,7 @@ const siteTheme: ThemeObj = {
   SiteHeading_color_2: siteColors.slateDarker,
   SiteHeading_color_3: siteColors.jade,
   SiteHeading_color_4: siteColors.slateDarker,
-  SiteHeading_fontFamily: `franklin-gothic-urw, ${
-    mineralTheme.fontFamily_system
-  }`,
+  SiteHeading_fontFamily: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
   SiteHeading_fontSize_1: pxToEm(40),
   SiteHeading_fontSize_1_wide: pxToEm(48),
   SiteHeading_fontSize_2: pxToEm(33),

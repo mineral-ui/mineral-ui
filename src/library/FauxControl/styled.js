@@ -7,10 +7,11 @@ import { fauxControlTheme } from './themes';
 
 import type { StyledComponent } from '@emotion/styled-base/src/utils';
 
-export const FauxControlRoot: StyledComponent<{ [key: string]: any }> = styled(
-  'div',
-  { shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop) }
-)(({ disabled, theme: baseTheme, variant }) => {
+export const FauxControlRoot: StyledComponent<{
+  [key: string]: any
+}> = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'disabled' && isPropValid(prop)
+})(({ disabled, theme: baseTheme, variant }) => {
   let theme = fauxControlTheme(baseTheme);
   if (variant) {
     // prettier-ignore
