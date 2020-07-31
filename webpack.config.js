@@ -76,12 +76,9 @@ module.exports = {
         template: './src/website/index.html',
         GOOGLE_TRACKING_ID
       }),
-      new CopyWebpackPlugin([
-        {
-          context: './src/website/public',
-          from: '**/*'
-        }
-      ]),
+      new CopyWebpackPlugin({
+        patterns: [{ context: './src/website/public', from: '**/*' }]
+      }),
       new CircularDependencyPlugin({
         exclude: /node_modules/,
         failOnError: false, // TODO: Set to true once resolve all current issues
