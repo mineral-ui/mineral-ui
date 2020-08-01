@@ -1,3 +1,4 @@
+/* @flow */
 import Enzyme from 'enzyme';
 import { matchers } from 'jest-emotion';
 import Adapter from 'enzyme-adapter-react-16';
